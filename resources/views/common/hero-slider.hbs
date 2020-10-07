@@ -1,0 +1,63 @@
+{{#with page-hero}}
+  <div class="page-hero {{classes}} bg-cover-fixed position-relative" >
+    <div class="swiper-container home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="page-hero__left" style="background-image: url('{{image}}'); background-position: center">
+          </div>
+          <div class="page-hero__right" style="background-color: #031138;">
+            <div class="container h-100">
+              <div class="d-flex flex-column h-100">
+                <div class="page-hero__info">
+                  <h1 class="text-white">{{{title}}}</h1>
+                  <p class="text-white">{{{p}}}</p>
+                  <a href="#" class="text-white">{{{link}}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="page-hero__left" style="background-image: url('{{image}}');">
+          </div>
+          <div class="page-hero__right" style="background-color: #031138;">
+            <div class="container h-100">
+              <div class="d-flex flex-column h-100">
+                <div class="page-hero__info">
+                  <h1 class="text-white">{{{title}}}</h1>
+                  <p class="text-white">{{{p}}}</p>
+                  <a href="#" class="text-white">{{{link}}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="page-hero__left" style="background-image: url('{{image}}');">
+          </div>
+          <div class="page-hero__right" style="background-color: #031138;">
+            <div class="container h-100">
+              <div class="d-flex flex-column h-100">
+                <div class="page-hero__info">
+                  <h1 class="text-white">{{{title}}}</h1>
+                  <p class="text-white">{{{p}}}</p>
+                  <a href="#" class="text-white">{{{link}}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+{{/with}}

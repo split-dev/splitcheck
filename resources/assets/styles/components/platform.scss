@@ -6,6 +6,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
   }
   .video-play {
     position: absolute;
@@ -26,24 +29,65 @@
     height: 320px;
     background-color: #fff9f4;
   }
+  &__left {
+    @media (max-width: 991px) {
+      order: 1;
+      display: flex;
+      align-items: center;
+    }
+  }
   &__right,
   &__left {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
   &__text {
     max-width: 486px;
     margin-left: 95px;
     position: relative;
+    h3 {
+      @media (max-width: 991px) {
+        max-width: 378px;
+        text-align: center;
+        font-size: 32px;
+      }
+      @media (max-width: 767px) {
+        max-width: 328px;
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
     &:after {
       content: url("images/icons/simple.svg");
       position: absolute;
       right: -70px;
       top: -100px;
+      @media (max-width: 767px) {
+        right: 0;
+        top: -133px;
+      }
     }
     a {
       margin-top: 55px;
       max-width: 240px;
       height: 48px;
+      @media (max-width: 991px) {
+        position: absolute;
+        bottom: -440px;
+      }
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
     }
     p {
       margin-top: 15px;

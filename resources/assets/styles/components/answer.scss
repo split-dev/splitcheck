@@ -8,6 +8,13 @@
     position: absolute;
     left: 50px;
     top: 170px;
+    @media (max-width: 767px) {
+      content: url("images/icons/you_can-small.svg");
+      top: 227px;
+    }
+    @media (max-width: 575px) {
+      left: 20px;
+    }
   }
   a {
     font-size: 18px !important;
@@ -29,6 +36,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: 991px) {
+      margin-bottom: 80px;
+    }
     p {
       max-width: 219px;
       text-align: center;

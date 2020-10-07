@@ -31,6 +31,14 @@
     border: 1px solid #fff9f4;
     transition: 0.3s;
     margin-right: 35px;
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+    @media (max-width: 450px) {
+      max-width: 100%;
+      margin: 10px;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -63,5 +71,10 @@
   &__cards {
     width: 100%;
     display: flex;
+    @media (max-width: (991px)) {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

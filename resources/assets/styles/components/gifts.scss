@@ -4,16 +4,39 @@
   display: flex;
   align-items: center;
   position: relative;
+  @media (max-width: 991px) {
+    padding-bottom: 260px;
+  }
   &:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     content: url("images/landing/fun.svg");
     position: absolute;
     left: 110px;
+    @media (max-width: 991px) {
+      content: url("images/icons/fun-small.svg");
+      top: -200px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translateX(-50%);
+    }
   }
   &:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     content: url("images/landing/balloons.svg");
     position: absolute;
     right: 160px;
     bottom: 0;
+    @media (max-width: 991px) {
+      content: url("images/icons/ballons-small.svg");
+      left: 50%;
+      right: 0;
+      margin-right: -50%;
+      transform: translateX(-50%);
+    }
   }
   &__content {
     display: flex;

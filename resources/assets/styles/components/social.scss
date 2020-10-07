@@ -1,13 +1,33 @@
 .social {
   padding-top: 130px;
   padding-bottom: 200px;
+  position: relative;
+  @media (max-width: 991px) {
+    padding-bottom: 245px;
+  }
+  @media (max-width: 575px) {
+    &:before {
+      content: url("images/icons/we_care.svg");
+      position: absolute;
+      top: -100px;
+    }
+  }
   &__content {
     display: flex;
     align-items: center;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
   }
   &__left {
     margin-right: 130px;
     z-index: 99;
+    @media (max-width: 1199px) {
+      margin-right: 0;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 15px;
+    }
   }
   &__right {
     position: relative;

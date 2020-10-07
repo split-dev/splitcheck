@@ -3,6 +3,23 @@
   color: #f97d00;
   @include med;
 }
+.bg-cover {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 999;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -12;
+    background-color: #fff9f4;
+    width: 100%;
+    height: 100%;
+    top: 15px;
+    left: 15px;
+  }
+}
 button {
   background: none;
   border: none;

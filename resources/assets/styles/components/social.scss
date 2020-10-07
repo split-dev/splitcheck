@@ -1,0 +1,40 @@
+.social {
+  padding-top: 130px;
+  padding-bottom: 200px;
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__left {
+    margin-right: 130px;
+    z-index: 99;
+  }
+  &__right {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    height: 370px;
+  }
+  p {
+    max-width: 449px;
+    color: #0b0212;
+    @include roman;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    span {
+      @include med;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  h3 {
+    max-width: 416px;
+    margin-bottom: 15px;
+    span {
+      @include med;
+      font-size: 40px;
+      line-height: 56px;
+    }
+  }
+}

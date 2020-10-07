@@ -1,0 +1,36 @@
+.gifts {
+  padding-top: 30px;
+  padding-bottom: 130px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &:before {
+    content: url("images/landing/fun.svg");
+    position: absolute;
+    left: 110px;
+  }
+  &:after {
+    content: url("images/landing/balloons.svg");
+    position: absolute;
+    right: 160px;
+    bottom: 0;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      max-width: 240px;
+    }
+    h4 {
+      margin-bottom: 50px;
+      max-width: 752px;
+      text-align: center;
+      color: #0b0212;
+      @include roman;
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+}

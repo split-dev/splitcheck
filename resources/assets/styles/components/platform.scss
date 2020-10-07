@@ -1,6 +1,13 @@
 .platform {
   padding-top: 50px;
   padding-bottom: 165px;
+  position: relative;
+  &:before {
+    content: url("images/icons/we_care-big.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   &__content {
     width: 100%;
     display: flex;

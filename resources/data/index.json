@@ -1,9 +1,6 @@
 {
   "bg-class": "",
   "page-hero": {
-    "image": "images/bg-posters/home-bg.jpg",
-    "title": "AWA Marine is Australia's \nleading Independent provider \nof Marine Navigation and Communication",
-    "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    "link": "Learn More"
+    "image": "images/hero-slider/love.jpg"
   }
 }

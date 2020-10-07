@@ -6,3 +6,42 @@
  * such as `.text-hero`, which can be `@extend`-ed from other scss files
  * This way, this file become a master list of typography used throughout the site
  */
+a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  &:hover {
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+}
+.btn-border {
+  transition: 0.3s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 160px;
+  height: 40px;
+  color: #35558f;
+  border: 1px solid #35558f !important;
+  border-radius: 5px;
+  @include med;
+  font-size: 16px;
+}
+.btn-blue {
+  transition: 0.3s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 160px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #35558f;
+  background-color: #35558f;
+  @include med;
+  font-size: 16px;
+}

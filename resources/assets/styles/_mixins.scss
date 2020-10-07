@@ -49,19 +49,15 @@
   font-size: $responsive;
 }
 
-@mixin hkg-bold {
-  font-family: "HK Grotesk", sans-serif;
+@mixin roman {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: normal;
+}
+@mixin bold {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   font-weight: bold;
 }
-@mixin hkg-med {
-  font-family: "HK Grotesk", sans-serif;
-  font-weight: 500;
-}
-@mixin hkg-reg {
-  font-family: "HK Grotesk", sans-serif;
-  font-weight: 400;
-}
-@mixin hkg-sb {
-  font-family: "HK Grotesk", sans-serif;
-  font-weight: 600;
+@mixin med {
+  font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
+  font-weight: normal;
 }

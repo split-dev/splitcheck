@@ -1,4 +1,5 @@
 .platform {
+  padding-top: 50px;
   padding-bottom: 165px;
   &__content {
     width: 100%;
@@ -6,7 +7,20 @@
     align-items: center;
     justify-content: center;
   }
+  .video-play {
+    position: absolute;
+    z-index: 99;
+    background-image: url("images/icons/play.svg");
+    width: 64px;
+    height: 64px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
   &__video {
+    z-index: 1;
+    position: relative;
     width: 100%;
     max-width: 560px;
     height: 320px;
@@ -19,6 +33,13 @@
   &__text {
     max-width: 486px;
     margin-left: 95px;
+    position: relative;
+    &:after {
+      content: url("images/icons/simple.svg");
+      position: absolute;
+      right: -70px;
+      top: -100px;
+    }
     a {
       margin-top: 55px;
       max-width: 240px;

@@ -3,3 +3,16 @@
   color: #f97d00;
   @include med;
 }
+button {
+  background: none;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  &:active,
+  &:focus {
+    background: none;
+    border: none;
+    text-decoration: none;
+    outline: none;
+  }
+}

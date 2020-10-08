@@ -55,6 +55,25 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 18px;
+      position: relative;
+      &:after {
+        position: absolute;
+        display: block;
+        color: #f97d00;
+        background-color: #f97d00;
+        transition: 0.3s;
+        content: "";
+        width: 0;
+        left: 0;
+        height: 1px;
+        bottom: -4px;
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+        color: #f97d00;
+      }
     }
     margin-bottom: 25px;
     &:last-child {

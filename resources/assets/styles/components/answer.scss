@@ -17,6 +17,11 @@
     }
   }
   a {
+    transition: 0.3s;
+    color: #0b0212;
+    @include roman;
+    font-weight: 400;
+    line-height: 28px;
     font-size: 18px !important;
   }
   &__content {
@@ -36,6 +41,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    svg {
+      transition: 0.3s;
+    }
+    &:hover {
+      cursor: pointer;
+      a {
+        @include med;
+        color: #f97d00;
+      }
+      svg {
+        g {
+          path {
+            fill: #f97d00;
+          }
+        }
+      }
+    }
     @media (max-width: 991px) {
       margin-bottom: 80px;
     }

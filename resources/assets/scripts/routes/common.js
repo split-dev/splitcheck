@@ -26,11 +26,17 @@ export default {
       let index = $(this).attr('id');
       mySwiper.slideTo ( index );
     });
+    $('.header__burger').click (function () {
+    $('.mobile-menu').css('left', '0');
+    $('.section-blur').addClass('filter');
+    $('body').css('overflow', 'hidden');
+    });
 
-    /*$('.scrollbar li').on('click', function () {
-      $('li').removeClass('active');
-      $(this).addClass('active');
-    });*/
+    $('.mobile-menu__close').click (function () {
+      $('.mobile-menu').css('left', '-100%');
+      $('.section-blur').removeClass('filter');
+      $('body').css('overflow', 'visible');
+    });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

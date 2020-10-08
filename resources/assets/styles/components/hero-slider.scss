@@ -1,8 +1,46 @@
+.scrollbar {
+  display: flex;
+  height: 4px;
+  position: absolute;
+  width: 100%;
+  li {
+    width: 100%;
+    display: block;
+    height: 4px;
+    background: #ddd6d4;
+    margin-right: 5px;
+    position: relative;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:before {
+      content: "";
+      background: #eba96a;
+      height: 4px;
+      position: absolute;
+      animation-duration: 6s;
+    }
+  }
+}
+.active {
+  &:before {
+    animation-name: animation;
+  }
+}
+@keyframes animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .page-hero {
   display: flex;
   justify-content: center;
   z-index: 1;
-  height: 712px;
+  padding-bottom: 50px;
   background-color: #fff9f4;
   @media (max-width: 991px) {
     height: 100%;
@@ -20,23 +58,6 @@
   .swiper-container {
     width: 100%;
     height: 100%;
-    &.start {
-      margin-left: 18px !important;
-    }
-    &.end {
-      margin-left: -18px !important;
-      @media (min-width: 576px) {
-        margin-left: -53px !important;
-      }
-      div.swiper-pagination {
-        left: 95px !important;
-        right: 52px !important;
-        @media (max-width: 576px) {
-          left: 35px !important;
-          right: 18px !important;
-        }
-      }
-    }
   }
   .swiper-progress-bar {
     position: relative;
@@ -161,19 +182,8 @@
   }
   &__left {
     width: 100%;
-    height: calc(100vh - 48px);
     @media (max-width: 991px) {
-      height: 100%;
       padding-bottom: 50px;
-    }
-  }
-  &.page-hero--tiny {
-    height: 420px;
-    @media (max-width: 575px) {
-      height: 485px;
-    }
-    &:after {
-      content: none;
     }
   }
   &__info {

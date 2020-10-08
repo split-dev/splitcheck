@@ -3,14 +3,32 @@ export default {
   init() {
     //eslint-disable-next-line no-unused-vars
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
       autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+        slidesPerView: 1,
+        delay : 5000,
+        disableOnInteraction : false,
       },
+      speed: 500,
+      loop: true,
       pagination: {
         el: '.swiper-pagination',
-        type: 'progressbar',
+        type: 'progress-bar',
+      },
+      on: {
+        init: function () {
+          $('.swiper-progress-bar').removeClass('animate');
+          $('.swiper-progress-bar').removeClass('active');
+          $('.swiper-progress-bar').eq(0).addClass('animate');
+          $('.swiper-progress-bar').eq(0).addClass('active');
+        },
+        slideChangeTransitionStart: function () {
+          $('.swiper-progress-bar').removeClass('animate');
+          $('.swiper-progress-bar').removeClass('active');
+          $('.swiper-progress-bar').eq(0).addClass('active');
+        },
+        slideChangeTransitionEnd: function () {
+          $('.swiper-progress-bar').eq(0).addClass('animate');
+        },
       },
     });
  /*   let observer = new MutationObserver((mutationRecords) => {

@@ -3,6 +3,7 @@
   height: 4px;
   position: absolute;
   width: 100%;
+  z-index: 9999;
   li {
     width: 100%;
     display: block;
@@ -10,6 +11,9 @@
     background: #ddd6d4;
     margin-right: 5px;
     position: relative;
+    &:hover {
+      cursor: pointer;
+    }
     &:last-child {
       margin-right: 0;
     }

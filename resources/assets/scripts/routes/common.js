@@ -11,16 +11,16 @@ export default {
       speed: 500,
     });
 
-    let myId = mySwiper.activeIndex;
+
 
     mySwiper.on('slideChange', function () {
-      $('.scrollbar-li').removeClass('active');
+      let myId = mySwiper.activeIndex;
+      $('.scrollbar li').removeClass('active');
       $('#' + myId).addClass('active');
     });
 
 
-    $('.scrollbar-li').click (function () {
-      $('.scrollbar-li').attr('id').mySwiper.slideTo(myId);
+    $('.scrollbar li').click (function () {
       $('li').removeClass('active');
       $(this).addClass('active');
       let index = $(this).attr('id');

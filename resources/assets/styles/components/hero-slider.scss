@@ -8,9 +8,11 @@
   margin-top: 20px;
   @media (max-width: 991px) {
     margin-top: 15px;
+    padding: 0 25px;
   }
   @media (max-width: 575px) {
     margin-top: 0;
+    padding: 0 10px;
   }
   li {
     width: 100%;
@@ -56,6 +58,11 @@
   @media (max-width: 575px) {
     padding-bottom: 15px;
   }
+  .row {
+    @media (max-width: 991px) {
+      margin-left: 0 !important;
+    }
+  }
 }
 .page-hero {
   display: flex;
@@ -66,6 +73,14 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+  }
+  .swiper-slide {
+    @media (max-width: 991px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 575px) {
+      padding: 0 10px;
+    }
   }
   .swiper-wrapper {
     @media (max-width: 991px) {

@@ -13,16 +13,24 @@ export default {
 
     let myId = mySwiper.activeIndex;
 
+    mySwiper.on('slideChange', function () {
+      $('.scrollbar-li').removeClass('active');
+      $('#' + myId).addClass('active');
+    });
 
-    $('li').removeClass('active');
-    $('#' + myId).addClass('active');
-    $('li').attr('id').mySwiper.slideTo(myId);
 
-
-    $('li').on('click', function () {
+    $('.scrollbar-li').click (function () {
+      $('.scrollbar-li').attr('id').mySwiper.slideTo(myId);
       $('li').removeClass('active');
       $(this).addClass('active');
+      let index = $(this).attr('id');
+      mySwiper.slideTo ( index );
     });
+
+    /*$('.scrollbar li').on('click', function () {
+      $('li').removeClass('active');
+      $(this).addClass('active');
+    });*/
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

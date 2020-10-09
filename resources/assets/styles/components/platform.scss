@@ -61,7 +61,7 @@
       height: 100%;
     }
     @media (max-width: 575px) {
-      height: 273px;
+      height: 306px;
       margin: 0 40px 0 40px;
     }
   }
@@ -135,7 +135,10 @@
       }
       @media (max-width: 575px) {
         max-width: 100%;
-        bottom: -370px;
+        bottom: -424px;
+      }
+      @media (max-width: 450px) {
+        bottom: -385px;
       }
     }
     p {

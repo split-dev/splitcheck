@@ -21,6 +21,9 @@
       position: absolute;
       left: -30px;
       top: 0;
+      @media (max-width: 992px) {
+        left: 0;
+      }
       @media (max-width: 991px) {
         content: url("images/icons/fun-small.svg");
         top: -200px;

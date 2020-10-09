@@ -93,3 +93,15 @@ if ('NodeList' in window && !NodeList.prototype.forEach) {
     }
   };
 }
+
+// Number.isNaN() polyfill
+!(typeof Number.isNaN == 'function') ||
+  (Number.isNaN = function (value) {
+    return value !== null // Number(null) => 0
+      && (value != value // NaN != NaN
+        || +value != value // Number(falsy) => 0 && falsy == 0...
+      )
+  });
+
+// see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN#Description
+// for explanation of coercions (false, '0', '', null, and undefined)

@@ -48,7 +48,7 @@ h3 {
   font-size: 16px;
   &:focus {
     background-color: #254277;
-    color: #fff;
+    color: #fff !important;
   }
   &:hover {
     background: #35558f;

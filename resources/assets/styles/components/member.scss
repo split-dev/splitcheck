@@ -20,6 +20,9 @@
   }
   .block-right {
     margin-right: 0;
+    @media (max-width: 575px) {
+      margin-right: 10px;
+    }
   }
   &__line {
     display: flex;

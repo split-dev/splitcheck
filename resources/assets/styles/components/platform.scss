@@ -1,6 +1,6 @@
 .platform {
   padding-top: 50px;
-  padding-bottom: 165px;
+  padding-bottom: 145px;
   position: relative;
   &__content {
     width: 100%;
@@ -97,7 +97,7 @@
     &:after {
       content: url("images/icons/simple.svg");
       position: absolute;
-      right: -70px;
+      right: -37px;
       top: -100px;
       @media (max-width: 1199px) {
         right: 0;

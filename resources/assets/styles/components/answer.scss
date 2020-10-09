@@ -1,12 +1,12 @@
 .answer {
-  padding-top: 120px;
-  padding-bottom: 123px;
+  padding-top: 110px;
+  padding-bottom: 113px;
   position: relative;
   display: flex;
   &:before {
     content: url("images/icons/you_can.svg");
     position: absolute;
-    left: 50px;
+    left: 85px;
     top: 170px;
     @media (max-width: 767px) {
       content: url("images/icons/you_can-small.svg");
@@ -34,7 +34,8 @@
     }
   }
   &__img {
-    margin-bottom: 35px;
+    margin-bottom: 22px;
+    min-height: 50px;
   }
   &__block {
     display: flex;

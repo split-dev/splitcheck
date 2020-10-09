@@ -4,6 +4,7 @@ export default {
   init() {
     //eslint-disable-next-line no-unused-vars
     var mySwiper = new Swiper('.swiper-container', {
+      effect: 'fade',
       autoplay: {
         slidesPerView: 1,
         delay : 5000,

@@ -9,23 +9,6 @@
   @media (max-width: 575px) {
     padding-bottom: 30px;
   }
-  &:before {
-    content: url("images/icons/you_can.svg");
-    position: absolute;
-    left: 85px;
-    top: 170px;
-    @media (max-width: 1300px) {
-      top: 102px;
-      left: 0;
-    }
-    @media (max-width: 767px) {
-      left: 42px;
-    }
-    @media (max-width: 575px) {
-      content: url("images/icons/you_can-small.svg");
-      top: 227px;
-    }
-  }
   a {
     transition: 0.3s;
     color: #0b0212;
@@ -39,6 +22,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    &:before {
+      content: url("images/icons/you_can.svg");
+      position: absolute;
+      left: -92px;
+      top: 60px;
+      @media (max-width: 1040px) {
+        left: -46px;
+        top: -4px;
+      }
+      @media (max-width: 767px) {
+        left: -80px;
+      }
+      @media (max-width: 575px) {
+        content: url("images/icons/you_can-small.svg");
+        top: 227px;
+        left: 0;
+      }
+    }
     h3 {
       margin-bottom: 120px;
     }

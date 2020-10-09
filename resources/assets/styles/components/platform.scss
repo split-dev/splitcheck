@@ -11,6 +11,10 @@
       flex-direction: column;
     }
   }
+  h3 {
+    line-height: 64px !important;
+    max-width: 419px;
+  }
   .video-play {
     position: absolute;
     z-index: 99;

@@ -3,6 +3,13 @@
   background-color: #fff9f4;
   padding-bottom: 50px;
   display: flex;
+  &__mobile {
+    display: flex;
+    width: 100%;
+    @media (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
   &__content {
     display: flex;
     justify-content: space-between;
@@ -31,6 +38,16 @@
   &__block {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    &:first-child {
+      max-width: 250px;
+    }
+    &:nth-child(4) {
+      margin-right: 20px;
+      @media (max-width: 991px) {
+        margin-right: 0;
+      }
+    }
     a {
       img {
         width: 100%;

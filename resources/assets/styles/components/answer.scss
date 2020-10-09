@@ -19,7 +19,7 @@
   a {
     transition: 0.3s;
     color: #0b0212;
-    @include roman;
+    @include med;
     font-weight: 400;
     line-height: 28px;
     font-size: 18px !important;
@@ -47,7 +47,6 @@
     &:hover {
       cursor: pointer;
       a {
-        @include med;
         color: #f97d00;
       }
       svg {

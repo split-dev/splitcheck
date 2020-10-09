@@ -8,6 +8,10 @@
     position: absolute;
     left: 85px;
     top: 170px;
+    @media (max-width: 1300px) {
+      top: 102px;
+      left: 0;
+    }
     @media (max-width: 767px) {
       content: url("images/icons/you_can-small.svg");
       top: 227px;

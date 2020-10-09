@@ -1,6 +1,14 @@
 .scrollbar__content {
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 82px;
+  z-index: 9999;
+  width: 100%;
+  @media (max-width: 991px) {
+    position: relative;
+    bottom: 0;
+  }
 }
 .scrollbar {
   display: flex;
@@ -56,6 +64,7 @@
   }
 }
 .page-hero__bg {
+  position: relative;
   background-color: #fff9f4;
   padding-bottom: 50px;
   @media (max-width: 991px) {
@@ -186,9 +195,6 @@
   &__info {
     max-width: 375px;
     margin: auto;
-    @media (max-width: 1199px) {
-      padding-left: 50px;
-    }
     @media (max-width: 991px) {
       padding-top: 50px;
       padding-left: 0;

@@ -41,7 +41,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    svg {
+    svg * {
       transition: 0.3s;
     }
     &:hover {
@@ -49,12 +49,12 @@
       a {
         color: #f97d00;
       }
-      svg {
-        g {
-          path {
-            fill: #f97d00;
-          }
-        }
+      svg * {
+        fill: #f97d00;
+      }
+      #Rectangle-Copy-12,
+      #Rectangle {
+        stroke: #f97d00;
       }
     }
     @media (max-width: 991px) {

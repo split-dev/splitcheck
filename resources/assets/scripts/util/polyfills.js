@@ -7,17 +7,17 @@
 // code pulled from:
 // https://github.com/d4tocchini/customevent-polyfill
 // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent#Polyfill
+!(typeof Number.isNaN == 'function') ||
+(Number.isNaN = function (value) {
+  return value !== null // Number(null) => 0
+    && (value != value // NaN != NaN
+      || +value != value // Number(falsy) => 0 && falsy == 0...
+    )
+});
 (function() {
   if (typeof window === 'undefined') {
     return;
   }
-  !(typeof Number.isNaN == 'function') ||
-  (Number.isNaN = function (value) {
-    return value !== null // Number(null) => 0
-      && (value != value // NaN != NaN
-        || +value != value // Number(falsy) => 0 && falsy == 0...
-      )
-  });
   try {
     var ce = new window.CustomEvent('test', { cancelable: true });
     ce.preventDefault();

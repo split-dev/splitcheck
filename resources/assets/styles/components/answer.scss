@@ -35,6 +35,14 @@
       @media (max-width: 1040px) {
         left: 0;
       }
+      @media (max-width: 992px) {
+        top: -36px;
+        left: 50px;
+      }
+      @media (max-width: 991px) {
+        top: -36px;
+        left: 0;
+      }
       @media (max-width: 767px) {
         left: -80px;
       }

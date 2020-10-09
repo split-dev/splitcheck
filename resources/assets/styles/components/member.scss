@@ -21,6 +21,16 @@
   &__line {
     display: flex;
     width: 100%;
+    justify-content: center;
+    &:last-child {
+      max-width: 240px;
+    }
+  }
+  .last-block {
+    display: none;
+    @media (max-width: 575px) {
+      display: flex;
+    }
   }
   &__card {
     padding-top: 30px;
@@ -44,9 +54,6 @@
       max-width: 100%;
       margin: 10px;
     }*/
-    &:last-child {
-      margin-right: 0;
-    }
     svg {
       height: 100%;
       transition: 0.3s;

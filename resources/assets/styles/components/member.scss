@@ -18,12 +18,18 @@
       }
     }
   }
+  .block-right {
+    margin-right: 0;
+  }
   &__line {
     display: flex;
     width: 100%;
     justify-content: center;
     &:last-child {
       max-width: 240px;
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
     }
   }
   .last-block {

@@ -9,26 +9,45 @@ body {
   color: #f97d00;
   @include med;
 }
-#text-1 {
-  transform: translate(20px 12px) !important;
-}
-#text-2 {
-  transform: translate(17px 12px) !important;
-}
-#text-3 {
-  transform: translate(20px 12px) !important;
-}
-#text-4 {
-  transform: translate(19px 13px) !important;
-}
-#text-5 {
-  transform: translate(17px 12px) !important;
-}
-#text-6 {
-  transform: translate(17px 12px) !important;
-}
+#text-1,
+#text-2,
+#text-3,
+#text-4,
+#text-5,
+#text-6,
 #text-7 {
-  transform: translate(17px 12px) !important;
+  display: none;
+}
+#text-f-1,
+#text-f-2,
+#text-f-3,
+#text-f-4,
+#text-f-5,
+#text-f-6,
+#text-f-7 {
+  display: block;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    #text-1,
+    #text-2,
+    #text-3,
+    #text-4,
+    #text-5,
+    #text-6,
+    #text-7 {
+      display: block !important;
+    }
+    #text-f-1,
+    #text-f-2,
+    #text-f-3,
+    #text-f-4,
+    #text-f-5,
+    #text-f-6,
+    #text-f-7 {
+      display: none;
+    }
+  }
 }
 .bg-cover {
   width: 100%;

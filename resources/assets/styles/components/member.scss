@@ -29,7 +29,7 @@
     width: 100%;
     justify-content: center;
     &:last-child {
-      max-width: 240px;
+      max-width: 200px;
       @media (max-width: 575px) {
         max-width: 100%;
       }

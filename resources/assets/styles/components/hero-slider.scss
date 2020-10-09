@@ -145,7 +145,8 @@
     z-index: 1;
     &:after {
       content: "";
-      top: -20px;
+      top: -10px;
+      left: -30px;
       position: absolute;
       width: 100%;
       height: 139px;

@@ -23,3 +23,9 @@ $theme-colors: (
   primary: $colour-blue,
   secondary: darken($colour-blue, 15%)
 );
+$container-max-widths: (
+  /*sm: 680px,
+  md: 820px,*/
+  lg: 1080px,
+  xl: 1300px,
+);

@@ -15,7 +15,7 @@
   }
   &__list {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     @media (max-width: 575px) {
       flex-direction: column;
       align-items: baseline;

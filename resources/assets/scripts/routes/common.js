@@ -11,6 +11,29 @@ export default {
       speed: 500,
     });
 
+    var vid = document.getElementById('videoBox');
+    function playVid() {
+      vid.play();
+    }
+
+    function pauseVid() {
+      vid.pause();
+    }
+
+    $(document).ready(function () {
+      $('.video-play').click(function (e) {
+        $(this).removeClass('video-btn-none');
+        e.preventDefault;
+        if ($(this).hasClass('pause')) {
+          pauseVid();
+          $(this).toggleClass('pause');
+        } else {
+          $(this).addClass('video-btn-none');
+          playVid();
+          $(this).toggleClass('pause');
+        }
+      });
+    });
 
 
     mySwiper.on('slideChange', function () {

@@ -11,6 +11,10 @@
     }
   }
   &__logo {
+    img {
+      width: 100%;
+      max-width: 168px;
+    }
     @media (max-width: 767px) {
       max-width: 141px;
     }

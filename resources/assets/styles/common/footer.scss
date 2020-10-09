@@ -31,6 +31,12 @@
   &__block {
     display: flex;
     flex-direction: column;
+    a {
+      img {
+        width: 100%;
+        max-width: 168px;
+      }
+    }
     @media (max-width: 991px) {
       margin-bottom: 60px;
     }

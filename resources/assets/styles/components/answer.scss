@@ -9,6 +9,9 @@
   @media (max-width: 575px) {
     padding-bottom: 30px;
   }
+  @media (max-width: 480px) {
+    padding-top: 70px;
+  }
   a {
     transition: 0.3s;
     color: #0b0212;
@@ -51,12 +54,18 @@
         top: 130px;
         left: 90px;
       }
+      @media (max-width: 480px) {
+        top: 69px;
+      }
       @media (max-width: 440px) {
         left: 10px;
       }
     }
     h3 {
       margin-bottom: 120px;
+      @media (max-width: 480px) {
+        margin-bottom: 60px;
+      }
     }
   }
   &__img {
@@ -86,6 +95,9 @@
     }
     @media (max-width: 991px) {
       margin-bottom: 80px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 60px;
     }
     p {
       max-width: 219px;

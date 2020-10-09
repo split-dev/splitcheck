@@ -23,6 +23,16 @@ $theme-colors: (
   primary: $colour-blue,
   secondary: darken($colour-blue, 15%)
 );
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1260px,
+);
 $container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
   xl: 1170px,
 );

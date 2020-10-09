@@ -1,6 +1,6 @@
 .answer {
   padding-top: 110px;
-  padding-bottom: 113px;
+  padding-bottom: 250px;
   position: relative;
   display: flex;
   @media (max-width: 991px) {
@@ -52,7 +52,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    svg * {
+    svg {
       transition: 0.3s;
     }
     &:hover {

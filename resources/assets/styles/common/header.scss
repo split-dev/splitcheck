@@ -1,6 +1,18 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
   background-color: #fff9f4;
   width: 100%;
+  transition: 0.2s;
+  &.headroom--pinned {
+    transform: translateY(0);
+  }
+  &.headroom--unpinned {
+    transform: translateY(-100%);
+  }
   &__content {
     height: 75px;
     display: flex;

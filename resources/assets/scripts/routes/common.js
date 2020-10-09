@@ -1,4 +1,5 @@
 import Swiper from 'swiper/swiper-bundle';
+import Headroom from 'headroom.js';
 export default {
   init() {
     //eslint-disable-next-line no-unused-vars
@@ -60,6 +61,12 @@ export default {
       $('.section-blur').removeClass('filter');
       $('body').css('overflow', 'visible');
     });
+
+    var myElement = document.querySelector('header');
+// construct an instance of Headroom, passing the element
+    var headroom  = new Headroom(myElement);
+    // initialise
+    headroom.init();
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

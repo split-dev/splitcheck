@@ -20,7 +20,7 @@
   }
   .block-right {
     margin-right: 0;
-    @media (max-width: 575px) {
+    @media (max-width: 991px) {
       margin-right: 10px;
     }
   }
@@ -30,14 +30,14 @@
     justify-content: center;
     &:last-child {
       max-width: 200px;
-      @media (max-width: 575px) {
+      @media (max-width: 991px) {
         max-width: 100%;
       }
     }
   }
   .last-block {
     display: none;
-    @media (max-width: 575px) {
+    @media (max-width: 991px) {
       display: flex;
     }
   }

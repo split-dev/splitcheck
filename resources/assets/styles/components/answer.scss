@@ -28,16 +28,19 @@
       position: absolute;
       left: -92px;
       top: 60px;
-      @media (max-width: 1040px) {
+      @media (max-width: 1306px) {
         left: -46px;
         top: -4px;
+      }
+      @media (max-width: 1040px) {
+        left: 0;
       }
       @media (max-width: 767px) {
         left: -80px;
       }
-      @media (max-width: 575px) {
+      @media (max-width: 694px) {
         content: url("images/icons/you_can-small.svg");
-        top: 227px;
+        top: 130px;
         left: 0;
       }
     }

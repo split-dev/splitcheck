@@ -6,7 +6,7 @@
   &__mobile {
     display: flex;
     width: 100%;
-    @media (max-width: 575px) {
+    @media (max-width: 480px) {
       flex-direction: column;
     }
   }
@@ -23,17 +23,24 @@
   &__list {
     display: flex;
     align-items: baseline;
-    @media (max-width: 575px) {
+    @media (max-width: 1240px) {
+      justify-content: space-between;
+    }
+    @media (max-width: 480px) {
       flex-direction: column;
       align-items: baseline;
+    }
+    ul {
+      @media (max-width: 1240px) {
+        width: 100%;
+      }
     }
     ul:first-child {
       margin-right: 155px;
       @media (max-width: 1240px) {
-        margin-right: 65px;
+        margin-right: 0;
       }
       @media (max-width: 575px) {
-        margin-right: 0;
         margin-bottom: 25px;
       }
     }
@@ -62,9 +69,6 @@
     }
   }
   &__block:first-child {
-    @media (max-width: 1240px) {
-      max-width: 185px;
-    }
     @media (max-width: 991px) {
       order: 7;
     }

@@ -3,6 +3,12 @@
   padding-bottom: 113px;
   position: relative;
   display: flex;
+  @media (max-width: 991px) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 30px;
+  }
   &:before {
     content: url("images/icons/you_can.svg");
     position: absolute;
@@ -13,11 +19,11 @@
       left: 0;
     }
     @media (max-width: 767px) {
-      content: url("images/icons/you_can-small.svg");
-      top: 227px;
+      left: 42px;
     }
     @media (max-width: 575px) {
-      left: 20px;
+      content: url("images/icons/you_can-small.svg");
+      top: 227px;
     }
   }
   a {

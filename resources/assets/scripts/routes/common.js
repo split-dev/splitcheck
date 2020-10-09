@@ -4,11 +4,11 @@ export default {
   init() {
     //eslint-disable-next-line no-unused-vars
     var mySwiper = new Swiper('.swiper-container', {
-      /*autoplay: {
+      autoplay: {
         slidesPerView: 1,
         delay : 5000,
         disableOnInteraction : false,
-      },*/
+      },
       speed: 500,
     });
 

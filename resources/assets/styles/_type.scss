@@ -46,10 +46,12 @@ h3 {
   border-radius: 5px;
   @include med;
   font-size: 16px;
-  &:hover,
   &:focus {
-    background: #35558f;
+    background-color: #254277;
     color: #fff;
+  }
+  &:hover {
+    background: #35558f;
   }
 }
 .btn-blue {
@@ -66,8 +68,11 @@ h3 {
   @include med;
   font-size: 16px;
   position: relative;
-  &:hover,
   &:focus {
+    background-color: #254277;
+    color: #fff;
+  }
+  &:hover {
     color: #fff;
     &:before {
       opacity: 1;

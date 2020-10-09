@@ -25,6 +25,9 @@
       @media (max-width: 1400px) {
         left: -64px;
       }
+      @media (max-width: 1070px) {
+        left: 0;
+      }
       @media (max-width: 575px) {
         content: url("images/icons/we_care.svg");
         position: absolute;

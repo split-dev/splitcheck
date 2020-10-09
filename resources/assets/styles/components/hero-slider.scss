@@ -140,6 +140,18 @@
       left: 50px;
       font-family: "Noteworthy - Bold", sans-serif;
       font-size: 32px;
+      @media (max-width: 767px) {
+        width: 100%;
+        max-width: 200px;
+        bottom: 15px;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+        max-width: 100px;
+        bottom: 15px;
+        left: 30px;
+        height: 38px;
+      }
     }
     &:after {
       content: "";

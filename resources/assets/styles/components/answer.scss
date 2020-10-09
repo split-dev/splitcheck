@@ -41,7 +41,10 @@
       @media (max-width: 694px) {
         content: url("images/icons/you_can-small.svg");
         top: 130px;
-        left: 0;
+        left: 90px;
+      }
+      @media (max-width: 440px) {
+        left: 10px;
       }
     }
     h3 {

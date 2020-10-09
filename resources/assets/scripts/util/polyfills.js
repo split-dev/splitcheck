@@ -93,3 +93,57 @@ if ('NodeList' in window && !NodeList.prototype.forEach) {
     }
   };
 }
+
+// Number.isNaN() polyfill
+!(typeof Number.isNaN == 'function') ||
+  (Number.isNaN = function (value) {
+    return value !== null // Number(null) => 0
+      && (value != value // NaN != NaN
+        || +value != value // Number(falsy) => 0 && falsy == 0...
+      )
+  });
+
+// see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN#Description
+// for explanation of coercions (false, '0', '', null, and undefined)
+
+console.warn(
+  [2, 3, 5, 7, 
+   -0, 
+   Number.NEGATIVE_INFINITY, 
+   Number.POSITIVE_INFINITY, 
+   +false, // +false => 0
+   +true,
+   false, // Number(false) => 0
+   true,
+   '0', // Number('0') => 0
+   '1',
+   '', // Number('') => 0
+   '       ',
+   null, // Number(null) => 0
+  ]
+  .map(function(value) {
+    return !Number.isNaN(value);
+  })
+  .filter(function(ok, i) {
+    console.log(ok)
+    return ok || (function(i) {
+      throw 'test ' + (i) + ' failed.'
+    }(i))
+  })
+);
+
+console.warn(
+  [undefined, // +undefined => NaN
+   'jimmy',   // +'non-digit-string' => NaN
+   1 * 'a',   // multiplication on non-numeric value, 
+   NaN,     // because NaN !== NaN, of course
+  ]
+  .map(function(value) {
+    return Number.isNaN(value);
+  })
+  .filter(function(ok, i) {
+    return ok || (function(i) {
+      throw 'test ' + (i) + ' failed.'
+    }(i))
+  })
+);

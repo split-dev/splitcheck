@@ -18,18 +18,27 @@
     }
   }
   .video-play {
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: 99;
-    background-image: url("images/icons/play.svg");
-    width: 64px;
-    height: 64px;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    &:before {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      content: url("images/icons/play.svg");
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+    }
   }
   .video-btn-none {
-    background: none !important;
+    &:before {
+      content: none;
+    }
   }
   &__video {
     z-index: 1;

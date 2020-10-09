@@ -1,35 +1,34 @@
 body {
   padding-top: 75px;
+  @media (max-width: 575px) {
+    padding-top: 50px;
+  }
 }
 .link-orange {
   font-size: 20px;
   color: #f97d00;
   @include med;
 }
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    #text-1 {
-      transform: translate(20px 40px) !important;
-    }
-    #text-2 {
-      transform: translate(17px 40px) !important;
-    }
-    #text-3 {
-      transform: translate(20px 50px) !important;
-    }
-    #text-4 {
-      transform: translate(19px 50px) !important;
-    }
-    #text-5 {
-      transform: translate(17px 50px) !important;
-    }
-    #text-6 {
-      transform: translate(17px 50px) !important;
-    }
-    #text-7 {
-      transform: translate(17px 50px) !important;
-    }
-  }
+#text-1 {
+  transform: translate(20px 12px) !important;
+}
+#text-2 {
+  transform: translate(17px 12px) !important;
+}
+#text-3 {
+  transform: translate(20px 12px) !important;
+}
+#text-4 {
+  transform: translate(19px 13px) !important;
+}
+#text-5 {
+  transform: translate(17px 12px) !important;
+}
+#text-6 {
+  transform: translate(17px 12px) !important;
+}
+#text-7 {
+  transform: translate(17px 12px) !important;
 }
 .bg-cover {
   width: 100%;

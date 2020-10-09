@@ -126,6 +126,9 @@
       max-width: 240px;
       height: 48px;
       font-size: 18px !important;
+      @media (max-width: 1199px) {
+        margin-top: 48px;
+      }
       @media (max-width: 991px) {
         position: absolute;
         bottom: -440px;

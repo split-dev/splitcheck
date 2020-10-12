@@ -76,6 +76,7 @@
     "jquery": "^3.5.1",
     "jquery-lazy": "^1.7.10",
     "regenerator-runtime": "^0.13.5",
+    "select2": "^4.0.13",
     "svg4everybody": "^2.1.9",
     "swiper": "^6.3.2",
     "vanilla-lazyload": "^13.0.1",

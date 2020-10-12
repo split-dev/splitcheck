@@ -9,9 +9,6 @@
 @import "mixins";
 @import "type";
 
-@import "layouts/welcome";
-@import "components/animate";
-
 /** Import everything from autoload */
 @import "autoload/lazy";
 
@@ -52,3 +49,4 @@
  * such as header, footer
  */
 // @import "layouts/base";
+@import "layouts/early-bird.scss";

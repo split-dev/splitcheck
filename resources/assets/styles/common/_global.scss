@@ -1,11 +1,20 @@
-
 .link-orange {
   font-size: 20px;
   color: #f97d00;
   @include med;
 }
 
+body {
+  padding-top: 75px;
+  overflow-x: hidden;
+  @media (max-width: 575px) {
+    padding-top: 50px;
+  }
+}
 
+tspan {
+  font-family: "Noteworthy - Bold";
+}
 
 .bg-cover {
   width: 100%;

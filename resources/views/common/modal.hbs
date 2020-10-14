@@ -13,29 +13,33 @@
             <div class="form__single">
               <label>First Name</label>
               <input type="text" required="">
+              <span class="form__symbol-error"></span>
             </div>
             <div class="form__single">
               <label>Last Name</label>
               <input type="text" required="">
+              <span class="form__symbol-error"></span>
             </div>
             <div class="form__single error">
               <label>Email</label>
               <input type="email" required="">
+              <span class="form__symbol-error"></span>
             </div>
-            <div class="form__single">
+            <div class="form__single form__single--pass">
               <label>Password</label>
               <input type="password" required="">
+              <span class="form__symbol-pass"></span>
             </div>
-            <div class="form__single">
+            <div class="form__single form__single--date">
               <label>Date of birth</label>
-              <a href="#" class="btn-blue-link">Why are you asking?</a>
-              <input type="date" required="">
+              <a href="#" class="form__link btn-blue-link">Why are you asking?</a>
+              <input type="text" data-toggle="datepicker" required="">
             </div>
-            <div class="form__single">
+            <div class="form__single form__single--select">
               <label>Gender</label>
               <select class="js-select-gender" name="states[]">
-                <option value="male">male</option>
-                <option value="female">female</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
               </select>
             </div>
           </div>
@@ -70,10 +74,13 @@
             <div class="form__single">
               <label>Email</label>
               <input type="email" required="">
+              <span class="form__symbol-error"></span>
             </div>
-            <div class="form__single">
+            <div class="form__single form__single--pass">
               <label>Password</label>
               <input type="password" required="">
+              <span class="form__symbol-pass"></span>
+              <span class="form__symbol-error"></span>
             </div>
           </div>
           <div class="links">

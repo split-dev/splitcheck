@@ -2,6 +2,8 @@ import Swiper from 'swiper/swiper-bundle';
 import Headroom from 'headroom.js';
 import 'select2';
 import 'bootstrap/js/dist/modal';
+import '@chenfengyuan/datepicker/dist/datepicker.min';
+
 export default {
   init() {
     //eslint-disable-next-line no-unused-vars
@@ -26,7 +28,37 @@ export default {
 
     $('.js-select-gender').select2({
       minimumResultsForSearch: Infinity,
+      dropdownParent: $('.form__single--select'),
     });
+
+    // * change visible password
+    {
+      const btnPass = document.querySelectorAll('.form__symbol-pass');
+      // const inputPass = document.querySelector('.form__single--pass input');
+
+      if (btnPass.length > 0) {
+        btnPass.forEach(element => {
+          element.addEventListener('click', function() {
+            element.classList.toggle('visible')
+            if (element.classList.contains('visible')) {
+              element.previousElementSibling.type = 'text';
+            } else {
+              element.previousElementSibling.type = 'password';
+            }
+          });
+        });
+      }
+
+
+
+    }
+
+    // * datepicker
+    {
+      $('[data-toggle="datepicker"]').datepicker({
+        zIndex: 9999,
+      });
+    }
 
     $(document).ready(function () {
       $('.video-play').click(function (e) {

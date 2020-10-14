@@ -69,7 +69,8 @@ h3 {
   @include med;
   font-size: 16px;
   position: relative;
-  &:focus {
+  &:focus,
+  &:active {
     background-color: #254277;
     color: #fff;
   }
@@ -95,6 +96,7 @@ h3 {
 
 .btn-blue-link {
   color: #35558f;
+  font-size: 16px;
   text-decoration: underline;
 
   @include roman();

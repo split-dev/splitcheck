@@ -1,5 +1,7 @@
 import Swiper from 'swiper/swiper-bundle';
 import Headroom from 'headroom.js';
+import 'select2';
+import 'bootstrap/js/dist/modal';
 export default {
   init() {
     //eslint-disable-next-line no-unused-vars
@@ -21,6 +23,10 @@ export default {
     function pauseVid() {
       vid.pause();
     }
+
+    $('.js-select-gender').select2({
+      minimumResultsForSearch: Infinity,
+    });
 
     $(document).ready(function () {
       $('.video-play').click(function (e) {

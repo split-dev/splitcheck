@@ -29,19 +29,21 @@
  * - page-specific components such as testimonials
  */
 // @import "components/buttons";
-@import "components/fonts";
+
 @import "common/header";
-@import "components/hero-slider";
-@import "components/answer";
 @import "common/global";
-@import "components/platform";
-@import "components/member";
-@import "components/social";
-@import "components/gifts";
 @import "common/footer";
 @import "common/mobile-menu";
 @import "common/ie-fixed";
 
+@import "components/fonts";
+@import "components/hero-slider";
+@import "components/answer";
+@import "components/platform";
+@import "components/member";
+@import "components/social";
+@import "components/gifts";
+@import "components/modal";
 /**
  * ==========
  * Layouts

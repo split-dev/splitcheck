@@ -92,3 +92,15 @@ h3 {
     left: -3px;
   }
 }
+
+.btn-blue-link {
+  color: #35558f;
+  text-decoration: underline;
+
+  @include roman();
+
+  &:hover {
+    color: #35558f;
+    text-decoration: none;
+  }
+}

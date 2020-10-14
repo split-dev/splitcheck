@@ -55,4 +55,15 @@
   font-display: swap;
 }
 
-
+@font-face {
+  font-family: "circle-font";
+  src: url("../fonts/circle-font.eot?26152021");
+  src:
+    url("../fonts/circle-font.eot?26152021#iefix") format("embedded-opentype"),
+    url("../fonts/circle-font.woff2?26152021") format("woff2"),
+    url("../fonts/circle-font.woff?26152021") format("woff"),
+    url("../fonts/circle-font.ttf?26152021") format("truetype"),
+    url("../fonts/circle-font.svg?26152021#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -5,11 +5,7 @@
 }
 
 body {
-  padding-top: 75px;
   overflow-x: hidden;
-  @media (max-width: 575px) {
-    padding-top: 50px;
-  }
 }
 
 tspan {

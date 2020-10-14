@@ -2,7 +2,11 @@
   filter: blur(15px);
 }
 .section-blur {
+  padding-top: 75px;
   transition: 0.3s;
+  @media (max-width: 575px) {
+    padding-top: 50px;
+  }
 }
 .mobile-menu {
   display: flex;

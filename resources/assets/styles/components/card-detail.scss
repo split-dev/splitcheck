@@ -10,6 +10,11 @@
     font-weight: 400;
 
     @include roman();
+
+    @media (max-width: 767px) {
+      margin-bottom: 25px;
+    }
+
   }
 
   .img-big {

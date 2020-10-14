@@ -198,7 +198,7 @@
       justify-content: center;
     }
     @media (max-width: 575px) {
-      max-width: 350px;
+      max-width: 330px;
     }
     &-top {
       width: 100%;
@@ -208,31 +208,22 @@
       margin-bottom: 64px;
       @media (max-width: 991px) {
         margin-bottom: 0;
+        margin-right: 7px;
       }
-      @media (max-width: 375px) {
+      @media (max-width: 575px) {
+        margin-bottom: 0;
         justify-content: flex-start;
+        margin-right: 14px;
       }
       .card-detail__small-img:last-child {
         margin-left: 40px;
         @media (max-width: 991px) {
-          margin-left: 11px;
-        }
-        @media (max-width: 375px) {
-          margin-left: 15px;
-        }
-        @media (max-width: 340px) {
           margin-left: 7px;
         }
       }
       .card-detail__small-img:first-child {
         margin-right: 40px;
         @media (max-width: 991px) {
-          margin-right: 11px;
-        }
-        @media (max-width: 375px) {
-          margin-right: 15px;
-        }
-        @media (max-width: 340px) {
           margin-right: 7px;
         }
       }
@@ -242,30 +233,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      @media (max-width: 375px) {
+      @media (max-width: 575px) {
         justify-content: flex-end;
       }
       .card-detail__small-img:last-child {
         margin-left: 40px;
         @media (max-width: 991px) {
-          margin-left: 11px;
-        }
-        @media (max-width: 375px) {
-          margin-left: 15px;
-        }
-        @media (max-width: 340px) {
           margin-left: 7px;
         }
       }
       .card-detail__small-img:first-child {
         margin-right: 40px;
         @media (max-width: 991px) {
-          margin-right: 11px;
-        }
-        @media (max-width: 375px) {
-          margin-right: 15px;
-        }
-        @media (max-width: 340px) {
           margin-right: 7px;
         }
       }
@@ -291,11 +270,11 @@
         max-width: 80px;
       }
       @media (max-width: 575px) {
-        max-width: 65px;
+        max-width: 70px;
       }
-      @media (max-width: 375px) {
-        max-width: 60px;
-      }
+      // @media (max-width: 375px) {
+      //   max-width: 60px;
+      // }
       img {
         transition: 0.4s;
         width: 100%;

@@ -55,6 +55,8 @@
     border: 1px solid #fff9f4;
     transition: 0.3s;
     margin-right: 35px;
+    // border: 1px solid #f97d00;
+    cursor: pointer;
     @media (max-width: 1199px) {
       margin-right: 10px;
     }
@@ -70,7 +72,8 @@
       transition: 0.3s;
       g {
         path {
-          fill: #0b0212;
+          // fill: #0b0212;
+          fill: #f97d00;
         }
       }
     }
@@ -85,17 +88,6 @@
       @media (max-width: 991px) {
         margin-top: 25px;
         margin-bottom: 15px;
-      }
-    }
-    &:hover {
-      border: 1px solid #f97d00;
-      cursor: pointer;
-      svg {
-        g {
-          path {
-            fill: #f97d00;
-          }
-        }
       }
     }
   }

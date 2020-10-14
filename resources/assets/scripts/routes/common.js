@@ -2,7 +2,7 @@ import Swiper from 'swiper/swiper-bundle';
 import Headroom from 'headroom.js';
 import 'select2';
 import 'bootstrap/js/dist/modal';
-// import '@chenfengyuan/datepicker/dist/datepicker.min';
+import '@chenfengyuan/datepicker/dist/datepicker.min';
 
 export default {
   init() {

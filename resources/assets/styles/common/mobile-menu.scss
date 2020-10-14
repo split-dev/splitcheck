@@ -4,8 +4,16 @@
 .section-blur {
   padding-top: 75px;
   transition: 0.3s;
+
+  &.promo-visible {
+    padding-top: 130px;
+  }
   @media (max-width: 575px) {
     padding-top: 50px;
+
+    &.promo-visible {
+      padding-top: 90px;
+    }
   }
 }
 .mobile-menu {

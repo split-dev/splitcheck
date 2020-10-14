@@ -54,22 +54,14 @@
       background-size: contain;
       margin-bottom: 30px;
     }
-
-    @media (max-width: 575px) {
-      right: 0;
-      top: -60px;
-    }
   }
-  &__img {
+  &__preview {
     position: relative;
     width: 100%;
     max-width: 330px;
     border-radius: 8px;
     height: 420px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    cursor: pointer;
     @media (max-width: 991px) {
       max-width: 290px;
     }
@@ -79,6 +71,27 @@
     }
     @media (max-width: 375px) {
       max-width: 100%;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M24.8 44.8c11.05 0 20-8.95 20-20s-8.95-20-20-20-20 8.95-20 20 8.95 20 20 20zm0 4.8C11.1 49.6 0 38.5 0 24.8 0 11.1 11.1 0 24.8 0c13.7 0 24.8 11.1 24.8 24.8 0 13.7-11.1 24.8-24.8 24.8zm11.57-22.406L18.77 37.29c-1.59.88-3.57-.26-3.57-2.1V14.4c0-1.85 1.99-2.98 3.57-2.1l17.6 10.696c1.64.92 1.64 3.288 0 4.198z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translate(-50%, -50%);
+      transition: 0.3s ease;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 0.6;
+      }
     }
   }
   &__bottom {
@@ -91,8 +104,8 @@
       padding-bottom: 20px;
     }
     @media (max-width: 575px) {
-      padding-top: 12px;
-      padding-bottom: 30px;
+      padding-top: 35px;
+      padding-bottom: 70px;
     }
   }
   .cards-line {
@@ -111,12 +124,19 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
     @media (max-width: 575px) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+      padding-top: 55px;
       padding-left: 0;
+      max-width: 260px;
+    }
+    h5 {
+      color: #0b0212;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: left;
+
+      @include bold();
     }
     p {
       max-width: 256px;
@@ -127,13 +147,6 @@
       line-height: 24px;
 
       @include roman();
-      @media (max-width: 1199px) {
-        // margin-top: -90px;
-      }
-      @media (max-width: 575px) {
-        max-width: 218px;
-        margin-top: 50px;
-      }
     }
   }
   &__info {

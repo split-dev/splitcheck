@@ -29,6 +29,14 @@ tspan {
     left: 15px;
   }
 }
+.section-blur {
+  &.promo-visible {
+    .promo {
+      display: flex;
+    }
+  }
+}
+
 h2 {
   @media (max-width: 575px) {
     font-size: 40px !important;

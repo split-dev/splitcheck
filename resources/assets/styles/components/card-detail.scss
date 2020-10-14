@@ -12,7 +12,7 @@
     @include roman();
 
     @media (max-width: 767px) {
-      margin-bottom: 25px;
+      margin-bottom: 0;
     }
   }
 

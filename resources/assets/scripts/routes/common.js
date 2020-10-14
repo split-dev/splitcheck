@@ -7,7 +7,7 @@ import '@chenfengyuan/datepicker/dist/datepicker.min';
 export default {
   init() {
     //eslint-disable-next-line no-unused-vars
-    var mySwiper = new Swiper('.swiper-container', {
+    let mySwiper = new Swiper('.page-hero__bg .swiper-container', {
       effect: 'fade',
       autoplay: {
         slidesPerView: 1,
@@ -17,7 +17,7 @@ export default {
       speed: 500,
     });
 
-    var vid = document.getElementById('videoBox');
+    let vid = document.getElementById('videoBox');
     function playVid() {
       vid.play();
     }
@@ -48,9 +48,6 @@ export default {
           });
         });
       }
-
-
-
     }
 
     // * datepicker
@@ -75,13 +72,11 @@ export default {
       });
     });
 
-
     mySwiper.on('slideChange', function () {
       let myId = mySwiper.activeIndex;
       $('.scrollbar li').removeClass('active');
       $('#' + myId).addClass('active');
     });
-
 
     $('.scrollbar li').click (function () {
       $('li').removeClass('active');
@@ -101,9 +96,23 @@ export default {
       $('body').css('overflow', 'visible');
     });
 
-    var myElement = document.querySelector('header');
+    let swiper = new Swiper('.card-detail .swiper-container', {
+      slidesPerView: 1,
+      cssMode: true,
+      loop: false,
+      mousewheel: true,
+      keyboard: true,
+    });
+
+    $('.card-detail__small-img').click (function () {
+      $(this).toggleClass('active');
+      let index = $(this).attr('data-id');
+      swiper.slideTo ( index );
+    });
+
+    let myElement = document.querySelector('header');
 // construct an instance of Headroom, passing the element
-    var headroom  = new Headroom(myElement);
+    let headroom  = new Headroom(myElement);
     // initialise
     headroom.init();
   },

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Swiper from 'swiper/swiper-bundle';
 import Headroom from 'headroom.js';
 import 'select2';
@@ -17,13 +18,15 @@ export default {
       speed: 500,
     });
 
-    let vid = document.getElementById('videoBox');
-    function playVid() {
-      vid.play();
+    // let vid = document.getElementById('videoBox');
+
+
+    function playVid(parent) {
+      parent.play();
     }
 
-    function pauseVid() {
-      vid.pause();
+    function pauseVid(parent) {
+      parent.pause();
     }
 
     $('.js-select-gender').select2({
@@ -57,19 +60,34 @@ export default {
       });
     }
 
-    $(document).ready(function () {
-      $('.video-play').click(function (e) {
+    $('.video-play').each(function() {
+      $(this).click(function (e) {
         $(this).removeClass('video-btn-none');
         e.preventDefault;
+        let videoElem = e.target.nextElementSibling;
         if ($(this).hasClass('pause')) {
-          pauseVid();
+          pauseVid(videoElem);
           $(this).toggleClass('pause');
         } else {
           $(this).addClass('video-btn-none');
-          playVid();
+          playVid(videoElem);
           $(this).toggleClass('pause');
         }
-      });
+      })
+    })
+
+    $('.modal').on('shown.bs.modal', function () {
+      $('.section-blur').addClass('filter');
+    })
+    $('.modal').on('hide.bs.modal', function(){
+      $('.section-blur').removeClass('filter');
+      for (let i = 0; i < $('video').length; i++) {
+        const element = $('video')[i];
+        if(element.previousElementSibling.classList.contains('video-btn-none')) {
+          element.previousElementSibling.classList.remove('video-btn-none', 'pause');
+        }
+        pauseVid(element);
+      }
     });
 
     mySwiper.on('slideChange', function () {

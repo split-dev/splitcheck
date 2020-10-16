@@ -5,10 +5,15 @@
   justify-content: space-between;
 
   .aside-left {
-    width: 17.545%;
+    width: 18.619%;
 
     .section-content {
       padding-right: 24px;
+
+      &:first-of-type,
+      &:last-of-type {
+        margin-bottom: 48px;
+      }
     }
   }
 
@@ -17,7 +22,7 @@
   }
 
   .aside-right {
-    width: 33.331%;
+    width: 32.257%;
   }
 }
 
@@ -34,6 +39,13 @@
     text-transform: uppercase;
     margin-bottom: 14px;
   }
+
+  // .section-content__btn
+
+  &__btn {
+    max-width: 100%;
+    font-size: 14px;
+  }
 }
 .personal-card {
   width: 100%;
@@ -45,6 +57,7 @@
   border-radius: 8px;
   background-color: #fff;
   overflow: hidden;
+  margin-bottom: 16px;
   // .personal-card__avatar
 
   &__avatar {
@@ -113,6 +126,7 @@
     width: 100%;
     padding: 13px 16px;
     border-top: 1px solid #e8ebf2;
+    text-align: center;
   }
 
   // .personal-card__link
@@ -125,7 +139,7 @@
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
-    text-align: left;
+    text-align: center;
   }
 
   // .personal-card__num
@@ -139,5 +153,50 @@
     letter-spacing: normal;
     line-height: normal;
     text-align: left;
+  }
+}
+
+.other-links {
+  // .other-links__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .other-links__item
+
+  &__item {
+    width: 100%;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // .other-links__link
+
+  &__link {
+    position: relative;
+    padding-left: 36px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    span {
+      color: #315293;
+      font-family: "Neue Haas Grotesk Display Pro";
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+    }
   }
 }

@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   {{> ../common/head }}
 </head>
+
 <body>
-{{> ../common/mobile-menu }}
+  {{> ../common/mobile-menu }}
   <div class="section-blur">
     {{> ../common/header-next }}
+    <div class="container">
+      <div class="main-content">
+        <aside class="aside-left">
+          <section class="section-content">
+            <span class="section-content__title">shop for</span>
+            <div class="personal-card">
+              <div class="personal-card__avatar personal-card__avatar--no-img">
+                <img src="" alt="">
+                <span class="personal-card__symbol">JS</span>
+              </div>
+              <p class="personal-card__name">John Smith</p>
+              <ul class="personal-card__list">
+                <li class="personal-card__item">
+                  <a href="#" class="personal-card__link">
+                    <span>John’s wishlist</span>
+                    <span class="personal-card__num">12</span>
+                  </a>
+                </li>
+                <li class="personal-card__item">
+                  <a href="#" class="personal-card__link">
+                    <span>View preferences</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <a href="#">Change persone to shop for</a>
+          </section>
+
+          <section class="section-content">
+            <span class="section-content__title">Other links</span>
+
+            <div class="other-links">
+              <ul class="other-links__list">
+                <li class="other-links__item">
+                  <a href="#" class="other-links__link">Spoil yourself</a>
+                </li>
+                <li class="other-links__item">
+                  <a href="#" class="other-links__link">My groups</a>
+                </li>
+                <li class="other-links__item">
+                  <a href="#" class="other-links__link">Shopping preferences</a>
+                </li>
+                <li class="other-links__item">
+                  <a href="#" class="other-links__link">Shared orders</a>
+                </li>
+                <li class="other-links__item">
+                  <a href="#" class="other-links__link">My family</a>
+                </li>
+                <li class="other-links__item">
+                  <a href="#" class="other-links__link">Alerts</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+        <main class="main">
+
+        </main>
+        <aside class="aside-right">
+
+        </aside>
+      </div>
+    </div>
 
     {{> ../common/footer }}
   </div>
   {{> ../common/modal }}
 </body>
+
 </html>

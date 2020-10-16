@@ -12,7 +12,8 @@ import './autoload/**/*'
 import Router from './util/Router';
 import common from './routes/common';
 import Detection from './util/Detection';
-import early from './routes/early'
+import home from './routes/home';
+import early from './routes/early';
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -23,6 +24,7 @@ window._detector.init();
 const routes = new Router({
   // All pages
   common,
+  'home': home,
   'early': early,
 });
 

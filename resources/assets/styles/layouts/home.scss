@@ -23,6 +23,10 @@
 
   .aside-right {
     width: 32.257%;
+
+    .section-content {
+      padding-left: 34px;
+    }
   }
 }
 
@@ -232,5 +236,121 @@
     &:before {
       content: url("images/icons/notification.svg");
     }
+  }
+  &.icon-plus {
+    &:before {
+      content: url("images/icons/plus.svg");
+    }
+  }
+}
+
+.card-goss {
+  width: 100%;
+
+  // .card-goss__slider
+
+  &__slider {
+    width: 100%;
+  }
+
+  // .card-goss__item
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #eef3fd;
+      opacity: 0.5;
+    }
+  }
+
+  // .card-goss__item--new
+
+  &__item--new {
+    border: 1px dashed #35558f;
+    &:hover {
+      border: 1px dashed #35558f;
+    }
+    &:after {
+      content: none;
+    }
+
+    .icon {
+      width: 14px;
+      height: 14px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // .card-goss__name
+
+  &__name {
+    display: inline-block;
+    width: 100%;
+    max-width: 120px;
+    color: #0b0212;
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    text-align: center;
+    opacity: 0.75;
+  }
+
+  // .card-goss__item--no-img
+
+  // &__item--no-img {
+  // }
+}
+
+.new-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 64px;
+  padding: 10px 35px;
+  border: 1px dashed #35558f;
+  border-radius: 8px;
+  &:hover {
+    border: 1px dashed #35558f;
+  }
+
+  span {
+    position: relative;
+    padding-left: 30px;
+    color: #35558f;
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+  }
+
+  .icon {
+    width: 14px;
+    height: 14px;
+    line-height: 22px;
   }
 }

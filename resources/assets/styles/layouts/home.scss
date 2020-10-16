@@ -182,12 +182,6 @@
     display: flex;
     align-items: center;
 
-    svg {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
     span {
       color: #315293;
       font-family: "Neue Haas Grotesk Display Pro";
@@ -197,6 +191,46 @@
       letter-spacing: normal;
       line-height: normal;
       text-align: left;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+
+  &.icon-gift {
+    &:before {
+      content: url("images/icons/gift.svg");
+    }
+  }
+  &.icon-group {
+    &:before {
+      content: url("images/icons/group.svg");
+    }
+  }
+  &.icon-setting {
+    &:before {
+      content: url("images/icons/setting.svg");
+    }
+  }
+
+  &.icon-coin-bank {
+    &:before {
+      content: url("images/icons/coin-bank.png");
+    }
+  }
+  &.icon-heart {
+    &:before {
+      content: url("images/icons/heart.svg");
+    }
+  }
+  &.icon-notification {
+    &:before {
+      content: url("images/icons/notification.svg");
     }
   }
 }

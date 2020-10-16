@@ -192,7 +192,7 @@ let webpackConfig = {
       // Popper: 'popper.js/dist/umd/popper.js',
     }),
     new webpack.LoaderOptionsPlugin({
-      minimize: config.enabled.optimize,
+      minimize: false, //config.enabled.optimize
       debug: config.enabled.watcher,
       stats: { colors: true },
       handlebarsLoader: {},

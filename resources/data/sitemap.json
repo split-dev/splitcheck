@@ -5,6 +5,17 @@
       "title": "Home Page",
       "description": "pending",
       "url": "/index.html"
+    },
+    {
+      "title": "Early birds",
+      "description": "Early birds",
+      "url": "/early-bird.html"
+    },
+    {
+      "title": "Dashboard",
+      "description": "Dashboard",
+      "url": "/dashboard.html"
     }
   ]
+
 }

@@ -19,6 +19,12 @@
 
   .main {
     width: 49.124%;
+
+    .section-content {
+      &:first-of-type {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   .aside-right {
@@ -242,6 +248,13 @@
       content: url("images/icons/plus.svg");
     }
   }
+  &.icon-more {
+    width: 6px;
+    height: 21px;
+    &:before {
+      content: url("images/icons/more.svg");
+    }
+  }
 }
 
 .card-goss {
@@ -331,6 +344,8 @@
   padding: 10px 35px;
   border: 1px dashed #35558f;
   border-radius: 8px;
+  margin-bottom: 33px;
+
   &:hover {
     border: 1px dashed #35558f;
   }
@@ -352,5 +367,172 @@
     width: 14px;
     height: 14px;
     line-height: 22px;
+  }
+}
+
+.timeline {
+  padding-left: 16px;
+
+  // .timeline__line
+
+  // &__line {
+  // }
+
+  // .timeline__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .timeline__item
+
+  // &__item {
+  // }
+
+  // .timeline__date
+
+  &__date {
+    display: inline-block;
+    color: #828282;
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  // .timeline__date--active
+
+  &__date--active {
+    color: #f97d00;
+  }
+
+  // .timeline__card
+
+  &__card {
+    margin-bottom: 24px;
+  }
+}
+
+.card-timeline {
+  position: relative;
+  padding: 16px;
+  padding-top: 12px;
+  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+
+  // .card-timeline__info
+
+  &__info {
+    color: #0b0212;
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.57px;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  // .card-timeline__info--main
+
+  &__info--main {
+    padding-right: 60px;
+    font-size: 16px;
+    margin-bottom: 32px;
+    p {
+      margin-bottom: 19px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // .card-timeline__title
+
+  &__title {
+    display: inline-block;
+    color: #335491;
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.86px;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  // .card-timeline__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  // .card-timeline__item
+
+  &__item {
+    margin-right: 8px;
+  }
+
+  // .card-timeline__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color: #99a9c9;
+      font-family: "Neue Haas Grotesk Display Pro";
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 18px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  // .card-timeline__link--contact
+
+  &__link--contact {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e8ebf2;
+  }
+
+  // .card-timeline__link--no-img
+
+  &__link--no-img {
+    img {
+      display: none;
+    }
+  }
+
+  // .card-timeline__btn-more
+
+  &__btn-more {
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+
+    .icon {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

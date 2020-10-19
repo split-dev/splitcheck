@@ -33,7 +33,8 @@ h3 {
     line-height: 44px !important;
   }
 }
-.btn-border {
+.btn-border,
+.btn-border-orange {
   transition: 0.3s;
   width: 100%;
   display: flex;
@@ -41,17 +42,35 @@ h3 {
   justify-content: center;
   max-width: 160px;
   height: 40px;
-  color: #35558f;
-  border: 1px solid #35558f !important;
   border-radius: 5px;
   @include med;
   font-size: 16px;
+}
+.btn-border {
+  color: #35558f;
+  border: 1px solid #35558f !important;
+
   &:focus {
     background-color: #254277;
     color: #fff !important;
   }
   &:hover {
     background: #35558f;
+    color: #fff !important;
+  }
+}
+.btn-border-orange {
+  color: #f97d00;
+  border: 1px solid #f97d00 !important;
+
+  &:focus,
+  &:hover {
+    background-color: rgba(249, 125, 0, 0.1);
+    color: #f97d00 !important;
+  }
+
+  &:active {
+    background-color: #f97d00;
     color: #fff !important;
   }
 }

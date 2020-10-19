@@ -562,7 +562,7 @@
       min-height: calc(100% - -1.5rem);
     }
     .modal-dialog {
-      transform: translate(0, -26px);
+      transform: translate(0, -26px) !important;
       max-width: 700px;
       margin: 1.75rem auto;
     }

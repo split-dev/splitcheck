@@ -204,9 +204,10 @@
   &__info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 40px;
     height: 100%;
     @media (max-width: 991px) {
+      margin-top: 0;
       margin-bottom: 30px;
       padding-top: 50px;
       padding-left: 0;
@@ -230,6 +231,7 @@
       line-height: 56px;
       @media (max-width: 1230px) {
         max-width: 400px;
+        margin-bottom: 17px;
       }
       @media (max-width: 991px) {
         max-width: 450px;
@@ -269,8 +271,12 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 32px;
+      @media (max-width: 1230px) {
+        margin-bottom: 10px;
+      }
       @media (max-width: 991px) {
         max-width: 590px;
+        margin-bottom: 20px;
       }
       @media (max-width: 575px) {
         font-size: 16px;

@@ -4,9 +4,10 @@
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: #fff9f4;
+  background-color: #fff;
   width: 100%;
   transition: 0.2s;
+  box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
   &.headroom--pinned {
     transform: translateY(0);
   }

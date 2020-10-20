@@ -236,11 +236,11 @@
       @media (max-width: 991px) {
         max-width: 450px;
         margin-bottom: 20px;
-        font-size: 44px;
+        font-size: 44px !important;
       }
       @media (max-width: 767px) {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 36px !important;
+        line-height: 40px !important;
       }
       span {
         color: #f78013;

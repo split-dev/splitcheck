@@ -27,9 +27,7 @@ export default {
     const leftAside = document.querySelector('.aside-left');
     const rightAside = document.querySelector('.aside-right');
     const scrollDiv = document.querySelector('.scroll-div');
-    leftAside.addEventListener('scroll', function() {
-      leftAside.style.top = '-35px';
-    })
+   
     function positionSt() {
       body.addEventListener('wheel', function(e) {
 

@@ -1,5 +1,3 @@
-
-
 .modal-block {
   h5 {
     margin-bottom: 24px;
@@ -56,6 +54,9 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    .span-bold {
+      @include med;
+    }
     &__link {
       margin-top: 35px;
       width: 100%;
@@ -104,7 +105,7 @@
         padding-bottom: 0;
       }
       li {
-        padding-bottom: 20px;
+        padding-bottom: 12px;
         padding-left: 12px;
         list-style: url("images/icons/oval-orange.svg");
         color: #0b0212;
@@ -208,7 +209,6 @@
         input:focus {
           border: 1px solid rgba(53, 85, 143, 0.5);
         }
-
 
         &.error {
           input {
@@ -343,15 +343,18 @@
         }
       }
 
-      .select2-container--default .select2-selection--single .select2-selection__rendered {
-        color: #0b0212;
-        line-height: 40px;
-      }
+      // .select2-container--default
+      //   .select2-selection--single
+      //   .select2-selection__rendered {
+      //   color: #0b0212;
+      //   line-height: 40px;
+      // }
 
-      .select2-container--default.select2-container--focus .select2-selection--multiple {
-        border: 0 !important;
-        outline: 0;
-      }
+      // .select2-container--default.select2-container--focus
+      //   .select2-selection--multiple {
+      //   border: 0 !important;
+      //   outline: 0;
+      // }
       .select2-container--default.select2-container--open {
         .select2-selection--single .select2-selection__arrow b {
           border-color: transparent transparent #99a9c9 transparent;
@@ -555,7 +558,7 @@
     .modal-content {
       padding: 55px 80px;
       @media (max-width: 767px) {
-        padding: 25px 30px;
+        padding: 50px 30px;
       }
     }
     .modal-dialog-centered {
@@ -594,7 +597,6 @@
     }
   }
 }
-
 
 .modal-backdrop {
   background-color: rgba(51, 84, 145, 0.15);

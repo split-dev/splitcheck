@@ -743,6 +743,7 @@
       margin-bottom: 40px;
 
       &__img {
+        flex: 0 0 220px;
         max-width: 220px;
         margin-bottom: 18px;
       }
@@ -844,6 +845,7 @@
     }
 
     .internal-card__info {
+      width: 55%;
       padding: 5px;
       padding-left: 5px;
       padding-right: 30px;
@@ -893,6 +895,7 @@
   // .internal-card__info
 
   &__info {
+    width: 100%;
     padding-left: 32px;
     display: flex;
     flex-direction: column;
@@ -910,6 +913,7 @@
 
   &__img {
     width: 100%;
+    flex: 0 0 120px;
     max-width: 120px;
 
     @include media-breakpoint-down(md) {

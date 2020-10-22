@@ -41,7 +41,6 @@
   font-display: swap;
 }
 
-
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
   src:
@@ -66,4 +65,33 @@
     url("../fonts/circle-font.svg?26152021#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+// normal fonts
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src:
+    url("../fonts/NeueHaasDisplay-Bold.eot"),
+    url("../fonts/NeueHaasDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/NeueHaasDisplay-Bold.woff") format("woff"),
+    url("../fonts/NeueHaasDisplay-Bold.ttf") format("truetype"),
+    url("../fonts/NeueHaasDisplay-Bold.svg#NeueHaasDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src:
+    url("../fonts/NeueHaasDisplay-Mediu.eot"),
+    url("../fonts/NeueHaasDisplay-Mediu.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NeueHaasDisplay-Mediu.woff2") format("woff2"),
+    url("../fonts/NeueHaasDisplay-Mediu.woff") format("woff"),
+    url("../fonts/NeueHaasDisplay-Mediu.ttf") format("truetype"),
+    url("../fonts/NeueHaasDisplay-Mediu.svg#NeueHaasDisplay-Mediu") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }

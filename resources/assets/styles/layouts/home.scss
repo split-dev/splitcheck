@@ -1,11 +1,22 @@
 .main-content {
   padding-top: 26px;
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  z-index: 1;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 230px;
+    flex-wrap: wrap;
+  }
 
   .aside-left {
     width: 18.619%;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
 
     .section-content {
       padding-right: 24px;
@@ -14,22 +25,64 @@
       &:last-of-type {
         margin-bottom: 48px;
       }
+
+      .btn-border {
+        background-color: transparent;
+
+        &:focus {
+          background-color: theme-color("blue3");
+        }
+        &:hover {
+          background-color: theme-color("blue2");
+        }
+      }
     }
   }
 
   .main {
     width: 49.124%;
 
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      order: 2;
+    }
+
     .section-content {
       margin-bottom: 30px;
+
+      @include media-breakpoint-down(md) {
+        &:first-of-type {
+          position: absolute;
+          top: 25px;
+          left: 0;
+          width: 100%;
+        }
+      }
+      &__title {
+        padding-left: 20px;
+
+        @include media-breakpoint-down(md) {
+          padding-left: 0;
+        }
+      }
     }
   }
 
   .aside-right {
     width: 32.257%;
+    margin-bottom: 48px;
 
     .section-content {
       padding-left: 34px;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      order: 1;
+
+      .section-content {
+        padding-left: 0;
+      }
     }
   }
 }
@@ -39,13 +92,23 @@
 
   &__title {
     position: relative;
-    display: inline-block;
-    color: #828282;
+    display: flex;
+    align-items: center;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.86px;
     text-transform: uppercase;
     margin-bottom: 14px;
+
+    color: theme-color("gray");
+
+    span {
+      margin-right: 4px;
+    }
+
+    .icon {
+      position: relative;
+    }
   }
 
   // .section-content__title--center
@@ -53,6 +116,13 @@
   &__title--center {
     width: 100%;
     text-align: center;
+    padding: 0 !important;
+    justify-content: center;
+
+    span {
+      margin-right: 0;
+    }
+
     &:before,
     &:after {
       content: "";
@@ -77,7 +147,7 @@
     }
 
     span {
-      background-color: #fff;
+      background-color: theme-color("white");
     }
   }
 
@@ -91,6 +161,10 @@
     align-items: center;
     height: 340px;
 
+    @include media-breakpoint-down(sm) {
+      height: auto;
+    }
+
     .main__card {
       &:first-of-type {
         width: calc(50% - 8px);
@@ -98,8 +172,22 @@
         order: -1;
         margin-right: auto;
 
+        @include media-breakpoint-down(sm) {
+          width: calc(100% - 70px);
+          order: 1;
+          margin: 0 auto 16px;
+        }
+
         .internal-card {
           margin-bottom: 12px;
+          &__img {
+            flex: 0 0 auto;
+
+            @include media-breakpoint-down(md) {
+              margin-bottom: 0;
+              max-width: 195px;
+            }
+          }
         }
       }
 
@@ -115,6 +203,7 @@
           padding: 0;
           &__img {
             position: relative;
+            flex: 0 0 auto;
             height: 100%;
 
             img {
@@ -132,6 +221,21 @@
           position: relative;
           margin-top: -40px;
           z-index: 1;
+        }
+      }
+
+      &:nth-of-type(2) {
+        @include media-breakpoint-down(sm) {
+          width: calc(100% - 70px);
+          order: 2;
+          margin: 0 auto 16px;
+        }
+      }
+      &:last-of-type {
+        @include media-breakpoint-down(sm) {
+          width: calc(100% - 70px);
+          order: 3;
+          margin: 0 auto;
         }
       }
 
@@ -166,6 +270,10 @@
   &__btn {
     max-width: 100%;
     font-size: 14px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 11px;
+    }
   }
 }
 
@@ -175,11 +283,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
   border-radius: 8px;
-  background-color: #fff;
   overflow: hidden;
   margin-bottom: 16px;
+
+  box-shadow: $shadow-card;
+  background-color: theme-color("white");
   // .personal-card__avatar
 
   &__avatar {
@@ -189,9 +298,10 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background-color: #e8ebf2;
     overflow: hidden;
     margin-bottom: 8px;
+
+    background-color: theme-color("light-gray");
 
     img {
       position: absolute;
@@ -216,21 +326,22 @@
   // .personal-card__symbol
 
   &__symbol {
-    color: #99a9c9;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
+    color: theme-color("light-blue");
   }
 
   // .personal-card__name
 
   &__name {
-    color: #0b0212;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
     text-align: center;
     margin-bottom: 12px;
+
+    color: theme-color("dark-blue");
   }
 
   // .personal-card__list
@@ -247,34 +358,28 @@
   &__item {
     width: 100%;
     padding: 13px 16px;
-    border-top: 1px solid #e8ebf2;
     text-align: center;
+
+    border-top: 1px solid theme-color("light-gray");
   }
 
   // .personal-card__link
 
   &__link {
-    color: #315293;
-    font-family: "Neue Haas Grotesk Display Pro";
     font-size: 14px;
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
     text-align: center;
+
+    color: theme-color("blue");
   }
 
   // .personal-card__num
 
   &__num {
-    color: #f97d00;
-    font-family: "Neue Haas Grotesk Display Pro";
     font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
     text-align: left;
+
+    color: theme-color("orange");
   }
 }
 
@@ -305,14 +410,9 @@
     align-items: center;
 
     span {
-      color: #315293;
-      font-family: "Neue Haas Grotesk Display Pro";
       font-size: 14px;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: normal;
-      line-height: normal;
-      text-align: left;
+
+      color: theme-color("blue");
     }
   }
 }
@@ -384,6 +484,20 @@
       content: url("images/icons/bell.svg");
     }
   }
+  &.icon-help {
+    width: 18px;
+    height: 18px;
+    &:before {
+      content: url("images/icons/help.svg");
+    }
+  }
+  &.icon-arrow {
+    width: 13px;
+    height: 19px;
+    &:before {
+      content: url("images/icons/arrow.svg");
+    }
+  }
 }
 
 .card-goss {
@@ -393,6 +507,11 @@
 
   &__slider {
     width: 100%;
+    padding: 0 20px;
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
   }
 
   // .card-goss__item
@@ -407,6 +526,16 @@
     border-radius: 8px;
     margin-bottom: 6px;
     overflow: hidden;
+
+    @include media-breakpoint-down(lg) {
+      width: 95px;
+      height: 95px;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 120px;
+      height: 120px;
+    }
 
     &:after {
       content: "";
@@ -423,9 +552,9 @@
   // .card-goss__item--new
 
   &__item--new {
-    border: 1px dashed #35558f;
+    border: 1px dashed theme-color("blue2");
     &:hover {
-      border: 1px dashed #35558f;
+      border: 1px dashed theme-color("blue2");
     }
     &:after {
       content: none;
@@ -446,15 +575,13 @@
     display: inline-block;
     width: 100%;
     max-width: 120px;
-    color: #0b0212;
-    font-family: "Neue Haas Grotesk Display Pro";
     font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
     letter-spacing: 0.5px;
     line-height: 18px;
     text-align: center;
     opacity: 0.75;
+
+    color: theme-color("dark-blue");
   }
 
   // .card-goss__item--no-img
@@ -467,11 +594,13 @@
   // .main__card
 
   &__card {
+    position: relative;
     padding: 12px;
-    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
-    background-color: #fff;
     overflow: hidden;
+
+    background-color: theme-color("white");
+    box-shadow: $shadow-card;
   }
 
   // .main__card--row
@@ -487,15 +616,29 @@
       padding: 0 !important;
       margin-bottom: 0;
 
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin-bottom: 32px;
+
+        &:last-of-type {
+          margin-bottom: 25px;
+        }
+      }
+
       &__img {
         position: relative;
         padding: 10px;
         border-radius: 8px;
-        background-color: #f8f9fb;
         height: 160px;
         max-width: 100%;
         overflow: hidden;
         margin-bottom: 10px;
+
+        background-color: theme-color("light-gray2");
+
+        @include media-breakpoint-down(sm) {
+          max-width: 160px;
+        }
 
         img {
           width: auto;
@@ -511,27 +654,26 @@
         padding: 0 !important;
         width: 100%;
         text-align: center;
+        min-height: 60px;
+
+        @include media-breakpoint-down(sm) {
+          max-width: 160px;
+        }
 
         p {
-          color: #335491;
-          font-family: "Neue Haas Grotesk Display Pro";
           font-size: 16px;
-          font-weight: 400;
-          font-style: normal;
-          letter-spacing: normal;
-          line-height: 16px;
-          margin-bottom: 8px;
+          line-height: 20px;
+          margin-bottom: 0;
+
+          color: theme-color("blue");
         }
 
         a {
-          color: #f97d00;
-          font-family: "Neue Haas Grotesk Display Pro";
           font-size: 14px;
-          font-weight: 400;
-          font-style: normal;
-          letter-spacing: normal;
           line-height: 14px;
           margin-top: auto;
+
+          color: theme-color("orange");
         }
       }
     }
@@ -541,26 +683,32 @@
 
   &__card--noshadow {
     box-shadow: none;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .internal-card__img {
-      max-width: 220px;
-      margin-bottom: 18px;
-    }
-
-    .internal-card__info {
-      padding-left: 0;
+    .internal-card {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 40px;
-      h2 {
-        color: #35558f;
-        font-family: "Neue Haas Grotesk Display Pro";
-        font-size: 24px;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: 24px;
+
+      &__img {
+        max-width: 220px;
+        margin-bottom: 18px;
+      }
+
+      &__info {
+        padding-left: 0;
+        margin-bottom: 0;
+        h2 {
+          font-size: 24px;
+          line-height: 24px;
+
+          color: theme-color("blue2");
+        }
       }
     }
 
@@ -579,13 +727,11 @@
   &__card-title {
     width: 100%;
     text-align: center;
-    color: #35558f;
-    font-family: "Neue Haas Grotesk Display Pro";
     font-size: 24px;
-    font-style: normal;
-    letter-spacing: normal;
     line-height: 32px;
     margin-bottom: 24px;
+
+    color: theme-color("blue2");
   }
 
   // .main__buttons
@@ -597,9 +743,28 @@
     align-items: center;
     justify-content: flex-end;
 
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
+      flex-direction: column;
+      margin-bottom: 12px;
+    }
+
     a {
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        max-width: 100%;
+      }
       &:first-of-type {
         margin-right: 12px;
+
+        @include media-breakpoint-down(sm) {
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
       }
     }
   }
@@ -611,45 +776,66 @@
   padding: 0 17px;
   margin-bottom: 40px;
 
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   // .internal-card--main
 
   &--main {
     display: flex;
     align-items: flex-start;
     margin-bottom: 32px;
-    background-color: #f8f9fb;
     padding: 20px;
+
+    background-color: theme-color("light-gray2");
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .internal-card__info {
       padding: 5px;
       padding-left: 5px;
+      padding-right: 30px;
+
+      @include media-breakpoint-down(md) {
+        order: 2;
+        padding-right: 5px;
+        max-width: 235px;
+      }
 
       h2 {
-        color: #35558f;
-        font-family: "Neue Haas Grotesk Display Pro";
         font-size: 24px;
-        font-style: normal;
-        letter-spacing: normal;
         line-height: 32px;
-        text-align: left;
         margin-bottom: 25px;
+
+        color: theme-color("blue2");
       }
       p {
-        color: #335491;
-        font-family: "Neue Haas Grotesk Display Pro";
         font-size: 16px;
         font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;
         line-height: 24px;
-        text-align: left;
+
+        color: theme-color("blue2");
       }
     }
 
     .internal-card__img {
       padding-left: 5px;
       width: 100%;
+      flex: 0 0 235px;
       max-width: 235px;
+
+      @include media-breakpoint-down(md) {
+        order: 1;
+        padding-left: 0;
+        flex: 0 0 244px;
+        max-width: 244px;
+        margin-bottom: 0;
+      }
 
       img {
         width: 100%;
@@ -663,6 +849,14 @@
     padding-left: 32px;
     display: flex;
     flex-direction: column;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
   }
 
   // .internal-card__img
@@ -670,6 +864,10 @@
   &__img {
     width: 100%;
     max-width: 120px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 25px;
+    }
 
     img {
       width: 100%;
@@ -681,43 +879,47 @@
   &__desc {
     margin-bottom: 16px;
 
+    @include media-breakpoint-down(md) {
+      max-width: 330px;
+      text-align: center;
+      margin: 0 auto 25px;
+    }
+
     h5 {
-      color: #0b0212;
-      font-family: "Neue Haas Grotesk Display Pro";
       font-size: 16px;
-      font-style: normal;
-      letter-spacing: normal;
-      line-height: 16px;
-      text-align: left;
-      margin-bottom: 12px;
+      line-height: 24px;
+      margin-bottom: 5px;
+
+      color: theme-color("dark-blue");
     }
 
     p {
-      color: #0b0212;
-      font-family: "Neue Haas Grotesk Display Pro";
       font-size: 14px;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: normal;
-      line-height: 14px;
-      text-align: left;
-      margin-bottom: 8px;
+      line-height: 20px;
+      margin-bottom: 2px;
+
+      color: theme-color("dark-blue");
     }
 
     a {
-      color: #2f5095;
-      font-family: "Neue Haas Grotesk Display Pro";
       font-size: 14px;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: normal;
       line-height: 14px;
       text-align: left;
+
+      color: theme-color("blue");
     }
   }
 
-  .btn-border {
+  .btn-border,
+  .btn-border-orange {
     margin-top: auto;
+
+    @include media-breakpoint-down(md) {
+      margin: 0 auto;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -729,25 +931,21 @@
   width: 100%;
   height: 64px;
   padding: 10px 35px;
-  border: 1px dashed #35558f;
+  border: 1px dashed theme-color("blue2");
   border-radius: 8px;
   margin-bottom: 33px;
 
   &:hover {
-    border: 1px dashed #35558f;
+    border: 1px dashed theme-color("blue2");
   }
 
   span {
     position: relative;
     padding-left: 30px;
-    color: #35558f;
-    font-family: "Neue Haas Grotesk Display Pro";
     font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
     text-align: left;
+
+    color: theme-color("blue2");
   }
 
   .icon {
@@ -769,7 +967,8 @@
     left: 0;
     width: 4px;
     height: calc(100% - 25px);
-    background-color: #e8ebf2;
+
+    background-color: theme-color("light-gray");
   }
 
   // .timeline__list
@@ -789,15 +988,11 @@
   &__date {
     position: relative;
     display: inline-block;
-    color: #828282;
-    font-family: "Neue Haas Grotesk Display Pro";
+    padding-left: 17px;
     font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    text-align: left;
     margin-bottom: 8px;
+
+    color: theme-color("gray");
 
     &:before {
       content: "";
@@ -807,17 +1002,18 @@
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background-color: #e8ebf2;
+
+      background-color: theme-color("light-gray");
     }
   }
 
   // .timeline__date--active
 
   &__date--active {
-    color: #f97d00;
+    color: theme-color("orange");
 
     &:before {
-      background-color: #f97d00;
+      background-color: theme-color("orange");
     }
   }
 
@@ -829,14 +1025,15 @@
 }
 
 .card-timeline {
-  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
   border-radius: 8px;
-  background-color: #fff;
   overflow: hidden;
 
-  // .card-timeline--notification
+  box-shadow: $shadow-card;
+  background-color: theme-color("white");
 
-  &--notification {
+  // .card-timeline--visible-notification
+
+  &--visible-notification {
     .card-timeline__notification {
       display: block;
     }
@@ -850,13 +1047,27 @@
     width: 100%;
     height: 32px;
     padding: 0 19px;
-    background-color: #feecd9;
+
+    background-color: theme-color("light-gray3");
 
     .icon {
       left: 19px;
       top: 50%;
       transform: translateY(-50%);
     }
+  }
+
+  // .card-timeline__header
+
+  &__header {
+    padding-right: 40px;
+    margin-bottom: 32px;
+  }
+
+  // .card-timeline__body
+
+  &__body {
+    margin-bottom: 20px;
   }
 
   // .card-timeline__inner
@@ -867,25 +1078,42 @@
     padding-top: 12px;
   }
 
+  // .card-timeline__img
+
+  &__img {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    max-height: 180px;
+    min-height: 180px;
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   // .card-timeline__info
 
   &__info {
-    color: #0b0212;
-    font-family: "Neue Haas Grotesk Display Pro";
     font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
     letter-spacing: 0.57px;
     line-height: 22px;
     text-align: left;
+
+    color: theme-color("dark-blue");
   }
 
   // .card-timeline__info--main
 
   &__info--main {
-    padding-right: 60px;
     font-size: 16px;
-    margin-bottom: 32px;
+
     p {
       margin-bottom: 19px;
       &:last-of-type {
@@ -898,16 +1126,17 @@
 
   &__title {
     display: inline-block;
-    color: #335491;
-    font-family: "Neue Haas Grotesk Display Pro";
     font-size: 12px;
-    font-weight: 400;
-    font-style: normal;
     letter-spacing: 0.86px;
-    line-height: normal;
-    text-align: left;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    color: theme-color("blue2");
+
+    .bold {
+      text-transform: capitalize;
+      color: theme-color("dark-blue");
+    }
   }
 
   // .card-timeline__list
@@ -932,15 +1161,12 @@
     justify-content: center;
 
     span {
-      color: #99a9c9;
-      font-family: "Neue Haas Grotesk Display Pro";
       font-size: 18px;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: normal;
       line-height: 18px;
       text-align: center;
       text-transform: uppercase;
+
+      color: theme-color("light-blue");
     }
   }
 
@@ -951,7 +1177,8 @@
     height: 56px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #e8ebf2;
+
+    background-color: theme-color("light-gray");
   }
 
   // .card-timeline__link--no-img

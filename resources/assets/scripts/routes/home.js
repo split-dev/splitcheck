@@ -5,9 +5,16 @@ export default {
   init() {
 
     const option = {
-      slidesPerView: 4,
-      simulateTouch: false,
-      mousewheel: true,
+      slidesPerView: 'auto',
+      setWrapperSize: true,
+      breakpoints: {
+        767: {
+          slidesPerView: 4,
+          simulateTouch: false,
+          mousewheel: true,
+          // freeMode: true,
+        },
+      },
     }
     let mySwiper = new Swiper('.card-goss__slider.swiper-container', option);
 

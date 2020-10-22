@@ -7,7 +7,8 @@
 
 <body class="home">
   {{> ../common/mobile-menu }}
-  <div class="section-blur">
+  {{> ../common/mobile-menu-bottom }}
+  <div class="section-blur theme-background-one">
     {{> ../common/header-next }}
     <div class="container">
       <div class="main-content">
@@ -85,7 +86,10 @@
         </aside>
         <main class="main">
           <section class="section-content">
-            <span class="section-content__title">What’s the goss?</span>
+            <span class="section-content__title">
+              <span>What’s the goss?</span>
+              <i class="icon icon-help"></i>
+            </span>
             <i></i>
             <div class="card-goss">
               <div class="card-goss__slider swiper-container">
@@ -190,7 +194,10 @@
             </div>
           </section>
           <section class="section-content">
-            <span class="section-content__title">What’s the goss? </span>
+            <span class="section-content__title">
+              <span>What’s the goss?</span>
+              <i class="icon icon-help"></i>
+            </span>
 
             <div class="section-content__tiles">
               <div class="main__card">
@@ -262,7 +269,6 @@
               </div>
             </div>
           </section>
-
           <section class="section-content">
             <div class="main__card main__card--row">
               <h2 class="main__card-title">Split your checkout with:</h2>
@@ -294,19 +300,25 @@
                   <a href="#" class="btn-link-orange">Learn More</a>
                 </div>
               </div>
+
+              <!-- btn-more -->
+              <a href="#" class="card-timeline__btn-more">
+                <i class="icon icon-more"></i>
+              </a>
             </div>
           </section>
-
           <section class="section-content">
             <span class="section-content__title section-content__title--center">
               <span>My goss</span>
             </span>
             <div class="main__card main__card--noshadow">
-              <figure class="internal-card__img">
-                <img src="images/home/buffer.svg" alt="card-img">
-              </figure>
-              <div class="internal-card__info">
-                <h2>No goss in your feed</h2>
+              <div class="internal-card">
+                <figure class="internal-card__img">
+                  <img src="images/home/buffer.svg" alt="card-img">
+                </figure>
+                <div class="internal-card__info">
+                  <h2>No goss in your feed</h2>
+                </div>
               </div>
               <div class="main__buttons">
                 <a href="#" class="btn-border">Create a goss</a>
@@ -331,80 +343,111 @@
               <ul class="timeline__list">
                 <li class="timeline__item">
                   <span class="timeline__date timeline__date--active">2:30 pm today</span>
-                  <div class="timeline__card card-timeline">
+                  <article class="timeline__card card-timeline">
+                    <!-- notification -->
                     <div class="card-timeline__notification">
                       <i class="icon icon-bell"></i>
                     </div>
+                    <!-- card-inner -->
                     <div class="card-timeline__inner">
-                      <div class="card-timeline__info card-timeline__info--main">
-                        <p>Lunch with friends in lorem ipsum dolor sit amet or something</p>
-                        <p>Budget: <span>$45 per person</span></p>
+                      <!-- card-header -->
+                      <div class="card-timeline__header">
+                        <div class="card-timeline__info card-timeline__info--main">
+                          <p>Lunch with friends in lorem ipsum dolor sit amet or something</p>
+                          <p>Budget: <span class="bold">$45 per person</span></p>
+                        </div>
                       </div>
-                      <span class="card-timeline__title">Who is coming?</span>
-                      <ul class="card-timeline__list">
-                        <li class="card-timeline__item">
-                          <a href="#"
-                            class="card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
-                            <img src="" alt="avatar">
-                            <span>JS</span>
-                          </a>
-                        </li>
-                      </ul>
-                      <span class="card-timeline__title">Location</span>
-                      <div class="card-timeline__info">
-                        <p>4 Bellbird Cres, Coomera, QLD, 4209</p>
+                      <!-- card-body -->
+                      <div class="card-timeline__body">
+                        <span class="card-timeline__title">Who is coming?</span>
+                        <ul class="card-timeline__list">
+                          <li class="card-timeline__item">
+                            <a href="#"
+                              class="card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                              <img src="" alt="avatar">
+                              <span>JS</span>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
+                      <!-- card-bottom -->
+                      <div class="card-timeline__bottom">
+                        <span class="card-timeline__title">Location</span>
+                        <div class="card-timeline__info">
+                          <p>4 Bellbird Cres, Coomera, QLD, 4209</p>
+                        </div>
+                      </div>
+
+                      <!-- btn-more -->
                       <a href="#" class="card-timeline__btn-more">
                         <i class="icon icon-more"></i>
                       </a>
                     </div>
-                  </div>
+                  </article>
                 </li>
                 <li class="timeline__item">
                   <span class="timeline__date">10:00 am Friday</span>
-                  <div class="timeline__card card-timeline">
+                  <article class="timeline__card card-timeline">
+                    <!-- notification -->
                     <div class="card-timeline__notification">
                       <i class="icon icon-bell"></i>
                     </div>
+                    <!-- card-inner -->
                     <div class="card-timeline__inner">
-                      <div class="card-timeline__info card-timeline__info--main">
-                        <p>Lunch with friends in lorem ipsum dolor sit amet or something</p>
-                        <p>Budget: <span>$45 per person</span></p>
+                      <!-- card-header -->
+                      <div class="card-timeline__header">
+                        <div class="card-timeline__info card-timeline__info--main">
+                          <p>Lunch with friends in lorem ipsum dolor sit amet or something</p>
+                          <p>Budget: <span class="bold">$45 per person</span></p>
+                        </div>
                       </div>
+                      <!-- btn-more -->
                       <a href="#" class="card-timeline__btn-more">
                         <i class="icon icon-more"></i>
                       </a>
                     </div>
-                  </div>
+                  </article>
                 </li>
                 <li class="timeline__item">
                   <span class="timeline__date">14:30 pm Friday</span>
-                  <div class="timeline__card card-timeline card-timeline--notification">
+                  <article class="timeline__card card-timeline card-timeline--visible-notification">
+                    <!-- notification -->
                     <div class="card-timeline__notification">
                       <i class="icon icon-bell"></i>
                     </div>
+                    <!-- card-inner -->
                     <div class="card-timeline__inner">
-                      <span class="card-timeline__title">Added by:</span>
-                      <div class="card-timeline__info card-timeline__info--main">
-                        <p>Product name lorem ipsum dolor sit amet or something</p>
-                        <p>Budget: <span>$45 per person</span></p>
-                      </div>
-                      <div class="card-timeline__content">
-                        <div class="img">
-                          <img src="images/product/1.jpg" alt="product">
+                      <!-- card-header -->
+                      <div class="card-timeline__header">
+                        <span class="card-timeline__title">
+                          <span>Added by:</span>
+                          <span class="bold">You</span>
+                        </span>
+                        <div class="card-timeline__info card-timeline__info--main">
+                          <p>Product name lorem ipsum dolor sit amet or something</p>
+                          <p>Budget: <span class="bold">$45 per person</span></p>
                         </div>
                       </div>
+                      <!-- card-body -->
+                      <div class="card-timeline__body">
+                        <figure class="card-timeline__img">
+                          <img src="images/product/1.jpg" alt="product">
+                        </figure>
+                      </div>
+                      <!-- card-bottom -->
                       <div class="card-timeline__bottom">
                         <span class="card-timeline__title">Comment</span>
                         <div class="card-timeline__info">
                           <p>I plan to buy it for my mum</p>
                         </div>
                       </div>
+
+                      <!-- btn-more -->
                       <a href="#" class="card-timeline__btn-more">
                         <i class="icon icon-more"></i>
                       </a>
                     </div>
-                  </div>
+                  </article>
                 </li>
               </ul>
 

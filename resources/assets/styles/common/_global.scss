@@ -5,6 +5,8 @@
 }
 
 body {
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
   overflow-x: hidden;
 }
 
@@ -29,6 +31,7 @@ tspan {
     left: 15px;
   }
 }
+
 .section-blur {
   &.promo-visible {
     .promo {
@@ -37,10 +40,28 @@ tspan {
   }
 }
 
+.theme-background-one {
+  position: relative;
+  background-color: #fffcf9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/patern/theme-background-one.png");
+    background-size: auto;
+    background-repeat: repeat;
+    opacity: 0.5;
+  }
+}
+
 h2 {
   @media (max-width: 575px) {
-    font-size: 40px !important;
-    line-height: 36px !important;
+    font-size: 40px;
+    line-height: 36px;
   }
 }
 h3,

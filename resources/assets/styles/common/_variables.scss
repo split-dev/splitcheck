@@ -1,18 +1,27 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
+//* fonts-family
+$font-family-base: "Neue Haas Grotesk Display Pro", sans-serif;
+$font-family-custom: "Noteworthy - Bold", sans-serif;
+
+$font-weight-normal: normal !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: bold !default;
+
 // Colours
 $colour-blue: #2980b9;
 
 // Box shadows
-$shadow-1: 0 1px 3px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
-$shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.05);
-$shadow-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.05);
-$shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-$shadow-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+$shadow-card: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+// $shadow-1: 0 1px 3px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+// $shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.05);
+// $shadow-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.05);
+// $shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+// $shadow-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 
 // Animation timings
-$animation-elastic: cubic-bezier(0.63, 0.62, 0.48, 1.3);
+// $animation-elastic: cubic-bezier(0.63, 0.62, 0.48, 1.3);
 
 /** Customise Bootstrap variables here */
 // Refer to https://bit.ly/2uIqqvR
@@ -21,8 +30,28 @@ $animation-elastic: cubic-bezier(0.63, 0.62, 0.48, 1.3);
 // Example of customising primary bootstrap brand colours
 $theme-colors: (
   primary: $colour-blue,
-  secondary: darken($colour-blue, 15%)
+  "white": #fff,
+  "black": #000,
+  "light-gray": #e8ebf2,
+  "light-gray2": #f8f9fb,
+  "light-gray3": #feecd9,
+  "gray": #828282,
+  "blue": #315293,
+  "blue2": #35558f,
+  "blue3": #254277,
+  "light-blue": #99a9c9,
+  "dark-blue": #0b0212,
+  "orange": #f97d00,
 );
+// then in code: theme-color("$this-color")
+// then in code rgb: rgba(theme-color("$this-color"), 0.95);
+
+//* Transitions
+$transition-slow: 0.5s ease-in-out;
+$transition-fast: 0.3s ease-in-out;
+$transition-veryfast: 0.1s ease-in-out;
+
+//* Grid
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,

@@ -851,6 +851,7 @@
       padding-right: 30px;
 
       @include media-breakpoint-down(md) {
+        width: 100%;
         order: 2;
         padding-right: 5px;
         max-width: 235px;

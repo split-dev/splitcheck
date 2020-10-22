@@ -16,6 +16,12 @@
       "description": "Home",
       "url": "/home.html"
     }
+    ,
+    {
+      "title": "Home-filled",
+      "description": "Home-filled",
+      "url": "/home-filled.html"
+    }
   ]
 
 }

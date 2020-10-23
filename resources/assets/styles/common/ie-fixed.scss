@@ -1,9 +1,10 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .modal-body {
     flex-direction: column;
-  }
-  .modal-info {
-    max-width: 600px;
+    p,
+    ul {
+      max-width: 600px;
+    }
   }
   .page-hero .swiper-container {
     margin-right: auto !important;

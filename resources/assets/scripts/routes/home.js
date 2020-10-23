@@ -26,8 +26,8 @@ export default {
 
     const leftAside = document.querySelector('.aside-left');
     const rightAside = document.querySelector('.aside-right');
-    const scrollDiv = document.querySelector('.scroll-div');
-   
+    const scrollDiv = document.querySelectorAll('.scroll-div');
+
     function positionSt() {
       body.addEventListener('wheel', function(e) {
 
@@ -66,17 +66,23 @@ export default {
 
     function heightWhat() {
       let newHeightDiv = 0
-      newHeightDiv = (screen.height - header.clientHeight - 290);
-      console.log(newHeightDiv)
-      scrollDiv.style.height = newHeightDiv + 'px';
+      newHeightDiv = (window.innerHeight - header.clientHeight - 20);
+      console.log(window.innerHeight, header.clientHeight);
+      if (scrollDiv.length) {
+        for (let i = 0; i < scrollDiv.length; i++) {
+          const el = scrollDiv[i];
+          SimpleScrollbar.initEl(el);
+
+          if (el.offsetParent.classList.contains('aside-right')) {
+            el.style.height = (newHeightDiv - 65) + 'px';
+          } else {
+            el.style.height = newHeightDiv + 'px';
+          }
+        }
+      }
     }
 
-    if (scrollDiv) {
-      SimpleScrollbar.initEl(scrollDiv);
-
-      heightWhat();
-    }
-
+    heightWhat();
     positionSt();
     window.addEventListener('resize', function() {
       positionSt();

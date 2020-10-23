@@ -35,7 +35,10 @@
       }
 
       .btn-border {
+        height: 32px;
         background-color: transparent;
+
+        font-family: $font-family-base;
 
         &:focus {
           background-color: theme-color("blue3");
@@ -90,6 +93,16 @@
       .btn-border {
         max-width: 100%;
         height: 32px;
+        background-color: transparent;
+
+        font-family: $font-family-base;
+
+        &:focus {
+          background-color: theme-color("blue3");
+        }
+        &:hover {
+          background-color: theme-color("blue2");
+        }
       }
     }
 
@@ -1226,7 +1239,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 
-    color: theme-color("blue2");
+    color: theme-color("gray");
 
     .bold {
       text-transform: capitalize;

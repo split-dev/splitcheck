@@ -124,6 +124,9 @@
       padding-left: 23px;
       padding-right: 35px;
       width: calc(100% + 18px);
+      @media (max-width: 767px) {
+        padding-right: 32px;
+      }
     }
 
     .ss-scroll {
@@ -699,7 +702,7 @@
         position: relative;
         padding: 10px;
         border-radius: 8px;
-        height: 160px;
+        min-height: 160px;
         max-width: 100%;
         overflow: hidden;
         margin-bottom: 15px;

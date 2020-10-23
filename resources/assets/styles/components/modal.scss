@@ -19,6 +19,28 @@
     }
   }
 }
+.modal-more {
+  width: 160px;
+  height: 150px;
+  box-shadow: 1px 1px 4px 1px rgba(11, 2, 18, 0.08);
+  background-color: #fff;
+  li {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    transition: 0.3s;
+    height: 32px;
+    &:hover {
+      cursor: pointer;
+      background-color: #f8f9fb;
+    }
+  }
+  a {
+    color: #0b0212;
+    @include roman;
+    font-size: 16px;
+  }
+}
 .modal-content {
   padding: 25px 30px;
   box-shadow: 0 15px 50px 30px rgba(11, 2, 18, 0.08);
@@ -74,6 +96,12 @@
         border-radius: 5px;
         color: #fff;
         background-color: #f8800f;
+        border: 1px solid #f8800f;
+        transition: 0.3s;
+        &:hover {
+          color: #f8800f;
+          background-color: #fff;
+        }
       }
       @media (max-width: 767px) {
         margin-top: 0;
@@ -83,7 +111,7 @@
       color: #0b0212;
       @include roman;
       font-size: 16px;
-      letter-spacing: normal;
+      letter-spacing: 0.4px;
       line-height: 24px;
       padding-bottom: 24px;
       &:nth-child(2),
@@ -540,7 +568,13 @@
     }
   }
 }
-
+@media (max-width: 767px) {
+  .wishlist {
+    .modal-title {
+      padding-top: 20px;
+    }
+  }
+}
 @media (min-width: 768px) {
   .modal-register {
     .modal-dialog {
@@ -557,9 +591,6 @@
   .wishlist {
     .modal-content {
       padding: 55px 80px;
-      @media (max-width: 767px) {
-        padding: 50px 30px;
-      }
     }
     .modal-dialog-centered {
       min-height: calc(100% - -1.5rem);

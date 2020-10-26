@@ -11,6 +11,50 @@
     flex-wrap: wrap;
   }
 
+  .scroll-div {
+    margin-left: -10px;
+    margin-right: -10px;
+    .ss-content {
+      padding: 0 10px;
+    }
+  }
+
+  .ss-container {
+    &:hover,
+    &:active {
+      &:after {
+        display: block;
+      }
+
+      .ss-scroll {
+        opacity: 1;
+      }
+    }
+
+    // &:after {
+    //   content: "";
+    //   display: none;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 7px;
+    //   width: 4px;
+    //   height: 100%;
+    //   background-color: #e8ebf2;
+    // }
+
+    .ss-wrapper {
+      .ss-content {
+        overflow-y: scroll;
+      }
+    }
+    .ss-scroll {
+      background: #afbbd4;
+      width: 4px;
+      border-radius: 0;
+      margin-left: 8px;
+    }
+  }
+
   .aside-left,
   .aside-right {
     transition: top 0.3s;
@@ -20,6 +64,7 @@
     width: 18.619%;
     position: sticky;
     position: -webkit-sticky;
+    padding-right: 27px;
     top: 90px;
 
     @include media-breakpoint-down(md) {
@@ -27,7 +72,8 @@
     }
 
     .section-content {
-      padding-right: 24px;
+      padding-right: 0;
+      max-width: 186px;
 
       &:first-of-type,
       &:last-of-type {
@@ -84,9 +130,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 90px;
-
     margin-bottom: 48px;
-
     .section-content {
       padding-left: 34px;
 
@@ -106,6 +150,10 @@
       }
     }
 
+    .timeline {
+      max-width: 336px;
+    }
+
     @include media-breakpoint-down(md) {
       position: relative;
       top: 0;
@@ -122,22 +170,22 @@
     width: 120px;
   }
 
-  .scroll-div {
-    margin-bottom: 20px;
-  }
+  // .scroll-div {
+  //   margin-bottom: 20px;
+  // }
 
   .ss-container {
-    margin-left: -25px;
+    // margin-left: -25px;
 
-    .ss-wrapper {
-      width: calc(100% + 18px);
-    }
+    // .ss-wrapper {
+    //   width: calc(100% + 18px);
+    // }
 
-    .ss-content {
-      padding-left: 23px;
-      padding-right: 35px;
-      width: calc(100% + 18px);
-    }
+    // .ss-content {
+    //   padding-left: 23px;
+    //   padding-right: 35px;
+    //   width: calc(100% + 18px);
+    // }
 
     .ss-scroll {
       background: #afbbd4;

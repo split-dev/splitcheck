@@ -67,16 +67,20 @@ export default {
     function heightWhat() {
       let newHeightDiv = 0
       newHeightDiv = (window.innerHeight - header.clientHeight - 20);
-      console.log(window.innerHeight, header.clientHeight);
       if (scrollDiv.length) {
         for (let i = 0; i < scrollDiv.length; i++) {
           const el = scrollDiv[i];
           SimpleScrollbar.initEl(el);
-
-          if (el.offsetParent.classList.contains('aside-right')) {
-            el.style.height = (newHeightDiv - 65) + 'px';
-          } else {
-            el.style.height = newHeightDiv + 'px';
+          if (el.offsetParent) {
+            if (el.offsetParent.classList.contains('aside-right')) {
+              if (window.matchMedia('(max-width: 991px)').matches) {
+                el.style.height = '';
+              } else {
+                el.style.height = (newHeightDiv - 65) + 'px';
+              }
+            } else {
+              el.style.height = newHeightDiv + 'px';
+            }
           }
         }
       }

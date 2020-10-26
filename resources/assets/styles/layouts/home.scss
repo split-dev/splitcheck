@@ -75,6 +75,10 @@
       padding-right: 0;
       max-width: 186px;
 
+      @include media-breakpoint-down(lg) {
+        max-width: 146px;
+      }
+
       &:first-of-type,
       &:last-of-type {
         margin-bottom: 48px;
@@ -150,8 +154,18 @@
       }
     }
 
+    .scroll-div .section-content__title,
+    .scroll-div .new-item,
     .timeline {
       max-width: 336px;
+
+      @include media-breakpoint-down(lg) {
+        max-width: 266px;
+      }
+
+      @include media-breakpoint-down(md) {
+        max-width: calc(100% - 18px);
+      }
     }
 
     @include media-breakpoint-down(md) {
@@ -722,6 +736,17 @@
 }
 
 .main {
+  @include media-breakpoint-down(sm) {
+    .section-content:nth-of-type(2),
+    .section-content:nth-of-type(4),
+    .section-content:nth-of-type(5),
+    .section-content:nth-of-type(6) {
+      .main__card {
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+    }
+  }
   // .main__card
 
   &__card {

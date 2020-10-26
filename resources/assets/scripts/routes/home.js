@@ -7,26 +7,31 @@ export default {
 
     const body = document.querySelector('body');
     const header = document.querySelector('.header');
+    const leftAside = document.querySelector('.aside-left');
+    const rightAside = document.querySelector('.aside-right');
+    const scrollDiv = document.querySelectorAll('.scroll-div');
 
     const option = {
       slidesPerView: 'auto',
       spaceBetween: 12,
       setWrapperSize: true,
+      navigation: {
+        nextEl: '.card-goss .swiper-button-next',
+        prevEl: '.card-goss .swiper-button-prev',
+      },
       breakpoints: {
         767: {
           slidesPerView: 4,
-          mousewheel: true,
           setWrapperSize: false,
           simulateTouch: false,
+          preventInteractionOnTransition: true,
+          mousewheel: true,
           // freeMode: true,
         },
       },
     }
-    let mySwiper = new Swiper('.card-goss__slider.swiper-container', option);
 
-    const leftAside = document.querySelector('.aside-left');
-    const rightAside = document.querySelector('.aside-right');
-    const scrollDiv = document.querySelector('.scroll-div');
+    let mySwiper = new Swiper('.card-goss__slider.swiper-container', option);
 
     function positionSt() {
       body.addEventListener('wheel', function(e) {
@@ -66,17 +71,27 @@ export default {
 
     function heightWhat() {
       let newHeightDiv = 0
-      newHeightDiv = (screen.height - header.clientHeight - 290);
-      console.log(newHeightDiv)
-      scrollDiv.style.height = newHeightDiv + 'px';
+      newHeightDiv = (window.innerHeight - header.clientHeight - 20);
+      if (scrollDiv.length) {
+        for (let i = 0; i < scrollDiv.length; i++) {
+          const el = scrollDiv[i];
+          SimpleScrollbar.initEl(el);
+          if (el.offsetParent) {
+            if (el.offsetParent.classList.contains('aside-right')) {
+              if (window.matchMedia('(max-width: 991px)').matches) {
+                el.style.height = '';
+              } else {
+                el.style.height = (newHeightDiv - 65) + 'px';
+              }
+            } else {
+              el.style.height = newHeightDiv + 'px';
+            }
+          }
+        }
+      }
     }
 
-    if (scrollDiv) {
-      SimpleScrollbar.initEl(scrollDiv);
-
-      heightWhat();
-    }
-
+    heightWhat();
     positionSt();
     window.addEventListener('resize', function() {
       positionSt();

@@ -7,7 +7,8 @@
 body {
   font-family: $font-family-base;
   font-weight: $font-weight-normal;
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 tspan {
@@ -80,6 +81,11 @@ h4 {
     line-height: 32px !important;
   }
 }
+.figure-bg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 button {
   background: none;
   border: none;
@@ -92,4 +98,7 @@ button {
     text-decoration: none;
     outline: none;
   }
+}
+.modal-backdrop {
+  pointer-events: none;
 }

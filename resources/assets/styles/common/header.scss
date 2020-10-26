@@ -258,9 +258,17 @@
 
   &__button {
     position: absolute;
+    width: 40px;
+    height: 100%;
     top: 50%;
-    right: 10px;
+    right: 0;
     transform: translateY(-50%);
+
+    .icon {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -280,6 +288,8 @@
   // .head-links__item
 
   &__item {
+    display: flex;
+    align-items: center;
     margin-right: 30px;
     @include media-breakpoint-down(md) {
       margin-right: 15px;
@@ -294,9 +304,18 @@
 
   // .head-links__link
 
-  // &__link {
+  &__link {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
 
-  // }
+    .icon {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .user-avatar,

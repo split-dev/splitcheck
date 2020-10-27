@@ -121,10 +121,14 @@ export default {
             }
         }
       } else {
+
         btnOptionsWrap.forEach(element => {
           element.classList.remove('options--open');
+          const thisBackDrop = element.querySelector('.option-backDrop');
+          if (thisBackDrop) {
+            element.parentNode.lastElementChild.removeChild(thisBackDrop)
+          }
         });
-        e.target.remove();
       }
     })
 

@@ -97,6 +97,37 @@ export default {
       positionSt();
       heightWhat()
     }, false);
+
+    let btnOptionsWrap = document.querySelectorAll('.options');
+    let btnOptions = document.querySelectorAll('.options__btn');
+
+    body.addEventListener('click', e => {
+      e.preventDefault();
+
+      if (e.target.offsetParent) {
+        const targetoffset = e.target.offsetParent;
+        const {type} = e.target.offsetParent.firstElementChild.dataset;
+
+        if (type === 'options') {
+          if (!targetoffset.classList.contains('options--open')) {
+              const blockBackDrop = document.createElement('div');
+              blockBackDrop.classList.add('option-backDrop');
+
+              targetoffset.classList.add('options--open');
+              targetoffset.appendChild(blockBackDrop);
+            } else {
+              targetoffset.classList.remove('options--open')
+              targetoffset.querySelector('.option-backDrop').remove();
+            }
+        }
+      } else {
+        btnOptionsWrap.forEach(element => {
+          element.classList.remove('options--open');
+        });
+        e.target.remove();
+      }
+    })
+
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

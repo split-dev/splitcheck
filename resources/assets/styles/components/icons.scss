@@ -258,6 +258,41 @@
       content: url("images/icons/angry.svg");
     }
   }
+  &.icon-like-big {
+    width: 20px;
+    height: 20px;
+    &:before {
+      content: url("images/icons/like-big.svg");
+    }
+  }
+  &.icon-heart-l-big {
+    width: 20px;
+    height: 20px;
+    &:before {
+      content: url("images/icons/heart-icon-big.svg");
+    }
+  }
+  &.icon-happy-big {
+    width: 20px;
+    height: 20px;
+    &:before {
+      content: url("images/icons/happy-big.svg");
+    }
+  }
+  &.icon-surprised-big {
+    width: 20px;
+    height: 20px;
+    &:before {
+      content: url("images/icons/surprised-big.svg");
+    }
+  }
+  &.icon-angry-big {
+    width: 20px;
+    height: 20px;
+    &:before {
+      content: url("images/icons/angry-big.svg");
+    }
+  }
   &.icon-like-blue {
     width: 22px;
     height: 20px;

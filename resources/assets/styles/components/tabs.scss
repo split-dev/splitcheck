@@ -194,6 +194,9 @@
     }
     .check {
       background-color: #fff !important;
+      label {
+        left: 3px;
+      }
     }
     .slideThree {
       margin-right: 12px;
@@ -222,9 +225,6 @@
       }
       input[type="checkbox"] {
         visibility: hidden;
-        &:checked + label {
-          left: 3px;
-        }
       }
     }
   }

@@ -8,7 +8,7 @@
 <body class="home settings">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
-    <div class="section-blur theme-background-one">
+    <div class="section-blur theme-background-one" id="background">
         {{> ../common/header-next }}
         {{!-- <div class="tabs-global">
             <div class="container">
@@ -559,15 +559,18 @@
                                     <div class="account-preferences__bg">
                                         <span class="blue-span">Select background</span>
                                         <div class="account-preferences__line">
-                                            <div class="account-preferences__card">
+                                            <div class="account-preferences__card" id="maze"
+                                                onclick="changeColor('maze')">
                                                 <img src="images/settings/bg-1.png" alt="#">
                                                 <span>maze</span>
                                             </div>
-                                            <div class="account-preferences__card">
+                                            <div class="account-preferences__card" id="points"
+                                                onclick="changeColor('points')">
                                                 <img src="images/settings/bg-2.png" alt="#">
                                                 <span>points</span>
                                             </div>
-                                            <div class="account-preferences__card">
+                                            <div class="account-preferences__card" id="grainy"
+                                                onclick="changeColor('grainy')">
                                                 <div class="account-preferences__bg-3"></div>
                                                 <span>grainy</span>
                                             </div>

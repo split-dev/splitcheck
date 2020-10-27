@@ -1,6 +1,16 @@
 
 export default {
   init() {
+
+      //background change
+    //   let bgEl = getElementById('background');
+
+    function changeColor(colorValue) {
+        document.bgEl.style.background = document.getElementById(colorValue).dataset.color;
+    }
+    console.log(changeColor);
+
+    //check input
       $('.nav-item').click(function() {
           $('.nav-item').removeClass('active-item');
           $(this).toggleClass('active-item');

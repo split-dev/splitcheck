@@ -32,8 +32,8 @@
 
   &__symbol {
     color: #fff;
-    font-size: 25px;
-    line-height: 25.2px;
+    font-size: 18px;
+    line-height: 18px;
     text-transform: uppercase;
     z-index: 1;
   }
@@ -68,11 +68,12 @@
   // .head-info__name
 
   &__name {
-    color: #0b0212;
+    color: #335491;
     font-size: 18px;
     letter-spacing: 0.64px;
     line-height: 18px;
     text-align: left;
+    text-transform: uppercase;
     margin-bottom: 6px;
   }
 

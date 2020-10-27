@@ -9,6 +9,10 @@
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
 }
 
 .modal.left .modal-content,
@@ -23,6 +27,10 @@
     height: 88px;
 
     box-shadow: $shadow-card;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 16px;
+    }
   }
 
   .modal-body {
@@ -51,6 +59,10 @@
   -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
   -o-transition: opacity 0.3s linear, left 0.3s ease-out;
   transition: opacity 0.3s linear, left 0.3s ease-out;
+
+  @include media-breakpoint-down(md) {
+    left: -100%;
+  }
 }
 
 .modal.left.fade.show .modal-dialog {
@@ -64,6 +76,10 @@
   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
   -o-transition: opacity 0.3s linear, right 0.3s ease-out;
   transition: opacity 0.3s linear, right 0.3s ease-out;
+
+  @include media-breakpoint-down(md) {
+    right: -100%;
+  }
 }
 
 .modal.right.fade.show .modal-dialog {

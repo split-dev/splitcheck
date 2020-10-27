@@ -5,7 +5,6 @@
 @import "utilities/position";
 
 /** Import theme styles */
-@import "reset";
 @import "mixins";
 @import "type";
 
@@ -49,6 +48,7 @@
 @import "components/gifts";
 @import "components/card-detail";
 @import "components/modal";
+@import "components/tabs";
 /**
  * ==========
  * Layouts

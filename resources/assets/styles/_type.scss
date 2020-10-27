@@ -148,3 +148,11 @@ input[type="search"]::-webkit-search-results-decoration {
 .bold {
   font-weight: $font-weight-bold;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}

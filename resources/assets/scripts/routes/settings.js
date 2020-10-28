@@ -18,6 +18,15 @@ export default {
       $('.slideThree').click(function() {
           $(this).toggleClass('check');
       });
+
+      //password hide
+      $('.show').click( function () {
+        if ($(this).prev().attr('type') === 'password') {
+          $(this).prev().attr('type', 'text');
+        } else {
+          $(this).prev().attr('type', 'password');
+        }
+      });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

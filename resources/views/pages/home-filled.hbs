@@ -11,18 +11,19 @@
   <div class="section-blur theme-background-one">
     {{> ../common/header-next }}
     <div class="container">
-      <div class="main-content">
+      <div class="main-content position-relative d-flex align-items-start justify-content-between">
         <aside class="aside-left">
           <div class="scroll-div">
             <section class="section-content">
-              <span class="section-content__title">shop for</span>
-              <div class="personal-card">
-                <div class="personal-card__avatar personal-card__avatar--no-img">
+              <span class="section-content__title position-relative d-flex align-items-center">shop for</span>
+              <div class="personal-card d-flex align-items-center flex-column overflow-hidden">
+                <div
+                  class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
                   <img src="" alt="">
                   <span class="personal-card__symbol">JS</span>
                 </div>
                 <p class="personal-card__name">John Smith</p>
-                <ul class="personal-card__list">
+                <ul class="personal-card__list d-flex align-items-center flex-column list-unstyled mb-0">
                   <li class="personal-card__item">
                     <a href="#" class="personal-card__link">
                       <span>John’s wishlist</span>
@@ -41,61 +42,61 @@
             </section>
 
             <section class="section-content">
-              <span class="section-content__title">Other links</span>
+              <span class="section-content__title position-relative d-flex align-items-center">Other links</span>
 
               <div class="other-links">
-                <ul class="other-links__list">
+                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
                   <li class="other-links__item">
-                    <a href="#" class="other-links__link">
+                    <a href="#" class="other-links__link position-relative">
                       <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
                       <i class="icon icon-gift active"></i>
                       <span>Spoil yourself</span>
                     </a>
                   </li>
                   <li class="other-links__item">
-                    <a href="#" class="other-links__link">
+                    <a href="#" class="other-links__link position-relative">
                       <!-- add class "active" what would the icon change -->
                       <i class="icon icon-social-media"></i>
                       <span>Open public goss</span>
                     </a>
                   </li>
                   <li class="other-links__item">
-                    <a href="#" class="other-links__link">
+                    <a href="#" class="other-links__link position-relative d-flex align-items-center">
                       <!-- add class "active" what would the icon change -->
                       <i class="icon icon-discount"></i>
                       <span>Snatch a bargain</span>
                     </a>
                   </li>
                   <li class="other-links__item">
-                    <a href="#" class="other-links__link">
+                    <a href="#" class="other-links__link position-relative d-flex align-items-center">
                       <!-- add class "active" what would the icon change -->
                       <i class="icon icon-mail"></i>
                       <span>Shared orders</span>
                     </a>
                   </li>
                   <li class="other-links__item">
-                    <a href="#" class="other-links__link">
+                    <a href="#" class="other-links__link position-relative d-flex align-items-center">
                       <!-- add class "active" what would the icon change -->
                       <i class="icon icon-group"></i>
                       <span>My groups</span>
                     </a>
                   </li>
                   <li class="other-links__item">
-                    <a href="#" class="other-links__link">
+                    <a href="#" class="other-links__link position-relative d-flex align-items-center">
                       <!-- add class "active" what would the icon change -->
                       <i class="icon icon-heart"></i>
                       <span>My family</span>
                     </a>
                   </li>
                   <li class="other-links__item">
-                    <a href="#" class="other-links__link">
+                    <a href="#" class="other-links__link position-relative d-flex align-items-center">
                       <i class="icon icon-notification"></i>
                       <!-- add class "active" what would the icon change -->
                       <span>Alerts</span>
                     </a>
                   </li>
                   <li class="other-links__item">
-                    <a href="#" class="other-links__link">
+                    <a href="#" class="other-links__link position-relative d-flex align-items-center">
                       <i class="icon icon-setting"></i>
                       <!-- add class "active" what would the icon change -->
                       <span>Shopping preferences</span>
@@ -109,40 +110,46 @@
 
         <main class="main">
           <section class="section-content">
-            <span class="section-content__title">
+            <a href="#" data-toggle="modal" data-target="#goss"
+              class="section-content__title position-relative d-flex align-items-center">
               <span>What’s the goss?</span>
               <i class="icon icon-help"></i>
-            </span>
+            </a>
             <i></i>
-            <div class="card-goss">
+            <div class="card-goss position-relative">
               <div class="card-goss__slider swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <a href="#" class="card-goss__item card-goss__item--new">
+                    <a href="#"
+                      class="card-goss__item card-goss__item--new position-relative d-flex align-items-center justify-content-center overflow-hidden">
                       <i class="icon icon-plus"></i>
                     </a>
                     <span class="card-goss__name">#Create</span>
                   </div>
                   <div class="swiper-slide">
-                    <a href="#" class="card-goss__item">
+                    <a href="#"
+                      class="card-goss__item position-relative d-flex align-items-center justify-content-center overflow-hidden">
                       <figure class="card-goss__img" style="background-image: url('images/goss/img1.png');"></figure>
                     </a>
                     <span class="card-goss__name">#Funny</span>
                   </div>
                   <div class="swiper-slide">
-                    <a href="#" class="card-goss__item">
+                    <a href="#"
+                      class="card-goss__item position-relative d-flex align-items-center justify-content-center overflow-hidden">
                       <figure class="card-goss__img" style="background-image: url('images/goss/img2.png');"></figure>
                     </a>
                     <span class="card-goss__name">#Stories</span>
                   </div>
                   <div class="swiper-slide">
-                    <a href="#" class="card-goss__item">
-                      <figure class="card-goss__img" style="background-image: url('images/goss/img3.png');"></figure>
+                    <a href="#"
+                      class="card-goss__item position-relative d-flex align-items-center justify-content-center overflow-hidden">
+                      <figure class="card-goss__img" style="background-image: url('images/goss/img2.png');"></figure>
                     </a>
                     <span class="card-goss__name">#Sales</span>
                   </div>
                   <div class="swiper-slide">
-                    <a href="#" class="card-goss__item">
+                    <a href="#"
+                      class="card-goss__item position-relative d-flex align-items-center justify-content-center overflow-hidden">
                       <figure class="card-goss__img" style="background-image: url('images/goss/img2.png');"></figure>
                     </a>
                     <span class="card-goss__name">#Sales</span>
@@ -155,7 +162,7 @@
           </section>
 
           <section class="section-content">
-            <div class="main__card">
+            <div class="main__card position-relative">
               <div class="internal-card internal-card--feed">
                 <div class="internal-card__header">
                   <a href="#" class="internal-card__profile">
@@ -181,16 +188,27 @@
                   </p>
                 </div>
 
-                <!-- btn-more -->
-                <a href="#" class="internal-card__btn-more">
-                  <i class="icon icon-more"></i>
-                </a>
+                <!-- option  add class: - options--open -->
+                <div class="options">
+                  <button type="button" class="options__btn" data-type="options">
+                    <i class="icon icon-more"></i>
+                  </button>
+
+                  <div class="options__dropdown">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#">Share</a></li>
+                      <li><a href="#">Not gift worthy</a></li>
+                      <li><a href="#">About the store</a></li>
+                      <li><a href="#">Report abuse</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
           <section class="section-content">
-            <div class="main__card">
+            <div class="main__card position-relative">
               <div class="internal-card internal-card--feed">
                 <div class="internal-card__header">
                   <a href="#" class="internal-card__profile">
@@ -297,16 +315,27 @@
                   </div>
                 </div>
 
-                <!-- btn-more -->
-                <a href="#" class="internal-card__btn-more">
-                  <i class="icon icon-more"></i>
-                </a>
+                <!-- option  add class: - options--open -->
+                <div class="options">
+                  <button type="button" class="options__btn" data-type="options">
+                    <i class="icon icon-more"></i>
+                  </button>
+
+                  <div class="options__dropdown">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#">Share</a></li>
+                      <li><a href="#">Not gift worthy</a></li>
+                      <li><a href="#">About the store</a></li>
+                      <li><a href="#">Report abuse</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
           <section class="section-content">
-            <div class="main__card">
+            <div class="main__card position-relative">
               <div class="internal-card internal-card--feed">
                 <div class="internal-card__header">
                   <a href="#" class="internal-card__profile">
@@ -373,16 +402,27 @@
                   </div>
                 </div>
 
-                <!-- btn-more -->
-                <a href="#" class="internal-card__btn-more">
-                  <i class="icon icon-more"></i>
-                </a>
+                <!-- option  add class: - options--open -->
+                <div class="options">
+                  <button type="button" class="options__btn" data-type="options">
+                    <i class="icon icon-more"></i>
+                  </button>
+
+                  <div class="options__dropdown">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#">Share</a></li>
+                      <li><a href="#">Not gift worthy</a></li>
+                      <li><a href="#">About the store</a></li>
+                      <li><a href="#">Report abuse</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
           <section class="section-content">
-            <div class="main__card">
+            <div class="main__card position-relative">
               <div class="internal-card internal-card--feed">
                 <div class="internal-card__header">
                   <a href="#" class="internal-card__profile">
@@ -447,10 +487,21 @@
                   </div>
                 </div>
 
-                <!-- btn-more -->
-                <a href="#" class="internal-card__btn-more">
-                  <i class="icon icon-more"></i>
-                </a>
+                <!-- option  add class: - options--open -->
+                <div class="options">
+                  <button type="button" class="options__btn" data-type="options">
+                    <i class="icon icon-more"></i>
+                  </button>
+
+                  <div class="options__dropdown">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#">Share</a></li>
+                      <li><a href="#">Not gift worthy</a></li>
+                      <li><a href="#">About the store</a></li>
+                      <li><a href="#">Report abuse</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -460,17 +511,18 @@
 
           <section class="section-content">
             <div class="scroll-div">
-              <span class="section-content__title">My timeline</span>
-              <a href="#" class="new-item">
-                <span>
+              <span class="section-content__title position-relative d-flex align-items-center">My timeline</span>
+              <a href="#" data-toggle="modal" data-target="#add-timeline"
+                class="new-item position-relative d-flex align-items-center justify-content-start">
+                <span class="position-relative">
                   <i class="icon icon-plus"></i>
                   Add to a timeline
                 </span>
               </a>
 
-              <div class="timeline">
+              <div class="timeline position-relative">
                 <div class="timeline__line"></div>
-                <ul class="timeline__list">
+                <ul class="timeline__list d-flex flex-column list-unstyled mb-0">
                   <li class="timeline__item">
                     <span class="timeline__date timeline__date--active">2:30 pm today</span>
                     <article
@@ -492,7 +544,7 @@
                         <!-- card-body -->
                         <div class="card-timeline__body">
                           <span class="card-timeline__title">Who is coming?</span>
-                          <ul class="card-timeline__list">
+                          <ul class="card-timeline__list list-unstyled mb-0">
                             <li class="card-timeline__item">
                               <a href="#"
                                 class="card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
@@ -535,17 +587,20 @@
                           </div>
                         </div>
 
-                        <!-- btn-more -->
-                        <a data-toggle="modal" data-target="#more2" href="#" class="card-timeline__btn-more">
-                          <i class="icon icon-more"></i>
-                        </a>
-                        <div class=" modal-more" id="more2" tabindex="-1" role="dialog">
-                          <ul>
-                            <li><a href="#">Share</a></li>
-                            <li><a href="#">Not gift worthy</a></li>
-                            <li><a href="#">About the store</a></li>
-                            <li><a href="#">Report abuse</a></li>
-                          </ul>
+                        <!-- option  add class: - options--open -->
+                        <div class="options">
+                          <button type="button" class="options__btn" data-type="options">
+                            <i class="icon icon-more"></i>
+                          </button>
+
+                          <div class="options__dropdown">
+                            <ul class="list-unstyled mb-0">
+                              <li><a href="#">Share</a></li>
+                              <li><a href="#">Not gift worthy</a></li>
+                              <li><a href="#">About the store</a></li>
+                              <li><a href="#">Report abuse</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </article>
@@ -567,17 +622,20 @@
                             <p>Budget: <span class="bold">$45 per person</span></p>
                           </div>
                         </div>
-                        <!-- btn-more -->
-                        <a href="#" data-toggle="modal" data-target="#more3" class="card-timeline__btn-more">
-                          <i class="icon icon-more"></i>
-                        </a>
-                        <div class=" modal-more" id="more3" tabindex="-1" role="dialog">
-                          <ul>
-                            <li><a href="#">Share</a></li>
-                            <li><a href="#">Not gift worthy</a></li>
-                            <li><a href="#">About the store</a></li>
-                            <li><a href="#">Report abuse</a></li>
-                          </ul>
+                        <!-- option  add class: - options--open -->
+                        <div class="options">
+                          <button type="button" class="options__btn" data-type="options">
+                            <i class="icon icon-more"></i>
+                          </button>
+
+                          <div class="options__dropdown">
+                            <ul class="list-unstyled mb-0">
+                              <li><a href="#">Share</a></li>
+                              <li><a href="#">Not gift worthy</a></li>
+                              <li><a href="#">About the store</a></li>
+                              <li><a href="#">Report abuse</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </article>
@@ -605,7 +663,7 @@
                         </div>
                         <!-- card-body -->
                         <div class="card-timeline__body">
-                          <figure class="card-timeline__img">
+                          <figure class="card-timeline__img mb-0">
                             <img src="images/product/1.jpg" alt="product">
                           </figure>
                         </div>
@@ -617,17 +675,20 @@
                           </div>
                         </div>
 
-                        <!-- btn-more -->
-                        <a href="#" data-toggle="modal" data-target="#more4" class="card-timeline__btn-more">
-                          <i class="icon icon-more"></i>
-                        </a>
-                        <div class=" modal-more" id="more4" tabindex="-1" role="dialog">
-                          <ul>
-                            <li><a href="#">Share</a></li>
-                            <li><a href="#">Not gift worthy</a></li>
-                            <li><a href="#">About the store</a></li>
-                            <li><a href="#">Report abuse</a></li>
-                          </ul>
+                        <!-- option  add class: - options--open -->
+                        <div class="options">
+                          <button type="button" class="options__btn" data-type="options">
+                            <i class="icon icon-more"></i>
+                          </button>
+
+                          <div class="options__dropdown">
+                            <ul class="list-unstyled mb-0">
+                              <li><a href="#">Share</a></li>
+                              <li><a href="#">Not gift worthy</a></li>
+                              <li><a href="#">About the store</a></li>
+                              <li><a href="#">Report abuse</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </article>

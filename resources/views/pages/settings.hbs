@@ -347,7 +347,7 @@
                                     <span class="blue-span">Primary phone</span>
                                     <p>Add a phone number to be used to verify your account, orders and security alerts
                                     </p>
-                                    <input placeholder="+38 066 0209 333" minlength="12" type="tel" maxlength="13">
+                                    <input id="phone" placeholder="+38 066 0209 333" type="tel">
 
                                 </div>
                                 <div class="account-preferences__block">
@@ -408,6 +408,55 @@
                                         </div>
                                         <button class="btn-blue">Change password</button>
                                     </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane active show fade" id="visibility" role="tabpanel">
+                            <div class="account-preferences">
+
+                                <div class="account-preferences__block">
+                                    <h5>Visibility of your profile & network</h5>
+                                    <p>Make your profile and contact info only visible to those you choose</p>
+                                </div>
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">Account visibility</span>
+                                    <p>When your account is private, only you can see it</p>
+                                    <div class="account-preferences__check">
+                                        <strong>Private</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>Public</strong>
+                                    </div>
+                                </div>
+
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">Who can see your profile</span>
+                                    <p>If public option is set, everyone will be able to see your profile. If follower,
+                                        then any logged-in member whom you follow or follows you will see your profile,
+                                        this includes your connections, friends and family. If set to Connections, then
+                                        followers will be denied. If JustFriends, then connections and followers will be
+                                        rejected.
+                                    </p>
+                                    <select name="#" id="#">
+                                        <option value="1">Public</option>
+                                        <option value="2">Private</option>
+                                    </select>
+                                </div>
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">Show profile on search engines</span>
+                                    <p>If enabled, your public profile will appear on search engines</p>
+                                    <div class="account-preferences__check">
+                                        <strong>Disabled</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>Enabled</strong>
+                                    </div>
 
                                 </div>
                             </div>

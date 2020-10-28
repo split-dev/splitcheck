@@ -1,4 +1,4 @@
-
+import 'jquery-mask-plugin'
 export default {
   init() {
 
@@ -27,6 +27,10 @@ export default {
           $(this).prev().attr('type', 'password');
         }
       });
+
+      //mask phone
+      
+      $('#phone').mask('+38 00 0000 000');
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

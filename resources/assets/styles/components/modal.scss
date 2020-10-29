@@ -87,58 +87,59 @@
   }
 
   // modal REGISTER
-  &.modal-register {
-    .form {
-      .select2-container--default.select2-container--open {
-        .select2-selection--single .select2-selection__arrow b {
-          border-color: transparent transparent #99a9c9 transparent;
-        }
-      }
+  // &.modal-register {
+  //   .form {
 
-      .select2-container.select2-container--default.select2-container--below.select2-container--open.select2-container--focus {
-        .select2-selection--single {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
-      }
+  //     .select2-container--default.select2-container--open {
+  //       .select2-selection--single .select2-selection__arrow b {
+  //         border-color: transparent transparent #99a9c9 transparent;
+  //       }
+  //     }
 
-      .select2-container--default {
-        .select2-results__option {
-          padding: 8px 16px;
-        }
-      }
+  //     .select2-container.select2-container--default.select2-container--below.select2-container--open.select2-container--focus {
+  //       .select2-selection--single {
+  //         border-bottom-left-radius: 0;
+  //         border-bottom-right-radius: 0;
+  //       }
+  //     }
 
-      .select2-container {
-        width: 100% !important;
-        z-index: 1;
-        .select2-selection--single {
-          height: 40px;
-          border-radius: 5px;
-          background-color: #f8f9fb;
-          border: 0;
-          border: none !important;
-          outline: none;
-          padding: 0 16px;
+  //     .select2-container--default {
+  //       .select2-results__option {
+  //         padding: 8px 16px;
+  //       }
+  //     }
 
-          .select2-selection__arrow {
-            height: 37px;
-            right: 6px;
-            b {
-              border-color: #99a9c9 transparent transparent transparent;
-            }
-          }
-        }
-        .select2-selection__rendered {
-          padding: 0 !important;
-          color: #0b0212;
-          line-height: 40px;
-        }
-        .select2-search--inline .select2-search__field {
-          margin-top: 0;
-        }
-      }
-    }
-  }
+  //     .select2-container {
+  //       width: 100% !important;
+  //       z-index: 1;
+  //       .select2-selection--single {
+  //         height: 40px;
+  //         border-radius: 5px;
+  //         background-color: #f8f9fb;
+  //         border: 0;
+  //         border: none !important;
+  //         outline: none;
+  //         padding: 0 16px;
+
+  //         .select2-selection__arrow {
+  //           height: 37px;
+  //           right: 6px;
+  //           b {
+  //             border-color: #99a9c9 transparent transparent transparent;
+  //           }
+  //         }
+  //       }
+  //       .select2-selection__rendered {
+  //         padding: 0 !important;
+  //         color: #0b0212;
+  //         line-height: 40px;
+  //       }
+  //       .select2-search--inline .select2-search__field {
+  //         margin-top: 0;
+  //       }
+  //     }
+  //   }
+  // }
 
   // modal LOGIN
   &.modal-login {

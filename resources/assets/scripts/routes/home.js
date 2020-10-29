@@ -132,18 +132,25 @@ export default {
       })
     }
 
+    // * Select template in modal
     {
-
-
       $('select[data-toggle="select"]').select2({
         minimumResultsForSearch: Infinity,
         templateResult: function (state) {
           if (!state.id) {
             return state.text;
           }
-          var baseUrl = 'images/flags';
-          var $state = $('<span>' + state.text + '</span>');
-          console.log(baseUrl, $state)
+          var baseUrl = 'images/profiles';
+          var $state = $(`
+            <div class="profile-list">
+              <figure class="profile-list__avatar">
+                <img src="${baseUrl}/${state.element.value.toLowerCase()}.png" alt="avatar">
+                <span class="profile-list__symbol"></span>
+              </figure>
+              <span>${state.text}</span>
+            </div>
+          `);
+
           return $state;
         },
         // dropdownParent: $('.form__single--select-user'),

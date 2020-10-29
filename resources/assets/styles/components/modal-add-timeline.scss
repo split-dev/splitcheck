@@ -97,14 +97,20 @@
     height: 100%;
     &__inputs {
       overflow-y: auto;
+      padding-right: 77px;
       height: 100%;
+
+      @include media-breakpoint-down(md) {
+        padding-right: 0;
+      }
     }
 
     &__single {
-      max-width: 335px;
+      width: 100%;
+      max-width: calc(50% - 7.5px);
       margin-bottom: 24px;
 
-      @include media-breakpoint-down(md) {
+      @media (max-width: 550px) {
         max-width: 100%;
       }
 
@@ -113,6 +119,20 @@
         .form__input {
           padding-left: 48px;
         }
+      }
+    }
+
+    &__single--fluid {
+      max-width: 335px;
+
+      @media (max-width: 550px) {
+        max-width: 100%;
+      }
+    }
+
+    &__single--select-user {
+      .select2-container {
+        width: 100%;
       }
     }
 
@@ -151,39 +171,51 @@
   }
 
   .avatar {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    margin-bottom: 8px;
+    margin-right: 8px;
 
-    background-color: theme-color("light-gray");
+    &:nth-of-type(5n+5) {
+      margin-right: 0;
 
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      width: auto;
-      height: 100%;
-    }
-
-    // .avatar--no-img
-
-    &.avatar--no-img {
-      img {
-        display: none;
+      @media (max-width: 550px) {
+        margin-right: 8px;
       }
     }
+  }
+}
 
-    // .avatar__symbol
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-bottom: 8px;
 
-    &__symbol {
-      font-size: 18px;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: theme-color("light-blue");
+  background-color: theme-color("light-gray");
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: 100%;
+  }
+
+  // .avatar--no-img
+
+  &.avatar--no-img {
+    img {
+      display: none;
     }
+  }
+
+  // .avatar__symbol
+
+  &__symbol {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: theme-color("light-blue");
   }
 }

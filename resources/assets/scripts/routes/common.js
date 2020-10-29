@@ -1,9 +1,11 @@
 /* eslint-disable no-unused-vars */
+import 'bootstrap/js/dist/modal';
 import Swiper from 'swiper/swiper-bundle';
 import Headroom from 'headroom.js';
-import 'select2';
-import 'bootstrap/js/dist/modal';
-import '@chenfengyuan/datepicker/dist/datepicker.min';
+import Flatpickr from 'flatpickr';
+import 'select2/dist/js/select2';
+
+// import '@chenfengyuan/datepicker/dist/datepicker.min';
 
 export default {
   init() {
@@ -31,7 +33,7 @@ export default {
 
     $('.js-select-gender').select2({
       minimumResultsForSearch: Infinity,
-      dropdownParent: $('.form__single--select'),
+      // dropdownParent: $('.form__single--select'),
     });
 
     // * change visible password
@@ -53,11 +55,23 @@ export default {
       }
     }
 
-    // * datepicker
+    // * datepicker and timepicker
     {
-      $('[data-toggle="datepicker"]').datepicker({
-        zIndex: 9999,
-      });
+      if ($('input[data-toggle="datepicker"]').length) {
+        Flatpickr($('input[data-toggle="datepicker"]'), {
+          altFormat: 'F j, Y',
+          dateFormat: 'm/d/Y',
+        });
+      }
+
+      if ($('input[data-toggle="timepicker"]').length) {
+        Flatpickr($('input[data-toggle="timepicker"]'), {
+          enableTime: true,
+          noCalendar: true,
+          dateFormat: 'h:i K',
+          time_24hr: false,
+        });
+      }
     }
 
     $('.video-play').each(function() {

@@ -11,6 +11,7 @@ export default {
     const rightAside = document.querySelector('.aside-right');
     const scrollDiv = document.querySelectorAll('.scroll-div');
 
+    //* option for swiper
     const option = {
       slidesPerView: 'auto',
       spaceBetween: 12,
@@ -31,8 +32,10 @@ export default {
       },
     }
 
+    //* swiper init
     let mySwiper = new Swiper('.card-goss__slider.swiper-container', option);
 
+    //* function "aside-left" and "aside-right" position when scrolling
     function positionSt() {
       body.addEventListener('wheel', function(e) {
 
@@ -69,6 +72,7 @@ export default {
       })
     }
 
+    //* function "aside-left" and "aside-right" calculate height
     function heightWhat() {
       let newHeightDiv = 0
       newHeightDiv = (window.innerHeight - header.clientHeight - 20);
@@ -91,47 +95,72 @@ export default {
       }
     }
 
+    //* function button Options(three dots)
+    {
+      const btnOptionsWrap = document.querySelectorAll('.options');
+      const btnOptions = document.querySelectorAll('.options__btn');
+
+      body.addEventListener('click', e => {
+        e.preventDefault();
+
+        if (e.target.offsetParent) {
+          const targetoffset = e.target.offsetParent;
+          const {type} = e.target.offsetParent.firstElementChild.dataset;
+
+          if (type === 'options') {
+            if (!targetoffset.classList.contains('options--open')) {
+                const blockBackDrop = document.createElement('div');
+                blockBackDrop.classList.add('option-backDrop');
+
+                targetoffset.classList.add('options--open');
+                targetoffset.appendChild(blockBackDrop);
+              } else {
+                targetoffset.classList.remove('options--open')
+                targetoffset.querySelector('.option-backDrop').remove();
+              }
+          }
+        } else {
+
+          btnOptionsWrap.forEach(element => {
+            element.classList.remove('options--open');
+            const thisBackDrop = element.querySelector('.option-backDrop');
+            if (thisBackDrop) {
+              element.parentNode.lastElementChild.removeChild(thisBackDrop)
+            }
+          });
+        }
+      })
+    }
+
+    {
+
+
+      $('select[data-toggle="select"]').select2({
+        minimumResultsForSearch: Infinity,
+        templateResult: function (state) {
+          if (!state.id) {
+            return state.text;
+          }
+          var baseUrl = 'images/flags';
+          var $state = $('<span>' + state.text + '</span>');
+          console.log(baseUrl, $state)
+          return $state;
+        },
+        // dropdownParent: $('.form__single--select-user'),
+      });
+
+
+    }
+
+    //* function init
     heightWhat();
     positionSt();
+
+    //* function resize
     window.addEventListener('resize', function() {
       positionSt();
-      heightWhat()
+      heightWhat();
     }, false);
-
-    let btnOptionsWrap = document.querySelectorAll('.options');
-    let btnOptions = document.querySelectorAll('.options__btn');
-
-    body.addEventListener('click', e => {
-      e.preventDefault();
-
-      if (e.target.offsetParent) {
-        const targetoffset = e.target.offsetParent;
-        const {type} = e.target.offsetParent.firstElementChild.dataset;
-
-        if (type === 'options') {
-          if (!targetoffset.classList.contains('options--open')) {
-              const blockBackDrop = document.createElement('div');
-              blockBackDrop.classList.add('option-backDrop');
-
-              targetoffset.classList.add('options--open');
-              targetoffset.appendChild(blockBackDrop);
-            } else {
-              targetoffset.classList.remove('options--open')
-              targetoffset.querySelector('.option-backDrop').remove();
-            }
-        }
-      } else {
-
-        btnOptionsWrap.forEach(element => {
-          element.classList.remove('options--open');
-          const thisBackDrop = element.querySelector('.option-backDrop');
-          if (thisBackDrop) {
-            element.parentNode.lastElementChild.removeChild(thisBackDrop)
-          }
-        });
-      }
-    })
-
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

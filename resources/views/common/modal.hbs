@@ -186,10 +186,12 @@
 </div>
 <!-- /modal-video -->
 <!-- modal-add-timeline -->
-<div class="modal right fade modal-add-timeline" id="add-timeline" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal right fade modal-add-timeline" id="add-timeline" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content position-relative">
+      <!-- modal-header -->
       <div class="modal-header d-flex align-items-center">
+        <!-- head for side modal -->
         <div class="head-modal-info d-flex align-items-center flex-wrap">
           <figure
             class="head-modal-info__avatar head-modal-info__avatar--no-img position-relative d-flex align-items-center justify-content-center overflow-hidden">
@@ -204,17 +206,23 @@
             </p>
           </div>
         </div>
+        <!-- /head for side modal -->
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         </button>
       </div>
+      <!-- /modal-header -->
+      <!-- modal-body -->
       <div class="modal-body">
+        <!-- form -->
         <form action="" id="add-timeline-form" class="form">
           <div class="form__inputs">
-            <div class="form__single form__single--fluid">
+            <!-- for error add class div form__single - *error* -->
+            <div class="form__single form__single--fluid  error">
               <label class="form__label">Title</label>
               <input type="text" class="form__input" required="">
               <span class="form__symbol-error"></span>
             </div>
+            <!-- for error add class div form__single - *error* -->
             <div class="form__single form__single--fluid">
               <label class="form__label">Budget</label>
               <input type="text" class="form__input" required="">
@@ -228,13 +236,17 @@
 
             <div class="form__wrap">
               <span class="form__wrap-title">Date and time</span>
-              <div class="form__single form__single--date">
+              <!-- for error add class div form__single - *error* -->
+              <div class="form__single form__single--date form__single--fluid">
                 <label class="form__label">Set a follow-up date</label>
                 <input type="text" class="form__input" data-toggle="datepicker" required="">
+                <span class="form__symbol-error"></span>
               </div>
-              <div class="form__single form__single--time">
+              <!-- for error add class div form__single - *error* -->
+              <div class="form__single form__single--time form__single--fluid">
                 <label class="form__label">Set a time</label>
-                <input type="text" class="form__input" data-toggle="datepicker" required="">
+                <input type="text" class="form__input" data-toggle="timepicker" required="">
+                <span class="form__symbol-error"></span>
               </div>
             </div>
 
@@ -249,33 +261,38 @@
 
             <div class="form__wrap form__wrap--location">
               <span class="form__wrap-title">Location</span>
-
+              <!-- for error add class div form__single - *error* -->
               <div class="form__single form__single--fluid">
                 <label class="form__label">address line 1</label>
                 <input type="text" class="form__input" required="">
                 <span class="form__symbol-error"></span>
               </div>
+              <!-- for error add class div form__single - *error* -->
               <div class="form__single form__single--fluid">
                 <label class="form__label">address line 2</label>
                 <input type="text" class="form__input" required="">
                 <span class="form__symbol-error"></span>
               </div>
+              <!-- for error add class div form__single - *error* -->
               <div class="form__single form__single--fluid">
                 <label class="form__label">City</label>
                 <input type="text" class="form__input" required="">
                 <span class="form__symbol-error"></span>
               </div>
+              <!-- for error add class div form__single - *error* -->
               <div class="form__single form__single--fluid">
                 <label class="form__label">State</label>
                 <input type="text" class="form__input" required="">
                 <span class="form__symbol-error"></span>
               </div>
+              <!-- for error add class div form__single - *error* -->
               <div class="form__single">
                 <label class="form__label">Postcode</label>
                 <input type="text" class="form__input" required="">
                 <span class="form__symbol-error"></span>
               </div>
-              <div class="form__single">
+              <!-- for error add class div form__single - *error* -->
+              <div class="form__single form__single--fluid">
                 <label class="form__label">Country</label>
                 <input type="text" class="form__input" required="">
                 <span class="form__symbol-error"></span>
@@ -284,16 +301,51 @@
 
             <div class="form__wrap">
               <span class="form__wrap-title">Tags</span>
-              <div class="form__single">
+              <div class="form__single form__single--select form__single--select-user form__single--fluid">
                 <label class="form__label">write to people or groups</label>
-                <input type="text" class="form__input" required="">
+                <select class="form__input" data-toggle="select" multiple="multiple">
+                  <option value="user-1">Terry Smith</option>
+                  <option value="user-2">Terry Will Green</option>
+                  <option value="user-3">Terry Brown</option>
+                </select>
+                {{!-- <input type="text" class="form__input" required=""> --}}
                 <span class="form__symbol-error"></span>
               </div>
             </div>
 
             <div class="form__wrap">
               <span class="form__wrap-title">Who is coming?</span>
-              <div class="form__single">
+              <div class="form__single form__single--fluid flex-wrap flex-row">
+
+                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                  <img src="" alt="">
+                  <span class="avatar__symbol">JS</span>
+                </div>
+
+                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                  <img src="" alt="">
+                  <span class="avatar__symbol">JS</span>
+                </div>
+
+                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                  <img src="" alt="">
+                  <span class="avatar__symbol">JS</span>
+                </div>
+
+                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                  <img src="" alt="">
+                  <span class="avatar__symbol">JS</span>
+                </div>
+
+                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                  <img src="" alt="">
+                  <span class="avatar__symbol">JS</span>
+                </div>
+
+                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                  <img src="" alt="">
+                  <span class="avatar__symbol">JS</span>
+                </div>
 
                 <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
                   <img src="" alt="">
@@ -303,12 +355,15 @@
               </div>
             </div>
           </div>
-
+          <!-- modal-footer -->
           <div class="modal-footer w-100 d-flex align-items-center justify-content-center">
             <button class="add-timeline-form btn-orange">Add to a timeline</button>
           </div>
+          <!-- /modal-footer -->
         </form>
+        <!-- /form -->
       </div>
+      <!-- /modal-body -->
       <!-- <div class="modal-footer">
       </div> -->
     </div>

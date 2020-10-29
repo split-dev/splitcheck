@@ -58,6 +58,11 @@ tspan {
     opacity: 0.5;
   }
 }
+.maze {
+  &::before {
+    background: #f8f9fb !important;
+  }
+}
 
 h2 {
   @media (max-width: 575px) {

@@ -3,13 +3,19 @@ export default {
   init() {
 
       //background change
-    //   let bgEl = getElementById('background');
+    //  function change () {
+    //   let bgColor = $('.account-preferences__card').data('background');
+    //   $('.section-blur').css('background-color', bgColor);
+    //  }
+     let bgColor = $('.account-preferences__card').data('background');
+     $('.account-preferences__card').on('click', function() {
+      $('.section-blur').css('background-color', bgColor);
+     })
 
-    function changeColor(colorValue) {
-        document.bgEl.style.background = document.getElementById(colorValue).dataset.color;
-    }
-    console.log(changeColor);
-
+     $('.settings__toggle').on('click', function() {
+       $('.mobile-nav').toggleClass('mobile-before')
+       $('.settings__hide').slideToggle(400);
+     })
     //check input
       $('.nav-item').click(function() {
           $('.nav-item').removeClass('active-item');
@@ -31,6 +37,12 @@ export default {
       //mask phone
       
       $('#phone').mask('+38 00 0000 000');
+
+      //tabs link active
+      $('.nav-item').click(function (){
+       $('.nav-link').removeClass('active');
+       $('this').addClass('active');
+      });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

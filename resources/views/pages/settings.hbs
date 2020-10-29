@@ -8,12 +8,55 @@
 <body class="home settings">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
-    <div class="section-blur theme-background-one" id="background">
+    <div class="section-blur theme-background-one " id="background">
         {{> ../common/header-next }}
 
         <div class="tabs-global">
+            <ul class="nav tabs-global__nav mobile-nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                <div>
+                    <section class="section-settings">
+                        <ul>
+                            <li class="nav-item active-item settings__toggle" role="presentation"><a
+                                    class="nav-link text-nowrap" data-toggle="pill" href="#account-preferences"
+                                    role="tab" aria-controls="pills-about" aria-selected="true">Account
+                                    Preferences</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8">
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#f77d0e" stroke-miterlimit="20"
+                                                d="M1 1v0l5.916 6v0L13 1v0" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </li>
+                            <div class="settings__hide">
+                                <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
+                                        data-toggle="pill" href="#spirit" role="tab" aria-selected="true">Community
+                                        Spirit</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
+                                        data-toggle="pill" href="#acces" role="tab" aria-selected="true">Account
+                                        Access</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
+                                        data-toggle="pill" href="#visibility" role="tab"
+                                        aria-selected="true">Visibility</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
+                                        data-toggle="pill" href="#сommunications" role="tab" aria-controls="pills-about"
+                                        aria-selected="true">Communications</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
+                                        data-toggle="pill" href="#email-sms" role="tab" aria-selected="true">Email &
+                                        SMS</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link  text-nowrap"
+                                        data-toggle="pill" href="#push" role="tab" aria-selected="true">Push
+                                        Notifications</a></li>
+                            </div>
+                        </ul>
+                    </section>
+
+                </div>
+            </ul>
             <div class="container">
                 <div class="main-content">
+
                     <ul class="nav aside-left tabs-global__nav nav-pills nav-fill" id="pills-tab" role="tablist">
                         <div class="scroll-div">
                             <section class="section-settings">
@@ -24,23 +67,23 @@
                                             Preferences</a>
                                     </li>
                                     <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
-                                            data-toggle="pill" href="#spirit" role="tab" aria-controls="pills-about"
-                                            aria-selected="true">Community Spirit</a></li>
+                                            data-toggle="pill" href="#spirit" role="tab" aria-selected="true">Community
+                                            Spirit</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
-                                            data-toggle="pill" href="#acces" role="tab" aria-controls="pills-about"
-                                            aria-selected="true">Account Access</a></li>
+                                            data-toggle="pill" href="#acces" role="tab" aria-selected="true">Account
+                                            Access</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
-                                            data-toggle="pill" href="#jrc" role="tab" aria-controls="pills-about"
+                                            data-toggle="pill" href="#visibility" role="tab"
                                             aria-selected="true">Visibility</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
-                                            data-toggle="pill" href="#jrc" role="tab" aria-controls="pills-about"
-                                            aria-selected="true">Communications</a></li>
+                                            data-toggle="pill" href="#сommunications" role="tab"
+                                            aria-controls="pills-about" aria-selected="true">Communications</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link text-nowrap"
-                                            data-toggle="pill" href="#jrc" role="tab" aria-controls="pills-about"
-                                            aria-selected="true">Email & SMS</a></li>
+                                            data-toggle="pill" href="#email-sms" role="tab" aria-selected="true">Email &
+                                            SMS</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link  text-nowrap"
-                                            data-toggle="pill" href="#jrc" role="tab" aria-controls="pills-about"
-                                            aria-selected="true">Push Notifications</a></li>
+                                            data-toggle="pill" href="#push" role="tab" aria-selected="true">Push
+                                            Notifications</a></li>
                                 </ul>
                             </section>
 
@@ -187,8 +230,7 @@
                         </div>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane active show fade" id="account-preferences" role="tabpanel"
-                            aria-labelledby="home-tab">
+                        <div class="tab-pane active show fade" id="account-preferences" role="tabpanel">
                             <div class="account-preferences">
 
                                 <div class="account-preferences__block">
@@ -198,11 +240,13 @@
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Site language</span>
                                     <p>Select the language you use on SplitChek</p>
-                                    <select name="form" id="date">
-                                        <option value="1">05/10/2020</option>
-                                        <option value="2">06/10/2020</option>
-                                        <option value="3">07/10/2020</option>
-                                    </select>
+                                    <div class="select-before">
+                                        <select name="form" id="date">
+                                            <option value="1">05/10/2020</option>
+                                            <option value="2">06/10/2020</option>
+                                            <option value="3">07/10/2020</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Should your profile photo be displayed in emails?</span>
@@ -259,26 +303,23 @@
                                     <div class="account-preferences__bg">
                                         <span class="blue-span">Select background</span>
                                         <div class="account-preferences__line">
-                                            <div class="account-preferences__card" id="maze"
-                                                onclick="changeColor('maze')">
+                                            <div class="account-preferences__card">
                                                 <img src="images/settings/bg-1.png" alt="#">
                                                 <span>maze</span>
                                             </div>
-                                            <div class="account-preferences__card" id="points"
-                                                onclick="changeColor('points')">
+                                            <div class="account-preferences__card" data-class="points">
                                                 <img src="images/settings/bg-2.png" alt="#">
                                                 <span>points</span>
                                             </div>
-                                            <div class="account-preferences__card" id="grainy"
-                                                onclick="changeColor('grainy')">
+                                            <div class="account-preferences__card" data-background="#fdfdfd">
                                                 <div class="account-preferences__bg-3"></div>
                                                 <span>grainy</span>
                                             </div>
-                                            <div class="account-preferences__card">
+                                            <div class="account-preferences__card" data-background="#f8f9fb">
                                                 <div class="account-preferences__bg-4"></div>
                                                 <span>blue</span>
                                             </div>
-                                            <div class="account-preferences__card">
+                                            <div class="account-preferences__card" data-background="#fffcf9">
                                                 <div class="account-preferences__bg-5"></div>
                                                 <span>warm</span>
                                             </div>
@@ -329,7 +370,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane active show fade" id="acces" role="tabpanel">
+                        <div class="tab-pane  show fade" id="acces" role="tabpanel">
                             <div class="account-preferences">
 
                                 <div class="account-preferences__block">
@@ -338,15 +379,16 @@
                                 </div>
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Primary email address</span>
-                                    <p>Add or remove email address on your account</p>
+                                    <label>Add or remove email address on your account</label>
                                     <input placeholder="example@mail.com" type="email">
 
                                 </div>
 
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Primary phone</span>
-                                    <p>Add a phone number to be used to verify your account, orders and security alerts
-                                    </p>
+                                    <label>Add a phone number to be used to verify your account, orders and security
+                                        alerts
+                                    </label>
                                     <input id="phone" placeholder="+38 066 0209 333" type="tel">
 
                                 </div>
@@ -413,7 +455,7 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane active show fade" id="visibility" role="tabpanel">
+                        <div class="tab-pane show fade" id="visibility" role="tabpanel">
                             <div class="account-preferences">
 
                                 <div class="account-preferences__block">
@@ -441,10 +483,12 @@
                                         followers will be denied. If JustFriends, then connections and followers will be
                                         rejected.
                                     </p>
-                                    <select name="#" id="#">
-                                        <option value="1">Public</option>
-                                        <option value="2">Private</option>
-                                    </select>
+                                    <div class="select-before">
+                                        <select name="#" id="#">
+                                            <option value="1">Public</option>
+                                            <option value="2">Private</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Show profile on search engines</span>
@@ -461,6 +505,251 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="tab-pane show fade" id="сommunications" role="tabpanel">
+                            <div class="account-preferences">
+
+                                <div class="account-preferences__block">
+                                    <h5>HOW YOU RECEIVE CONTENT FROM OTHERS</h5>
+                                    <p>Manage who you'd like to get communications from</p>
+                                </div>
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">Enable freedom of speech</span>
+                                    <p>SplitChek encourages freedom of speech, however, if you are over 15, you must
+                                        turn this on, to enable freedom of speech. Beware that words are not censored,
+                                        and you agree to receive such content in your SplitChek feed. All content you
+                                        post will be marked as containing adult content or coarse language</p>
+                                    <div class="select-before">
+                                        <select name="#" id="#">
+                                            <option value="1">NA</option>
+                                            <option value="1">NA</option>
+                                            <option value="1">NA</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">Who can reach you</span>
+                                    <p>Choose who can connect with you on SplitChek
+                                    </p>
+                                    <div class="select-before">
+                                        <select name="#" id="#">
+                                            <option value="1">Anyone on SplitChek</option>
+                                            <option value="2">Anyone on SplitChek</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">Who can write to your timeline</span>
+                                    <p>Choose who can write to your timeline</p>
+                                    <div class="select-before">
+                                        <select name="#" id="#">
+                                            <option value="1">Anyone on SplitChek</option>
+                                            <option value="2">Anyone on SplitChek</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">Invitations from stores & connections</span>
+                                    <p>Choose what invitations you would like to receive from your followers and
+                                        stores</p>
+                                    <span class="bold-span"><b>Stores:</b> invitations to follow stores</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+                                    <span class="bold-span"><b>Stores:</b> invitations to follow stores</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+                                    <span class="bold-span"><b>Stores:</b> invitations to follow stores</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+
+                                </div>
+
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">Research invites</span>
+                                    <p>SplitChek and third-party partners may periodically invite shoppers to
+                                        participate in product feedback surveys, market research and other studies.
+                                        Participation is 100% voluntary and personal information is not shared.</p>
+                                    <span class="bold-span">Would you like to receive invitations to participate?</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane show fade" id="email-sms" role="tabpanel">
+                            <div class="account-preferences">
+
+                                <div class="account-preferences__block">
+                                    <h5>EMAIL AND SMS SUBSCRIPTIONS</h5>
+                                    <p>Please note, you cannot turn off notifications about your orders, messages
+                                        directly from SplitChek about our services to you</p>
+                                </div>
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">You are subscribed to:</span>
+                                    <span class="bold-span">Feedback emails</span>
+                                    <div class="account-preferences__check">
+                                        <strong>No</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>Yes</strong>
+                                    </div>
+
+                                    <span class="bold-span">Reminder emails</span>
+                                    <p>We will remind you of events and activities from your account every Wednesdays
+                                        and Fridays</p>
+                                    <div class="account-preferences__check">
+                                        <strong>No</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>Yes</strong>
+                                    </div>
+                                </div>
+
+                                <div class="account-preferences__block">
+                                    <span class="blue-span">Receive text messages from our business partners</span>
+                                    <p>If our business partners have great gifting deals, they can sometimes send text
+                                        messages for fast delivery. We only allow relevant text messages to be sent to
+                                        you.
+                                    </p>
+                                    <span class="bold-span">Allow SplitChek business partners to send you relevant
+                                        gifting deals</span>
+                                    <div class="account-preferences__check">
+                                        <strong>No</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>Yes</strong>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane show fade" id="push" role="tabpanel">
+                            <div class="account-preferences push">
+
+                                <div class="account-preferences__block">
+                                    <h5>PUSH NOTIFICATIONS</h5>
+                                    <p>Control which notifications should be displayed on your device</p>
+                                </div>
+                                <div class="account-preferences__block">
+                                    <span class="bold-span">Likes</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+
+                                </div>
+
+                                <div class="account-preferences__block">
+                                    <span class="bold-span">Likes and Comments on Photos of You</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+
+                                </div>
+
+                                <div class="account-preferences__block">
+                                    <span class="bold-span">Comments</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+
+                                </div>
+
+                                <div class="account-preferences__block">
+                                    <span class="bold-span">Comments Like</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+
+                                </div>
+
+                                <div class="account-preferences__block">
+                                    <span class="bold-span">Accepted Invitation Requests</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+
+                                </div>
+
+                                <div class="account-preferences__block">
+                                    <span class="bold-span">Support Requests</span>
+                                    <div class="account-preferences__check">
+                                        <strong>Off</strong>
+                                        <div class="slideThree">
+                                            <input id="slideThree" type="checkbox">
+                                            <label for="slideThree"></label>
+                                        </div>
+                                        <strong>On</strong>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

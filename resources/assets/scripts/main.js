@@ -4,6 +4,7 @@
 // import external dependencies
 import './util/polyfills'
 import 'jquery';
+import 'bootstrap';
 
 // Import everything from autoload
 import './autoload/**/*'

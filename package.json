@@ -77,6 +77,7 @@
     "jquery": "^3.5.1",
     "jquery-lazy": "^1.7.10",
     "jquery-mask-plugin": "^1.14.16",
+    "popper.js": "^1.16.1",
     "regenerator-runtime": "^0.13.5",
     "select2": "^4.0.13",
     "simple-scrollbar": "^0.4.0",

@@ -59,6 +59,7 @@ export default {
     {
       if ($('input[data-toggle="datepicker"]').length) {
         Flatpickr($('input[data-toggle="datepicker"]'), {
+          disableMobile: 'true',
           altFormat: 'F j, Y',
           dateFormat: 'm/d/Y',
         });
@@ -66,6 +67,7 @@ export default {
 
       if ($('input[data-toggle="timepicker"]').length) {
         Flatpickr($('input[data-toggle="timepicker"]'), {
+          disableMobile: 'true',
           enableTime: true,
           noCalendar: true,
           dateFormat: 'h:i K',

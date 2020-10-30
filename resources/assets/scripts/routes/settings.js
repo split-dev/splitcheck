@@ -6,7 +6,7 @@ export default {
       
       $('.account-preferences__card').on('click', function() {
         let bgColor = $(this).attr('data-class');
-        $('.section-blur').toggleClass(bgColor);
+        $('.section-blur').attr('data-class', bgColor);
         console.log(bgColor);
        })
      

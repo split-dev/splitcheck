@@ -3,20 +3,25 @@ export default {
   init() {
 
       //background change
-    //  function change () {
-    //   let bgColor = $('.account-preferences__card').data('background');
-    //   $('.section-blur').css('background-color', bgColor);
-    //  }
-     let bgColor = $('.account-preferences__card').data('background');
-     $('.account-preferences__card').on('click', function() {
-      $('.section-blur').css('background-color', bgColor);
+      
+      $('.account-preferences__card').on('click', function() {
+        let bgColor = $(this).attr('data-class');
+        $('.section-blur').toggleClass(bgColor);
+        console.log(bgColor);
+       })
+     
+       //mobile tabs
+     $('.settings__hide li').click(function() {
+       $(this).parent().slideToggle(400);
+       $('.mobile-nav').toggleClass('mobile-before')
+       $('.svg-show').toggleClass('svg-top-hide');
      })
 
      $('.settings__toggle').on('click', function() {
        $('.mobile-nav').toggleClass('mobile-before')
        $('.svg-show').toggleClass('svg-top-hide');
        $('.settings__hide').slideToggle(400);
-     })
+     });
 
      $('.svg-revert').on('click', function() {
       $('.mobile-nav').removeClass('mobile-before')
@@ -28,18 +33,21 @@ export default {
           $('.nav-item').removeClass('active-item');
           $(this).toggleClass('active-item');
       });
-      $('.slideThree').click(function() {
-          $(this).toggleClass('check');
-      });
 
       //check on and off -- text
-      if ($('.slideThree').hasClass('check')) {
-        $('.check-on').addClass('strong-text');
-        $('.check-off').removeClass('strong-text');
-      } else {
-        $('.check-off').addClass('strong-text');
-        $('.check-on').removeClass('strong-text');
-      }
+      $('.slideThree').click(function() {
+          $(this).toggleClass('check');
+          if ($('.slideThree').hasClass('check')) {
+            $(this).next().removeClass('strong-text');
+            $(this).prev().addClass('strong-text');
+          } else {
+            $(this).next().addClass('strong-text');
+            $(this).prev().removeClass('strong-text');
+          }
+      });
+
+      
+     
 
       //password hide
       $('.show').click( function () {

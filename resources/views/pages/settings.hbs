@@ -8,7 +8,7 @@
 <body class="home settings">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
-    <div class="section-blur theme-background-one " id="background">
+    <div class="section-blur maze" id="background">
         {{> ../common/header-next }}
 
         <div class="tabs-global">
@@ -270,7 +270,7 @@
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong class="check-on">Show on emails</strong>
+                                        <strong class="check-on strong-text">Show on emails</strong>
                                     </div>
                                 </div>
 
@@ -280,12 +280,12 @@
                                         friends, connections and order emails. If disabled, we will show your first and
                                         last name initials.</p>
                                     <div class="account-preferences__check">
-                                        <strong>Hidden</strong>
-                                        <div class="slideThree">
+                                        <strong class="check-off strong-text">Hidden</strong>
+                                        <div class="slideThree check">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>Displayed</strong>
+                                        <strong class="check-on">Displayed</strong>
                                     </div>
                                 </div>
 
@@ -295,26 +295,26 @@
                                         option is visible on your profile</p>
                                     <b>Enable kid’s account</b>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
                                     <b>Enable pet’s account</b>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
                                     <div class="account-preferences__bg">
                                         <span class="blue-span">Select background</span>
                                         <div class="account-preferences__line">
-                                            <div class="account-preferences__card">
+                                            <div class="account-preferences__card" data-class="maze">
                                                 <img src="images/settings/bg-1.png" alt="#">
                                                 <span>maze</span>
                                             </div>
@@ -322,15 +322,15 @@
                                                 <img src="images/settings/bg-2.png" alt="#">
                                                 <span>points</span>
                                             </div>
-                                            <div class="account-preferences__card" data-background="#fdfdfd">
+                                            <div class="account-preferences__card" data-class="grainy">
                                                 <div class="account-preferences__bg-3"></div>
                                                 <span>grainy</span>
                                             </div>
-                                            <div class="account-preferences__card" data-background="#f8f9fb">
+                                            <div class="account-preferences__card" data-class="blue">
                                                 <div class="account-preferences__bg-4"></div>
                                                 <span>blue</span>
                                             </div>
-                                            <div class="account-preferences__card" data-background="#fffcf9">
+                                            <div class="account-preferences__card" data-class="warm">
                                                 <div class="account-preferences__bg-5"></div>
                                                 <span>warm</span>
                                             </div>
@@ -355,12 +355,12 @@
                                         are in need at checkout.</p>
                                     <b>Do you want us to notify you to help others at checkout?</b>
                                     <div class="account-preferences__check">
-                                        <strong>No</strong>
+                                        <strong class="check-off">No</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>Yes</strong>
+                                        <strong class="check-on strong-text">Yes</strong>
                                     </div>
                                 </div>
 
@@ -371,12 +371,12 @@
                                     </p>
                                     <b>Do you want to help grow the SplitChek Community?</b>
                                     <div class="account-preferences__check">
-                                        <strong>No</strong>
+                                        <strong class="check-off">No</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>Yes</strong>
+                                        <strong class="check-on strong-text">Yes</strong>
                                     </div>
                                 </div>
                             </div>
@@ -477,12 +477,12 @@
                                     <span class="blue-span">Account visibility</span>
                                     <p>When your account is private, only you can see it</p>
                                     <div class="account-preferences__check">
-                                        <strong>Private</strong>
+                                        <strong class="check-off">Private</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>Public</strong>
+                                        <strong class="check-on strong-text">Public</strong>
                                     </div>
                                 </div>
 
@@ -505,12 +505,12 @@
                                     <span class="blue-span">Show profile on search engines</span>
                                     <p>If enabled, your public profile will appear on search engines</p>
                                     <div class="account-preferences__check">
-                                        <strong>Disabled</strong>
+                                        <strong class="check-off">Disabled</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>Enabled</strong>
+                                        <strong class="check-on strong-text">Enabled</strong>
                                     </div>
 
                                 </div>
@@ -569,30 +569,30 @@
                                         stores</p>
                                     <span class="bold-span"><b>Stores:</b> invitations to follow stores</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
                                     <span class="bold-span"><b>Stores:</b> invitations to follow stores</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
                                     <span class="bold-span"><b>Stores:</b> invitations to follow stores</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
 
                                 </div>
@@ -604,12 +604,12 @@
                                         Participation is 100% voluntary and personal information is not shared.</p>
                                     <span class="bold-span">Would you like to receive invitations to participate?</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
 
 
@@ -629,24 +629,24 @@
                                     <span class="blue-span">You are subscribed to:</span>
                                     <span class="bold-span">Feedback emails</span>
                                     <div class="account-preferences__check">
-                                        <strong>No</strong>
+                                        <strong class="check-off">No</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>Yes</strong>
+                                        <strong class="check-on strong-text">Yes</strong>
                                     </div>
 
                                     <span class="bold-span">Reminder emails</span>
                                     <p>We will remind you of events and activities from your account every Wednesdays
                                         and Fridays</p>
                                     <div class="account-preferences__check">
-                                        <strong>No</strong>
+                                        <strong class="check-off">No</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>Yes</strong>
+                                        <strong class="check-on strong-text">Yes</strong>
                                     </div>
                                 </div>
 
@@ -659,12 +659,12 @@
                                     <span class="bold-span">Allow SplitChek business partners to send you relevant
                                         gifting deals</span>
                                     <div class="account-preferences__check">
-                                        <strong>No</strong>
+                                        <strong class="check-off">No</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>Yes</strong>
+                                        <strong class="check-on strong-text">Yes</strong>
                                     </div>
                                 </div>
 
@@ -682,12 +682,12 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Likes</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
 
                                 </div>
@@ -695,12 +695,12 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Likes and Comments on Photos of You</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
 
                                 </div>
@@ -708,12 +708,12 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Comments</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off"> Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
 
                                 </div>
@@ -721,12 +721,12 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Comments Like</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
 
                                 </div>
@@ -734,12 +734,12 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Accepted Invitation Requests</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
 
                                 </div>
@@ -747,12 +747,12 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Support Requests</span>
                                     <div class="account-preferences__check">
-                                        <strong>Off</strong>
+                                        <strong class="check-off">Off</strong>
                                         <div class="slideThree">
                                             <input id="slideThree" type="checkbox">
                                             <label for="slideThree"></label>
                                         </div>
-                                        <strong>On</strong>
+                                        <strong class="check-on strong-text">On</strong>
                                     </div>
 
                                 </div>

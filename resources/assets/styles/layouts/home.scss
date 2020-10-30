@@ -773,21 +773,6 @@
           line-height: 14px;
           margin-top: auto;
           transition: 0.3s;
-          &:hover {
-            &:after {
-              width: 100%;
-            }
-          }
-          &:after {
-            transition: 0.3s;
-            content: "";
-            position: absolute;
-            background: theme-color("orange");
-            width: 0;
-            height: 1px;
-            bottom: 0;
-            left: 0;
-          }
 
           color: theme-color("orange");
         }

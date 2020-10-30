@@ -156,6 +156,10 @@
       min-height: 120px;
       max-height: 120px;
     }
+
+    .select2-container--default .select2-selection, .select2-container--default .select2-selection.select2-selection--single, .select2-container--default .select2-selection.select2-selection--multiple {
+      padding: 0 10px;
+    }
   }
 
   .new-banner {
@@ -179,6 +183,16 @@
 
       @media (max-width: 550px) {
         margin-right: 8px;
+      }
+    }
+  }
+}
+
+.modal-create-goss {
+  .form {
+    .select2-container--default {
+      &:nth-of-type(2) {
+        margin-top: 16px;
       }
     }
   }

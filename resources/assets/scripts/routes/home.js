@@ -134,7 +134,11 @@ export default {
 
     // * Select template in modal
     {
-      $('select[data-toggle="select"]').select2({
+      $('.form__single--select-default select[data-toggle="select"]').select2({
+        minimumResultsForSearch: Infinity,
+        width: '100%',
+      });
+      $('.form__single--select-user select[data-toggle="select"]').select2({
         minimumResultsForSearch: Infinity,
         width: '100%',
         templateResult: function (state) {

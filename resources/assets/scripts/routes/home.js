@@ -101,7 +101,7 @@ export default {
       const btnOptions = document.querySelectorAll('.options__btn');
 
       body.addEventListener('click', e => {
-        e.preventDefault();
+        // e.preventDefault();
 
         if (e.target.offsetParent) {
           const targetoffset = e.target.offsetParent;

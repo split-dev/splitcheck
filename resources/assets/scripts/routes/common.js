@@ -37,6 +37,50 @@ export default {
       // dropdownParent: $('.form__single--select'),
     });
 
+    //* function INPUT SEARCH
+    {
+      const search = {
+        formSearch: document.querySelector('.search'),
+        inputSearch: document.querySelector('.search__input'),
+        headerContent: document.querySelector('.header__content'),
+        headerRight: document.querySelector('.header__right'),
+        headerLeft: document.querySelector('.header__left'),
+      }
+
+      if (search.formSearch) {
+        const focusSearchInput = () => {
+          if (window.matchMedia('(max-width: 991px)').matches) {
+            let whatWidthContent = search.headerContent.offsetWidth;
+            let whatWidthHeaderLeft = search.headerLeft.offsetWidth;
+
+            search.inputSearch.onfocus = function() {
+              search.formSearch.style.width = (whatWidthContent - whatWidthHeaderLeft - 12) + 'px'
+              search.headerRight.style.visibility = 'hidden';
+              search.headerRight.style.opacity = 0;
+            };
+
+            search.inputSearch.onblur = function() {
+              search.formSearch.style.width = ''
+              search.headerRight.style.visibility = '';
+              search.headerRight.style.opacity = '';
+            };
+          } else {
+            search.inputSearch.onfocus = function() {
+              search.formSearch.style.width = ''
+              search.headerRight.style.visibility = '';
+              search.headerRight.style.opacity = '';
+            };
+            search.formSearch.style.width = ''
+            search.headerRight.style.visibility = '';
+            search.headerRight.style.opacity = '';
+          }
+        }
+
+        focusSearchInput();
+        window.addEventListener('resize', focusSearchInput)
+      }
+    }
+
     // * change visible password
     {
       const btnPass = document.querySelectorAll('.form__symbol-pass');

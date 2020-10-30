@@ -10,6 +10,15 @@
   background-color: #fff;
   z-index: 999;
 
+  transition: $transition-fast;
+
+  &.headroom--pinned {
+    transform: translateY(0);
+  }
+  &.headroom--unpinned {
+    transform: translateY(+100%);
+  }
+
   @include media-breakpoint-down(md) {
     display: flex;
   }

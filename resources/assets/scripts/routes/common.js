@@ -190,10 +190,13 @@ export default {
     });
 
     let myElement = document.querySelector('header');
-// construct an instance of Headroom, passing the element
+    let menuBottom = document.querySelector('.menu-bottom');
+    // construct an instance of Headroom, passing the element
     let headroom  = new Headroom(myElement);
+    let headroomSecond  = new Headroom(menuBottom);
     // initialise
     headroom.init();
+    headroomSecond.init();
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

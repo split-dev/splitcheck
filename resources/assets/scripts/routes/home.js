@@ -38,7 +38,6 @@ export default {
     //* function "aside-left" and "aside-right" position when scrolling
     function positionSt() {
       body.addEventListener('wheel', function(e) {
-
         let meNow = false;
 
         for (let i = 0; i < e.path.length - 3; i++) {

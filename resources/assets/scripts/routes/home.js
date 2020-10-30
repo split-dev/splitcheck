@@ -136,6 +136,7 @@ export default {
     {
       $('select[data-toggle="select"]').select2({
         minimumResultsForSearch: Infinity,
+        width: '100%',
         templateResult: function (state) {
           if (!state.id) {
             return state.text;

@@ -3,7 +3,7 @@ import 'bootstrap/js/dist/modal';
 import Swiper from 'swiper/swiper-bundle';
 import Headroom from 'headroom.js';
 import Flatpickr from 'flatpickr';
-import 'select2/dist/js/select2';
+import 'select2/dist/js/select2.full';
 
 // import '@chenfengyuan/datepicker/dist/datepicker.min';
 
@@ -33,6 +33,7 @@ export default {
 
     $('.js-select-gender').select2({
       minimumResultsForSearch: Infinity,
+      width: 'resolve',
       // dropdownParent: $('.form__single--select'),
     });
 

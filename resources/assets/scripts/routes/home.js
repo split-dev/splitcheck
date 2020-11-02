@@ -11,88 +11,114 @@ export default {
     const leftAside = document.querySelector('.aside-left');
     const rightAside = document.querySelector('.aside-right');
     const scrollDiv = document.querySelectorAll('.scroll-div');
+    const modalCreateGoss = document.querySelector('.modal-create-goss .form__inputs');
+    const modalAddTimeline = document.querySelector('.modal-add-timeline .form__inputs');
 
-    //* option for swiper
-    const option = {
-      slidesPerView: 'auto',
-      spaceBetween: 12,
-      setWrapperSize: true,
-      navigation: {
-        nextEl: '.card-goss .swiper-button-next',
-        prevEl: '.card-goss .swiper-button-prev',
-      },
-      breakpoints: {
-        767: {
-          slidesPerView: 4,
-          setWrapperSize: false,
-          simulateTouch: false,
-          preventInteractionOnTransition: true,
-          mousewheel: true,
-          // freeMode: true,
+    //* Swiper
+    {
+      //* option for swiper
+      const option = {
+        slidesPerView: 'auto',
+        spaceBetween: 12,
+        setWrapperSize: true,
+        navigation: {
+          nextEl: '.card-goss .swiper-button-next',
+          prevEl: '.card-goss .swiper-button-prev',
         },
-      },
+        breakpoints: {
+          767: {
+            slidesPerView: 4,
+            setWrapperSize: false,
+            simulateTouch: false,
+            preventInteractionOnTransition: true,
+            mousewheel: true,
+            // freeMode: true,
+          },
+        },
+      }
+
+      //* swiper init
+      let mySwiper = new Swiper('.card-goss__slider.swiper-container', option);
     }
 
-    //* swiper init
-    let mySwiper = new Swiper('.card-goss__slider.swiper-container', option);
-
-    //* function "aside-left" and "aside-right" position when scrolling
-    function positionSt() {
-      body.addEventListener('wheel', function(e) {
-        let meNow = false;
-
-        for (let i = 0; i < e.path.length - 3; i++) {
-          const element = e.path[i];
-          if (element) {
-            if (element.classList.contains('scroll-div')) {
-              meNow = true
-            }
-          }
-        }
-
-        if (!meNow) {
-          if (e.deltaY < 0) {
-            if (window.matchMedia('(max-width: 991px)').matches) {
-              leftAside.style.top = '';
-              rightAside.style.top = '';
-            } else {
-              leftAside.style.top = '90px';
-              rightAside.style.top = '90px';
-            }
+    //* function for "aside-left" and "aside-right" position when scrolling, and calculate height
+    {
+      const checkAside = (param, any) => {
+        if (param) {
+          if (window.matchMedia('(max-width: 991px)').matches) {
+            param.style.top = '';
           } else {
-            if (window.matchMedia('(max-width: 991px)').matches) {
-              leftAside.style.top = '';
-              rightAside.style.top = '';
-            } else {
-              leftAside.style.top = '10px';
-              rightAside.style.top = '10px';
-            }
+            param.style.top = any + 'px';
           }
         }
-      })
-    }
+      }
 
-    //* function "aside-left" and "aside-right" calculate height
-    function heightWhat() {
-      let newHeightDiv = 0
-      newHeightDiv = (window.innerHeight - header.clientHeight - 20);
-      if (scrollDiv.length) {
-        for (let i = 0; i < scrollDiv.length; i++) {
-          const el = scrollDiv[i];
-          SimpleScrollbar.initEl(el);
-          if (el.offsetParent) {
-            if (el.offsetParent.classList.contains('aside-right')) {
-              if (window.matchMedia('(max-width: 991px)').matches) {
-                el.style.height = '';
-              } else {
-                el.style.height = (newHeightDiv - 65) + 'px';
+      const positionSt = () => {
+        body.addEventListener('wheel', function(e) {
+          let meNow = false;
+
+          for (let i = 0; i < e.path.length - 3; i++) {
+            const element = e.path[i];
+            if (element) {
+              if (element.classList.contains('scroll-div')) {
+                meNow = true
+              }
+            }
+          }
+
+          if (!meNow) {
+            if (e.deltaY < 0) {
+              if (leftAside) {
+                checkAside(leftAside, 90);
+              }
+              if (rightAside) {
+                checkAside(rightAside, 90);
               }
             } else {
-              el.style.height = newHeightDiv + 'px';
+              if (rightAside) {
+                checkAside(leftAside, 10);
+              }
+              if (rightAside) {
+                checkAside(rightAside, 10);
+              }
+            }
+          }
+        })
+      }
+
+      const heightWhat = () => {
+        let newHeightDiv = 0
+        newHeightDiv = (window.innerHeight - header.clientHeight - 20);
+        if (scrollDiv.length) {
+          for (let i = 0; i < scrollDiv.length; i++) {
+            const el = scrollDiv[i];
+            SimpleScrollbar.initEl(el);
+            if (el.offsetParent) {
+              if (el.offsetParent.classList.contains('aside-right')) {
+                if (window.matchMedia('(max-width: 991px)').matches) {
+                  el.style.height = '';
+                } else {
+                  el.style.height = (newHeightDiv - 65) + 'px';
+                }
+              } else {
+                el.style.height = newHeightDiv + 'px';
+              }
+            } else {
+              el.style.height = (newHeightDiv - 100) + 'px';
             }
           }
         }
       }
+
+      //* function init
+      heightWhat();
+      positionSt();
+
+      //* function resize
+      window.addEventListener('resize', function() {
+        heightWhat();
+        positionSt();
+      }, false);
     }
 
     //* function button Options(three dots)
@@ -129,10 +155,10 @@ export default {
             }
           });
         }
-      })
+      });
     }
 
-    // * Select template in modal
+    // * function for "Select" template in modal
     {
       $('.form__single--select-default select[data-toggle="select"]').select2({
         minimumResultsForSearch: Infinity,
@@ -164,24 +190,46 @@ export default {
 
     }
 
-    //* function init
-    heightWhat();
-    positionSt();
+    //* function hover "reaction-btn-like"
+    {
+      const reaction = {
+        reactionWrap: document.querySelectorAll('.reaction__link-reaction'),
+        ractionDivVisible: document.querySelector('.reaction-btn-like'),
+      }
 
-    //* function resize
-    window.addEventListener('resize', function() {
-      positionSt();
-      heightWhat();
-    }, false);
-
+      const hoverReaction = () => {
+        let timer = [];
+        if (reaction.reactionWrap.length) {
+          reaction.reactionWrap.forEach(element => {
+            element.addEventListener('mouseenter', (e) => {
+              timer[1] = setTimeout(function() {
+                element.classList.add('js-reaction-show');
+                element.querySelector('.reaction-btn-like').classList.add('js-reaction-show');
+              }, 500);
+              clearInterval(timer[2]);
+              element.classList.add('js-reaction-hover')
+            })
+            element.addEventListener('mouseleave', (e) => {
+              clearInterval(timer[1]);
+              timer[2] = setTimeout(function() {
+                element.classList.remove('js-reaction-show');
+                element.querySelector('.reaction-btn-like').classList.remove('js-reaction-show');
+              }, 500);
+              element.classList.remove('js-reaction-hover')
+            })
+          });
+        }
+      }
+      hoverReaction();
+    }
 
     const images = [
-      'https://unsplash.it/1300/800?image=875',
-      'https://unsplash.it/1300/800?image=874',
-      'https://unsplash.it/1300/800?image=872',
-      'https://unsplash.it/1300/800?image=868',
-      'https://unsplash.it/1300/800?image=839',
-      'https://unsplash.it/1300/800?image=838',
+      '/images/hero-slider/birthday.jpg',
+      '/images/hero-slider/birthday.jpg',
+      '/images/hero-slider/cristmas.jpg',
+      '/images/hero-slider/love.jpg',
+      '/images/hero-slider/parties.jpg',
+      '/images/hero-slider/pets.jpg',
     ];
 
     $('#gallery2').imagesGrid({

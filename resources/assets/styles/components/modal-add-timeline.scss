@@ -97,9 +97,7 @@
   .form {
     height: 100%;
     &__inputs {
-      overflow-y: auto;
       padding-right: 77px;
-      height: 100%;
 
       @include media-breakpoint-down(md) {
         padding-right: 0;
@@ -186,6 +184,39 @@
       @media (max-width: 550px) {
         margin-right: 8px;
       }
+    }
+  }
+
+  .scroll-div {
+    margin-left: -10px;
+    margin-right: -10px;
+    .ss-content {
+      padding: 0 10px;
+    }
+  }
+
+  .ss-container {
+    &:hover,
+    &:active {
+      &:after {
+        display: block;
+      }
+
+      .ss-scroll {
+        opacity: 1;
+      }
+    }
+
+    .ss-wrapper {
+      .ss-content {
+        overflow-y: scroll;
+      }
+    }
+    .ss-scroll {
+      background: #afbbd4;
+      width: 4px;
+      border-radius: 0;
+      margin-left: 8px;
     }
   }
 }

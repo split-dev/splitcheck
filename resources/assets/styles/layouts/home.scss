@@ -1236,16 +1236,17 @@
     display: flex;
     align-items: center;
     line-height: 23px;
+    cursor: pointer;
 
-    &--like {
-      &:hover {
-        .reaction-btn-like {
-          visibility: visible;
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-    }
+    // &--like {
+    //   &:hover {
+    //     .reaction-btn-like {
+    //       visibility: visible;
+    //       opacity: 1;
+    //       transform: scale(1);
+    //     }
+    //   }
+    // }
 
     span {
       padding-left: 9px;
@@ -1261,8 +1262,10 @@
   left: -6px;
   padding: 0;
   top: calc(100% + 8px);
+  border-radius: 8px;
   visibility: hidden;
   opacity: 0;
+  z-index: 1;
   // transform: scale(0);
 
   transition: $transition-slow opacity, 0s visibility;
@@ -1287,6 +1290,12 @@
     box-shadow: $shadow-search2;
   }
 
+  &.js-reaction-show {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+
   // .reaction-btn-like__list
 
   &__list {
@@ -1299,6 +1308,7 @@
 
   &__item {
     margin-right: 12px;
+    line-height: 0;
 
     &:last-of-type {
       margin-right: 0;
@@ -1312,6 +1322,7 @@
     display: inline-block;
     width: 32px;
     height: 32px;
+    cursor: pointer;
   }
 }
 

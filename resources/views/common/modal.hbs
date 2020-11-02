@@ -307,75 +307,77 @@
         <!-- form -->
         <form action="" id="create-goss-form" class="form">
           <div class="form__inputs">
-            <div class="form__single form__single--select form__single--select-default form__single--fluid">
-              <label class="form__label">Goss type</label>
-              <select class="form__select form__select--default" data-toggle="select">
-                <option value="select-1">Just for laugh</option>
-                <option value="select-2">Just for laugh</option>
-                <option value="select-3">Just for laugh</option>
-              </select>
-
-              <span class="form__note">
-                You can share anything that will make others smile. Be social and caring for others
-              </span>
-            </div>
-            <!-- for error add class div form__single - *error* -->
-            <div class="form__single form__single--fluid">
-              <label class="form__label">Goss title (optional)</label>
-              <input type="text" class="form__input" required="">
-              <span class="form__symbol-error"></span>
-            </div>
-            <div class="form__single form__single--fluid">
-              <label class="form__label">Write some text to your goss (optional)</label>
-              <textarea class="form__textarea"></textarea>
-              <span class="form__symbol-error"></span>
-            </div>
-
-            <div class="form__wrap">
-              <span class="form__wrap-title">Add goss images (optional)</span>
-              <div class="form__single">
-                <a href="#" class="new-banner position-relative d-flex align-items-center justify-content-center">
-                  <i class="icon icon-plus"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="form__wrap form__wrap--location">
-              <span class="form__wrap-title">Who can see your goss?</span>
-
+            <div class="scroll-div">
               <div class="form__single form__single--select form__single--select-default form__single--fluid">
                 <label class="form__label">Goss type</label>
                 <select class="form__select form__select--default" data-toggle="select">
-                  <option value="select-1">Everyone</option>
-                  <option value="select-2">Everyone</option>
-                  <option value="select-3">Everyone</option>
-                </select>
-                <select class="form__select form__select--default" data-toggle="select">
-                  <option value="select-1">Over 16</option>
-                  <option value="select-2">Over 16</option>
-                  <option value="select-3">Over 16</option>
+                  <option value="select-1">Just for laugh</option>
+                  <option value="select-2">Just for laugh</option>
+                  <option value="select-3">Just for laugh</option>
                 </select>
 
                 <span class="form__note">
-                  Classify your goss properly so that it can be displayed to the right audience
+                  You can share anything that will make others smile. Be social and caring for others
                 </span>
               </div>
-
-              <div class="form__single form__single--fluid form__single--checkbox">
-                <input type="checkbox" id="checkbox-language" class="form__checkbox form__checkbox--language"
-                  name="checkbox-language" checked />
-                <label for="checkbox-language">
-                  Coarse language is
-                  <b>enabled</b>
-                </label>
+              <!-- for error add class div form__single - *error* -->
+              <div class="form__single form__single--fluid">
+                <label class="form__label">Goss title (optional)</label>
+                <input type="text" class="form__input" required="">
+                <span class="form__symbol-error"></span>
               </div>
               <div class="form__single form__single--fluid">
-                <input type="checkbox" id="checkbox-content" class="form__checkbox form__checkbox--content"
-                  name="checkbox-content" />
-                <label for="checkbox-content">
-                  Adult content is
-                  <b>disabled</b>
-                </label>
+                <label class="form__label">Write some text to your goss (optional)</label>
+                <textarea class="form__textarea"></textarea>
+                <span class="form__symbol-error"></span>
+              </div>
+
+              <div class="form__wrap">
+                <span class="form__wrap-title">Add goss images (optional)</span>
+                <div class="form__single">
+                  <a href="#" class="new-banner position-relative d-flex align-items-center justify-content-center">
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="form__wrap form__wrap--location">
+                <span class="form__wrap-title">Who can see your goss?</span>
+
+                <div class="form__single form__single--select form__single--select-default form__single--fluid">
+                  <label class="form__label">Goss type</label>
+                  <select class="form__select form__select--default" data-toggle="select">
+                    <option value="select-1">Everyone</option>
+                    <option value="select-2">Everyone</option>
+                    <option value="select-3">Everyone</option>
+                  </select>
+                  <select class="form__select form__select--default" data-toggle="select">
+                    <option value="select-1">Over 16</option>
+                    <option value="select-2">Over 16</option>
+                    <option value="select-3">Over 16</option>
+                  </select>
+
+                  <span class="form__note">
+                    Classify your goss properly so that it can be displayed to the right audience
+                  </span>
+                </div>
+
+                <div class="form__single form__single--fluid form__single--checkbox">
+                  <input type="checkbox" id="checkbox-language" class="form__checkbox form__checkbox--language"
+                    name="checkbox-language" checked />
+                  <label for="checkbox-language">
+                    Coarse language is
+                    <b>enabled</b>
+                  </label>
+                </div>
+                <div class="form__single form__single--fluid">
+                  <input type="checkbox" id="checkbox-content" class="form__checkbox form__checkbox--content"
+                    name="checkbox-content" />
+                  <label for="checkbox-content">
+                    Adult content is
+                    <b>disabled</b>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -425,142 +427,144 @@
         <!-- form -->
         <form action="" id="add-timeline-form" class="form">
           <div class="form__inputs">
-            <!-- for error add class div form__single - *error* -->
-            <div class="form__single form__single--fluid  error">
-              <label class="form__label">Title</label>
-              <input type="text" class="form__input" required="">
-              <span class="form__symbol-error"></span>
-            </div>
-            <!-- for error add class div form__single - *error* -->
-            <div class="form__single form__single--fluid">
-              <label class="form__label">Budget</label>
-              <input type="text" class="form__input" required="">
-              <span class="form__symbol-error"></span>
-            </div>
-            <div class="form__single form__single--fluid">
-              <label class="form__label">Content (optional)</label>
-              <textarea class="form__textarea"></textarea>
-              <span class="form__symbol-error"></span>
-            </div>
-
-            <div class="form__wrap">
-              <span class="form__wrap-title">Date and time</span>
+            <div class="scroll-div">
               <!-- for error add class div form__single - *error* -->
-              <div class="form__single form__single--date form__single--fluid">
-                <label class="form__label">Set a follow-up date</label>
-                <input type="text" class="form__input" data-toggle="datepicker" required="">
-                <span class="form__symbol-error"></span>
-              </div>
-              <!-- for error add class div form__single - *error* -->
-              <div class="form__single form__single--time form__single--fluid">
-                <label class="form__label">Set a time</label>
-                <input type="text" class="form__input" data-toggle="timepicker" required="">
-                <span class="form__symbol-error"></span>
-              </div>
-            </div>
-
-            <div class="form__wrap">
-              <span class="form__wrap-title">Add banner (optional)</span>
-              <div class="form__single">
-                <a href="#" class="new-banner position-relative d-flex align-items-center justify-content-center">
-                  <i class="icon icon-plus"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="form__wrap form__wrap--location">
-              <span class="form__wrap-title">Location</span>
-              <!-- for error add class div form__single - *error* -->
-              <div class="form__single form__single--fluid">
-                <label class="form__label">address line 1</label>
+              <div class="form__single form__single--fluid  error">
+                <label class="form__label">Title</label>
                 <input type="text" class="form__input" required="">
                 <span class="form__symbol-error"></span>
               </div>
               <!-- for error add class div form__single - *error* -->
               <div class="form__single form__single--fluid">
-                <label class="form__label">address line 2</label>
+                <label class="form__label">Budget</label>
                 <input type="text" class="form__input" required="">
                 <span class="form__symbol-error"></span>
               </div>
-              <!-- for error add class div form__single - *error* -->
               <div class="form__single form__single--fluid">
-                <label class="form__label">City</label>
-                <input type="text" class="form__input" required="">
+                <label class="form__label">Content (optional)</label>
+                <textarea class="form__textarea"></textarea>
                 <span class="form__symbol-error"></span>
               </div>
-              <!-- for error add class div form__single - *error* -->
-              <div class="form__single form__single--fluid">
-                <label class="form__label">State</label>
-                <input type="text" class="form__input" required="">
-                <span class="form__symbol-error"></span>
+
+              <div class="form__wrap">
+                <span class="form__wrap-title">Date and time</span>
+                <!-- for error add class div form__single - *error* -->
+                <div class="form__single form__single--date form__single--fluid">
+                  <label class="form__label">Set a follow-up date</label>
+                  <input type="text" class="form__input" data-toggle="datepicker" required="">
+                  <span class="form__symbol-error"></span>
+                </div>
+                <!-- for error add class div form__single - *error* -->
+                <div class="form__single form__single--time form__single--fluid">
+                  <label class="form__label">Set a time</label>
+                  <input type="text" class="form__input" data-toggle="timepicker" required="">
+                  <span class="form__symbol-error"></span>
+                </div>
               </div>
-              <!-- for error add class div form__single - *error* -->
-              <div class="form__single">
-                <label class="form__label">Postcode</label>
-                <input type="text" class="form__input" required="">
-                <span class="form__symbol-error"></span>
+
+              <div class="form__wrap">
+                <span class="form__wrap-title">Add banner (optional)</span>
+                <div class="form__single">
+                  <a href="#" class="new-banner position-relative d-flex align-items-center justify-content-center">
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
               </div>
-              <!-- for error add class div form__single - *error* -->
-              <div class="form__single form__single--fluid">
-                <label class="form__label">Country</label>
-                <input type="text" class="form__input" required="">
-                <span class="form__symbol-error"></span>
+
+              <div class="form__wrap form__wrap--location">
+                <span class="form__wrap-title">Location</span>
+                <!-- for error add class div form__single - *error* -->
+                <div class="form__single form__single--fluid">
+                  <label class="form__label">address line 1</label>
+                  <input type="text" class="form__input" required="">
+                  <span class="form__symbol-error"></span>
+                </div>
+                <!-- for error add class div form__single - *error* -->
+                <div class="form__single form__single--fluid">
+                  <label class="form__label">address line 2</label>
+                  <input type="text" class="form__input" required="">
+                  <span class="form__symbol-error"></span>
+                </div>
+                <!-- for error add class div form__single - *error* -->
+                <div class="form__single form__single--fluid">
+                  <label class="form__label">City</label>
+                  <input type="text" class="form__input" required="">
+                  <span class="form__symbol-error"></span>
+                </div>
+                <!-- for error add class div form__single - *error* -->
+                <div class="form__single form__single--fluid">
+                  <label class="form__label">State</label>
+                  <input type="text" class="form__input" required="">
+                  <span class="form__symbol-error"></span>
+                </div>
+                <!-- for error add class div form__single - *error* -->
+                <div class="form__single">
+                  <label class="form__label">Postcode</label>
+                  <input type="text" class="form__input" required="">
+                  <span class="form__symbol-error"></span>
+                </div>
+                <!-- for error add class div form__single - *error* -->
+                <div class="form__single form__single--fluid">
+                  <label class="form__label">Country</label>
+                  <input type="text" class="form__input" required="">
+                  <span class="form__symbol-error"></span>
+                </div>
               </div>
-            </div>
 
-            <div class="form__wrap">
-              <span class="form__wrap-title">Tags</span>
-              <div class="form__single form__single--select form__single--select-user form__single--fluid">
-                <label class="form__label">write to people or groups</label>
-                <select class="form__input" data-toggle="select" multiple="multiple">
-                  <option value="user-1">Terry Smith</option>
-                  <option value="user-2">Terry Will Green</option>
-                  <option value="user-3">Terry Brown</option>
-                </select>
-                {{!-- <input type="text" class="form__input" required=""> --}}
-                <span class="form__symbol-error"></span>
+              <div class="form__wrap">
+                <span class="form__wrap-title">Tags</span>
+                <div class="form__single form__single--select form__single--select-user form__single--fluid">
+                  <label class="form__label">write to people or groups</label>
+                  <select class="form__input" data-toggle="select" multiple="multiple">
+                    <option value="user-1">Terry Smith</option>
+                    <option value="user-2">Terry Will Green</option>
+                    <option value="user-3">Terry Brown</option>
+                  </select>
+                  {{!-- <input type="text" class="form__input" required=""> --}}
+                  <span class="form__symbol-error"></span>
+                </div>
               </div>
-            </div>
 
-            <div class="form__wrap">
-              <span class="form__wrap-title">Who is coming?</span>
-              <div class="form__single form__single--fluid flex-wrap flex-row">
+              <div class="form__wrap">
+                <span class="form__wrap-title">Who is coming?</span>
+                <div class="form__single form__single--fluid flex-wrap flex-row">
 
-                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                  <img src="" alt="">
-                  <span class="avatar__symbol">JS</span>
+                  <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                    <img src="" alt="">
+                    <span class="avatar__symbol">JS</span>
+                  </div>
+
+                  <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                    <img src="" alt="">
+                    <span class="avatar__symbol">JS</span>
+                  </div>
+
+                  <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                    <img src="" alt="">
+                    <span class="avatar__symbol">JS</span>
+                  </div>
+
+                  <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                    <img src="" alt="">
+                    <span class="avatar__symbol">JS</span>
+                  </div>
+
+                  <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                    <img src="" alt="">
+                    <span class="avatar__symbol">JS</span>
+                  </div>
+
+                  <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                    <img src="" alt="">
+                    <span class="avatar__symbol">JS</span>
+                  </div>
+
+                  <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                    <img src="" alt="">
+                    <span class="avatar__symbol">JS</span>
+                  </div>
+
                 </div>
-
-                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                  <img src="" alt="">
-                  <span class="avatar__symbol">JS</span>
-                </div>
-
-                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                  <img src="" alt="">
-                  <span class="avatar__symbol">JS</span>
-                </div>
-
-                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                  <img src="" alt="">
-                  <span class="avatar__symbol">JS</span>
-                </div>
-
-                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                  <img src="" alt="">
-                  <span class="avatar__symbol">JS</span>
-                </div>
-
-                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                  <img src="" alt="">
-                  <span class="avatar__symbol">JS</span>
-                </div>
-
-                <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                  <img src="" alt="">
-                  <span class="avatar__symbol">JS</span>
-                </div>
-
               </div>
             </div>
           </div>

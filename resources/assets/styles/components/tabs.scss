@@ -12,9 +12,16 @@
     top: 7px;
   }
 }
-.strong-text {
-  font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif !important;
+div[data-class="strong"] {
+  color: #0b0212;
+  @include med;
+  font-size: 16px;
+}
+div[data-class="normal-text"] {
+  color: #0b0212;
   font-weight: normal;
+  font-size: 16px;
+  @include roman;
 }
 .svg-top-hide {
   display: none;
@@ -30,6 +37,7 @@
 .mobile-nav {
   transition: 0.3s;
   width: 100%;
+  min-height: 300px;
   display: none;
   position: fixed;
   top: 55px;
@@ -69,6 +77,7 @@
     }
   }
   .main-content {
+    transition: 0.3s;
     justify-content: flex-start;
     @media (max-width: 991px) {
       padding-top: 30px;
@@ -346,11 +355,6 @@
       margin-top: 15px;
       margin-bottom: 20px;
       display: flex;
-      strong {
-        color: #0b0212;
-        @include roman;
-        font-size: 16px;
-      }
     }
     &__card {
       display: flex;

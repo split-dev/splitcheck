@@ -7,27 +7,33 @@ export default {
       $('.account-preferences__card').on('click', function() {
         let bgColor = $(this).attr('data-class');
         $('.section-blur').attr('data-class', bgColor);
-        console.log(bgColor);
        })
      
        //mobile tabs
-     $('.settings__hide li').click(function() {
+    $('.settings__hide li').click(function() {
        $(this).parent().slideToggle(400);
        $('.mobile-nav').toggleClass('mobile-before')
        $('.svg-show').toggleClass('svg-top-hide');
-     })
+       $('.main-content').css('margin-top', '0')
+     });
+     
 
      $('.settings__toggle').on('click', function() {
        $('.mobile-nav').toggleClass('mobile-before')
        $('.svg-show').toggleClass('svg-top-hide');
        $('.settings__hide').slideToggle(400);
+       
+      if ($('.nav').hasClass('mobile-before')) {
+        let heightPadding = $('.mobile-nav').height();
+        $('.main-content').css('margin-top', heightPadding + 'px');
+      } else {
+        $('.main-content').css('margin-top', '0')
+      }
      });
 
-     $('.svg-revert').on('click', function() {
-      $('.mobile-nav').removeClass('mobile-before')
-      $('.svg-show').removeClass('svg-top-hide');
-      $('.settings__hide').slideToggle(400);
-    })
+    
+
+
     //check input
       $('.nav-item').click(function() {
           $('.nav-item').removeClass('active-item');
@@ -38,16 +44,20 @@ export default {
       $('.slideThree').click(function() {
           $(this).toggleClass('check');
           if ($('.slideThree').hasClass('check')) {
-            $(this).next().removeClass('strong-text');
-            $(this).prev().addClass('strong-text');
+            $(this).next().removeClass('strong-text')
+            $(this).prev().addClass('strong-text')
+            $(this).prev().removeClass('no-strong')
+            $(this).next().addClass('no-strong')
+           
           } else {
-            $(this).next().addClass('strong-text');
-            $(this).prev().removeClass('strong-text');
+            $(this).next().addClass('strong-text')
+            $(this).prev().removeClass('strong-text')
+            $(this).next().removeClass('no-strong')
+            $(this).prev().addClass('no-strong')
           }
       });
-
+      $('.account-preferences__check strong').addClass('no-strong')
       
-     
 
       //password hide
       $('.show').click( function () {

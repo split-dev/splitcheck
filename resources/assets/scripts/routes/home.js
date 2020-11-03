@@ -241,9 +241,11 @@ export default {
       // Perform any action the gallery
       postLightGallery.on('onBeforeOpen.lg',function(){
         $('.section-blur').addClass('filter');
+        $('.menu-bottom').addClass('filter');
       });
       postLightGallery.on('onCloseAfter.lg',function(){
         $('.section-blur').removeClass('filter');
+        $('.menu-bottom').removeClass('filter');
       });
     }
   },

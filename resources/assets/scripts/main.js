@@ -4,6 +4,7 @@
 // import external dependencies
 import './util/polyfills'
 import 'jquery';
+import 'bootstrap';
 
 // Import everything from autoload
 import './autoload/**/*'
@@ -14,6 +15,7 @@ import common from './routes/common';
 import Detection from './util/Detection';
 import home from './routes/home';
 import early from './routes/early';
+import settings from './routes/settings';
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -26,6 +28,7 @@ const routes = new Router({
   common,
   'home': home,
   'early': early,
+  'settings': settings,
 });
 
 // // Load Events

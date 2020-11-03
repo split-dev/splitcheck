@@ -88,23 +88,27 @@ export default {
 
       const heightWhat = () => {
         let newHeightDiv = 0
-        newHeightDiv = (window.innerHeight - header.clientHeight - 20);
         if (scrollDiv.length) {
           for (let i = 0; i < scrollDiv.length; i++) {
             const el = scrollDiv[i];
             SimpleScrollbar.initEl(el);
             if (el.offsetParent) {
+              newHeightDiv = (window.innerHeight - header.clientHeight - 20);
+
               if (el.offsetParent.classList.contains('aside-right')) {
                 if (window.matchMedia('(max-width: 991px)').matches) {
                   el.style.height = '';
                 } else {
                   el.style.height = (newHeightDiv - 65) + 'px';
                 }
-              } else {
+              } else if (el.offsetParent.classList.contains('aside-left')) {
                 el.style.height = newHeightDiv + 'px';
               }
-            } else {
-              el.style.height = (newHeightDiv - 100) + 'px';
+            }
+            if (el.parentElement.classList.contains('form__inputs')) {
+              newHeightDiv = window.innerHeight - 200;
+
+              el.style.height = newHeightDiv + 'px';
             }
           }
         }
@@ -235,10 +239,10 @@ export default {
       });
 
       // Perform any action the gallery
-      postLightGallery.on('onBeforeOpen.lg',function(event){
+      postLightGallery.on('onBeforeOpen.lg',function(){
         $('.section-blur').addClass('filter');
       });
-      postLightGallery.on('onCloseAfter.lg',function(event){
+      postLightGallery.on('onCloseAfter.lg',function(){
         $('.section-blur').removeClass('filter');
       });
     }

@@ -9,7 +9,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssoWebpackPlugin = require('csso-webpack-plugin').default;
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 var ImageminPlugin = require('imagemin-webpack-plugin').default;
+const imageminOptipng = require('imagemin-optipng');
 const CopyPlugin = require('copy-webpack-plugin');
+// const CopyGlobsPlugin = require('copy-globs-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const desire = require('./util/desire');
 const includeHtml = require('./util/includeHtml');
@@ -243,6 +245,7 @@ if (config.enabled.cacheBusting) {
   );
 }
 if (config.enabled.watcher) {
+  // webpackConfig.entry = require('./util/addHotMiddleware')(webpackConfig.entry);
   webpackConfig = merge(webpackConfig, require('./webpack.config.watch'));
 }
 /**

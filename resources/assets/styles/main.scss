@@ -1,4 +1,4 @@
-@import "common/variables";
+@import "variables";
 @import "bootstrap";
 
 /** Utilities & Helpers */
@@ -6,7 +6,7 @@
 
 /** Import theme styles */
 // @import "reset";
-@import "mixins";
+@import "common/mixins";
 @import "type";
 
 /** Import everything from autoload */
@@ -36,11 +36,11 @@
 @import "components/fonts";
 @import "components/icons";
 
-@import "common/header";
+@import "layouts/header";
 @import "common/global";
-@import "common/footer";
-@import "common/mobile-menu";
-@import "common/menu-bottom";
+@import "layouts/footer";
+@import "layouts/mobile-menu";
+@import "layouts/menu-bottom";
 @import "common/ie-fix";
 
 @import "components/form";
@@ -52,7 +52,7 @@
 @import "components/social";
 @import "components/gifts";
 @import "components/card-detail";
-@import "components/modal";
+@import "components/modals/modal";
 @import "components/modal-side";
 @import "components/modal-add-timeline";
 
@@ -83,5 +83,5 @@
  * such as header, footer
  */
 // @import "layouts/base";
-@import "layouts/early-bird";
-@import "layouts/home";
+@import "pages/early-bird/early-bird";
+//@import "pages/home";

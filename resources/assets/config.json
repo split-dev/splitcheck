@@ -3,7 +3,12 @@
     "main": [
       "./scripts/main.js",
       "./styles/main.scss"
-    ]
+    ],
+    "pages/about": "./styles/pages/home/index.scss",
+    "pages/shop": "./styles/pages/shop/index.scss",
+    "components/modals/modal": "./styles/components/modals/modal.scss",
+    "components/modals/modal-add-timeline": "./styles/components/modals/modal-add-timeline.scss",
+    "components/modals/modal-side": "./styles/components/modals/modal-side.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

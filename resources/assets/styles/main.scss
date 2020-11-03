@@ -1,4 +1,4 @@
-@import "common/variables";
+@import "variables";
 @import "bootstrap";
 
 /** Utilities & Helpers */
@@ -33,18 +33,18 @@
  */
 // @import "components/buttons";
 //* main
-@import "components/fonts";
-@import "components/icons";
+@import "common/fonts";
+@import "common/icons";
 
-@import "common/header";
+@import "layouts/header";
 @import "common/global";
-@import "common/footer";
-@import "common/mobile-menu";
-@import "common/menu-bottom";
+@import "layouts/footer";
+@import "layouts/mobile-menu";
+@import "layouts/menu-bottom";
 @import "common/ie-fix";
 
-@import "components/form";
-@import "components/options";
+@import "common/form";
+@import "common/options";
 @import "components/hero-slider";
 @import "components/answer";
 @import "components/platform";
@@ -52,9 +52,9 @@
 @import "components/social";
 @import "components/gifts";
 @import "components/card-detail";
-@import "components/modal";
-@import "components/modal-side";
-@import "components/modal-add-timeline";
+//@import "components/modals/modal";
+//@import "components/modals/modal-side";
+//@import "components/modals/modal-add-timeline";
 
 //* plugins
 @import "components/plugins/custom-scroll";
@@ -63,17 +63,17 @@
 @import "components/plugins/light-gallery";
 
 //* home
-@import "components/home-page/card-goss";
-@import "components/home-page/card-timeline";
-@import "components/home-page/internal-card";
-@import "components/home-page/new-item";
-@import "components/home-page/other-links";
-@import "components/home-page/personal-card";
-@import "components/home-page/reaction";
-@import "components/home-page/section-content";
-@import "components/home-page/swiper-custom";
-@import "components/home-page/timeline";
-@import "components/home-page/grid-gallery";
+//@import "components/home-page/card-goss";
+//@import "components/home-page/card-timeline";
+//@import "components/home-page/internal-card";
+//@import "components/home-page/new-item";
+//@import "components/home-page/other-links";
+//@import "components/home-page/personal-card";
+//@import "components/home-page/reaction";
+//@import "components/home-page/section-content";
+//@import "components/home-page/swiper-custom";
+//@import "components/home-page/timeline";
+//@import "components/home-page/grid-gallery";
 
 /**
  * ==========
@@ -83,5 +83,5 @@
  * such as header, footer
  */
 // @import "layouts/base";
-@import "layouts/early-bird";
-@import "layouts/home";
+//@import "layouts/early-bird";
+//@import "pages/home/index";

@@ -1,3 +1,20 @@
+//Glob Utils
+@import "../../variables";
+@import "../../bootstrap-utils";
+
+// Page Specific Components
+@import "grid-gallery";
+@import "card-goss";
+@import "card-timeline";
+@import "internal-card";
+@import "new-item";
+@import "other-links";
+@import "personal-card";
+@import "reaction";
+@import "section-content";
+@import "swiper-custom";
+@import "timeline";
+
 .home {
   .aside-left,
   .aside-right {
@@ -7,7 +24,6 @@
   .aside-left {
     width: 18.619%;
     position: sticky;
-    position: -webkit-sticky;
     padding-right: 27px;
     top: 90px;
 

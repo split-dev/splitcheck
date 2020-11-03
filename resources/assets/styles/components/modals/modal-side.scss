@@ -1,3 +1,7 @@
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
 .modal.left .modal-dialog,
 .modal.right .modal-dialog {
   position: fixed;

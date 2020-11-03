@@ -75,6 +75,7 @@
     "imagemin-webpack-plugin": "^2.4.2",
     "jquery": "^3.5.1",
     "jquery-lazy": "^1.7.10",
+    "lightgallery": "^1.9.0",
     "nanogallery2": "^3.0.4",
     "regenerator-runtime": "^0.13.5",
     "select2": "^4.0.13",

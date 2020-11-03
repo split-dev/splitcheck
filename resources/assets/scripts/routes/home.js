@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper/swiper-bundle';
 import SimpleScrollbar from 'simple-scrollbar';
-import './images-grid';
+import 'lightgallery/dist/js/lightgallery-all.min'
 
 export default {
   init() {
@@ -223,18 +223,25 @@ export default {
       hoverReaction();
     }
 
-    const images = [
-      '/images/hero-slider/birthday.jpg',
-      '/images/hero-slider/birthday.jpg',
-      '/images/hero-slider/cristmas.jpg',
-      '/images/hero-slider/love.jpg',
-      '/images/hero-slider/parties.jpg',
-      '/images/hero-slider/pets.jpg',
-    ];
+    //* init lightGallery
+    {
+      const postLightGallery = $('.grid-gallery').lightGallery({
+        selector: '.grid-gallery__selector',
+        thumbnail: false,
+        zoom: false,
+        share: false,
+        rotate: false,
+        hash: false,
+      });
 
-    $('#gallery2').imagesGrid({
-        images: images.slice(0, 5),
-    });
+      // Perform any action the gallery
+      postLightGallery.on('onBeforeOpen.lg',function(event){
+        $('.section-blur').addClass('filter');
+      });
+      postLightGallery.on('onCloseAfter.lg',function(event){
+        $('.section-blur').removeClass('filter');
+      });
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

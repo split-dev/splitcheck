@@ -314,4 +314,11 @@
       content: url("images/icons/plus-blue.svg");
     }
   }
+  &.icon-gallery-main {
+    width: 15px;
+    height: 18px;
+    &:before {
+      content: url("images/icons/gallery-main.svg");
+    }
+  }
 }

@@ -142,10 +142,12 @@ export default {
     })
     $('.modal').on('hide.bs.modal', function(){
       $('.section-blur').removeClass('filter');
-      for (let i = 0; i < $('video').length; i++) {
-        const element = $('video')[i];
-        if(element.previousElementSibling.classList.contains('video-btn-none')) {
-          element.previousElementSibling.classList.remove('video-btn-none', 'pause');
+      for (let i = 0; i < $('.modal video').length; i++) {
+        const element = $('.modal video')[i];
+        if(element.previousElementSibling) {
+          if(element.previousElementSibling.classList.contains('video-btn-none')) {
+            element.previousElementSibling.classList.remove('video-btn-none', 'pause');
+          }
         }
         pauseVid(element);
       }

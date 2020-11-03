@@ -38,16 +38,19 @@ $theme-colors: (
   "black": #000,
   "light-gray": #e8ebf2,
   "light-gray2": #f8f9fb,
+  "light-gray3": #eef3fd,
   "gray": #828282,
   "blue": #315293,
   "blue2": #35558f,
   "blue3": #254277,
   "blue4": #335491,
+  "blue5": #2f5095,
   "light-blue": #99a9c9,
   "dark-blue": #0b0212,
   "orange": #f97d00,
   "light-orange": #feecd9,
   "red": #f70e31,
+  "green": #4fcec4,
 );
 // then in code: theme-color("$this-color")
 // then in code rgb: rgba(theme-color("$this-color"), 0.95);

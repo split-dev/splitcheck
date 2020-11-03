@@ -17,7 +17,7 @@ export default {
     //* Swiper
     {
       //* option for swiper
-      const option = {
+      const optionForSwiperGoss = {
         slidesPerView: 'auto',
         spaceBetween: 12,
         setWrapperSize: true,
@@ -37,8 +37,42 @@ export default {
         },
       }
 
+      const optionForTimeline = {
+        slidesPerView: 4,
+        setWrapperSize: false,
+        simulateTouch: false,
+        preventInteractionOnTransition: true,
+        mousewheel: true,
+        navigation: {
+          nextEl: '.card-timeline__slider .swiper-button-next',
+          prevEl: '.card-timeline__slider .swiper-button-prev',
+        },
+        breakpoints: {
+          1260: {
+            slidesPerView: 4,
+          },
+          992: {
+            slidesPerView: 3,
+            // freeMode: true,
+          },
+          360: {
+            slidesPerView: 4,
+          },
+          250: {
+            slidesPerView: 3,
+            setWrapperSize: false,
+            simulateTouch: false,
+            preventInteractionOnTransition: true,
+            mousewheel: true,
+            // freeMode: true,
+          },
+        },
+      }
+
       //* swiper init
-      let mySwiper = new Swiper('.card-goss__slider.swiper-container', option);
+      let swiperGoss = new Swiper('.card-goss__slider.swiper-container', optionForSwiperGoss);
+
+      let swiperTimeline = new Swiper('.card-timeline__slider .swiper-container', optionForTimeline);
     }
 
     //* function for "aside-left" and "aside-right" position when scrolling, and calculate height

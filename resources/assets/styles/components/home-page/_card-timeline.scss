@@ -132,12 +132,18 @@
     }
   }
 
-  // .card-timeline__list
+  // .card-timeline__slider
 
-  &__list {
-    display: flex;
-    align-items: center;
+  .card-timeline__slider {
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: calc(50% + 8px);
+    }
+  }
+
+  &__slider {
     margin-bottom: 16px;
+    padding: 0 16px;
   }
 
   // .card-timeline__item

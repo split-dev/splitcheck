@@ -14,14 +14,14 @@
 }
 div[data-class="strong"] {
   color: #0b0212;
-  @include med;
   font-size: 16px;
+
+  font-weight: $font-weight-medium;
 }
 div[data-class="normal-text"] {
   color: #0b0212;
   font-weight: normal;
   font-size: 16px;
-  @include roman;
 }
 .svg-top-hide {
   display: none;
@@ -177,7 +177,6 @@ div[data-class="normal-text"] {
       position: relative;
       border: none;
       color: #0b0212;
-      @include roman;
       font-size: 16px;
       &:focus,
       &:active {
@@ -187,7 +186,6 @@ div[data-class="normal-text"] {
     }
     p {
       color: #828282;
-      @include roman;
       font-size: 14px;
       line-height: 22px;
       margin-bottom: 0;
@@ -195,10 +193,11 @@ div[data-class="normal-text"] {
     h5 {
       text-transform: uppercase;
       color: #335491;
-      @include med;
       font-size: 18px;
       letter-spacing: 0.8px;
       line-height: 18px;
+
+      font-weight: $font-weight-medium;
     }
   }
   ul,
@@ -214,7 +213,6 @@ div[data-class="normal-text"] {
   a {
     padding-left: 0;
     color: #315293;
-    @include roman;
     font-size: 14px;
 
     svg {
@@ -273,7 +271,6 @@ div[data-class="normal-text"] {
         border-radius: 5px;
         background-color: #f8f9fb;
         color: #524c57;
-        @include roman;
         font-size: 16px;
         position: relative;
         .show {
@@ -300,17 +297,16 @@ div[data-class="normal-text"] {
       .bold-span {
         margin-top: 10px;
         color: #0b0212;
-        @include roman;
         font-size: 16px;
         b {
           color: #0b0212;
-          @include med;
           font-size: 16px;
+
+          font-weight: $font-weight-medium;
         }
       }
       label {
         color: #828282;
-        @include roman;
         font-size: 14px;
       }
       input {
@@ -320,31 +316,30 @@ div[data-class="normal-text"] {
         height: 40px;
         border-radius: 5px;
         background-color: #f8f9fb;
-        @include roman;
         color: #0b0212;
         font-size: 16px;
         border: none;
         outline: none;
         &::placeholder {
-          @include roman;
           color: #0b0212;
           font-size: 16px;
         }
       }
       b {
         color: #0b0212;
-        @include roman;
         font-size: 16px;
       }
       .blue-span {
         margin-bottom: 16px;
         text-transform: uppercase;
         color: #335491;
-        @include med;
         font-size: 12px;
         font-style: normal;
         letter-spacing: 0.8px;
         line-height: 12px;
+
+        font-weight: $font-weight-medium;
+
         @media (max-width: 575px) {
           line-height: 20px;
           margin-bottom: 10px;
@@ -385,7 +380,6 @@ div[data-class="normal-text"] {
         margin-top: 8px;
         opacity: 0.75;
         color: #0b0212;
-        @include roman;
         font-size: 14px;
       }
     }

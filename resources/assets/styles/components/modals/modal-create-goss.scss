@@ -1,0 +1,23 @@
+//Glob Utils
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+// Page Specific Components
+
+.modal-create-goss {
+  @import "custom-form-for-modal-side";
+  @import "create-banner";
+
+  .avatar {
+    margin-right: 8px;
+
+    &:nth-of-type(5n + 5) {
+      margin-right: 0;
+
+      @media (max-width: 550px) {
+        margin-right: 8px;
+      }
+    }
+  }
+}

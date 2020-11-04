@@ -5,11 +5,12 @@
 $font-family-base: "Neue Haas Grotesk Display Pro", sans-serif;
 $font-family-custom: "Noteworthy - Bold", sans-serif;
 
+//* fonts-weight
 $font-weight-normal: normal !default;
 $font-weight-medium: 500 !default;
 $font-weight-bold: bold !default;
 
-// Box shadows
+//* Box shadows
 $shadow-card: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
 $shadow-card2: 0 0 4px 1px rgba(11, 2, 18, 0.08);
 $shadow-search: 1px 1px 4px 1px rgba(11, 2, 18, 0.08);
@@ -30,6 +31,7 @@ $theme-colors: (
   "light-gray2": #f8f9fb,
   "light-gray3": #eef3fd,
   "gray": #828282,
+  "gray2": #a59e9d,
   "blue": #315293,
   "blue2": #35558f,
   "blue3": #254277,

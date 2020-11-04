@@ -2,14 +2,12 @@
   overflow: hidden;
   padding-bottom: 200px;
   h3 {
-    color: #0b0212;
     font-size: 40px;
     line-height: 56px;
     text-align: center;
     margin-bottom: 70px;
-    font-weight: 400;
 
-    @include roman();
+    color: theme-color("dark-blue");
 
     @media (max-width: 767px) {
       margin-bottom: 0;
@@ -119,7 +117,9 @@
     margin-top: 40px;
     max-width: 160px;
     height: 1px;
-    background-color: #a59e9d;
+
+    background-color: theme-color("gray2");
+
     @media (max-width: 1199px) {
       margin-top: 23px;
     }
@@ -138,12 +138,12 @@
       max-width: 260px;
     }
     h5 {
-      color: #0b0212;
       font-size: 18px;
       line-height: 24px;
       text-align: left;
 
-      @include bold();
+      color: theme-color("dark-blue");
+      font-weight: $font-weight-bold;
     }
     p {
       max-width: 256px;
@@ -152,8 +152,6 @@
       font-size: 16px;
       font-weight: 100;
       line-height: 24px;
-
-      @include roman();
     }
   }
   &__info {
@@ -286,7 +284,7 @@
       }
       &:hover {
         cursor: pointer;
-        border: 2px solid #f97d00;
+        border: 2px solid theme-color("orange");
       }
     }
   }

@@ -1,0 +1,33 @@
+//Glob Utils
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+.modal-menu-mobile.modal.left .modal-content .modal-header,
+.modal-menu-mobile.modal.right .modal-content .modal-header {
+  height: 56px;
+
+  .close {
+    top: 17px;
+    left: 20px;
+    right: auto;
+
+    &:after,
+    &:before {
+      background-color: theme-color("orange");
+    }
+  }
+
+  .head-modal-info {
+    margin-left: 35px;
+
+    &__logo {
+      width: 100%;
+      max-width: 116px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

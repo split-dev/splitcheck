@@ -1,0 +1,36 @@
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+
+  background-color: theme-color("light-gray");
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: 100%;
+  }
+
+  // .avatar--no-img
+
+  &.avatar--no-img {
+    img {
+      display: none;
+    }
+  }
+
+  // .avatar__symbol
+
+  &__symbol {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: theme-color("light-blue");
+  }
+}

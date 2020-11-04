@@ -153,10 +153,10 @@
     }
     p {
       margin-top: 24px;
-      color: #0b0212;
       font-size: 22px;
-      font-weight: 400;
       line-height: 32px;
+
+      color: theme-color("dark-blue");
 
       @media (max-width: 991px) {
         text-align: center;
@@ -166,10 +166,8 @@
         margin-top: 19px;
         font-size: 18px;
       }
-
-      @include roman;
       span {
-        @include bold();
+        font-weight: $font-weight-bold;
       }
     }
   }

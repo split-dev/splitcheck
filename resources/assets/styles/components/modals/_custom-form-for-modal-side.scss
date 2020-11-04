@@ -1,0 +1,67 @@
+.form {
+  height: 100%;
+  &__inputs {
+    padding-right: 77px;
+
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+    }
+  }
+
+  &__single {
+    width: 100%;
+    max-width: calc(50% - 7.5px);
+    margin-bottom: 24px;
+
+    @media (max-width: 550px) {
+      max-width: calc(100% - 15px);
+    }
+
+    &--date,
+    &--time {
+      .form__input {
+        padding-left: 48px;
+      }
+    }
+  }
+
+  &__single--fluid {
+    max-width: 335px;
+
+    @media (max-width: 550px) {
+      max-width: calc(100% - 15px);
+    }
+  }
+
+  &__single--select-user {
+    .select2-container {
+      width: 100%;
+    }
+  }
+
+  .form__wrap--location {
+    .form__single {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__label {
+    padding-left: 8px;
+  }
+
+  &__input,
+  &__textarea {
+    padding-left: 8px;
+  }
+
+  &__textarea {
+    min-height: 120px;
+    max-height: 120px;
+  }
+
+  .select2-container--default .select2-selection,
+  .select2-container--default .select2-selection.select2-selection--single,
+  .select2-container--default .select2-selection.select2-selection--multiple {
+    padding: 0 10px;
+  }
+}

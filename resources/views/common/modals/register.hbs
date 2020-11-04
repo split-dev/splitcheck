@@ -1,0 +1,63 @@
+<!-- modal-register -->
+<div class="modal modal-register fade" id="register" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Join Splitchek</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="" class="form">
+          <div class="form__inputs">
+            <div class="form__single">
+              <label class="form__label">First Name</label>
+              <input type="text" class="form__input" required="">
+              <span class="form__symbol-error"></span>
+            </div>
+            <div class="form__single mr-0">
+              <label class="form__label">Last Name</label>
+              <input type="text" class="form__input" required="">
+              <span class="form__symbol-error"></span>
+            </div>
+            <div class="form__single error">
+              <label class="form__label">Email</label>
+              <input type="email" class="form__input" required="">
+              <span class="form__symbol-error"></span>
+            </div>
+            <div class="form__single form__single--pass">
+              <label class="form__label">Password</label>
+              <input type="password" class="form__input" required="">
+              <span class="form__symbol-pass"></span>
+            </div>
+            <div class="form__single form__single--date">
+              <label class="form__label">Date of birth</label>
+              <a href="#" class="form__link btn-blue-link">Why are you asking?</a>
+              <input type="text" class="form__input" data-toggle="datepicker" required="">
+            </div>
+            <div class="form__single form__single--select mr-0">
+              <label class="form__label">Gender</label>
+              <select class="js-select-gender form__input" name="states[]" style="width: 100%">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <span class="form__desc">By clicking Create Account, you agree to</span>
+          <div class="links">
+            <a href="#" class="links__link btn-blue-link">Shopper Agreement</a>
+            <a href="#" class="links__link btn-blue-link">Data Security and Cookie Policy</a>
+          </div>
+          <div class="form__errors-text">Existing Email</div>
+          <button class="form__button btn-blue" disabled>Create free account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <span class="modal-border">or</span>
+        <a href="#" class="btn-border">Log In</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /modal-register -->

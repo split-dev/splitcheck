@@ -4,13 +4,13 @@
 @import "../../bootstrap-utils";
 
 // Page Specific Components
-@import "avatar";
-@import "profile-list";
+@import "modal-components/avatar";
+@import "modal-components/profile-list";
 
 .modal-add-timeline {
 
-  @import "custom-form-for-modal-side";
-  @import "create-banner";
+  @import "modal-components/custom-form-for-modal-side";
+  @import "modal-components/create-banner";
 
   .avatar {
     margin-right: 8px;

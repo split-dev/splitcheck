@@ -6,6 +6,12 @@
 // Page Specific Components
 
 .modal-create-goss {
-  @import "custom-form-for-modal-side";
-  @import "create-banner";
+  @import "modal-components/custom-form-for-modal-side";
+  @import "modal-components/create-banner";
+
+  .select2-container--default {
+    &:nth-of-type(2) {
+      margin-top: 16px;
+    }
+  }
 }

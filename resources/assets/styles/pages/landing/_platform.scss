@@ -97,8 +97,8 @@
       }
       @media (max-width: 767px) {
         max-width: 328px;
-        font-size: 24px !important;
-        line-height: 32px !important;
+        font-size: 24px;
+        line-height: 32px;
       }
     }
     @media (max-width: 991px) {
@@ -113,22 +113,26 @@
     @media (max-width: 767px) {
       margin-bottom: 10px;
     }
-    &:after {
-      content: url("images/icons/simple.svg");
-      position: absolute;
-      right: -37px;
-      top: -100px;
-      @media (max-width: 1250px) {
-        right: 0;
+
+    figure {
+      margin-bottom: 0;
+
+      svg {
+        position: absolute;
+        right: -37px;
         top: -100px;
-      }
-      @media (max-width: 767px) {
-        content: url("images/icons/simple-small.svg");
-        right: 0;
-      }
-      @media (max-width: 575px) {
-        width: 140px;
-        right: 0;
+        @media (max-width: 1250px) {
+          right: 0;
+          top: -100px;
+        }
+        @media (max-width: 767px) {
+          content: url("images/icons/simple-small.svg");
+          right: 0;
+        }
+        @media (max-width: 575px) {
+          width: 140px;
+          right: 0;
+        }
       }
     }
     a {

@@ -15,7 +15,6 @@
     line-height: 28px;
     font-size: 18px !important;
 
-    color: theme-color("dark-blue");
     font-weight: $font-weight-medium;
   }
   &__content {
@@ -24,44 +23,52 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    &:before {
-      content: url("images/icons/you_can.svg");
-      position: absolute;
-      left: -92px;
-      top: 60px;
-      @media (max-width: 1306px) {
-        left: -46px;
-        top: -4px;
-      }
-      @media (max-width: 1040px) {
-        left: 0;
-      }
-      @media (max-width: 992px) {
-        top: -36px;
-        left: 50px;
-      }
-      @media (max-width: 991px) {
-        top: -36px;
-        left: 0;
-      }
-      @media (max-width: 767px) {
-        left: -80px;
-      }
-      @media (max-width: 694px) {
-        content: url("images/icons/you_can-small.svg");
-        top: 130px;
-        left: 90px;
-      }
-      @media (max-width: 575px) {
-        top: 165px;
-      }
-      @media (max-width: 440px) {
-        left: 10px;
+
+    figure {
+      margin-bottom: 0;
+
+      svg {
+        position: absolute;
+        left: -92px;
+        top: 60px;
+        @media (max-width: 1306px) {
+          left: -46px;
+          top: -4px;
+        }
+        @media (max-width: 1040px) {
+          left: 0;
+        }
+        @media (max-width: 992px) {
+          top: -36px;
+          left: 50px;
+        }
+        @media (max-width: 991px) {
+          top: -36px;
+          left: 0;
+        }
+        @media (max-width: 767px) {
+          left: -80px;
+        }
+        @media (max-width: 694px) {
+          width: 71px;
+          height: 89px;
+          top: 130px;
+          left: 90px;
+        }
+        @media (max-width: 575px) {
+          top: 165px;
+        }
+        @media (max-width: 440px) {
+          left: 10px;
+        }
       }
     }
+
     h3 {
       margin-bottom: 16px;
       @media (max-width: 575px) {
+        font-size: 24px;
+        line-height: 32px;
         margin-bottom: 25px;
       }
     }
@@ -99,9 +106,9 @@
       transition: 0.3s;
     }
     cursor: pointer;
-    a {
-      color: theme-color("orange");
-    }
+    // a {
+    //   color: theme-color("orange");
+    // }
     svg * {
       fill: theme-color("orange");
     }

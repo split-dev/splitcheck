@@ -77,6 +77,10 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+input::placeholder {
+  color: theme-color("dark-blue");
+}
+
 .bold {
   font-weight: $font-weight-bold;
 }

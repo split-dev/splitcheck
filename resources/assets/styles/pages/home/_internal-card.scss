@@ -219,11 +219,16 @@
       &:first-of-type {
         margin-bottom: 20px;
       }
+
+      a {
+        font-size: 14px;
+        line-height: 14px;
+
+        color: theme-color("blue5");
+      }
     }
 
     figure {
-      margin-bottom: 16px;
-
       img {
         width: 100%;
       }
@@ -341,5 +346,12 @@
     @include media-breakpoint-down(sm) {
       max-width: 100%;
     }
+  }
+
+  // options
+
+  .options {
+    top: 20px;
+    right: 20px;
   }
 }

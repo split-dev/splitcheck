@@ -134,7 +134,7 @@ export default {
         body.addEventListener('wheel', function(e) {
           let meNow = false;
 
-          if (e.path.length) {
+          if (e.path) {
             for (let i = 0; i < e.path.length - 3; i++) {
               const element = e.path[i];
               if (element) {

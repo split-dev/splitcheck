@@ -75,14 +75,14 @@ export default {
       let swiperTimeline = new Swiper('.card-timeline__slider .swiper-container', optionForTimeline);
     }
 
-    //* Dropzone
+    //* Dropzone and Cropper
     {
       let myDropzone = new Dropzone('.drop-photo', {
         url: '/file/post',
         transformFile: function(file, done) {
           // Create the image editor overlay
           var editor = document.createElement('div');
-          editor.style.backgroundColor = '#000';
+          editor.style.backgroundColor = '#e8ebf2';
           editor.style.position = 'absolute';
           editor.style.top = 0;
           editor.style.bottom = 0;

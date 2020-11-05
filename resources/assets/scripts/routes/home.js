@@ -77,11 +77,11 @@ export default {
 
     //* Dropzone and Cropper
     {
-      let myDropzone = new Dropzone('.drop-photo', {
+      const myDropzone = new Dropzone('.drop-photo', {
         url: '/file/post',
         transformFile: function(file, done) {
           // Create the image editor overlay
-          var editor = document.createElement('div');
+          let editor = document.createElement('div');
           editor.style.backgroundColor = '#e8ebf2';
           editor.style.position = 'absolute';
           editor.style.top = 0;
@@ -92,7 +92,7 @@ export default {
           // document.body.appendChild(editor);
 
           // Create confirm button at the top left of the viewport
-          var buttonConfirm = document.createElement('button');
+          let buttonConfirm = document.createElement('button');
           buttonConfirm.style.position = 'absolute';
           buttonConfirm.style.left = '10px';
           buttonConfirm.style.top = '10px';
@@ -105,12 +105,12 @@ export default {
           // });
 
           // Create an image node for Cropper.js
-          var image = new Image();
+          let image = new Image();
           image.src = URL.createObjectURL(file);
           editor.appendChild(image);
 
           // Create Cropper.js
-          var cropper = new Cropper(image, {
+          let cropper = new Cropper(image, {
             aspectRatio: 1,
             viewMode: 1,
           });

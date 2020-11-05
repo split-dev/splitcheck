@@ -39,6 +39,63 @@
     }
   }
 
+  &__single--image-wrap {
+    max-width: 100%;
+    figure {
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+  }
+
+  &__preview-img {
+    width: 156px;
+    height: 156px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--no-img {
+      background-color: theme-color("light-gray4");
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  &__preview-add-img {
+    width: 175px;
+
+    @media (max-width: 372px) {
+      margin-top: 16px;
+    }
+
+    .new-banner {
+      width: 72px;
+      height: 72px;
+
+      &:nth-of-type(odd) {
+        margin-right: 12px;
+        margin-bottom: 12px;
+      }
+
+      &:nth-last-of-type(2),
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .form__wrap--location {
     .form__single {
       margin-bottom: 16px;

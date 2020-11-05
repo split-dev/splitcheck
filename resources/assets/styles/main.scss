@@ -22,6 +22,7 @@
 @import "~simple-scrollbar/simple-scrollbar.css";
 @import "~lightgallery/dist/css/lightgallery.min.css";
 @import "~flatpickr/dist/flatpickr.min.css";
+@import "~dropzone/dist/min/dropzone.min.css";
 /**
  * ==========
  * Components
@@ -45,8 +46,8 @@
 @import "components/plugins/light-gallery";
 
 //* shared components
-@import "components/options.scss";
-
+@import "components/options";
+@import "components/drop-photo";
 /**
  * ==========
  * Layouts

@@ -138,10 +138,20 @@ export default {
     })
 
     $('.modal').on('shown.bs.modal', function () {
-      $('.section-blur').addClass('filter');
+      setTimeout(function() {
+        $('.section-blur').addClass('filter');
+      }, 50);
+
     })
-    $('.modal').on('hide.bs.modal', function(){
-      $('.section-blur').removeClass('filter');
+    $('.modal').on('hidden.bs.modal', function(){
+      if($('.modal:visible').length > 0) {
+        $('body').addClass('modal-open');
+        $('.section-blur').addClass('filter');
+      } else {
+        setTimeout(function() {
+          $('.section-blur').removeClass('filter');
+        }, 50);
+      }
       for (let i = 0; i < $('.modal video').length; i++) {
         const element = $('.modal video')[i];
         if(element.previousElementSibling) {

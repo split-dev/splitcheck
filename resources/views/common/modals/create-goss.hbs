@@ -1,5 +1,5 @@
 <!-- modal-create-goss -->
-<div class="modal right fade modal-create-goss" tabindex="-1" id="create-goss" role="dialog" aria-hidden="true">
+<div class="modal hide right fade modal-create-goss" tabindex="-1" id="create-goss" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content position-relative">
       <!-- modal-header -->
@@ -57,9 +57,52 @@
               <div class="form__wrap">
                 <span class="form__wrap-title">Add goss images (optional)</span>
                 <div class="form__single">
-                  <a href="#" class="new-banner position-relative d-flex align-items-center justify-content-center">
+                  <a href="#add-photo" data-toggle="modal" class="new-banner position-relative d-flex align-items-center justify-content-center">
                     <i class="icon icon-plus"></i>
                   </a>
+                </div>
+              </div>
+
+              <div class="form__wrap">
+                <span class="form__wrap-title">Add goss images (optional)</span>
+                <div
+                  class="form__single form__single--image-wrap d-flex align-items-start justify-content-between flex-wrap flex-row">
+                  <figure
+                    class="form__preview-img form__preview-img--no-img position-relative d-flex align-items-center justify-content-center">
+                    <img src="" alt="">
+                  </figure>
+
+                  <div class="form__preview-add-img position-relative d-flex align-items-start flex-wrap">
+                    <a href="#add-photo" data-toggle="modal" class="new-banner position-relative d-flex align-items-center justify-content-center">
+                      <i class="icon icon-plus"></i>
+                    </a>
+                    <a href="#add-photo" data-toggle="modal" class="new-banner position-relative d-flex align-items-center justify-content-center">
+                      <i class="icon icon-plus"></i>
+                    </a>
+                    <a href="#add-photo" data-toggle="modal" class="new-banner position-relative d-flex align-items-center justify-content-center">
+                      <i class="icon icon-plus"></i>
+                    </a>
+                    <a href="#add-photo" data-toggle="modal" class="new-banner position-relative d-flex align-items-center justify-content-center">
+                      <i class="icon icon-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__wrap">
+                <span class="form__wrap-title">Poll (optional)</span>
+
+                <div class="form__single form__single--fluid">
+                  <p class="form__add-desc">People can rate images on this goss</p>
+
+                  <div class="form__checkbox-wrap d-flex align-items-center">
+                    <span>No</span>
+                    <input type="checkbox" id="rate-images" class="form__checkbox form__checkbox--content"
+                      name="rate-images" checked />
+                    <label for="rate-images">
+                    </label>
+                    <span class="bold">Yes</span>
+                  </div>
                 </div>
               </div>
 

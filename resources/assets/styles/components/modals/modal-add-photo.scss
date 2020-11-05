@@ -1,0 +1,41 @@
+//Glob Utils
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+
+.add-photo {
+
+  .modal-dialog {
+    max-width: 720px;
+  }
+
+  .modal-body {
+    padding-top: 0;
+  }
+
+  .modal-footer {
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    .btn-border,
+    .btn-blue {
+      max-width: 148px;
+      height: 40px;
+
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
+    }
+
+    .btn-border {
+      margin-right: 16px;
+
+      @media (max-width: 575px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

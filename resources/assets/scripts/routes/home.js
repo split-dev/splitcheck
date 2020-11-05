@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper/swiper-bundle';
 import SimpleScrollbar from 'simple-scrollbar';
+import Dropzone from 'dropzone';
+import Cropper from 'cropperjs';
 import 'lightgallery/dist/js/lightgallery-all.min'
 
 export default {
@@ -11,8 +13,6 @@ export default {
     const leftAside = document.querySelector('.aside-left');
     const rightAside = document.querySelector('.aside-right');
     const scrollDiv = document.querySelectorAll('.scroll-div');
-    const modalCreateGoss = document.querySelector('.modal-create-goss .form__inputs');
-    const modalAddTimeline = document.querySelector('.modal-add-timeline .form__inputs');
 
     //* Swiper
     {
@@ -73,6 +73,49 @@ export default {
       let swiperGoss = new Swiper('.card-goss__slider.swiper-container', optionForSwiperGoss);
 
       let swiperTimeline = new Swiper('.card-timeline__slider .swiper-container', optionForTimeline);
+    }
+
+    //* Dropzone
+    {
+      let myDropzone = new Dropzone('.drop-photo', {
+        url: '/file/post',
+        transformFile: function(file, done) {
+          // Create the image editor overlay
+          var editor = document.createElement('div');
+          editor.style.backgroundColor = '#000';
+          editor.style.position = 'absolute';
+          editor.style.top = 0;
+          editor.style.bottom = 0;
+          editor.style.left = 0;
+          editor.style.right = 0;
+          this.previewsContainer.appendChild(editor)
+          // document.body.appendChild(editor);
+
+          // Create confirm button at the top left of the viewport
+          var buttonConfirm = document.createElement('button');
+          buttonConfirm.style.position = 'absolute';
+          buttonConfirm.style.left = '10px';
+          buttonConfirm.style.top = '10px';
+          buttonConfirm.style.zIndex = 9999;
+          buttonConfirm.textContent = 'Confirm';
+          editor.appendChild(buttonConfirm);
+          buttonConfirm.addEventListener('click', function() {
+            // Remove the editor from the view
+            document.body.removeChild(editor);
+          });
+
+          // Create an image node for Cropper.js
+          var image = new Image();
+          image.src = URL.createObjectURL(file);
+          editor.appendChild(image);
+
+          // Create Cropper.js
+          var cropper = new Cropper(image, {
+            aspectRatio: 1,
+            viewMode: 1,
+          });
+        },
+      });
     }
 
     //* function for "aside-left" and "aside-right" position when scrolling, and calculate height

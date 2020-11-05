@@ -99,10 +99,10 @@ export default {
           buttonConfirm.style.zIndex = 9999;
           buttonConfirm.textContent = 'Confirm';
           editor.appendChild(buttonConfirm);
-          buttonConfirm.addEventListener('click', function() {
-            // Remove the editor from the view
-            document.body.removeChild(editor);
-          });
+          // buttonConfirm.addEventListener('click', function() {
+          //   // Remove the editor from the view
+          //   document.body.removeChild(editor);
+          // });
 
           // Create an image node for Cropper.js
           var image = new Image();
@@ -134,11 +134,13 @@ export default {
         body.addEventListener('wheel', function(e) {
           let meNow = false;
 
-          for (let i = 0; i < e.path.length - 3; i++) {
-            const element = e.path[i];
-            if (element) {
-              if (element.classList.contains('scroll-div')) {
-                meNow = true
+          if (e.path.length) {
+            for (let i = 0; i < e.path.length - 3; i++) {
+              const element = e.path[i];
+              if (element) {
+                if (element.classList.contains('scroll-div')) {
+                  meNow = true
+                }
               }
             }
           }

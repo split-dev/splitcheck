@@ -3,30 +3,43 @@
 @import "../../mixins";
 @import "../../bootstrap-utils";
 
-.modal-menu-mobile.modal.left .modal-content .modal-header,
-.modal-menu-mobile.modal.right .modal-content .modal-header {
-  height: 56px;
+.modal-menu-mobile.modal.left,
+.modal-menu-mobile.modal.right {
+  .modal-content {
+    .modal-header {
+      height: 56px;
 
-  .close {
-    top: 17px;
-    left: 20px;
-    right: auto;
+      .close {
+        top: 17px;
+        left: 20px;
+        right: auto;
 
-    &:after,
-    &:before {
-      background-color: theme-color("orange");
+        &:after,
+        &:before {
+          background-color: theme-color("orange");
+        }
+      }
+
+      .head-modal-info {
+        margin-left: 35px;
+
+        &__logo {
+          width: 100%;
+          max-width: 116px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
-  }
 
-  .head-modal-info {
-    margin-left: 35px;
-
-    &__logo {
-      width: 100%;
-      max-width: 116px;
-
-      img {
-        width: 100%;
+    .modal-body {
+      .section-content {
+        &:first-of-type {
+          max-width: 186px;
+          margin-bottom: 32px;
+        }
       }
     }
   }

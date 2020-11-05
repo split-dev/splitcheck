@@ -463,13 +463,11 @@
     height: 100%;
   }
 
-  &-symbol {
-    color: #fff;
+  .personal-symbol {
+    color: #99a9c9;
     font-size: 18px;
     font-weight: normal;
     text-transform: uppercase;
-
-    @include roman();
   }
 }
 
@@ -496,8 +494,6 @@
     font-size: 18px;
     font-weight: normal;
     text-transform: uppercase;
-
-    @include roman();
   }
 }
 

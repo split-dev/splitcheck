@@ -1,0 +1,52 @@
+//Glob Utils
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+.modal.user-profile-menu {
+  @import "modal-components/custom-form-for-modal-side";
+
+  .modal-content {
+    .modal-body {
+      padding: 24px 24px 80px;
+    }
+
+    .modal-footer {
+      box-shadow: 0 0 0;
+      padding: 0 24px;
+
+      a {
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 30px;
+
+        color: theme-color("blue4");
+
+        &:hover {
+          color: theme-color("blue4");
+        }
+      }
+    }
+  }
+
+  .section-content {
+    width: calc(100% - 18px);
+    max-width: 330px;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .other-links {
+    &__link {
+      padding-left: 0;
+    }
+
+    &__int {
+      margin-left: 8px;
+      color: theme-color("orange");
+    }
+  }
+}

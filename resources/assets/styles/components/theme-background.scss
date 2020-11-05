@@ -1,0 +1,46 @@
+.theme-background {
+
+  // .theme-background__list
+
+  // &__list {
+  // }
+
+  // .theme-background__item
+
+  &__item {
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    :last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  // .theme-background__link
+
+  &__link {
+
+    figure {
+      width: 56px;
+      height: 56px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      margin-bottom: 8px;
+
+      background-color: theme-color("light-gray");
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 17px;
+
+      color: theme-color("dark-blue");
+    }
+
+    &:hover {
+      figure {
+        border: 1px solid theme-color("orange");
+      }
+    }
+  }
+}

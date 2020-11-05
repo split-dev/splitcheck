@@ -187,6 +187,11 @@ export default {
 
               el.style.height = newHeightDiv + 'px';
             }
+            if (el.parentElement.classList.contains('modal-body')) {
+              newHeightDiv = window.innerHeight - 200;
+
+              el.style.height = newHeightDiv + 'px';
+            }
           }
         }
       }

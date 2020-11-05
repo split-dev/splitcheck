@@ -13,7 +13,7 @@
     "components/modals/modal-create-goss": "./styles/components/modals/modal-create-goss.scss",
     "components/modals/modal-menu-mobile": "./styles/components/modals/modal-menu-mobile.scss",
     "components/modals/modal-add-photo": "./styles/components/modals/modal-add-photo.scss",
-    "components/modals/user-profile-menu": "./styles/components/modals/user-profile-menu.scss"
+    "components/modals/user-profile-menu": "./styles/components/modals/modal-user-profile-menu.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

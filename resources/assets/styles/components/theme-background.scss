@@ -21,13 +21,30 @@
   &__link {
 
     figure {
+      position: relative;
       width: 56px;
       height: 56px;
-      border: 1px solid transparent;
+      // border: 1px solid transparent;
+      border-width: 0;
+      border-style: solid;
+      border-color: transparent;
       border-radius: 5px;
       margin-bottom: 8px;
 
+      transition: $transition-fast;
+      box-shadow: $shadow-theme-card;
       background-color: theme-color("light-gray");
+
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: 100%;
+        margin: auto;
+      }
     }
 
     span {
@@ -39,7 +56,8 @@
 
     &:hover {
       figure {
-        border: 1px solid theme-color("orange");
+        border-width: 1px;
+        border-color: theme-color("orange");
       }
     }
   }

@@ -321,4 +321,25 @@
       content: url("images/icons/gallery-main.svg");
     }
   }
+  &.icon-cloud {
+    width: 96px;
+    height: 64px;
+    &:before {
+      content: url("images/icons/cloud.svg");
+    }
+  }
+  &.icon-menu-settings {
+    width: 20px;
+    height: 20px;
+    &:before {
+      content: url("images/icons/settings.svg");
+    }
+  }
+  &.icon-menu-exit {
+    width: 20px;
+    height: 20px;
+    &:before {
+      content: url("images/icons/exit.svg");
+    }
+  }
 }

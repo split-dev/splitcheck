@@ -9,6 +9,8 @@ import 'bootstrap';
 // Import everything from autoload
 import './autoload/**/*'
 
+import Dropzone from 'dropzone';
+
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';
@@ -32,4 +34,5 @@ const routes = new Router({
 });
 
 // // Load Events
+Dropzone.autoDiscover = false;
 jQuery(document).ready(() => routes.loadEvents());

@@ -10,18 +10,20 @@
       <!-- /modal-header -->
       <!-- modal-body -->
       <div class="modal-body">
-        <div class="drop-photo position-relative d-flex flex-column align-items-center justify-content-center">
-          <figure class="position-relative">
-            <i class="icon icon-cloud"></i>
-          </figure>
-          <h4>Drag and drop your photo</h4>
-          <p>Or <span>browse</span> to choose a file</p>
+        <div class="drop-photo dropzone position-relative d-flex flex-wrap flex-column align-items-center justify-content-center">
+          <div class="drop-photo__start dz-message">
+            <figure class="position-relative">
+              <i class="icon icon-cloud"></i>
+            </figure>
+            <h4>Drag and drop your photo</h4>
+            <p>Or <span>browse</span> to choose a file</p>
+          </div>
         </div>
       </div>
       <!-- /modal-body -->
       <div class="modal-footer d-flex flex-sm-row align-items-center justify-content-end">
-        <a href="#" class="btn-border">Crop</a>
-        <a href="#" class="btn-blue">Save</a>
+        <a href="#" class="btn-border btn-drop-photo-crop">Crop</a>
+        <a href="#" class="btn-blue" data-dismiss="modal">Save</a>
       </div>
     </div>
   </div>

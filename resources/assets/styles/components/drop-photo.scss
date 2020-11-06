@@ -3,6 +3,7 @@
   height: 400px;
   overflow: hidden;
   cursor: pointer;
+  overflow-x: auto;
 
   background-color: theme-color("light-gray2");
   border: 1px dashed theme-color("blue2");
@@ -12,8 +13,15 @@
     background-color: theme-color("light-gray3");
   }
 
+  // .drop-photo__start
+
+  &__start {
+    pointer-events: none;
+  }
+
   figure {
     margin-bottom: 20px;
+    text-align: center;
 
     .icon {
       position: relative;

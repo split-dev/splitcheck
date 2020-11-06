@@ -15,13 +15,16 @@
       "title": "Home",
       "description": "Home",
       "url": "/home.html"
-    }
-    ,
+    },
     {
-      "title": "Home-filled",
+      "title": "Home",
       "description": "Home-filled",
       "url": "/home-filled.html"
+    },
+    {
+      "title": "Shop",
+      "description": "shop",
+      "url": "/shop.html"
     }
   ]
-
 }

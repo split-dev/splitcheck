@@ -7,6 +7,7 @@
     "pages/landing": "./styles/pages/landing/index.scss",
     "pages/home": "./styles/pages/home/index.scss",
     "pages/settings": "./styles/pages/settings/index.scss",
+    "pages/shop": "./styles/pages/shop/index.scss",
     "components/modals/modal": "./styles/components/modals/modals.scss",
     "components/modals/modal-side": "./styles/components/modals/modal-side.scss",
     "components/modals/modal-add-timeline": "./styles/components/modals/modal-add-timeline.scss",

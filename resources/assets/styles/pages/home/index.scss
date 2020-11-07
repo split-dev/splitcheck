@@ -296,6 +296,14 @@
     }
   }
 
+  // .main__card--preferences
+
+  &__card--preferences {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+  }
+
   // .main__card-title
 
   &__card-title {

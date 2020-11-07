@@ -172,12 +172,29 @@
   // .card-timeline__link--contact
 
   &__link--contact {
+    position: relative;
     width: 56px;
     height: 56px;
     border-radius: 50%;
     overflow: hidden;
 
     background-color: theme-color("light-gray");
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    span {
+      display: none;
+    }
   }
 
   &__link-light {
@@ -189,6 +206,9 @@
   &__link--no-img {
     img {
       display: none;
+    }
+    span {
+      display: block;
     }
   }
 

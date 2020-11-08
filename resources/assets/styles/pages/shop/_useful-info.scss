@@ -1,0 +1,88 @@
+.useful-info {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  background-color: theme-color("white");
+  box-shadow: $shadow-card;
+
+  // .useful-info__info
+
+  &__info {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+      order: 1;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      order: 2;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 65%;
+      order: 1;
+    }
+
+    span {
+      width: 75%;
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      line-height: 14px;
+      margin-bottom: 12px;
+
+      color: theme-color("dark-blue");
+    }
+    h2 {
+      width: 100%;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+
+      color: theme-color("blue4");
+
+      @include media-breakpoint-up(xl) {
+        width: 85%;
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 0;
+
+      color: theme-color("dark-blue");
+    }
+
+    a {
+      line-height: 14px;
+      color: theme-color("blue5");
+    }
+  }
+
+  // .useful-info__img
+
+  &__img {
+    flex: 0 0 102px;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up(sm) {
+      order: 2;
+    }
+
+    @include media-breakpoint-up(lg) {
+      order: 1;
+    }
+
+    @include media-breakpoint-up(xl) {
+      order: 2;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

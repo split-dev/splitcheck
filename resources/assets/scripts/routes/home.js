@@ -324,29 +324,31 @@ export default {
     //* function hover "reaction-btn-like"
     {
       const reaction = {
-        reactionWrap: document.querySelectorAll('.reaction__link-reaction'),
+        reactionWrap: document.querySelectorAll('.reaction__wrap-link--reaction'),
         ractionDivVisible: document.querySelector('.reaction-btn-like'),
       }
 
       const hoverReaction = () => {
         let timer = [];
+        let classShow = 'js-reaction-show';
+        let classHover = 'js-reaction-hover';
         if (reaction.reactionWrap.length) {
           reaction.reactionWrap.forEach(element => {
             element.addEventListener('mouseenter', (e) => {
               timer[1] = setTimeout(function() {
-                element.classList.add('js-reaction-show');
-                element.querySelector('.reaction-btn-like').classList.add('js-reaction-show');
+                element.classList.add(classShow);
+                element.querySelector('.reaction-btn-like').classList.add(classShow);
               }, 500);
               clearInterval(timer[2]);
-              element.classList.add('js-reaction-hover')
+              element.classList.add(classHover)
             })
             element.addEventListener('mouseleave', (e) => {
               clearInterval(timer[1]);
               timer[2] = setTimeout(function() {
-                element.classList.remove('js-reaction-show');
-                element.querySelector('.reaction-btn-like').classList.remove('js-reaction-show');
+                element.classList.remove(classShow);
+                element.querySelector('.reaction-btn-like').classList.remove(classShow);
               }, 500);
-              element.classList.remove('js-reaction-hover')
+              element.classList.remove(classHover)
             })
           });
         }

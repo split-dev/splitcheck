@@ -251,31 +251,38 @@ export default {
       const btnOptions = document.querySelectorAll('.options__btn');
 
       body.addEventListener('click', e => {
-        // e.preventDefault();
+        let activeClass = 'options--open';
+        let activeClassIcon = 'icon-more-active';
+        let classNameBackDrop = 'option-backDrop';
 
         if (e.target.offsetParent) {
           const targetoffset = e.target.offsetParent;
           const {type} = e.target.offsetParent.firstElementChild.dataset;
 
           if (type === 'options') {
-            if (!targetoffset.classList.contains('options--open')) {
+            if (!targetoffset.classList.contains(activeClass)) {
                 const blockBackDrop = document.createElement('div');
-                blockBackDrop.classList.add('option-backDrop');
-
-                targetoffset.classList.add('options--open');
+                blockBackDrop.classList.add(classNameBackDrop);
+                targetoffset.classList.add(activeClass);
                 targetoffset.appendChild(blockBackDrop);
+                targetoffset.children[0].children[0].classList.add(activeClassIcon);
               } else {
-                targetoffset.classList.remove('options--open')
-                targetoffset.querySelector('.option-backDrop').remove();
+                targetoffset.classList.remove(activeClass)
+                targetoffset.querySelector('.' + classNameBackDrop).remove();
+                targetoffset.children[0].children[0].classList.remove(activeClassIcon);
               }
           }
         } else {
-
           btnOptionsWrap.forEach(element => {
-            element.classList.remove('options--open');
-            const thisBackDrop = element.querySelector('.option-backDrop');
+            element.classList.remove(activeClass);
+            const thisBackDrop = element.querySelector('.' + classNameBackDrop);
+            const activeIcon = element.querySelector('.' + activeClassIcon);
+
             if (thisBackDrop) {
               element.parentNode.lastElementChild.removeChild(thisBackDrop)
+            }
+            if (activeIcon) {
+              activeIcon.classList.remove(activeClassIcon);
             }
           });
         }

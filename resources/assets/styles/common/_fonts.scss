@@ -16,6 +16,20 @@
 
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
+  src: url("../fonts/NeueHaasDisplay-Light.eot");
+  src:
+    url("../fonts/NeueHaasDisplay-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NeueHaasDisplay-Light.woff2") format("woff2"),
+    url("../fonts/NeueHaasDisplay-Light.woff") format("woff"),
+    url("../fonts/NeueHaasDisplay-Light.ttf") format("truetype"),
+    url("../fonts/NeueHaasDisplay-Light.svg#NeueHaasDisplay-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
   src:
     url("../fonts/NeueHaasDisplay-Mediu.eot"),
     url("../fonts/NeueHaasDisplay-Mediu.eot?#iefix") format("embedded-opentype"),

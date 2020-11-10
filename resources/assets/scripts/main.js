@@ -16,6 +16,7 @@ import Router from './util/Router';
 import common from './routes/common';
 import Detection from './util/Detection';
 import home from './routes/home';
+import shop from './routes/shop';
 import early from './routes/early';
 import settings from './routes/settings';
 
@@ -29,6 +30,7 @@ const routes = new Router({
   // All pages
   common,
   'home': home,
+  'shop': shop,
   'early': early,
   'settings': settings,
 });

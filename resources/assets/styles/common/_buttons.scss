@@ -1,5 +1,6 @@
 .btn-border,
 .btn-border-orange {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,8 +37,8 @@
   color: theme-color("orange");
   border: 1px solid theme-color("orange") !important;
 
-  &:focus,
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: theme-color("light-orange2");
     color: theme-color("orange");
   }

@@ -1,0 +1,30 @@
+.internal-card__slider {
+  .swiper-slide {
+    width: 264px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 36%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    box-shadow: $shadow-card;
+    background-color: theme-color("white");
+
+    &::after {
+      margin-top: 3px;
+      margin-left: 2px;
+    }
+  }
+
+  .swiper-button-next {
+    right: 4px;
+    left: auto;
+  }
+  .swiper-button-prev {
+    left: 5px;
+    right: auto;
+  }
+}

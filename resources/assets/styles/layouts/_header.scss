@@ -175,9 +175,11 @@
     &__left {
       @media (min-width: 1199px) {
         max-width: 206px;
+        flex: 0 0 206px;
       }
       @media (max-width: 1259px) {
         max-width: 167px;
+        flex: 0 0 167px;
       }
       @include media-breakpoint-down(md) {
         max-width: 135px;

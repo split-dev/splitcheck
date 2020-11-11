@@ -266,13 +266,15 @@ export default {
                 targetoffset.classList.add(activeClass);
                 targetoffset.appendChild(blockBackDrop);
                 targetoffset.children[0].children[0].classList.add(activeClassIcon);
-              } else {
-                targetoffset.classList.remove(activeClass)
-                targetoffset.querySelector('.' + classNameBackDrop).remove();
-                targetoffset.children[0].children[0].classList.remove(activeClassIcon);
-              }
+            } else {
+              targetoffset.classList.remove(activeClass)
+              targetoffset.querySelector('.' + classNameBackDrop).remove();
+              targetoffset.children[0].children[0].classList.remove(activeClassIcon);
+            }
           }
-        } else {
+        }
+
+        if (e.target.classList.contains(classNameBackDrop)) {
           btnOptionsWrap.forEach(element => {
             element.classList.remove(activeClass);
             const thisBackDrop = element.querySelector('.' + classNameBackDrop);

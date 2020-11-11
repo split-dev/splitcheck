@@ -82,7 +82,8 @@
   // .internal-card--feed
 
   &--feed,
-  &--shop {
+  &--shop,
+  &--aside {
     padding: 0;
     flex-direction: column;
     margin-bottom: 0;
@@ -97,6 +98,28 @@
   //     }
   //   }
   // }
+
+  // .internal-card--aside
+
+  &--aside {
+    .internal-card {
+      &__body {
+        > p {
+          font-size: 18px;
+        }
+      }
+      &__other {
+        .btn {
+          max-width: 100%;
+        }
+      }
+      // &__grid {
+      //   .grid-gallery__selector {
+      //     height: 180px;
+      //   }
+      // }
+    }
+  }
 
   // .internal-card__header
 

@@ -1,0 +1,17 @@
+.aside-card {
+  padding: 12px;
+  border-radius: 8px;
+
+  background-color: theme-color("white");
+  box-shadow: $shadow-card;
+
+
+
+  .internal-card {
+    &__grid {
+      .grid-gallery__selector--video {
+        height: 180px;
+      }
+    }
+  }
+}

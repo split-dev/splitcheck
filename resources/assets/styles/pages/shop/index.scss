@@ -8,3 +8,12 @@
 @import "keywords";
 @import "product-card";
 @import "swiper-custom";
+@import "aside-card";
+
+.shop {
+  .aside-right {
+    .section-content {
+      margin-bottom: 24px;
+    }
+  }
+}

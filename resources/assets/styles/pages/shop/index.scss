@@ -13,7 +13,17 @@
 .shop {
   .aside-right {
     .section-content {
+      width: 100%;
+      max-width: calc(100% - 18px);
       margin-bottom: 24px;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 300px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 369px;
+      }
     }
   }
 }

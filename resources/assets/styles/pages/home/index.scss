@@ -99,10 +99,10 @@
       padding-left: 34px;
 
       .btn-border {
-        max-width: 100%;
+        max-width: calc(100% - 16px);
         height: 32px;
         background-color: transparent;
-        margin-left: 1px;
+        margin-left: 16px;
 
         font-weight: $font-weight-normal;
 

@@ -162,6 +162,15 @@
   &__link {
     position: relative;
     padding-left: 20px;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+
+      &.icon-star {
+        background-size: contain;
+      }
+    }
   }
 }
 
@@ -175,8 +184,6 @@
   visibility: hidden;
   opacity: 0;
   z-index: 1;
-  // transform: scale(0);
-
   transition: $transition-slow opacity, 0s visibility;
   box-shadow: $shadow-search;
   background-color: theme-color("white");

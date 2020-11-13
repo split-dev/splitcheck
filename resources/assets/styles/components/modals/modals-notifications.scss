@@ -40,10 +40,11 @@
   small {
     color: #0b0212;
     font-size: 14px;
-    margin-left: 15px;
-    margin-bottom: 15px;
   }
-
+  &__text-block {
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
   &__top {
     display: flex;
     a {
@@ -52,9 +53,6 @@
       img {
         width: 100%;
       }
-    }
-    p {
-      margin-left: 15px;
     }
   }
   .btn-oval {

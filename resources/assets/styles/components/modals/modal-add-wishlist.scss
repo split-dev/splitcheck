@@ -3,17 +3,33 @@
 @import "../../mixins";
 @import "../../bootstrap-utils";
 
-.modal.right.modal-share-product {
+.modal.right.modal-add-wishlist {
   .modal-content {
     .modal-body {
       padding: 24px;
       .form {
         &__single--fluid,
-        &__other {
+        &__other,
+        &__wrap {
           max-width: 315px;
 
           @media (max-width: 550px) {
             max-width: calc(100% - 15px);
+          }
+        }
+
+        &__wrap-title {
+          font-weight: $font-weight-medium;
+
+          span {
+            color: theme-color("orange");
+          }
+        }
+
+        &__radio-wrap {
+          margin-bottom: 10px;
+          &:nth-of-type(4) {
+            margin-bottom: 32px;
           }
         }
 

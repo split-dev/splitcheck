@@ -20,11 +20,13 @@
   }
 
   figure {
+    height: 64px;
     margin-bottom: 20px;
     text-align: center;
 
     .icon {
-      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 

@@ -1,0 +1,95 @@
+<!-- modal-add-wishlist -->
+<div class="modal right fade modal-add-wishlist" id="add-wishlist" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content position-relative">
+      <!-- modal-header -->
+      <div class="modal-header d-flex align-items-center">
+        <!-- head for side modal -->
+        <div class="head-modal-info d-flex align-items-center flex-wrap">
+          <figure
+            class="head-modal-info__avatar position-relative d-flex align-items-center justify-content-center overflow-hidden">
+            <img src="images/shop/product.jpg" alt="avatar">
+            <span class="head-modal-info__symbol">AD</span>
+          </figure>
+          <div class="head-modal-info__description">
+            <h2 class="head-modal-info__name">Wishlist permission</h2>
+            <p class="head-modal-info__subname">
+              <span>Name of the product</span>
+            </p>
+          </div>
+        </div>
+        <!-- /head for side modal -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <!-- /modal-header -->
+      <!-- modal-body -->
+      <div class="modal-body">
+        <!-- form -->
+        <form action="" id="add-wishlist-form" class="form">
+          <div class="form__inputs">
+            <div class="scroll-div">
+              <!-- for error add class div form__single - *error* -->
+              <div class="form__single form__single--fluid">
+                <span class="form__note">
+                  Wishlist allows you to share items with your loved ones. Those you have chosen to see your wishlist,
+                  can purchase items for you with or without your knowledge. They can also contribute towards your
+                  wishlist items
+                </span>
+              </div>
+
+              <div class="form__wrap">
+                <span class="form__wrap-title">Select who can see <span>Product name here</span> from your wishlist</span>
+
+                <div class="form__radio-wrap">
+                  <input type="radio" id="radio-wishlist-one" class="form__radio-orange" name="radio-wishlist" checked />
+                  <label for="radio-wishlist-one">
+                    My family only
+                  </label>
+                </div>
+                <div class="form__radio-wrap">
+                  <input type="radio" id="radio-wishlist-two" class="form__radio-orange" name="radio-wishlist" />
+                  <label for="radio-wishlist-two">
+                    My besties only
+                  </label>
+                </div>
+                <div class="form__radio-wrap">
+                  <input type="radio" id="radio-wishlist-three" class="form__radio-orange" name="radio-wishlist" />
+                  <label for="radio-wishlist-three">
+                    My family and besties
+                  </label>
+                </div>
+                <div class="form__radio-wrap">
+                  <input type="radio" id="radio-wishlist-four" class="form__radio-orange" name="radio-wishlist" />
+                  <label for="radio-wishlist-four">
+                    All my family, besties and friends
+                  </label>
+                </div>
+
+                <span class="modal-border">or</span>
+
+                <div class="form__single form__single--select form__single--select-user form__single--fluid">
+                  <label class="form__label">Select names of who can see your wishlist</label>
+                  <select class="form__input" data-toggle="select" multiple="multiple">
+                    <option value="user-1">Terry Smith</option>
+                    <option value="user-2">Terry Will Green</option>
+                    <option value="user-3">Terry Brown</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__other">
+                <button class="btn btn-orange">Add to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- /form -->
+      </div>
+      <!-- /modal-body -->
+      <!-- <div class="modal-footer">
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- /modal-add-wishlist -->

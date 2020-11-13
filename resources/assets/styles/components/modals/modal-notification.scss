@@ -1,0 +1,91 @@
+//Glob Utils
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+// Page Specific Components
+@import "modal-components/avatar";
+@import "modal-components/profile-list";
+
+.modal-notification {
+  @import "modal-components/custom-form-for-modal-side";
+  @import "modal-components/create-banner";
+
+  .head-modal-info__description {
+    width: 100%;
+  }
+  .avatar {
+    margin-right: 8px;
+
+    &:nth-of-type(5n + 5) {
+      margin-right: 0;
+
+      @media (max-width: 550px) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.notification {
+  .scroll-div {
+    margin-right: 0;
+  }
+  .ss-wrapper {
+    @media (max-width: 380px) {
+      overflow: visible;
+    }
+  }
+  .grid-gallery__selector {
+    height: 180px !important;
+    max-width: 312px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    a {
+      font-weight: $font-weight-medium;
+      color: #335491;
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
+  p {
+    color: #0b0212;
+    font-size: 14px;
+  }
+  &__headline {
+    p {
+      max-width: 215px !important;
+    }
+  }
+  &__gift {
+    margin-bottom: 20px;
+  }
+  &__card {
+    position: relative;
+    max-width: 336px;
+    display: flex;
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 12px 24px 10px 12px;
+    &-video {
+      max-width: 336px;
+      box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 12px 24px 10px 12px;
+      position: relative;
+      p {
+        max-width: 290px;
+        @media (max-width: 575px) {
+          max-width: 214px;
+        }
+      }
+    }
+  }
+}

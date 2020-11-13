@@ -15,7 +15,9 @@
     "components/modals/modal-menu-mobile": "./styles/components/modals/modal-menu-mobile.scss",
     "components/modals/modal-add-photo": "./styles/components/modals/modal-add-photo.scss",
     "components/modals/user-profile-menu": "./styles/components/modals/modal-user-profile-menu.scss",
-    "components/modals/modal-share-product": "./styles/components/modals/modal-share-product.scss"
+    "components/modals/modal-share-product": "./styles/components/modals/modal-share-product.scss",
+    "components/modals/modal-notification": "./styles/components/modals/modal-notification.scss",
+    "components/modals/modals-notifications": "./styles/components/modals/modals-notifications.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

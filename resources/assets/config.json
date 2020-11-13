@@ -17,7 +17,8 @@
     "components/modals/user-profile-menu": "./styles/components/modals/modal-user-profile-menu.scss",
     "components/modals/modal-share-product": "./styles/components/modals/modal-share-product.scss",
     "components/modals/modal-add-timeline-product": "./styles/components/modals/modal-add-timeline-product.scss",
-    "components/modals/modal-add-wishlist": "./styles/components/modals/modal-add-wishlist.scss"
+    "components/modals/modal-add-wishlist": "./styles/components/modals/modal-add-wishlist.scss",
+    "components/modals/modal-search-parameters": "./styles/components/modals/modal-search-parameters.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

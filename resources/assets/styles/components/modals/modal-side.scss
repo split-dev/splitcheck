@@ -98,6 +98,8 @@
 //? modal style for "add-timeline", "create goss"
 
 .head-modal-info {
+  width: 100%;
+
   // .head-info__avatar
 
   &__avatar {
@@ -136,6 +138,7 @@
 
   &__description {
     width: calc(100% - 72px);
+    padding-right: 20px;
   }
 
   // .head-modal-info__avatar--no-img

@@ -113,6 +113,11 @@
     margin-bottom: 16px;
 
     color: theme-color("blue4");
+    font-weight: $font-weight-medium;
+
+    span {
+      color: theme-color("orange");
+    }
   }
 
   // .form__add-desc

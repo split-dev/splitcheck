@@ -1,0 +1,79 @@
+.form__range-mark {
+  display: block;
+  position: absolute;
+  top: 35px;
+  margin-left: -4px;
+
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 14px;
+  text-align: center;
+  opacity: 0.75;
+
+  color: rgba(theme-color("dark-blue"), 0.75);
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+    background-color: theme-color("white");
+  }
+}
+
+.irs--flat {
+  height: 50px;
+  margin-bottom: 32px;
+
+  .irs-from,
+  .irs-to,
+  .irs-single {
+    background-color: theme-color("green");
+
+    &:before {
+      border-top-color: theme-color("green");
+    }
+  }
+  .irs-line,
+  .irs-bar {
+    top: 25px;
+    height: 4px;
+    border-radius: 2px;
+  }
+  .irs-line {
+    background-color: #dedcde;
+  }
+  .irs-bar {
+    background-color: theme-color("green");
+  }
+
+  .irs-handle {
+    &.state_hover > i:first-child,
+    &:hover > i:first-child {
+      background-color: rgba(theme-color("green"), 0.95);
+    }
+    > i {
+      transition: $transition-fast;
+      &:first-child {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-left: -6px;
+
+        background-color: theme-color("white");
+        border: 1px solid theme-color("green");
+      }
+    }
+  }
+}

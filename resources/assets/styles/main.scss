@@ -24,6 +24,7 @@
 @import "~flatpickr/dist/flatpickr.min.css";
 @import "~dropzone/dist/min/dropzone.min.css";
 @import "~cropperjs/dist/cropper.min.css";
+@import "~ion-rangeslider/css/ion.rangeSlider.css";
 /**
  * ==========
  * Components
@@ -46,6 +47,7 @@
 @import "components/plugins/select-custom";
 @import "components/plugins/light-gallery";
 @import "components/plugins/dropzone-custom";
+@import "components/plugins/ion-rangeslider-custom";
 
 //* shared components
 @import "components/options";

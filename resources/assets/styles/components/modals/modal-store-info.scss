@@ -1,0 +1,261 @@
+//Glob Utils
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+.modal.modal-store-info {
+  .modal-dialog {
+    @media (min-width: 650px) {
+      max-width: 620px;
+    }
+
+    .modal-content {
+      padding: 0;
+      overflow: hidden;
+
+      .modal-header {
+        padding-top: 0;
+
+        .close {
+          top: 12px;
+          right: 12px;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          z-index: 2;
+
+          box-shadow: $shadow-theme-card;
+          background-color: theme-color("white");
+
+          &:after,
+          &:before {
+            width: 55%;
+          }
+        }
+      }
+
+      .modal-body {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        padding-bottom: 20px;
+
+        @include media-breakpoint-up(md) {
+          padding: 0 30px;
+          padding-bottom: 25px;
+        }
+
+        .section-content {
+          width: 100%;
+          margin-bottom: 40px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          @include media-breakpoint-up(sm) {
+            &--width {
+              width: 50%;
+            }
+          }
+          @include media-breakpoint-up(lg) {
+            padding-left: 72px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.store-bg {
+  width: 100%;
+  height: 160px;
+
+  &--no-img {
+    background-color: theme-color("light-gray5");
+
+    .store-bg__img {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.store-info {
+  position: relative;
+
+  // .store-info__img
+
+  &__img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -28px;
+    border: 2px solid theme-color("white");
+
+    img {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  // .store-info__img--no-img
+
+  &__img--no-img {
+    background-color: #b5c2d9;
+
+    img {
+      display: none;
+    }
+  }
+
+  // .store-info__title
+
+  &__title {
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    color: theme-color("orange");
+    font-weight: $font-weight-medium;
+  }
+
+  // .store-info__desc
+
+  &__desc {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+
+    color: theme-color("dark-blue");
+    font-weight: $font-weight-light;
+  }
+
+  > p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+
+    color: theme-color("dark-blue");
+  }
+
+  // .store-info__short
+
+  &__short {
+    li {
+      margin-bottom: -2px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left;
+      color: theme-color("dark-blue");
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      display: inline-block;
+      margin-right: 5px;
+
+      font-weight: $font-weight-light;
+    }
+
+    &--pd {
+      li {
+        font-size: 16px;
+        margin-bottom: 8px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // .store-info__contact
+
+  &__contact {
+    li {
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 32px;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: theme-color("dark-blue");
+
+        &:hover {
+          color: theme-color("dark-blue");
+        }
+
+        .icon {
+          &.icon-head-mail,
+          &.icon-phone,
+          &.icon-comment {
+            width: 18px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  // .store-info__days
+
+  &__days {
+    li {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+      color: theme-color("dark-blue");
+
+      span {
+        display: inline-block;
+        &:first-of-type {
+          width: 85px;
+          font-weight: $font-weight-light;
+        }
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 32px;
+    max-width: 100%;
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 8px;
+      right: 0;
+      margin-top: 0;
+      max-width: 200px;
+    }
+  }
+}

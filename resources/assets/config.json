@@ -20,7 +20,8 @@
     "components/modals/modal-add-wishlist": "./styles/components/modals/modal-add-wishlist.scss",
     "components/modals/modal-search-parameters": "./styles/components/modals/modal-search-parameters.scss",
     "components/modals/modal-cart": "./styles/components/modals/modal-cart.scss",
-    "components/modals/modal-add-comment": "./styles/components/modals/modal-add-comment.scss"
+    "components/modals/modal-add-comment": "./styles/components/modals/modal-add-comment.scss",
+    "components/modals/modal-store-info": "./styles/components/modals/modal-store-info.scss"
 
   },
   "publicPath": "/",

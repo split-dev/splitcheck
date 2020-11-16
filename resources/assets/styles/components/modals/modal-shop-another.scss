@@ -1,0 +1,117 @@
+//Glob Utils
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+.modal.modal-shop-another {
+  .modal-dialog {
+    @media (min-width: 750px) {
+      max-width: 720px;
+    }
+
+    .modal-body {
+      padding-top: 0;
+    }
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 16px;
+
+    color: theme-color("dark-blue");
+  }
+
+  .section-content {
+    margin-bottom: 32px;
+
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      text-transform: inherit;
+    }
+  }
+
+  .personal-card {
+    max-width: 186px;
+    margin-bottom: 0;
+
+    &--no-shadow {
+      box-shadow: 0 0 0;
+    }
+  }
+
+  .form {
+    width: 100%;
+    max-width: 312px;
+    margin: 0 auto;
+
+    &__label {
+      padding-left: 8px;
+    }
+
+    &__wrap {
+      margin-bottom: 0;
+    }
+
+    .btn {
+      max-width: 100%;
+
+      @include media-breakpoint-up(md) {
+        max-width: 240px;
+      }
+    }
+  }
+
+  .shop-another {
+    width: 100%;
+    max-width: 205px;
+
+    // .shop-another__list
+
+    &__list {
+      width: 100%;
+    }
+
+    // .shop-another__item
+
+    &__item {
+      margin-bottom: 12px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .avatar {
+        margin-right: 12px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0;
+      }
+    }
+
+    // .shop-another__text
+
+    &__text {
+      p {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+        margin-bottom: -3px;
+
+        color: theme-color("dark-blue");
+      }
+
+      span {
+        font-size: 12px;
+        line-height: 14px;
+
+        color: theme-color("orange");
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+}

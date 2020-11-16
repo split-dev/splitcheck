@@ -1,0 +1,91 @@
+<!-- modal-shop-another -->
+<div class="modal modal-shop-another fade" id="shop-another" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <h2>Choose person to shop for</h2>
+        <section class="section-content d-flex flex-column align-items-center">
+          <span class="section-content__title">You now shopping for:</span>
+          <div class="personal-card personal-card--no-shadow d-flex align-items-center flex-column overflow-hidden">
+            <div
+              class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+              <img src="" alt="">
+              <span class="personal-card__symbol">JS</span>
+            </div>
+            <p class="personal-card__name">John Smith</p>
+            <ul class="personal-card__list d-flex align-items-center flex-column list-unstyled mb-0">
+              <li class="personal-card__item">
+                <a href="#" class="personal-card__link">
+                  <span>John’s wishlist</span>
+                  <span class="personal-card__num">12</span>
+                </a>
+              </li>
+              <li class="personal-card__item">
+                <a href="#" class="personal-card__link">
+                  <span>View preferences</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- form -->
+        <form action="" id="shop-another" class="form">
+          <div class="form__inputs">
+            <div class="form__wrap">
+              <div class="form__single form__single--select form__single--select-user form__single--fluid">
+                <label class="form__label">Start typing name</label>
+                <select class="form__input" data-toggle="select" multiple="multiple">
+                  <option value="user-1">Terry Smith</option>
+                  <option value="user-2">Terry Will Green</option>
+                  <option value="user-3">Terry Brown</option>
+                </select>
+                {{!-- <input type="text" class="form__input" required=""> --}}
+                <span class="form__symbol-error"></span>
+              </div>
+            </div>
+          </div>
+
+          <section class="section-content d-flex flex-column align-items-center">
+            <span class="section-content__title">Recommendation</span>
+            <div class="shop-another">
+              <ul class="shop-another__list d-flex align-items-center flex-column list-unstyled mb-0">
+                <li class="shop-another__item d-flex align-items-center">
+                  <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                    <img src="./" alt="avatar">
+                    <span class="avatar__symbol">JS</span>
+                  </div>
+                  <div class="shop-another__text">
+                    <p>Terry Smith</p>
+                    <span>Have a party at 02.11.2020</span>
+                  </div>
+                </li>
+                <li class="shop-another__item d-flex align-items-center">
+                  <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                    <img src="./" alt="avatar">
+                    <span class="avatar__symbol">JS</span>
+                  </div>
+                  <div class="shop-another__text">
+                    <p>Terry Smith</p>
+                    <span>Have a party at 02.11.2020</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <div class="modal-footer">
+            <button class="btn btn-orange">Shop for</button>
+          </div>
+        </form>
+        <!-- /form -->
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /modal-shop-another -->

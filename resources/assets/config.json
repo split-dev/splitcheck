@@ -22,8 +22,9 @@
     "components/modals/modal-cart": "./styles/components/modals/modal-cart.scss",
     "components/modals/modal-add-comment": "./styles/components/modals/modal-add-comment.scss",
     "components/modals/modal-store-info": "./styles/components/modals/modal-store-info.scss",
-    "components/modals/modal-shop-another": "./styles/components/modals/modal-shop-another.scss"
-
+    "components/modals/modal-shop-another": "./styles/components/modals/modal-shop-another.scss",
+    "components/modals/modal-notification": "./styles/components/modals/modal-notification.scss",
+    "components/modals/modals-notifications": "./styles/components/modals/modals-notifications.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

@@ -91,7 +91,8 @@
                     </a>
                   </li>
                   <li class="other-links__item">
-                    <a href="#" class="other-links__link position-relative d-flex align-items-center">
+                    <a href="#" data-toggle="modal" data-target="#notification"
+                      class="other-links__link position-relative d-flex align-items-center">
                       <i class="icon icon-notification"></i>
                       <!-- add class "active" what would the icon change -->
                       <span>Alerts</span>
@@ -1271,7 +1272,8 @@
                   </div>
                   <div class="internal-card__bottom">
                     <div class="internal-card__other">
-                      <a href="#" class="btn btn-border-orange">View Product</a>
+                      <a href="#" class="btn btn-border-orange">View
+                        Product</a>
                     </div>
                   </div>
                 </div>
@@ -1301,6 +1303,7 @@
   {{> ../common/modals/add-comment }}
   {{> ../common/modals/store-info }}
   {{> ../common/modals/shop-another }}
+  {{> ../common/modals/modals-notifications }}
 
   <!-- /Modals -->
 </body>

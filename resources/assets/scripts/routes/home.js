@@ -284,7 +284,9 @@ export default {
     {
       const postLightGallery = $('.grid-gallery').lightGallery({
         selector: '.grid-gallery__selector',
-        thumbnail: false,
+        width: '620px',
+        height: '100%',
+        thumbnail: true,
         zoom: false,
         share: false,
         rotate: false,

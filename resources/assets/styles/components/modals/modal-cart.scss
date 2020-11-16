@@ -1,0 +1,61 @@
+//Glob Utils
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+.modal.right.modal-cart {
+  @import "modal-components/cart";
+
+  .modal-content {
+    .modal-body {
+      padding: 20px 16px;
+      background-color: theme-color("light-gray2");
+
+      .cart {
+        max-width: 352px;
+
+        @media (max-width: 550px) {
+          max-width: calc(100% - 30px);
+        }
+      }
+
+      .scroll-div {
+        width: 100%;
+      }
+
+      // .btn {
+      //   margin-left: auto;
+
+      //   @media (max-width: 550px) {
+      //     max-width: 100%;
+      //   }
+      // }
+    }
+
+    .cart-total {
+      margin-bottom: 20px;
+      span {
+        font-size: 18px;
+        line-height: 18px;
+
+        color: theme-color("dark-blue");
+
+        &:first-of-type {
+          margin-right: 24px;
+        }
+
+        b {
+          margin-right: 16px;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      height: 114px;
+    }
+  }
+}

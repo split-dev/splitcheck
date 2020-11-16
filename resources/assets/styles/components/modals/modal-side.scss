@@ -31,7 +31,9 @@
   .modal-header {
     padding: 0 32px;
     height: 88px;
+    z-index: 2;
 
+    background-color: theme-color("white");
     box-shadow: $shadow-card;
 
     @include media-breakpoint-down(md) {
@@ -55,8 +57,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 80px;
+    min-height: 80px;
+    z-index: 2;
 
+    background-color: theme-color("white");
     box-shadow: $shadow-card2;
   }
 }

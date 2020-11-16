@@ -172,7 +172,8 @@
                 </figure>
                 <div class="preferences__info">
                   <h2>Set what you are looking for and we will update you as we find it</h2>
-                  <a href="#" data-toggle="modal" data-target="#search-parameters" class="btn-border">Set search parameters</a>
+                  <a href="#" data-toggle="modal" data-target="#search-parameters" class="btn-border">Set search
+                    parameters</a>
                 </div>
               </div>
             </div>
@@ -280,7 +281,7 @@
                         </div>
                       </div>
                       <div class="reaction__wrap-link">
-                        <a href="#" class="reaction__link">
+                        <a href="#" data-toggle="modal" data-target="#add-comment" class="reaction__link">
                           <i class="icon icon-comment"></i>
                           <span>comment</span>
                         </a>
@@ -301,7 +302,7 @@
                   </div>
 
                   <div class="internal-card__other">
-                    <a href="#" class="btn btn-orange">Add to Cart</a>
+                    <a href="#" data-toggle="modal" data-target="#cart" class="btn btn-orange">Add to Cart</a>
                   </div>
                 </div>
 
@@ -1294,6 +1295,8 @@
   {{> ../common/modals/add-timeline-product }}
   {{> ../common/modals/add-wishlist }}
   {{> ../common/modals/search-parameters }}
+  {{> ../common/modals/cart }}
+  {{> ../common/modals/add-comment }}
   <!-- /Modals -->
 </body>
 

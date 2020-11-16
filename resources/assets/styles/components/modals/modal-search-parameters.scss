@@ -4,6 +4,8 @@
 @import "../../bootstrap-utils";
 
 .modal.right.modal-search-parameters {
+  @import "modal-components/hashtag";
+
   .modal-content {
     .modal-body {
       padding: 24px;

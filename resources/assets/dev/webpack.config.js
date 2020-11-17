@@ -13,9 +13,10 @@ const desire = require('./util/desire');
 const includeHtml = require('./util/includeHtml');
 const config = require('./config');
 const assetsFilenames = (config.enabled.cacheBusting) ? config.cacheBusting : '[name]';
+
 let webpackConfig = {
   context: config.paths.assets,
-  entry: config.entry,
+  entry: config.entry.main,
   devtool: (config.enabled.sourceMaps ? '#source-map' : undefined),
   output: {
     path: config.paths.dist,

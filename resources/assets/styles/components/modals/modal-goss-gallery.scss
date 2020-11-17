@@ -283,12 +283,10 @@
 
     div {
       display: block;
-      width: 30%;
+      width: 100%;
       padding: 0;
-      cursor: pointer;
       margin-right: 4px;
-      float: left;
-      color: white;
+      cursor: pointer;
     }
 
     > div {

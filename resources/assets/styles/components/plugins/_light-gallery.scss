@@ -2,10 +2,58 @@
   background-color: transparent;
 }
 
-.lg-toolbar,
+.lg-outer {
+  .lg {
+    max-width: 620px;
+    max-height: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+
+    box-shadow: $shadow-card;
+    background-color: theme-color("white");
+  }
+  .lg-thumb-outer,
+  .lg-img-wrap {
+    padding: 0 45px;
+  }
+
+  .lg-img-wrap {
+    padding-bottom: 177px;
+  }
+
+  .lg-thumb {
+    padding: 16px 0;
+  }
+
+  .lg-toogle-thumb {
+    display: none;
+  }
+
+  .lg-toolbar,
+  .lg-thumb-outer {
+    background-color: theme-color("white");
+  }
+
+  .lg-thumb-item {
+    border-radius: 0;
+  }
+
+  .lg-thumb-item.active,
+  .lg-thumb-item:hover {
+    border-color: theme-color("orange");
+  }
+}
+
 .lg-actions .lg-next,
 .lg-actions .lg-prev {
   background-color: theme-color("light-gray");
+}
+
+#lg-counter {
+  padding-left: 45px;
 }
 
 #lg-counter,

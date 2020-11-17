@@ -21,14 +21,8 @@ export default {
           },
         },
       }
-
-      
-
-
       //* swiper init
       let swiperGoss = new Swiper('.internal-card__slider .swiper-container', optionForSwiperProduct);
-
-      
     }
 
     //* ion-rangeslider

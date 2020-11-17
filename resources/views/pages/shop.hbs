@@ -131,7 +131,7 @@
                     <span class="card-goss__name">#Create</span>
                   </div>
                   <div class="swiper-slide">
-                    <a href="#"
+                    <a href="#" data-toggle="modal" data-target="#goss-gallery"
                       class="card-goss__item position-relative d-flex align-items-center justify-content-center overflow-hidden">
                       <figure class="card-goss__img" style="background-image: url('images/goss/img1.png');"></figure>
                     </a>
@@ -204,9 +204,8 @@
                   <div
                     class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap">
                     <figure class="grid-gallery__width-1-1">
-                      <a class="grid-gallery__selector position-relative" href="images/shop/product.jpg">
+                      <a class="grid-gallery__selector position-relative" href="images/shop/product.jpg" data-src="images/shop/product.jpg">
                         <div class="grid-gallery__post-img" style="background-image: url(images/shop/product.jpg);">
-                          <img src="images/shop/product.jpg" alt="img">
                         </div>
                       </a>
                     </figure>
@@ -518,9 +517,8 @@
                   <div
                     class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap">
                     <figure class="grid-gallery__width-1-1">
-                      <a class="grid-gallery__selector position-relative" href="images/shop/product.jpg">
+                      <a class="grid-gallery__selector position-relative" href="images/shop/product.jpg" data-src="images/shop/product.jpg">
                         <div class="grid-gallery__post-img" style="background-image: url(images/shop/product.jpg);">
-                          <img src="images/shop/product.jpg" alt="img">
                         </div>
                       </a>
                     </figure>
@@ -1193,8 +1191,7 @@
                       <figure class="grid-gallery__width-1-1">
                         <a class="grid-gallery__selector position-relative grid-gallery__selector--video"
                           href="images/feed/feed-img1.jpg">
-                          <div class="grid-gallery__post-img" style="background-image: url(images/feed/feed-img1.jpg);">
-                            <img src="images/feed/feed-img1.jpg" alt="img">
+                          <div class="grid-gallery__post-img" style="background-image: url(images/feed/feed-img1.jpg);" data-src="images/feed/feed-img1.jpg">
                           </div>
                         </a>
                       </figure>
@@ -1239,7 +1236,7 @@
                       class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap overflow-hidden">
                       <figure class="grid-gallery__width-1-1">
                         <a class="grid-gallery__selector" href="images/shop/product.jpg">
-                          <div class="grid-gallery__post-img" style="background-image: url(images/shop/product.jpg);">
+                          <div class="grid-gallery__post-img" style="background-image: url(images/shop/product.jpg);" data-src="images/feed/feed-img1.jpg">
                           </div>
                         </a>
                       </figure>
@@ -1306,7 +1303,7 @@
   {{> ../common/modals/store-info }}
   {{> ../common/modals/shop-another }}
   {{> ../common/modals/modals-notifications }}
-
+  {{> ../common/modals/goss-gallery }}
   <!-- /Modals -->
 </body>
 

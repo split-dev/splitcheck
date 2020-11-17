@@ -20,8 +20,10 @@
     padding: 0 45px;
   }
 
-  .lg-img-wrap {
-    padding-bottom: 177px;
+  &.lg-has-thumb {
+    .lg-img-wrap {
+      padding-bottom: 177px;
+    }
   }
 
   .lg-thumb {

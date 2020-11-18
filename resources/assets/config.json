@@ -35,6 +35,8 @@
     "components/list-green": "./styles/components/list-green.scss",
     "components/options": "./styles/components/options.scss",
     "components/theme-background": "./styles/components/theme-background.scss",
+    "components/grid-gallery": "./styles/components/grid-gallery.scss",
+    "components/internal-card": "./styles/components/internal-card.scss",
     "components/modals/modal": "./styles/components/modals/modals.scss",
     "components/modals/modal-side": "./styles/components/modals/modal-side.scss",
     "components/modals/modal-add-timeline": "./styles/components/modals/modal-add-timeline.scss",

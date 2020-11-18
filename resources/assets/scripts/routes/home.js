@@ -121,14 +121,15 @@ export default {
             } else {
               if (rightAside) {
                 checkAside(leftAside, minPadding);
-                leftAside.classList.add('js-no-header')
+                leftAside.classList.add('js-no-header') // add class for height calculation
               }
               if (rightAside) {
                 checkAside(rightAside, minPadding);
-                rightAside.classList.add('js-no-header')
+                rightAside.classList.add('js-no-header') // add class for height calculation
               }
             }
 
+            //* height calculation due to header being hidden
             if (scrollDiv.length) {
               for (let i = 0; i < scrollDiv.length; i++) {
                 const el = scrollDiv[i];

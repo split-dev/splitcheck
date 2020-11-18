@@ -91,13 +91,33 @@
 
   // .internal-card--shop
 
-  // &--shop {
-  //   .internal-card__body {
-  //     > p {
-  //       padding: 0;
-  //     }
-  //   }
-  // }
+  &--shop {
+    .internal-card {
+      &__grid--triple {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 320px;
+
+        .grid-gallery {
+          &__width-1-1 {
+            width: calc(50% - 4px);
+            height: 100%;
+          }
+
+          &__width-1-2 {
+            margin-left: auto;
+            width: calc(50% - 8px);
+            height: 156px;
+          }
+
+          &__selector {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
 
   // .internal-card--aside
 

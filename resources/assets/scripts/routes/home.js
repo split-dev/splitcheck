@@ -89,6 +89,9 @@ export default {
       }
 
       const positionSt = () => {
+        const maxPadding = 90;
+        const minPadding = 10;
+
         body.addEventListener('wheel', function(e) {
           let meNow = false;
 
@@ -104,19 +107,51 @@ export default {
           }
 
           if (!meNow) {
+            let newHeightDiv = 0;
+
             if (e.deltaY < 0) {
               if (leftAside) {
-                checkAside(leftAside, 90);
+                checkAside(leftAside, maxPadding);
+                leftAside.classList.remove('js-no-header')
               }
               if (rightAside) {
-                checkAside(rightAside, 90);
+                checkAside(rightAside, maxPadding);
+                rightAside.classList.remove('js-no-header')
               }
             } else {
               if (rightAside) {
-                checkAside(leftAside, 10);
+                checkAside(leftAside, minPadding);
+                leftAside.classList.add('js-no-header')
               }
               if (rightAside) {
-                checkAside(rightAside, 10);
+                checkAside(rightAside, minPadding);
+                rightAside.classList.add('js-no-header')
+              }
+            }
+
+            if (scrollDiv.length) {
+              for (let i = 0; i < scrollDiv.length; i++) {
+                const el = scrollDiv[i];
+                if (el.offsetParent) { //* height calculation "aside-right" and "aside-left"
+                  newHeightDiv = (window.innerHeight - header.clientHeight - 20); // 20 - correction because of the shadows
+                  if (el.offsetParent.classList.contains('aside-right')) {
+                    if (window.matchMedia('(max-width: 991px)').matches) {
+                      el.style.height = '';
+                    } else {
+                      if (el.offsetParent.classList.contains('js-no-header')) {
+                        el.style.height = (newHeightDiv - 65 + maxPadding) + 'px'; // writing the height // 65 - correction
+                      } else {
+                        el.style.height = (newHeightDiv - 65) + 'px'; // writing the height // 65 - correction
+                      }
+                    }
+                  } else if (el.offsetParent.classList.contains('aside-left')) {
+                    if (el.offsetParent.classList.contains('js-no-header')) {
+                      el.style.height = newHeightDiv + maxPadding + 'px'; // writing the height
+                    } else {
+                      el.style.height = newHeightDiv + 'px'; // writing the height
+                    }
+                  }
+                }
               }
             }
           }
@@ -124,33 +159,61 @@ export default {
       }
 
       const heightWhat = () => {
-        let newHeightDiv = 0
+
+        const modalHeaderHeight = 110; // default height Header in modal
+        let newHeightDiv = 0;
+
         if (scrollDiv.length) {
           for (let i = 0; i < scrollDiv.length; i++) {
             const el = scrollDiv[i];
             SimpleScrollbar.initEl(el);
-            if (el.offsetParent) {
-              newHeightDiv = (window.innerHeight - header.clientHeight - 20);
+            if (el.offsetParent) { //* height calculation "aside-right" and "aside-left"
+              newHeightDiv = (window.innerHeight - header.clientHeight - 20); // 20 - correction because of the shadows
 
               if (el.offsetParent.classList.contains('aside-right')) {
                 if (window.matchMedia('(max-width: 991px)').matches) {
                   el.style.height = '';
                 } else {
-                  el.style.height = (newHeightDiv - 65) + 'px';
+                  el.style.height = (newHeightDiv - 65) + 'px'; // writing the height // 65 - correction
                 }
               } else if (el.offsetParent.classList.contains('aside-left')) {
-                el.style.height = newHeightDiv + 'px';
+                el.style.height = newHeightDiv + 'px'; // writing the height
               }
             }
-            if (el.parentElement.classList.contains('form__inputs')) {
-              newHeightDiv = window.innerHeight - 200;
+            if (el.parentElement.classList.contains('form__inputs')) { //* height calculation in modal "form__inputs"
 
-              el.style.height = newHeightDiv + 'px';
+              if (el.parentNode.nextElementSibling) {
+                if (el.parentNode.nextElementSibling.classList.contains('modal-footer')) { //* if there is div "modal-footer" in modal
+                  let thisFooter = el.parentElement.nextElementSibling;
+                  // find out the height through styles
+                  let height = window.getComputedStyle(thisFooter, null).getPropertyValue('min-height');
+                  height = +height.slice(0, -2); // convert int
+
+                  newHeightDiv = window.innerHeight - height - modalHeaderHeight;
+                  el.style.height = newHeightDiv + 'px'; // writing the height
+                }
+              } else {
+                newHeightDiv = window.innerHeight - modalHeaderHeight;
+                el.style.height = newHeightDiv + 'px'; // writing the height
+              }
+
             }
-            if (el.parentElement.classList.contains('modal-body')) {
-              newHeightDiv = window.innerHeight - 200;
+            if (el.parentElement.classList.contains('modal-body')) { //* height calculation in modal "modal-body" when not form
 
-              el.style.height = newHeightDiv + 'px';
+              if (el.parentElement.nextElementSibling) {
+                if (el.parentElement.nextElementSibling.classList.contains('modal-footer')) { //* if there is div "modal-footer" in modal
+                  let thisFooter = el.parentElement.nextElementSibling;
+                  // find out the height through styles
+                  let height = window.getComputedStyle(thisFooter, null).getPropertyValue('min-height');
+                  height = +height.slice(0, -2); // convert int
+
+                  newHeightDiv = window.innerHeight - height - modalHeaderHeight;
+                  el.style.height = newHeightDiv + 'px'; // writing the height
+                }
+              } else {
+                newHeightDiv = window.innerHeight - modalHeaderHeight;
+                el.style.height = newHeightDiv + 'px';  // writing the height
+              }
             }
           }
         }

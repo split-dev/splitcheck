@@ -25,6 +25,11 @@
       "title": "Shop",
       "description": "shop",
       "url": "/shop.html"
+    },
+    {
+      "title": "Profile",
+      "description": "profile",
+      "url": "/profile.html"
     }
   ]
 }

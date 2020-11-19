@@ -1,0 +1,13 @@
+//Glob Utils
+@import "../../variables";
+@import "../../bootstrap-utils";
+
+// Page Specific Components
+@import "profile-nav";
+@import "profile-face";
+@import "about-me";
+@import "connections";
+
+.profile__bottom {
+  margin-top: 24px;
+}

@@ -17,6 +17,7 @@ import common from './routes/common';
 import Detection from './util/Detection';
 import home from './routes/home';
 import shop from './routes/shop';
+import profile from './routes/profile';
 import early from './routes/early';
 import settings from './routes/settings';
 
@@ -33,6 +34,7 @@ const routes = new Router({
   'shop': shop,
   'early': early,
   'settings': settings,
+  'profile': profile,
 });
 
 // // Load Events

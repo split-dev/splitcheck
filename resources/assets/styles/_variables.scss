@@ -33,7 +33,7 @@ $theme-colors: (
   "light-gray2": #f8f9fb,
   "light-gray3": #eef3fd,
   "light-gray4": #f8f6f6,
-  "light-gray5":#f3f3f3,
+  "light-gray5": #f3f3f3,
   "gray": #828282,
   "gray2": #a59e9d,
   "blue": #315293,
@@ -51,6 +51,7 @@ $theme-colors: (
   "light-orange3": #fffcf9,
   "red": #f70e31,
   "green": #4fcec4,
+  "silver": #828282,
 );
 // then in code: theme-color("$this-color")
 // then in code rgb: rgba(theme-color("$this-color"), 0.95);

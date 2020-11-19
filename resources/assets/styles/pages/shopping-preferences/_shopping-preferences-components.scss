@@ -1,0 +1,21 @@
+.shopping-preferences {
+  &__list {
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 25px 25px 34px 25px;
+  }
+  h5 {
+    color: #335491;
+    font-weight: $font-weight-medium;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 18px;
+  }
+  small {
+    color: #828282;
+    font-weight: $font-weight-normal;
+    font-size: 14px;
+  }
+}

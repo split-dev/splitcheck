@@ -1,6 +1,45 @@
 import 'jquery-mask-plugin'
 export default {
   init() {
+    const body = document.querySelector('body');
+    
+
+   
+   
+
+    // * function for "Select" template in modal
+    {
+      $('.form__single--select-default select[data-toggle="select"]').select2({
+        minimumResultsForSearch: Infinity,
+        width: '100%',
+      });
+      $('.form__single--select-user select[data-toggle="select"]').select2({
+        minimumResultsForSearch: Infinity,
+        width: '100%',
+        templateResult: function (state) {
+          if (!state.id) {
+            return state.text;
+          }
+          var baseUrl = 'images/profiles';
+          var $state = $(`
+            <div class="profile-list">
+              <figure class="profile-list__avatar">
+                <img src="${baseUrl}/${state.element.value.toLowerCase()}.png" alt="avatar">
+                <span class="profile-list__symbol"></span>
+              </figure>
+              <span>${state.text}</span>
+            </div>
+          `);
+
+          return $state;
+        },
+        // dropdownParent: $('.form__single--select-user'),
+      });
+
+
+    }
+
+
 
       //background change
       
@@ -19,7 +58,7 @@ export default {
      
 
      $('.settings__toggle').on('click', function() {
-       $('.mobile-nav').toggleClass('mobile-before')
+       $('.mobile-nav').toggleClass('mobile-before');
        $('.svg-show').toggleClass('svg-top-hide');
        $('.settings__hide').slideToggle(400);
        
@@ -32,6 +71,7 @@ export default {
      });
 
     
+    
 
 
     //check input
@@ -40,23 +80,7 @@ export default {
           $(this).toggleClass('active-item');
       });
 
-      //check on and off -- text
-      $('.slideThree').click(function() {
-          $(this).toggleClass('check');
-          if ($('.slideThree').hasClass('check')) {
-            $(this).next().removeClass('strong-text')
-            $(this).prev().addClass('strong-text')
-            $(this).prev().removeClass('no-strong')
-            $(this).next().addClass('no-strong')
-           
-          } else {
-            $(this).next().addClass('strong-text')
-            $(this).prev().removeClass('strong-text')
-            $(this).next().removeClass('no-strong')
-            $(this).prev().addClass('no-strong')
-          }
-      });
-      $('.account-preferences__check strong').addClass('no-strong')
+    
       
 
       //password hide
@@ -80,12 +104,7 @@ export default {
 
       //header height
       let mobileLinks = document.querySelector('.mobile-nav');
-      let body = document.querySelector('body');
-      // let header = document.querySelector('.header');
-      
-
-      
-
+     
       function topMobile() {
         body.addEventListener('wheel', function(e) {
   
@@ -118,9 +137,7 @@ export default {
         })
       }
       topMobile();
-      
-     
-      
+   
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

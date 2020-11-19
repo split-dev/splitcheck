@@ -5,10 +5,10 @@
     {{> ../common/head }}
 </head>
 
-<body class="home settings">
+<body class="settings home">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
-    <div class="section-blur background-one" d="background">
+    <div class="section-blur" data-class="maze" id="background">
         {{> ../common/header-next }}
 
         <div class="tabs-global">
@@ -240,9 +240,10 @@
                             </section>
                         </div>
                     </ul>
-                    <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-content form" id="pills-tabContent">
                         <div class="tab-pane active show fade" id="account-preferences" role="tabpanel">
-                            <div class="account-preferences">
+                            <div class="account-preferences ">
+
 
                                 <div class="account-preferences__block">
                                     <h5>Account preferences</h5>
@@ -251,13 +252,23 @@
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Site language</span>
                                     <p>Select the language you use on SplitChek</p>
-                                    <div class="select-before">
-                                        <select name="form" id="date">
-                                            <option value="1">05/10/2020</option>
-                                            <option value="2">06/10/2020</option>
-                                            <option value="3">07/10/2020</option>
+                                    <div
+                                        class="select-before form__single--select form__single--select-default form__single--fluid">
+                                        <select class="form__select form__select--default select2-hidden-accessible"
+                                            data-toggle="select" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                            <option value="#">05/10/2020</option>
+                                            <option value="#">05/10/2020</option>
+                                            <option value="#">05/10/2020</option>
                                         </select>
+
                                     </div>
+
+                                    <select class="form__select form__select--default select2-hidden-accessible"
+                                        data-toggle="select" data-select2-id="2" tabindex="-1" aria-hidden="true">
+                                        <option value="#">05/10/2020</option>
+                                        <option value="#">05/10/2020</option>
+                                        <option value="#">05/10/2020</option>
+                                    </select>
                                 </div>
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Should your profile photo be displayed in emails?</span>
@@ -265,12 +276,14 @@
                                         friends, connections and order emails. If disabled, we will show your first and
                                         last name initials.</p>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-1"
+                                            class="form__checkbox form__single settings__check form__single--fluid form__single--checkbox form__checkbox--language"
+                                            name="checkbox-language" checked="">
+                                        <label for="checkbox-1">
+                                        </label>
                                         <strong class="check-off">Hide on emails</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
-                                        <strong class="check-on strong-text">Show
+                                        <strong class="check-on">Show
                                             on emails</strong>
                                     </div>
                                 </div>
@@ -281,11 +294,14 @@
                                         friends, connections and order emails. If disabled, we will show your first and
                                         last name initials.</p>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-2"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-2">
+
+                                        </label>
                                         <strong class="check-off strong-text">Hidden</strong>
-                                        <div class="slideThree check">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on">Displayed</strong>
                                     </div>
                                 </div>
@@ -296,20 +312,26 @@
                                         option is visible on your profile</p>
                                     <b>Enable kid’s account</b>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-3"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-3">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
                                     <b>Enable pet’s account</b>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-4"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-4">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
                                     <div class="account-preferences__bg">
@@ -356,11 +378,14 @@
                                         are in need at checkout.</p>
                                     <b>Do you want us to notify you to help others at checkout?</b>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-5"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-5">
+
+                                        </label>
                                         <strong class="check-off">No</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">Yes</strong>
                                     </div>
                                 </div>
@@ -372,11 +397,14 @@
                                     </p>
                                     <b>Do you want to help grow the SplitChek Community?</b>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-6"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-6">
+
+                                        </label>
                                         <strong class="check-off">No</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">Yes</strong>
                                     </div>
                                 </div>
@@ -478,11 +506,14 @@
                                     <span class="blue-span">Account visibility</span>
                                     <p>When your account is private, only you can see it</p>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-7"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-7">
+
+                                        </label>
                                         <strong class="check-off">Private</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">Public</strong>
                                     </div>
                                 </div>
@@ -495,22 +526,31 @@
                                         followers will be denied. If JustFriends, then connections and followers will be
                                         rejected.
                                     </p>
-                                    <div class="select-before">
-                                        <select name="#" id="#">
+
+                                    <div
+                                        class="select-before form__single--select form__single--select-default form__single--fluid">
+                                        <select class="form__select form__select--default select2-hidden-accessible"
+                                            data-toggle="select" data-select2-id="3" tabindex="-1" aria-hidden="true">
                                             <option value="1">Public</option>
                                             <option value="2">Private</option>
                                         </select>
+
                                     </div>
+
+
                                 </div>
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Show profile on search engines</span>
                                     <p>If enabled, your public profile will appear on search engines</p>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-8"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-8">
+
+                                        </label>
                                         <strong class="check-off">Disabled</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">Enabled</strong>
                                     </div>
 
@@ -531,12 +571,14 @@
                                         turn this on, to enable freedom of speech. Beware that words are not censored,
                                         and you agree to receive such content in your SplitChek feed. All content you
                                         post will be marked as containing adult content or coarse language</p>
-                                    <div class="select-before">
-                                        <select name="#" id="#">
+                                    <div
+                                        class="select-before form__single--select form__single--select-default form__single--fluid">
+                                        <select class="form__select form__select--default select2-hidden-accessible"
+                                            data-toggle="select" data-select2-id="4" tabindex="-1" aria-hidden="true">
                                             <option value="1">NA</option>
-                                            <option value="1">NA</option>
-                                            <option value="1">NA</option>
+                                            <option value="2">NA</option>
                                         </select>
+
                                     </div>
 
                                 </div>
@@ -545,21 +587,28 @@
                                     <span class="blue-span">Who can reach you</span>
                                     <p>Choose who can connect with you on SplitChek
                                     </p>
-                                    <div class="select-before">
-                                        <select name="#" id="#">
+                                    <div
+                                        class="select-before form__single--select form__single--select-default form__single--fluid">
+                                        <select class="form__select form__select--default select2-hidden-accessible"
+                                            data-toggle="select" data-select2-id="5" tabindex="-1" aria-hidden="true">
                                             <option value="1">Anyone on SplitChek</option>
                                             <option value="2">Anyone on SplitChek</option>
                                         </select>
+
                                     </div>
+
                                 </div>
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Who can write to your timeline</span>
                                     <p>Choose who can write to your timeline</p>
-                                    <div class="select-before">
-                                        <select name="#" id="#">
+                                    <div
+                                        class="select-before form__single--select form__single--select-default form__single--fluid">
+                                        <select class="form__select form__select--default select2-hidden-accessible"
+                                            data-toggle="select" data-select2-id="6" tabindex="-1" aria-hidden="true">
                                             <option value="1">Anyone on SplitChek</option>
                                             <option value="2">Anyone on SplitChek</option>
                                         </select>
+
                                     </div>
 
 
@@ -570,29 +619,38 @@
                                         stores</p>
                                     <span class="bold-span"><b>Stores:</b> invitations to follow stores</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-9"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-9">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
                                     <span class="bold-span"><b>Stores:</b> invitations to follow stores</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-10"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-10">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
                                     <span class="bold-span"><b>Stores:</b> invitations to follow stores</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-11"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-11">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
 
@@ -605,11 +663,14 @@
                                         Participation is 100% voluntary and personal information is not shared.</p>
                                     <span class="bold-span">Would you like to receive invitations to participate?</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-12"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-12">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
 
@@ -630,11 +691,14 @@
                                     <span class="blue-span">You are subscribed to:</span>
                                     <span class="bold-span">Feedback emails</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-13"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-13">
+
+                                        </label>
                                         <strong class="check-off">No</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">Yes</strong>
                                     </div>
 
@@ -642,11 +706,14 @@
                                     <p>We will remind you of events and activities from your account every Wednesdays
                                         and Fridays</p>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-14"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-14">
+
+                                        </label>
                                         <strong class="check-off">No</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">Yes</strong>
                                     </div>
                                 </div>
@@ -660,11 +727,14 @@
                                     <span class="bold-span">Allow SplitChek business partners to send you relevant
                                         gifting deals</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-15"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-15">
+
+                                        </label>
                                         <strong class="check-off">No</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">Yes</strong>
                                     </div>
                                 </div>
@@ -683,11 +753,14 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Likes</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-16"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-16">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
 
@@ -696,11 +769,14 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Likes and Comments on Photos of You</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-17"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-17">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
 
@@ -709,11 +785,14 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Comments</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-18"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-18">
+
+                                        </label>
                                         <strong class="check-off"> Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
 
@@ -722,11 +801,14 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Comments Like</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-19"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-19">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
 
@@ -735,11 +817,14 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Accepted Invitation Requests</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-20"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-20">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
 
@@ -748,11 +833,14 @@
                                 <div class="account-preferences__block">
                                     <span class="bold-span">Support Requests</span>
                                     <div class="account-preferences__check">
+
+                                        <input type="checkbox" id="checkbox-21"
+                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
+                                            checked="">
+                                        <label for="checkbox-21">
+
+                                        </label>
                                         <strong class="check-off">Off</strong>
-                                        <div class="slideThree">
-                                            <input id="slideThree" type="checkbox">
-                                            <label for="slideThree"></label>
-                                        </div>
                                         <strong class="check-on strong-text">On</strong>
                                     </div>
 

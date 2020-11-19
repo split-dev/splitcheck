@@ -1,6 +1,8 @@
 //Glob Utils
 @import "../../variables";
 @import "../../bootstrap-utils";
-
+@import "../../common/global";
+// @import "../../common/form";
 // Page Specific Components
 @import "tabs";
+@import "tabs-global";

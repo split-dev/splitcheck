@@ -9,6 +9,74 @@ tspan {
   font-family: $font-family-custom;
 }
 
+input[type="checkbox"]:checked ~ .check-off {
+  font-weight: $font-weight-normal !important;
+}
+input[type="checkbox"]:checked ~ .check-on {
+  font-weight: $font-weight-medium !important;
+}
+
+.check-on {
+  font-weight: $font-weight-normal;
+}
+.section-blur {
+  position: relative;
+}
+
+div[data-class="points"] {
+  z-index: 99;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/settings/background-second.png");
+    background-size: auto;
+    background-repeat: repeat;
+    z-index: -12;
+    opacity: 1 !important;
+  }
+}
+
+div[data-class="grainy"] {
+  background-color: #fdfdfd;
+  &::before {
+    display: none !important;
+  }
+}
+div[data-class="blue"] {
+  background-color: #f8f9fb !important;
+  &::before {
+    display: none !important;
+  }
+}
+div[data-class="warm"] {
+  background-color: #fffcf9 !important;
+  &::before {
+    display: none !important;
+  }
+}
+
+div[data-class="maze"] {
+  position: relative;
+  background-color: #fffcf9 !important;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/patern/theme-background-one.png");
+    background-size: auto;
+    background-repeat: repeat;
+    opacity: 0.5;
+  }
+}
+
 .bg-cover {
   width: 100%;
   height: 100%;
@@ -42,78 +110,7 @@ tspan {
   font-weight: $font-weight-medium;
 
   &:hover {
-    color: theme-color("dark-orange")
-  }
-}
-
-.theme-background-one {
-  position: relative;
-  background-color: #fffcf9 !important;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("./images/patern/theme-background-one.png");
-    background-size: auto;
-    background-repeat: repeat;
-    opacity: 0.5;
-  }
-}
-
-div[data-class="maze"] {
-  position: relative;
-  background-color: #fffcf9 !important;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("./images/patern/theme-background-one.png");
-    background-size: auto;
-    background-repeat: repeat;
-    opacity: 0.5;
-  }
-}
-div[data-class="points"] {
-  background-color: #fff !important;
-  z-index: 99;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("images/settings/background-second.png");
-    background-size: auto;
-    background-repeat: repeat;
-    z-index: -12;
-    opacity: 1 !important;
-  }
-}
-div[data-class="grainy"] {
-  background-color: #fdfdfd;
-  &::before {
-    display: none !important;
-  }
-}
-div[data-class="blue"] {
-  background-color: #f8f9fb !important;
-  &::before {
-    display: none !important;
-  }
-}
-div[data-class="warm"] {
-  background-color: #fffcf9 !important;
-  &::before {
-    display: none !important;
+    color: theme-color("dark-orange");
   }
 }
 

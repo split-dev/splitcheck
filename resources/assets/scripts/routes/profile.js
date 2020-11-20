@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper/swiper-bundle';
+import 'jquery-mask-plugin'
 
 export default {
   init() {
@@ -169,7 +170,7 @@ export default {
 
      //setColor
      $('.profile-face__background .btn-border').click( function(e) {
-       e.preventDefault;
+       e.preventDefault();
        $(this).addClass('active');
       $('.profile-face__background .select-color').addClass('show');
      });
@@ -198,10 +199,27 @@ export default {
       let count = $(this).attr('data-target');
       $('#'+ count).addClass('show');
     })
-    //modal-add photo
-    $('.profile-face__photo').click( function() {
-      
+    //mask input
+    $('.phone').mask('+ 3800000000');
+    //edit show
+    $('#editInfo').click( function (e) {
+      e.preventDefault();
+      $('.about-me__box--tell >div').toggleClass('hide');
+      $('.about-me__form').toggleClass('hide');
     })
+    //max count strong
+    $('.max-text textarea').keyup(function() {
+      var maxCount = 400;
+      var revText = this.value.length;
+  
+          if (this.value.length > maxCount)
+              {
+              this.value = this.value.substr(0, maxCount);
+              }
+          var cnt = (maxCount - revText);
+          $(this).parent().find($('.count span:first-of-type')).text(revText)
+  
+      });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

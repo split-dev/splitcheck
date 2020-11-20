@@ -153,6 +153,52 @@ export default {
             // left
           });
         }
+        if($('.connections__select--follower')) {
+          const optionForTimelineFollower = {
+            slidesPerView: 4,
+            setWrapperSize: false,
+            simulateTouch: false,
+            preventInteractionOnTransition: true,
+            mousewheel: true,
+            navigation: {
+              nextEl: '.connections__select--follower .swiper-button-next',
+              prevEl: '.connections__select--follower .swiper-button-prev',
+            },
+            breakpoints: {
+              1260: {
+                slidesPerView: 4,
+              },
+              992: {
+                slidesPerView: 2,
+                // freeMode: true,
+              },
+              360: {
+                slidesPerView: 3,
+              },
+              250: {
+                slidesPerView: 3,
+                setWrapperSize: false,
+                simulateTouch: false,
+                preventInteractionOnTransition: true,
+                mousewheel: true,
+                // freeMode: true,
+              },
+            },
+          }
+          let swiperTimelineFollower = new Swiper('.connections__select--follower .swiper-container', optionForTimelineFollower);
+          let activeSlide = 0;
+          swiperTimelineFollower.on('slideChange', function(event){
+            if(activeSlide > swiperTimelineFollower.activeIndex) {
+              activeSlide = swiperTimelineFollower.activeIndex;
+              countSlide($(event.el).parent(), 'prev')
+            } else if(activeSlide < swiperTimelineFollower.activeIndex) {
+              countSlide($(event.el).parent(), 'next')
+              activeSlide = swiperTimelineFollower.activeIndex;
+            }
+            
+            // left
+          });
+        }
         
         function tpCollection () {
           if(window.innerWidth < 992) {

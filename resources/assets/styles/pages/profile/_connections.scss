@@ -57,6 +57,17 @@
     max-height: 114px;
     height: 100%;
     justify-content: space-between;
+    &--follower {
+      .connections__slider {
+        max-width: 248px;
+        margin-left: 21px;
+      }
+      .btn-border {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+      }
+    }
   }
   &__overflow {
     position: relative;
@@ -89,7 +100,7 @@
     .count-slider {
       position: absolute;
       right: -17px;
-      top: calc(50% - 10px);
+      top: calc(50% - 12px);
       color: theme-color("light-blue");
       font-size: 16px;
       font-weight: 400;
@@ -99,6 +110,10 @@
     }
     span[data-count="0"] {
       opacity: 0;
+    }
+    .swiper-button-disabled {
+      opacity: 0.45 !important;
+      pointer-events: none;
     }
   }
 }

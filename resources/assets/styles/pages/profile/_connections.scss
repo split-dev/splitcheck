@@ -1,4 +1,8 @@
 .connections {
+  &__wrapper {
+    width: 100%;
+    max-width: 336px;
+  }
   > span {
     color: theme-color("silver");
     font-size: 12px;
@@ -8,14 +12,34 @@
     display: inline-block;
     margin-bottom: 15px;
   }
+  &__mob {
+    .connections {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > span {
+        margin-top: 24px;
+        @media (max-width: 575px) {
+          padding-left: 15px;
+        }
+      }
+    }
+  }
   &__box {
-    width: 336px;
+    width: 100%;
+    max-width: 336px;
     height: 180px;
     border-radius: 8px;
     background-color: theme-color("white");
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     padding: 15px 12px 12px 12px;
     margin-bottom: 16px;
+    @media (max-width: 1260px) {
+      min-width: 285px;
+    }
+    @media (max-width: 1050px) {
+      min-width: 265px;
+    }
     > span {
       display: inline-block;
       margin-bottom: 12px;
@@ -46,11 +70,19 @@
   }
   &__slider {
     max-width: 185px;
+    @media (max-width: 1260px) {
+      max-width: 120px;
+    }
+    @media (max-width: 991px) {
+      max-width: 185px;
+    }
     .swiper-button-prev {
-      left: -26px;
+      display: block !important;
+      left: -32px;
       top: calc(50% - 13px);
     }
     .swiper-button-next {
+      display: block !important;
       right: -45px;
       top: calc(50% - 13px);
     }

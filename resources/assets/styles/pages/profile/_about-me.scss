@@ -1,6 +1,13 @@
 .about-me {
   margin-right: 30px;
   margin-bottom: 50px;
+  max-width: 560px;
+  @media (max-width: 1260px) {
+    max-width: 530px;
+  }
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
   .hide {
     display: none !important;
   }
@@ -12,6 +19,9 @@
     text-transform: uppercase;
     display: inline-block;
     margin: 24px 0 12px;
+    @media (max-width: 575px) {
+      padding-left: 15px;
+    }
     &:first-of-type {
       margin-top: 0;
     }
@@ -42,6 +52,12 @@
     padding: 24px 20px;
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
+    @media (max-width: 767px) {
+      > div {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
     &--tell {
       padding: 12px;
       > div {
@@ -56,12 +72,26 @@
   &__img {
     min-width: 188px;
     margin-right: 40px;
+    img {
+      width: 100%;
+      @media (max-width: 575px) {
+        margin-right: 0;
+      }
+    }
   }
   &__info {
     max-width: 275px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+    @media (max-width: 768px) {
+      align-items: center;
+      margin-top: 25px;
+      text-align: center;
+    }
     strong {
       color: theme-color("dark-blue");
       font-size: 16px;
@@ -77,9 +107,21 @@
     }
   }
   &__duo {
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      > div {
+        max-width: 272px;
+        margin-right: 0 !important;
+        margin-bottom: 16px;
+      }
+    }
     .about-me__img {
       margin-right: 0;
       min-height: 217px;
+      @media (max-width: 1260px) {
+        min-height: 175px;
+      }
     }
     .btn-border {
       max-width: none;
@@ -94,6 +136,9 @@
     }
   }
   &__form {
+    @media (max-width: 768px) {
+      padding: 0 3px;
+    }
     p {
       color: theme-color("gray");
       font-size: 14px;
@@ -164,8 +209,14 @@
       font-weight: 400;
     }
     .two__input {
+      @media (max-width: 575px) {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      }
       input {
-        width: 240px;
+        width: 100%;
+        max-width: 240px;
         height: 40px;
         border-radius: 5px;
         background-color: rgb(232 235 242 / 0.3);
@@ -176,11 +227,30 @@
         color: #0b0212;
         font-size: 16px;
         font-weight: 400;
+        @media (max-width: 575px) {
+          max-width: 100%;
+        }
       }
       div {
+        @media (max-width: 768px) {
+          width: 100%;
+          max-width: 240px;
+        }
+        @media (max-width: 575px) {
+          max-width: 100%;
+        }
         &:nth-child(1) {
+          @media (max-width: 768px) {
+            margin-right: 32px;
+          }
+          @media (max-width: 575px) {
+            margin-right: 0;
+          }
           input {
             margin-right: 32px;
+            @media (max-width: 768px) {
+              margin-right: 0;
+            }
           }
         }
       }
@@ -188,10 +258,17 @@
     .btn-blue {
       float: right;
       margin-top: 32px;
+      @media (max-width: 575px) {
+        max-width: 100%;
+        margin-top: 24px;
+      }
     }
   }
 }
 .overview {
+  @media (max-width: 1260px) {
+    flex-direction: column-reverse;
+  }
   &__full {
     position: relative;
     min-width: 272px;
@@ -203,6 +280,12 @@
     background-color: theme-color("white");
     padding: 22px 20px;
     margin-right: 32px;
+    @media (max-width: 1260px) {
+      max-width: 100%;
+      min-height: 378px;
+      height: auto;
+      margin-right: 0;
+    }
     &--item {
       color: theme-color("dark-blue");
       position: absolute;
@@ -265,6 +348,15 @@
       }
     }
   }
+  &__select {
+    @media (max-width: 1260px) {
+      margin-bottom: 16px;
+    }
+    @media (max-width: 575px) {
+      justify-content: space-between;
+      padding: 0 15px;
+    }
+  }
   &__item {
     display: flex;
     flex-direction: column;
@@ -278,8 +370,17 @@
     cursor: pointer;
     margin-right: 16px;
     margin-bottom: 16px;
+    @media (max-width: 1260px) {
+      margin-right: 16px !important;
+    }
+    @media (max-width: 575px) {
+      width: 104px;
+      height: 104px;
+      margin-right: 8px !important;
+    }
     strong {
       color: theme-color("dark-blue");
+      font-weight: 500;
       font-size: 20px;
     }
     span {

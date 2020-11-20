@@ -10,4 +10,38 @@
 
 .profile__bottom {
   margin-top: 24px;
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+}
+.profile {
+  .header,
+  .footer {
+    .container {
+      @media (max-width: 767px) {
+        padding: 0 15px;
+      }
+    }
+  }
+  .container {
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+  .section-blur {
+    @media (max-width: 991px) {
+      padding-top: 73px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 56px;
+    }
+  }
+  .main-content {
+    @media (max-width: 991px) {
+      padding-top: 0;
+    }
+  }
+  &__list {
+    overflow-x: hidden;
+  }
 }

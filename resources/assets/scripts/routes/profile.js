@@ -21,6 +21,7 @@ export default {
         if($('.connections__select--family')) {
           const optionForTimelineFamily = {
             slidesPerView: 3,
+            spaceBetween: 8,
             setWrapperSize: false,
             simulateTouch: false,
             preventInteractionOnTransition: true,
@@ -34,11 +35,11 @@ export default {
                 slidesPerView: 3,
               },
               992: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 // freeMode: true,
               },
               360: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
               250: {
                 slidesPerView: 3,
@@ -78,11 +79,11 @@ export default {
                 slidesPerView: 3,
               },
               992: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 // freeMode: true,
               },
               360: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
               250: {
                 slidesPerView: 3,
@@ -122,11 +123,11 @@ export default {
                 slidesPerView: 3,
               },
               992: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 // freeMode: true,
               },
               360: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
               250: {
                 slidesPerView: 3,
@@ -153,21 +154,42 @@ export default {
           });
         }
         
+        function tpCollection () {
+          if(window.innerWidth < 992) {
+            $('.connections__mob').append($('.connections'))
+          } else {
+            if($('.connections__mob .connections').hasClass('connections')) {
+              $('.connections__wrapper').append($('.connections'))
+            }
+          }
+        }
+        tpCollection()
+        $(window).resize( function() {
+          tpCollection();
+        })
         
-    let singleWidth = $('.connections__list').width();
+      let singleWidth = $('.connections__list').width();
       function createScroll() {
           for( let i = 0; i< $('.connections__slider').length; i++) {
             let count = $('.connections__slider')[i];
             let countUser = 0;
-            if($(count).find($('.swiper-slide')).length > 3) {
-              countUser = $(count).find($('.swiper-slide')).length - 3;
+            if(window.innerWidth > 1260 || window.innerWidth > 991) {
+              if($(count).find($('.swiper-slide')).length > 3) {
+                countUser = $(count).find($('.swiper-slide')).length - 3;
+              }
+            } else if(window.innerWidth < 1260) {
+              if($(count).find($('.swiper-slide')).length > 2) {
+                countUser = $(count).find($('.swiper-slide')).length - 2;
+              }
             }
+            
             $(count).find($('.count-slider')).attr('data-count', countUser);
             $(count).find($('.count-slider')).text('+'+ countUser);
           }
       }
       createScroll()
-
+      //mobile collection
+      
      //setColor
      $('.profile-face__background .btn-border').click( function(e) {
        e.preventDefault();

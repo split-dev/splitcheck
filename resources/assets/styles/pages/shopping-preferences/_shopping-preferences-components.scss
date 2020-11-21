@@ -1,11 +1,90 @@
 .shopping-preferences {
+  .form__single {
+    margin-bottom: 24px;
+  }
+  &__content {
+    padding-bottom: 60px;
+  }
+  &__card {
+    padding-bottom: 15px;
+  }
+  &__ul {
+    &-1,
+    &-2,
+    &-3,
+    &-4 {
+      @media (max-width: 991px) {
+        flex-direction: column;
+        .shopping-preferences__right {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  &__ul {
+    &-1 {
+      .shopping-preferences__right {
+        margin-left: 75px;
+      }
+    }
+
+    &-2 {
+      .shopping-preferences__right {
+        margin-left: 50px;
+      }
+    }
+
+    &-3 {
+      .shopping-preferences__right {
+        margin-left: 13px;
+      }
+    }
+
+    &-4 {
+      .shopping-preferences__right {
+        margin-left: 138px;
+      }
+    }
+  }
   &__list {
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     background-color: #fff;
-    padding: 25px 25px 34px 25px;
+    padding: 25px 25px 14px 25px;
+    max-width: 560px;
+    margin-bottom: 25px;
+    textarea {
+      height: 120px;
+      margin-bottom: 24px;
+    }
+    input {
+      margin-bottom: 24px;
+    }
+    ul {
+      margin-top: 22px;
+    }
   }
-  h5 {
+  &__bottom {
+    max-width: 560px;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__block {
+    margin-bottom: 40px;
+  }
+  &__top {
+    margin-bottom: 22px;
+  }
+  .form__checkbox-position {
+    margin-top: 45px;
+  }
+  h3 {
     color: #335491;
     font-weight: $font-weight-medium;
     font-size: 18px;
@@ -13,9 +92,34 @@
     letter-spacing: 0.8px;
     line-height: 18px;
   }
+  h5 {
+    color: #315293;
+    font-weight: $font-weight-medium;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 12px;
+    margin-bottom: 45px;
+  }
+  p {
+    color: #0b0212;
+    font-size: 16px;
+    font-weight: $font-weight-normal;
+    b {
+      font-weight: $font-weight-medium;
+    }
+  }
   small {
     color: #828282;
     font-weight: $font-weight-normal;
     font-size: 14px;
+  }
+  .active-page {
+    .icon-setting {
+      background-image: url("images/icons/tune.svg");
+    }
+    span {
+      color: #f77d0e;
+    }
   }
 }

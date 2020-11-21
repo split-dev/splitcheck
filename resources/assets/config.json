@@ -8,6 +8,7 @@
       "./styles/pages/settings/index.scss",
       "./styles/pages/shop/index.scss",
       "./styles/pages/profile/index.scss",
+      "./styles/pages/shopping-preferences/index.scss",
       "./styles/components/modals/modals.scss",
       "./styles/components/modals/modal-side.scss",
       "./styles/components/modals/modal-add-timeline.scss",

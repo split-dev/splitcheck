@@ -30,6 +30,21 @@
       "title": "Profile",
       "description": "profile",
       "url": "/profile.html"
+    },
+    {
+      "title": "Shopping-preferences",
+      "description": "shopping-preferences",
+      "url": "/shopping-preferences.html"
+    },
+    {
+      "title": "Addressbook",
+      "description": "addressbook",
+      "url": "/addressbook.html"
+    },
+    {
+      "title": "Addressbook full blank",
+      "description": "addressbook",
+      "url": "/addressbook-full-blank.html"
     }
   ]
 }

@@ -5,10 +5,10 @@
     {{> ../common/head }}
 </head>
 
-<body class="profile home">
+<body class="addressbook home">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
-    <div class="section-blur " data-class="maze">
+    <div class="section-blur" data-class="maze">
         {{> ../common/header-next }}
         <div class="container">
             <div class="main-content position-relative d-flex align-items-start justify-content-between">
@@ -43,7 +43,7 @@
                                             <span>My orders</span>
                                         </a>
                                     </li>
-                                    <li class="other-links__item">
+                                    <li class="other-links__item active-page">
                                         <a href="#"
                                             class="other-links__link position-relative d-flex align-items-center">
                                             <!-- add class "active" what would the icon change -->
@@ -137,13 +137,93 @@
                     </div>
                 </aside>
                 <!-- /aside-left -->
-                <div class="profile__list d-flex flex-column w-100">
-                    {{> ../common/profile/profile-face }}
-                    <div class="profile__bottom d-flex">
-                        {{> ../common/profile/about-me }}
-                        {{> ../common/profile/connections }}
+                <section class="addressbook__content">
+                    <div class="addressbook__box">
+                        <div class="addressbook__box-top">
+                            <h3>Address book</h3>
+                            <small>Manage addresses</small>
+                        </div>
+                        <div class="addressbook__box-body">
+                            <h5>Shipping addresses</h5>
+                            <p>Shipping addresses are used to calculate your shipping costs and govermment taxes:</p>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="addressbook__box-gray">
+                        <div class="addressbook__box-gray__top">
+                            <h5>Shipping Address #1</h5>
+                            <div class="addressbook__primary"><span>primary</span>
+                                <i></i>
+                            </div>
+                        </div>
+                        <address class="addressbook__box-gray__body">
+                            <ul>
+                                <li>20 Kohl street</li>
+                                <li>Upper Coomera</li>
+                                <li>Queensland</li>
+                                <li>4209</li>
+                                <li>Australia</li>
+                            </ul>
+
+                        </address>
+                        <div class="addressbook__box-gray__bottom">
+                            <a href="#" class="btn btn-border">Edit address</a>
+                        </div>
+                    </div>
+
+                    <div class="addressbook__box-gray">
+                        <div class="addressbook__box-gray__top">
+                            <h5>Shipping Address #2</h5>
+
+                        </div>
+                        <address class="addressbook__box-gray__body">
+                            <ul>
+                                <li>20 Kohl street</li>
+                                <li>Upper Coomera</li>
+                                <li>Queensland</li>
+                                <li>4209</li>
+                                <li>Australia</li>
+                            </ul>
+
+                        </address>
+                        <div class="addressbook__box-gray__bottom">
+                            <a href="#" class="btn btn-border">Edit address</a>
+                        </div>
+                    </div>
+
+                    <div class="addressbook__box">
+                        <div class="addressbook__box-top">
+                            <h5>Billing addresses</h5>
+                        </div>
+                        <div class="addressbook__box-body">
+
+                            <p>Billing addresses are used to help us reduce fraud by comparing your postal code with our
+                                payment gateway providers:</p>
+                        </div>
+                    </div>
+
+                    <div class="addressbook__box-gray">
+                        <div class="addressbook__box-gray__top">
+                            <h5>Shipping Address #1</h5>
+                            <div class="addressbook__primary"><span>primary</span>
+                                <i></i>
+                            </div>
+                        </div>
+                        <address class="addressbook__box-gray__body">
+                            <ul>
+                                <li>20 Kohl street</li>
+                                <li>Upper Coomera</li>
+                                <li>Queensland</li>
+                                <li>4209</li>
+                                <li>Australia</li>
+                            </ul>
+
+                        </address>
+                        <div class="addressbook__box-gray__bottom">
+                            <a href="#" class="btn btn-border">Edit address</a>
+                        </div>
+                    </div>
+                </section>
 
             </div>
         </div>

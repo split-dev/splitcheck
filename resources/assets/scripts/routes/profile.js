@@ -228,7 +228,7 @@ export default {
             // left
           });
         }
-        
+        // mobile colection
         function tpCollection () {
           if(window.innerWidth < 992) {
             $('.connections__mob').append($('.connections'))
@@ -243,8 +243,6 @@ export default {
           tpCollection();
         })
         
-      //mobile collection
-      
      //setColor
      $('.profile-face__background .btn-border').click( function(e) {
        e.preventDefault();

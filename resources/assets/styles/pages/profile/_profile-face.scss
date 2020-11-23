@@ -10,6 +10,31 @@
     background-color: #d8e1f1;
     border-radius: 8px 8px 0 0;
     height: inherit;
+    position: relative;
+    z-index: 5;
+    &.photo {
+      &::after {
+        content: "";
+        display: block;
+        background-color: #8196c3;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0;
+        transition: 0.3s;
+      }
+    }
+    &:hover {
+      a {
+        opacity: 1 !important;
+      }
+      &::after {
+        opacity: 0.95 !important;
+      }
+    }
     @media (max-width: 768px) {
       justify-content: center;
     }
@@ -19,6 +44,8 @@
     }
     a {
       margin-right: 12px;
+      opacity: 0;
+      transition: 0.3s;
       &:last-of-type {
         max-width: 130px;
         @media (max-width: 575px) {
@@ -49,7 +76,7 @@
           max-width: 240px;
           flex-wrap: wrap;
           width: 100%;
-          min-width: 240px;
+          min-width: 222px;
           padding: 0 0 0 4px;
           left: auto;
           right: 0;
@@ -140,6 +167,7 @@
     background-color: theme-color("white");
     border-radius: 0 0 8px 8px;
     padding: 0 24px 0 153px;
+    z-index: 9;
     @media (max-width: 768px) {
       border-radius: 0;
       padding: 0 0 11px;
@@ -211,7 +239,18 @@
     color: theme-color("white");
   }
   &__name {
-    border-bottom: 1px dashed theme-color("blue");
+    &.dotted {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: url("images/icons/dotted-bottom.svg");
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: -7px;
+        pointer-events: none;
+      }
+    }
     @media (max-width: 768px) {
       margin-bottom: 8px;
     }

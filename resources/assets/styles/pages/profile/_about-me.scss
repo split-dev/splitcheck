@@ -58,9 +58,18 @@
         align-items: center;
       }
     }
+
     &--tell {
       padding: 12px;
-      > div {
+      > div.not--margin {
+        .btn-border {
+          margin-left: auto;
+        }
+        .about-me__info--full {
+          padding: 12px 12px;
+        }
+      }
+      > div:not(.not--margin) {
         &:last-of-type {
           margin-top: 24px;
           margin-bottom: 8px;
@@ -104,6 +113,39 @@
     p {
       font-size: 14px;
       line-height: 20px;
+    }
+    &--full {
+      p {
+        color: theme-color("dark-blue");
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 22px;
+      }
+      ul {
+        li {
+          display: flex;
+          flex-direction: column;
+          span {
+            color: theme-color("silver");
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.8px;
+            line-height: 12px;
+            display: inline-block;
+            margin-bottom: 16px;
+          }
+          a {
+            color: theme-color("dark-blue");
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 13px;
+          }
+        }
+      }
     }
   }
   &__duo {

@@ -30,6 +30,11 @@
       "title": "Profile",
       "description": "profile",
       "url": "/profile.html"
+    },
+    {
+      "title": "Profile-privat",
+      "description": "Profile-privat",
+      "url": "/profile-privat.html"
     }
   ]
 }

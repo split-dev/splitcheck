@@ -185,6 +185,9 @@
     border-radius: 50%;
     border: 2px solid theme-color("white");
     background-color: theme-color("blue5");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     cursor: pointer;
     @media (max-width: 768px) {
       bottom: 62%;

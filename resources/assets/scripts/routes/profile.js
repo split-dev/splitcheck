@@ -9,10 +9,8 @@ export default {
       let allSlide = $(element).find($('.swiper-slide')).length;
       let counter = Number($(element).find($('.count-slider')).attr('data-count'));
       let countUser = allSlide - counter;
-     // console.log(number);
      $(element).find($('.count-slider')).attr('data-count', countUser);
      $(element).find($('.count-slider')).text('+'+ countUser);
-      console.log(allSlide);
       
     }
         //timeline-global
@@ -195,14 +193,14 @@ export default {
                 slidesPerView: 4,
               },
               992: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 // freeMode: true,
               },
               360: {
-                slidesPerView: 3,
+                slidesPerView: 4,
               },
               250: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 setWrapperSize: false,
                 simulateTouch: false,
                 preventInteractionOnTransition: true,

@@ -4,6 +4,17 @@ import 'jquery-mask-plugin'
 
 export default {
   init() {
+    
+    function initNumber(number, element) {
+      let allSlide = $(element).find($('.swiper-slide')).length;
+      let counter = Number($(element).find($('.count-slider')).attr('data-count'));
+      let countUser = allSlide - counter;
+     // console.log(number);
+     $(element).find($('.count-slider')).attr('data-count', countUser);
+     $(element).find($('.count-slider')).text('+'+ countUser);
+      console.log(allSlide);
+      
+    }
         //timeline-global
         function countSlide(el, direction) {
           let element = $(el).find($('.count-slider'));
@@ -50,6 +61,11 @@ export default {
                 // freeMode: true,
               },
             },
+            on: {
+              init: function (event) {
+                initNumber(event.params.slidesPerView, $(event.el).parent());
+              },
+            },
           }
           let swiperTimelineFamily = new Swiper('.connections__select--family .swiper-container', optionForTimelineFamily);
           let activeSlide = 0;
@@ -94,6 +110,11 @@ export default {
                 // freeMode: true,
               },
             },
+            on: {
+              init: function (event) {
+                initNumber(event.params.slidesPerView, $(event.el).parent());
+              },
+            },
           }
           let swiperTimelineBesties = new Swiper('.connections__select--besties .swiper-container', optionForTimelineBesties);
           let activeSlide = 0;
@@ -136,6 +157,11 @@ export default {
                 preventInteractionOnTransition: true,
                 mousewheel: true,
                 // freeMode: true,
+              },
+            },
+            on: {
+              init: function (event) {
+                initNumber(event.params.slidesPerView, $(event.el).parent());
               },
             },
           }
@@ -184,6 +210,11 @@ export default {
                 // freeMode: true,
               },
             },
+            on: {
+              init: function (event) {
+                initNumber(event.params.slidesPerView, $(event.el).parent());
+              },
+            },
           }
           let swiperTimelineFollower = new Swiper('.connections__select--follower .swiper-container', optionForTimelineFollower);
           let activeSlide = 0;
@@ -214,26 +245,6 @@ export default {
           tpCollection();
         })
         
-      let singleWidth = $('.connections__list').width();
-      function createScroll() {
-          for( let i = 0; i< $('.connections__slider').length; i++) {
-            let count = $('.connections__slider')[i];
-            let countUser = 0;
-            if(window.innerWidth > 1260 || window.innerWidth > 991) {
-              if($(count).find($('.swiper-slide')).length > 3) {
-                countUser = $(count).find($('.swiper-slide')).length - 3;
-              }
-            } else if(window.innerWidth < 1260) {
-              if($(count).find($('.swiper-slide')).length > 2) {
-                countUser = $(count).find($('.swiper-slide')).length - 2;
-              }
-            }
-            
-            $(count).find($('.count-slider')).attr('data-count', countUser);
-            $(count).find($('.count-slider')).text('+'+ countUser);
-          }
-      }
-      createScroll()
       //mobile collection
       
      //setColor

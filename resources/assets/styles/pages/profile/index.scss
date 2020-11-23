@@ -42,6 +42,8 @@
     }
   }
   &__list {
-    overflow-x: hidden;
+    @media (max-width: 575px) {
+      overflow-x: hidden;
+    }
   }
 }

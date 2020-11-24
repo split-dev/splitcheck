@@ -4,6 +4,9 @@
     margin-bottom: 42px;
     @media (max-width: 991px) {
       padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
   .container {
@@ -22,6 +25,7 @@
     margin-bottom: 8px;
     @media (max-width: 575px) {
       margin-bottom: 16px;
+      max-width: 100%;
     }
     &:first-child {
       .addressbook__box-body {
@@ -78,11 +82,23 @@
     }
   }
 
+  &__box-left {
+    @media (max-width: 575px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+    }
+  }
+
   &__box-img {
     display: flex;
     align-items: center;
     @media (max-width: 575px) {
       flex-direction: column;
+      justify-content: center;
     }
     p {
       font-size: 14px !important;
@@ -96,12 +112,20 @@
     }
     a {
       margin-top: 35px;
+      @media (max-width: 575px) {
+        margin-top: 20px;
+        max-width: 100%;
+      }
     }
     figure {
       margin-right: 70px;
+      @media (max-width: 575px) {
+        margin-right: 0;
+      }
     }
   }
   &__box-gray {
+    width: 100%;
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     background-color: #fff;

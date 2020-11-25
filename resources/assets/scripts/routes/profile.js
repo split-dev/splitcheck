@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper/swiper-bundle';
 import 'jquery-mask-plugin'
+import 'lightgallery/dist/js/lightgallery-all.min';
 
 export default {
   init() {
@@ -294,6 +295,22 @@ export default {
           var cnt = (maxCount - revText);
           $(this).parent().find($('.count span:first-of-type')).text(revText)
   
+      });
+
+      //light gallery
+      const postLightGallery = $('.grid-history').lightGallery({
+        selector: '.history__selector-grid',
+        exThumbImage: 'data-src',
+        thumbWidth: 120,
+        thumbContHeight: 177,
+        thumbMargin: 16,
+        hideBarsDelay: 0,
+        thumbnail: true,
+        showThumbByDefault: true,
+        zoom: false,
+        share: false,
+        rotate: false,
+        hash: false,
       });
   },
 

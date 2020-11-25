@@ -1,0 +1,62 @@
+.smile {
+  display: flex;
+  position: relative;
+  i {
+    position: relative;
+    &:nth-of-type(2) {
+      margin-left: -5px;
+      z-index: 1;
+    }
+    &:nth-of-type(3) {
+      margin-left: -5px;
+      z-index: 2;
+    }
+    &:nth-of-type(4) {
+      margin-left: -5px;
+      z-index: 4;
+    }
+    &:nth-of-type(5) {
+      margin-left: -5px;
+      z-index: 5;
+    }
+    &:nth-of-type(5) {
+      margin-left: -5px;
+      z-index: 6;
+    }
+  }
+  .like {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("images/icons/smile/like.svg");
+    background-size: inherit;
+  }
+  .heart {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("images/icons/smile/heart.svg");
+    background-size: inherit;
+  }
+  .happy {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("images/icons/smile/happy.svg");
+    background-size: inherit;
+  }
+  .surprised {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("images/icons/smile/surprised.svg");
+    background-size: inherit;
+  }
+  .angry {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("images/icons/smile/angry.svg");
+    background-size: inherit;
+  }
+}

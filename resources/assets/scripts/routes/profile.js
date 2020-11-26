@@ -2,7 +2,6 @@
 import Swiper from 'swiper/swiper-bundle';
 import 'jquery-mask-plugin'
 import 'lightgallery/dist/js/lightgallery-all.min';
-import { ids } from 'webpack';
 
 export default {
   init() {
@@ -316,15 +315,14 @@ export default {
 
       //grid post images
       function gridGallery(element) {
-        let count = $(element).find($('.post__gallery--single')).length;
+        let count = $(element).find($('.post__galery--single')).length;
         if(count == 1) {
           $(element).attr('data-count', 'single')
-        } else if(count > 1 && count < 3) {
-          $(element).attr('data-count', 'single')
-        } else if(count > 3) {
+        } else if( count > 1 && count < 3) {
+          $(element).attr('data-count', 'two')
+        } else if( count > 3) {
           $(element).attr('data-count', 'three')
         }
-        
       }
       if($('.post__galery')) {
         let galeryArray = $('.post__galery');

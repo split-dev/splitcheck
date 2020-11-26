@@ -25,7 +25,8 @@
       "./styles/components/modals/modal-shop-another.scss",
       "./styles/components/modals/modal-notification.scss",
       "./styles/components/modals/modals-notifications.scss",
-      "./styles/components/modals/modal-goss-gallery.scss"
+      "./styles/components/modals/modal-goss-gallery.scss",
+      "./styles/components/modals/message-overlay.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",
@@ -56,7 +57,8 @@
     "components/modals/modal-shop-another": "./styles/components/modals/modal-shop-another.scss",
     "components/modals/modal-notification": "./styles/components/modals/modal-notification.scss",
     "components/modals/modals-notifications": "./styles/components/modals/modals-notifications.scss",
-    "components/modals/modal-goss-gallery": "./styles/components/modals/modal-goss-gallery.scss"
+    "components/modals/modal-goss-gallery": "./styles/components/modals/modal-goss-gallery.scss",
+    "components/modals/message-overlay": "./styles/components/modals/message-overlay.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

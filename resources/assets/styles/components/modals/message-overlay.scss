@@ -1,0 +1,109 @@
+.message-overlay {
+  .head-modal-info {
+    h2 {
+      color: #335491;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      line-height: 18px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+  }
+  .modal-body {
+    position: relative;
+    z-index: 5;
+    padding: 0 !important;
+    .message {
+      &__list {
+        padding: 40px 16px !important;
+        overflow: hidden;
+      }
+      &__single {
+        position: relative;
+        transition: 0.3s;
+        padding: 8px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        &.new__message {
+          .message__detail {
+            strong,
+            span {
+              color: #0b0212;
+              font-weight: 500;
+            }
+          }
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          transition: 0.3s;
+          left: -30px;
+          right: -30px;
+          top: 0;
+          bottom: 0;
+          opacity: 0;
+          z-index: -1;
+          background-color: #f8f9fb;
+        }
+        &:hover {
+          &::before {
+            opacity: 1;
+          }
+          .message__detail {
+            strong,
+            span {
+              color: #335491 !important;
+            }
+          }
+        }
+      }
+      &__body {
+        max-width: 325px;
+      }
+      &__photo {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+      }
+      &__detail {
+        strong {
+          color: #0b0212;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 12px;
+          display: inline-block;
+          margin-bottom: 5px;
+          transition: 0.3s;
+        }
+        span {
+          color: #0b0212;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14px;
+          transition: 0.3s;
+        }
+      }
+      &__right {
+        span,
+        a {
+          color: #0b0212;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 12px;
+        }
+        span {
+          display: inline-block;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

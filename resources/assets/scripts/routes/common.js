@@ -245,6 +245,24 @@ export default {
     // initialise
     headroom.init();
     headroomSecond.init();
+
+    //get
+    var params = window
+    .location
+    .search
+    .replace('?','')
+    .split('&')
+    .reduce(
+        function(p,e){
+            var a = e.split('=');
+            p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+            return p;
+        },
+        {}
+    );
+    if(params['data'] == 'shop-another') {
+      $('#shop-another').modal();
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

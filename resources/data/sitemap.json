@@ -35,6 +35,31 @@
       "title": "Profile-privat",
       "description": "Profile-privat",
       "url": "/profile-privat.html"
+    },
+    {
+      "title": "Shopping-preferences",
+      "description": "shopping-preferences",
+      "url": "/shopping-preferences.html"
+    },
+    {
+      "title": "Addressbook",
+      "description": "addressbook",
+      "url": "/addressbook.html"
+    },
+    {
+      "title": "Addressbook full blank",
+      "description": "addressbook",
+      "url": "/addressbook-full-blank.html"
+    },
+    {
+      "title": "Addressbook billing blank",
+      "description": "addressbook",
+      "url": "/addressbook-billing-blank.html"
+    },
+    {
+      "title": "Addressbook  filled",
+      "description": "addressbook",
+      "url": "/addressbook-filled.html"
     }
   ]
 }

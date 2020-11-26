@@ -5,15 +5,6 @@
   position: relative;
   width: 100%;
   max-width: 328px;
-  height: 40px;
-  &::before {
-    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMTMgOCI+PGc+PGc+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTlhOWM5IiBzdHJva2UtbWl0ZXJsaW1pdD0iMjAiIHN0cm9rZS13aWR0aD0iLjgiIGQ9Ik0xIDF2MGw1LjkxNiA2djBMMTMgMXYwIi8+PC9nPjwvZz48L3N2Zz4=");
-    position: absolute;
-    right: 10px;
-    z-index: 99;
-    bottom: 0;
-    top: 7px;
-  }
 }
 strong {
   display: flex;

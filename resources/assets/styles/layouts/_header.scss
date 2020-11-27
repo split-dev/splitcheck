@@ -460,7 +460,7 @@
 
 .personal-avatar {
   margin-right: -10px;
-
+  z-index: 5;
   background-color: theme-color("light-gray");
 
   img {

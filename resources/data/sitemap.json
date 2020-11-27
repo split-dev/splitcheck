@@ -60,6 +60,11 @@
       "title": "Addressbook  filled",
       "description": "addressbook",
       "url": "/addressbook-filled.html"
+    },
+    {
+      "title": "Groups-list",
+      "description": "groups",
+      "url": "/groups-list.html"
     }
   ]
 }

@@ -1,0 +1,23 @@
+.groups {
+  &__box {
+    max-width: 560px;
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 16px 16px 24px 12px;
+  }
+  &__create {
+    display: flex;
+    align-items: center;
+    span {
+      color: #335491;
+      font-weight: $font-weight-normal;
+      font-size: 16px;
+      margin-left: 16px;
+    }
+    .card-goss__item {
+      width: 88px;
+      height: 88px;
+    }
+  }
+}

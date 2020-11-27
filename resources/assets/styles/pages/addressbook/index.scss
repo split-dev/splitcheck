@@ -14,8 +14,10 @@
   }
 }
 
-.main-content {
-  @media (max-width: 991px) {
-    padding-top: 0;
+.addressbook {
+  .main-content {
+    @media (max-width: 991px) {
+      padding-top: 0;
+    }
   }
 }

@@ -283,28 +283,28 @@ export default {
         minimumResultsForSearch: Infinity,
         width: '100%',
       });
-      $('.form__single--select-user select[data-toggle="select"]').select2({
-        minimumResultsForSearch: Infinity,
-        width: '100%',
-        templateResult: function (state) {
-          if (!state.id) {
-            return state.text;
-          }
-          var baseUrl = 'images/profiles';
-          var $state = $(`
-            <div class="profile-list">
-              <figure class="profile-list__avatar">
-                <img src="${baseUrl}/${state.element.value.toLowerCase()}.png" alt="avatar">
-                <span class="profile-list__symbol"></span>
-              </figure>
-              <span>${state.text}</span>
-            </div>
-          `);
+      // $('.form__single--select-user select[data-toggle="select"]').select2({
+      //   minimumResultsForSearch: Infinity,
+      //   width: '100%',
+      //   templateResult: function (state) {
+      //     if (!state.id) {
+      //       return state.text;
+      //     }
+      //     var baseUrl = 'images/profiles';
+      //     var $state = $(`
+      //       <div class="profile-list">
+      //         <figure class="profile-list__avatar">
+      //           <img src="${baseUrl}/${state.element.value.toLowerCase()}.png" alt="avatar">
+      //           <span class="profile-list__symbol"></span>
+      //         </figure>
+      //         <span>${state.text}</span>
+      //       </div>
+      //     `);
 
-          return $state;
-        },
-        // dropdownParent: $('.form__single--select-user'),
-      });
+      //     return $state;
+      //   },
+      //   // dropdownParent: $('.form__single--select-user'),
+      // });
 
 
     }

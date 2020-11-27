@@ -71,7 +71,8 @@
 
       @include media-breakpoint-down(md) {
         &:first-of-type {
-          margin-top: 25px;
+          position: absolute;
+          top: 25px;
           left: 0;
           width: 100%;
         }

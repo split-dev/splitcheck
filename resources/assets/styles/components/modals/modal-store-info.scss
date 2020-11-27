@@ -4,6 +4,7 @@
 @import "../../bootstrap-utils";
 
 .modal.modal-store-info {
+  padding-right: 0 !important;
   .modal-dialog {
     @media (min-width: 650px) {
       max-width: 620px;

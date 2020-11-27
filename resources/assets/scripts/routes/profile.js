@@ -330,6 +330,39 @@ export default {
           gridGallery(galeryArray[i])
         }
       }
+
+      //modal-galery slider
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        thumbs: {
+          swiper: galleryThumbs,
+        },
+      });
+
+      //navifation slider
+      $('.gallery-full .swiper-button-prev').click( function() {
+        galleryTop.slidePrev()
+      })
+      $('.gallery-full .swiper-button-next').click( function() {
+        galleryTop.slideNext()
+      })
+
+      //open gallery view
+     $('.galery-box .grid-gallery__selector').click( function(e) {
+      e.preventDefault();
+     $('#galery-modal').modal();
+     setTimeout( function() {
+      galleryThumbs.update();
+      galleryTop.update();
+     }, 300)
+    })
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

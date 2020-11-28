@@ -1,10 +1,72 @@
 .groups {
+  &__header {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    h5 {
+      color: #828282;
+      font-weight: $font-weight-normal;
+      font-size: 12px;
+      letter-spacing: 0.86px;
+      text-transform: uppercase;
+    }
+  }
   &__box {
     max-width: 560px;
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     background-color: #fff;
     padding: 16px 16px 24px 12px;
+    margin-bottom: 24px;
+  }
+  &__block {
+    &:nth-child(4) {
+      margin-left: 16px;
+      position: relative;
+      &:before {
+        content: url("images/groups/dashed.svg");
+        position: absolute;
+        top: -37px;
+        left: 25px;
+      }
+    }
+    margin-top: 24px;
+    &-personal {
+      strong {
+        margin-right: 15px;
+      }
+      p {
+        margin-bottom: 0 !important;
+      }
+      b {
+        margin-left: 4px;
+      }
+    }
+    strong,
+    b {
+      color: #0b0212;
+      line-height: 16px;
+      font-size: 16px;
+      font-weight: $font-weight-medium;
+    }
+    &-right {
+      a {
+        max-width: 80px;
+      }
+    }
+    &-btn {
+      align-items: flex-end;
+      justify-content: flex-end;
+      max-width: 80px;
+    }
+    &-left {
+      figure {
+        width: 88px;
+        height: 89px;
+        border-radius: 8px;
+        background-color: #f8f9fb;
+        margin-right: 16px;
+      }
+    }
   }
   &__create {
     display: flex;

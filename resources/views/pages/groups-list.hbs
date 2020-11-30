@@ -96,7 +96,7 @@
                             <h5>Shopping groups</h5>
                         </div>
                         <div class="groups__box">
-                            <div class="groups__create">
+                            <div class="groups__top">
                                 <a href="#" data-toggle="modal" data-target="#create-goss"
                                     class="card-goss__item card-goss__item--new position-relative d-flex align-items-center justify-content-center">
                                     <i class="icon icon-plus-blue"></i>
@@ -203,7 +203,8 @@
                         </div>
 
                         <div class="groups__box">
-                            <div class="groups__create">
+
+                            <div class="groups__top">
                                 <a href="#" data-toggle="modal" data-target="#create-goss"
                                     class="card-goss__item card-goss__item--new position-relative d-flex align-items-center justify-content-center">
                                     <i class="icon icon-plus-blue"></i>
@@ -240,7 +241,7 @@
                         </div>
 
                         <div class="groups__box">
-                            <div class="groups__create">
+                            <div class="groups__top">
                                 <a href="#" data-toggle="modal" data-target="#create-goss"
                                     class="card-goss__item card-goss__item--new position-relative d-flex align-items-center justify-content-center">
                                     <i class="icon icon-plus-blue"></i>
@@ -297,7 +298,8 @@
                                         </div>
                                     </div>
                                     <div class="d-flex w-100 groups__block-btn">
-                                        <a class="btn-border-orange" href="#">Leave</a>
+                                        <a class="btn-border-orange" data-toggle="modal" data-target="#group-access"
+                                            href="#">Leave</a>
                                     </div>
                                 </div>
                             </div>
@@ -328,7 +330,8 @@
                                         </div>
                                     </div>
                                     <div class="d-flex w-100 groups__block-btn">
-                                        <a class="btn-orange" href="#">Join</a>
+                                        <a class="btn-orange" data-toggle="modal" data-target="#group-rules"
+                                            href="#">Join</a>
                                     </div>
                                 </div>
                             </div>
@@ -360,7 +363,8 @@
                                         </div>
                                     </div>
                                     <div class="d-flex w-100 groups__block-btn">
-                                        <a class="btn-orange" href="#">Join</a>
+                                        <a class="btn-orange" data-toggle="modal" data-target="#group-rules"
+                                            href="#">Join</a>
                                     </div>
                                 </div>
                             </div>
@@ -394,6 +398,8 @@
     {{> ../common/modals/shop-another }}
     {{> ../common/modals/modals-notifications }}
     {{> ../common/modals/goss-gallery }}
+    {{> ../common/modals/group-rules }}
+    {{> ../common/modals/group-access }}
     <!-- /Modals -->
 </body>
 

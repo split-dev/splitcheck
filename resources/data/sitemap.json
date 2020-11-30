@@ -65,6 +65,11 @@
       "title": "Groups-list",
       "description": "groups",
       "url": "/groups-list.html"
+    },
+    {
+      "title": "Settings",
+      "description": "settings",
+      "url": "/settings.html"
     }
   ]
 }

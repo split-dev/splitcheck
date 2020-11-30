@@ -18,21 +18,75 @@
                         <section class="section-content">
                             <span class="section-content__title position-relative d-flex align-items-center">Linked
                                 Accounts</span>
-                            <div class="personal-card d-flex align-items-center flex-column overflow-hidden">
-                                <div
-                                    class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                                    <img src="" alt="">
-                                    <span class="personal-card__symbol">JS</span>
+                            <div class="personal-card--slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div
+                                                class="personal-card personal-card--no-shadow d-flex align-items-center flex-column overflow-hidden">
+                                                <div
+                                                    class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                                    <img src="" alt="">
+                                                    <span class="personal-card__symbol">JS</span>
+                                                </div>
+                                                <p class="personal-card__name">My Pet 1</p>
+                                                <ul
+                                                    class="personal-card__list d-flex align-items-center flex-column list-unstyled mb-0">
+                                                    <li class="personal-card__item">
+                                                        <a href="#" class="personal-card__link">
+                                                            <span>Pet’s wishlist</span>
+                                                            <span class="personal-card__num">12</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div
+                                                class="personal-card personal-card--no-shadow d-flex align-items-center flex-column overflow-hidden">
+                                                <div
+                                                    class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                                    <img src="" alt="">
+                                                    <span class="personal-card__symbol">JS</span>
+                                                </div>
+                                                <p class="personal-card__name">My Pet 1</p>
+                                                <ul
+                                                    class="personal-card__list d-flex align-items-center flex-column list-unstyled mb-0">
+                                                    <li class="personal-card__item">
+                                                        <a href="#" class="personal-card__link">
+                                                            <span>Pet’s wishlist</span>
+                                                            <span class="personal-card__num">12</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div
+                                                class="personal-card personal-card--no-shadow d-flex align-items-center flex-column overflow-hidden">
+                                                <div
+                                                    class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                                    <img src="" alt="">
+                                                    <span class="personal-card__symbol">JS</span>
+                                                </div>
+                                                <p class="personal-card__name">My Pet 1</p>
+                                                <ul
+                                                    class="personal-card__list d-flex align-items-center flex-column list-unstyled mb-0">
+                                                    <li class="personal-card__item">
+                                                        <a href="#" class="personal-card__link">
+                                                            <span>Pet’s wishlist</span>
+                                                            <span class="personal-card__num">12</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
-                                <p class="personal-card__name">My Pet 1</p>
-                                <ul
-                                    class="personal-card__list d-flex align-items-center flex-column list-unstyled mb-0">
-                                    <li class="personal-card__item">
-                                        <a href="#" class="personal-card__link">
-                                            <span>Pet’s wishlist</span>
-                                            <span class="personal-card__num">12</span>
-                                        </a>
-                                    </li>
+                                <ul>
                                     <li class="personal-card__item">
                                         <a href="#" class="personal-card__link">
                                             <span>View preferences</span>
@@ -40,6 +94,7 @@
                                     </li>
                                 </ul>
                             </div>
+
 
                             <a href="#" class="section-content__btn btn-border">Log In as…</a>
                         </section>
@@ -642,9 +697,53 @@
                                         <div><span>88</span>&nbsp<span> posts</span></div>
                                         <ul class="w-100">
                                             <li><span>reactions</span>
-                                                <div class="smile"><i class="like"></i><i class="heart"></i><i
-                                                        class="happy"></i><i class="surprised"></i><i class="angry"></i>
-                                                </div>
+                                                <ul
+                                                    class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                    <li class="reaction__item-icon">
+                                                        <i class="icon icon-like"></i>
+                                                    </li>
+                                                    <li class="reaction__item-icon">
+                                                        <i class="icon icon-heart-l"></i>
+                                                    </li>
+                                                    <li class="reaction__item-icon">
+                                                        <i class="icon icon-happy"></i>
+                                                    </li>
+                                                    <li class="reaction__item-icon">
+                                                        <i class="icon icon-surprised"></i>
+                                                    </li>
+                                                    <li class="reaction__item-icon">
+                                                        <i class="icon icon-angry"></i>
+                                                    </li>
+                                                    <div class="reaction__pop">
+                                                        <ul class="smile">
+                                                            <li>
+                                                                <i class="like"></i>
+                                                                <span>like</span>
+                                                                <span>200</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="heart"></i>
+                                                                <span>love</span>
+                                                                <span>170</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="happy"></i>
+                                                                <span>joy</span>
+                                                                <span>2</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="surprised"></i>
+                                                                <span>wow</span>
+                                                                <span>65</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="angry"></i>
+                                                                <span>angry</span>
+                                                                <span>0</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </ul>
                                                 <b>437</b>
                                             </li>
                                             <li><span>comments</span> <b>65</b></li>
@@ -783,9 +882,53 @@
                                     </div>
                                     <div class="mini-post__right">
                                         <div class="mini-post__reaction">
-                                            <div class="smile"><i class="like"></i><i class="heart"></i><i
-                                                    class="happy"></i><i class="surprised"></i><i class="angry"></i>
-                                            </div><span>56</span>
+                                            <ul
+                                                class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-like"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-heart-l"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-happy"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-surprised"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-angry"></i>
+                                                </li>
+                                                <div class="reaction__pop">
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul><span>56</span>
                                         </div>
                                         <div class="mini-post__comments"><strong>comments</strong><span>56</span></div>
                                     </div>
@@ -806,9 +949,53 @@
                                     </div>
                                     <div class="mini-post__right">
                                         <div class="mini-post__reaction">
-                                            <div class="smile"><i class="like"></i><i class="heart"></i><i
-                                                    class="happy"></i><i class="surprised"></i><i class="angry"></i>
-                                            </div><span>56</span>
+                                            <ul
+                                                class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-like"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-heart-l"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-happy"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-surprised"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-angry"></i>
+                                                </li>
+                                                <div class="reaction__pop">
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul><span>56</span>
                                         </div>
                                         <div class="mini-post__comments"><strong>comments</strong><span>56</span></div>
                                     </div>
@@ -832,9 +1019,53 @@
                                     </div>
                                     <div class="mini-post__right">
                                         <div class="mini-post__reaction">
-                                            <div class="smile"><i class="like"></i><i class="heart"></i><i
-                                                    class="happy"></i>
-                                            </div><span>56</span>
+                                            <ul
+                                                class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-like"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-heart-l"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-happy"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-surprised"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-angry"></i>
+                                                </li>
+                                                <div class="reaction__pop">
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul><span>56</span>
                                         </div>
                                         <div class="mini-post__comments"><strong>comments</strong><span>56</span></div>
                                     </div>
@@ -854,9 +1085,53 @@
                                     </div>
                                     <div class="mini-post__right">
                                         <div class="mini-post__reaction">
-                                            <div class="smile"><i class="like"></i><i class="heart"></i><i
-                                                    class="happy"></i>
-                                            </div><span>56</span>
+                                            <ul
+                                                class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-like"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-heart-l"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-happy"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-surprised"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-angry"></i>
+                                                </li>
+                                                <div class="reaction__pop">
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul><span>56</span>
                                         </div>
                                         <div class="mini-post__comments"><strong>comments</strong><span>56</span></div>
                                     </div>
@@ -880,9 +1155,53 @@
                                     </div>
                                     <div class="mini-post__right">
                                         <div class="mini-post__reaction">
-                                            <div class="smile"><i class="like"></i><i class="heart"></i><i
-                                                    class="happy"></i>
-                                            </div><span>56</span>
+                                            <ul
+                                                class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-like"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-heart-l"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-happy"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-surprised"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-angry"></i>
+                                                </li>
+                                                <div class="reaction__pop">
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul><span>56</span>
                                         </div>
                                         <div class="mini-post__comments"><strong>comments</strong><span>56</span></div>
                                     </div>
@@ -906,9 +1225,53 @@
                                     </div>
                                     <div class="mini-post__right">
                                         <div class="mini-post__reaction">
-                                            <div class="smile"><i class="like"></i><i class="heart"></i><i
-                                                    class="happy"></i>
-                                            </div><span>56</span>
+                                            <ul
+                                                class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-like"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-heart-l"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-happy"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-surprised"></i>
+                                                </li>
+                                                <li class="reaction__item-icon">
+                                                    <i class="icon icon-angry"></i>
+                                                </li>
+                                                <div class="reaction__pop">
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul><span>56</span>
                                         </div>
                                         <div class="mini-post__comments"><strong>comments</strong><span>56</span></div>
                                     </div>

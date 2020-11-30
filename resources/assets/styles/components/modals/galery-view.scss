@@ -23,6 +23,18 @@
   .modal-header {
     padding-top: 0;
   }
+  .reaction__list-icon {
+    .smile {
+      li {
+        span {
+          &:last-of-type {
+            color: #0b0212 !important;
+            font-weight: 500 !important;
+          }
+        }
+      }
+    }
+  }
   .close-galery {
     position: absolute;
     top: 20px;

@@ -36,6 +36,25 @@
     }
   }
 
+  &--slider {
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    background-color: #fff;
+    outline: none;
+    margin-bottom: 16px;
+    .personal-card {
+      box-shadow: none;
+      margin-bottom: 0;
+    }
+    .swiper-button-prev {
+      top: calc(50% - 33px) !important;
+      left: 14px !important;
+    }
+    .swiper-button-next {
+      top: calc(50% - 33px) !important;
+      right: 14px !important;
+    }
+  }
+
   // .personal-card__symbol
 
   &__symbol {

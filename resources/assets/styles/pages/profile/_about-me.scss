@@ -394,7 +394,22 @@
         font-size: 14px;
       }
       ul {
-        li {
+        margin-left: auto;
+        .reaction__pop {
+          bottom: -104px;
+          &::before {
+            top: -9px;
+          }
+        }
+        .smile {
+          li {
+            margin-bottom: 0 !important;
+            &:last-of-type {
+              margin-right: 0 !important;
+            }
+          }
+        }
+        li:not(.reaction__item-icon) {
           display: flex;
           justify-content: space-between;
           align-items: center;

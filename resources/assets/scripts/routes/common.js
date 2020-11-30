@@ -290,6 +290,16 @@ export default {
       });
      }
 
+     //mini aside slider 
+    var swiperAside = new Swiper('.personal-card--slider .swiper-container', {
+      spaceBetween: 5,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

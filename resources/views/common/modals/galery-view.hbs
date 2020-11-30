@@ -3,7 +3,8 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <a href="#" class="close-galery"><img src="images/icons/close-24px.svg" alt="close"></a>
+                <a href="#" class="close-galery" data-dismiss="modal" aria-label="Close"><img
+                        src="images/icons/close-24px.svg" alt="close"></a>
                 <div class="galery-modal__author">
                     <a href="#" class="galery-modal__photo"
                         style="background-image: url('images/profiles/img1.png');"></a>
@@ -15,7 +16,7 @@
             </div>
             <div class="modal-body">
                 <section class="section-content gallery-full">
-                    <a href="#" class="swiper-button-prev"></a>
+                    <a href="#" class="swiper-button-prev swiper-button-disabled"></a>
                     <a href="#" class="swiper-button-next"></a>
                     <div class="swiper-container gallery-top">
                         <div class="swiper-wrapper">
@@ -57,6 +58,83 @@
                 </section>
 
                 <section class="section-content section-content--width">
+                    <div class="galery-modal__static">
+                        <div class="galery-modal__static--top d-flex justify-content-between">
+                            <div class="reaction__quantity">
+                                <ul class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                    <li class="reaction__item-icon">
+                                        <i class="icon icon-like"></i>
+                                    </li>
+                                    <li class="reaction__item-icon">
+                                        <i class="icon icon-heart-l"></i>
+                                    </li>
+                                    <li class="reaction__item-icon">
+                                        <i class="icon icon-happy"></i>
+                                    </li>
+                                    <li class="reaction__item-icon">
+                                        <i class="icon icon-surprised"></i>
+                                    </li>
+                                    <li class="reaction__item-icon">
+                                        <i class="icon icon-angry"></i>
+                                    </li>
+                                </ul>
+                                <span>56</span>
+                            </div>
+                            <div class="galery__comment"><span class="count">0</span><span>comments</span></div>
+                        </div>
+                        <div class="galery-modal__static--bottom d-flex justify-content-between">
+                            <div class="reaction__bottom d-flex justify-content-between w-100">
+                                <div class="reaction__wrap-link reaction__wrap-link--reaction">
+                                    <i class="icon icon-like-blue"></i>
+                                    <span>like</span>
+
+                                    <div class="reaction-btn-like reaction-btn-like--feed">
+                                        <ul class="reaction-btn-like__list list-unstyled mb-0">
+                                            <li class="reaction-btn-like__item">
+                                                <a href="#" class="reaction-btn-like__link">
+                                                    <i class="icon icon-like"></i>
+                                                </a>
+                                            </li>
+                                            <li class="reaction-btn-like__item">
+                                                <a href="#" class="reaction-btn-like__link">
+                                                    <i class="icon icon-heart-l"></i>
+                                                </a>
+                                            </li>
+                                            <li class="reaction-btn-like__item">
+                                                <a href="#" class="reaction-btn-like__link">
+                                                    <i class="icon icon-happy"></i>
+                                                </a>
+                                            </li>
+                                            <li class="reaction-btn-like__item">
+                                                <a href="#" class="reaction-btn-like__link">
+                                                    <i class="icon icon-surprised"></i>
+                                                </a>
+                                            </li>
+                                            <li class="reaction-btn-like__item">
+                                                <a href="#" class="reaction-btn-like__link">
+                                                    <i class="icon icon-angry"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                                <div class="reaction__wrap-link">
+                                    <a href="#" class="reaction__link">
+                                        <i class="icon icon-comment"></i>
+                                        <span>comment</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-content section-content--width gallery-thumbnails">
+                    <a href="#" class="swiper-button-prev swiper-button-disabled"></a>
+                    <a href="#" class="swiper-button-next"></a>
+                    <span class="count-slider" data-count="0">0</span>
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"

@@ -1,6 +1,24 @@
 .galery-modal {
+  padding-right: 0 !important;
+  .modal-content {
+    padding: 16px 30px;
+  }
   .modal-dialog {
     max-width: 618px;
+    @media (max-width: 767px) {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+  .modal-content {
+    @media (max-width: 767px) {
+      border-radius: 0;
+      padding: 0;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 16px;
+      height: 100vh;
+    }
   }
   .modal-header {
     padding-top: 0;
@@ -43,7 +61,35 @@
     font-weight: 300;
     line-height: 14px;
   }
+  &__static {
+    @media (max-width: 767px) {
+      padding-right: 16px;
+    }
+    .reaction__bottom {
+      @media (max-width: 767px) {
+        margin-bottom: 15px;
+      }
+    }
+    &--top {
+      padding-bottom: 9px;
+      border-bottom: 1px solid #e8ebf2;
+      margin-bottom: 9px;
+    }
+    .galery__comment,
+    .reaction__quantity {
+      span {
+        color: #828282;
+        font-size: 14px;
+        font-weight: 400;
+        display: inline-block;
+        &:first-of-type {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
   .gallery-top {
+    position: relative;
     margin-bottom: 24px;
     .swiper-button-prev,
     .swiper-button-next {
@@ -55,14 +101,130 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      @media (max-width: 767px) {
+        height: 294px;
+      }
     }
   }
-  .gallery-thumbs {
+  .gallery-thumbnails {
+    .swiper-button-disabled {
+      opacity: 0.3 !important;
+    }
     .swiper-slide {
       height: 78px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      border: 2px solid transparent !important;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid #f97d00 !important;
+      }
     }
+    .swiper-container {
+      max-width: 480px;
+      margin-left: 0;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
+    .count-slider {
+      position: absolute;
+      z-index: 20;
+      top: -2px;
+      bottom: 0;
+      right: 35px;
+      display: flex;
+      align-items: center;
+      color: #99a9c9;
+      font-size: 16px;
+      font-weight: 400;
+      pointer-events: none;
+      @media (max-width: 991px) {
+        color: white;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @media (max-width: 991px) {
+          background-color: #2f5095;
+          opacity: 0.25;
+          z-index: -1;
+        }
+      }
+      @media (max-width: 991px) {
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .count-slider[data-count="0"] {
+      opacity: 0;
+    }
+  }
+  .gallery-full {
+    position: relative;
+    @media (max-width: 767px) {
+      padding-right: 16px;
+    }
+    .swiper-button-disabled {
+      opacity: 0.3 !important;
+    }
+    > .swiper-button-next {
+      right: -35px;
+      top: 50%;
+      display: block !important;
+      @media (max-width: 991px) {
+        right: -35px;
+      }
+      @media (max-width: 991px) {
+        display: none !important;
+      }
+    }
+    > .swiper-button-prev {
+      left: -35px;
+      top: 50%;
+      display: block !important;
+      @media (max-width: 991px) {
+        left: -35px;
+      }
+      @media (max-width: 991px) {
+        display: none !important;
+      }
+    }
+  }
+  .gallery-thumbnails {
+    position: relative;
+    > .swiper-button-next {
+      right: 0;
+      top: calc(50% - 13px);
+      display: block !important;
+      @media (max-width: 991px) {
+        right: 0;
+      }
+      @media (max-width: 991px) {
+        display: none !important;
+      }
+    }
+    > .swiper-button-prev {
+      left: -27px;
+      top: calc(50% - 13px);
+      display: block !important;
+      @media (max-width: 991px) {
+        left: -35px;
+      }
+      @media (max-width: 991px) {
+        display: none !important;
+      }
+    }
+  }
+  .reaction-btn-like {
+    z-index: 5;
   }
 }

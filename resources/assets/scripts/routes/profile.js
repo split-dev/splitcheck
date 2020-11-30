@@ -8,7 +8,7 @@ export default {
     
     function initNumber(number, element) {
       let allSlide = $(element).find($('.swiper-slide')).length;
-      let counter = Number($(element).find($('.count-slider')).attr('data-count'));
+      let counter = Math.floor(number);
       let countUser = allSlide - counter;
      $(element).find($('.count-slider')).attr('data-count', countUser);
      $(element).find($('.count-slider')).text('+'+ countUser);
@@ -297,22 +297,6 @@ export default {
   
       });
 
-      //light gallery
-      const postLightGallery = $('.grid-history').lightGallery({
-        selector: '.history__selector-grid',
-        exThumbImage: 'data-src',
-        thumbWidth: 120,
-        thumbContHeight: 177,
-        thumbMargin: 16,
-        hideBarsDelay: 0,
-        thumbnail: true,
-        showThumbByDefault: true,
-        zoom: false,
-        share: false,
-        rotate: false,
-        hash: false,
-      });
-
       //grid post images
       function gridGallery(element) {
         let count = $(element).find($('.post__galery--single')).length;
@@ -335,15 +319,79 @@ export default {
       var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         slidesPerView: 5,
-        freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        breakpoints: {
+          1260: {
+            slidesPerView: 5,
+          },
+          575: {
+            slidesPerView: 4.85,
+            // freeMode: true,
+          },
+          360: {
+            slidesPerView: 3.85,
+          },
+          250: {
+            slidesPerView: 4,
+            setWrapperSize: false,
+            simulateTouch: false,
+            preventInteractionOnTransition: true,
+            mousewheel: true,
+            // freeMode: true,
+          },
+        },
+        on: {
+          init: function (event) {
+            if(window.innerWidth < 992) {
+              initNumber(event.params.slidesPerView + 1, $(event.el).parent());
+              $('.gallery-thumbnails .swiper-container').append($('.gallery-thumbnails .count-slider'));
+            } else {
+              initNumber(event.params.slidesPerView, $(event.el).parent());
+            }
+            
+          },
+        },
       });
       var galleryTop = new Swiper('.gallery-top', {
-        spaceBetween: 10,
+        spaceBetween: 5,
         thumbs: {
           swiper: galleryThumbs,
         },
+      });
+
+      $(window).resize( function() {
+        countOverlay();
+      })
+      function countOverlay() {
+        if(window.innerWidth < 992) {
+          let countWidth = ($('.gallery-thumbnails .swiper-container .swiper-slide').innerWidth() * 85) / 100;
+          $('.gallery-thumbnails .count-slider').css('width', countWidth + 'px')
+        }
+      }
+
+      galleryTop.on('slideChange', function () {
+        galleryTop.isBeginning ? $('.gallery-full .swiper-button-prev').addClass('swiper-button-disabled') : $('.gallery-full .swiper-button-prev').removeClass('swiper-button-disabled');
+        galleryTop.isEnd ? $('.gallery-full .swiper-button-next').addClass('swiper-button-disabled') : $('.gallery-full .swiper-button-next').removeClass('swiper-button-disabled');
+      });
+
+      galleryThumbs.on('slideChange', function () {
+        galleryThumbs.isBeginning ? $('.gallery-thumbnails .swiper-button-prev').addClass('swiper-button-disabled') : $('.gallery-thumbnails .swiper-button-prev').removeClass('swiper-button-disabled');
+        galleryThumbs.isEnd ? $('.gallery-thumbnails .swiper-button-next').addClass('swiper-button-disabled') : $('.gallery-thumbnails .swiper-button-next').removeClass('swiper-button-disabled');
+      });
+
+      //static counter thumbs
+      let activeSlide = 0;
+      galleryThumbs.on('slideChange', function(event){
+        if(activeSlide > galleryThumbs.activeIndex) {
+          activeSlide = galleryThumbs.activeIndex;
+          countSlide($(event.el).parent(), 'prev')
+        } else if(activeSlide < galleryThumbs.activeIndex) {
+          countSlide($(event.el).parent(), 'next')
+          activeSlide = galleryThumbs.activeIndex;
+        }
+        
+        // left
       });
 
       //navifation slider
@@ -355,13 +403,32 @@ export default {
       })
 
       //open gallery view
-     $('.galery-box .grid-gallery__selector').click( function(e) {
+     $('.galery-box .grid-gallery__selector, .galery-box .history__selector-grid').click( function(e) {
       e.preventDefault();
      $('#galery-modal').modal();
      setTimeout( function() {
       galleryThumbs.update();
       galleryTop.update();
      }, 300)
+     setTimeout( function() {
+      countOverlay();
+     }, 650)
+    })
+
+    //navifation slider thumbs
+    $('.gallery-thumbnails .swiper-button-prev').click( function(e) {
+      e.preventDefault();
+      galleryThumbs.slidePrev()
+    })
+    $('.gallery-thumbnails .swiper-button-next').click( function(e) {
+      e.preventDefault();
+      galleryThumbs.slideNext()
+    });
+
+    //gallery close modal
+    $('.gallery-thumbnails .swiper-button-prev').click( function(e) {
+      e.preventDefault();
+      galleryThumbs.slidePrev()
     })
   },
 

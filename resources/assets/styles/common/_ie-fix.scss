@@ -44,13 +44,20 @@
     display: none !important;
   }
   .connections__slider {
-    .swiper-button-prev,
+    .swiper-button-prev {
+      max-width: 15px;
+      left: -22px;
+    }
     .swiper-button-next {
       max-width: 15px;
+      right: -38px;
+    }
+    .count-slider {
+      top: calc(50% - 9px);
     }
   }
   .profile-face__name {
-    width: -100%;
+    width: 100%;
     white-space: nowrap;
   }
   .profile-face__date {

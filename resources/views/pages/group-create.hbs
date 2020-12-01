@@ -191,11 +191,11 @@
                             <div class="d-flex flex-column w-100 groups__block-toggle">
                                 <strong class="text-gray">settings</strong>
                                 <div class="groups__list">
-                                    <div class="groups__toggle d-flex justify-content-between">
+                                    <div class="groups__toggle active-arrow d-flex justify-content-between">
                                         <h5>Privacy and general preferences</h5>
 
                                     </div>
-                                    <div class="groups__hide" style="display: none;">
+                                    <div class="groups__hide">
                                         <div
                                             class="groups__select form__single--select form__single--select-default form__single--fluid">
                                             <label class="form__label">New member approval</label>
@@ -544,7 +544,7 @@
                                             <h5>Invite to splitchek</h5>
 
                                         </div>
-                                        <div class="groups__hide">
+                                        <div class="groups__hide" style="display: none;">
                                             <small class="text-gray">Unregistered friends</small>
 
                                             <div class="d-flex flex-column members__block">
@@ -615,8 +615,9 @@
                                                     <span class="form__symbol-error"></span>
                                                 </div>
 
-                                                <div class="d-flex justify-content-center members__form">
-                                                    <a class="btn-blue w-100" href="#">Send invite</a>
+                                                <div class="d-flex justify-content-center">
+                                                    <a data-toggle="modal" data-target="#invite"
+                                                        class="btn-blue w-100 btn-big" href="#">Send invite</a>
                                                 </div>
 
 
@@ -633,7 +634,7 @@
                                             <h5>Invited</h5>
 
                                         </div>
-                                        <div class="groups__hide">
+                                        <div class="groups__hide" style="display: none;">
 
 
                                             <div
@@ -710,6 +711,7 @@
     {{> ../common/modals/message-overlay }}
     {{> ../common/modals/goss-gallery }}
     {{> ../common/modals/menu-mobile--not-shop }}
+    {{> ../common/modals/modal-invite }}
     <!-- /Modals -->
 </body>
 

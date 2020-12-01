@@ -1,6 +1,13 @@
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
 .groups {
   .profile__bottom {
     margin-bottom: 50px;
+  }
+  .btn-big {
+    max-width: 100% !important;
   }
   .members {
     &__invited {
@@ -47,6 +54,9 @@
       background-color: #fff;
       padding: 24px;
       margin-bottom: 16px;
+      textarea {
+        padding-bottom: 90px !important;
+      }
       .btn-opacity {
         opacity: 0.5;
       }
@@ -139,6 +149,9 @@
   &__toggle {
     position: relative;
     display: flex;
+    &:hover {
+      cursor: pointer;
+    }
 
     &:after {
       transition: 0.4s;

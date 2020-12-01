@@ -30,7 +30,8 @@
       "./styles/components/modals/modals-notifications.scss",
       "./styles/components/modals/modal-goss-gallery.scss",
       "./styles/components/modals/message-overlay.scss",
-      "./styles/components/modals/modal-groups.scss"
+      "./styles/components/modals/modal-groups.scss",
+      "./styles/components/modals/modal-invite.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",

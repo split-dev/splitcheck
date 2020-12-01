@@ -1,5 +1,5 @@
 <!-- modal-notification -->
-<div class="modal right fade modal-notification" id="notification" role="dialog" aria-hidden="true">
+<div class="modal right fade modal-invite" id="invite" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content position-relative">
             <!-- modal-header -->
@@ -7,8 +7,14 @@
                 <!-- head for side modal -->
                 <div class="head-modal-info d-flex align-items-center flex-wrap">
 
-                    <div class="head-modal-info__description">
-                        <h2 class="head-modal-info__name">Notifications (4)</h2>
+                    <div class="head-modal-info__description d-flex align-items-center">
+                        <div class="d-flex">
+                            <figure class="modal-invite__figure"></figure>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h2 class="head-modal-info__name">Besties</h2>
+                            <small>Invite to the group</small>
+                        </div>
                     </div>
                 </div>
                 <!-- /head for side modal -->
@@ -18,263 +24,127 @@
             <!-- /modal-header -->
             <!-- modal-body -->
             <div class="modal-body">
-                <div class="notification">
+                <div class="modal-invite__content">
                     <div class="scroll-div">
-                        <div class="form__wrap notification__card">
-                            <figure class="internal-card__avatar">
-                                <img src="images/profiles/img1.png" alt="avatar">
-                                <span class="internal-card__symbol"></span>
-                            </figure>
-                            <div class="notification__headline w-100">
-                                <strong>Headline here </strong>
-                                <p>Grow your business on SplitChek. Sell up to 100 products for free</p>
-                                <div class="notification__link">
-                                    <a href="#">Cancel</a><a href="#">Get Started</a>
-                                </div>
+                        <div class="modal-invite__block">
+                            <div class="d-flex flex-column">
+                                <span class="form__wrap-title">Invite to Splitcheck</span>
+                                <span class="text-gray">Members of your other groups</span>
                             </div>
-                            <div class="options">
-                                <button type="button" class="options__btn" data-type="options">
-                                    <i class="icon icon-more"></i>
-                                </button>
-
-                                <div class="options__dropdown">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#">Share</a></li>
-                                        <li><a href="#">Not gift worthy</a></li>
-                                        <li><a href="#">About the store</a></li>
-                                        <li><a href="#">Report abuse</a></li>
-                                    </ul>
-                                </div>
+                            <div class="groups__toggle active-arrow d-flex justify-content-between">
+                                <span class="form__wrap-title">By e-mail</span>
                             </div>
-                        </div>
 
-                        <div class="form__wrap notification__card">
-                            <figure class="internal-card__avatar">
-                                <img src="images/profiles/img1.png" alt="avatar">
-                                <span class="internal-card__symbol"></span>
-                            </figure>
-                            <div class="notification__headline w-100">
-                                <strong>Headline here could be longer one because we know </strong>
-                                <p>Grow your business on SplitChek. Sell up to 100 products for free</p>
-                                <div class="notification__link">
-                                    <a href="#">Cancel</a><a href="#">Get Started</a>
+                            <div class="modal-invite__hide">
+                                <div class="members__form">
+                                    <label class="form__label">Enter friend’s name</label>
+                                    <input class="form__input" placeholder="Text here" type="text">
+
+                                    <span class="form__symbol-error"></span>
                                 </div>
-                            </div>
-                            <div class="options">
-                                <button type="button" class="options__btn" data-type="options">
-                                    <i class="icon icon-more"></i>
-                                </button>
 
-                                <div class="options__dropdown">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#">Share</a></li>
-                                        <li><a href="#">Not gift worthy</a></li>
-                                        <li><a href="#">About the store</a></li>
-                                        <li><a href="#">Report abuse</a></li>
-                                    </ul>
+                                <div class="members__form">
+                                    <label class="form__label">Enter their e-mail</label>
+                                    <input class="form__input" placeholder="e-mail here" type="text">
+
+                                    <span class="form__symbol-error"></span>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="form__wrap notification__card-video">
-                            <div class="d-flex">
-                                <figure class="internal-card__avatar">
-                                    <img src="images/profiles/img1.png" alt="avatar">
-                                    <span class="internal-card__symbol"></span>
-                                </figure>
-                                <div class="notification__headline w-100">
-                                    <strong>Headline here </strong>
-                                    <p>Grow your business on SplitChek. Sell up to 100 products for free</p>
+                                <div class="d-flex flex-column members__form">
+                                    <label class="form__label">
+                                        Message (optional)</label>
 
-                                </div>
-                                <div class="options">
-                                    <button type="button" class="options__btn" data-type="options">
-                                        <i class="icon icon-more"></i>
-                                    </button>
-
-                                    <div class="options__dropdown">
-                                        <ul class="list-unstyled mb-0">
-                                            <li><a href="#">Share</a></li>
-                                            <li><a href="#">Not gift worthy</a></li>
-                                            <li><a href="#">About the store</a></li>
-                                            <li><a href="#">Report abuse</a></li>
-                                        </ul>
+                                    <div class="w-100 max-text">
+                                        <textarea class="form__textarea" placeholder="Write something"></textarea>
+                                        <div class="count"><span>0</span>/<span>400</span></div>
                                     </div>
+
+
+                                    <span class="form__symbol-error"></span>
+                                </div>
+
+                                <div class="d-flex justify-content-center members__form">
+                                    <a class="btn-blue w-100" href="#"><img src="images/groups/check.svg" alt="">Invite
+                                        sent</a>
                                 </div>
                             </div>
-                            <div class="notification__video">
-                                <div
-                                    class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap">
-                                    <figure class="grid-gallery__width-1-1">
-                                        <a class="grid-gallery__selector position-relative grid-gallery__selector--video"
-                                            href="images/feed/feed-img1.jpg">
-                                            <div class="grid-gallery__post-img"
-                                                style="background-image: url(images/feed/feed-img1.jpg);">
+
+
+                        </div>
+
+                        <div class="modal-invite__block">
+                            <div class="d-flex flex-column">
+                                <div class="groups__toggle active-arrow d-flex justify-content-between">
+                                    <span class="form__wrap-title">By sms</span>
+                                </div>
+                                <div class="modal-invite__hide">
+                                    <div class="members__form">
+                                        <label class="form__label">Enter friend’s name</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+
+                                    <div class="members__form">
+                                        <div
+                                            class=" form__single--select form__single--select-default form__single--fluid">
+                                            <label class="form__label">Choose country</label>
+                                            <div class="select-before">
+                                                <select
+                                                    class="form__select form__select--default select2-hidden-accessible"
+                                                    data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                    aria-hidden="true">
+                                                    <option value="#">Start typing</option>
+                                                    <option value="#">Start typing</option>
+                                                </select>
                                             </div>
-                                        </a>
-                                    </figure>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="members__form">
+                                        <label class="form__label">Phone number</label>
+                                        <input class="form__input" placeholder="Type" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center members__form">
+                                        <a data-toggle="modal" data-target="#invite" class="btn-blue w-100"
+                                            href="#">Send
+                                            invite</a>
+                                    </div>
                                 </div>
-                                <div class="notification__link">
-                                    <a href="#">Cancel</a><a href="#">Get Started</a>
-                                </div>
+
+
                             </div>
+
                         </div>
 
-                        <div class="form__wrap notification__card-video">
-                            <div class="d-flex">
-                                <figure class="internal-card__avatar">
-                                    <img src="images/profiles/img1.png" alt="avatar">
-                                    <span class="internal-card__symbol"></span>
-                                </figure>
-                                <div class="notification__headline w-100">
-                                    <strong>Headline here </strong>
-                                    <p>Grow your business on SplitChek. Sell up to 100 products for free</p>
 
-                                </div>
-                                <div class="options">
-                                    <button type="button" class="options__btn" data-type="options">
-                                        <i class="icon icon-more"></i>
-                                    </button>
+                        <div class="modal-invite__block">
 
-                                    <div class="options__dropdown">
-                                        <ul class="list-unstyled mb-0">
-                                            <li><a href="#">Share</a></li>
-                                            <li><a href="#">Not gift worthy</a></li>
-                                            <li><a href="#">About the store</a></li>
-                                            <li><a href="#">Report abuse</a></li>
-                                        </ul>
+                            <div class="groups__toggle active-arrow d-flex justify-content-between">
+                                <span class="form__wrap-title">Invite your connections</span>
+                            </div>
+
+                            <div class="modal-invite__hide">
+                                <span class="text-gray">Members of your other groups</span>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-column members__block">
+                                        <label class="form__label">Enter name or email</label>
+                                        <input class="form__input" placeholder="Start typing" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a class="btn-blue btn-opacity" href="#">Invite</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="notification__video">
-                                <div
-                                    class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap">
-                                    <figure class="grid-gallery__width-1-1">
-                                        <a class="grid-gallery__selector position-relative grid-gallery__selector--video"
-                                            href="images/feed/feed-img1.jpg">
-                                            <div class="grid-gallery__post-img"
-                                                style="background-image: url(images/feed/feed-img1.jpg);">
-                                            </div>
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="notification__link">
-                                    <a href="#">Cancel</a><a href="#">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="form__wrap notification__card-video">
-                            <div class="d-flex">
-                                <figure class="internal-card__avatar">
-                                    <img src="images/profiles/img1.png" alt="avatar">
-                                    <span class="internal-card__symbol"></span>
-                                </figure>
-                                <div class="notification__headline w-100">
-                                    <strong>Headline here </strong>
-                                    <p>$49.99</p>
-
-                                </div>
-                                <div class="options">
-                                    <button type="button" class="options__btn" data-type="options">
-                                        <i class="icon icon-more"></i>
-                                    </button>
-
-                                    <div class="options__dropdown">
-                                        <ul class="list-unstyled mb-0">
-                                            <li><a href="#">Share</a></li>
-                                            <li><a href="#">Not gift worthy</a></li>
-                                            <li><a href="#">About the store</a></li>
-                                            <li><a href="#">Report abuse</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="notification__video">
-                                <figure class="grid-gallery__width-1-1">
-                                    <a class="grid-gallery__selector" href="images/shop/product.jpg">
-                                        <div class="grid-gallery__post-img"
-                                            style="background-image: url(images/shop/product.jpg);">
-                                        </div>
-                                    </a>
-                                </figure>
-                                <div class="d-flex justify-content-center">
-                                    <p>Genetix Nutrition products are devoloped by an internal research team assisted by
-                                        Grant Mayo to ensure the greatest quality and product </p>
-                                </div>
-                                <div class="notification__link">
-                                    <a href="#">Cancel</a><a href="#">View Product</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="form__wrap notification__card-video">
-                            <div class="d-flex">
-                                <figure class="internal-card__avatar">
-                                    <img src="images/profiles/img1.png" alt="avatar">
-                                    <span class="internal-card__symbol"></span>
-                                </figure>
-                                <div class="notification__headline w-100">
-                                    <strong>Headline here </strong>
-                                    <p>$49.99</p>
 
-                                </div>
-                                <div class="options">
-                                    <button type="button" class="options__btn" data-type="options">
-                                        <i class="icon icon-more"></i>
-                                    </button>
-
-                                    <div class="options__dropdown">
-                                        <ul class="list-unstyled mb-0">
-                                            <li><a href="#">Share</a></li>
-                                            <li><a href="#">Not gift worthy</a></li>
-                                            <li><a href="#">About the store</a></li>
-                                            <li><a href="#">Report abuse</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="notification__video">
-                                <figure class="grid-gallery__width-1-1">
-                                    <a class="grid-gallery__selector" href="images/shop/product.jpg">
-                                        <div class="grid-gallery__post-img"
-                                            style="background-image: url(images/shop/product.jpg);">
-                                        </div>
-                                    </a>
-                                </figure>
-                                <div class="d-flex justify-content-center">
-                                    <p>Genetix Nutrition products are devoloped by an internal research team assisted by
-                                        Grant Mayo to ensure the greatest quality and product </p>
-                                </div>
-                                <div class="notification__gift">
-                                    <p>Perfect gift for:</p>
-                                    <div class="d-flex align-items-center flex-wrap">
-                                        <div
-                                            class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                                            <img src="" alt="">
-                                            <span class="avatar__symbol">JS</span>
-                                        </div>
-                                        <div
-                                            class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                                            <img src="" alt="">
-                                            <span class="avatar__symbol">JS</span>
-                                        </div>
-                                        <div
-                                            class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                                            <img src="" alt="">
-                                            <span class="avatar__symbol">JS</span>
-                                        </div>
-                                        <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden"
-                                            style="background-color: #f8f9fb">
-                                            <img src="" alt="">
-                                            <span class="avatar__symbol"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="notification__link">
-                                    <a href="#">Cancel</a><a href="#">View Product</a>
-                                </div>
-                            </div>
                         </div>
 
 

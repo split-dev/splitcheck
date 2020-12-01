@@ -1,0 +1,66 @@
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+.modal-invite {
+  .btn-opacity {
+    max-width: 80px;
+    opacity: 0.5;
+  }
+  .text-gray {
+    color: #828282;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .active-arrow {
+    &:after {
+      transform: rotate(-180deg);
+    }
+  }
+  .groups__toggle {
+    margin-top: 22px;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:after {
+      transition: 0.4s;
+      content: url("images/groups/arrow-down.svg");
+      position: absolute;
+      right: 0;
+    }
+  }
+  .members__form {
+    margin-bottom: 24px;
+    max-width: 288px;
+    textarea {
+      padding-bottom: 90px !important;
+    }
+    .btn-blue {
+      max-width: 288px !important;
+      background-color: #234179;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__block {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    max-width: 288px;
+  }
+  small {
+    color: #0b0212;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  &__figure {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: #f8f9fb;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}

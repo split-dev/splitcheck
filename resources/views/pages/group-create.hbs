@@ -163,17 +163,22 @@
                                     <div class="d-flex flex-column  groups__textarea">
                                         <label class="form__label">
                                             Short info about</label>
-                                        <textarea placeholder="Write something" maxlength="400" minlength="1"
-                                            class="form__textarea"></textarea>
-
+                                        <div class="w-100 max-text">
+                                            <textarea class="form__textarea" placeholder="Write something"></textarea>
+                                            <div class="count"><span>0</span>/<span>100</span></div>
+                                        </div>
                                         <span class="form__symbol-error"></span>
                                     </div>
 
                                     <div class="d-flex flex-column groups__textarea">
                                         <label class="form__label">
                                             Rules (optional)</label>
-                                        <textarea placeholder="Write something" maxlength="400" minlength="1"
-                                            class="form__textarea"></textarea>
+
+                                        <div class="w-100 max-text">
+                                            <textarea class="form__textarea" placeholder="Write something"></textarea>
+                                            <div class="count"><span>0</span>/<span>500</span></div>
+                                        </div>
+
 
                                         <span class="form__symbol-error"></span>
                                     </div>
@@ -308,12 +313,374 @@
 
                             </div>
 
+                            <div class="d-flex flex-column w-100 groups__block-toggle">
+
+                                <div class="groups__list">
+                                    <div class="groups__toggle d-flex justify-content-between">
+                                        <h5>Shopping preferences</h5>
+
+                                    </div>
+                                    <div class="groups__hide" style="display: none;">
+
+                                        <div class="groups__select">
+                                            <p>Members can buy presents</p>
+                                            <div class="groups__check form d-flex">
+
+                                                <input type="checkbox" id="checkbox-7"
+                                                    class="form__checkbox form__single settings__check form__single--fluid form__single--checkbox form__checkbox--language"
+                                                    name="checkbox-language" checked="">
+                                                <label for="checkbox-7">
+                                                </label>
+                                                <strong class="check-off">No</strong>
+                                                <strong class="check-on">Yes</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column groups__box-small">
+                                            <label class="form__label">What’s the maximum they can spend?</label>
+                                            <input class="form__input" placeholder="$50" type="text">
+
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+
+
+
+                                        <div
+                                            class="groups__box-small form__single--select form__single--select-default form__single--fluid">
+                                            <label class="form__label">Member can buy from this wishlist (has access to
+                                                all items in the wishlist selected)</label>
+                                            <div class="select-before">
+                                                <select
+                                                    class="form__select form__select--default select2-hidden-accessible"
+                                                    data-toggle="select" data-select2-id="8" tabindex="-1"
+                                                    aria-hidden="true">
+                                                    <option value="#">Choose wishlist</option>
+                                                    <option value="#">Choose preferences</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="groups__box-small form__single--select form__single--select-default form__single--fluid">
+                                            <label class="form__label">Member can buy from this shopping
+                                                preferences</label>
+                                            <div class="select-before">
+                                                <select
+                                                    class="form__select form__select--default select2-hidden-accessible"
+                                                    data-toggle="select" data-select2-id="9" tabindex="-1"
+                                                    aria-hidden="true">
+                                                    <option value="#">Choose preferences</option>
+                                                    <option value="#">Choose wishlist</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="d-flex groups__link">
+                                            <a href="#">Create new preference</a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="d-flex flex-column w-100 groups__block-toggle">
+
+                                <div class="groups__list">
+                                    <div class="groups__toggle d-flex justify-content-between">
+                                        <h5>Party preferences</h5>
+
+
+                                    </div>
+                                    <div class="groups__hide" style="display: none;">
+
+                                        <div class="form__wrap">
+                                            <span class="form__wrap-title">Date and time</span>
+                                            <!-- for error add class div form__single - *error* -->
+                                            <div
+                                                class="groups__box-small form__single form__single--date form__single--fluid">
+                                                <label class="form__label">Start date</label>
+                                                <input type="text" class="form__input" data-toggle="datepicker"
+                                                    required="">
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                            <!-- for error add class div form__single - *error* -->
+                                            <div
+                                                class="groups__box-small form__single form__single--time form__single--fluid">
+                                                <label class="form__label">Set start time</label>
+                                                <input type="text" class="form__input" data-toggle="timepicker"
+                                                    required="">
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+
+                                            <div
+                                                class="groups__box-small form__single form__single--date form__single--fluid">
+                                                <label class="form__label">End date</label>
+                                                <input type="text" class="form__input" data-toggle="datepicker"
+                                                    required="">
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                            <!-- for error add class div form__single - *error* -->
+                                            <div
+                                                class="groups__box-small form__single form__single--time form__single--fluid input-small">
+                                                <label class="form__label">Set end time</label>
+                                                <input type="text" class="form__input" data-toggle="timepicker"
+                                                    required="">
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+
+                                            <div
+                                                class="form__single groups__box-small form__single--date form__single--fluid">
+                                                <label class="form__label">Respond by</label>
+                                                <input type="text" class="form__input" data-toggle="datepicker"
+                                                    required="">
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form__wrap">
+                                            <span class="form__wrap-title">Location</span>
+                                            <div class="d-flex flex-column groups__box-small">
+                                                <label class="form__label">address line 1</label>
+                                                <input class="form__input" placeholder="Text" type="text">
+
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                            <div class="d-flex flex-column groups__box-small">
+                                                <label class="form__label">City</label>
+                                                <input class="form__input" placeholder="Text" type="text">
+
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                            <div class="d-flex flex-column groups__box-small">
+                                                <label class="form__label">State</label>
+                                                <input class="form__input" placeholder="Text" type="text">
+
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+
+                                            <div class="d-flex flex-column groups__box-small">
+                                                <label class="form__label">Postcode</label>
+                                                <input class="form__input input-small" placeholder="Text" type="text">
+
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
                             <div class="d-flex justify-content-end groups__btn">
                                 <a class="btn-border" href="#">Cansel</a>
                                 <a class="btn-blue" href="#">Create group</a>
                             </div>
                         </div>
-                        {{> ../common/profile/connections }}
+                        <div class="connections__wrapper">
+                            <div class="connections">
+                                <span>Members</span>
+                                <div class="members__box">
+                                    <div class="d-flex flex-column">
+                                        <span class="text-number">99</span>
+                                        <p>Members</p>
+                                    </div>
+
+                                    <div class="members__search">
+                                        <form action="" id="search" class="search">
+
+                                            <input type="search" name="search" class="search__input"
+                                                placeholder="Search for someone" id="search-input" autocomplete="off">
+                                            <button class="search__button" aria-label="search">
+                                                <i class="icon icon-search"></i>
+                                            </button>
+
+                                            <div class="search__result">
+                                                <ul class="search__result-list">
+                                                    <li class="search__result-item d-flex align-items-center">
+                                                        <p>
+                                                            <b>pa</b>int
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <span>INVITES</span>
+                                <div class="members__box">
+                                    <div class="d-flex flex-column w-100 groups__block-toggle">
+                                        <div class="groups__toggle active-arrow d-flex justify-content-between">
+                                            <h5>Invite your connections</h5>
+
+                                        </div>
+                                        <div class="groups__hide">
+                                            <small class="text-gray">Members of your other groups</small>
+
+                                            <div class="d-flex flex-column members__block">
+                                                <label class="form__label">Enter name or email</label>
+                                                <input class="form__input" placeholder="Start typing" type="text">
+
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="btn-blue btn-opacity" href="#">Invite</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="members__box">
+                                    <div class="d-flex flex-column w-100 groups__block-toggle">
+                                        <div class="groups__toggle d-flex justify-content-between">
+                                            <h5>Invite to splitchek</h5>
+
+                                        </div>
+                                        <div class="groups__hide">
+                                            <small class="text-gray">Unregistered friends</small>
+
+                                            <div class="d-flex flex-column members__block">
+                                                <span class="form__wrap-title">By e-mail</span>
+                                                <div class="members__form">
+                                                    <label class="form__label">Enter friend’s name</label>
+                                                    <input class="form__input" placeholder="Text here" type="text">
+
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+
+                                                <div class="members__form">
+                                                    <label class="form__label">Enter their e-mail</label>
+                                                    <input class="form__input" placeholder="e-mail here" type="text">
+
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+
+                                                <div class="d-flex flex-column members__form">
+                                                    <label class="form__label">
+                                                        Message (optional)</label>
+
+                                                    <div class="w-100 max-text">
+                                                        <textarea class="form__textarea"
+                                                            placeholder="Write something"></textarea>
+                                                        <div class="count"><span>0</span>/<span>400</span></div>
+                                                    </div>
+
+
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center members__form">
+                                                <a class="btn-blue w-100" href="#"><img src="images/groups/check.svg"
+                                                        alt="">Invite sent</a>
+                                            </div>
+
+                                            <div class="d-flex flex-column members__block">
+                                                <span class="form__wrap-title">By sms</span>
+                                                <div class="members__form">
+                                                    <label class="form__label">Enter friend’s name</label>
+                                                    <input class="form__input" placeholder="Text here" type="text">
+
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+
+                                                <div class="members__form">
+                                                    <div
+                                                        class=" form__single--select form__single--select-default form__single--fluid">
+                                                        <label class="form__label">Choose country</label>
+                                                        <div class="select-before">
+                                                            <select
+                                                                class="form__select form__select--default select2-hidden-accessible"
+                                                                data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                                aria-hidden="true">
+                                                                <option value="#">Start typing</option>
+                                                                <option value="#">Start typing</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="members__form">
+                                                    <label class="form__label">Phone number</label>
+                                                    <input class="form__input" placeholder="Type" type="text">
+
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+
+                                                <div class="d-flex justify-content-center members__form">
+                                                    <a class="btn-blue w-100" href="#">Send invite</a>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="members__box">
+                                    <div class="d-flex flex-column w-100 groups__block-toggle">
+                                        <div class="groups__toggle d-flex justify-content-between">
+                                            <h5>Invited</h5>
+
+                                        </div>
+                                        <div class="groups__hide">
+
+
+                                            <div
+                                                class="d-flex justify-content-between align-items-baseline members__invited">
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-center">
+                                                    <img src="" alt="">
+                                                    <p>Total</p>
+                                                    <b>120</b>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-center">
+                                                    <img src="images/groups/joined.svg" alt="">
+                                                    <p>Joined</p>
+                                                    <b>99</b>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-center">
+                                                    <img src="images/groups/cansel.svg" alt="">
+                                                    <p>Declined</p>
+                                                    <b>1</b>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-center">
+                                                    <img src="images/groups/pending.svg" alt="">
+                                                    <p>Pending</p>
+                                                    <b>99</b>
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="members__bottom-btn">
+                                    <a class="btn-border" href="#">Delete Group</a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
                 </div>

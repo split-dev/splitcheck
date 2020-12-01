@@ -1,4 +1,110 @@
 .groups {
+  .profile__bottom {
+    margin-bottom: 50px;
+  }
+  .members {
+    &__invited {
+      margin-top: 35px;
+      b {
+        color: #0b0212;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+    &__bottom-btn {
+      margin-top: 32px;
+      a {
+        font-weight: 400 !important;
+        max-width: 336px;
+        background: none !important;
+      }
+    }
+    &__form {
+      margin-bottom: 24px;
+      .btn-blue {
+        max-width: 100% !important;
+        background-color: #234179;
+        opacity: 0.95;
+        img {
+          margin-right: 20px;
+        }
+      }
+    }
+    &__block {
+      margin-top: 40px;
+      margin-bottom: 12px;
+      .form__wrap-title {
+        margin-bottom: 24px;
+      }
+    }
+    &__box {
+      box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 24px;
+      margin-bottom: 16px;
+      .btn-opacity {
+        opacity: 0.5;
+      }
+      .groups__hide {
+        margin-top: 0 !important;
+        .btn-blue {
+          max-width: 80px;
+        }
+      }
+    }
+    &__search {
+      margin-top: 40px;
+      .search {
+        max-width: 286px;
+        width: 100%;
+      }
+    }
+  }
+  .count {
+    position: absolute;
+    right: 14px;
+    bottom: 15px;
+    color: #0b0212;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .form__wrap {
+    &:first-child {
+      margin-bottom: 45px;
+    }
+    .form__single--fluid,
+    .groups__box-small {
+      max-width: 312px;
+    }
+  }
+  .input-small {
+    max-width: 160px !important;
+  }
+  .text-number {
+    color: #0b0212;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: normal;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .text-blue {
+    color: #335491;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.86px;
+  }
+  &__box-small {
+    margin-bottom: 18px;
+  }
+  .max-text {
+    position: relative;
+  }
   &__block-textarea {
     .groups__list {
       padding: 24px 12px !important;
@@ -7,6 +113,15 @@
   &__block-toggle {
     .groups__list {
       padding-bottom: 24px !important;
+    }
+  }
+  &__link {
+    margin-left: 75px;
+    a {
+      color: #35558f;
+      text-decoration: underline;
+      font-size: 16px;
+      font-weight: 400;
     }
   }
   &__btn {
@@ -36,6 +151,7 @@
     margin-top: 50px;
   }
   &__create {
+    padding-right: 35px;
     .text-gray {
       text-transform: uppercase;
       margin-left: 0;
@@ -72,13 +188,6 @@
       font-weight: 400;
       font-size: 14px;
       margin-top: 10px;
-    }
-    h5 {
-      color: #335491;
-      font-weight: 500;
-      font-size: 18px;
-      letter-spacing: 0.8px;
-      line-height: 18px;
     }
   }
   &__check {

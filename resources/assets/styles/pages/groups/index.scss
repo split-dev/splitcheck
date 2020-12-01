@@ -15,6 +15,14 @@
 }
 
 .groups {
+  h5 {
+    text-transform: uppercase;
+    color: #335491;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 18px;
+  }
   .profile-face__name.dotted::after {
     content: url("images/groups/dotted.svg");
   }

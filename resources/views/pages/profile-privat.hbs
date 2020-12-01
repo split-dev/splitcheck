@@ -8,7 +8,7 @@
 <body class="profile home">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
-    <div class="section-blur theme-background-one">
+    <div class="section-blur theme-background-one" data-class="maze">
         {{> ../common/header-next }}
         <div class="container">
             <div class="main-content position-relative d-flex align-items-start justify-content-between">
@@ -105,14 +105,14 @@
                             <div class="other-links">
                                 <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
                                     <li class="other-links__item">
-                                        <a href="#" class="other-links__link position-relative">
+                                        <a href="#" class="other-links__link position-relative disabled">
                                             <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
                                             <i class="icon icon-baby"></i>
                                             <span>Kid account</span>
                                         </a>
                                     </li>
                                     <li class="other-links__item">
-                                        <a href="#" class="other-links__link position-relative">
+                                        <a href="#" class="other-links__link position-relative disabled">
                                             <!-- add class "active" what would the icon change -->
                                             <i class="icon icon-pet"></i>
                                             <span>Pet account</span>
@@ -216,6 +216,18 @@
                                 </ul>
                             </div>
                         </section>
+                        <div class="section-content">
+                            <div class="enable-box">
+                                <div class="enable-box__kids">
+                                    <span>You have Kid’s account disabled</span>
+                                    <a href="#" class="section-content__btn btn-border">Enable Kid’s Account</a>
+                                </div>
+                                <div class="enable-box__pets">
+                                    <span>You have Kid’s account disabled</span>
+                                    <a href="#" class="section-content__btn btn-border">Enable Pet’s Account</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </aside>
                 <!-- /aside-left -->

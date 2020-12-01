@@ -19,7 +19,17 @@
   &__link {
     padding-left: 36px;
     line-height: 30px;
-
+    &.disabled {
+      span {
+        color: #828282 !important;
+      }
+      .icon-baby {
+        background-image: url("images/icons/baby-boy-disabled.svg");
+      }
+      .icon-pet {
+        background-image: url("images/icons/pawprint-disabled.svg");
+      }
+    }
     .icon {
       top: 50%;
       transform: translateY(-50%);

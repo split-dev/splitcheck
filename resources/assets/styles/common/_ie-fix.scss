@@ -46,11 +46,11 @@
   .connections__slider {
     .swiper-button-prev {
       max-width: 15px;
-      left: -22px;
+      left: -22px !important;
     }
     .swiper-button-next {
       max-width: 15px;
-      right: -38px;
+      right: -38px !important;
     }
     .count-slider {
       top: calc(50% - 9px);
@@ -63,6 +63,16 @@
   .profile-face__date {
     span {
       white-space: nowrap;
+    }
+  }
+  .galery-modal {
+    .swiper-button-prev {
+      max-width: 15px;
+      left: -22px !important;
+    }
+    .swiper-button-next {
+      max-width: 15px;
+      right: -38px !important;
     }
   }
 }

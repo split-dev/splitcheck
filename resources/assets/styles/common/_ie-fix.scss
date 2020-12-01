@@ -74,6 +74,17 @@
       max-width: 15px;
       right: -38px !important;
     }
+    .gallery-full {
+      .swiper-button-next {
+        max-width: 15px;
+        right: -38px !important;
+      }
+    }
+    .gallery-thumbnails {
+      .swiper-button-next {
+        right: 0 !important;
+      }
+    }
   }
 }
 

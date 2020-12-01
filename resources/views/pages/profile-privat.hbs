@@ -220,11 +220,13 @@
                             <div class="enable-box">
                                 <div class="enable-box__kids">
                                     <span>You have Kid’s account disabled</span>
-                                    <a href="#" class="section-content__btn btn-border">Enable Kid’s Account</a>
+                                    <a href="#" data-toggle="modal" data-target="#modal-child"
+                                        class="section-content__btn btn-border">Enable Kid’s Account</a>
                                 </div>
                                 <div class="enable-box__pets">
                                     <span>You have Kid’s account disabled</span>
-                                    <a href="#" class="section-content__btn btn-border">Enable Pet’s Account</a>
+                                    <a href="#" data-toggle="modal" data-target="#modal-pets"
+                                        class="section-content__btn btn-border">Enable Pet’s Account</a>
                                 </div>
                             </div>
                         </div>
@@ -1321,6 +1323,9 @@
     {{> ../common/modals/goss-gallery }}
     {{> ../common/modals/menu-mobile--not-shop }}
     {{> ../common/modals/galery-view }}
+    {{> ../common/modals/modal-pets }}
+    {{> ../common/modals/modal-child }}
+    {{> ../common/modals/modal-invite }}
     <!-- /Modals -->
 </body>
 

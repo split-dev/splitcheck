@@ -29,7 +29,10 @@
       "./styles/components/modals/modals-notifications.scss",
       "./styles/components/modals/modal-goss-gallery.scss",
       "./styles/components/modals/message-overlay.scss",
-      "./styles/components/modals/galery-view.scss"
+      "./styles/components/modals/galery-view.scss",
+      "./styles/components/modals/modal-pets.scss",
+      "./styles/components/modals/modal-child.scss",
+      "./styles/components/modals/modal-invite.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",
@@ -62,7 +65,10 @@
     "components/modals/modals-notifications": "./styles/components/modals/modals-notifications.scss",
     "components/modals/modal-goss-gallery": "./styles/components/modals/modal-goss-gallery.scss",
     "components/modals/message-overlay": "./styles/components/modals/message-overlay.scss",
-    "components/modals/galery-view": "./styles/components/modals/galery-view.scss"
+    "components/modals/galery-view": "./styles/components/modals/galery-view.scss",
+    "components/modals/modal-pets": "./styles/components/modals/modal-pets.scss",
+    "components/modals/modal-child": "./styles/components/modals/modal-child.scss",
+    "components/modals/modal-invite": "./styles/components/modals/modal-invite.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

@@ -1,0 +1,89 @@
+<!-- modal-cart -->
+<div class="modal right fade modal-child" id="modal-child" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content position-relative">
+            <!-- modal-header -->
+            <div class="modal-header d-flex align-items-center">
+                <!-- head for side modal -->
+                <div class="head-modal-info d-flex align-items-center flex-wrap">
+                    <div class="head-modal-info__description">
+                        <h2 class="head-modal-info__name">Create child account</h2>
+                    </div>
+                </div>
+                <!-- /head for side modal -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <!-- /modal-header -->
+            <!-- modal-body -->
+            <div class="modal-body">
+                <form class="form">
+                    <div class="form__inputs">
+                        <div class="scroll-div">
+                            <div class="form__single form__single--fluid form__single--max">
+                                <label class="form__label">First name</label>
+                                <div class="position-relative w-100">
+                                    <input type="text" class="form__input" required="">
+                                    <div class="count">
+                                        <span>0</span>/<span>60</span>
+                                    </div>
+                                </div>
+                                <span class="form__symbol-error"></span>
+                            </div>
+                            <div class="form__single form__single--fluid form__single--max">
+                                <label class="form__label">Last name</label>
+                                <div class="position-relative w-100">
+                                    <input type="text" class="form__input" required="">
+                                    <div class="count">
+                                        <span>0</span>/<span>60</span>
+                                    </div>
+                                </div>
+                                <span class="form__symbol-error"></span>
+                            </div>
+                            <div class="form__single form__single--date form__single--fluid">
+                                <label class="form__label">Date of birth</label>
+                                <input type="text" class="form__input" data-toggle="datepicker" required="">
+                                <span class="form__symbol-error"></span>
+                            </div>
+                            <div
+                                class="form__single form__single--select form__single--select-default form__single--fluid">
+                                <label class="form__label">Gender</label>
+                                <select class="form__select form__select--default" data-toggle="select">
+                                    <option value="select-1">Select</option>
+                                    <option value="select-2">Select2</option>
+                                </select>
+                            </div>
+                            <div
+                                class="form__single form__single--select form__single--select-default form__single--fluid">
+                                <label class="form__label">Add other parents who can manage this account</label>
+                                <select class="form__select form__select--default" data-toggle="select">
+                                    <option value="select-1">Select</option>
+                                    <option value="select-2">Select2</option>
+                                    <option value="select-3">Select3</option>
+                                </select>
+                            </div>
+                            <div class="form__wrap">
+                                <span class="form__wrap-title">upload profile image</span>
+                                <div class="form__single">
+                                    <a href="#add-photo" data-toggle="modal"
+                                        class="new-banner position-relative d-flex align-items-center justify-content-center">
+                                        <i class="icon icon-plus-blue"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal-footer -->
+                    <div class="modal-footer w-100 d-flex flex-column align-items-center justify-content-center">
+                        <button class="add-timeline-form btn-orange">Create account</button>
+                    </div>
+                    <!-- /modal-footer -->
+                </form>
+
+            </div>
+            <!-- /modal-body -->
+
+        </div>
+    </div>
+</div>
+<!-- /modal-cart -->

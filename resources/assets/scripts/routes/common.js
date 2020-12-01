@@ -290,6 +290,15 @@ export default {
       });
      }
 
+     // * function for "Select is not avatar" template in modal
+     if($('.form__single--select-not select[data-toggle="select"]')) {
+      $('.form__single--select-user-not select[data-toggle="select"]').select2({
+        minimumResultsForSearch: Infinity,
+        width: '100%',
+        // dropdownParent: $('.form__single--select-user'),
+      });
+     }
+
      //mini aside slider 
     var swiperAside = new Swiper('.personal-card--slider .swiper-container', {
       spaceBetween: 5,

@@ -1,0 +1,58 @@
+.gift-shopping {
+  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+  &__header {
+    position: relative;
+    width: 100%;
+    padding: 24px;
+    cursor: pointer;
+    &:after {
+      content: url("images/icons/arrow-shop.svg");
+      position: absolute;
+      right: 24px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+    h3 {
+      color: #335491;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 18px;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+  &__body {
+    padding: 0 12px 32px 24px;
+  }
+  &__info {
+    margin-bottom: 24px;
+    p {
+      color: #0b0212;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+    .btn-border {
+      margin-left: auto;
+    }
+  }
+  &__tags {
+    margin-bottom: 56px;
+    span {
+      display: inline-block;
+      margin-top: 24px;
+      color: #828282;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 6px;
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+}

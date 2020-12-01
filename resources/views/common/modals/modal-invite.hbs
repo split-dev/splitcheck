@@ -1,0 +1,254 @@
+<!-- modal-cart -->
+<div class="modal right fade modal-invite" id="modal-invite" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content position-relative">
+            <!-- modal-header -->
+            <div class="modal-header d-flex align-items-center">
+                <!-- head for side modal -->
+                <div class="head-modal-info d-flex align-items-center flex-wrap">
+                    <figure
+                        class="head-modal-info__avatar head-modal-info__avatar--no-img position-relative d-flex align-items-center justify-content-center overflow-hidden">
+                        <img src="" alt="avatar">
+                    </figure>
+                    <div class="head-modal-info__description">
+                        <h2 class="head-modal-info__name">Besties</h2>
+                        <p class="head-modal-info__subname">
+                            <span>Invite to the group</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- /head for side modal -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <!-- /modal-header -->
+            <!-- modal-body -->
+            <div class="modal-body">
+                <div class="scroll-div mob">
+                    <div class="modal-invite__info">
+                        <h4>Invite to Splitcheck</h4>
+                        <p>Members of your other groups</p>
+                    </div>
+                    <div class="accordion" id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        By e-mail
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="form__single form__single--fluid">
+                                        <label class="form__label">Enter friend’s name</label>
+                                        <input type="text" class="form__input" required="">
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="form__single form__single--fluid">
+                                        <label class="form__label">Enter their e-mail</label>
+                                        <input type="text" class="form__input" required="">
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="form__single form__single--fluid form__single--max">
+                                        <label class="form__label">Write some text to your goss (optional)</label>
+                                        <div class="position-relative w-100">
+                                            <textarea class="form__textarea"></textarea>
+                                            <div class="count">
+                                                <span>0</span>/<span>400</span>
+                                            </div>
+                                        </div>
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        By sms
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="form__single form__single--fluid">
+                                        <label class="form__label">Enter friend’s name</label>
+                                        <input type="text" class="form__input" required="">
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div
+                                        class="form__single form__single--select-not form__single--select-user-not form__single--fluid">
+                                        <label class="form__label">Choose country</label>
+                                        <select class="form__input" data-toggle="select" multiple="multiple">
+                                            <option>Lviv</option>
+                                            <option>London</option>
+                                            <option>Washington</option>
+                                        </select>
+                                        {{!-- <input type="text" class="form__input" required=""> --}}
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="form__single form__single--fluid">
+                                        <label class="form__label">Phone number</label>
+                                        <input type="text" class="form__input phone">
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Invite your connections
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Members of your other groups</p>
+                                    <div class="invite-form">
+                                        <div class="form__single form__single--fluid">
+                                            <label class="form__label">Enter name or email</label>
+                                            <input type="text" class="form__input" required="">
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                        <a href="#" class="btn btn-blue w-100">Invite</a>
+                                    </div>
+                                    <div class="invite-list">
+                                        <div class="scroll-div">
+                                            <ul>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                                <li>
+                                                    <div class="invite-form__detail">
+                                                        <div class="invite-form__photo"
+                                                            style="background-image: url('images/profiles/terry.jpg');">
+                                                        </div>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <a href="#" class="btn btn-blue w-100">Invite</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /modal-body -->
+        </div>
+    </div>
+</div>
+<!-- /modal-cart -->

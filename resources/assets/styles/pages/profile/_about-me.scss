@@ -47,9 +47,16 @@
       line-height: 14px;
     }
   }
+  &__info ~ .btn-border {
+    margin-top: 29px;
+    @media (max-width: 575px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
   &__box {
     background-color: theme-color("white");
-    padding: 24px 20px;
+    padding: 24px 20px 12px 20px;
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     margin-bottom: 8px;
@@ -72,6 +79,10 @@
       > div.not--margin {
         .btn-border {
           margin-left: auto;
+          @media (max-width: 575px) {
+            max-width: 100%;
+            width: 100%;
+          }
         }
         .about-me__info--full {
           padding: 12px 12px;
@@ -120,9 +131,6 @@
           justify-content: space-between;
         }
       }
-    }
-    &--full ~ .btn-border {
-      margin-top: 29px;
     }
     strong {
       color: theme-color("dark-blue");
@@ -222,6 +230,7 @@
     }
   }
   &__form {
+    padding: 12px 12px 0 12px;
     @media (max-width: 768px) {
       padding: 0 3px;
     }
@@ -295,6 +304,11 @@
       font-weight: 400;
     }
     .two__input {
+      justify-content: space-between;
+      > div {
+        width: 100%;
+        max-width: 240px;
+      }
       @media (max-width: 575px) {
         display: flex;
         width: 100%;
@@ -521,6 +535,7 @@
   }
 }
 .goos {
+  padding: 0 15px;
   .goos__not-found {
     display: none;
   }
@@ -688,6 +703,11 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
+  @media (max-width: 575px) {
+    height: 162px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   &__img {
     position: relative;
     display: flex;
@@ -701,6 +721,11 @@
     background-size: cover;
     border-radius: 8px 0 0 8px;
     margin-right: 12px;
+    @media (max-width: 575px) {
+      min-width: 72px;
+      border-radius: 8px 0 8px 0;
+      margin-right: 8px;
+    }
     span {
       color: #99a9c9;
       font-size: 24px;
@@ -729,6 +754,10 @@
     }
   }
   &__title {
+    @media (max-width: 575px) {
+      padding-right: 40px;
+      padding-top: 12px;
+    }
     a {
       color: #0b0212;
       font-size: 18px;
@@ -757,6 +786,11 @@
     flex-direction: column;
     justify-content: center;
     margin-right: 16px;
+    @media (max-width: 575px) {
+      margin-right: 0;
+      margin-left: 84px;
+      margin-bottom: 16px;
+    }
     span {
       color: #828282;
       font-size: 14px;
@@ -773,6 +807,9 @@
   &__comments {
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 575px) {
+      justify-content: flex-start;
+    }
     strong {
       display: inline-block;
       color: #0b0212;

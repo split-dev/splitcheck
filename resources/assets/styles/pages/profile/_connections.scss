@@ -122,4 +122,29 @@
       pointer-events: none;
     }
   }
+  &__box--unlink {
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #fff;
+    span {
+      color: #0b0212;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      line-height: 14px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+    h4 {
+      max-width: 140px;
+      color: #335491;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: left;
+    }
+    .btn-border {
+      max-width: 100%;
+    }
+  }
 }

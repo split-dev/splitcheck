@@ -15,8 +15,16 @@
 }
 
 .groups {
+  .ss-container .ss-scroll {
+    margin-left: 16px !important;
+  }
   .scroll-div {
     margin-top: 40px;
+    ul {
+      li {
+        margin-bottom: 16px;
+      }
+    }
   }
   .profile-list {
     .text-bold {
@@ -26,8 +34,13 @@
     }
   }
   .profile-link {
-    .option {
-      top: 10px;
+    .options {
+      position: relative !important;
+      top: 0;
+      right: 0;
+      li {
+        margin-bottom: 0 !important;
+      }
     }
     a {
       margin-right: 20px;

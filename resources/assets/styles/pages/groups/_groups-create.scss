@@ -3,6 +3,12 @@
 @import "../../bootstrap-utils";
 
 .groups {
+  &__list-small {
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 12px 16px 24px 12px;
+  }
   .profile__bottom {
     margin-bottom: 50px;
   }

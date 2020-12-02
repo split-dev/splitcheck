@@ -3,6 +3,20 @@
 @import "../../bootstrap-utils";
 
 .groups {
+  &__pending {
+    position: relative;
+    margin-left: 11px;
+
+    &::before {
+      content: url("images/groups/pending.svg");
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: -11px;
+      top: 9px;
+      z-index: 9;
+    }
+  }
   &__list-small {
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;

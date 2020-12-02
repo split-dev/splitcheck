@@ -7,6 +7,10 @@ export default {
         $(this).toggleClass('active-arrow');
       });
 
+      $('.profile-link .btn-blue').on('click', function() {
+        $(this).text('');
+        $(this).html('<img src="images/groups/check.svg" alt="img"/>')
+      });
       //* option for swiper
 
       var swiper = new Swiper('.groups__slider.swiper-container', {

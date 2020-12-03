@@ -3,9 +3,23 @@
 @import "../../bootstrap-utils";
 
 .modal-invite {
+  .scroll-div {
+    @media (max-width: 575px) {
+      margin-top: 0;
+    }
+  }
+
+  .modal-content {
+    @media (max-width: 575px) {
+      background-color: #fffcf9;
+    }
+  }
   .btn-opacity {
     max-width: 80px;
     opacity: 0.5;
+    @media (max-width: 575px) {
+      max-width: 100%;
+    }
   }
   .text-gray {
     color: #828282;
@@ -34,21 +48,30 @@
   .members__form {
     margin-bottom: 24px;
     max-width: 288px;
+
+    @media (max-width: 575px) {
+      max-width: 100% !important;
+    }
     textarea {
       padding-bottom: 90px !important;
     }
     .btn-blue {
       max-width: 288px !important;
       background-color: #234179;
+      @media (max-width: 575px) {
+        max-width: 100% !important;
+      }
       img {
         margin-right: 20px;
       }
     }
   }
   &__block {
-    margin-top: 24px;
-    margin-bottom: 24px;
     max-width: 288px;
+
+    @media (max-width: 575px) {
+      max-width: 100%;
+    }
   }
   small {
     color: #0b0212;

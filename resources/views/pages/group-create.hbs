@@ -117,11 +117,16 @@
                                     <span>Upload photo</span>
                                 </a>
                             </div>
-                            <div class="profile-face__name d-flex align-items-end dotted">
+                            <div class="profile-face__name groups__face-none d-flex align-items-end dotted">
                                 {{!-- class dotted adds a line with dots --}}
                                 <strong>Group 1</strong>
                                 <span>|</span>
                                 <a href="#">Edit grop name</a href="#">
+                            </div>
+                            <div class="profile-face__name groups__face-name d-flex align-items-end">
+                                {{!-- class dotted adds a line with dots --}}
+                                <strong>Group name</strong>
+
                             </div>
                             <div class="profile-face__date">
                                 <div class="groups__check form d-flex">
@@ -153,6 +158,21 @@
                                         </label>
                                         <strong class="check-off">Independant group</strong>
                                         <strong class="check-on">Sub-group</strong>
+                                    </div>
+
+                                    <div
+                                        class="groups__select groups__create-select form__single--select form__single--select-default form__single--fluid">
+                                        <label class="form__label">Choose a main group to add to</label>
+                                        <div class="select-before">
+                                            <select class="form__select form__select--default select2-hidden-accessible"
+                                                data-toggle="select" data-select2-id="12" tabindex="-1"
+                                                aria-hidden="true">
+                                                <option value="#">Choose group</option>
+                                                <option value="#">Choose group</option>
+
+
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -581,7 +601,7 @@
                                                             <span>Terry Will Green</span>
                                                         </div>
                                                         <div
-                                                            class="profile-link d-flex w-100 justify-content-end align-items-center">
+                                                            class="profile-link d-flex  justify-content-end align-items-center">
 
                                                             <div class="options">
                                                                 <button type="button" class="options__btn"
@@ -610,7 +630,7 @@
                                                             <span>Terry Brown</span>
                                                         </div>
                                                         <div
-                                                            class="profile-link d-flex w-100 justify-content-end align-items-center">
+                                                            class="profile-link d-flex justify-content-end align-items-center">
 
                                                             <div class="options">
                                                                 <button type="button" class="options__btn"
@@ -639,7 +659,7 @@
                                                             <span>Terry Smith</span>
                                                         </div>
                                                         <div
-                                                            class="profile-link d-flex w-100 justify-content-end align-items-center">
+                                                            class="profile-link d-flex justify-content-end align-items-center">
 
                                                             <div class="options">
                                                                 <button type="button" class="options__btn"
@@ -668,7 +688,7 @@
                                                             <span>Terry Smith</span>
                                                         </div>
                                                         <div
-                                                            class="profile-link d-flex w-100 justify-content-end align-items-center">
+                                                            class="profile-link d-flex  justify-content-end align-items-center">
 
                                                             <div class="options">
                                                                 <button type="button" class="options__btn"
@@ -697,7 +717,7 @@
                                                             <span>Terry Smith</span>
                                                         </div>
                                                         <div
-                                                            class="profile-link d-flex w-100 justify-content-end align-items-center">
+                                                            class="profile-link d-flex  justify-content-end align-items-center">
 
                                                             <div class="options">
                                                                 <button type="button" class="options__btn"
@@ -726,7 +746,7 @@
                                                             <span>Terry Smith</span>
                                                         </div>
                                                         <div
-                                                            class="profile-link d-flex w-100 justify-content-end align-items-center">
+                                                            class="profile-link d-flex justify-content-end align-items-center">
 
                                                             <div class="options">
                                                                 <button type="button" class="options__btn"
@@ -755,7 +775,7 @@
                                                             <span>Terry Smith</span>
                                                         </div>
                                                         <div
-                                                            class="profile-link d-flex w-100 justify-content-end align-items-center">
+                                                            class="profile-link d-flex  justify-content-end align-items-center">
 
                                                             <div class="options">
                                                                 <button type="button" class="options__btn"
@@ -798,7 +818,7 @@
                                                 <span class="form__symbol-error"></span>
                                             </div>
                                             <div class="d-flex justify-content-end">
-                                                <a class="btn-blue btn-opacity" href="#">Invite</a>
+                                                <a class="btn-blue btn-opacity" href="/">Invite</a>
                                             </div>
 
                                             <div class="position-relative d-flex profile-invite" style="height: 360px;">
@@ -1009,7 +1029,7 @@
                                                         <div class="select-before">
                                                             <select
                                                                 class="form__select form__select--default select2-hidden-accessible"
-                                                                data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                                data-toggle="select" data-select2-id="11" tabindex="-1"
                                                                 aria-hidden="true">
                                                                 <option value="#">Start typing</option>
                                                                 <option value="#">Start typing</option>
@@ -1078,6 +1098,143 @@
                                                     <b>99</b>
                                                 </div>
 
+                                            </div>
+
+                                            <div class="position-relative d-flex" style="height: 360px;">
+                                                <div class="scroll-div w-100">
+                                                    <section class="section-content">
+                                                        <ul>
+                                                            <li
+                                                                class="d-flex align-items-center justify-content-between">
+                                                                <div class="profile-list groups__pending w-100 d-flex">
+                                                                    <figure class="profile-list__avatar ">
+                                                                        <img src="images/groups/user-girl.png"
+                                                                            alt="avatar">
+                                                                        <span class="profile-list__symbol"></span>
+                                                                    </figure>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="text-bold">Joann Doe</span>
+                                                                        <small class="text-gray">invited
+                                                                            07.10.2020</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="groups__pending-icons d-flex justify-content-end align-items-center">
+                                                                    <span class="groups__oval"><img
+                                                                            src="images/groups/auto.svg" alt=""></span>
+                                                                    <span class="groups__oval"><img
+                                                                            src="images/groups/close.svg" alt=""></span>
+
+                                                                </div>
+                                                            </li>
+                                                            <li
+                                                                class="d-flex align-items-center justify-content-between">
+                                                                <div class="profile-list w-100 groups__pending d-flex">
+                                                                    <figure class="profile-list__avatar">
+                                                                        <img src="images/profiles/user-1.png"
+                                                                            alt="avatar">
+                                                                        <span class="profile-list__symbol"></span>
+                                                                    </figure>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span>Terry Smith</span>
+                                                                        <small class="text-gray">invited
+                                                                            07.10.2020</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="groups__pending-icons d-flex  justify-content-end align-items-center">
+                                                                    <span class="groups__oval"><img
+                                                                            src="images/groups/auto.svg" alt=""></span>
+                                                                    <span class="groups__oval"><img
+                                                                            src="images/groups/close.svg" alt=""></span>
+
+                                                                </div>
+                                                            </li>
+
+                                                            <li
+                                                                class="d-flex align-items-center justify-content-between">
+                                                                <div class="profile-list w-100 d-flex groups__pending">
+                                                                    <figure class="profile-list__avatar">
+                                                                        <img src="images/groups/user-boy.png"
+                                                                            alt="avatar">
+                                                                        <span class="profile-list__symbol"></span>
+                                                                    </figure>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span>Terry Will Green</span>
+                                                                        <small class="text-gray">invited
+                                                                            07.10.2020</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="groups__pending-icons d-flex  justify-content-end align-items-center">
+                                                                    <span class="groups__oval"><img
+                                                                            src="images/groups/auto.svg" alt=""></span>
+                                                                    <span class="groups__oval"><img
+                                                                            src="images/groups/close.svg" alt=""></span>
+
+                                                                </div>
+
+                                                            </li>
+                                                            <li
+                                                                class="d-flex align-items-center justify-content-between">
+                                                                <div class="profile-list w-100 groups__declined d-flex">
+                                                                    <figure class="profile-list__avatar">
+                                                                        <img src="images/groups/girl-profile.png"
+                                                                            alt="avatar">
+                                                                        <span class="profile-list__symbol"></span>
+                                                                    </figure>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span>Terry Smith</span>
+                                                                        <small class="text-orange">Not
+                                                                            interested</small>
+                                                                    </div>
+                                                                </div>
+
+                                                            </li>
+
+
+
+
+                                                            <li
+                                                                class="d-flex align-items-center justify-content-between">
+                                                                <div class="profile-list w-100 d-flex groups__joined">
+                                                                    <figure class="profile-list__avatar">
+                                                                        <img src="images/profiles/user-1.png"
+                                                                            alt="avatar">
+                                                                        <span class="profile-list__symbol"></span>
+                                                                    </figure>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span>Terry Smith</span>
+                                                                        <small class="text-gray">invited
+                                                                            07.10.2020</small>
+                                                                    </div>
+                                                                </div>
+
+                                                            </li>
+
+
+                                                            <li
+                                                                class="d-flex align-items-center justify-content-between">
+                                                                <div class="profile-list w-100 d-flex groups__joined">
+                                                                    <figure class="profile-list__avatar">
+                                                                        <img src="images/profiles/user-1.png"
+                                                                            alt="avatar">
+                                                                        <span class="profile-list__symbol"></span>
+                                                                    </figure>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span>Terry Smith</span>
+                                                                        <small class="text-gray">invited
+                                                                            07.10.2020</small>
+                                                                    </div>
+                                                                </div>
+
+                                                            </li>
+
+
+                                                        </ul>
+                                                    </section>
+
+                                                </div>
                                             </div>
 
 

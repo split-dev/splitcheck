@@ -3,12 +3,65 @@
 @import "../../bootstrap-utils";
 
 .groups {
+  .swiper-button-next {
+    right: -30px;
+  }
+  .swiper-button-prev {
+    left: -30px;
+  }
+  &__slider {
+    margin-top: 22px;
+    position: relative;
+  }
   &__pending {
+    position: relative;
+    margin-left: 11px;
+    &-icons {
+      span {
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
+        background-color: #fff;
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &::before {
+      content: url("images/groups/pending.svg");
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: -11px;
+      top: 9px;
+      z-index: 9;
+    }
+  }
+  &__declined {
     position: relative;
     margin-left: 11px;
 
     &::before {
-      content: url("images/groups/pending.svg");
+      content: url("images/groups/cansel.svg");
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: -11px;
+      top: 9px;
+      z-index: 9;
+    }
+  }
+  &__joined {
+    position: relative;
+    margin-left: 11px;
+
+    &::before {
+      content: url("images/groups/joined.svg");
       position: absolute;
       width: 24px;
       height: 24px;
@@ -92,6 +145,9 @@
       .search {
         max-width: 286px;
         width: 100%;
+        @media (max-width: 991px) {
+          max-width: 100%;
+        }
       }
     }
   }
@@ -110,6 +166,9 @@
     .form__single--fluid,
     .groups__box-small {
       max-width: 312px;
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
     }
   }
   .input-small {
@@ -147,6 +206,10 @@
   }
   &__link {
     margin-left: 75px;
+    @media (max-width: 575px) {
+      margin-left: 0;
+      justify-content: center;
+    }
     a {
       color: #35558f;
       text-decoration: underline;
@@ -155,9 +218,22 @@
     }
   }
   &__btn {
+    @media (max-width: 575px) {
+      margin-top: 20px;
+      flex-direction: column;
+      margin-right: 16px;
+      margin-left: 16px;
+    }
     a {
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
       &:first-child {
         margin-right: 16px;
+        @media (max-width: 575px) {
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
       }
     }
   }
@@ -178,6 +254,13 @@
       content: url("images/groups/arrow-down.svg");
       position: absolute;
       right: 0;
+      top: -4px;
+      @media (max-width: 1260px) {
+        right: -6px;
+      }
+      @media (max-width: 991px) {
+        right: 0;
+      }
     }
   }
   &__hide {
@@ -185,6 +268,19 @@
   }
   &__create {
     padding-right: 35px;
+    @media (max-width: 991px) {
+      padding-right: 0;
+    }
+    .select-before {
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
+    }
+    .btn-blue {
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
+    }
     .text-gray {
       text-transform: uppercase;
       margin-left: 0;
@@ -198,6 +294,9 @@
   }
   &__textarea {
     margin-bottom: 32px;
+    @media (max-width: 575px) {
+      margin-bottom: 24px;
+    }
     textarea {
       padding-bottom: 70px !important;
     }
@@ -215,6 +314,9 @@
     background-color: #fff;
     padding: 24px 30px 30px 24px;
     margin-bottom: 25px;
+    @media (max-width: 575px) {
+      margin-bottom: 0;
+    }
     small {
       padding-left: 16px;
       color: #828282;

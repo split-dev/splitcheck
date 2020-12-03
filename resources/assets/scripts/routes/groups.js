@@ -13,29 +13,31 @@ export default {
       });
       //* option for swiper
 
-      var swiper = new Swiper('.groups__slider.swiper-container', {
+      var swiper = new Swiper('.groups__slider .swiper-container', {
         slidesPerView: 3,
+        spaceBetween: 12,
         setWrapperSize: false,
         simulateTouch: false,
         preventInteractionOnTransition: true,
         mousewheel: true,
         navigation: {
-          nextEl: '.connections__select--follower .swiper-button-next',
-          prevEl: '.connections__select--follower .swiper-button-prev',
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         breakpoints: {
           1260: {
             slidesPerView: 3,
           },
           992: {
+            slidesPerView: 2,
+          },
+          768: {
             slidesPerView: 3,
             // freeMode: true,
           },
-          360: {
-            slidesPerView: 4,
-          },
+         
           250: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             setWrapperSize: false,
             simulateTouch: false,
             preventInteractionOnTransition: true,
@@ -49,7 +51,7 @@ export default {
       
 
 
-      //* swiper init
+      
      
     },
 

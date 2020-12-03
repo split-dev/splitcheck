@@ -276,6 +276,57 @@ export default {
             // left
           });
         }
+        if($('.connections__select--store-slide')) {
+          const optionForTimelineStore = {
+            slidesPerView: 3,
+            setWrapperSize: false,
+            simulateTouch: false,
+            preventInteractionOnTransition: true,
+            mousewheel: true,
+            navigation: {
+              nextEl: '.connections__select--store-slide .swiper-button-next',
+              prevEl: '.connections__select--store-slide .swiper-button-prev',
+            },
+            breakpoints: {
+              1260: {
+                slidesPerView: 3,
+              },
+              992: {
+                slidesPerView: 2,
+                // freeMode: true,
+              },
+              360: {
+                slidesPerView: 3,
+              },
+              250: {
+                slidesPerView: 3,
+                setWrapperSize: false,
+                simulateTouch: false,
+                preventInteractionOnTransition: true,
+                mousewheel: true,
+                // freeMode: true,
+              },
+            },
+            on: {
+              init: function (event) {
+                initNumber(event.params.slidesPerView, $(event.el).parent());
+              },
+            },
+          }
+          let swiperTimelineStore = new Swiper('.connections__select--store-slide .swiper-container', optionForTimelineStore);
+          let activeSlide = 0;
+          swiperTimelineStore.on('slideChange', function(event){
+            if(activeSlide > swiperTimelineStore.activeIndex) {
+              activeSlide = swiperTimelineStore.activeIndex;
+              countSlide($(event.el).parent(), 'prev')
+            } else if(activeSlide < swiperTimelineStore.activeIndex) {
+              countSlide($(event.el).parent(), 'next')
+              activeSlide = swiperTimelineStore.activeIndex;
+            }
+            
+            // left
+          });
+        }
         // mobile colection
         function tpCollection () {
           if(window.innerWidth < 992) {

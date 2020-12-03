@@ -37,6 +37,11 @@
       "url": "/profile-privat.html"
     },
     {
+      "title": "Profile-shop",
+      "description": "profile-shop",
+      "url": "/profile-shop.html"
+    },
+    {
       "title": "Shopping-preferences",
       "description": "shopping-preferences",
       "url": "/shopping-preferences.html"

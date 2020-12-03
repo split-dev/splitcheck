@@ -32,4 +32,22 @@
       border: 1px solid theme-color("green");
     }
   }
+  &__link--unlink {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    transition: $transition-fast;
+    color: #828282;
+    border: 1px solid #828282;
+
+    &:hover {
+      color: theme-color("white");
+      background-color: #828282;
+      border: 1px solid #828282;
+    }
+  }
 }

@@ -25,6 +25,19 @@
     &:first-of-type {
       margin-top: 0;
     }
+    &.recomend {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:before {
+        content: url("images/icons/reocmend-line.svg");
+        margin-top: -7px;
+      }
+      &:after {
+        content: url("images/icons/reocmend-line.svg");
+        margin-top: -7px;
+      }
+    }
   }
   &__tell {
     height: 86px;

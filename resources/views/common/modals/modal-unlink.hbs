@@ -1,0 +1,53 @@
+<!-- modal-shop-another -->
+<div class="modal modal-unlink fade" id="modal-unlink" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+                <div class="modal-unlink__title">
+                    <h3>Unlink Account</h3>
+                    <p>Before un-linking this account, <b>add an email and a temporal password</b> so that they can
+                        login
+                        independently. You will no longer manage this account but you can still see their preferences,
+                        wishlist and be connected as family members</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                {{!-- form --}}
+                <form action="#" class="modal-unlink__form">
+                    <div class="modal-unlink__photo"
+                        style="background-image: url('images/profiles/oval__profile--img.png');"></div>
+                    <div class="modal-unlink__input">
+                        <div class="modal-unlink__input--two">
+                            <div class="form__single form__single--fluid">
+                                <label class="form__label">First Name</label>
+                                <input type="text" class="form__input" required="">
+                                <span class="form__symbol-error"></span>
+                            </div>
+                            <div class="form__single form__single--fluid">
+                                <label class="form__label">Last Name</label>
+                                <input type="text" class="form__input" required="">
+                                <span class="form__symbol-error"></span>
+                            </div>
+                        </div>
+                        <div class="form__single error">
+                            <label class="form__label">Email</label>
+                            <input type="email" class="form__input" required="">
+                            <span class="form__symbol-error"></span>
+                        </div>
+                        <div class="form__single form__single--pass">
+                            <label class="form__label">Password</label>
+                            <input type="password" class="form__input" required="">
+                            <span class="form__symbol-pass"></span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-blue">Unlink account</a>
+                </form>
+                {{!-- form end --}}
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- /modal-shop-another -->

@@ -20,6 +20,7 @@
     box-shadow: 0 0 0 !important;
   }
 }
+
 .btn-border {
   color: theme-color("blue2");
   border: 1px solid theme-color("blue2") !important;
@@ -43,6 +44,9 @@
 .btn-border-orange {
   color: theme-color("orange");
   border: 1px solid theme-color("orange") !important;
+  &.btn-border--two {
+    border: 2px solid theme-color("orange") !important;
+  }
 
   &:hover,
   &:focus {

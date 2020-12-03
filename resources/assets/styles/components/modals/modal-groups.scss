@@ -1,0 +1,45 @@
+.modal-groups {
+  padding-bottom: 24px !important;
+
+  .modal-body {
+    padding-top: 10px !important;
+  }
+  p {
+    max-width: 460px;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin-bottom: 65px !important;
+  }
+  span {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    color: #0b0212;
+    font-weight: 400;
+  }
+  img {
+    margin-top: 33px;
+    margin-bottom: 24px;
+  }
+  .modal-group__link {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    a {
+      max-width: 240px;
+      height: 48px;
+      border-radius: 5px;
+      border: 2px solid #35558f;
+      background-color: #35558f;
+      color: #fff;
+      font-weight: 500;
+      font-size: 18px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
+    }
+  }
+}

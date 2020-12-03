@@ -1,174 +1,89 @@
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
 .modal-invite {
-  .head-modal-info__avatar {
-    border-radius: 8px;
-    &::before {
-      background-color: #f8f9fb;
-    }
-  }
-  .modal-body {
-    padding: 24px 34px 80px 24px !important;
-    .scroll-div.mob {
-      > .ss-scroll {
-        @media (max-width: 575px) {
-          display: none;
-        }
-      }
-    }
-    @media (max-width: 991.98px) {
-      padding: 24px 24px 80px !important;
-    }
-  }
-  &__info {
-    h4 {
-      color: #335491;
-      font-size: 12px;
-      letter-spacing: 0.8px;
-      line-height: 12px;
-      margin-bottom: 8px;
-    }
-    p {
-      color: #828282;
-      font-size: 14px;
-      font-weight: 400;
-    }
-  }
-  .form__label {
-    padding-left: 8px;
-  }
-  .form__single {
-    margin-bottom: 16px;
-  }
-  .form__textarea {
-    height: 120px;
-  }
-  .count {
-    align-items: flex-end;
-    padding-bottom: 12px;
-  }
-  .new-banner {
-    width: 64px;
-    height: 64px;
-    border-radius: 5px;
-    border: 1px dashed #335491;
-
-    .icon {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
-
-.accordion {
-  padding-right: 77px;
   .scroll-div {
-    > .ss-scroll {
-      @media (max-width: 575px) {
-        opacity: 1 !important;
-      }
+    @media (max-width: 575px) {
+      margin-top: 0;
     }
   }
-  @media (max-width: 575px) {
-    padding-right: 20px;
-  }
-  .card {
-    margin-bottom: 24px;
-    &-header {
-      button {
-        position: relative;
-        width: 100%;
-        color: #335491;
-        font-size: 12px;
-        font-style: normal;
-        letter-spacing: 0.8px;
-        line-height: 12px;
-        text-decoration: none;
-        text-align: left;
-        padding-left: 0;
-        outline: none;
-        border: none !important;
-        &::before {
-          display: block;
-          position: absolute;
-          content: url("images/icons/arrow-accordion.svg");
-          right: 0;
-        }
-        &.collapsed {
-          &::before {
-            transform: rotate(180deg);
-          }
-        }
-      }
+
+  .modal-content {
+    @media (max-width: 575px) {
+      background-color: #fffcf9;
     }
-    .btn-blue {
+  }
+  .btn-opacity {
+    max-width: 80px;
+    opacity: 0.5;
+    @media (max-width: 575px) {
       max-width: 100%;
     }
   }
-  .card-body {
-    padding: 24px 0 60px;
-    .profile-list__avatar {
-      display: none !important;
+  .text-gray {
+    color: #828282;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .active-arrow {
+    &:after {
+      transform: rotate(-180deg);
     }
-    p {
-      color: #828282;
-      font-size: 14px;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
-    .invite-form {
-      .btn-blue {
-        max-width: 80px;
-        float: right;
-      }
-      &__detail {
-        display: flex;
-        align-items: center;
-      }
-      &__photo {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+  }
+  .groups__toggle {
+    margin-top: 22px;
+    position: relative;
+    &:hover {
+      cursor: pointer;
     }
 
-    .invite-list {
-      margin-top: 90px;
-      max-height: 306px;
-      padding-right: 0;
+    &:after {
+      transition: 0.4s;
+      content: url("images/groups/arrow-down.svg");
+      position: absolute;
+      right: 0;
+    }
+  }
+  .members__form {
+    margin-bottom: 24px;
+    max-width: 288px;
+
+    @media (max-width: 575px) {
+      max-width: 100% !important;
+    }
+    textarea {
+      padding-bottom: 90px !important;
+    }
+    .btn-blue {
+      max-width: 288px !important;
+      background-color: #234179;
       @media (max-width: 575px) {
-        padding-right: 18px;
+        max-width: 100% !important;
       }
-      .scroll-div {
-        height: 320px;
-      }
-      .btn-blue {
-        max-width: 80px;
-        float: right;
-      }
-      ul {
-        @media (max-width: 575px) {
-          max-width: calc(100% - 16px);
-        }
-        li {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-bottom: 16px;
-          &:last-of-type {
-            margin-bottom: 0;
-          }
-          span {
-            display: inline-block;
-            margin-left: 12px;
-            color: #0b0212;
-            font-size: 16px;
-            font-weight: 400;
-          }
-        }
+      img {
+        margin-right: 20px;
       }
     }
+  }
+  &__block {
+    max-width: 288px;
+
+    @media (max-width: 575px) {
+      max-width: 100%;
+    }
+  }
+  small {
+    color: #0b0212;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  &__figure {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: #f8f9fb;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }

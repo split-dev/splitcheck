@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="groups home">
+    {{> ../common/mobile-menu }}
+    {{> ../common/mobile-menu-bottom }}
+    <div class="section-blur" data-class="maze">
+        {{> ../common/header-next }}
+        <div class="groups__content">
+            <div class="container">
+                <div class="main-content position-relative d-flex align-items-start justify-content-between">
+                    <!-- aside-left -->
+                    <aside class="aside-left">
+                        <div class="scroll-div">
+
+                            <section class="section-content">
+                                <span class="section-content__title position-relative d-flex align-items-center">Other
+                                    links</span>
+
+                                <div class="other-links">
+                                    <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                        <li class="other-links__item">
+                                            <a href="#" class="other-links__link position-relative">
+                                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                                <i class="icon icon-gift active"></i>
+                                                <span>Spoil yourself</span>
+                                            </a>
+                                        </li>
+                                        <li class="other-links__item">
+                                            <a href="#" class="other-links__link position-relative">
+                                                <!-- add class "active" what would the icon change -->
+                                                <i class="icon icon-social-media"></i>
+                                                <span>Open public goss</span>
+                                            </a>
+                                        </li>
+                                        <li class="other-links__item">
+                                            <a href="#"
+                                                class="other-links__link position-relative d-flex align-items-center">
+                                                <!-- add class "active" what would the icon change -->
+                                                <i class="icon icon-discount"></i>
+                                                <span>Snatch a bargain</span>
+                                            </a>
+                                        </li>
+                                        <li class="other-links__item">
+                                            <a href="#"
+                                                class="other-links__link position-relative d-flex align-items-center">
+                                                <!-- add class "active" what would the icon change -->
+                                                <i class="icon icon-mail"></i>
+                                                <span>Shared orders</span>
+                                            </a>
+                                        </li>
+                                        <li class="other-links__item active-page">
+                                            <a href="#"
+                                                class="other-links__link position-relative d-flex align-items-center">
+                                                <!-- add class "active" what would the icon change -->
+                                                <i class="icon icon-group"></i>
+                                                <span>My groups</span>
+                                            </a>
+                                        </li>
+                                        <li class="other-links__item">
+                                            <a href="#"
+                                                class="other-links__link position-relative d-flex align-items-center">
+                                                <!-- add class "active" what would the icon change -->
+                                                <i class="icon icon-heart"></i>
+                                                <span>My family</span>
+                                            </a>
+                                        </li>
+                                        <li class="other-links__item">
+                                            <a href="#" data-toggle="modal" data-target="#notification"
+                                                class="other-links__link position-relative d-flex align-items-center">
+                                                <i class="icon icon-notification"></i>
+                                                <!-- add class "active" what would the icon change -->
+                                                <span>Alerts</span>
+                                            </a>
+                                        </li>
+                                        <li class="other-links__item">
+                                            <a href="/shopping-preferences.html"
+                                                class="other-links__link position-relative d-flex align-items-center">
+                                                <i class="icon icon-setting"></i>
+                                                <!-- add class "active" what would the icon change -->
+                                                <span>Shopping preferences</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </aside>
+                    <!-- /aside-left -->
+                    <section class="groups__section">
+                        <div class="d-flex flex-column">
+                            <div class="groups__header">
+                                <h5 class="text-gray">Shopping groups</h5>
+                            </div>
+                            <div class="groups__box">
+                                <div class="groups__top">
+                                    <a href="#" data-toggle="modal" data-target="#create-goss"
+                                        class="card-goss__item card-goss__item--new position-relative d-flex align-items-center justify-content-center">
+                                        <i class="icon icon-plus-blue"></i>
+                                    </a>
+                                    <span class="span-blue">Create a group</span>
+                                </div>
+
+                                <div class="groups__block d-flex">
+                                    <div class="groups__block-left">
+                                        <figure></figure>
+                                    </div>
+
+                                    <div class="groups__block-right d-flex w-100">
+                                        <div class="groups__block-text w-100">
+                                            <strong>Family</strong>
+                                            <p>Group description 100 characters or less. But how many is one hundred?
+                                                Yup,
+                                                about
+                                                this many characters</p>
+                                            <div class="d-flex align-items-center groups__block-personal">
+                                                <strong>Private</strong>
+                                                <p class="d-flex align-items-center">Members <b>5</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100 groups__block-btn">
+                                            <a class="btn-border" href="#">Manage</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="groups__block d-flex">
+                                    <div class="groups__block-left">
+                                        <figure></figure>
+                                    </div>
+
+                                    <div class="groups__block-right d-flex w-100">
+                                        <div class="groups__block-text w-100">
+                                            <strong>Friends</strong>
+                                            <p>Group description 100 characters or less. But how many is one hundred?
+                                                Yup,
+                                                about
+                                                this many characters</p>
+                                            <div class="d-flex align-items-center groups__block-personal">
+                                                <strong>Private</strong>
+                                                <p class="d-flex align-items-center">Members <b>15</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100 groups__block-btn">
+                                            <a class="btn-border" href="#">Manage</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="groups__block d-flex">
+                                    <div class="groups__block-left">
+                                        <figure></figure>
+                                    </div>
+
+                                    <div class="groups__block-right d-flex w-100">
+                                        <div class="groups__block-text w-100">
+                                            <strong>Besties</strong>
+                                            <p>Group description 100 characters or less. But how many is one hundred?
+                                                Yup,
+                                                about
+                                                this many characters</p>
+                                            <div class="d-flex align-items-center groups__block-personal">
+                                                <strong>Private</strong>
+                                                <p class="d-flex align-items-center">Members <b>5</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100 groups__block-btn">
+                                            <a class="btn-border" href="#">Manage</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="groups__block d-flex">
+                                    <div class="groups__block-left">
+                                        <figure></figure>
+                                    </div>
+
+                                    <div class="groups__block-right d-flex w-100">
+                                        <div class="groups__block-text w-100">
+                                            <strong>Connections</strong>
+                                            <p>Group description 100 characters or less. But how many is one hundred?
+                                                Yup,
+                                                about
+                                                this many characters</p>
+                                            <div class="d-flex align-items-center groups__block-personal">
+                                                <strong>Private</strong>
+                                                <p class="d-flex align-items-center">Members <b>5</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100 groups__block-btn">
+                                            <a class="btn-border" href="#">Manage</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <div class="groups__header">
+                                <h5>Other groups you manage</h5>
+                            </div>
+
+                            <div class="groups__box">
+
+                                <div class="groups__top">
+                                    <a href="#" data-toggle="modal" data-target="#create-goss"
+                                        class="card-goss__item card-goss__item--new position-relative d-flex align-items-center justify-content-center">
+                                        <i class="icon icon-plus-blue"></i>
+                                    </a>
+                                    <span class="span-blue">Create a group</span>
+                                </div>
+
+                                <div class="groups__block d-flex">
+                                    <div class="groups__block-left">
+                                        <figure></figure>
+                                    </div>
+
+                                    <div class="groups__block-right d-flex w-100">
+                                        <div class="groups__block-text w-100">
+                                            <strong>Secret Santa</strong>
+                                            <p>Group description 100 characters or less. But how many is one hundred?
+                                                Yup,
+                                                about
+                                                this many characters</p>
+                                            <div class="d-flex align-items-center groups__block-personal">
+                                                <strong>Private</strong>
+                                                <p class="d-flex align-items-center">Members <b>5</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100 groups__block-btn">
+                                            <a class="btn-border" href="#">Manage</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <div class="groups__header">
+                                <h5>Party groups</h5>
+                            </div>
+
+                            <div class="groups__box">
+                                <div class="groups__top">
+                                    <a href="#" data-toggle="modal" data-target="#create-goss"
+                                        class="card-goss__item card-goss__item--new position-relative d-flex align-items-center justify-content-center">
+                                        <i class="icon icon-plus-blue"></i>
+                                    </a>
+                                    <span class="span-blue">Create a group</span>
+                                </div>
+
+                                <div class="groups__block d-flex">
+                                    <div class="groups__block-left">
+                                        <figure></figure>
+                                    </div>
+
+                                    <div class="groups__block-right d-flex w-100">
+                                        <div class="groups__block-text w-100">
+                                            <strong>Group name</strong>
+                                            <p>Group description 100 characters or less. But how many is one hundred?
+                                                Yup,
+                                                about
+                                                this many characters</p>
+                                            <div class="d-flex align-items-center groups__block-personal">
+                                                <strong>Private</strong>
+                                                <p class="d-flex align-items-center">Members <b>5</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100 groups__block-btn">
+                                            <a class="btn-border" href="#">Manage</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex flex-column">
+                            <div class="groups__header">
+                                <h5>groups you are in</h5>
+                            </div>
+
+                            <div class="groups__box">
+
+
+                                <div class="groups__block d-flex">
+                                    <div class="groups__block-left">
+                                        <figure></figure>
+                                    </div>
+
+                                    <div class="groups__block-right d-flex w-100">
+                                        <div class="groups__block-text w-100">
+                                            <strong>Group name</strong>
+                                            <p>Group description 100 characters or less. But how many is one hundred?
+                                                Yup,
+                                                about
+                                                this many characters</p>
+                                            <div class="d-flex align-items-center groups__block-personal">
+                                                <strong>Private</strong>
+                                                <p class="d-flex align-items-center">Members <b>5</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100 groups__block-btn">
+                                            <a class="btn-border-orange" data-toggle="modal" data-target="#group-access"
+                                                href="#">Leave</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <div class="groups__header">
+                                <h5>friend’s groups</h5>
+                            </div>
+
+                            <div class="groups__box">
+
+
+                                <div class="groups__block d-flex">
+                                    <div class="groups__block-left">
+                                        <figure></figure>
+                                    </div>
+
+                                    <div class="groups__block-right d-flex w-100">
+                                        <div class="groups__block-text w-100">
+                                            <strong>Group name</strong>
+                                            <p>Group description 100 characters or less. But how many is one hundred?
+                                                Yup,
+                                                about
+                                                this many characters</p>
+                                            <div class="d-flex align-items-center groups__block-personal">
+                                                <strong>Private</strong>
+                                                <p class="d-flex align-items-center">Members <b>5</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100 groups__block-btn">
+                                            <a class="btn-orange" data-toggle="modal" data-target="#group-rules"
+                                                href="#">Join</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex flex-column">
+                            <div class="groups__header">
+                                <h5>Suggested groups</h5>
+                            </div>
+
+                            <div class="groups__box">
+
+
+                                <div class="groups__block d-flex">
+                                    <div class="groups__block-left">
+                                        <figure></figure>
+                                    </div>
+
+                                    <div class="groups__block-right d-flex w-100">
+                                        <div class="groups__block-text w-100">
+                                            <strong>Group name</strong>
+                                            <p>Group description 100 characters or less. But how many is one hundred?
+                                                Yup,
+                                                about
+                                                this many characters</p>
+                                            <div class="d-flex align-items-center groups__block-personal">
+                                                <strong>Private</strong>
+                                                <p class="d-flex align-items-center">Members <b>5</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100 groups__block-btn">
+                                            <a class="btn-orange" data-toggle="modal" data-target="#group-rules"
+                                                href="#">Join</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{> ../common/footer }}
+    </div>
+
+    <!-- Modals -->
+    {{> ../common/modals/create-goss }}
+    {{> ../common/modals/menu-mobile }}
+    {{> ../common/modals/add-photo }}
+    {{> ../common/modals/user-profile-menu }}
+    {{> ../common/modals/share-product }}
+    {{> ../common/modals/add-timeline-product }}
+    {{> ../common/modals/add-wishlist }}
+    {{> ../common/modals/search-parameters }}
+    {{> ../common/modals/cart }}
+    {{> ../common/modals/add-comment }}
+    {{> ../common/modals/store-info }}
+    {{> ../common/modals/shop-another }}
+    {{> ../common/modals/modals-notifications }}
+    {{> ../common/modals/goss-gallery }}
+    {{> ../common/modals/group-rules }}
+    {{> ../common/modals/group-access }}
+    <!-- /Modals -->
+</body>
+
+</html>

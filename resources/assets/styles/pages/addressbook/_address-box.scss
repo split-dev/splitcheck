@@ -20,8 +20,20 @@
     }
   }
 
+  .input-small {
+    max-width: 160px;
+  }
+
   textarea {
     padding-bottom: 90px;
+  }
+  textarea,
+  input,
+  select {
+    max-width: 312px;
+  }
+  .select-before {
+    max-width: 312px;
   }
   .form__single {
     margin-bottom: 16px !important;

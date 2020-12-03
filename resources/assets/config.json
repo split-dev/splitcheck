@@ -10,6 +10,7 @@
       "./styles/pages/profile/index.scss",
       "./styles/pages/shopping-preferences/index.scss",
       "./styles/pages/addressbook/index.scss",
+      "./styles/pages/groups/index.scss",
       "./styles/components/modals/modals.scss",
       "./styles/components/modals/modal-side.scss",
       "./styles/components/modals/modal-add-timeline.scss",
@@ -33,7 +34,8 @@
       "./styles/components/modals/modal-pets.scss",
       "./styles/components/modals/modal-child.scss",
       "./styles/components/modals/modal-invite.scss",
-      "./styles/components/modals/modal-unlink.scss"
+      "./styles/components/modals/modal-unlink.scss",
+      "./styles/components/modals/modal-groups.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",

@@ -105,14 +105,14 @@
                             <div class="other-links">
                                 <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
                                     <li class="other-links__item">
-                                        <a href="#" class="other-links__link position-relative disabled">
+                                        <a href="#" class="other-links__link position-relative">
                                             <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
                                             <i class="icon icon-baby"></i>
                                             <span>Kid account</span>
                                         </a>
                                     </li>
                                     <li class="other-links__item">
-                                        <a href="#" class="other-links__link position-relative disabled">
+                                        <a href="#" class="other-links__link position-relative">
                                             <!-- add class "active" what would the icon change -->
                                             <i class="icon icon-pet"></i>
                                             <span>Pet account</span>
@@ -216,20 +216,6 @@
                                 </ul>
                             </div>
                         </section>
-                        <div class="section-content">
-                            <div class="enable-box">
-                                <div class="enable-box__kids">
-                                    <span>You have Kid’s account disabled</span>
-                                    <a href="#" data-toggle="modal" data-target="#modal-child"
-                                        class="section-content__btn btn-border">Enable Kid’s Account</a>
-                                </div>
-                                <div class="enable-box__pets">
-                                    <span>You have Kid’s account disabled</span>
-                                    <a href="#" data-toggle="modal" data-target="#modal-pets"
-                                        class="section-content__btn btn-border">Enable Pet’s Account</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </aside>
                 <!-- /aside-left -->
@@ -306,6 +292,7 @@
                                     <button class="btn btn-blue">Save</button>
                                 </form>
                             </div>
+                            <div class="connections__mob"></div>
                             <span>Preferences</span>
                             <div class="gift-shopping">
                                 <div class="gift-shopping__header">
@@ -436,8 +423,8 @@
                                     </div>
                                 </div>
                             </div>
+
                             <span>Wishlist</span>
-                            <div class="connections__mob"></div>
                             <div class="wishlist-box">
                                 <div class="wishlist-box__header">
                                     <div class="wishlist-box__photo"></div>
@@ -516,17 +503,27 @@
 
                                     <div class="wishlist-box__total">
                                         <ul>
-                                            <li class="total"><span>Total:</span><span>AUD</span><span>$49.99</span>
+                                            <li class="total"><span>Total:</span>
+                                                <div><span>AUD</span><span>$49.99</span></div>
                                             </li>
-                                            <li><span>Pledged:</span><span>AUD</span><span>$20.00</span></li>
-                                            <li><span>Paid:</span><span>AUD</span><span>$0.00</span></li>
+                                            <li><span>Pledged:</span>
+                                                <div><span>AUD</span><span>$20.00</span></div>
+                                            </li>
+                                            <li><span>Paid:</span>
+                                                <div><span>AUD</span><span>$0.00</span></div>
+                                            </li>
                                             <li class="balance">
-                                                <span>Balance::</span><span>AUD</span><span>$100.00</span></li>
+                                                <span>Balance:</span>
+                                                <div><span>AUD</span><span>$100.00</span></div>
+                                            </li>
                                         </ul>
                                         <div class="wishlist-box__total--bottom">
-                                            <a href="#" class="btn-border btn-border--two">Edit info</a>
+                                            <a href="#" class="btn-border">Ask to contribute</a>
                                             <div class="remaning">
-                                                <span>Remaining:</span><span>AUD</span><span>$29.99</span>
+                                                <span>Remaining:</span>
+                                                <div class="remaining__price">
+                                                    <div><span>AUD</span><span>$29.99</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -631,17 +628,27 @@
 
                                     <div class="wishlist-box__total">
                                         <ul>
-                                            <li class="total"><span>Total:</span><span>AUD</span><span>$49.99</span>
+                                            <li class="total"><span>Total:</span>
+                                                <div><span>AUD</span><span>$49.99</span></div>
                                             </li>
-                                            <li><span>Pledged:</span><span>AUD</span><span>$20.00</span></li>
-                                            <li><span>Paid:</span><span>AUD</span><span>$0.00</span></li>
+                                            <li><span>Pledged:</span>
+                                                <div><span>AUD</span><span>$20.00</span></div>
+                                            </li>
+                                            <li><span>Paid:</span>
+                                                <div><span>AUD</span><span>$0.00</span></div>
+                                            </li>
                                             <li class="balance">
-                                                <span>Balance::</span><span>AUD</span><span>$100.00</span></li>
+                                                <span>Balance:</span>
+                                                <div><span>AUD</span><span>$100.00</span></div>
+                                            </li>
                                         </ul>
                                         <div class="wishlist-box__total--bottom">
-                                            <a href="#" class="btn-border btn-border--two">Edit info</a>
+                                            <a href="#" class="btn-border">Ask to contribute</a>
                                             <div class="remaning">
-                                                <span>Remaining:</span><span>AUD</span><span>$29.99</span>
+                                                <span>Remaining:</span>
+                                                <div class="remaining__price">
+                                                    <div><span>AUD</span><span>$29.99</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

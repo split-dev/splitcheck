@@ -3,6 +3,12 @@
   border-radius: 8px;
   background-color: #fff;
   margin-bottom: 16px;
+  overflow: hidden;
+  @media (max-width: 991px) {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto 16px;
+  }
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -50,6 +56,17 @@
     justify-content: space-between;
     padding: 17px 23px 28px 12px;
     position: relative;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      padding-bottom: 16px;
+    }
+    > div {
+      &:first-of-type {
+        @media (max-width: 575px) {
+          width: 100%;
+        }
+      }
+    }
     &::after {
       content: url("images/icons/line-silver.svg");
       position: absolute;
@@ -82,6 +99,12 @@
     &-function {
       display: flex;
       flex-direction: column;
+      @media (max-width: 575px) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
       a {
         color: #335491 !important;
         font-size: 16px;
@@ -93,6 +116,9 @@
         }
         &:first-of-type {
           margin-bottom: 20px;
+          @media (max-width: 575px) {
+            margin-bottom: 0;
+          }
         }
         &.reserved {
           &::before {
@@ -124,6 +150,9 @@
     position: relative;
     padding: 16px 12px 12px 20px;
     justify-content: space-between;
+    @media (max-width: 575px) {
+      flex-direction: column;
+    }
     &::after {
       content: url("images/icons/line-silver.svg");
       position: absolute;
@@ -133,6 +162,9 @@
     }
   }
   &__left {
+    @media (max-width: 575px) {
+      margin-bottom: 24px;
+    }
     > span {
       color: #828282;
       font-size: 12px;
@@ -175,6 +207,14 @@
         font-weight: 400;
         line-height: 14px;
         margin-bottom: 7px;
+        white-space: nowrap;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        @media (max-width: 575px) {
+          justify-content: space-between;
+          padding-left: 0 !important;
+        }
         &.total {
           color: #0b0212;
           font-size: 14px;
@@ -182,13 +222,21 @@
           line-height: 14px;
           text-align: left;
           margin-bottom: 16px;
-          padding-left: 16px;
+          padding-left: 17px;
+        }
+        > div {
+          display: inline-block;
+          @media (max-width: 575px) {
+            display: inline-flex;
+            width: 115px;
+            justify-content: space-between;
+          }
         }
         &.balance {
           color: #2f5095;
         }
         &:nth-child(3) {
-          padding-left: 23px;
+          padding-left: 24px;
         }
         span {
           display: inline-block;
@@ -202,12 +250,43 @@
         }
       }
     }
+    .btn-border {
+      @media (max-width: 575px) {
+        max-width: 100%;
+      }
+    }
     &--bottom {
       .remaning {
         display: flex;
         align-items: flex-end;
         margin-top: 8px;
         text-align: left;
+        @media (max-width: 575px) {
+          justify-content: space-between;
+          margin-top: 8px;
+        }
+        .remaining__price {
+          display: flex;
+          align-items: flex-end;
+          > div {
+            display: inline-flex;
+            align-items: flex-end;
+            @media (max-width: 575px) {
+              display: inline-flex;
+              width: 115px;
+              justify-content: space-between;
+            }
+            span {
+              &:first-of-type {
+                padding-left: 2px;
+                margin-right: 12px;
+                @media (max-width: 575px) {
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+        }
         span {
           color: #f97d00;
           font-size: 14px;
@@ -226,6 +305,17 @@
     align-items: center;
     justify-content: flex-end;
     padding: 24px 12px 12px;
+    .btn-border-orange {
+      @media (max-width: 575px) {
+        margin-right: 0 !important;
+        max-width: 100%;
+      }
+    }
+    .btn-orange {
+      @media (max-width: 575px) {
+        display: none;
+      }
+    }
     a {
       max-width: 160px;
       &:first-of-type {

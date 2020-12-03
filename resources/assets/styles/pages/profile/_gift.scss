@@ -7,6 +7,9 @@
     width: 100%;
     padding: 24px;
     cursor: pointer;
+    @media (max-width: 575px) {
+      padding: 24px 40px 24px 24px;
+    }
     &:after {
       content: url("images/icons/arrow-shop.svg");
       position: absolute;
@@ -24,6 +27,10 @@
       font-weight: 500;
       text-align: left;
       margin-bottom: 0;
+      text-transform: uppercase;
+      @media (max-width: 575px) {
+        line-height: 28px;
+      }
     }
   }
   &__body {

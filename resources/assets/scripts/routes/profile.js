@@ -1,11 +1,15 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper/swiper-bundle';
 import SimpleScrollbar from 'simple-scrollbar';
+import Dropzone from 'dropzone';
+import Cropper from 'cropperjs';
 import 'jquery-mask-plugin'
 import 'lightgallery/dist/js/lightgallery-all.min';
 
 export default {
   init() {
+
+    Dropzone.autoDiscover = false;
 
     $('.groups__toggle').on('click', function() {
       $(this).next().slideToggle(400);
@@ -271,6 +275,57 @@ export default {
             } else if(activeSlide < swiperTimelineFollower.activeIndex) {
               countSlide($(event.el).parent(), 'next')
               activeSlide = swiperTimelineFollower.activeIndex;
+            }
+            
+            // left
+          });
+        }
+        if($('.connections__select--friends-full')) {
+          const optionForTimelinefriendFull = {
+            slidesPerView: 4,
+            setWrapperSize: false,
+            simulateTouch: false,
+            preventInteractionOnTransition: true,
+            mousewheel: true,
+            navigation: {
+              nextEl: '.connections__select--friends-full .swiper-button-next',
+              prevEl: '.connections__select--friends-full .swiper-button-prev',
+            },
+            breakpoints: {
+              1260: {
+                slidesPerView: 4,
+              },
+              992: {
+                slidesPerView: 3,
+                // freeMode: true,
+              },
+              360: {
+                slidesPerView: 4,
+              },
+              250: {
+                slidesPerView: 4,
+                setWrapperSize: false,
+                simulateTouch: false,
+                preventInteractionOnTransition: true,
+                mousewheel: true,
+                // freeMode: true,
+              },
+            },
+            on: {
+              init: function (event) {
+                initNumber(event.params.slidesPerView, $(event.el).parent());
+              },
+            },
+          }
+          let swiperTimelinefriendFull = new Swiper('.connections__select--friends-full .swiper-container', optionForTimelinefriendFull);
+          let activeSlide = 0;
+          swiperTimelinefriendFull.on('slideChange', function(event){
+            if(activeSlide > swiperTimelinefriendFull.activeIndex) {
+              activeSlide = swiperTimelinefriendFull.activeIndex;
+              countSlide($(event.el).parent(), 'prev')
+            } else if(activeSlide < swiperTimelinefriendFull.activeIndex) {
+              countSlide($(event.el).parent(), 'next')
+              activeSlide = swiperTimelinefriendFull.activeIndex;
             }
             
             // left
@@ -546,6 +601,101 @@ export default {
     $('.gift-shopping__header').click( function() {
       $(this).next().slideToggle();
     })
+
+    //emotion script
+    function emotionCalc(item) {
+      let atr = Number($(item).attr('data-progress'));
+      $(item).children('.line').css('height', atr + 'px')
+    }
+
+    if($('.statistic-box__emotion')) {
+      let array = $('.progress');
+      for(let i = 0; i<= array.length; i++) {
+        emotionCalc(array[i]);
+      }
+    }
+
+    //* Dropzone and Cropper
+    {
+      if($('.profile-face__background').hasClass('profile-face__background')) {
+        console.log(true);
+        const btnCrop = document.querySelector('.btn-drop-photo-crop--bg');
+      const containerCrop = document.querySelector('.drop-photo__start--bg');
+
+      const myDropzone = new Dropzone('.drop-photo--bg', {
+        url: '/file/post',
+        thumbnailWidth: null,
+        thumbnailHeight: null,
+        maxFiles: 1,
+
+        transformFile: function(file, done) {
+          let myDropZone = this;
+
+          // Create the image editor overlay
+          let editor = document.createElement('div');
+          editor.style.backgroundColor = '#e8ebf2';
+          editor.style.position = 'absolute';
+          editor.style.top = 0;
+          editor.style.bottom = 0;
+          editor.style.left = 0;
+          editor.style.right = 0;
+          editor.style.zIndex = 2;
+          this.previewsContainer.appendChild(editor)
+          // document.body.appendChild(editor);
+
+          // Create confirm button at the top left of the viewport
+          // let buttonConfirm = document.createElement('button');
+          // buttonConfirm.style.position = 'absolute';
+          // buttonConfirm.style.left = '10px';
+          // buttonConfirm.style.top = '10px';
+          // buttonConfirm.style.zIndex = 9999;
+          // buttonConfirm.textContent = 'Confirm';
+          // editor.appendChild(buttonConfirm);
+
+
+          btnCrop.addEventListener('click', function() {
+            // Get the canvas with image data from Cropper.js
+            let canvas = cropper.getCroppedCanvas({
+              maxWidth: 4096,
+              maxHeight: 4096,
+            });
+
+            // Turn the canvas into a Blob (file object without a name)
+            canvas.toBlob(function(blob) {
+              // Create a new Dropzone file thumbnail
+              myDropZone.createThumbnail(
+                blob,
+                myDropZone.options.thumbnailWidth,
+                myDropZone.options.thumbnailHeight,
+                myDropZone.options.thumbnailMethod,
+                false,
+                function(dataURL) {
+
+                  // Update the Dropzone file thumbnail
+                  myDropZone.emit('thumbnail', file, dataURL);
+                  // Return the file to Dropzone
+                  done(blob);
+              });
+            });
+
+            // Remove the editor from the view
+            editor.parentNode.removeChild(editor);
+          });
+
+          // Create an image node for Cropper.js
+          let image = new Image();
+          image.src = URL.createObjectURL(file);
+          editor.appendChild(image);
+
+          // Create Cropper.js
+          let cropper = new Cropper(image, {
+            aspectRatio: NaN,
+            viewMode: 3,
+          });
+        },
+      });
+      }
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

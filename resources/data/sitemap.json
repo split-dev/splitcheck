@@ -42,6 +42,11 @@
       "url": "/profile-shop.html"
     },
     {
+      "title": "Profile-group",
+      "description": "Profile-group",
+      "url": "/profile-groups.html"
+    },
+    {
       "title": "Shopping-preferences",
       "description": "shopping-preferences",
       "url": "/shopping-preferences.html"

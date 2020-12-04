@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="17px" viewBox="0 0 360 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <defs>
+        <path d="M48,6.72 L47.999,6.719 L40,-4.4408921e-16 L384,-4.4408921e-16 C386.761424,-6.31761035e-17 389,2.23857625 389,5 L389,6.72 L48,6.72 Z" id="path-1"></path>
+        <filter x="-2.9%" y="-96.7%" width="105.4%" height="353.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0438100919   0 0 0 0 0.00639482308   0 0 0 0 0.0722181574  0 0 0 0.0835336538 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="orders-dispute-(1)" transform="translate(-414.000000, -1973.000000)">
+            <g id="order" transform="translate(360.000000, 443.000000)">
+                <g id="Group-21" transform="translate(-0.000000, 1369.000000)">
+                    <g id="Combined-Shape" transform="translate(20.000000, 164.000000)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

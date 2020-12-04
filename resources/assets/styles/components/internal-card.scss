@@ -207,6 +207,12 @@
       &__body {
         > p {
           font-size: 18px;
+          b {
+            color: #0b0212;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+          }
         }
       }
       &__other {

@@ -11,6 +11,11 @@
 
     color: theme-color("gray");
 
+    &.blue {
+      color: #335491;
+      margin-top: 48px;
+    }
+
     span {
       margin-right: 4px;
     }
@@ -153,7 +158,6 @@
     }
 
     .internal-card {
-
       &__img {
         padding: 0 !important;
         overflow: hidden;

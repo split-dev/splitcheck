@@ -17,6 +17,21 @@
   }
 }
 .profile {
+  .main {
+    .section-content__title {
+      img {
+        margin-right: 9px;
+      }
+      span {
+        color: #35558f;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        text-transform: none;
+      }
+    }
+  }
   .header,
   .footer {
     .container {

@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="profile home">
+    {{> ../common/mobile-menu }}
+    {{> ../common/mobile-menu-bottom }}
+    <div class="section-blur theme-background-one" data-class="maze">
+        {{> ../common/header-next }}
+        <div class="container">
+            <div class="main-content position-relative d-flex align-items-start justify-content-between">
+                <!-- aside-left -->
+                <aside class="aside-left">
+                    <div class="scroll-div">
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">shop
+                                for</span>
+                            <div class="personal-card d-flex align-items-center flex-column overflow-hidden">
+                                <div
+                                    class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                    <img src="" alt="">
+                                    <span class="personal-card__symbol">JS</span>
+                                </div>
+                                <p class="personal-card__name">John Smith</p>
+                                <ul
+                                    class="personal-card__list d-flex align-items-center flex-column list-unstyled mb-0">
+                                    <li class="personal-card__item">
+                                        <a href="#" class="personal-card__link">
+                                            <span>John’s wishlist</span>
+                                            <span class="personal-card__num">12</span>
+                                        </a>
+                                    </li>
+                                    <li class="personal-card__item">
+                                        <a href="#" class="personal-card__link">
+                                            <span>View preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a href="#" data-toggle="modal" data-target="#shop-another"
+                                class="section-content__btn btn-border">Shop
+                                for another</a>
+                        </section>
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">My
+                                profile</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-baby"></i>
+                                            <span>Kid account</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-pet"></i>
+                                            <span>Pet account</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-shipping"></i>
+                                            <span>My orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-book"></i>
+                                            <span>Address book</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-settings-oval"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">Other
+                                links</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-gift active"></i>
+                                            <span>Spoil yourself</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-social-media"></i>
+                                            <span>Open public goss</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-discount"></i>
+                                            <span>Snatch a bargain</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-mail"></i>
+                                            <span>Shared orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-group"></i>
+                                            <span>My groups</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-heart"></i>
+                                            <span>My family</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" data-toggle="modal" data-target="#notification"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-notification"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Alerts</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-setting"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Shopping preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </aside>
+                <!-- /aside-left -->
+                <div class="profile__list d-flex flex-column w-100">
+                    <div class="profile-face w-100 d-flex flex-column">
+                        <div class="profile-face__background w-100 d-flex photo"
+                            style="background-image: url('images/profiles/Rectangle-1.jpg');">
+                            <a href="#" class="btn-blue-full"><img src="images/icons/camera-24px.svg" alt="">Upload
+                                cover photo</a>
+                            <a href="#" class="btn-border">Or use colour
+                                <ul class="select-color">
+                                    <li class="select"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="profile-face__info d-flex align-items-center justify-content-between">
+                            <div class="profile-face__photo d-flex justify-content-center align-items-center"
+                                style="background-image: url('images/profiles/oval__profile--img.png');">
+                                <a href="#add-photo" data-toggle="modal" class="profile-face__hover d-flex flex-column">
+                                    <img src="images/icons/photo.svg" alt="photo">
+                                    <span>Upload photo</span>
+                                </a>
+                            </div>
+                            <div class="profile-face__name d-flex align-items-end">
+                                <strong>Ann Doe</strong>
+                            </div>
+                            <div class="profile-face__date">
+                                <span>Registered on SplitChek since 07.10.2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__bottom d-flex">
+                        <div class="about-me d-flex flex-column w-100">
+                            <span>About me</span>
+                            <div class="about-me__box about-me__box--tell">
+                                <div class="d-flex w-100 flex-column not--margin">
+                                    <div class="about-me__info--full">
+                                        <p>Genetix Nutrition products are devoloped by an internal research team
+                                            assisted by Grant Mayo to ensure the greatest quality and product
+                                            performance. Particular attention has been given in the manufacturing
+                                            process of Genetix Nutrition for excellent taste </p>
+                                    </div>
+                                </div>
+                                <form action="" class="about-me__form w-100 hide">
+                                    <p>Write about yourself. If you are using SplitChek as your business <br> profile,
+                                        try to be professional
+                                    </p>
+                                    <div class="w-100 max-text">
+                                        <textarea placeholder="Write something"></textarea>
+                                        <div class="count"><span>0</span>/<span>400</span></div>
+                                    </div>
+                                    <strong>Country & phone</strong>
+                                    <p>We are going to send you a text message to verify your number. We use your mobile
+                                        to verify your order
+                                        and also update you about your search and delivery status</p>
+                                    <div class="d-flex two__input">
+                                        <div class="d-flex flex-column">
+                                            <label>Country</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <label>Cell/number</label>
+                                            <input class="phone" type="text">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-blue">Save</button>
+                                </form>
+                            </div>
+                            <div class="connections__mob"></div>
+                            <span>Preferences</span>
+                            <div class="gift-shopping">
+                                <div class="gift-shopping__header">
+                                    <h3>My gift shopping preferences</h3>
+                                </div>
+                                <div class="gift-shopping__body" style="display: none;">
+                                    <div class="gift-shopping__info">
+                                        <p>Genetix Nutrition products are devoloped by an internal research team
+                                            assisted by Grant Mayo to ensure the greatest quality and product
+                                            performance. Particular attention has been given in the manufacturing
+                                            process of Genetix Nutrition for excellent taste </p>
+                                        <a href="#" class="btn-border btn-border--two">Edit info</a>
+                                    </div>
+                                    <div class="gift-shopping__tags">
+                                        <span>Brands i like:</span>
+                                        <ul class="keywords__list d-flex align-items-center flex-wrap">
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                        </ul>
+                                        <span>Stores i normally shop from:</span>
+                                        <ul class="keywords__list d-flex align-items-center flex-wrap">
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4>Gift categories</h4>
+                                    <div class="gift-shopping__categories">
+                                        <div class="gift-shopping__categories--single">
+                                            <strong class="gift-shopping__categories--title">Body Care</strong>
+                                            <ul>
+                                                <li>Beauty Products</li>
+                                                <li>Essential Oils</li>
+                                            </ul>
+                                        </div>
+                                        <div class="gift-shopping__categories--single">
+                                            <strong class="gift-shopping__categories--title">Household</strong>
+                                            <ul>
+                                                <li>Kitchen Tools and Gadgets</li>
+                                            </ul>
+                                        </div>
+                                        <div class="gift-shopping__categories--single">
+                                            <strong class="gift-shopping__categories--title">Other</strong>
+                                            <ul>
+                                                <li>Sports & Training</li>
+                                                <li>Insurance</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h4>Food and diet</h4>
+                                    <div class="gift-shopping__tags">
+                                        <span>Foood i like:</span>
+                                        <ul class="keywords__list d-flex align-items-center flex-wrap">
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                        </ul>
+                                        <span>Diet plants i would like as a gift:</span>
+                                        <ul class="keywords__list d-flex align-items-center flex-wrap">
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4>Meaningful gifts</h4>
+                                    <div class="gift-shopping__tags">
+                                        <span>Gifts i would like to receive on early dating :</span>
+                                        <ul class="keywords__list d-flex align-items-center flex-wrap">
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                        </ul>
+                                        <span>If someone loves me, gifts that symbolises it:</span>
+                                        <ul class="keywords__list d-flex align-items-center flex-wrap">
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                        </ul>
+                                        <span>Don’t buy me as a gift:</span>
+                                        <ul class="keywords__list d-flex align-items-center flex-wrap">
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link--unlink">#Brand</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4>Hobbies and other</h4>
+                                    <div class="gift-shopping__tags">
+                                        <span>My hobbies and interests :</span>
+                                        <ul class="keywords__list d-flex align-items-center flex-wrap">
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                            <li class="keywords__item">
+                                                <a href="#" class="keywords__link">#Brand number two</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span>Wishlist</span>
+                            <div class="wishlist-box">
+                                <div class="wishlist-box__header">
+                                    <div class="wishlist-box__photo"></div>
+                                    <div class="wishlist-box__info">
+                                        <strong>Store name here</strong>
+                                        <span>Coomera - Queensland</span>
+                                    </div>
+                                </div>
+                                <div class="wishlist-box__item">
+                                    <div class="d-flex align-items-center">
+                                        <div class="wishlist-box__item-photo"
+                                            style="background-image: url('images/profiles/variant_mini.jpg');"></div>
+                                        <div class="wishlist-box__detail">
+                                            <strong>Lorem ipsum dolor sit amet lorem ipsum dolor</strong>
+                                            <div class="d-flex align-items-end">
+                                                <span class="wishlist-box__item-price">$49.99</span>
+                                                <div class="wishlist-box__item-count"><span>1</span>x<span>250ml</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wishlist-box__item-function">
+                                        <a href="#" class="reserved">reserved</a>
+                                        <a href="#" class="remove">remove</a>
+                                    </div>
+                                </div>
+                                <div class="wishlist-box__result d-flex">
+                                    <div class="wishlist-box__left">
+                                        <span>The following have access to this item</span>
+                                        <div class="connections__select connections__select--family d-flex flex-column">
+                                            <div class="d-flex">
+                                                <div class="connections__add align-items-center">
+                                                    <a href="#">
+                                                        <img src="images/profiles/add.svg" alt="avatar">
+                                                    </a>
+                                                </div>
+                                                <div class="connections__slider position-relative">
+                                                    <span class="count-slider" data-count="3"></span>
+                                                    <div class="swiper-container">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                    <img src="" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link-light card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                    <img src="" alt="avatar">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>Contributed</span>
+                                        <ul class="wishlist-box__contrib">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="wishlist-box__total">
+                                        <ul>
+                                            <li class="total"><span>Total:</span>
+                                                <div><span>AUD</span><span>$49.99</span></div>
+                                            </li>
+                                            <li><span>Pledged:</span>
+                                                <div><span>AUD</span><span>$20.00</span></div>
+                                            </li>
+                                            <li><span>Paid:</span>
+                                                <div><span>AUD</span><span>$0.00</span></div>
+                                            </li>
+                                            <li class="balance">
+                                                <span>Balance:</span>
+                                                <div><span>AUD</span><span>$100.00</span></div>
+                                            </li>
+                                        </ul>
+                                        <div class="wishlist-box__total--bottom">
+                                            <a href="#" class="btn-border">Ask to contribute</a>
+                                            <div class="remaning">
+                                                <span>Remaining:</span>
+                                                <div class="remaining__price">
+                                                    <div><span>AUD</span><span>$29.99</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="wishlist-box__footer">
+                                    <a href="#" class="btn-border-orange btn-border--two">Add to Cart</a>
+                                    <a href="#" class="btn btn-orange">Buy Now</a>
+                                </div>
+                            </div>
+                            <div class="wishlist-box">
+                                <div class="wishlist-box__header">
+                                    <div class="wishlist-box__photo"></div>
+                                    <div class="wishlist-box__info">
+                                        <strong>Store name here</strong>
+                                        <span>Coomera - Queensland</span>
+                                    </div>
+                                </div>
+                                <div class="wishlist-box__item">
+                                    <div class="d-flex align-items-center">
+                                        <div class="wishlist-box__item-photo"
+                                            style="background-image: url('images/profiles/variant_mini.jpg');"></div>
+                                        <div class="wishlist-box__detail">
+                                            <strong>Lorem ipsum dolor sit amet lorem ipsum dolor</strong>
+                                            <div class="d-flex align-items-end">
+                                                <span class="wishlist-box__item-price">$49.99</span>
+                                                <div class="wishlist-box__item-count"><span>1</span>x<span>250ml</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wishlist-box__item-function">
+                                        <a href="#" class="reserved">reserved</a>
+                                        <a href="#" class="remove">remove</a>
+                                    </div>
+                                </div>
+                                <div class="wishlist-box__result d-flex">
+                                    <div class="wishlist-box__left">
+                                        <span>The following have access to this item</span>
+                                        <div
+                                            class="connections__select connections__select--store-slide d-flex flex-column">
+                                            <div class="d-flex">
+                                                <div class="connections__add align-items-center">
+                                                    <a href="#">
+                                                        <img src="images/profiles/add.svg" alt="avatar">
+                                                    </a>
+                                                </div>
+                                                <div class="connections__slider position-relative">
+                                                    <span class="count-slider" data-count="3"></span>
+                                                    <div class="swiper-container">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                    <img src="" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>Contributed</span>
+                                        <ul class="wishlist-box__contrib">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="wishlist-box__total">
+                                        <ul>
+                                            <li class="total"><span>Total:</span>
+                                                <div><span>AUD</span><span>$49.99</span></div>
+                                            </li>
+                                            <li><span>Pledged:</span>
+                                                <div><span>AUD</span><span>$20.00</span></div>
+                                            </li>
+                                            <li><span>Paid:</span>
+                                                <div><span>AUD</span><span>$0.00</span></div>
+                                            </li>
+                                            <li class="balance">
+                                                <span>Balance:</span>
+                                                <div><span>AUD</span><span>$100.00</span></div>
+                                            </li>
+                                        </ul>
+                                        <div class="wishlist-box__total--bottom">
+                                            <a href="#" class="btn-border">Ask to contribute</a>
+                                            <div class="remaning">
+                                                <span>Remaining:</span>
+                                                <div class="remaining__price">
+                                                    <div><span>AUD</span><span>$29.99</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="wishlist-box__footer">
+                                    <a href="#" class="btn-border-orange btn-border--two">Add to Cart</a>
+                                    <a href="#" class="btn btn-orange">Buy Now</a>
+                                </div>
+                            </div>
+                            <span class="recomend">Recommended products</span>
+                            <section class="section-content">
+                                <div class="main__card main__card--bias position-relative">
+                                    <div class="internal-card internal-card--shop internal-card--shop--triple--video">
+                                        <div class="internal-card__header">
+                                            <a href="#"
+                                                class="internal-card__profile d-flex flex-wrap align-items-start">
+                                                <figure class="internal-card__avatar">
+                                                    <img src="images/profiles/img1.png" alt="avatar">
+                                                    <span class="internal-card__symbol"></span>
+                                                </figure>
+                                                <div class="internal-card__head-info">
+                                                    <h2 class="internal-card__name internal-card__name--orange">Abstract
+                                                        Field of joy - Art print</h2>
+                                                    <p
+                                                        class="internal-card__subname internal-card__subname--light d-flex flex-column">
+                                                        <span>Coomera - Queensland</span>
+                                                        <span>Available: <b>Online only</b></span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="internal-card__body">
+                                            <div
+                                                class="internal-card__grid internal-card__grid--triple internal-card__grid--margin-bt grid-gallery d-flex flex-wrap">
+                                                <figure class="grid-gallery__width-1-1">
+                                                    <a class="grid-gallery__selector position-relative"
+                                                        href="images/shop/cart-img-1.png"
+                                                        data-src="images/shop/cart-img-1.png">
+                                                        <div class="grid-gallery__post-img"
+                                                            style="background-image: url(images/shop/cart-img-1.png);">
+                                                        </div>
+                                                    </a>
+                                                </figure>
+                                                <figure class="grid-gallery__width-1-2 video">
+                                                    <a class="grid-gallery__selector position-relative grid-gallery__selector--video"
+                                                        href="images/feed/feed-img1.jpg">
+                                                        <div class="grid-gallery__post-img"
+                                                            style="background-image: url(images/feed/feed-img1.jpg);"
+                                                            data-src="images/feed/feed-img1.jpg">
+                                                        </div>
+                                                    </a>
+                                                </figure>
+
+                                                <figure
+                                                    class="grid-gallery__width-1-2 grid-gallery__main-img position-relative grid-gallery__grid-margin-top grid-gallery__more"
+                                                    data-numbers="3">
+                                                    <a class="grid-gallery__selector" href="images/shop/cart-img-2.png"
+                                                        data-src="images/shop/cart-img-2.png">
+                                                        <div class="grid-gallery__post-img"
+                                                            style="background-image: url(images/shop/cart-img-2.png);">
+                                                        </div>
+                                                    </a>
+                                                </figure>
+
+                                                <div class="grid-gallery__hidden">
+                                                    <figure class="grid-gallery__main-img position-relative">
+                                                        <a class="grid-gallery__selector"
+                                                            href="images/shop/cart-img-2.png"
+                                                            data-src="images/shop/cart-img-2.png">
+                                                            <div class="grid-gallery__post-img"
+                                                                style="background-image: url(images/shop/cart-img-2.png);">
+                                                            </div>
+                                                        </a>
+                                                    </figure>
+                                                    <figure class="grid-gallery__main-img position-relative">
+                                                        <a class="grid-gallery__selector"
+                                                            href="images/shop/cart-img-2.png"
+                                                            data-src="images/shop/cart-img-2.png">
+                                                            <div class="grid-gallery__post-img"
+                                                                style="background-image: url(images/shop/cart-img-2.png);">
+                                                            </div>
+                                                        </a>
+                                                    </figure>
+                                                    <figure class="grid-gallery__main-img position-relative">
+                                                        <a class="grid-gallery__selector"
+                                                            href="images/shop/cart-img-2.png"
+                                                            data-src="images/shop/cart-img-2.png">
+                                                            <div class="grid-gallery__post-img"
+                                                                style="background-image: url(images/shop/cart-img-2.png);">
+                                                            </div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="internal-card__price internal-card__price--discount d-flex align-items-center flex-wrap">
+                                                <span>$49.99</span>
+                                                <span>$49.99</span>
+
+                                                <div class="internal-card__promo">
+                                                    <span>Available in Bargains</span>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                To help your skin thrive, use Moroccan argan extract which conditions
+                                                and moisturizes while
+                                                chlorella brings a boost of skin-benefiting vitamins and omega 3s for
+                                                extra glowing goodness
+                                                <a href="#">...Read More</a>
+                                            </p>
+                                        </div>
+                                        <div class="internal-card__bottom">
+                                            <div class="reaction">
+                                                <div class="reaction__top">
+                                                    <ul class="reaction__list-icon list-unstyled mb-0">
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-expensive"></i>
+                                                            <span>1</span>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-thumbdown"></i>
+                                                            <span>1</span>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-thumbup"></i>
+                                                            <span>1</span>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-favorite"></i>
+                                                            <span>1</span>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="reaction__text">0 comments</span>
+                                                </div>
+                                                <div class="reaction__bottom">
+                                                    <div class="reaction__wrap-link reaction__wrap-link--reaction">
+
+                                                        <i class="icon icon-feedback"></i>
+                                                        <span>feedback</span>
+
+                                                        <div class="reaction-btn-like reaction-btn-like--shop">
+                                                            <ul class="reaction-btn-like__list list-unstyled mb-0">
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#"
+                                                                        class="reaction-btn-like__link d-flex flex-column align-items-center justify-content-center">
+                                                                        <i class="icon icon-expensive"></i>
+                                                                        <span>Expensive</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#"
+                                                                        class="reaction-btn-like__link d-flex flex-column align-items-center justify-content-center">
+                                                                        <i class="icon icon-thumbdown"></i>
+                                                                        <span>Doesnt work</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#"
+                                                                        class="reaction-btn-like__link d-flex flex-column align-items-center justify-content-center">
+                                                                        <i class="icon icon-thumbup"></i>
+                                                                        <span>Works</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#"
+                                                                        class="reaction-btn-like__link d-flex flex-column align-items-center justify-content-center">
+                                                                        <i class="icon icon-favorite"></i>
+                                                                        <span>Love it</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reaction__wrap-link">
+                                                        <a href="#" class="reaction__link">
+                                                            <i class="icon icon-comment"></i>
+                                                            <span>comment</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="reaction__wrap-link reaction__wrap-link--next-to-last">
+                                                        <a href="#" class="reaction__link">
+                                                            <i class="icon icon-plus-blue"></i>
+                                                            <span>add to timeline</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="reaction__wrap-link reaction__wrap-link--last">
+                                                        <a href="#" class="reaction__link">
+                                                            <i class="icon icon-star"></i>
+                                                            <span>wishlist</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="internal-card__other">
+                                                <a href="#" class="btn btn-orange">Add to Cart</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- option  add class: - options--open -->
+                                        <div class="options">
+                                            <button type="button" class="options__btn" data-type="options">
+                                                <i class="icon icon-more"></i>
+                                            </button>
+
+                                            <div class="options__dropdown">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Share</a></li>
+                                                    <li><a href="#">Not gift worthy</a></li>
+                                                    <li><a href="#store-info" data-toggle="modal">About the store</a>
+                                                    </li>
+                                                    <li><a href="#">Report abuse</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="connections__wrapper">
+                            <div class="connections">
+                                <span>connections</span>
+                                <div class="connections__box">
+                                    <span>Friends</span>
+                                    <div
+                                        class="connections__select connections__select--friends-full d-flex flex-column">
+                                        <div class="d-flex">
+                                            <div class="connections__slider position-relative">
+                                                <span class="count-slider" data-count="4"></span>
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/user-1.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                <img src="" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link-light card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                <img src="" alt="avatar">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100">
+                                            <a href="#" class="btn btn-blue">Request to Join</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="connections__box">
+                                    <span>followers</span>
+                                    <div class="connections__select connections__select--follower d-flex flex-column">
+                                        <div class="d-flex">
+                                            <div class="connections__slider position-relative">
+                                                <span class="count-slider" data-count="4"></span>
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/img2.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact">
+                                                                <img src="images/profiles/user-1.png" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                <img src="" alt="avatar">
+                                                                <span>JS</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#"
+                                                                class="card-timeline__link-light card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                <img src="" alt="avatar">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex w-100">
+                                            <a href="#" class="btn-border btn-border--two">Unfollow</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    {{> ../common/footer }}
+    </div>
+
+    <!-- Modals -->
+    {{> ../common/modals/create-goss }}
+    {{> ../common/modals/menu-mobile }}
+    {{> ../common/modals/add-photo }}
+    {{> ../common/modals/user-profile-menu }}
+    {{> ../common/modals/share-product }}
+    {{> ../common/modals/add-timeline-product }}
+    {{> ../common/modals/add-wishlist }}
+    {{> ../common/modals/search-parameters }}
+    {{> ../common/modals/cart }}
+    {{> ../common/modals/add-comment }}
+    {{> ../common/modals/store-info }}
+    {{> ../common/modals/shop-another }}
+    {{> ../common/modals/modals-notifications }}
+    {{> ../common/modals/message-overlay }}
+    {{> ../common/modals/goss-gallery }}
+    {{> ../common/modals/menu-mobile--not-shop }}
+    {{> ../common/modals/galery-view }}
+    {{> ../common/modals/modal-pets }}
+    {{> ../common/modals/modal-child }}
+    {{> ../common/modals/modal-invite }}
+    {{> ../common/modals/modal-unlink }}
+    <!-- /Modals -->
+</body>
+
+</html>

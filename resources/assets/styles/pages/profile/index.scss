@@ -9,7 +9,26 @@
 @import "connections";
 @import "gift";
 @import "wishlist-box";
+@import "individual";
 
+.individual {
+  @include media-breakpoint-down(sm) {
+    .main__card--bias {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
+  .section-content {
+    @include media-breakpoint-down(md) {
+      &:first-of-type {
+        position: relative !important;
+        top: 0 !important;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}
 .profile__bottom {
   margin-top: 24px;
   @media (max-width: 991px) {

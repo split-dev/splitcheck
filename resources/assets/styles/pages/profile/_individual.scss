@@ -1,0 +1,23 @@
+.individual {
+  &__title-hide {
+    @media (max-width: 991px) {
+      display: none !important;
+    }
+  }
+  .comments-box__form {
+    @media (max-width: 575px) {
+      padding: 0;
+    }
+  }
+  &__section {
+    margin-top: 24px;
+    display: none;
+    padding: 0 17px 0 17px;
+    @media (max-width: 991px) {
+      display: block;
+    }
+    .section-content__title {
+      margin-bottom: 20px;
+    }
+  }
+}

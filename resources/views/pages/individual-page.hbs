@@ -5,7 +5,7 @@
     {{> ../common/head }}
 </head>
 
-<body class="profile home">
+<body class="profile home individual">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
     <div class="section-blur theme-background-one" data-class="maze" id="background">
@@ -133,7 +133,7 @@
                                 </ul>
                             </div>
                         </section>
-                        <div class="section-content">
+                        <div class="section-content ">
                             <div class="enable-box">
                                 <div class="enable-box__kids">
                                     <span>You have Kid’s account disabled</span>
@@ -152,9 +152,101 @@
                 <!-- /aside-left -->
                 <!-- main -->
                 <main class="main">
-                    <section class="section-content">
+                    <section class="section-content individual__section">
                         <a href="#" data-toggle="modal" data-target="#goss"
                             class="section-content__title position-relative d-flex align-items-center">
+                            <span><img src="images/icons/back.svg" alt="back">Back</span>
+                        </a>
+                        <span
+                            class="section-content__title position-relative d-flex align-items-center">Statistic</span>
+                        <div class="statistic-box">
+                            <div class="statistic-box__head d-flex align-items-center justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <strong>200k</strong>
+                                    <span>Views</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <strong>500k</strong>
+                                    <span>Clicks</span>
+                                </div>
+                            </div>
+                            <ul class="statistic-box__post w-100">
+                                <li><span>reactions</span>
+                                    <ul class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                        <li class="reaction__item-icon">
+                                            <i class="icon icon-like"></i>
+                                        </li>
+                                        <li class="reaction__item-icon">
+                                            <i class="icon icon-heart-l"></i>
+                                        </li>
+                                        <li class="reaction__item-icon">
+                                            <i class="icon icon-happy"></i>
+                                        </li>
+                                        <li class="reaction__item-icon">
+                                            <i class="icon icon-surprised"></i>
+                                        </li>
+                                        <li class="reaction__item-icon">
+                                            <i class="icon icon-angry"></i>
+                                        </li>
+                                    </ul>
+                                    <b>437</b>
+                                </li>
+                                <li><span>comments</span> <b>65</b></li>
+                                <li><span>added to timeline</span> <b>8</b></li>
+                                <li><span>shared</span> <b>6</b></li>
+                            </ul>
+                            <div class="statistic-box__reaction w-100">
+                                <h4>Reactions</h4>
+                                <div class="statistic-box__emotion">
+                                    <ul>
+                                        <li>
+                                            <div class="progress" data-progress="100">
+                                                <div class="line blue"></div>
+                                            </div>
+                                            <i class="icon icon-like"></i>
+                                            <span>like</span>
+                                            <strong>200</strong>
+                                        </li>
+                                        <li>
+                                            <div class="progress" data-progress="90">
+                                                <div class="line red"></div>
+                                            </div>
+                                            <i class="icon icon-heart-l"></i>
+                                            <span>love</span>
+                                            <strong>170</strong>
+                                        </li>
+                                        <li>
+                                            <div class="progress" data-progress="3">
+                                                <div class="line"></div>
+                                            </div>
+                                            <i class="icon icon-happy"></i>
+                                            <span>joy</span>
+                                            <strong>2</strong>
+                                        </li>
+                                        <li>
+                                            <div class="progress" data-progress="35">
+                                                <div class="line"></div>
+                                            </div>
+                                            <i class="icon icon-surprised"></i>
+                                            <span>wow</span>
+                                            <strong>65</strong>
+                                        </li>
+                                        <li>
+                                            <div class="progress" data-progress="0">
+                                                <div class="line"></div>
+                                            </div>
+                                            <i class="icon icon-angry"></i>
+                                            <span>angry</span>
+                                            <strong>0</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-content  ">
+                        <a href="#" data-toggle="modal" data-target="#goss"
+                            class="section-content__title position-relative d-flex align-items-center individual__title-hide">
                             <span><img src="images/icons/back.svg" alt="back">Back</span>
                         </a>
                         <section class="section-content">
@@ -424,7 +516,7 @@
                         </section>
                         <span class="recomend">Recommended products</span>
                     </section>
-                    <section class="section-content">
+                    <section class="section-content d-none d-lg-block">
                         <div class="main__card main__card--bias position-relative">
                             <div class="internal-card internal-card--feed">
                                 <div class="internal-card__header">
@@ -578,7 +670,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="section-content">
+                    <section class="section-content d-none d-lg-block">
                         <div class="main__card main__card--bias position-relative">
                             <div class="internal-card internal-card--feed">
                                 <div class="internal-card__header">
@@ -732,7 +824,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="section-content">
+                    <section class="section-content d-none d-lg-block">
                         <div class="main__card main__card--bias position-relative">
                             <div class="internal-card internal-card--feed">
                                 <div class="internal-card__header">

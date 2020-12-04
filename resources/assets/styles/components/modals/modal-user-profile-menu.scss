@@ -6,6 +6,10 @@
 .modal.user-profile-menu {
   @import "modal-components/custom-form-for-modal-side";
 
+  .section-content__title-bold {
+    color: #315293;
+    font-weight: 500;
+  }
   .modal-content {
     .modal-body {
       padding: 24px 24px 80px;

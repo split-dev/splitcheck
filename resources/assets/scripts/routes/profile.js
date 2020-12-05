@@ -652,36 +652,6 @@ export default {
           // buttonConfirm.textContent = 'Confirm';
           // editor.appendChild(buttonConfirm);
 
-
-          btnCrop.addEventListener('click', function() {
-            // Get the canvas with image data from Cropper.js
-            let canvas = cropper.getCroppedCanvas({
-              maxWidth: 4096,
-              maxHeight: 4096,
-            });
-
-            // Turn the canvas into a Blob (file object without a name)
-            canvas.toBlob(function(blob) {
-              // Create a new Dropzone file thumbnail
-              myDropZone.createThumbnail(
-                blob,
-                myDropZone.options.thumbnailWidth,
-                myDropZone.options.thumbnailHeight,
-                myDropZone.options.thumbnailMethod,
-                false,
-                function(dataURL) {
-
-                  // Update the Dropzone file thumbnail
-                  myDropZone.emit('thumbnail', file, dataURL);
-                  // Return the file to Dropzone
-                  done(blob);
-              });
-            });
-
-            // Remove the editor from the view
-            editor.parentNode.removeChild(editor);
-          });
-
           // Create an image node for Cropper.js
           let image = new Image();
           image.src = URL.createObjectURL(file);

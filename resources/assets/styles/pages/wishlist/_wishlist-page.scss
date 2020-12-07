@@ -1,0 +1,53 @@
+.wishlist-page {
+  .connections__wrapper {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .personal-card__item {
+    &:first-child {
+      background-color: #eef3fd;
+    }
+  }
+  .internal-card__price {
+    margin-bottom: 10px;
+    span {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+  .recomend {
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  &__text-block {
+    margin-left: 50px;
+  }
+  &__box {
+    padding: 15px 20px 15px 20px;
+    max-width: 560px;
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    figure {
+      margin: 0;
+    }
+    p {
+      font-size: 14px !important;
+    }
+    h5 {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 12px;
+    }
+  }
+  .profile__list {
+    width: 80%;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+}

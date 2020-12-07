@@ -47,6 +47,11 @@
       "url": "/profile-groups.html"
     },
     {
+      "title": "Individual-page",
+      "description": "Profile-group",
+      "url": "/individual-page.html"
+    },
+    {
       "title": "Shopping-preferences",
       "description": "shopping-preferences",
       "url": "/shopping-preferences.html"
@@ -80,6 +85,11 @@
       "title": "Settings",
       "description": "settings",
       "url": "/settings.html"
+    },
+    {
+      "title": "Coockies",
+      "description": "Coockies",
+      "url": "/coockies.html"
     }
   ]
 }

@@ -12,6 +12,7 @@
       "./styles/pages/shopping-preferences/index.scss",
       "./styles/pages/addressbook/index.scss",
       "./styles/pages/groups/index.scss",
+      "./styles/pages/cookies/index.scss",
       "./styles/components/modals/modals.scss",
       "./styles/components/modals/modal-side.scss",
       "./styles/components/modals/modal-add-timeline.scss",

@@ -1,10 +1,12 @@
 .store-link {
   background-color: #fff;
-  padding: 0 20px 12px 0;
+  padding-right: 20px;
+  align-items: flex-end;
   @media (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
     padding-right: 16px;
+    align-items: baseline;
   }
   > div {
     max-width: 160px;
@@ -14,20 +16,27 @@
     }
   }
   .btn-border {
+    margin-bottom: 12px;
     @media (max-width: 767px) {
       max-width: 100%;
+      margin-bottom: 0;
     }
   }
-  .ps__rail-y {
+  .ps__rail-y,
+  .ps__rail-x {
     display: none;
   }
   ul {
     display: flex;
-    align-items: flex-end;
     position: relative;
+    height: 39px;
+    @media (max-width: 575px) {
+      max-width: 300px;
+    }
     li {
       position: relative;
       padding: 0 22px;
+      height: inherit;
       @media (max-width: 575px) {
         padding: 0 15px;
       }
@@ -39,7 +48,7 @@
           left: 0;
           right: 0;
           height: 4px;
-          bottom: -12px;
+          bottom: 0;
           background-color: #335491;
         }
       }

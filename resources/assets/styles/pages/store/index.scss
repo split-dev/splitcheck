@@ -8,6 +8,13 @@
 
 .store {
   .section-blur {
+    .header {
+      .container {
+        @media (max-width: 575px) {
+          padding: 0 15px !important;
+        }
+      }
+    }
     .container {
       @media (max-width: 575px) {
         padding: 0 !important;

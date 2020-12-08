@@ -3,7 +3,8 @@
 @import "../../bootstrap-utils";
 
 // Page Specific Components
-@import "store-home.scss";
+@import "store-home";
+@import "store-category";
 
 .store {
   .section-blur {

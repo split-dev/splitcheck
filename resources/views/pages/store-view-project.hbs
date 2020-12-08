@@ -214,9 +214,9 @@
                         </div>
                         <div class="store-link w-100 d-flex justify-content-between">
                             <ul>
-                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
                                 <li><a href="#">Goss</a></li>
-                                <li><a href="#">View products</a></li>
+                                <li class="active"><a href="#">View products</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
@@ -227,52 +227,225 @@
                     </div>
                     <div class="profile__bottom d-flex">
                         <div class="about-me d-flex flex-column w-100">
-                            <div class="section-content">
-                                <div class="main-card">
-                                    <div class="social-static">
-                                        <div class="social-static__left">
-                                            <ul>
-                                                <strong>Social</strong>
-                                                <li>Followers <b>49</b></li>
-                                                <li>Feedback <b>127</b></li>
-                                                <li>Rating <b>4.9 (from 60)</b></li>
-                                            </ul>
+                            <section class="section-content">
+                                <div class="main__card main__card--bias position-relative">
+                                    <div class="internal-card internal-card--feed">
+                                        <div class="internal-card__header">
+                                            <a href="#"
+                                                class="internal-card__profile d-flex flex-wrap align-items-start">
+                                                <figure class="internal-card__avatar internal-card__avatar--no-img">
+                                                    <img src="images/profiles/img1.png" alt="avatar">
+                                                    <span class="internal-card__symbol">ad</span>
+                                                </figure>
+                                                <div class="internal-card__head-info">
+                                                    <h2 class="internal-card__name">Ann Doe</h2>
+                                                    <p class="internal-card__subname">
+                                                        <span>just for laugh goss</span>
+                                                        <span class="internal-card__date">02.10.2020</span>
+                                                    </p>
+                                                </div>
+                                            </a>
                                         </div>
-                                        <div class="social-static__right">
+                                        <div class="internal-card__body">
+                                            <figure>
+                                                <img src="images/feed/feed-img1.jpg" alt="img">
+                                            </figure>
+                                            <p>To help your skin thrive, use Moroccan argan extract which conditions and
+                                                moisturizes while
+                                                chlorella brings a boost of skin-benefiting vitamins and omega 3s for
+                                                extra
+                                                glowing goodness
+                                            </p>
+                                        </div>
+                                        <div class="internal-card__bottom">
                                             <div class="reaction">
-                                                <ul class="smile">
-                                                    <li>
-                                                        <i class="like"></i>
+                                                <div class="reaction__top">
+                                                    <div class="reaction__quantity">
+                                                        <ul
+                                                            class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                            <li class="reaction__item-icon">
+                                                                <i class="icon icon-like"></i>
+                                                            </li>
+                                                            <li class="reaction__item-icon">
+                                                                <i class="icon icon-heart-l"></i>
+                                                            </li>
+                                                            <li class="reaction__item-icon">
+                                                                <i class="icon icon-happy"></i>
+                                                            </li>
+                                                            <li class="reaction__item-icon">
+                                                                <i class="icon icon-surprised"></i>
+                                                            </li>
+                                                            <li class="reaction__item-icon">
+                                                                <i class="icon icon-angry"></i>
+                                                            </li>
+                                                            <div class="reaction__pop">
+                                                                <ul class="smile">
+                                                                    <li>
+                                                                        <i class="like"></i>
+                                                                        <span>like</span>
+                                                                        <span>200</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="heart"></i>
+                                                                        <span>love</span>
+                                                                        <span>170</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="happy"></i>
+                                                                        <span>joy</span>
+                                                                        <span>2</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="surprised"></i>
+                                                                        <span>wow</span>
+                                                                        <span>65</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="angry"></i>
+                                                                        <span>angry</span>
+                                                                        <span>0</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </ul>
+                                                        <span>56</span>
+                                                    </div>
+                                                    <span class="reaction__text">0 comments</span>
+                                                </div>
+                                                <div class="reaction__bottom">
+                                                    <div class="reaction__wrap-link reaction__wrap-link--reaction">
+                                                        <i class="icon icon-like-blue"></i>
                                                         <span>like</span>
-                                                        <span>200</span>
-                                                    </li>
-                                                    <li>
-                                                        <i class="heart"></i>
-                                                        <span>love</span>
-                                                        <span>170</span>
-                                                    </li>
-                                                    <li>
-                                                        <i class="happy"></i>
-                                                        <span>joy</span>
-                                                        <span>2</span>
-                                                    </li>
-                                                    <li>
-                                                        <i class="surprised"></i>
-                                                        <span>wow</span>
-                                                        <span>65</span>
-                                                    </li>
-                                                    <li>
-                                                        <i class="angry"></i>
-                                                        <span>angry</span>
-                                                        <span>0</span>
-                                                    </li>
+
+                                                        <div class="reaction-btn-like reaction-btn-like--feed">
+                                                            <ul class="reaction-btn-like__list list-unstyled mb-0">
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#" class="reaction-btn-like__link">
+                                                                        <i class="icon icon-like"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#" class="reaction-btn-like__link">
+                                                                        <i class="icon icon-heart-l"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#" class="reaction-btn-like__link">
+                                                                        <i class="icon icon-happy"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#" class="reaction-btn-like__link">
+                                                                        <i class="icon icon-surprised"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#" class="reaction-btn-like__link">
+                                                                        <i class="icon icon-angry"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="reaction__wrap-link">
+                                                        <a href="#" class="reaction__link">
+                                                            <i class="icon icon-comment"></i>
+                                                            <span>comment</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="reaction__wrap-link">
+                                                        <a href="#" class="reaction__link">
+                                                            <i class="icon icon-plus-blue"></i>
+                                                            <span>add to timeline</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- option  add class: - options--open -->
+                                        <div class="options">
+                                            <button type="button" class="options__btn" data-type="options">
+                                                <i class="icon icon-more"></i>
+                                            </button>
+
+                                            <div class="options__dropdown">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Share</a></li>
+                                                    <li><a href="#">Not gift worthy</a></li>
+                                                    <li><a href="#">About the store</a></li>
+                                                    <li><a href="#">Report abuse</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </section>
+                            <section class="section-content">
+                                <div class="main__card main__card--bias main__card--preferences position-relative">
+                                    <div
+                                        class="preferences position-relative d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
+                                        <figure class="preferences__img">
+                                            <img src="images/shop/preferences-img.svg" alt="img">
+                                        </figure>
+                                        <div class="preferences__info">
+                                            <h2>Set what you are looking for and we will update you as we find it</h2>
+                                            <a href="#" data-toggle="modal" data-target="#search-parameters"
+                                                class="btn-border">Set search
+                                                parameters</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <span>Shop by category</span>
+                            <div class="section-content">
+                                <div class="shop-category">
+                                    <a href="#" class="shop-category__single"
+                                        style="background-image: url('images/store/img-1.jpg');">
+                                        <div class="shop-category__text">
+                                            <h3>New arrival</h3>
+                                            <span><span>8</span> items</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="shop-category__single"
+                                        style="background-image: url('images/store/img-1.jpg');">
+                                        <div class="shop-category__text">
+                                            <h3>Category</h3>
+                                            <span><span>12</span> items</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="shop-category__single"
+                                        style="background-image: url('images/store/img-2.jpg');">
+                                        <div class="shop-category__text">
+                                            <h3>Category</h3>
+                                            <span><span>8</span> items</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="shop-category__single"
+                                        style="background-image: url('images/store/img-3.jpg');">
+                                        <div class="shop-category__text">
+                                            <h3>Category</h3>
+                                            <span><span>8</span> items</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="shop-category__single"
+                                        style="background-image: url('images/store/img-4.jpg');">
+                                        <div class="shop-category__text">
+                                            <h3>Category</h3>
+                                            <span><span>8</span> items</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="shop-category__single"
+                                        style="background-image: url('images/store/Rectangle.jpg');">
+                                        <div class="shop-category__text">
+                                            <h3>Category</h3>
+                                            <span><span>8</span> items</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
                             <section class="section-content">
                                 <div class="main__card main__card--bias position-relative">
                                     <div class="internal-card internal-card--shop">
@@ -373,318 +546,6 @@
                                                     <li><a href="#">Not gift worthy</a></li>
                                                     <li><a href="#store-info" data-toggle="modal">About the store</a>
                                                     </li>
-                                                    <li><a href="#">Report abuse</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="section-content">
-                                <div class="main__card main__card--bias position-relative">
-                                    <div class="internal-card internal-card--feed">
-                                        <div class="internal-card__header">
-                                            <a href="#"
-                                                class="internal-card__profile d-flex flex-wrap align-items-start">
-                                                <figure class="internal-card__avatar internal-card__avatar--no-img">
-                                                    <img src="images/profiles/img1.png" alt="avatar">
-                                                    <span class="internal-card__symbol">ad</span>
-                                                </figure>
-                                                <div class="internal-card__head-info">
-                                                    <h2 class="internal-card__name">Ann Doe</h2>
-                                                    <p class="internal-card__subname">
-                                                        <span>just for laugh goss</span>
-                                                        <span class="internal-card__date">02.10.2020</span>
-                                                    </p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="internal-card__body">
-                                            <figure>
-                                                <img src="images/feed/feed-img1.jpg" alt="img">
-                                            </figure>
-                                            <p>To help your skin thrive, use Moroccan argan extract which conditions and
-                                                moisturizes while
-                                                chlorella brings a boost of skin-benefiting vitamins and omega 3s for
-                                                extra
-                                                glowing goodness
-                                            </p>
-                                        </div>
-                                        <div class="internal-card__bottom">
-                                            <div class="reaction">
-                                                <div class="reaction__top">
-                                                    <div class="reaction__quantity">
-                                                        <ul
-                                                            class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-like"></i>
-                                                            </li>
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-heart-l"></i>
-                                                            </li>
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-happy"></i>
-                                                            </li>
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-surprised"></i>
-                                                            </li>
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-angry"></i>
-                                                            </li>
-                                                            <div class="reaction__pop">
-                                                                <ul class="smile">
-                                                                    <li>
-                                                                        <i class="like"></i>
-                                                                        <span>like</span>
-                                                                        <span>200</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="heart"></i>
-                                                                        <span>love</span>
-                                                                        <span>170</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="happy"></i>
-                                                                        <span>joy</span>
-                                                                        <span>2</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="surprised"></i>
-                                                                        <span>wow</span>
-                                                                        <span>65</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="angry"></i>
-                                                                        <span>angry</span>
-                                                                        <span>0</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </ul>
-                                                        <span>56</span>
-                                                    </div>
-                                                    <span class="reaction__text">0 comments</span>
-                                                </div>
-                                                <div class="reaction__bottom">
-                                                    <div class="reaction__wrap-link reaction__wrap-link--reaction">
-                                                        <i class="icon icon-like-blue"></i>
-                                                        <span>like</span>
-
-                                                        <div class="reaction-btn-like reaction-btn-like--feed">
-                                                            <ul class="reaction-btn-like__list list-unstyled mb-0">
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-like"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-heart-l"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-happy"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-surprised"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-angry"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="reaction__wrap-link">
-                                                        <a href="#" class="reaction__link">
-                                                            <i class="icon icon-comment"></i>
-                                                            <span>comment</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="reaction__wrap-link">
-                                                        <a href="#" class="reaction__link">
-                                                            <i class="icon icon-plus-blue"></i>
-                                                            <span>add to timeline</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- option  add class: - options--open -->
-                                        <div class="options">
-                                            <button type="button" class="options__btn" data-type="options">
-                                                <i class="icon icon-more"></i>
-                                            </button>
-
-                                            <div class="options__dropdown">
-                                                <ul class="list-unstyled mb-0">
-                                                    <li><a href="#">Share</a></li>
-                                                    <li><a href="#">Not gift worthy</a></li>
-                                                    <li><a href="#">About the store</a></li>
-                                                    <li><a href="#">Report abuse</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="section-content">
-                                <div class="main__card main__card--bias position-relative">
-                                    <div class="internal-card internal-card--feed">
-                                        <div class="internal-card__header">
-                                            <a href="#"
-                                                class="internal-card__profile d-flex flex-wrap align-items-start">
-                                                <figure class="internal-card__avatar internal-card__avatar--no-img">
-                                                    <img src="images/profiles/img1.png" alt="avatar">
-                                                    <span class="internal-card__symbol">ad</span>
-                                                </figure>
-                                                <div class="internal-card__head-info">
-                                                    <h2 class="internal-card__name">Ann Doe</h2>
-                                                    <p class="internal-card__subname">
-                                                        <span>just for laugh goss</span>
-                                                        <span class="internal-card__date">02.10.2020</span>
-                                                    </p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="internal-card__body">
-                                            <figure>
-                                                <img src="images/feed/feed-img1.jpg" alt="img">
-                                            </figure>
-                                            <p>To help your skin thrive, use Moroccan argan extract which conditions and
-                                                moisturizes while
-                                                chlorella brings a boost of skin-benefiting vitamins and omega 3s for
-                                                extra
-                                                glowing goodness
-                                            </p>
-                                        </div>
-                                        <div class="internal-card__bottom">
-                                            <div class="reaction">
-                                                <div class="reaction__top">
-                                                    <div class="reaction__quantity">
-                                                        <ul
-                                                            class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-like"></i>
-                                                            </li>
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-heart-l"></i>
-                                                            </li>
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-happy"></i>
-                                                            </li>
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-surprised"></i>
-                                                            </li>
-                                                            <li class="reaction__item-icon">
-                                                                <i class="icon icon-angry"></i>
-                                                            </li>
-                                                            <div class="reaction__pop">
-                                                                <ul class="smile">
-                                                                    <li>
-                                                                        <i class="like"></i>
-                                                                        <span>like</span>
-                                                                        <span>200</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="heart"></i>
-                                                                        <span>love</span>
-                                                                        <span>170</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="happy"></i>
-                                                                        <span>joy</span>
-                                                                        <span>2</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="surprised"></i>
-                                                                        <span>wow</span>
-                                                                        <span>65</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="angry"></i>
-                                                                        <span>angry</span>
-                                                                        <span>0</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </ul>
-                                                        <span>56</span>
-                                                    </div>
-                                                    <span class="reaction__text">0 comments</span>
-                                                </div>
-                                                <div class="reaction__bottom">
-                                                    <div class="reaction__wrap-link reaction__wrap-link--reaction">
-                                                        <i class="icon icon-like-blue"></i>
-                                                        <span>like</span>
-
-                                                        <div class="reaction-btn-like reaction-btn-like--feed">
-                                                            <ul class="reaction-btn-like__list list-unstyled mb-0">
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-like"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-heart-l"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-happy"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-surprised"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="reaction-btn-like__item">
-                                                                    <a href="#" class="reaction-btn-like__link">
-                                                                        <i class="icon icon-angry"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="reaction__wrap-link">
-                                                        <a href="#" class="reaction__link">
-                                                            <i class="icon icon-comment"></i>
-                                                            <span>comment</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="reaction__wrap-link">
-                                                        <a href="#" class="reaction__link">
-                                                            <i class="icon icon-plus-blue"></i>
-                                                            <span>add to timeline</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- option  add class: - options--open -->
-                                        <div class="options">
-                                            <button type="button" class="options__btn" data-type="options">
-                                                <i class="icon icon-more"></i>
-                                            </button>
-
-                                            <div class="options__dropdown">
-                                                <ul class="list-unstyled mb-0">
-                                                    <li><a href="#">Share</a></li>
-                                                    <li><a href="#">Not gift worthy</a></li>
-                                                    <li><a href="#">About the store</a></li>
                                                     <li><a href="#">Report abuse</a></li>
                                                 </ul>
                                             </div>

@@ -95,6 +95,11 @@
       "title": "Store-home",
       "description": "store-home",
       "url": "/store-home.html"
+    },
+    {
+      "title": "Store view-project",
+      "description": "store-view-project",
+      "url": "/store-view-project.html"
     }
   ]
 }

@@ -1,0 +1,51 @@
+//Glob Utils
+@import "../../variables";
+@import "../../bootstrap-utils";
+
+// Page Specific Components
+@import "store-home.scss";
+
+.store {
+  .profile-face {
+    @media (max-width: 991px) {
+      height: auto;
+    }
+  }
+  .profile-face__info {
+    @media (max-width: 991px) {
+      height: 140px;
+    }
+  }
+  .profile-face__background {
+    @media (max-width: 991px) {
+      height: 160px;
+    }
+  }
+  .internal-card--shop {
+    margin-bottom: -24px;
+  }
+  .main__card {
+    margin-bottom: 24px;
+  }
+  .connections__wrapper {
+    @media (max-width: 1260px) {
+      width: 285px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .main-content {
+    @media (max-width: 991px) {
+      padding-top: 0;
+    }
+  }
+  .about-me {
+    @media (max-width: 1260px) {
+      max-width: 475px;
+    }
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+}

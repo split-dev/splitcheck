@@ -90,6 +90,11 @@
       "title": "Coockies",
       "description": "Coockies",
       "url": "/coockies.html"
+    },
+    {
+      "title": "Store-home",
+      "description": "store-home",
+      "url": "/store-home.html"
     }
   ]
 }

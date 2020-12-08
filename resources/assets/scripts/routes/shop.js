@@ -28,7 +28,10 @@ export default {
       }
 
       //* swiper init
-      swiperCard = new Swiper('.internal-card__slider.swiper-container', optionForSwiperProduct);
+      if($('.internal-card__slider')) {
+        swiperCard = new Swiper('.internal-card__slider.swiper-container', optionForSwiperProduct);
+      }
+      
     }
 
     //* function progresBar for "goss-gallery__slider" and SWIPER

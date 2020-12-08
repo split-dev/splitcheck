@@ -397,29 +397,7 @@ export default {
           tpCollection();
         })
         
-     //setColor
-     $('.profile-face__background .btn-border').click( function(e) {
-       e.preventDefault();
-       $(this).addClass('active');
-      $('.profile-face__background .select-color').addClass('show');
-     });
-     $('.profile-face__background .select-color li').click( function() {
-       $('.profile-face__background .select-color li').removeClass('select');
-       $(this).addClass('select');
-       $('.profile-face__background').css('background-color', $(this).css('background-color'))
-       $('.profile-face__background .btn-border').removeClass('active');
-       $('.profile-face__background .select-color').removeClass('show');
-     });
-     $(function($){
-      $(document).mouseup(function (e){
-        var div = $('.profile-face__background .select-color');
-        if (!div.is(e.target)
-            && div.has(e.target).length === 0) {
-              $('.profile-face__background .btn-border').removeClass('active');
-              $('.profile-face__background .select-color').removeClass('show');
-        }
-      });
-    });
+     
     //set statistic
     $('.overview__select .overview__item').click( function() {
       $('.overview__select .overview__item').removeClass('active');

@@ -21,6 +21,7 @@ import profile from './routes/profile';
 import early from './routes/early';
 import settings from './routes/settings';
 import groups from './routes/groups';
+import store from './routes/store';
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -37,6 +38,7 @@ const routes = new Router({
   'settings': settings,
   'profile': profile,
   'groups': groups,
+  'store': store,
 });
 
 // // Load Events

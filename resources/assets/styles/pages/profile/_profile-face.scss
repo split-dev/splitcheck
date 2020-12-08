@@ -247,12 +247,16 @@
       position: relative;
       &::after {
         position: absolute;
-        content: url("images/icons/dotted-bottom.svg");
+        content: "";
+        background-image: url("images/icons/dotted-bottom.svg");
         display: block;
         left: 0;
         right: 0;
-        bottom: -7px;
+        bottom: -3px;
         pointer-events: none;
+        height: 3px;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
     }
     @media (max-width: 768px) {

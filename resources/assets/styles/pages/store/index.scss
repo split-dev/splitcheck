@@ -6,6 +6,11 @@
 @import "store-home.scss";
 
 .store {
+  .section-blur {
+    @media (max-width: 575px) {
+      padding: 0 !important;
+    }
+  }
   .profile-face {
     @media (max-width: 991px) {
       height: auto;

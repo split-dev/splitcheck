@@ -7,8 +7,10 @@
 
 .store {
   .section-blur {
-    @media (max-width: 575px) {
-      padding: 0 !important;
+    .container {
+      @media (max-width: 575px) {
+        padding: 0 !important;
+      }
     }
   }
   .profile-face {

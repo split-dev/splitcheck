@@ -8,6 +8,10 @@
   background-color: theme-color("white");
   // .personal-card__avatar
 
+  .swiper-button-disabled {
+    opacity: 0.3 !important;
+  }
+
   &__avatar {
     width: 56px;
     height: 56px;

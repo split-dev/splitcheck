@@ -383,6 +383,14 @@ export default {
         });
       }
 
+       // * function for "Select is not avatar" template in modal
+       if($('.form__select--default[data-toggle="select-single"]')) {
+        $('.form__select--default[data-toggle="select-single"]').select2({
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+        });
+      }
+
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

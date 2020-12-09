@@ -226,70 +226,169 @@
                     <div class="profile__bottom d-flex">
                         <div class="about-me d-flex flex-column w-100">
                             <div class="section-content">
-                                <div class="store-info__address--result">
-                                    <div class="store-info__social">
-                                        <ul>
-                                            <strong>Social</strong>
-                                            <li>Followers<b>49</b></li>
-                                            <li>Feedback<b>127</b></li>
-                                            <li>Rating<b>4.9 (from 60)</b></li>
-                                        </ul>
+                                <div class="store-info__address">
+                                    <strong>Get in touch</strong>
+                                    <div class="members__form">
+                                        <label class="form__label">email</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
                                     </div>
-                                    <div class="store-info__get">
-                                        <ul>
-                                            <strong>Get in touch</strong>
-                                            <li><img src="images/icons/email-24px.svg" alt=""><a
-                                                    href="mailto:example@mail.com">example@mail.com</a></li>
-                                            <li><img src="images/icons/phone_in_talk-24px.svg" alt=""><a
-                                                    href="tel:+(380) 66 0209 333">+(380) 66 0209 333</a></li>
-                                            <li><img src="images/icons/status-24px.svg" alt="">online</li>
-                                        </ul>
+                                    <div class="members__form">
+                                        <label class="form__label">phone number</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
                                     </div>
+                                    <a href="#" class="btn btn-blue">Save</a>
                                 </div>
                             </div>
                             <div class="section-content">
-                                <div class="store-info__time--result">
+                                <div class="store-info__time">
                                     <strong>Operating hours</strong>
-                                    <ul>
-                                        <li><span>Monday</span>
-                                            <div><span>09:00</span>-<span>17:00</span></div>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Tuesday</span>
-                                            <div><span>09:00</span>-<span>17:00</span></div>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Wednesday</span>
-                                            <div><span>09:00</span>-<span>17:00</span></div>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Thursday</span>
-                                            <div><span>09:00</span>-<span>17:00</span></div>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Friday</span>
-                                            <div><span>09:00</span>-<span>17:00</span></div>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Saturday</span>
-                                            <div><span>09:00</span>-<span>17:00</span></div>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Sunday</span>
-                                            <div><span>-</span></div>
-                                        </li>
-                                    </ul>
+                                    <div class="store-info__time--single">
+                                        <span>Monday</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">09:00</option>
+                                            <option value="select-2">10:00</option>
+                                            <option value="select-3">11:00</option>
+                                        </select>
+                                        <span class="line">-</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">17:00</option>
+                                            <option value="select-2">18:00</option>
+                                            <option value="select-3">19:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="store-info__time--single">
+                                        <span>Tuesday</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">09:00</option>
+                                            <option value="select-2">10:00</option>
+                                            <option value="select-3">11:00</option>
+                                        </select>
+                                        <span class="line">-</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">17:00</option>
+                                            <option value="select-2">18:00</option>
+                                            <option value="select-3">19:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="store-info__time--single">
+                                        <span>Wednesday</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">09:00</option>
+                                            <option value="select-2">10:00</option>
+                                            <option value="select-3">11:00</option>
+                                        </select>
+                                        <span class="line">-</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">17:00</option>
+                                            <option value="select-2">18:00</option>
+                                            <option value="select-3">19:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="store-info__time--single">
+                                        <span>Thursday</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">09:00</option>
+                                            <option value="select-2">10:00</option>
+                                            <option value="select-3">11:00</option>
+                                        </select>
+                                        <span class="line">-</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">17:00</option>
+                                            <option value="select-2">18:00</option>
+                                            <option value="select-3">19:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="store-info__time--single">
+                                        <span>Friday</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">09:00</option>
+                                            <option value="select-2">10:00</option>
+                                            <option value="select-3">11:00</option>
+                                        </select>
+                                        <span class="line">-</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">17:00</option>
+                                            <option value="select-2">18:00</option>
+                                            <option value="select-3">19:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="store-info__time--single">
+                                        <span>Saturday</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">09:00</option>
+                                            <option value="select-2">10:00</option>
+                                            <option value="select-3">11:00</option>
+                                        </select>
+                                        <span class="line">-</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">17:00</option>
+                                            <option value="select-2">18:00</option>
+                                            <option value="select-3">19:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="store-info__time--single">
+                                        <span>Sunday</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">09:00</option>
+                                            <option value="select-2">10:00</option>
+                                            <option value="select-3">11:00</option>
+                                            <option value="select-3">closed</option>
+                                        </select>
+                                        <span class="line">-</span>
+                                        <select class="form__select form__select--default" data-toggle="select-single">
+                                            <option value="select-1">17:00</option>
+                                            <option value="select-2">18:00</option>
+                                            <option value="select-3">19:00</option>
+                                            <option value="select-3">closed</option>
+                                        </select>
+                                    </div>
+                                    <a href="#" class="btn btn-blue">Save</a>
                                 </div>
                             </div>
                             <div class="section-content">
-                                <div class="store-info__drop">
-                                    <strong>Drop us a line</strong>
+                                <div class="store-info__address">
+                                    <strong>Address & Availability</strong>
+                                    <div class="members__form">
+                                        <label class="form__label">address line 1</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">address line 2</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">City</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">State</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">Postcode</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">Country</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <a href="#" class="btn btn-blue">Save</a>
                                 </div>
                             </div>
                         </div>
@@ -348,8 +447,7 @@
                                                 <ul class="list-unstyled mb-0">
                                                     <li><a href="#">Share</a></li>
                                                     <li><a href="#">Not gift worthy</a></li>
-                                                    <li><a href="#store-info" data-toggle="modal">About the
-                                                            store</a>
+                                                    <li><a href="#store-info" data-toggle="modal">About the store</a>
                                                     </li>
                                                     <li><a href="#">Report abuse</a></li>
                                                 </ul>

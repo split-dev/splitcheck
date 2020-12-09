@@ -102,9 +102,14 @@
       "url": "/store-view-project.html"
     },
     {
-      "title": "Store store-contact",
+      "title": "Store-contact",
       "description": "store-contact",
       "url": "/store-contact.html"
+    },
+    {
+      "title": "Store-contact-edit",
+      "description": "store-contact-edit",
+      "url": "/store-contact-edit.html"
     },
     {
       "title": "Store about",

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="profile home wishlist-page">
+    {{> ../common/mobile-menu }}
+    {{> ../common/mobile-menu-bottom }}
+    <div class="section-blur theme-background-one" data-class="maze">
+        {{> ../common/header-next }}
+        <div class="container">
+            <div class="main-content position-relative d-flex align-items-start justify-content-between">
+                <!-- aside-left -->
+                <aside class="aside-left">
+                    <div class="scroll-div">
+
+
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">Other
+                                links</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-gift active"></i>
+                                            <span>Spoil yourself</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-social-media"></i>
+                                            <span>Open public goss</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-discount"></i>
+                                            <span>Snatch a bargain</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-mail"></i>
+                                            <span>Shared orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-group"></i>
+                                            <span>My groups</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-heart"></i>
+                                            <span>My family</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" data-toggle="modal" data-target="#notification"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-notification"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Alerts</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="/shopping-preferences.html"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-setting"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Shopping preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </aside>
+                <!-- /aside-left -->
+                <div class="profile__list d-flex flex-column ">
+
+                    <div class="profile__bottom d-flex">
+                        <div class="about-me d-flex flex-column w-100">
+
+
+
+                            <span>My wishlist</span>
+                            <div class="wishlist-box">
+                                <div class="wishlist-box__header">
+                                    <div class="wishlist-box__photo"></div>
+                                    <div class="wishlist-box__info">
+                                        <strong>Store name here</strong>
+                                        <span>Coomera - Queensland</span>
+                                    </div>
+                                </div>
+                                <div class="wishlist-box__item">
+                                    <div class="d-flex align-items-center">
+                                        <div class="wishlist-box__item-photo"
+                                            style="background-image: url('images/profiles/variant_mini.jpg');"></div>
+                                        <div class="wishlist-box__detail">
+                                            <strong>Lorem ipsum dolor sit amet lorem ipsum dolor</strong>
+                                            <div class="d-flex align-items-end">
+                                                <span class="wishlist-box__item-price">$49.99</span>
+                                                <div class="wishlist-box__item-count"><span>1</span>x<span>250ml</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wishlist-box__item-function">
+                                        <a href="#" class="reserved">reserved</a>
+                                        <a href="#" class="remove">remove</a>
+                                    </div>
+                                </div>
+                                <div class="wishlist-box__result d-flex">
+                                    <div class="wishlist-box__left">
+                                        <span>The following have access to this item</span>
+                                        <div class="connections__select connections__select--family d-flex flex-column">
+                                            <div class="d-flex">
+                                                <div class="connections__add align-items-center">
+                                                    <a href="#">
+                                                        <img src="images/profiles/add.svg" alt="avatar">
+                                                    </a>
+                                                </div>
+                                                <div class="connections__slider position-relative">
+                                                    <span class="count-slider" data-count="0">+0</span>
+                                                    <div
+                                                        class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                                                        <div class="swiper-wrapper"
+                                                            id="swiper-wrapper-d510895787402df82" aria-live="polite"
+                                                            style="transform: translate3d(0px, 0px, 0px);">
+                                                            <div class="swiper-slide swiper-slide-active" role="group"
+                                                                aria-label="1 / 3"
+                                                                style="width: 56px; margin-right: 8px;">
+                                                                <a href="#"
+                                                                    class="card-timeline__link-light card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                    <img src="" alt="avatar">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide swiper-slide-next" role="group"
+                                                                aria-label="2 / 3"
+                                                                style="width: 56px; margin-right: 8px;">
+                                                                <a href="#"
+                                                                    class="card-timeline__link-light card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                    <img src="" alt="avatar">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide" role="group" aria-label="3 / 3"
+                                                                style="width: 56px; margin-right: 8px;">
+                                                                <a href="#"
+                                                                    class="card-timeline__link-light card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                                                    <img src="" alt="avatar">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <span class="swiper-notification" aria-live="assertive"
+                                                            aria-atomic="true"></span>
+                                                    </div>
+                                                    <div class="swiper-button-prev swiper-button-disabled" tabindex="-1"
+                                                        role="button" aria-label="Previous slide"
+                                                        aria-controls="swiper-wrapper-d510895787402df82"
+                                                        aria-disabled="true"></div>
+                                                    <div class="swiper-button-next swiper-button-disabled" tabindex="-1"
+                                                        role="button" aria-label="Next slide"
+                                                        aria-controls="swiper-wrapper-d510895787402df82"
+                                                        aria-disabled="true"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>Contributed</span>
+                                        <ul class="wishlist-box__contrib">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="wishlist-box__total">
+                                        <ul>
+                                            <li class="total"><span>Total:</span>
+                                                <div><span>AUD</span><span>$49.99</span></div>
+                                            </li>
+                                            <li><span>Pledged:</span>
+                                                <div><span>AUD</span><span>$20.00</span></div>
+                                            </li>
+                                            <li><span>Paid:</span>
+                                                <div><span>AUD</span><span>$0.00</span></div>
+                                            </li>
+                                            <li class="balance">
+                                                <span>Balance:</span>
+                                                <div><span>AUD</span><span>$100.00</span></div>
+                                            </li>
+                                        </ul>
+                                        <div class="wishlist-box__total--bottom">
+                                            <a href="#" class="btn-border">Ask to contribute</a>
+                                            <div class="remaning">
+                                                <span>Remaining:</span>
+                                                <div class="remaining__price">
+                                                    <div><span>AUD</span><span>$29.99</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="wishlist-box__footer">
+                                    <a href="#" class="btn-border-orange btn-border--two">Add to Cart</a>
+                                    <a href="#" class="btn btn-orange">Buy Now</a>
+                                </div>
+                            </div>
+
+                            <div class="wishlist-box">
+                                <div class="wishlist-box__header">
+                                    <div class="wishlist-box__photo"></div>
+                                    <div class="wishlist-box__info">
+                                        <strong>Store name here</strong>
+                                        <span>Coomera - Queensland</span>
+                                    </div>
+                                </div>
+                                <div class="wishlist-box__item">
+                                    <div class="d-flex align-items-center">
+                                        <div class="wishlist-box__item-photo"
+                                            style="background-image: url('images/profiles/variant_mini.jpg');"></div>
+                                        <div class="wishlist-box__detail">
+                                            <strong>Lorem ipsum dolor sit amet lorem ipsum dolor</strong>
+                                            <div class="d-flex align-items-end">
+                                                <span class="wishlist-box__item-price">$49.99</span>
+                                                <div class="wishlist-box__item-count"><span>1</span>x<span>250ml</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wishlist-box__item-function">
+                                        <a href="#" class="reserved">reserved</a>
+                                        <a href="#" class="remove">remove</a>
+                                    </div>
+                                </div>
+                                <div class="wishlist-box__result d-flex">
+                                    <div class="wishlist-box__left">
+                                        <span>The following have access to this item</span>
+                                        <div
+                                            class="connections__select connections__select--store-slide d-flex flex-column">
+                                            <div class="d-flex">
+                                                <div class="connections__add align-items-center">
+                                                    <a href="#">
+                                                        <img src="images/profiles/add.svg" alt="avatar">
+                                                    </a>
+                                                </div>
+                                                <div class="connections__slider position-relative">
+                                                    <span class="count-slider" data-count="3"></span>
+                                                    <div class="swiper-container">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/wishlist/girl-in-yellow.png"
+                                                                        alt="avatar">
+
+                                                                    <span></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact ">
+                                                                    <img src="images/wishlist/afro-girl.png"
+                                                                        alt="avatar">
+                                                                    <span></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/wishlist/girl.png" alt="avatar">
+                                                                    <span></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>Contributed</span>
+                                        <ul class="wishlist-box__contrib">
+                                            <li><a href="#" class="card-timeline__link card-timeline__link--contact ">
+                                                    <img src="images/wishlist/girl-in-yellow.png" alt="avatar">
+                                                    <span>JS</span>
+                                                </a></li>
+                                            <li><a href="#" class="card-timeline__link card-timeline__link--contact ">
+                                                    <img src="images/wishlist/girl.png" alt="avatar">
+                                                    <span>JS</span>
+                                                </a></li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="wishlist-box__total">
+                                        <ul>
+                                            <li class="total"><span>Total:</span>
+                                                <div><span>AUD</span><span>$49.99</span></div>
+                                            </li>
+                                            <li><span>Pledged:</span>
+                                                <div><span>AUD</span><span>$20.00</span></div>
+                                            </li>
+                                            <li><span>Paid:</span>
+                                                <div><span>AUD</span><span>$0.00</span></div>
+                                            </li>
+                                            <li class="balance">
+                                                <span>Balance:</span>
+                                                <div><span>AUD</span><span>$100.00</span></div>
+                                            </li>
+                                        </ul>
+                                        <div class="wishlist-box__total--bottom">
+                                            <a href="#" class="btn-border">Ask to contribute</a>
+                                            <div class="remaning">
+                                                <span>Remaining:</span>
+                                                <div class="remaining__price">
+                                                    <div><span>AUD</span><span>$29.99</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="wishlist-box__footer">
+                                    <a href="#" class="btn-border-orange btn-border--two">Add to Cart</a>
+                                    <a href="#" class="btn btn-orange">Buy Now</a>
+                                </div>
+                            </div>
+
+
+
+                            <section class="section-content">
+                                <div
+                                    class="wishlist-page__block d-flex flex-column w-100 align-items-center justify-content-between">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <div class="wisglist-page__block-left d-flex flex-column ">
+                                            <span>Items (4)</span>
+                                            <span>Postage</span>
+                                            <strong>Total</strong>
+                                        </div>
+                                        <div class="wishlist-page__block-right d-flex flex-column ">
+                                            <span>$ 300.00</span>
+                                            <span>Free</span>
+                                            <div class="d-flex">
+                                                <strong>AUD</strong>
+                                                <strong>$300.00</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wishlist-page__block-bottom d-flex w-100 justify-content-start">
+                                        <a href="#">Earn 184.00 SplitChek points
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16">
+                                                <g>
+                                                    <g>
+                                                        <g />
+                                                        <g>
+                                                            <path fill="#f97d00"
+                                                                d="M5.135 5.622a.68.68 0 0 0 .654.878h.15c.308 0 .556-.217.661-.502a1.504 1.504 0 0 1 1.728-.96c.714.15 1.24.847 1.18 1.575-.076 1.005-1.218 1.222-1.841 2.16 0 .007-.008.007-.008.015-.007.015-.015.022-.022.037-.068.113-.135.24-.188.375-.008.023-.023.038-.03.06-.008.015-.008.03-.015.053-.09.255-.15.562-.15.937h1.502c0-.315.083-.577.21-.802.016-.023.023-.045.038-.068.06-.105.135-.203.21-.292.008-.008.016-.023.023-.03.075-.09.158-.173.248-.255.721-.683 1.698-1.238 1.495-2.67-.18-1.305-1.21-2.408-2.517-2.603a3.007 3.007 0 0 0-3.328 2.093zM7.25 12.5h1.5V11h-1.5zM8 14c-3.308 0-6-2.692-6-6s2.692-6 6-6 6 2.692 6 6-2.692 6-6 6zM8 .5C3.86.5.5 3.86.5 8c0 4.14 3.36 7.5 7.5 7.5 4.14 0 7.5-3.36 7.5-7.5C15.5 3.86 12.14.5 8 .5z" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <span class="recomend">Recommended products</span>
+
+                            <section class="section-content">
+                                <div class="main__card main__card--bias position-relative">
+                                    <div class="internal-card internal-card--shop internal-card--shop--triple--video">
+                                        <div class="internal-card__header">
+                                            <a href="#"
+                                                class="internal-card__profile d-flex flex-wrap align-items-start">
+                                                <figure class="internal-card__avatar">
+                                                    <img src="images/profiles/img1.png" alt="avatar">
+                                                    <span class="internal-card__symbol"></span>
+                                                </figure>
+                                                <div class="internal-card__head-info">
+                                                    <h2 class="internal-card__name internal-card__name--orange">Abstract
+                                                        Field of joy - Art print</h2>
+                                                    <p
+                                                        class="internal-card__subname internal-card__subname--light d-flex flex-column">
+                                                        <span>Coomera - Queensland</span>
+                                                        <span>Available: <b>Online only</b></span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="internal-card__body">
+                                            <div
+                                                class="internal-card__grid internal-card__grid--triple internal-card__grid--margin-bt grid-gallery d-flex flex-wrap">
+                                                <figure class="grid-gallery__width-1-1">
+                                                    <a class="grid-gallery__selector position-relative"
+                                                        href="images/shop/cart-img-1.png"
+                                                        data-src="images/shop/cart-img-1.png">
+                                                        <div class="grid-gallery__post-img"
+                                                            style="background-image: url(images/shop/cart-img-1.png);">
+                                                        </div>
+                                                    </a>
+                                                </figure>
+                                                <figure class="grid-gallery__width-1-2 video">
+                                                    <a class="grid-gallery__selector position-relative grid-gallery__selector--video"
+                                                        href="images/feed/feed-img1.jpg">
+                                                        <div class="grid-gallery__post-img"
+                                                            style="background-image: url(images/feed/feed-img1.jpg);"
+                                                            data-src="images/feed/feed-img1.jpg">
+                                                        </div>
+                                                    </a>
+                                                </figure>
+
+                                                <figure
+                                                    class="grid-gallery__width-1-2 grid-gallery__main-img position-relative grid-gallery__grid-margin-top grid-gallery__more"
+                                                    data-numbers="3">
+                                                    <a class="grid-gallery__selector" href="images/shop/cart-img-2.png"
+                                                        data-src="images/shop/cart-img-2.png">
+                                                        <div class="grid-gallery__post-img"
+                                                            style="background-image: url(images/shop/cart-img-2.png);">
+                                                        </div>
+                                                    </a>
+                                                </figure>
+
+                                                <div class="grid-gallery__hidden">
+                                                    <figure class="grid-gallery__main-img position-relative">
+                                                        <a class="grid-gallery__selector"
+                                                            href="images/shop/cart-img-2.png"
+                                                            data-src="images/shop/cart-img-2.png">
+                                                            <div class="grid-gallery__post-img"
+                                                                style="background-image: url(images/shop/cart-img-2.png);">
+                                                            </div>
+                                                        </a>
+                                                    </figure>
+                                                    <figure class="grid-gallery__main-img position-relative">
+                                                        <a class="grid-gallery__selector"
+                                                            href="images/shop/cart-img-2.png"
+                                                            data-src="images/shop/cart-img-2.png">
+                                                            <div class="grid-gallery__post-img"
+                                                                style="background-image: url(images/shop/cart-img-2.png);">
+                                                            </div>
+                                                        </a>
+                                                    </figure>
+                                                    <figure class="grid-gallery__main-img position-relative">
+                                                        <a class="grid-gallery__selector"
+                                                            href="images/shop/cart-img-2.png"
+                                                            data-src="images/shop/cart-img-2.png">
+                                                            <div class="grid-gallery__post-img"
+                                                                style="background-image: url(images/shop/cart-img-2.png);">
+                                                            </div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="internal-card__price internal-card__price--discount d-flex align-items-center flex-wrap">
+                                                <span></span>
+                                            </div>
+
+                                            <p>
+                                                To help your skin thrive, use Moroccan argan extract which conditions
+                                                and moisturizes while
+                                                chlorella brings a boost of skin-benefiting vitamins and omega 3s for
+                                                extra glowing goodness
+                                                <a href="#">...Read More</a>
+                                            </p>
+                                        </div>
+                                        <div class="internal-card__bottom">
+                                            <div class="reaction">
+                                                <div class="reaction__top">
+                                                    <ul class="reaction__list-icon list-unstyled mb-0">
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-expensive"></i>
+                                                            <span>1</span>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-thumbdown"></i>
+                                                            <span>1</span>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-thumbup"></i>
+                                                            <span>1</span>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-favorite"></i>
+                                                            <span>1</span>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="reaction__text">0 comments</span>
+                                                </div>
+                                                <div class="reaction__bottom">
+                                                    <div class="reaction__wrap-link reaction__wrap-link--reaction">
+
+                                                        <i class="icon icon-feedback"></i>
+                                                        <span>feedback</span>
+
+                                                        <div class="reaction-btn-like reaction-btn-like--shop">
+                                                            <ul class="reaction-btn-like__list list-unstyled mb-0">
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#"
+                                                                        class="reaction-btn-like__link d-flex flex-column align-items-center justify-content-center">
+                                                                        <i class="icon icon-expensive"></i>
+                                                                        <span>Expensive</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#"
+                                                                        class="reaction-btn-like__link d-flex flex-column align-items-center justify-content-center">
+                                                                        <i class="icon icon-thumbdown"></i>
+                                                                        <span>Doesnt work</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#"
+                                                                        class="reaction-btn-like__link d-flex flex-column align-items-center justify-content-center">
+                                                                        <i class="icon icon-thumbup"></i>
+                                                                        <span>Works</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reaction-btn-like__item">
+                                                                    <a href="#"
+                                                                        class="reaction-btn-like__link d-flex flex-column align-items-center justify-content-center">
+                                                                        <i class="icon icon-favorite"></i>
+                                                                        <span>Love it</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reaction__wrap-link">
+                                                        <a href="#" class="reaction__link">
+                                                            <i class="icon icon-comment"></i>
+                                                            <span>comment</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="reaction__wrap-link reaction__wrap-link--next-to-last">
+                                                        <a href="#" class="reaction__link">
+                                                            <i class="icon icon-plus-blue"></i>
+                                                            <span>add to timeline</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="reaction__wrap-link reaction__wrap-link--last">
+                                                        <a href="#" class="reaction__link">
+                                                            <i class="icon icon-star"></i>
+                                                            <span>wishlist</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="internal-card__other">
+                                                <a href="#" class="btn btn-orange">Add to Cart</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- option  add class: - options--open -->
+                                        <div class="options">
+                                            <button type="button" class="options__btn" data-type="options">
+                                                <i class="icon icon-more"></i>
+                                            </button>
+
+                                            <div class="options__dropdown">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Share</a></li>
+                                                    <li><a href="#">Not gift worthy</a></li>
+                                                    <li><a href="#store-info" data-toggle="modal">About the store</a>
+                                                    </li>
+                                                    <li><a href="#">Report abuse</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="connections__wrapper">
+                            <div class="connections">
+                                <span>Recomended</span>
+                                <section class="section-content">
+                                    <article class="aside-card position-relative">
+                                        <div class="internal-card internal-card--aside">
+                                            <div class="internal-card__body">
+                                                <div
+                                                    class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap overflow-hidden">
+                                                    <figure class="grid-gallery__width-1-1">
+                                                        <a class="grid-gallery__selector"
+                                                            href="images/shop/product.jpg">
+                                                            <div class="grid-gallery__post-img"
+                                                                style="background-image: url(images/shop/product.jpg);"
+                                                                data-src="images/feed/feed-img1.jpg">
+                                                            </div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+
+                                                <div
+                                                    class="internal-card__price d-flex align-items-center justify-content-center flex-wrap">
+                                                    <span>$49.99</span>
+                                                </div>
+
+                                                <div class="internal-card__gift">
+                                                    <p class="text-center">Perfect gift for:</p>
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center flex-wrap">
+                                                        <div
+                                                            class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                                            <img src="" alt="">
+                                                            <span class="avatar__symbol">JS</span>
+                                                        </div>
+                                                        <div
+                                                            class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                                            <img src="" alt="">
+                                                            <span class="avatar__symbol">JS</span>
+                                                        </div>
+                                                        <div
+                                                            class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                                            <img src="" alt="">
+                                                            <span class="avatar__symbol">JS</span>
+                                                        </div>
+
+                                                        <div class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden"
+                                                            style="background-color: #f8f9fb">
+                                                            <img src="" alt="">
+                                                            <span class="avatar__symbol"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="internal-card__bottom">
+                                                <div class="internal-card__other">
+                                                    <a href="#" class="btn btn-border-orange">View
+                                                        Product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    {{> ../common/footer }}
+    </div>
+
+    <!-- Modals -->
+    {{> ../common/modals/create-goss }}
+    {{> ../common/modals/menu-mobile }}
+    {{> ../common/modals/add-photo }}
+    {{> ../common/modals/user-profile-menu }}
+    {{> ../common/modals/share-product }}
+    {{> ../common/modals/add-timeline-product }}
+    {{> ../common/modals/add-wishlist }}
+    {{> ../common/modals/search-parameters }}
+    {{> ../common/modals/cart }}
+    {{> ../common/modals/add-comment }}
+    {{> ../common/modals/store-info }}
+    {{> ../common/modals/shop-another }}
+    {{> ../common/modals/modals-notifications }}
+    {{> ../common/modals/message-overlay }}
+    {{> ../common/modals/goss-gallery }}
+    {{> ../common/modals/menu-mobile--not-shop }}
+    {{> ../common/modals/galery-view }}
+    {{> ../common/modals/modal-pets }}
+    {{> ../common/modals/modal-child }}
+    {{> ../common/modals/modal-invite }}
+    {{> ../common/modals/modal-unlink }}
+    <!-- /Modals -->
+</body>
+
+</html>

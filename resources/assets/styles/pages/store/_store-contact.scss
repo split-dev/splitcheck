@@ -1,0 +1,26 @@
+.store-info__address {
+  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 24px 12px 12px 24px;
+  strong {
+    margin-bottom: 30px;
+    color: #335491;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 0.86px;
+    display: inline-block;
+  }
+  .members__form {
+    max-width: 312px;
+    margin-bottom: 16px;
+    .form__label {
+      padding-left: 8px;
+    }
+  }
+  .btn-blue {
+    margin-left: auto;
+    margin-top: 11px;
+  }
+}

@@ -20,6 +20,61 @@
     font-weight: 400;
     line-height: 22px;
   }
+  &__edit-box {
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 24px 12px 12px 12px;
+    margin-bottom: 24px;
+    @media (max-width: 575px) {
+      margin-bottom: 16px;
+    }
+    &--seo {
+      margin-bottom: 16px;
+      strong {
+        margin-bottom: 0 !important;
+      }
+      .form__note {
+        margin-left: 12px;
+        padding-left: 0;
+      }
+    }
+    .members__form {
+      position: relative;
+    }
+    .count {
+      position: absolute;
+      right: 13px;
+      bottom: 36px;
+    }
+    .btn-blue {
+      margin-left: auto;
+      margin-bottom: 16px;
+    }
+    .form__single {
+      margin-bottom: 0;
+    }
+    .form__note {
+      margin-bottom: 14px;
+      margin-top: 0;
+      display: inline-block;
+    }
+    strong {
+      display: block;
+      color: #335491;
+      font-weight: 500;
+      font-size: 12px;
+      font-style: normal;
+      letter-spacing: 0.86px;
+      text-transform: uppercase;
+      margin-left: 12px;
+      margin-bottom: 14px;
+    }
+    textarea {
+      min-height: 120px;
+      margin-bottom: 24px;
+    }
+  }
 }
 .gift-shopping-store {
   .statistic-box__emotion {

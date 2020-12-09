@@ -110,6 +110,11 @@
       "title": "Store about",
       "description": "store-about",
       "url": "/store-about.html"
+    },
+    {
+      "title": "Store about-edit",
+      "description": "store-about-edit",
+      "url": "/store-about-edit.html"
     }
   ]
 }

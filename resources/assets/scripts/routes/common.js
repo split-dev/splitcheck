@@ -297,6 +297,7 @@ export default {
         width: '100%',
         // dropdownParent: $('.form__single--select-user'),
       });
+
      }
 
      //mini aside slider 
@@ -349,6 +350,38 @@ export default {
      });
    });
     }
+
+    //select2 multiple no img
+      // * function for "Select" template in modal
+      if($('.form__single--select-default select[data-toggle="select-img"]')) {
+        $('.form__single--select-user select[data-toggle="select-img"]').select2({
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+          templateResult: function (state) {
+            if (!state.id) {
+              return state.text;
+            }
+            var baseUrl = 'images/profiles';
+            var $state = $(`
+              <div class="profile-list">
+                <span>${state.text}</span>
+              </div>
+            `);
+  
+            return $state;
+          },
+          // dropdownParent: $('.form__single--select-user'),
+        });
+       }
+  
+       // * function for "Select is not avatar" template in modal
+       if($('.form__single--select-not select[data-toggle="select-img"]')) {
+        $('.form__single--select-user-not select[data-toggle="select-img"]').select2({
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+          // dropdownParent: $('.form__single--select-user'),
+        });
+      }
 
   },
 

@@ -65,4 +65,9 @@
       max-width: 100%;
     }
   }
+  .profile__bottom {
+    @media (max-width: 575px) {
+      margin-top: 16px;
+    }
+  }
 }

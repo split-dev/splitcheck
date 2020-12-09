@@ -130,6 +130,9 @@
     background-color: #fff;
     padding: 16px 24px;
     margin-top: 30px;
+    @media (max-width: 767px) {
+      padding: 15px 0;
+    }
   }
   &__area {
     border-radius: 5px;

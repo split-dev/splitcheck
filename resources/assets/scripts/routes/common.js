@@ -309,6 +309,18 @@ export default {
       },
     });
 
+    function setColor() {
+      let color = $('.select-color--store').attr('data-color')
+      $('.profile-face__background').css('background-color', color)
+      $('.profile-face__photo').css('background-color', color)
+      $('.shop-category__single').css('background-color', color)
+      $('.internal-card__name--store').css('color', color)
+    }
+    //color picker
+    if($('.select-color--store')) {
+      setColor();
+    }
+
     if($('.select-color')) {
       //setColor
      $('.profile-face__background .btn-border').click( function(e) {
@@ -319,9 +331,12 @@ export default {
     $('.profile-face__background .select-color li').click( function() {
       $('.profile-face__background .select-color li').removeClass('select');
       $(this).addClass('select');
-      $('.profile-face__background').css('background-color', $(this).css('background-color'))
+      let thisColor = $(this).css('background-color');
+      $('.profile-face__background').css('background-color', thisColor)
       $('.profile-face__background .btn-border').removeClass('active');
       $('.profile-face__background .select-color').removeClass('show');
+      $('.select-color--store').attr('data-color', thisColor)
+      setColor();
     });
     $(function($){
      $(document).mouseup(function (e){

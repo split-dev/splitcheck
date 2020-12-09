@@ -575,8 +575,9 @@ export default {
       galleryThumbs.slidePrev()
     })
 
-    //shoping gift
+    //store post
     $('.gift-shopping__header').click( function() {
+      $(this).toggleClass('open');
       $(this).next().slideToggle();
     })
 

@@ -1,0 +1,46 @@
+.store-info {
+  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 24px 35px 12px 24px;
+  margin-bottom: 16px;
+  strong {
+    color: #335491;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 0.86px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  p {
+    color: #0b0212;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+.gift-shopping-store {
+  .statistic-box__emotion {
+    margin: 24px 0 48px;
+  }
+  .reaction__wrap-link {
+    margin-left: 0;
+    max-width: 56px;
+  }
+  .comments-box {
+    height: 100%;
+    height: 630px;
+    &::before {
+      left: -20px;
+      right: -20px;
+    }
+    .scroll-div {
+      height: inherit;
+    }
+  }
+  .gift-shopping__body {
+    padding: 0 20px;
+  }
+}

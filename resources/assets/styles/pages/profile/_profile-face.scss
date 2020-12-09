@@ -7,7 +7,7 @@
     padding: 17px 25px;
     background-position: center;
     background-size: cover;
-    background-color: #d8e1f1;
+    background-color: #8196c3;
     border-radius: 8px 8px 0 0;
     height: inherit;
     position: relative;
@@ -16,7 +16,7 @@
       &::after {
         content: "";
         display: block;
-        background-color: #8196c3;
+        background-color: inherit;
         position: absolute;
         left: 0;
         top: 0;
@@ -243,7 +243,7 @@
     height: 122px;
     border-radius: 50%;
     border: 2px solid theme-color("white");
-    background-color: theme-color("blue5");
+    background-color: #2f5095;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -273,6 +273,7 @@
       align-items: center;
       opacity: 0;
       transition: 0.3s;
+      background-color: inherit;
       img {
         margin-bottom: 8px;
       }
@@ -284,7 +285,7 @@
       &:before {
         content: "";
         display: block;
-        background-color: #8196c3;
+        background-color: inherit;
         opacity: 0.95;
         position: absolute;
         left: 0;

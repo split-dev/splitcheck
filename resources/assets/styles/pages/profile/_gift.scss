@@ -18,6 +18,12 @@
       bottom: 0;
       display: flex;
       align-items: center;
+      transition: 0.3s;
+    }
+    &.open {
+      &:after {
+        transform: rotate(180deg);
+      }
     }
     h3 {
       color: #335491;
@@ -28,8 +34,11 @@
       text-align: left;
       margin-bottom: 0;
       text-transform: uppercase;
-      @media (max-width: 575px) {
+      @media (max-width: 767px) {
         line-height: 28px;
+      }
+      @media (max-width: 575px) {
+        max-width: 320px;
       }
     }
   }

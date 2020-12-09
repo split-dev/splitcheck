@@ -105,6 +105,11 @@
       "title": "Store store-contact",
       "description": "store-contact",
       "url": "/store-contact.html"
+    },
+    {
+      "title": "Store about",
+      "description": "store-about",
+      "url": "/store-about.html"
     }
   ]
 }

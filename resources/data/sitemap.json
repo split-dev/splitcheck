@@ -77,6 +77,26 @@
       "url": "/groups-list.html"
     },
     {
+      "title": "Wishlist",
+      "description": "groups",
+      "url": "/wishlist.html"
+    },
+    {
+      "title": "Wishlist Friends",
+      "description": "groups",
+      "url": "/wishlist-friends.html"
+    },
+    {
+      "title": "Groups menage",
+      "description": "groups",
+      "url": "/group-menage.html"
+    },
+    {
+      "title": "Groups create",
+      "description": "groups",
+      "url": "/group-create.html"
+    },
+    {
       "title": "Settings",
       "description": "settings",
       "url": "/settings.html"

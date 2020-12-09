@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="profile home orders shop">
+    {{> ../common/mobile-menu }}
+    {{> ../common/mobile-menu-bottom }}
+    <div class="section-blur " data-class="maze">
+        {{> ../common/header-next }}
+        <div class="container">
+            <div class="main-content position-relative d-flex align-items-start justify-content-between">
+                <!-- aside-left -->
+                <aside class="aside-left">
+                    <div class="scroll-div">
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">My
+                                profile</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-baby"></i>
+                                            <span>Kid account</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-pet"></i>
+                                            <span>Pet account</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-shipping"></i>
+                                            <span>My orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-book"></i>
+                                            <span>Address book</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="/settings.html"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-settings-oval"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">Other
+                                links</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-gift active"></i>
+                                            <span>Spoil yourself</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-social-media"></i>
+                                            <span>Open public goss</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-discount"></i>
+                                            <span>Snatch a bargain</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-mail"></i>
+                                            <span>Shared orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-group"></i>
+                                            <span>My groups</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-heart"></i>
+                                            <span>My family</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" data-toggle="modal" data-target="#notification"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-notification"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Alerts</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="/shopping-preferences.html"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-setting"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Shopping preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </aside>
+                <!-- /aside-left -->
+                <main class="main w-100">
+                    <span class="section-content__title position-relative d-flex align-items-center">My
+                        profile</span>
+                    <section class="section-content">
+                        <div class="orders__box">
+                            <div class="orders__toggle">
+                                <div class="d-flex w-100  align-items-center justify-content-between">
+                                    <div class="d-flex">
+                                        <div class="orders__line"></div>
+                                        <div class="d-flex flex-column w-100 justify-content-center">
+                                            <div class="d-flex">
+                                                <a href="#"># 431 245 987</a>
+                                                <b>Order Name</b>
+                                                <span class="text-gray">
+                                                    02.10.2020
+                                                </span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <p>Pending</p>
+                                                <span class="text-blue">Recurrent</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex w-100 flex-column orders__price">
+                                        <span class="text-gray">
+                                            total price
+                                        </span>
+                                        <p>$300.50</p>
+                                    </div>
+                                    <div class="d-flex w-100 justify-content-end orders__bottles">
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="orders__hide">
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-content">
+                        <div class="internal-card__slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="product-card">
+                                        <figure class="product-card__figure position-relative">
+                                            <span class="product-card__index">1/3</span>
+                                            <img src="/images/shop/product2.jpg" alt="product"
+                                                class="product-card__image">
+                                        </figure>
+                                        <div class="product-card__header">
+                                            <p class="product-card__price">$49.99</p>
+                                            <p class="product-card__copy">
+                                                Lorem ipsum dolor sit amet
+                                            </p>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="btn btn-orange">Add to Cart</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="product-card">
+                                        <figure class="product-card__figure position-relative">
+                                            <span class="product-card__index">2/3</span>
+                                            <img src="/images/shop/product3.jpg" alt="product"
+                                                class="product-card__image">
+                                        </figure>
+                                        <div class="product-card__header">
+                                            <p class="product-card__price">$49.99</p>
+                                            <p class="product-card__copy">
+                                                Lorem ipsum dolor sit amet
+                                            </p>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="btn btn-orange">Add to Cart</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="product-card">
+                                        <figure class="product-card__figure position-relative">
+                                            <span class="product-card__index">3/3</span>
+                                            <img src="/images/shop/product2.jpg" alt="product"
+                                                class="product-card__image">
+                                        </figure>
+                                        <div class="product-card__header">
+                                            <p class="product-card__price">$49.99</p>
+                                            <p class="product-card__copy">
+                                                Lorem ipsum dolor sit amet
+                                            </p>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="btn btn-orange">Add to Cart</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="product-card">
+                                        <figure class="product-card__figure position-relative">
+                                            <img src="/images/shop/product3.jpg" alt="product"
+                                                class="product-card__image">
+                                        </figure>
+                                        <div class="product-card__header">
+                                            <p class="product-card__price">$49.99</p>
+                                            <p class="product-card__copy">
+                                                Lorem ipsum dolor sit amet
+                                            </p>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="btn btn-orange">Add to Cart</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </section>
+                </main>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {{> ../common/footer }}
+    </div>
+
+    <!-- Modals -->
+    {{> ../common/modals/create-goss }}
+    {{> ../common/modals/menu-mobile }}
+    {{> ../common/modals/add-photo }}
+    {{> ../common/modals/user-profile-menu }}
+    {{> ../common/modals/share-product }}
+    {{> ../common/modals/add-timeline-product }}
+    {{> ../common/modals/add-wishlist }}
+    {{> ../common/modals/search-parameters }}
+    {{> ../common/modals/cart }}
+    {{> ../common/modals/add-comment }}
+    {{> ../common/modals/store-info }}
+    {{> ../common/modals/shop-another }}
+    {{> ../common/modals/modals-notifications }}
+    {{> ../common/modals/message-overlay }}
+    {{> ../common/modals/goss-gallery }}
+    {{> ../common/modals/menu-mobile--not-shop }}
+    {{> ../common/modals/galery-view }}
+    {{> ../common/modals/modal-pets }}
+    {{> ../common/modals/modal-child }}
+    {{> ../common/modals/modal-invite }}
+    {{> ../common/modals/add-photo-background }}
+    <!-- /Modals -->
+</body>
+
+</html>

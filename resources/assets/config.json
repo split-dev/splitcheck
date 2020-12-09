@@ -15,6 +15,7 @@
       "./styles/pages/cookies/index.scss",
       "./styles/pages/store/index.scss",
       "./styles/pages/wishlist/index.scss",
+      "./styles/pages/orders/index.scss",
       "./styles/components/modals/modals.scss",
       "./styles/components/modals/modal-side.scss",
       "./styles/components/modals/modal-add-timeline.scss",

@@ -175,20 +175,20 @@
                 <div class="profile__list d-flex flex-column w-100">
                     <div class="profile-face w-100 d-flex flex-column">
                         <ul class="select-color select-color--store">
-                                <li class="plus"></li>
-                                <li class="select"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                            <li class="plus"></li>
+                            <li class="select"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                         <div class="profile-face__background w-100 d-flex photo"
                             style="background-image: url('images/store/store-bg.jpg');">
-                            
+
                             <a href="#add-photo--background" data-toggle="modal" class="btn-blue-full"><img
                                     src="images/icons/camera-24px.svg" alt="">Upload
                                 cover photo</a>
@@ -354,6 +354,21 @@
                             <div class="section-content">
                                 <div class="store-info__address">
                                     <strong>Address & Availability</strong>
+                                    <div class="members__radio">
+                                        <div class="form-radio">
+                                            <input id="radio-1" class="radio-custom" name="radio-group" type="radio"
+                                                checked>
+                                            <label for="radio-1" class="radio-custom-label">Online only</label>
+                                        </div>
+                                        <div class="form-radio">
+                                            <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+                                            <label for="radio-2" class="radio-custom-label">Online and in store</label>
+                                        </div>
+                                        <div class="form-radio">
+                                            <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+                                            <label for="radio-3" class="radio-custom-label">In store only</label>
+                                        </div>
+                                    </div>
                                     <div class="members__form">
                                         <label class="form__label">address line 1</label>
                                         <input class="form__input" placeholder="Text here" type="text">

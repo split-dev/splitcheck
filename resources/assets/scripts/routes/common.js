@@ -324,28 +324,28 @@ export default {
 
     if($('.select-color')) {
       //setColor
-     $('.profile-face__background .btn-border').click( function(e) {
+     $('.profile-face .btn-border').click( function(e) {
       e.preventDefault();
       $(this).addClass('active');
-     $('.profile-face__background .select-color').addClass('show');
+     $('.profile-face .select-color').addClass('show');
     });
-    $('.profile-face__background .select-color li').click( function() {
-      $('.profile-face__background .select-color li').removeClass('select');
+    $('.profile-face .select-color li').click( function() {
+      $('.profile-face .select-color li').removeClass('select');
       $(this).addClass('select');
       let thisColor = $(this).css('background-color');
-      $('.profile-face__background').css('background-color', thisColor)
-      $('.profile-face__background .btn-border').removeClass('active');
-      $('.profile-face__background .select-color').removeClass('show');
+      $('.profile-face').css('background-color', thisColor)
+      $('.profile-face .btn-border').removeClass('active');
+      $('.profile-face .select-color').removeClass('show');
       $('.select-color--store').attr('data-color', thisColor)
       setColor();
     });
     $(function($){
      $(document).mouseup(function (e){
-       var div = $('.profile-face__background .select-color');
+       var div = $('.profile-face .select-color');
        if (!div.is(e.target)
            && div.has(e.target).length === 0) {
-             $('.profile-face__background .btn-border').removeClass('active');
-             $('.profile-face__background .select-color').removeClass('show');
+             $('.profile-face .btn-border').removeClass('active');
+             $('.profile-face .select-color').removeClass('show');
        }
      });
    });
@@ -391,6 +391,32 @@ export default {
         });
       }
 
+      //position select color
+      function positinSelectColor() {
+        if($('.button-color')) {
+          if(window.innerWidth > 767) {
+            let left = $('.button-color').position().left;
+            let top = $('.button-color').position().top + 41;
+            $('.select-color').css({
+              left: left,
+              top: top,
+            })
+          } else {
+            let right = ($('.profile-face__background').width() - $('.button-color').position().left) - 100;
+            let top = $('.button-color').position().top + 41;
+            $('.select-color').css({
+              left: 'auto',
+              right: right,
+              top: top,
+            })
+          }
+        }
+      }
+      positinSelectColor();
+      $(window).resize(function() {
+        positinSelectColor();
+    });
+   
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

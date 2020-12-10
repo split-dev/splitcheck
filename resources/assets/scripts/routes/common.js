@@ -393,7 +393,8 @@ export default {
 
       //position select color
       function positinSelectColor() {
-        if($('.button-color')) {
+        if($('.button-color').hasClass('button-color')) {
+          console.log(true);
           if(window.innerWidth > 767) {
             let left = $('.button-color').position().left;
             let top = $('.button-color').position().top + 41;

@@ -3,62 +3,13 @@
 @import "../../bootstrap-utils";
 
 // Page Specific Components
-@import "card-goss";
-@import "card-timeline";
-@import "new-item";
-@import "other-links";
-@import "personal-card";
-@import "reaction";
-@import "section-content";
-@import "swiper-custom";
-@import "timeline";
+@import "full-item";
 
-.home {
+.product {
   .aside-left,
   .aside-right {
     transition: top 0.3s;
   }
-
-  .aside-left {
-    width: 18.619%;
-    position: sticky;
-    padding-right: 27px;
-    top: 90px;
-    min-width: 206px;
-
-    @include media-breakpoint-down(md) {
-      display: none;
-    }
-
-    .section-content {
-      padding-right: 0;
-      max-width: 186px;
-
-      @include media-breakpoint-down(lg) {
-        max-width: 186px;
-      }
-
-      &:first-of-type,
-      &:last-of-type {
-        margin-bottom: 48px;
-      }
-
-      .btn-border {
-        height: 32px;
-        background-color: transparent;
-
-        font-weight: $font-weight-normal;
-
-        &:focus {
-          background-color: theme-color("blue3");
-        }
-        &:hover {
-          background-color: theme-color("blue2");
-        }
-      }
-    }
-  }
-
   .main {
     width: 49.124%;
 
@@ -96,6 +47,17 @@
     margin-bottom: 48px;
     .section-content {
       padding-left: 34px;
+      width: 100%;
+      max-width: calc(100% - 18px);
+      margin-bottom: 24px;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 300px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 369px;
+      }
 
       .btn-border {
         max-width: calc(100% - 16px);
@@ -347,6 +309,24 @@
           margin-bottom: 16px;
         }
       }
+    }
+  }
+}
+
+.main-item {
+  width: 67.6%;
+  .section-content__title {
+    margin-bottom: 18px;
+    img {
+      margin-right: 9px;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      color: #35558f;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: none;
     }
   }
 }

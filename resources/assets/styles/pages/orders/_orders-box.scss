@@ -1,4 +1,9 @@
 .orders {
+  .active-arrow {
+    &:after {
+      transform: rotate(-180deg);
+    }
+  }
   &__line {
     width: 8px;
     height: 56px;

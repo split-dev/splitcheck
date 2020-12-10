@@ -11,6 +11,11 @@ export default {
 
     Dropzone.autoDiscover = false;
 
+    $('.orders__toggle').on('click', function() {
+      $(this).next().slideToggle(400);
+      $(this).toggleClass('active-arrow');
+    });
+
     $('.groups__toggle').on('click', function() {
       $(this).next().slideToggle(400);
       $(this).toggleClass('active-arrow');

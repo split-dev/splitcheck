@@ -24,6 +24,7 @@
     position: sticky;
     padding-right: 27px;
     top: 90px;
+    min-width: 186px;
 
     @include media-breakpoint-down(md) {
       display: none;
@@ -34,7 +35,7 @@
       max-width: 186px;
 
       @include media-breakpoint-down(lg) {
-        max-width: 146px;
+        max-width: 186px;
       }
 
       &:first-of-type,

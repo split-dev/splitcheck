@@ -575,12 +575,6 @@ export default {
       galleryThumbs.slidePrev()
     })
 
-    //store post
-    $('.gift-shopping__header').click( function() {
-      $(this).toggleClass('open');
-      $(this).next().slideToggle();
-    })
-
     //emotion script
     function emotionCalc(item) {
       let atr = Number($(item).attr('data-progress'));

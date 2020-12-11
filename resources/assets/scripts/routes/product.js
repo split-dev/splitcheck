@@ -2,6 +2,7 @@
 import 'bootstrap/js/dist/modal';
 import Swiper from 'swiper/swiper-bundle';
 import 'select2/dist/js/select2.full';
+import PerfectScrollbar from 'perfect-scrollbar';
 
 // import '@chenfengyuan/datepicker/dist/datepicker.min';
 
@@ -41,15 +42,15 @@ export default {
           1260: {
             slidesPerView: 4,
           },
-          575: {
+          991: {
             slidesPerView: 4,
             // freeMode: true,
           },
-          360: {
-            slidesPerView: 3,
+          575: {
+            slidesPerView: 4,
           },
           250: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             setWrapperSize: false,
             simulateTouch: false,
             preventInteractionOnTransition: true,
@@ -59,13 +60,7 @@ export default {
         },
         on: {
           init: function (event) {
-            if(window.innerWidth < 992) {
-              initNumber(event.params.slidesPerView + 1, $(event.el).parent());
-              $('.gallery-thumbnails .swiper-container').append($('.gallery-thumbnails .count-slider'));
-            } else {
-              initNumber(event.params.slidesPerView, $(event.el).parent());
-            }
-            
+            initNumber(event.params.slidesPerView, $(event.el).parent());
           },
         },
       });
@@ -105,6 +100,54 @@ export default {
         swiper: galleryThumbs,
       },
     });
+
+
+    //* Swiper
+    {
+      let swiperCard;
+
+      //* option for swiper
+      const optionForSwiperProduct = {
+        slidesPerView: 4,
+        spaceBetween: 16,
+        navigation: {
+          nextEl: '.internal-card__slider .swiper-button-next',
+          prevEl: '.internal-card__slider .swiper-button-prev',
+        },
+        breakpoints: {
+          1260: {
+            slidesPerView: 4,
+          },
+          991: {
+            slidesPerView: 3,
+          },
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 8,
+          },
+          320: {
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+          },
+        },
+      }
+
+      //* swiper init
+      if($('.slider-recomend')) {
+        swiperCard = new Swiper('.internal-card__slider.swiper-container', optionForSwiperProduct);
+      }
+      
+    }
+
+    //scroll horizontal
+    function resize() {
+      ps.update();
+    }
+
+    if($('.tabs-product')) {
+      var ps = new PerfectScrollbar('.tabs-product');
+      window.onresize = resize;
+    }
 
   },
 

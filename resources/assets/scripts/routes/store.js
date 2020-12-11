@@ -50,11 +50,6 @@ export default {
       setColor();
     }
 
-    //store post
-    $('.gift-shopping__header').click( function() {
-      $(this).toggleClass('open');
-      $(this).next().slideToggle();
-    })
 
     //max count strong textarea
     $('.max-text textarea, .form__single--max textarea').keyup(function() {

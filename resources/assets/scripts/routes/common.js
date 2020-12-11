@@ -417,6 +417,18 @@ export default {
       $(window).resize(function() {
         positinSelectColor();
     });
+
+    //toogle post
+    $('.gift-shopping__header').click( function() {
+      $(this).toggleClass('open');
+      $(this).next().slideToggle();
+    })
+
+    //open mobile product
+    $('.options-cart').click( function() {
+      $(this).toggleClass('open');
+      $(this).parent().find($('.options-cart__body')).slideToggle();
+    })
    
   },
 

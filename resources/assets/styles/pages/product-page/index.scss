@@ -45,11 +45,18 @@
     position: -webkit-sticky;
     top: 90px;
     margin-bottom: 48px;
+    min-width: 345px;
+    .ss-scroll {
+      @media (max-width: 1260px) {
+        margin-left: -5px;
+      }
+    }
     .section-content {
       padding-left: 34px;
       width: 100%;
       max-width: calc(100% - 18px);
       margin-bottom: 24px;
+      min-width: 334px;
 
       @include media-breakpoint-up(lg) {
         max-width: 300px;
@@ -112,7 +119,7 @@
   z-index: 2;
 
   @include media-breakpoint-down(md) {
-    padding-top: 230px;
+    padding-top: 20px;
     flex-wrap: wrap;
   }
 }
@@ -315,6 +322,9 @@
 
 .main-item {
   width: 67.6%;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
   .section-content__title {
     margin-bottom: 18px;
     img {
@@ -328,5 +338,8 @@
       font-size: 16px;
       text-transform: none;
     }
+  }
+  .gift-shopping {
+    margin-bottom: 24px;
   }
 }

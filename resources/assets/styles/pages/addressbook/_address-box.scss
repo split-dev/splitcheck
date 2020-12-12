@@ -1,4 +1,33 @@
 .addressbook {
+  .max-text {
+    position: relative;
+    max-width: 312px;
+  }
+  label {
+    padding-left: 10px;
+  }
+  input {
+    padding-left: 10px;
+  }
+  &__full-blank {
+    .addressbook__box {
+      &:nth-child(2) {
+        margin-bottom: 24px;
+      }
+      &:nth-child(3) {
+        p {
+          margin-bottom: 0;
+        }
+      }
+      &:last-child {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        figure {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
   .header {
     input {
       opacity: 0.75;

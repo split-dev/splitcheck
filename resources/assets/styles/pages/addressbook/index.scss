@@ -15,6 +15,11 @@
 }
 
 .addressbook {
+  .head-links__link--active {
+    &::after {
+      display: none;
+    }
+  }
   .address__margin {
     @media (max-width: 575px) {
       margin-bottom: 24px;

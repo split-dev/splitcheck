@@ -162,6 +162,14 @@
     color: theme-color("gray");
   }
 
+  .count {
+    position: absolute;
+    right: 14px;
+    bottom: 15px;
+    color: #0b0212;
+    font-size: 14px;
+    font-weight: 400;
+  }
   &__input,
   &__select,
   &__textarea {

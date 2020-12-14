@@ -78,7 +78,10 @@
   }
   .push {
     .account-preferences__block {
-      margin-bottom: 15px;
+      margin-bottom: 5px;
+      &:first-child {
+        margin-bottom: 25px;
+      }
     }
   }
   .account-preferences {
@@ -126,7 +129,7 @@
     &__block {
       display: flex;
       flex-direction: column;
-      margin-bottom: 45px;
+      margin-bottom: 30px;
       &:first-child {
         margin-bottom: 35px;
       }
@@ -199,7 +202,8 @@
         display: flex;
         order: 2;
         max-width: 60px;
-        margin-right: 10px;
+        margin-right: 18px;
+        margin-left: 10px;
       }
       .check-off {
         order: 1;

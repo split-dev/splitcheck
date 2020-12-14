@@ -4,8 +4,10 @@
 
 // Page Specific Components
 @import "full-item";
+@import "product";
 
 .product {
+  overflow-x: hidden;
   .aside-left,
   .aside-right {
     transition: top 0.3s;
@@ -38,7 +40,33 @@
       }
     }
   }
-
+  .gift-shopping__header {
+    h3 {
+      @media (max-width: 575px) {
+        max-width: 282px;
+      }
+    }
+  }
+  .section-content--bottom {
+    padding-bottom: 30px;
+  }
+  .section-blur {
+    .container {
+      @media (max-width: 991px) {
+        padding: 0 !important;
+      }
+    }
+    .header {
+      @media (max-width: 991px) {
+        padding: 0 15px !important;
+      }
+    }
+    .section-content__title {
+      @media (max-width: 991px) {
+        padding: 0 15px !important;
+      }
+    }
+  }
   .aside-right {
     width: 32.257%;
     position: sticky;
@@ -46,6 +74,20 @@
     top: 90px;
     margin-bottom: 48px;
     min-width: 345px;
+    @media (max-width: 991px) {
+      overflow: hidden;
+      .ss-content {
+        > div {
+          display: none;
+        }
+      }
+      &.instore {
+        margin-bottom: 8px !important;
+      }
+      &:not(.instore) {
+        display: none !important;
+      }
+    }
     .ss-scroll {
       @media (max-width: 1260px) {
         margin-left: -5px;
@@ -57,6 +99,14 @@
       max-width: calc(100% - 18px);
       margin-bottom: 24px;
       min-width: 334px;
+
+      &.stock {
+        > div:not(.option-price__button),
+        > span {
+          opacity: 0.5;
+          pointer-events: none;
+        }
+      }
 
       @include media-breakpoint-up(lg) {
         max-width: 300px;

@@ -40,7 +40,8 @@
       "./styles/components/modals/modal-child.scss",
       "./styles/components/modals/modal-invite.scss",
       "./styles/components/modals/modal-unlink.scss",
-      "./styles/components/modals/modal-groups.scss"
+      "./styles/components/modals/modal-groups.scss",
+      "./styles/components/modals/modal-check.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",
@@ -80,7 +81,8 @@
     "components/modals/modal-pets": "./styles/components/modals/modal-pets.scss",
     "components/modals/modal-child": "./styles/components/modals/modal-child.scss",
     "components/modals/modal-invite": "./styles/components/modals/modal-invite.scss",
-    "components/modals/modal-unlink": "./styles/components/modals/modal-unlink.scss"
+    "components/modals/modal-unlink": "./styles/components/modals/modal-unlink.scss",
+    "components/modals/modal-check": "./styles/components/modals/modal-check.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

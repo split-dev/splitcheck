@@ -145,6 +145,26 @@
       "title": "Product-bargain",
       "description": "product-bargain",
       "url": "/product-bargain.html"
+    },
+    {
+      "title": "Product-description",
+      "description": "product-description",
+      "url": "/product-description.html"
+    },
+    {
+      "title": "Product-stock",
+      "description": "product-stock",
+      "url": "/product-stock.html"
+    },
+    {
+      "title": "Product-kit",
+      "description": "product-kit",
+      "url": "/product-kit.html"
+    },
+    {
+      "title": "Product-bundle",
+      "description": "product-bundle",
+      "url": "/product-bundle.html"
     }
   ]
 }

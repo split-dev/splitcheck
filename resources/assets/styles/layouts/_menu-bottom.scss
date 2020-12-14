@@ -118,6 +118,22 @@
     right: 0;
     background-color: #fff;
     border-radius: 8px 8px 0 0;
+    &.stock {
+      .option-price {
+        display: flex;
+        justify-content: center;
+        > p {
+          max-width: 290px;
+          width: 100%;
+          text-align: center;
+          color: #0b0212;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          margin-bottom: 0;
+        }
+      }
+    }
     &::before {
       content: "";
       display: block;

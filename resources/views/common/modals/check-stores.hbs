@@ -1,0 +1,68 @@
+<!-- modal-shop-another -->
+<div class="modal modal-check fade" id="check-store" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+
+            </div>
+            <div class="modal-body">
+                <h2>Check stock in other stores</h2>
+                <!-- form -->
+                <form action="#" id="check-form" class="form">
+                    <div class="form__inputs">
+                        <div class="form__wrap">
+                            <div
+                                class="form__single form__single--select form__single--select-user form__single--fluid">
+                                <div id="search" class="search">
+
+                                    <input type="search" name="search" class="search__input"
+                                        placeholder="Enter a postcode" id="search-input" autocomplete="off">
+                                    <button class="search__button" aria-label="search">
+                                        <i class="icon icon-search"></i>
+                                    </button>
+                                </div>
+                                <span class="form__symbol-error"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- /form -->
+                <div class="store-status good">
+                    <div class="store-status__detail">
+                        <a href="#">Store Name</a>
+                        <p>59 Nerand Street, Southport, QLD 4215</p>
+                        <span>In stock</span>
+                    </div>
+                    <div class="store-status__option">
+                        <a href="#" class="send"><img src="images/icons/check_circle-24px-blue.svg" alt="check">My
+                            store</a>
+                    </div>
+                </div>
+                <div class="store-status error">
+                    <div class="store-status__detail">
+                        <a href="#">Store Name</a>
+                        <p>59 Nerand Street, Southport, QLD 4215</p>
+                        <span>Limited stock in store!</span>
+                    </div>
+                    <div class="store-status__option">
+                        <a href="#" class="btn-border btn-border--two">Set as my store</a>
+                    </div>
+                </div>
+                <div class="store-status undefine">
+                    <div class="store-status__detail">
+                        <a href="#">Store Name</a>
+                        <p>59 Nerand Street, Southport, QLD 4215</p>
+                        <span>Out of stock</span>
+                    </div>
+                    <div class="store-status__option">
+                        <a href="#" class="btn-border btn-border--two">Set as my store</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- /modal-shop-another -->

@@ -880,41 +880,17 @@
                     </div>
                 </div>
                 <!-- aside-right -->
-                <aside class="aside-right d-lg-block instore">
+                <aside class="aside-right d-lg-block">
                     <div class="scroll-div">
-                        <div class="section-content d-block">
-                            <span
-                                class="section-content__title position-relative d-flex align-items-center">Instore</span>
-                            <div class="price-info-order">
-                                <div class="price-info-order__location">
-                                    <strong>Location</strong>
-                                    <a href="#" class="link-edit">Coomera , 4209</a>
-                                    <span>Estimated on Friday, December 04, 2020</span>
-                                </div>
-                                <div class="price-info-order__store">
-                                    <strong>Your store is</strong>
-                                    <a href="#" class="link-edit">Store Name</a>
-                                    <span>Address line</span>
-                                    <div class="contactless">
-                                        <b>Contactless Click & Collect</b>
-                                        <span>Estimated collection on Friday, December 04, 2020</span>
-                                    </div>
-                                    <span class="error">Limited stock in store!</span>
-                                    <a href="#" data-toggle="modal" data-target="#check-store" class="link-edit">Check
-                                        stock in other stores</a>
-                                </div>
-                                <div class="form">
-                                    <div class="account-preferences__check">
-
-                                        <input type="checkbox" id="checkbox-2"
-                                            class="form__checkbox form__checkbox--language" name="checkbox-language"
-                                            checked="">
-                                        <label for="checkbox-2">
-
-                                        </label>
-                                        <strong class="check-on">I will pick from the store</strong>
-                                    </div>
-                                </div>
+                        <div class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">In
+                                store</span>
+                            <div class="search-region">
+                                <strong>Enter location for product availability and estimated delivery info</strong>
+                                <form>
+                                    <input type="text" class="form__input">
+                                    <a href="#" class="btn-border btn-border--two">Search in region</a>
+                                </form>
                             </div>
                         </div>
                         <div class="section-content">
@@ -1029,20 +1005,9 @@
                 <!-- /aside-right -->
             </div>
             <div class="section-content section-content--bottom">
-                <span class="section-content__title position-relative d-flex align-items-center">Recommended</span>
+                <span class="section-content__title position-relative d-flex align-items-center">Related products based
+                    on the coupon</span>
                 <div class="slider-recomend">
-                    <div class="all-coupon">
-                        <div class="coupon">
-                            <div class="coupon__info">
-                                <span>25% off</span>
-                                <span>coupon offer</span>
-                            </div>
-                            <div class="coupon__copy">
-                                <a href="#" class="btn-copy"><img src="images/icons/content_copy-24px.svg"
-                                        alt="copy">Apply</a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="slider-recomend__container">
                         <div class="internal-card__slider swiper-container">
                             <div class="swiper-wrapper">
@@ -1202,7 +1167,6 @@
     {{> ../common/modals/modal-invite }}
     {{> ../common/modals/modal-unlink }}
     {{> ../common/modals/add-photo-background }}
-    {{> ../common/modals/check-stores }}
     <!-- /Modals -->
 </body>
 

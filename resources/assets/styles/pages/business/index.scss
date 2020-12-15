@@ -1,0 +1,14 @@
+//Glob Utils
+@import "../../variables";
+@import "../../bootstrap-utils";
+
+// Page Specific Components
+@import "shopping-on-splitcheck.scss";
+
+.shopping-page {
+  padding-top: 80px;
+  background-color: #fff9f4;
+  .gifts {
+    background-color: #fff;
+  }
+}

@@ -162,15 +162,14 @@
       }
     }
   }
-}
+  .main-content {
+    padding-top: 26px;
+    z-index: 2;
 
-.main-content {
-  padding-top: 26px;
-  z-index: 2;
-
-  @include media-breakpoint-down(md) {
-    padding-top: 20px;
-    flex-wrap: wrap;
+    @include media-breakpoint-down(md) {
+      padding-top: 20px;
+      flex-wrap: wrap;
+    }
   }
 }
 

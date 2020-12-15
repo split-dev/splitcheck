@@ -48,12 +48,6 @@
   &__hide {
     display: none;
     margin-top: 20px;
-    position: relative;
-    &::before {
-      content: url("images/orders/dashed.svg");
-      top: 0;
-      position: absolute;
-    }
   }
   &__box {
     max-width: 930px;

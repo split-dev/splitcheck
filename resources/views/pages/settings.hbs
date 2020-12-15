@@ -5,7 +5,7 @@
     {{> ../common/head }}
 </head>
 
-<body class="settings home">
+<body class="settings home ">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
     <div class="section-blur" data-class="maze" id="background">
@@ -365,7 +365,7 @@
                             </div>
                         </div>
                         <div class="tab-pane show fade" id="spirit" role="tabpanel">
-                            <div class="account-preferences">
+                            <div class="account-preferences community-spirit">
 
                                 <div class="account-preferences__block">
                                     <h5>Community spirit</h5>
@@ -412,16 +412,22 @@
                             </div>
                         </div>
                         <div class="tab-pane  show fade" id="acces" role="tabpanel">
-                            <div class="account-preferences">
+                            <div class="account-preferences account-access">
 
                                 <div class="account-preferences__block">
                                     <h5>Account Access</h5>
                                     <p>Settings to help you keep your account secure</p>
                                 </div>
-                                <div class="account-preferences__block">
+                                <div class="account-preferences__block form">
                                     <span class="blue-span">Primary email address</span>
-                                    <label>Add or remove email address on your account</label>
-                                    <input placeholder="example@mail.com" type="email">
+                                    <div class="form__single">
+                                        <label class="form__label">Add or remove email address on your account</label>
+                                        <input type="email" placeholder="example@mail.com" class="form__input"
+                                            required="">
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+
+
 
                                 </div>
 
@@ -497,7 +503,7 @@
                         </div>
 
                         <div class="tab-pane show fade" id="visibility" role="tabpanel">
-                            <div class="account-preferences">
+                            <div class="account-preferences visibility">
 
                                 <div class="account-preferences__block">
                                     <h5>Visibility of your profile & network</h5>
@@ -560,7 +566,7 @@
                         </div>
 
                         <div class="tab-pane show fade" id="сommunications" role="tabpanel">
-                            <div class="account-preferences">
+                            <div class="account-preferences сommunications">
 
                                 <div class="account-preferences__block">
                                     <h5>HOW YOU RECEIVE CONTENT FROM OTHERS</h5>
@@ -586,10 +592,10 @@
 
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Who can reach you</span>
-                                    <p>Choose who can connect with you on SplitChek
-                                    </p>
+
                                     <div
                                         class="select-before form__single--select form__single--select-default form__single--fluid">
+                                        <label for="#">Choose who can connect with you on SplitChek</label>
                                         <select class="form__select form__select--default select2-hidden-accessible"
                                             data-toggle="select" data-select2-id="5" tabindex="-1" aria-hidden="true">
                                             <option value="1">Anyone on SplitChek</option>
@@ -601,9 +607,10 @@
                                 </div>
                                 <div class="account-preferences__block">
                                     <span class="blue-span">Who can write to your timeline</span>
-                                    <p>Choose who can write to your timeline</p>
+
                                     <div
                                         class="select-before form__single--select form__single--select-default form__single--fluid">
+                                        <label for="#">Choose who can write to your timeline</label>
                                         <select class="form__select form__select--default select2-hidden-accessible"
                                             data-toggle="select" data-select2-id="6" tabindex="-1" aria-hidden="true">
                                             <option value="1">Anyone on SplitChek</option>
@@ -681,7 +688,7 @@
                         </div>
 
                         <div class="tab-pane show fade" id="email-sms" role="tabpanel">
-                            <div class="account-preferences">
+                            <div class="account-preferences email-sms">
 
                                 <div class="account-preferences__block">
                                     <h5>EMAIL AND SMS SUBSCRIPTIONS</h5>

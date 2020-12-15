@@ -2,8 +2,10 @@
   position: relative;
   padding-bottom: 195px;
   background-color: #fff9f4;
-  &::after {
-    content: url("../images/shopping-page/gifts.svg");
+  @media (max-width: 767px) {
+    padding-bottom: 135px;
+  }
+  .gift-descktop {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -15,10 +17,17 @@
       transform: scale(0.8);
     }
     @media (max-width: 767px) {
-      content: url("../images/shopping-page/gifts-mobile.svg");
-      justify-content: flex-start;
-      bottom: -12px;
-      transform: scale(1);
+      display: none;
+    }
+  }
+  .gift-mobile {
+    position: absolute;
+    display: none;
+    justify-content: flex-start;
+    bottom: -12px;
+    transform: scale(1);
+    @media (max-width: 767px) {
+      display: block;
     }
   }
   .mission {
@@ -213,11 +222,10 @@
       @media (max-width: 575px) {
         max-width: none;
       }
-      &::after {
+      .care {
         position: absolute;
         right: -100px;
         bottom: -125px;
-        content: url("images/shopping-page/we_care.svg");
         @media (max-width: 767px) {
           transform: scale(0.75);
         }

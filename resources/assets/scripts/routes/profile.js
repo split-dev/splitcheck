@@ -596,7 +596,6 @@ export default {
     //* Dropzone and Cropper
     {
       if($('.profile-face__background').hasClass('profile-face__background')) {
-        console.log(true);
         const btnCrop = document.querySelector('.btn-drop-photo-crop--bg');
       const containerCrop = document.querySelector('.drop-photo__start--bg');
 

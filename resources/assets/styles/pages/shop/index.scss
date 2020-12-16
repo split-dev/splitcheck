@@ -11,6 +11,9 @@
 @import "aside-card";
 
 .shop {
+  .section__margin-small {
+    margin-bottom: 20px !important;
+  }
   .aside-right {
     .section-content {
       width: 100%;

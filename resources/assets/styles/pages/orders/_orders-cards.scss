@@ -1,0 +1,105 @@
+.orders {
+  .text-green {
+    color: #4fcec4;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    right: 35px;
+  }
+  &__card {
+    padding-top: 16px;
+    padding-bottom: 15px;
+    position: relative;
+    align-items: flex-start;
+    &::before {
+      content: url("images/orders/dashed.svg");
+      top: -13px;
+      position: absolute;
+    }
+    &-last {
+      .orders__card-price {
+        margin-bottom: 24px;
+      }
+    }
+    &-block-2 {
+      margin-top: 48px;
+    }
+    &-block-1 {
+      margin-top: 20px;
+    }
+    &-for {
+      margin-top: 30px;
+    }
+
+    &-reaction {
+      margin-top: 75px;
+      margin-left: 90px;
+      margin-right: 20px;
+      img {
+        margin-right: 10px;
+      }
+      span {
+        color: #335491;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .d-flex {
+        &:first-child {
+          margin-right: 25px;
+        }
+      }
+    }
+    &-description {
+      small {
+        margin-right: 5px;
+      }
+      .d-flex {
+        margin-bottom: 16px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-price {
+      margin-bottom: 35px;
+      align-items: baseline;
+      p {
+        color: #0b0212;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      span {
+        margin-right: 13px;
+        font-weight: 500;
+      }
+    }
+    &-img {
+      margin-right: 16px;
+      max-width: 88px;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    b {
+      max-width: 204px;
+      line-height: 22px;
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    small {
+      color: #0b0212;
+      line-height: 14px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    strong {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}

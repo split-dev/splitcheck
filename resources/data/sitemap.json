@@ -180,6 +180,11 @@
       "title": "messages-page",
       "description": "messages-page",
       "url": "/messages-page.html"
+    },
+    {
+      "title": "My orders",
+      "description": "orders",
+      "url": "/orders.html"
     }
   ]
 }

@@ -99,7 +99,7 @@ export default {
       //tabs link active
       $('.nav-item').click(function (){
        $('.nav-link').removeClass('active');
-       $('this').addClass('active');
+       $(this).addClass('active');
       });
 
       //header height

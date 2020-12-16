@@ -3,3 +3,37 @@
 @import "../../bootstrap-utils";
 // Page Specific Components
 @import "wishlist-page";
+
+.wishlist-page {
+  .wishlist-page__block {
+    margin: auto;
+  }
+  .about-me {
+    @media (max-width: 991px) {
+      max-width: 530px;
+      margin: auto;
+    }
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  .wishlist-box__result {
+    .connections__slider {
+      .swiper-button-next {
+        top: calc(50% - 8px);
+      }
+    }
+  }
+  .wishlist-box__footer {
+    padding: 24px 12px 12px 18px;
+  }
+  .profile__bottom {
+    margin-top: 0;
+    position: relative;
+    top: -5px;
+    @media (max-width: 991px) {
+      top: 0;
+      padding-top: 24px;
+    }
+  }
+}

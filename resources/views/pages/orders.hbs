@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="profile home orders shop product">
+    {{> ../common/mobile-menu }}
+    {{> ../common/mobile-menu-bottom }}
+    <div class="section-blur " data-class="maze">
+        {{> ../common/header-next }}
+        <div class="container">
+            <div class="main-content position-relative d-flex align-items-start justify-content-between">
+                <!-- aside-left -->
+                <aside class="aside-left">
+                    <div class="scroll-div">
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">My
+                                profile</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-baby"></i>
+                                            <span>Kid account</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-pet"></i>
+                                            <span>Pet account</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-shipping"></i>
+                                            <span>My orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-book"></i>
+                                            <span>Address book</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="/settings.html"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-settings-oval"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">Other
+                                links</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-gift active"></i>
+                                            <span>Spoil yourself</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-social-media"></i>
+                                            <span>Open public goss</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-discount"></i>
+                                            <span>Snatch a bargain</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-mail"></i>
+                                            <span>Shared orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-group"></i>
+                                            <span>My groups</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-heart"></i>
+                                            <span>My family</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" data-toggle="modal" data-target="#notification"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-notification"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Alerts</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="/shopping-preferences.html"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-setting"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Shopping preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </aside>
+                <!-- /aside-left -->
+                <main class="main w-100">
+                    <span class="section-content__title position-relative d-flex align-items-center">My
+                        profile</span>
+                    <section class="section-content">
+                        <div class="orders__box">
+                            <div class="orders__toggle">
+                                <div class="d-flex w-100  align-items-center justify-content-between">
+                                    <div class="d-flex">
+                                        <div class="orders__line"></div>
+                                        <div class="d-flex flex-column w-100 justify-content-center">
+                                            <div class="d-flex">
+                                                <a href="#"># 431 245 987</a>
+                                                <b>Order Name</b>
+                                                <span class="text-gray">
+                                                    02.10.2020
+                                                </span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <p>Pending</p>
+                                                <span class="text-blue">Recurrent</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex w-100 flex-column orders__price">
+                                        <span class="text-gray">
+                                            total price
+                                        </span>
+                                        <p>$300.50</p>
+                                    </div>
+                                    <div class="d-flex w-100 justify-content-end orders__bottles">
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                        <div class="orders__img-block">
+                                            <img src="images/orders/bottle.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="orders__hide">
+                                <div class="orders__card d-flex ">
+                                    <div class="d-flex orders__card-img w-100">
+                                        <img src="images/orders/item.png" alt="item">
+                                    </div>
+                                    <div class="d-flex flex-column orders__card-block-1 w-100">
+                                        <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                                        <div class="d-flex orders__card-price">
+                                            <span class="text-orange">
+                                                $49.99
+                                            </span>
+                                            <p>1x</p>
+                                        </div>
+                                        <div class="orders__card-description">
+                                            <div class="d-flex">
+                                                <small>Volume:</small>
+                                                <strong>500 ml</strong>
+                                            </div>
+                                            <div class="d-flex">
+                                                <small>Flavoure:</small>
+                                                <strong>banana</strong>
+                                            </div>
+                                            <div class="d-flex">
+                                                <small>Servings:</small>
+                                                <strong>20</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column orders__card-description  orders__card-block-2 w-100">
+                                        <div class="d-flex">
+                                            <small>Shipped from:</small>
+                                            <strong>Coomera - Queensland</strong>
+                                        </div>
+                                        <div class="d-flex">
+                                            <small>Dispatch date:</small>
+                                            <strong>02.11.2020</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex orders__card-reaction w-100 justify-content-end">
+                                        <div class="d-flex">
+                                            <img src="images/orders/smile.svg" alt="">
+                                            <span>rate item</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="images/icons/close-blue.svg" alt="">
+                                            <span>refund</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="options">
+                                        <button type="button" class="options__btn" data-type="options">
+                                            <i class="icon icon-more"></i>
+                                        </button>
+
+                                        <div class="options__dropdown">
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a href="#">Disable Admin</a></li>
+                                                <li><a href="#">Make Leader</a></li>
+                                                <li><a href="#">Kick out</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="orders__card d-flex ">
+                                    <div class="d-flex orders__card-img w-100">
+                                        <img src="images/orders/item.png" alt="item">
+                                    </div>
+                                    <div class="d-flex flex-column orders__card-block-1 w-100">
+                                        <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                                        <div class="d-flex orders__card-price">
+                                            <div
+                                                class="internal-card__price internal-card__price--discount d-flex align-items-center flex-wrap">
+                                                <span>$49.99</span>
+                                                <span>$60.99</span>
+
+
+                                            </div>
+                                            <p>1x</p>
+                                        </div>
+                                        <div class="orders__card-description">
+                                            <div class="d-flex">
+                                                <small>Volume:</small>
+                                                <strong>500 ml</strong>
+                                            </div>
+                                            <div class="d-flex">
+                                                <small>Flavoure:</small>
+                                                <strong>banana</strong>
+                                            </div>
+                                            <div class="d-flex">
+                                                <small>Servings:</small>
+                                                <strong>20</strong>
+                                            </div>
+                                        </div>
+                                        <div class="orders__card-for">
+                                            <div class="profile-list w-100">
+                                                <figure class="profile-list__avatar">
+                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                    <span class="profile-list__symbol"></span>
+                                                </figure>
+                                                <div class="d-flex flex-column align-items-center">
+                                                    <span>for:</span>
+                                                    <span>Terry Smith</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column orders__card-description  orders__card-block-2 w-100">
+                                        <div class="d-flex">
+                                            <small>Shipped from:</small>
+                                            <strong>Coomera - Queensland</strong>
+                                        </div>
+                                        <div class="d-flex">
+                                            <small>Dispatch date:</small>
+                                            <strong>02.11.2020</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex orders__card-reaction w-100 justify-content-end">
+                                        <div class="d-flex">
+                                            <img src="images/orders/smile.svg" alt="">
+                                            <span>rate item</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="images/icons/close-blue.svg" alt="">
+                                            <span>refund</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="options">
+                                        <button type="button" class="options__btn" data-type="options">
+                                            <i class="icon icon-more"></i>
+                                        </button>
+
+                                        <div class="options__dropdown">
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a href="#">Share goss</a></li>
+                                                <li><a href="#">Recurrent</a></li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="orders__card d-flex ">
+                                    <div class="d-flex orders__card-img w-100">
+                                        <img src="images/orders/item.png" alt="item">
+                                    </div>
+                                    <div class="d-flex flex-column orders__card-block-1 w-100">
+                                        <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                                        <div class="d-flex orders__card-price">
+                                            <span class="text-orange">
+                                                $49.99
+                                            </span>
+                                            <p>bundle</p>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column orders__card-description  orders__card-block-2 w-100">
+                                        <div class="d-flex">
+                                            <small>Shipped from:</small>
+                                            <strong>Coomera - Queensland</strong>
+                                        </div>
+                                        <div class="d-flex">
+                                            <small>Dispatch date:</small>
+                                            <strong>02.11.2020</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex orders__card-reaction w-100 justify-content-end">
+                                        <div class="d-flex">
+                                            <img src="images/orders/smile.svg" alt="">
+                                            <span>rate item</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="images/icons/close-blue.svg" alt="">
+                                            <span>refund</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="options">
+                                        <button type="button" class="options__btn" data-type="options">
+                                            <i class="icon icon-more"></i>
+                                        </button>
+
+                                        <div class="options__dropdown">
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a href="#">Disable Admin</a></li>
+                                                <li><a href="#">Make Leader</a></li>
+                                                <li><a href="#">Kick out</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="orders__card orders__card-last d-flex flex-column">
+                                    <div class="d-flex">
+                                        <div class="d-flex orders__card-img w-100">
+                                            <img src="images/orders/item.png" alt="item">
+                                        </div>
+                                        <div class="d-flex flex-column orders__card-block-1 w-100">
+                                            <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                                            <div class="d-flex orders__card-price">
+                                                <span class="text-orange">
+                                                    $49.99
+                                                </span>
+                                                <p>bundle</p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div
+                                            class="d-flex flex-column orders__card-description  orders__card-block-2 w-100">
+                                            <div class="d-flex">
+                                                <small>Shipped from:</small>
+                                                <strong>Coomera - Queensland</strong>
+                                            </div>
+                                            <div class="d-flex">
+                                                <small>Dispatch date:</small>
+                                                <strong>02.11.2020</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex orders__card-reaction w-100 justify-content-end">
+                                            <div class="d-flex">
+                                                <img src="images/orders/smile.svg" alt="">
+                                                <span>rate item</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="images/icons/close-blue.svg" alt="">
+                                                <span>refund</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="options">
+                                            <a class="text-green" href="#">Recurrent</a>
+                                            <button type="button" class="options__btn" data-type="options">
+                                                <i class="icon icon-more"></i>
+                                            </button>
+
+                                            <div class="options__dropdown">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Share goss</a></li>
+                                                    <li><a href="#">Recurrent</a></li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex orders__card-avatars">
+                                        <div class="d-flex flex-column">
+                                            <p>contributed:</p>
+                                            <p class="text-align-right">$25.00</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <figure class="internal-card__avatar">
+                                                <img src="images/profiles/img1.png" alt="avatar">
+                                                <span class="internal-card__symbol"></span>
+                                            </figure>
+                                            <figure class="profile-list__avatar">
+                                                <img src="images/profiles/user-1.png" alt="avatar">
+                                                <span class="profile-list__symbol"></span>
+                                            </figure>
+                                            <figure class="profile-list__avatar">
+                                                <img src="images/profiles/user-1.png" alt="avatar">
+                                                <span class="profile-list__symbol"></span>
+                                            </figure>
+                                            <figure class="profile-list__avatar">
+                                                <img src="images/profiles/user-1.png" alt="avatar">
+                                                <span class="profile-list__symbol"></span>
+                                            </figure>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+                    <div class="slider-recomend">
+
+                        <div class="slider-recomend__container">
+                            <div
+                                class="internal-card__slider swiper-container swiper-container-initialized swiper-container-horizontal">
+                                <div class="swiper-wrapper" id="swiper-wrapper-9a5ef106c0adea6de" aria-live="polite"
+                                    style="transform: translate3d(-275px, 0px, 0px); transition: all 0ms ease 0s;">
+                                    <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 7"
+                                        style="width: 267px; margin-right: 8px;">
+                                        <a href="#" class="product-card">
+                                            <figure class="product-card__figure position-relative">
+                                                <img src="/images/shop/product2.jpg" alt="product"
+                                                    class="product-card__image">
+                                            </figure>
+                                            <div class="product-card__header">
+                                                <p class="product-card__price">$49.99</p>
+                                                <p class="product-card__copy">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="btn btn-orange">View product</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 7"
+                                        style="width: 267px; margin-right: 8px;">
+                                        <a href="#" class="product-card">
+                                            <figure class="product-card__figure position-relative">
+                                                <img src="/images/shop/product3.jpg" alt="product"
+                                                    class="product-card__image">
+                                            </figure>
+                                            <div class="product-card__header">
+                                                <p class="product-card__price">$49.99</p>
+                                                <p class="product-card__copy">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="btn btn-orange">View product</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 7"
+                                        style="width: 267px; margin-right: 8px;">
+                                        <a href="#" class="product-card">
+                                            <figure class="product-card__figure position-relative">
+                                                <img src="/images/shop/product2.jpg" alt="product"
+                                                    class="product-card__image">
+                                            </figure>
+                                            <div class="product-card__header">
+                                                <p class="product-card__price">$49.99</p>
+                                                <p class="product-card__copy">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="btn btn-orange">View product</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-label="4 / 7"
+                                        style="width: 267px; margin-right: 8px;">
+                                        <a href="#" class="product-card">
+                                            <figure class="product-card__figure position-relative">
+                                                <img src="/images/shop/product3.jpg" alt="product"
+                                                    class="product-card__image">
+                                            </figure>
+                                            <div class="product-card__header">
+                                                <p class="product-card__price">$49.99</p>
+                                                <p class="product-card__copy">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="btn btn-orange">View product</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-label="5 / 7"
+                                        style="width: 267px; margin-right: 8px;">
+                                        <a href="#" class="product-card">
+                                            <figure class="product-card__figure position-relative">
+                                                <img src="/images/shop/product3.jpg" alt="product"
+                                                    class="product-card__image">
+                                            </figure>
+                                            <div class="product-card__header">
+                                                <p class="product-card__price">$49.99</p>
+                                                <p class="product-card__copy">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="btn btn-orange">View product</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-label="6 / 7"
+                                        style="width: 267px; margin-right: 8px;">
+                                        <a href="#" class="product-card">
+                                            <figure class="product-card__figure position-relative">
+                                                <img src="/images/shop/product2.jpg" alt="product"
+                                                    class="product-card__image">
+                                            </figure>
+                                            <div class="product-card__header">
+                                                <p class="product-card__price">$49.99</p>
+                                                <p class="product-card__copy">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="btn btn-orange">View product</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-label="7 / 7"
+                                        style="width: 267px; margin-right: 8px;">
+                                        <a href="#" class="product-card">
+                                            <figure class="product-card__figure position-relative">
+                                                <img src="/images/shop/product3.jpg" alt="product"
+                                                    class="product-card__image">
+                                            </figure>
+                                            <div class="product-card__header">
+                                                <p class="product-card__price">$49.99</p>
+                                                <p class="product-card__copy">
+                                                    Lorem ipsum dolor sit amet
+                                                </p>
+                                            </div>
+                                            <div class="product-card__footer">
+                                                <div class="btn btn-orange">View product</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+                                    aria-controls="swiper-wrapper-9a5ef106c0adea6de" aria-disabled="false"></div>
+                                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                                    aria-controls="swiper-wrapper-9a5ef106c0adea6de" aria-disabled="false"></div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {{> ../common/footer }}
+    </div>
+
+    <!-- Modals -->
+    {{> ../common/modals/create-goss }}
+    {{> ../common/modals/menu-mobile }}
+    {{> ../common/modals/add-photo }}
+    {{> ../common/modals/user-profile-menu }}
+    {{> ../common/modals/share-product }}
+    {{> ../common/modals/add-timeline-product }}
+    {{> ../common/modals/add-wishlist }}
+    {{> ../common/modals/search-parameters }}
+    {{> ../common/modals/cart }}
+    {{> ../common/modals/add-comment }}
+    {{> ../common/modals/store-info }}
+    {{> ../common/modals/shop-another }}
+    {{> ../common/modals/modals-notifications }}
+    {{> ../common/modals/message-overlay }}
+    {{> ../common/modals/goss-gallery }}
+    {{> ../common/modals/menu-mobile--not-shop }}
+    {{> ../common/modals/galery-view }}
+    {{> ../common/modals/modal-pets }}
+    {{> ../common/modals/modal-child }}
+    {{> ../common/modals/modal-invite }}
+    {{> ../common/modals/add-photo-background }}
+    <!-- /Modals -->
+</body>
+
+</html>

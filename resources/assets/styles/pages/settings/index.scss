@@ -4,3 +4,34 @@
 // Page Specific Components
 @import "tabs";
 @import "tabs-global";
+
+.settings {
+  .aside-left {
+    margin-top: 50px;
+    @media (max-width: 991px) {
+      margin-top: 0;
+    }
+  }
+  .blue-span {
+    color: #315293 !important;
+  }
+  .other-links {
+    margin-top: 15px;
+  }
+  .tab-content {
+    margin-left: 30px;
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
+  }
+  .select-before {
+    label {
+      margin-left: 10px;
+    }
+  }
+  .account-preferences__block {
+    b {
+      margin-top: 25px;
+    }
+  }
+}

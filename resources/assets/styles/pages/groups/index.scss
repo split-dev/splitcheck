@@ -192,7 +192,7 @@
     line-height: 18px;
   }
   .profile-face__name.dotted::after {
-    content: url("images/groups/dotted.svg");
+    background-image: url("images/groups/dotted.svg");
   }
   .main-content {
     @media (max-width: 991px) {

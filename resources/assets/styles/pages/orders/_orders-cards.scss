@@ -1,6 +1,14 @@
 .orders {
+  .text-green {
+    color: #4fcec4;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    right: 35px;
+  }
   &__card {
     padding-top: 16px;
+    padding-bottom: 15px;
     position: relative;
     align-items: flex-start;
     &::before {
@@ -8,17 +16,25 @@
       top: -13px;
       position: absolute;
     }
-    .d-flex {
-      &:nth-child(3) {
-        margin-top: 45px;
-      }
-      &:nth-child(2) {
-        margin-top: 20px;
+    &-last {
+      .orders__card-price {
+        margin-bottom: 24px;
       }
     }
+    &-block-2 {
+      margin-top: 48px;
+    }
+    &-block-1 {
+      margin-top: 20px;
+    }
+    &-for {
+      margin-top: 30px;
+    }
+
     &-reaction {
       margin-top: 75px;
       margin-left: 90px;
+      margin-right: 20px;
       img {
         margin-right: 10px;
       }

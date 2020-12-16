@@ -1,0 +1,116 @@
+.modal-recurrent {
+  &__btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    a {
+      width: 100%;
+      max-width: 240px;
+      height: 48px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+  .modal-status {
+    display: flex;
+    width: 100%;
+    ul {
+      position: relative;
+      li {
+        color: #0b0212;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        span {
+          margin-right: 10px;
+        }
+        span,
+        small {
+          color: #828282;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      &:first-child {
+        margin-right: 46px;
+        padding-left: 25px;
+        &::before {
+          position: absolute;
+          content: url("images/orders/status-line.svg");
+          left: 0;
+        }
+      }
+    }
+  }
+  .modal-dialog {
+    max-width: 640px !important;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin-right: 5px;
+    }
+
+    h4 {
+      font-size: 32px !important;
+      line-height: 32px !important;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .max-text {
+      margin-top: 16px;
+      position: relative;
+      margin-bottom: 40px;
+      max-width: 306px;
+    }
+    .select-before {
+      max-width: 306px;
+    }
+    textarea {
+      resize: none;
+      width: 100%;
+      padding: 11px 12px 70px 12px;
+      border: 0;
+      outline: 0;
+      margin-bottom: 0;
+      max-width: 306px;
+      border-radius: 5px;
+      background-color: #f8f9fb;
+    }
+    label {
+      color: #828282;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.86px;
+    }
+  }
+  &__list {
+    margin-bottom: 43px;
+    li {
+      position: relative;
+      margin-bottom: 18px;
+      color: #0b0212;
+      font-size: 16px;
+      font-weight: 400;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: -23px;
+        bottom: 4px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: solid 2px #f77d0e;
+      }
+    }
+  }
+}

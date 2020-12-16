@@ -6,17 +6,85 @@
     position: absolute;
     right: 35px;
   }
+  .text-orange {
+    color: #f97d00;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__text {
+    margin-bottom: 14px;
+    &-price {
+      strong {
+        &:first-child {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
   &__card {
     padding-top: 16px;
     padding-bottom: 15px;
+    margin-left: 15px;
     position: relative;
     align-items: flex-start;
+    &:last-child {
+      padding-top: 24px;
+      .orders__card-list {
+        b {
+          margin-bottom: 0;
+        }
+      }
+      .reaction__wrap-link {
+        margin-bottom: 17px;
+        margin-top: 20px;
+      }
+    }
+    &-result {
+      max-width: 315px;
+      small {
+        color: #0b0212;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: right;
+        margin-top: 8px;
+      }
+      strong {
+        color: #0b0212;
+        font-weight: 500;
+        font-size: 18px !important;
+        text-transform: uppercase;
+      }
+      span {
+        color: #0b0212;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
     &::before {
       content: url("images/orders/dashed.svg");
       top: -13px;
+      left: -25px;
       position: absolute;
     }
+    &-avatars {
+      figure {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+      }
+    }
+    &-contributed {
+      margin-right: 20px;
+      padding-left: 30px;
+      p {
+        margin-bottom: 0;
+      }
+    }
     &-last {
+      padding-bottom: 15px;
+      .orders__card {
+        padding-bottom: 0;
+      }
       .orders__card-price {
         margin-bottom: 24px;
       }
@@ -30,10 +98,16 @@
     &-for {
       margin-top: 30px;
     }
+    &-list {
+      span {
+        color: #0b0212;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
 
     &-reaction {
       margin-top: 75px;
-      margin-left: 90px;
       margin-right: 20px;
       img {
         margin-right: 10px;

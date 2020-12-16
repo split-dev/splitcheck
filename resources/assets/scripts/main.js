@@ -23,6 +23,7 @@ import settings from './routes/settings';
 import groups from './routes/groups';
 import store from './routes/store';
 import product from './routes/product';
+import orders from './routes/orders';
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -41,6 +42,7 @@ const routes = new Router({
   'groups': groups,
   'store': store,
   'product': product,
+  'orders': orders,
 });
 
 // // Load Events

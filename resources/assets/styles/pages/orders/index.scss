@@ -6,7 +6,7 @@
 @import "orders-cards";
 
 .orders {
-  .slider-recomend {
+  &__slider {
     position: relative;
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
@@ -16,7 +16,7 @@
     margin-bottom: 0;
   }
   .slider-recomend__container {
-    max-width: 1140px;
+    max-width: 910px;
     padding: 12px 57px 12px;
   }
 }

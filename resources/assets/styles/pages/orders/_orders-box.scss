@@ -9,9 +9,6 @@
     height: 56px;
     border-radius: 6px;
     margin-right: 16px;
-    &:first-child {
-      background-color: #f77d0e;
-    }
   }
   &__toggle {
     position: relative;
@@ -55,6 +52,32 @@
     border-radius: 8px;
     background-color: #fff;
     padding: 11px 24px 11px 12px;
+    margin-bottom: 10px;
+    &:first-child {
+      .orders__line {
+        background-color: #f77d0e;
+      }
+    }
+    &:nth-child(2) {
+      .orders__line {
+        background-color: #00a046;
+      }
+    }
+    &:nth-child(3) {
+      .orders__line {
+        background-color: #d2d2d2;
+      }
+    }
+    &:nth-child(4) {
+      .orders__line {
+        background-color: #4f7ccf;
+      }
+    }
+    &:nth-child(5) {
+      .orders__line {
+        background-color: #00a046;
+      }
+    }
   }
   b {
     color: #0b0212;

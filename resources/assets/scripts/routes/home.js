@@ -38,37 +38,7 @@ export default {
         },
       }
 
-      // const optionForTimeline = {
-      //   slidesPerView: 4,
-      //   setWrapperSize: false,
-      //   simulateTouch: false,
-      //   preventInteractionOnTransition: true,
-      //   mousewheel: true,
-      //   navigation: {
-      //     nextEl: '.card-timeline__slider .swiper-button-next',
-      //     prevEl: '.card-timeline__slider .swiper-button-prev',
-      //   },
-      //   breakpoints: {
-      //     1260: {
-      //       slidesPerView: 4,
-      //     },
-      //     992: {
-      //       slidesPerView: 3,
-      //       // freeMode: true,
-      //     },
-      //     360: {
-      //       slidesPerView: 4,
-      //     },
-      //     250: {
-      //       slidesPerView: 3,
-      //       setWrapperSize: false,
-      //       simulateTouch: false,
-      //       preventInteractionOnTransition: true,
-      //       mousewheel: true,
-      //       // freeMode: true,
-      //     },
-      //   },
-      // }
+      
 
       //* swiper init
       let swiperGoss = new Swiper('.card-goss__slider.swiper-container', optionForSwiperGoss);
@@ -279,31 +249,9 @@ export default {
 
     // * function for "Select" template in modal
     {
-      $('.form__single--select-default select[data-toggle="select"]').select2({
-        minimumResultsForSearch: Infinity,
-        width: '100%',
-      });
-      // $('.form__single--select-user select[data-toggle="select"]').select2({
+      // $('.form__single--select-default select[data-toggle="select"]').select2({
       //   minimumResultsForSearch: Infinity,
       //   width: '100%',
-      //   templateResult: function (state) {
-      //     if (!state.id) {
-      //       return state.text;
-      //     }
-      //     var baseUrl = 'images/profiles';
-      //     var $state = $(`
-      //       <div class="profile-list">
-      //         <figure class="profile-list__avatar">
-      //           <img src="${baseUrl}/${state.element.value.toLowerCase()}.png" alt="avatar">
-      //           <span class="profile-list__symbol"></span>
-      //         </figure>
-      //         <span>${state.text}</span>
-      //       </div>
-      //     `);
-
-      //     return $state;
-      //   },
-      //   // dropdownParent: $('.form__single--select-user'),
       // });
 
 
@@ -377,7 +325,8 @@ export default {
 
     //* Dropzone and Cropper
     {
-      const btnCrop = document.querySelector('.btn-drop-photo-crop');
+      if($('.drop-photo').hasClass('drop-photo')) {
+        const btnCrop = document.querySelector('.btn-drop-photo-crop');
       const containerCrop = document.querySelector('.drop-photo__start');
 
       const myDropzone = new Dropzone('.drop-photo', {
@@ -399,16 +348,7 @@ export default {
           editor.style.right = 0;
           editor.style.zIndex = 2;
           this.previewsContainer.appendChild(editor)
-          // document.body.appendChild(editor);
-
-          // Create confirm button at the top left of the viewport
-          // let buttonConfirm = document.createElement('button');
-          // buttonConfirm.style.position = 'absolute';
-          // buttonConfirm.style.left = '10px';
-          // buttonConfirm.style.top = '10px';
-          // buttonConfirm.style.zIndex = 9999;
-          // buttonConfirm.textContent = 'Confirm';
-          // editor.appendChild(buttonConfirm);
+          
 
           btnCrop.addEventListener('click', function() {
             // Get the canvas with image data from Cropper.js
@@ -451,6 +391,8 @@ export default {
           });
         },
       });
+
+      }
     }
   },
 

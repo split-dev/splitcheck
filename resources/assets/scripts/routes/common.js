@@ -375,8 +375,8 @@ export default {
        }
   
        // * function for "Select is not avatar" template in modal
-       if($('.form__single--select-not select[data-toggle="select-img"]')) {
-        $('.form__single--select-user-not select[data-toggle="select-img"]').select2({
+       if($('.form__single--select-user-not[data-toggle="select-img"]')) {
+        $('.form__single--select-user-not[data-toggle="select-img"]').select2({
           minimumResultsForSearch: Infinity,
           width: '100%',
           // dropdownParent: $('.form__single--select-user'),
@@ -386,6 +386,15 @@ export default {
        // * function for "Select is not avatar" template in modal
        if($('.form__select--default[data-toggle="select-single"]')) {
         $('.form__select--default[data-toggle="select-single"]').select2({
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+        });
+      }
+
+       // * function for "Select is not avatar" template in modal
+       if($('.form__select--default[data-toggle="select"]')) {
+         console.log($('.form__select--default[data-toggle="select"]'));
+        $('.form__select--default[data-toggle="select"]').select2({
           minimumResultsForSearch: Infinity,
           width: '100%',
         });

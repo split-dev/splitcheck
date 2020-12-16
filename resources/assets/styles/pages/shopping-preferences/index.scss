@@ -3,3 +3,44 @@
 @import "../../bootstrap-utils";
 // Page Specific Components
 @import "shopping-preferences-components";
+
+.shopping-preferences__card {
+  .max-text {
+    position: relative;
+    margin-bottom: 27px;
+  }
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    background-color: rgba(232, 235, 242, 0.3);
+    padding: 11px 16px;
+    border: none;
+    color: #0b0212;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    margin-bottom: 0;
+    &::-webkit-input-placeholder {
+      color: #0b0212;
+    }
+    &::-moz-placeholder {
+      color: #0b0212;
+    }
+    &:-ms-input-placeholder {
+      color: #0b0212;
+    }
+    &:-moz-placeholder {
+      color: #0b0212;
+    }
+  }
+  .count {
+    position: absolute;
+    right: 14px;
+    bottom: 15px;
+    color: #0b0212;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

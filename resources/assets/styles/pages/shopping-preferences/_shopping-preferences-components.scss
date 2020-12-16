@@ -63,7 +63,9 @@
     padding: 25px 25px 14px 25px;
     max-width: 560px;
     margin-bottom: 25px;
-
+    @media (max-width: 575px) {
+      padding: 25px 16px 14px 16px;
+    }
     textarea {
       height: 120px;
       margin-bottom: 24px;
@@ -79,6 +81,17 @@
     max-width: 560px;
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      a {
+        margin-right: 0 !important;
+        max-width: 100%;
+        &:first-of-type {
+          margin-bottom: 16px;
+          background-color: transparent;
+        }
+      }
+    }
     a {
       &:first-child {
         margin-right: 16px;
@@ -102,6 +115,10 @@
     text-transform: uppercase;
     letter-spacing: 0.8px;
     line-height: 18px;
+    white-space: nowrap;
+    @media (max-width: 575px) {
+      letter-spacing: 0.5px;
+    }
   }
   h5 {
     color: #315293;

@@ -112,11 +112,13 @@
                             <div
                                 class="form__single form__single--select form__single--select-user form__single--fluid">
                                 <label class="form__label">Which brands do you like?</label>
-                                <select class="form__input" data-toggle="select" multiple="multiple">
-                                    <option value="1">Shop</option>
-                                    <option value="2">Mall</option>
-
-                                </select>
+                                <div class="form__single--select form__single--select-user form__single--fluid">
+                                    <select class="form__input form__single--select-user-not" data-toggle="select-img"
+                                        multiple="multiple">
+                                        <option value="user-1">Shop</option>
+                                        <option value="user-2">Mall</option>
+                                    </select>
+                                </div>
                                 {{!-- <input type="text" class="form__input" required=""> --}}
                                 <span class="form__symbol-error"></span>
                             </div>
@@ -124,8 +126,7 @@
                                 class="select-before form__single--select form__single--select-default form__single--fluid">
                                 <label class="form__label">Who can see this?</label>
                                 <div class="select-before">
-                                    <select class="form__select form__select--default select2-hidden-accessible"
-                                        data-toggle="select" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                    <select class="form__select form__select--default" data-toggle="select">
                                         <option value="#">Everyone</option>
                                         <option value="#">Family and friends</option>
 
@@ -139,11 +140,13 @@
                             <div
                                 class="form__single form__single--select form__single--select-user form__single--fluid">
                                 <label class="form__label">Which stores do you normally shop from?</label>
-                                <select class="form__input" data-toggle="select" multiple="multiple">
-                                    <option value="1">Shop</option>
-                                    <option value="2">Mall</option>
-
-                                </select>
+                                <div class="form__single--select form__single--select-user form__single--fluid">
+                                    <select class="form__input form__single--select-user-not" data-toggle="select-img"
+                                        multiple="multiple">
+                                        <option value="user-1">Shop</option>
+                                        <option value="user-2">Mall</option>
+                                    </select>
+                                </div>
                                 {{!-- <input type="text" class="form__input" required=""> --}}
                                 <span class="form__symbol-error"></span>
                             </div>
@@ -153,9 +156,9 @@
                                 <label class="form__label">Who can see this?</label>
                                 <div class="select-before">
                                     <select class="form__select form__select--default select2-hidden-accessible"
-                                        data-toggle="select" data-select2-id="2" tabindex="-1" aria-hidden="true">
-                                        <option value="#">Family and friends</option>
+                                        data-toggle="select" data-select2-id="1" tabindex="-1" aria-hidden="true">
                                         <option value="#">Everyone</option>
+                                        <option value="#">Family and friends</option>
 
                                     </select>
                                 </div>
@@ -515,11 +518,13 @@
                             <div
                                 class="form__single form__single--select form__single--select-user form__single--fluid">
                                 <label class="form__label">Which diet plants would you like as a gift?</label>
-                                <select class="form__input " data-toggle="select" multiple="multiple">
-                                    <option value="1">Shop</option>
-                                    <option value="2">Mall</option>
-
-                                </select>
+                                <div class="form__single--select form__single--select-user form__single--fluid">
+                                    <select class="form__input form__single--select-user-not" data-toggle="select-img"
+                                        multiple="multiple">
+                                        <option value="user-1">Shop</option>
+                                        <option value="user-2">Mall</option>
+                                    </select>
+                                </div>
                                 {{!-- <input type="text" class="form__input" required=""> --}}
                                 <span class="form__symbol-error"></span>
                             </div>
@@ -637,8 +642,10 @@
                         <div class="shopping-preferences__card">
                             <div class="d-flex flex-column ">
                                 <label class="form__label">Anything else that you want others to know about you?</label>
-                                <textarea placeholder="Write something" maxlength="400" minlength="1"
-                                    class="form__textarea"></textarea>
+                                <div class="w-100 max-text">
+                                    <textarea placeholder="Write something"></textarea>
+                                    <div class="count"><span>0</span>/<span>400</span></div>
+                                </div>
 
                                 {{!-- <input type="text" class="form__input" required=""> --}}
                                 <span class="form__symbol-error"></span>

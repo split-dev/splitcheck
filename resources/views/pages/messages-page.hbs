@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="profile home individual">
+    {{> ../common/mobile-menu }}
+    {{> ../common/mobile-menu-bottom }}
+    <div class="section-blur theme-background-one" data-class="maze" id="background">
+        {{> ../common/header-next }}
+        <div class="container">
+            <div class="main-content position-relative d-flex align-items-start justify-content-between">
+                <!-- aside-left -->
+                <aside class="aside-left">
+                    <div class="scroll-div">
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">My
+                                profile</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative disabled">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-baby"></i>
+                                            <span>Kid account</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative disabled">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-pet"></i>
+                                            <span>Pet account</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-shipping"></i>
+                                            <span>My orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-book"></i>
+                                            <span>Address book</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-settings-oval"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">Other
+                                links</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-gift active"></i>
+                                            <span>Spoil yourself</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-social-media"></i>
+                                            <span>Open public goss</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-discount"></i>
+                                            <span>Snatch a bargain</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-mail"></i>
+                                            <span>Shared orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-group"></i>
+                                            <span>My groups</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-heart"></i>
+                                            <span>My family</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" data-toggle="modal" data-target="#notification"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-notification"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Alerts</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-setting"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Shopping preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <div class="section-content ">
+                            <div class="enable-box">
+                                <div class="enable-box__kids">
+                                    <span>You have Kid’s account disabled</span>
+                                    <a href="#" data-toggle="modal" data-target="#modal-child"
+                                        class="section-content__btn btn-border">Enable Kid’s Account</a>
+                                </div>
+                                <div class="enable-box__pets">
+                                    <span>You have Kid’s account disabled</span>
+                                    <a href="#" data-toggle="modal" data-target="#modal-pets"
+                                        class="section-content__btn btn-border">Enable Pet’s Account</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!-- /aside-left -->
+                <!-- main -->
+                <main class="main">
+                    <section class="section-content individual__section">
+                        <a href="#" data-toggle="modal" data-target="#goss"
+                            class="section-content__title position-relative d-flex align-items-center">
+                            <span><img src="images/icons/back.svg" alt="back">Back</span>
+                        </a>
+                        <span
+                            class="section-content__title position-relative d-flex align-items-center">Statistic</span>
+                    </section>
+                </main>
+                <!-- /main -->
+                <!-- aside-right -->
+                <aside class="aside-right d-none d-lg-block">
+                    <div class="scroll-div">
+                        <section class="section-content">
+                            <span
+                                class="section-content__title position-relative d-flex align-items-center">Messages</span>
+
+                        </section>
+
+                        <section class="section-content">
+                            <article class="aside-card position-relative">
+                                <div class="internal-card internal-card--aside">
+                                    <div class="internal-card__header">
+                                        <a href="#" class="internal-card__profile d-flex flex-wrap align-items-start">
+                                            <figure class="internal-card__avatar">
+                                                <img src="images/profiles/img1.png" alt="avatar">
+                                                <span class="internal-card__symbol"></span>
+                                            </figure>
+                                            <div class="internal-card__head-info">
+                                                <h2 class="internal-card__name">SplitChek</h2>
+                                                <p
+                                                    class="internal-card__subname internal-card__subname--light d-flex flex-column">
+                                                    <span>sponsored</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="internal-card__body">
+                                        <div
+                                            class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap">
+                                            <figure class="grid-gallery__width-1-1">
+                                                <a class="grid-gallery__selector position-relative grid-gallery__selector--video"
+                                                    href="images/feed/feed-img1.jpg">
+                                                    <div class="grid-gallery__post-img"
+                                                        style="background-image: url(images/feed/feed-img1.jpg);"
+                                                        data-src="images/feed/feed-img1.jpg">
+                                                    </div>
+                                                </a>
+                                            </figure>
+                                        </div>
+
+                                        <p>
+                                            Grow your business on SplitChek. <br> Sell up to 100 products for free
+                                        </p>
+
+                                    </div>
+                                    <div class="internal-card__bottom">
+                                        <div class="internal-card__other">
+                                            <a href="#" class="btn btn-blue">Get Started</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- option  add class: - options--open -->
+                                    <div class="options">
+                                        <button type="button" class="options__btn" data-type="options">
+                                            <i class="icon icon-more"></i>
+                                        </button>
+
+                                        <div class="options__dropdown">
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a href="#">Share</a></li>
+                                                <li><a href="#">Not gift worthy</a></li>
+                                                <li><a href="#store-info" data-toggle="modal">About the store</a></li>
+                                                <li><a href="#">Report abuse</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </section>
+                    </div>
+                </aside>
+                <!-- /aside-right -->
+            </div>
+        </div>
+
+        {{> ../common/footer }}
+    </div>
+
+    <!-- Modals -->
+    {{> ../common/modals/create-goss }}
+    {{> ../common/modals/menu-mobile }}
+    {{> ../common/modals/add-photo }}
+    {{> ../common/modals/user-profile-menu }}
+    {{> ../common/modals/share-product }}
+    {{> ../common/modals/add-timeline-product }}
+    {{> ../common/modals/add-wishlist }}
+    {{> ../common/modals/search-parameters }}
+    {{> ../common/modals/cart }}
+    {{> ../common/modals/add-comment }}
+    {{> ../common/modals/store-info }}
+    {{> ../common/modals/shop-another }}
+    {{> ../common/modals/modals-notifications }}
+    {{> ../common/modals/message-overlay }}
+    {{> ../common/modals/goss-gallery }}
+    {{> ../common/modals/menu-mobile--not-shop }}
+    <!-- /Modals -->
+</body>
+
+</html>

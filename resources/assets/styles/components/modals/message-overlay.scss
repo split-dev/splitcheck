@@ -11,6 +11,7 @@
     }
   }
   .modal-body {
+    overflow: hidden;
     position: relative;
     z-index: 5;
     padding: 0 !important;
@@ -20,6 +21,7 @@
         overflow: hidden;
       }
       &__single {
+        max-width: 372px;
         position: relative;
         transition: 0.3s;
         padding: 8px;
@@ -39,7 +41,7 @@
           content: "";
           transition: 0.3s;
           left: -30px;
-          right: -30px;
+          width: 1000px;
           top: 0;
           bottom: 0;
           opacity: 0;

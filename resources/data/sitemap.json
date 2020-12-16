@@ -175,6 +175,11 @@
       "title": "business-page",
       "description": "business-page",
       "url": "/business-page.html"
+    },
+    {
+      "title": "messages-page",
+      "description": "messages-page",
+      "url": "/messages-page.html"
     }
   ]
 }

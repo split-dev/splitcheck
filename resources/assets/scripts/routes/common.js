@@ -393,7 +393,6 @@ export default {
 
        // * function for "Select is not avatar" template in modal
        if($('.form__select--default[data-toggle="select"]')) {
-         console.log($('.form__select--default[data-toggle="select"]'));
         $('.form__select--default[data-toggle="select"]').select2({
           minimumResultsForSearch: Infinity,
           width: '100%',

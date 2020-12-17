@@ -185,6 +185,11 @@
       "title": "My orders",
       "description": "orders",
       "url": "/orders.html"
+    },
+    {
+      "title": "message-offer",
+      "description": "message-offer",
+      "url": "/message-offer.html"
     }
   ]
 }

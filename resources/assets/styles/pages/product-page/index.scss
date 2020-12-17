@@ -188,6 +188,10 @@
 
     background-color: theme-color("white");
     box-shadow: $shadow-card;
+
+    &--you {
+      background-color: #f8f9fb !important;
+    }
   }
 
   // .main__card--row

@@ -10,6 +10,7 @@
 @import "gift";
 @import "wishlist-box";
 @import "individual";
+@import "messages";
 
 .individual {
   @include media-breakpoint-down(sm) {

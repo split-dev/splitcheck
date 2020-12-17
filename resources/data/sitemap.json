@@ -182,9 +182,14 @@
       "url": "/messages-page.html"
     },
     {
-      "title": "My orders",
+      "title": "Orders",
       "description": "orders",
       "url": "/orders.html"
+    },
+    {
+      "title": "Orders Dispute",
+      "description": "orders",
+      "url": "/orders-dispute.html"
     }
   ]
 }

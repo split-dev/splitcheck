@@ -1,3 +1,21 @@
+.section-settings {
+  margin-bottom: 50px;
+  li {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
+    &:first-child {
+      @media (max-width: 767px) {
+        padding-top: 15px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 .tabs-global {
   .tab-content {
     width: 100%;
@@ -56,24 +74,6 @@
 
     svg {
       margin-right: 16px;
-    }
-  }
-  .section-settings {
-    margin-bottom: 50px;
-    li {
-      margin-left: 15px;
-      margin-bottom: 20px;
-      @media (max-width: 991px) {
-        margin-left: 0;
-      }
-      &:first-child {
-        @media (max-width: 767px) {
-          padding-top: 15px;
-        }
-      }
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
   .email-sms {

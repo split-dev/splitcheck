@@ -91,15 +91,99 @@
                 <!-- /aside-left -->
                 <!-- main -->
                 <main class="main">
-                    <span class="section-content__title position-relative d-flex align-items-center">Search Results
+                    <ul class="nav tabs-global__nav mobile-nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                        <div>
+                            <section class="section-settings">
+                                <ul>
+                                    <li class="nav-item active-item settings__toggle" role="presentation"><a
+                                            class="nav-link text-nowrap" data-toggle="pill" href="#account-preferences"
+                                            role="tab" aria-controls="pills-about" aria-selected="true">Search
+                                            Preferences</a>
+                                        <svg class="svg-show" xmlns="http://www.w3.org/2000/svg" width="13" height="8"
+                                            viewBox="0 0 13 8">
+                                            <g>
+                                                <g>
+                                                    <path fill="none" stroke="#f77d0e" stroke-miterlimit="20"
+                                                        d="M1 1v0l5.916 6v0L13 1v0"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </li>
+                                    <div class="settings__hide">
+                                        <div class="container">
+                                            <div class="search__drop">
+                                                <ul class="tags">
+                                                    <li>We are looking for…</li>
+                                                    <li><b>#some thing</b></li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Budget <b>$25 - $1000</b></li>
+                                                    <li>Fulfillment option <b>Collect from store</b></li>
+                                                    <li>Payment option <b>Any</b></li>
+                                                </ul>
+                                                <a href="#" data-toggle="modal" data-target="#search-parameters"
+                                                    class="btn-border">Edit
+                                                    search parameters</a>
+                                            </div>
+
+                                        </div>
+                                        <li class="nav-item" role="presentation">
+                                            <svg class="svg-revert" xmlns="http://www.w3.org/2000/svg" width="13"
+                                                height="8" viewBox="0 0 13 8">
+                                                <g>
+                                                    <g>
+                                                        <path fill="none" stroke="#f77d0e" stroke-miterlimit="20"
+                                                            d="M1 1v0l5.916 6v0L13 1v0"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </section>
+
+                        </div>
+                    </ul>
+                    <span class="section-content__title position-relative align-items-center d-none d-lg-block">Search
+                        Results
                         for</span>
-                    <div class="section-content">
+                    <div class="section-content d-none d-lg-block">
+                        <div class="search-result">
+                            <div class="search-result__left">
+                                <ul>
+                                    <li>We are looking for…</li>
+                                    <li><b>#some thing</b></li>
+                                </ul>
+                                <a href="#" data-toggle="modal" data-target="#search-parameters" class="btn-border">Edit
+                                    search parameters</a>
+                            </div>
+                            <div class="search-result__right">
+                                <ul>
+                                    <li>Budget <b>_</b></li>
+                                    <li>Fulfillment option <b>_</b></li>
+                                    <li>Payment option <b>Any</b></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <span class="section-content__title position-relative d-flex align-items-center">Snatch a
                         bargain</span>
                     <div class="section-content">
                         <div class="bargain-gallery">
                             <div class="goss-gallery">
+                                <a href="#" class="goss-gallery__profile d-flex flex-wrap align-items-start">
+                                    <figure class="goss-gallery__avatar">
+                                        <img src="images/profiles/img1.png" alt="avatar">
+                                        <span class="goss-gallery__symbol"></span>
+                                    </figure>
+                                    <div class="goss-gallery__head-info">
+                                        <h2 class="goss-gallery__name goss-gallery__name--orange">Some User</h2>
+                                        <p
+                                            class="goss-gallery__subname goss-gallery__subname--light d-flex flex-column">
+                                            <span>3 hours ago</span>
+                                        </p>
+                                    </div>
+                                </a>
                                 <div class="goss-gallery__slider swiper-container">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide" data-hash="0">
@@ -174,6 +258,7 @@
                                     </span>
                                 </div>
                             </div>
+                            <a href="#" class="btn btn-orange">Snatch it!</a>
                         </div>
                     </div>
                 </main>

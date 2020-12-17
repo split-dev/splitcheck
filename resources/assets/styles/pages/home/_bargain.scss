@@ -1,3 +1,132 @@
+.bargain {
+  .nav-link {
+    background: none !important;
+    padding: 0;
+    line-height: 14px;
+  }
+  .svg-show {
+    * {
+      stroke: #335491 !important;
+    }
+  }
+  .mobile-nav {
+    &::before {
+      background-image: url("images/icons/blue-overlay.svg");
+    }
+    &.mobile-before {
+      min-height: 300px;
+      &:before {
+        height: 335px;
+      }
+    }
+  }
+  .settings__toggle {
+    a {
+      color: #335491 !important;
+    }
+  }
+  .tags-global {
+    a {
+      font-size: 14px;
+    }
+  }
+  .mobile-before {
+    .active-item {
+      display: none;
+    }
+  }
+  .search__drop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    .tags {
+      margin-bottom: 16px;
+    }
+    .btn-border {
+      max-width: 240px;
+      width: 100%;
+      margin-top: 22px;
+    }
+    ul {
+      width: 100%;
+      li {
+        color: #0b0212;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 18px;
+        margin-bottom: 8px;
+        b {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .main {
+    @media (max-width: 991px) {
+      padding-top: 65px;
+    }
+  }
+  .section-content__title {
+    margin-top: 11px;
+  }
+  .section-content {
+    &:first-of-type {
+      position: static !important;
+    }
+  }
+  .mobile-nav {
+    left: 0;
+  }
+}
+
 .bargain-gallery {
-  max-width: 460px;
+  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 16px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .goss-gallery {
+    &__profile {
+      padding: 0 54px;
+      margin-bottom: 16px;
+    }
+  }
+  .btn-orange {
+    margin-top: 12px;
+  }
+}
+
+.search-result {
+  padding: 16px 22px 12px 22px;
+  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  ul {
+    padding-left: 16px;
+    li {
+      margin-bottom: 8px;
+      color: #0b0212;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      b {
+        font-weight: 500;
+      }
+    }
+  }
+  &__left {
+    margin-right: 85px;
+    min-width: 170px;
+    .btn-border {
+      white-space: nowrap;
+      font-size: 14px;
+      font-weight: 400;
+      height: 32px;
+    }
+  }
 }

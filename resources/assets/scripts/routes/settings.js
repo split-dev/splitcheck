@@ -1,11 +1,6 @@
 import 'jquery-mask-plugin'
 export default {
   init() {
-    const body = document.querySelector('body');
-    
-
-   
-   
 
     // * function for "Select" template in modal
     {
@@ -39,41 +34,6 @@ export default {
 
     }
 
-
-
-      //background change
-      
-      $('.account-preferences__card').on('click', function() {
-        let bgColor = $(this).attr('data-class');
-        $('.section-blur').attr('data-class', bgColor);
-       })
-     
-       //mobile tabs
-    $('.settings__hide li').click(function() {
-       $(this).parent().slideToggle(400);
-       $('.mobile-nav').toggleClass('mobile-before')
-       $('.svg-show').toggleClass('svg-top-hide');
-       $('.main-content').css('margin-top', '0')
-     });
-     
-
-     $('.settings__toggle').on('click', function() {
-       $('.mobile-nav').toggleClass('mobile-before');
-       $('.svg-show').toggleClass('svg-top-hide');
-       $('.settings__hide').slideToggle(400);
-       
-      if ($('.nav').hasClass('mobile-before')) {
-        let heightPadding = $('.mobile-nav').height();
-        $('.main-content').css('margin-top', heightPadding + 'px');
-      } else {
-        $('.main-content').css('margin-top', '0')
-      }
-     });
-
-    
-    
-
-
     //check input
       $('.nav-item').click(function() {
           $('.nav-item').removeClass('active-item');
@@ -102,41 +62,7 @@ export default {
        $(this).addClass('active');
       });
 
-      //header height
-      let mobileLinks = document.querySelector('.mobile-nav');
-     
-      function topMobile() {
-        body.addEventListener('wheel', function(e) {
-  
-          let meNow = false;
-  
-          for (let i = 0; i < e.path.length - 3; i++) {
-            const element = e.path[i];
-            if (element) {
-              if (element.classList.contains('mobile-nav')) {
-                meNow = true
-              }
-            }
-          }
-  
-          if (!meNow) {
-            if (e.deltaY < 0) {
-              if (window.matchMedia('(min-width: 767px)').matches) {
-                mobileLinks.style.top = '';
-              } else {
-                mobileLinks.style.top = '55px';
-              }
-            } else {
-              if (window.matchMedia('(min-width: 767px)').matches) {
-                mobileLinks.style.top = '';
-              } else {
-                mobileLinks.style.top = '0';
-              }
-            }
-          }
-        })
-      }
-      topMobile();
+      
    
   },
 

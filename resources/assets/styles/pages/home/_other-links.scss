@@ -30,6 +30,11 @@
         background-image: url("images/icons/pawprint-disabled.svg");
       }
     }
+    &.this {
+      span {
+        color: #f77d0e !important;
+      }
+    }
     .icon {
       top: 50%;
       transform: translateY(-50%);

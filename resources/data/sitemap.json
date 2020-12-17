@@ -190,6 +190,11 @@
       "title": "message-offer",
       "description": "message-offer",
       "url": "/message-offer.html"
+    },
+    {
+      "title": "bargain",
+      "description": "bargain",
+      "url": "/bargain.html"
     }
   ]
 }

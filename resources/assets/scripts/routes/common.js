@@ -437,6 +437,10 @@ export default {
       $(this).toggleClass('open');
       $(this).parent().find($('.options-cart__body')).slideToggle();
     })
+
+    
+
+
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

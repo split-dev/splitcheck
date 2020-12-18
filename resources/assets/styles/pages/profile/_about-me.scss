@@ -613,6 +613,7 @@
     @media (max-width: 575px) {
       padding: 12px 10px;
       justify-content: space-between;
+      display: block !important;
     }
     a {
       cursor: pointer;
@@ -629,6 +630,7 @@
         height: 156px;
         @media (max-width: 575px) {
           max-width: 45%;
+          display: inline-block;
         }
       }
       &:before {
@@ -677,6 +679,7 @@
     margin-bottom: 8px;
     @media (max-width: 575px) {
       max-width: 45%;
+      display: inline-block;
     }
   }
   &__selector-counter {

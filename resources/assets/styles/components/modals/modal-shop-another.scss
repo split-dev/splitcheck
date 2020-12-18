@@ -11,6 +11,12 @@
 
     .modal-body {
       padding-top: 0;
+      form {
+        span.section-content__title {
+          text-transform: uppercase;
+          height: auto;
+        }
+      }
     }
   }
 
@@ -109,7 +115,7 @@
         font-size: 12px;
         line-height: 14px;
 
-        color: theme-color("orange");
+        color: #fa8000;
         font-weight: $font-weight-medium;
       }
     }

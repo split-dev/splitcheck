@@ -459,6 +459,7 @@
   text-transform: uppercase;
   max-width: 21px;
   color: theme-color("light-blue");
+  min-width: 100%;
 
   &::after,
   &::before {

@@ -297,8 +297,8 @@ export default {
       const postLightGallery = $('.grid-gallery').lightGallery({
         selector: '.grid-gallery__selector',
         exThumbImage: 'data-src',
-        // width: '620px',
-        // height: '100%',
+        width: '100%',
+        height: '100%',
         thumbWidth: 120,
         thumbContHeight: 177,
         thumbMargin: 16,
@@ -310,6 +310,9 @@ export default {
         share: false,
         rotate: false,
         hash: false,
+        autoplay: false,
+        download: false,
+        fullScreen: false,
       });
 
       // Perform any action the gallery

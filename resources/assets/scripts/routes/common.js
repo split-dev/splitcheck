@@ -508,6 +508,32 @@ export default {
     });
     }
 
+    //plus and minus function
+    function funcPlusMinus(init, par, proces) {
+      if(proces == 'minus') {
+        if(init > 0) {
+          $(par).find($('.item-cart__int')).text(init - 1);
+        }
+      } else {
+        $(par).find($('.item-cart__int')).text(init + 1);
+      }
+    }
+    $('.item-cart__minus, .item-cart__plus').click( function() {
+      let par = $(this).parent();
+      let init = Number($(par).find($('.item-cart__int')).text());
+      let proces = undefined;
+      if($(this).hasClass('item-cart__minus')) {
+        proces = 'minus';
+      } else {
+        proces = 'plus';
+      }
+      funcPlusMinus(init, par, proces)
+    })
+
+    //change bg
+    $('.theme-background .theme-background__item').click( function() {
+      $('.section-blur').attr('data-class', $(this).attr('data-bg'))
+    })
 
   },
 

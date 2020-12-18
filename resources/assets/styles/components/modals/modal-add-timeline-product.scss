@@ -8,6 +8,9 @@
     .modal-body {
       padding: 24px;
       .form {
+        textarea {
+          height: 120px;
+        }
         &__single--fluid,
         &__other {
           max-width: 315px;

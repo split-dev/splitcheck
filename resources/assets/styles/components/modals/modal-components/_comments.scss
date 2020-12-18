@@ -125,9 +125,7 @@
       left: -5px;
       box-sizing: border-box;
       border: 7px solid;
-      border-color:
-        transparent transparent theme-color("white")
-        theme-color("white");
+      border-color: transparent transparent theme-color("white") theme-color("white");
       transform-origin: 0;
       transform: rotate(-45deg);
       box-shadow: -4px 0 4px -3px rgba(11, 2, 18, 0.08);
@@ -174,6 +172,12 @@
         right: 0;
         margin: auto;
       }
+    }
+    p {
+      color: #0b0212;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 16px;
     }
 
     > * {

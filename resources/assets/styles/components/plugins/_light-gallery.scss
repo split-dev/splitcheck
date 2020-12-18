@@ -22,8 +22,12 @@
 
   &.lg-has-thumb {
     .lg-img-wrap {
-      padding-bottom: 177px;
+      padding-bottom: 90px;
     }
+  }
+
+  .lg-object {
+    transform: scale3d(1.4, 1.4, 1.4) !important;
   }
 
   .lg-thumb {

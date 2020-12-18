@@ -9,6 +9,13 @@
   .modal-content {
     .modal-body {
       padding: 24px;
+      .form__note {
+        font-size: 16px;
+        padding-left: 0;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 23px;
+      }
       .form {
         &__single--fluid,
         &__other,

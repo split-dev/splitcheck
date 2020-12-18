@@ -3,8 +3,7 @@ import Swiper from 'swiper/swiper-bundle';
 import SimpleScrollbar from 'simple-scrollbar';
 import Dropzone from 'dropzone';
 import Cropper from 'cropperjs';
-import 'jquery-mask-plugin'
-import 'lightgallery/dist/js/lightgallery-all.min';
+import 'jquery-mask-plugin';
 
 export default {
   init() {

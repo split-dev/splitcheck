@@ -66,6 +66,12 @@
       }
     }
   }
+  .store-info {
+    box-shadow: none !important;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+  }
 }
 
 .store-bg {
@@ -169,7 +175,9 @@
       line-height: 20px;
       text-align: left;
       color: theme-color("dark-blue");
-
+      b {
+        font-weight: 500;
+      }
       &:last-child {
         margin-bottom: 0;
       }

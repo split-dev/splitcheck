@@ -605,7 +605,6 @@
 }
 
 .history {
-  margin-bottom: 24px;
   &__grid {
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
@@ -628,6 +627,9 @@
         width: 100%;
         max-width: 174px;
         height: 156px;
+        @media (max-width: 575px) {
+          max-width: 45%;
+        }
       }
       &:before {
         content: attr(data-numbers);
@@ -673,6 +675,9 @@
     background-color: #e8ebf2;
     margin-right: 8px;
     margin-bottom: 8px;
+    @media (max-width: 575px) {
+      max-width: 45%;
+    }
   }
   &__selector-counter {
     position: absolute;

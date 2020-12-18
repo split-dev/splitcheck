@@ -345,3 +345,4 @@
 [1104/165157.443:ERROR:exception_snapshot_win.cc(99)] thread ID 17180 not found in process
 [1111/163723.757:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1119/112511.303:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1218/094506.672:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

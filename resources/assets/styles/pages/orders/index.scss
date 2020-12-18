@@ -4,9 +4,32 @@
 
 @import "orders-box";
 @import "orders-cards";
+@import "orders-dispute";
 
 .orders {
-  .slider-recomend {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex !important;
+  }
+  .section-content__title {
+    @media (max-width: 575px) {
+      margin-left: 20px !important;
+    }
+  }
+  main {
+    @media (max-width: 991px) {
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
+  }
+  &__bottom {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    .section-content__title {
+      margin-left: 20px;
+    }
+  }
+  &__slider {
     position: relative;
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
@@ -16,7 +39,10 @@
     margin-bottom: 0;
   }
   .slider-recomend__container {
-    max-width: 1140px;
-    padding: 12px 57px 12px;
+    max-width: 885px;
+    padding: 12px 20px 12px 57px;
+    @media (max-width: 767px) {
+      padding: 12px 24px 30px 24px;
+    }
   }
 }

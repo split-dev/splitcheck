@@ -25,6 +25,20 @@
       }
     }
   }
+  .max-text {
+    position: relative;
+  }
+  .count {
+    position: absolute;
+    right: 14px;
+    bottom: 15px;
+    color: #0b0212;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .ss-content {
+    padding-right: 18px;
+  }
 }
 .modal-system {
   max-width: 336px;

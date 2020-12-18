@@ -1,0 +1,111 @@
+.orders-dispute {
+  .orders__price {
+    margin-left: 80px;
+  }
+  &__price {
+    margin-left: 0 !important;
+    @media (max-width: 767px) {
+      margin-left: 25px !important;
+    }
+  }
+
+  .other__comment {
+    &:last-child {
+      float: left;
+    }
+  }
+  .orders__comment {
+    float: right;
+  }
+  &__block {
+    .orders__author {
+      margin-right: 0;
+      margin-left: 8px;
+    }
+    .comments-box__form {
+      margin-top: 0;
+      padding-right: 0;
+      padding-left: 10px;
+    }
+    .scroll-div {
+      overflow-y: scroll;
+    }
+    .gift-shopping__body {
+      padding: 0;
+    }
+    .comments-box {
+      height: 630px;
+      &:before {
+        left: -20px;
+        right: -20px;
+      }
+    }
+    .orders__toggle {
+      margin-top: 50px;
+      padding-left: 15px;
+    }
+    &-text {
+      padding-left: 15px;
+    }
+    p {
+      margin-bottom: 13px;
+      max-width: 493px;
+    }
+    h5 {
+      text-transform: uppercase;
+      color: #335491;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+    }
+    strong {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+    small {
+      color: #828282;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 23px;
+    }
+    span.blue-text {
+      text-transform: uppercase;
+      color: #335491;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.86px;
+    }
+  }
+  .orders {
+    &__box {
+      &:first-child {
+        .orders__line {
+          background-color: #f77d0e;
+        }
+      }
+      &:nth-child(2) {
+        .orders__line {
+          background-color: #00a046;
+        }
+      }
+      &:nth-child(3) {
+        .orders__line {
+          background-color: #d2d2d2;
+        }
+      }
+      &:nth-child(4) {
+        .orders__line {
+          background-color: #4f7ccf;
+        }
+      }
+      &:nth-child(5) {
+        .orders__line {
+          background-color: #ff3b3b !important;
+        }
+      }
+    }
+  }
+}

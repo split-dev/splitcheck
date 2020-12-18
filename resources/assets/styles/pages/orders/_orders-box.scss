@@ -70,6 +70,9 @@
     @media (max-width: 1260px) {
       max-width: 265px;
     }
+    @media (max-width: 767px) {
+      margin-right: 0;
+    }
   }
   &__hide {
     display: none;
@@ -82,6 +85,9 @@
     background-color: #fff;
     padding: 11px 24px 11px 12px;
     margin-bottom: 10px;
+    @media (max-width: 767px) {
+      padding: 15px 16px 15px 12px;
+    }
     &:first-child {
       .orders__line {
         background-color: #f77d0e;
@@ -139,6 +145,11 @@
     align-items: center;
     justify-content: center;
     margin-right: 8px;
+    &:nth-child(3) {
+      @media (max-width: 767px) {
+        margin-right: 0;
+      }
+    }
     &:last-child {
       margin-right: 0;
     }

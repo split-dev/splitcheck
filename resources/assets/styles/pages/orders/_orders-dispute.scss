@@ -1,12 +1,18 @@
 .orders-dispute {
   .orders__price {
     margin-left: 80px;
-    @media (max-width: 767px) {
-      margin-left: 30px;
-    }
   }
   &__price {
     margin-left: 0 !important;
+    @media (max-width: 767px) {
+      margin-left: 25px !important;
+    }
+  }
+
+  .other__comment {
+    &:last-child {
+      float: left;
+    }
   }
   .orders__comment {
     float: right;

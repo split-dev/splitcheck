@@ -205,6 +205,10 @@
     padding-left: 0 !important;
     .select2-selection__choice__remove {
       color: #335491 !important;
+      top: -1px !important;
+      &:hover {
+        color: #335491 !important;
+      }
     }
   }
 }

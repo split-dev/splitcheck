@@ -5,9 +5,8 @@ export default {
   init() {
       //* function progresBar for "goss-gallery__slider" and SWIPER
     {
-
+      let swiperGoss;
         if($('.goss-gallery__slider').hasClass('goss-gallery__slider')) {
-          let swiperGoss;
   
         const optionForSwiperGoss = {
           slidesPerView: 1,
@@ -34,9 +33,14 @@ export default {
         // Ticking machine
         const slidesNumber = document.querySelectorAll('.goss-gallery__slider.swiper-container .swiper-slide').length - 1;
         const progress = document.querySelector('.goss-gallery');
-        const progressWrap = document.querySelector('.goss-gallery__progress-wrap');
-        const progressTimer = document.querySelector('.goss-gallery__timer');
+        let progressWrap = document.querySelector('.goss-gallery__progress-wrap');
+        let progressTimer = document.querySelector('.goss-gallery__timer');
         const defaultTime = progressTimer.dataset.time; // time to show one slide "data-time" in .goss-gallery__timer
+        
+        if(window.innerWidth < 991) {
+          progressWrap = document.querySelector('.goss-gallery__mob .goss-gallery__progress-wrap');
+          progressTimer = document.querySelector('.bottom-slider__info .goss-gallery__timer');
+        } 
   
         let stopFlag = true;
         let isPauseProcessing = false;
@@ -166,6 +170,20 @@ export default {
         });
         }
       }
+
+      //show and sticky bottom
+      var lastScrollTop = 0;
+      $(window).scroll(function(event){
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop){
+            // код для прокрутки вниз
+            $('.bottom-slider__info').addClass('bottom');
+        } else {
+           // код для прокрутки вверх
+           $('.bottom-slider__info').removeClass('bottom');
+        }
+        lastScrollTop = st;
+     });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

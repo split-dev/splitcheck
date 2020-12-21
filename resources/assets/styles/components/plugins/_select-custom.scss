@@ -193,3 +193,18 @@
     }
   }
 }
+
+
+//select profile style
+.form__single--select-profile {
+  .select2-selection__choice {
+    background-color: transparent !important;
+    color: #0b0212 !important;
+    font-size: 16px !important;
+    font-weight: 400;
+    padding-left: 0 !important;
+    .select2-selection__choice__remove {
+      color: #335491 !important;
+    }
+  }
+}

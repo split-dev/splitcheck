@@ -267,9 +267,36 @@ export default {
     }
 
      // * function for "Select" template in modal
-     if($('.form__single--select-default select[data-toggle="select"]')) {
-      $('.form__single--select-user select[data-toggle="select"]').select2({
+    //  if($('.form__single--select-default select[data-toggle="select"]')) {
+    //   $('.form__single--select-user select[data-toggle="select"]').select2({
+    //     minimumResultsForSearch: Infinity,
+    //     width: '100%',
+    //     templateResult: function (state) {
+    //       if (!state.id) {
+    //         return state.text;
+    //       }
+    //       var baseUrl = 'images/profiles';
+    //       var $state = $(`
+    //         <div class="profile-list">
+    //           <figure class="profile-list__avatar">
+    //             <img src="${baseUrl}/${state.element.value.toLowerCase()}.png" alt="avatar">
+    //             <span class="profile-list__symbol"></span>
+    //           </figure>
+    //           <span>${state.text}</span>
+    //         </div>
+    //       `);
+
+    //       return $state;
+    //     },
+    //     // dropdownParent: $('.form__single--select-user'),
+    //   });
+    //  }
+
+     // * function for "Select" template user add image
+     if($('.form__single--select-profile select[data-toggle="select-profile"]')) {
+      $('.form__single--select-profile select[data-toggle="select-profile"]').select2({
         minimumResultsForSearch: Infinity,
+        maximumSelectionLength: 1,
         width: '100%',
         templateResult: function (state) {
           if (!state.id) {
@@ -292,15 +319,7 @@ export default {
       });
      }
 
-     // * function for "Select is not avatar" template in modal
-     if($('.form__single--select-not select[data-toggle="select"]')) {
-      $('.form__single--select-user-not select[data-toggle="select"]').select2({
-        minimumResultsForSearch: Infinity,
-        width: '100%',
-        // dropdownParent: $('.form__single--select-user'),
-      });
-
-     }
+    //  }
 
      //mini aside slider 
     var swiperAside = new Swiper('.personal-card--slider .swiper-container', {
@@ -376,22 +395,14 @@ export default {
         });
        }
   
-       // * function for "Select is not avatar" template in modal
-       if($('.form__single--select-user-not[data-toggle="select-img"]')) {
-        $('.form__single--select-user-not[data-toggle="select-img"]').select2({
-          minimumResultsForSearch: Infinity,
-          width: '100%',
-          // dropdownParent: $('.form__single--select-user'),
-        });
-      }
 
-       // * function for "Select is not avatar" template in modal
-       if($('.form__select--default[data-toggle="select-single"]')) {
-        $('.form__select--default[data-toggle="select-single"]').select2({
-          minimumResultsForSearch: Infinity,
-          width: '100%',
-        });
-      }
+      //  // * function for "Select is not avatar" template in modal
+      //  if($('.form__select--default[data-toggle="select-single"]')) {
+      //   $('.form__select--default[data-toggle="select-single"]').select2({
+      //     minimumResultsForSearch: Infinity,
+      //     width: '100%',
+      //   });
+      // }
 
        // * function for "Select is not avatar" template in modal
        if($('.form__select--default[data-toggle="select"]')) {

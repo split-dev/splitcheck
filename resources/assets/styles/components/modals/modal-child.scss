@@ -5,17 +5,35 @@
       padding: 24px 24px 80px !important;
     }
   }
+  .count {
+    bottom: 0 !important;
+  }
   .form__inputs {
     padding-right: 77px;
+  }
+  .form__label {
+    padding-left: 8px;
   }
   .form__single {
     margin-bottom: 16px;
   }
+  .form__wrap {
+    margin-top: 24px;
+  }
   .new-banner {
+    position: relative;
     width: 64px;
     height: 64px;
     border-radius: 5px;
-    border: 1px dashed #335491;
+    &::after {
+      position: absolute;
+      content: url("images/icons/box-64px.svg");
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+    }
 
     .icon {
       left: 50%;

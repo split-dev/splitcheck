@@ -37,6 +37,15 @@
   }
 }
 .profile {
+  .main-content {
+    padding-top: 18px;
+  }
+  &__list {
+    padding-left: 5px;
+    @media (max-width: 991px) {
+      padding-left: 0;
+    }
+  }
   .main {
     .section-content__title {
       img {

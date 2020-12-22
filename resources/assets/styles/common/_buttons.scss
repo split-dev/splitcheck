@@ -27,6 +27,14 @@
   &.btn-border--two {
     border: 2px solid theme-color("blue2") !important;
   }
+  &.items-cart {
+    margin: 16px auto 0;
+    max-width: 328px;
+    height: 32px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+  }
   &:hover {
     background: theme-color("blue2") !important;
     color: theme-color("white");
@@ -60,7 +68,8 @@
   }
 }
 .btn-orange,
-.btn-blue {
+.btn-blue,
+.btn-green {
   position: relative;
   width: 100%;
   display: flex;
@@ -71,6 +80,21 @@
   font-size: 16px;
   transition: 0.3s;
 
+  &.active {
+    background-color: #4fcec433 !important;
+    border-color: #4fcec433 !important;
+    color: #0b0212 !important;
+    font-weight: 400 !important;
+    &::before {
+      background-color: #4fcec433 !important;
+      border: none !important;
+    }
+    &:hover {
+      &::before {
+        border: none !important;
+      }
+    }
+  }
   color: theme-color("white");
 
   &:active:focus,
@@ -128,6 +152,22 @@
 
   &:before {
     border: 1px solid theme-color("blue2");
+  }
+}
+.btn-green {
+  max-width: 160px;
+
+  background-color: #4fcec4;
+  font-weight: $font-weight-medium;
+
+  &:active,
+  &:focus {
+    color: theme-color("white");
+    background-color: #32bdb2;
+  }
+
+  &:before {
+    border: 1px solid #4fcec4;
   }
 }
 

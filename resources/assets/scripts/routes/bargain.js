@@ -170,20 +170,6 @@ export default {
         });
         }
       }
-
-      //show and sticky bottom
-      var lastScrollTop = 0;
-      $(window).scroll(function(event){
-        var st = $(this).scrollTop();
-        if (st > lastScrollTop){
-            // код для прокрутки вниз
-            $('.bottom-slider__info').addClass('bottom');
-        } else {
-           // код для прокрутки вверх
-           $('.bottom-slider__info').removeClass('bottom');
-        }
-        lastScrollTop = st;
-     });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

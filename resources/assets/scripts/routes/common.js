@@ -559,6 +559,33 @@ export default {
       $('.section-blur').attr('data-class', $(this).attr('data-bg'))
     })
 
+    //coupon used
+    $('.btn-green.not').click( function(e) {
+      e.preventDefault();
+      $(this).text('Coupon used').addClass('active')
+    })
+
+    //show and sticky bottom
+    var lastScrollTop = 0;
+    $(window).scroll(function(event){
+      var st = $(this).scrollTop();
+      if (st > lastScrollTop){
+        if($('.bottom-slider__info').hasClass('bottom-slider__info')) {
+          $('.bottom-slider__info').addClass('bottom');
+        }
+        if($('.cart-fixed').hasClass('cart-fixed')) {
+          $('.cart-fixed').addClass('bottom');
+        }
+      } else {
+        if($('.bottom-slider__info').hasClass('bottom-slider__info')) {
+          $('.bottom-slider__info').removeClass('bottom');
+        }
+        if($('.cart-fixed').hasClass('cart-fixed')) {
+          $('.cart-fixed').removeClass('bottom');
+        }
+      }
+      lastScrollTop = st;
+   });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

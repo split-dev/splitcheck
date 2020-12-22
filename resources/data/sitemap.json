@@ -205,6 +205,11 @@
       "title": "Blog Post",
       "description": "blog",
       "url": "/blog-post.html"
+    },
+    {
+      "title": "Cart",
+      "description": "cart",
+      "url": "/cart.html"
     }
   ]
 }

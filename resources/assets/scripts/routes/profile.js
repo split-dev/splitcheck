@@ -601,56 +601,56 @@ export default {
     //   }
     // }
 
-    // //* Dropzone and Cropper
-    // {
-    //   if($('.profile-face__background').hasClass('profile-face__background')) {
-    //     const btnCrop = document.querySelector('.btn-drop-photo-crop--bg');
-    //   const containerCrop = document.querySelector('.drop-photo__start--bg');
+    //* Dropzone and Cropper
+    {
+      if($('.profile-face__background').hasClass('profile-face__background')) {
+        const btnCrop = document.querySelector('.btn-drop-photo-crop--bg');
+      const containerCrop = document.querySelector('.drop-photo__start--bg');
 
-    //   const myDropzone = new Dropzone('.drop-photo--bg', {
-    //     url: '/file/post',
-    //     thumbnailWidth: null,
-    //     thumbnailHeight: null,
-    //     maxFiles: 1,
+      const myDropzone = new Dropzone('.drop-photo--bg', {
+        url: '/file/post',
+        thumbnailWidth: null,
+        thumbnailHeight: null,
+        maxFiles: 1,
 
-    //     transformFile: function(file, done) {
-    //       let myDropZone = this;
+        transformFile: function(file, done) {
+          let myDropZone = this;
 
-    //       // Create the image editor overlay
-    //       let editor = document.createElement('div');
-    //       editor.style.backgroundColor = '#e8ebf2';
-    //       editor.style.position = 'absolute';
-    //       editor.style.top = 0;
-    //       editor.style.bottom = 0;
-    //       editor.style.left = 0;
-    //       editor.style.right = 0;
-    //       editor.style.zIndex = 2;
-    //       this.previewsContainer.appendChild(editor)
-    //       // document.body.appendChild(editor);
+          // Create the image editor overlay
+          let editor = document.createElement('div');
+          editor.style.backgroundColor = '#e8ebf2';
+          editor.style.position = 'absolute';
+          editor.style.top = 0;
+          editor.style.bottom = 0;
+          editor.style.left = 0;
+          editor.style.right = 0;
+          editor.style.zIndex = 2;
+          this.previewsContainer.appendChild(editor)
+          // document.body.appendChild(editor);
 
-    //       // Create confirm button at the top left of the viewport
-    //       // let buttonConfirm = document.createElement('button');
-    //       // buttonConfirm.style.position = 'absolute';
-    //       // buttonConfirm.style.left = '10px';
-    //       // buttonConfirm.style.top = '10px';
-    //       // buttonConfirm.style.zIndex = 9999;
-    //       // buttonConfirm.textContent = 'Confirm';
-    //       // editor.appendChild(buttonConfirm);
+          // Create confirm button at the top left of the viewport
+          // let buttonConfirm = document.createElement('button');
+          // buttonConfirm.style.position = 'absolute';
+          // buttonConfirm.style.left = '10px';
+          // buttonConfirm.style.top = '10px';
+          // buttonConfirm.style.zIndex = 9999;
+          // buttonConfirm.textContent = 'Confirm';
+          // editor.appendChild(buttonConfirm);
 
-    //       // Create an image node for Cropper.js
-    //       let image = new Image();
-    //       image.src = URL.createObjectURL(file);
-    //       editor.appendChild(image);
+          // Create an image node for Cropper.js
+          let image = new Image();
+          image.src = URL.createObjectURL(file);
+          editor.appendChild(image);
 
-    //       // Create Cropper.js
-    //       let cropper = new Cropper(image, {
-    //         aspectRatio: NaN,
-    //         viewMode: 3,
-    //       });
-    //     },
-    //   });
-    //   }
-    // }
+          // Create Cropper.js
+          let cropper = new Cropper(image, {
+            aspectRatio: NaN,
+            viewMode: 3,
+          });
+        },
+      });
+      }
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

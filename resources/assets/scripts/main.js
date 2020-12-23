@@ -2,7 +2,7 @@
 // require('intersection-observer');
 
 // import external dependencies
-import './util/polyfills'
+import './util/polyfills';
 import 'jquery';
 import 'bootstrap';
 

@@ -240,8 +240,8 @@ export default {
       swiper.slideTo ( index );
     });
     if ($('.menu-bottom').hasClass('menu-bottom')) {
-      let headroomSecond  = new Headroom(menuBottom);
       let menuBottom = document.querySelector('.menu-bottom');
+      let headroomSecond  = new Headroom(menuBottom);
       headroomSecond.init();
     }
 

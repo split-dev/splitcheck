@@ -586,6 +586,20 @@ export default {
       }
       lastScrollTop = st;
    });
+
+    //show and sticky aside left
+    if($('.aside-left').hasClass('aside-left')) {
+      var ScrollTop = 0;
+    $(window).scroll(function(event){
+      var st = $(this).scrollTop();
+      if (st > ScrollTop){
+        $('.aside-left').css('top', '30px');
+      } else {
+        $('.aside-left').css('top', '90px');
+      }
+      ScrollTop = st;
+   });
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

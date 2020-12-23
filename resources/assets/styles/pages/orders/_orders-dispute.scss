@@ -8,12 +8,10 @@
       margin-left: 25px !important;
     }
   }
-
-  .other__comment {
-    &:last-child {
-      float: left;
-    }
+  .comment-float {
+    float: left;
   }
+
   .orders__comment {
     float: right;
   }

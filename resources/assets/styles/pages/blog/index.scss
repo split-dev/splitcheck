@@ -1,0 +1,56 @@
+//Glob Utils
+@import "../../variables";
+@import "../../bootstrap-utils";
+
+@import "blog-post";
+
+.blog {
+  .reaction__top {
+    border-bottom: none;
+  }
+  &__mini-post {
+    margin-top: 45px;
+  }
+  .section-blur {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 240px;
+      background-color: #fff9f4;
+    }
+  }
+  .orders__img-block {
+    max-width: 103px;
+    height: 80px;
+    background-color: #f8f9fb;
+  }
+  .mini-post {
+    box-shadow: none;
+    background: none;
+    margin-top: 20px;
+    &__info {
+      width: 100%;
+    }
+    &__reaction {
+      justify-content: flex-start;
+    }
+    &__link {
+      display: flex;
+      margin-top: 10px;
+    }
+    &__right {
+      margin-right: 0;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+    }
+    &__title {
+      a {
+        color: #0b0212;
+        font-size: 16px;
+      }
+    }
+  }
+}

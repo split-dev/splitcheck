@@ -146,7 +146,6 @@ export default {
           disableMobile: 'true',
           altFormat: 'F j, Y',
           dateFormat: 'm/d/Y',
-          appendTo: $('input[data-toggle="datepicker"]').parents('.modal')[0],
         });
       }
 
@@ -157,7 +156,6 @@ export default {
           noCalendar: true,
           dateFormat: 'h:i K',
           time_24hr: false,
-          appendTo: $('input[data-toggle="timepicker"]').parents('.modal')[0],
         });
       }
     }
@@ -610,6 +608,20 @@ export default {
       ScrollTop = st;
    });
     }
+
+    //validator email
+    function validateEmail(email) {
+      //eslint-disable-next-line
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+  }
+  $('.form__input[type="email"]').keyup(function() {
+    if(validateEmail(this.value)){
+      $(this).parent().removeClass('error');
+    }else{
+      $(this).parent().addClass('error');
+    }
+  });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

@@ -316,12 +316,9 @@
       right: 25px;
       width: 24px;
       height: 24px;
-      &::before {
-        position: absolute;
-        left: 0;
-        top: 0;
-        content: url("images/icons/close-24px.svg");
-      }
+      background-position: center;
+      background-image: url("images/icons/close-24px.svg");
+      background-repeat: no-repeat;
       // &:after,
       // &:before {
       //   content: "";

@@ -54,7 +54,6 @@
     width: 100%;
     &--two {
       display: flex;
-      margin-bottom: 24px;
       @media (max-width: 575px) {
         flex-direction: column;
       }

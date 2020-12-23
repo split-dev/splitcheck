@@ -146,6 +146,7 @@ export default {
           disableMobile: 'true',
           altFormat: 'F j, Y',
           dateFormat: 'm/d/Y',
+          appendTo: $('input[data-toggle="datepicker"]').parents('.modal')[0],
         });
       }
 
@@ -156,6 +157,7 @@ export default {
           noCalendar: true,
           dateFormat: 'h:i K',
           time_24hr: false,
+          appendTo: $('input[data-toggle="timepicker"]').parents('.modal')[0],
         });
       }
     }
@@ -360,7 +362,8 @@ export default {
       $('.profile-face .select-color li').removeClass('select');
       $(this).addClass('select');
       let thisColor = $(this).css('background-color');
-      $('.profile-face').css('background-color', thisColor)
+      $('.profile-face').css('background-color', thisColor);
+      $('.profile-face__background ').css('background-color', thisColor);
       $('.profile-face .btn-border').removeClass('active');
       $('.profile-face .select-color').removeClass('show');
       $('.select-color--store').attr('data-color', thisColor)

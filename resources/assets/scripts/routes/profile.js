@@ -468,189 +468,189 @@ export default {
       }
     }
 
-    // if($('.galery-modal').hasClass('galery-modal')) {
-    //   if($('.post__galery')) {
-    //     let galeryArray = $('.post__galery');
-    //     for(let i = 0; i<galeryArray.length; i++) {
-    //       gridGallery(galeryArray[i])
-    //     }
-    //   }
-
-    //   //modal-galery slider
-    //   var galleryThumbs = new Swiper('.gallery-thumbs', {
-    //     spaceBetween: 10,
-    //     slidesPerView: 5,
-    //     watchSlidesVisibility: true,
-    //     watchSlidesProgress: true,
-    //     breakpoints: {
-    //       1260: {
-    //         slidesPerView: 5,
-    //       },
-    //       575: {
-    //         slidesPerView: 4.85,
-    //         // freeMode: true,
-    //       },
-    //       360: {
-    //         slidesPerView: 3.85,
-    //       },
-    //       250: {
-    //         slidesPerView: 4,
-    //         setWrapperSize: false,
-    //         simulateTouch: false,
-    //         preventInteractionOnTransition: true,
-    //         mousewheel: true,
-    //         // freeMode: true,
-    //       },
-    //     },
-    //     on: {
-    //       init: function (event) {
-    //         if(window.innerWidth < 992) {
-    //           initNumber(event.params.slidesPerView + 1, $(event.el).parent());
-    //           $('.gallery-thumbnails .swiper-container').append($('.gallery-thumbnails .count-slider'));
-    //         } else {
-    //           initNumber(event.params.slidesPerView, $(event.el).parent());
-    //         }
-            
-    //       },
-    //     },
-    //   });
-    //   var galleryTop = new Swiper('.gallery-top', {
-    //     spaceBetween: 5,
-    //     thumbs: {
-    //       swiper: galleryThumbs,
-    //     },
-    //   });
-
-    //   $(window).resize( function() {
-    //     countOverlay();
-    //   })
-
-    //   galleryTop.on('slideChange', function () {
-    //     galleryTop.isBeginning ? $('.gallery-full .swiper-button-prev').addClass('swiper-button-disabled') : $('.gallery-full .swiper-button-prev').removeClass('swiper-button-disabled');
-    //     galleryTop.isEnd ? $('.gallery-full .swiper-button-next').addClass('swiper-button-disabled') : $('.gallery-full .swiper-button-next').removeClass('swiper-button-disabled');
-    //   });
-
-    //   galleryThumbs.on('slideChange', function () {
-    //     galleryThumbs.isBeginning ? $('.gallery-thumbnails .swiper-button-prev').addClass('swiper-button-disabled') : $('.gallery-thumbnails .swiper-button-prev').removeClass('swiper-button-disabled');
-    //     galleryThumbs.isEnd ? $('.gallery-thumbnails .swiper-button-next').addClass('swiper-button-disabled') : $('.gallery-thumbnails .swiper-button-next').removeClass('swiper-button-disabled');
-    //   });
-
-    //   //static counter thumbs
-    //   let activeSlide = 0;
-    //   galleryThumbs.on('slideChange', function(event){
-    //     if(activeSlide > galleryThumbs.activeIndex) {
-    //       activeSlide = galleryThumbs.activeIndex;
-    //       countSlide($(event.el).parent(), 'prev')
-    //     } else if(activeSlide < galleryThumbs.activeIndex) {
-    //       countSlide($(event.el).parent(), 'next')
-    //       activeSlide = galleryThumbs.activeIndex;
-    //     }
-        
-    //     // left
-    //   });
-
-    //   //navifation slider
-    //   $('.gallery-full .swiper-button-prev').click( function() {
-    //     galleryTop.slidePrev()
-    //   })
-    //   $('.gallery-full .swiper-button-next').click( function() {
-    //     galleryTop.slideNext()
-    //   })
-
-    //   //open gallery view
-    //  $('.galery-box .grid-gallery__selector, .galery-box .history__selector-grid').click( function(e) {
-    //   e.preventDefault();
-    //  $('#galery-modal').modal();
-    //  setTimeout( function() {
-    //   galleryThumbs.update();
-    //   galleryTop.update();
-    //  }, 300)
-    //  setTimeout( function() {
-    //   countOverlay();
-    //  }, 650)
-    // })
-
-    // //navifation slider thumbs
-    // $('.gallery-thumbnails .swiper-button-prev').click( function(e) {
-    //   e.preventDefault();
-    //   galleryThumbs.slidePrev()
-    // })
-    // $('.gallery-thumbnails .swiper-button-next').click( function(e) {
-    //   e.preventDefault();
-    //   galleryThumbs.slideNext()
-    // });
-
-    // //gallery close modal
-    // $('.gallery-thumbnails .swiper-button-prev').click( function(e) {
-    //   e.preventDefault();
-    //   galleryThumbs.slidePrev()
-    // })
-    // }
-  
-
-    //emotion script
-    function emotionCalc(item) {
-      let atr = Number($(item).attr('data-progress'));
-      $(item).children('.line').css('height', atr + 'px')
-    }
-
-    if($('.statistic-box__emotion')) {
-      let array = $('.progress');
-      for(let i = 0; i<= array.length; i++) {
-        emotionCalc(array[i]);
+    if($('.galery-modal').hasClass('galery-modal')) {
+      if($('.post__galery')) {
+        let galeryArray = $('.post__galery');
+        for(let i = 0; i<galeryArray.length; i++) {
+          gridGallery(galeryArray[i])
+        }
       }
-    }
 
-    //* Dropzone and Cropper
-    {
-      if($('.profile-face__background').hasClass('profile-face__background')) {
-        const btnCrop = document.querySelector('.btn-drop-photo-crop--bg');
-      const containerCrop = document.querySelector('.drop-photo__start--bg');
-
-      const myDropzone = new Dropzone('.drop-photo--bg', {
-        url: '/file/post',
-        thumbnailWidth: null,
-        thumbnailHeight: null,
-        maxFiles: 1,
-
-        transformFile: function(file, done) {
-          let myDropZone = this;
-
-          // Create the image editor overlay
-          let editor = document.createElement('div');
-          editor.style.backgroundColor = '#e8ebf2';
-          editor.style.position = 'absolute';
-          editor.style.top = 0;
-          editor.style.bottom = 0;
-          editor.style.left = 0;
-          editor.style.right = 0;
-          editor.style.zIndex = 2;
-          this.previewsContainer.appendChild(editor)
-          // document.body.appendChild(editor);
-
-          // Create confirm button at the top left of the viewport
-          // let buttonConfirm = document.createElement('button');
-          // buttonConfirm.style.position = 'absolute';
-          // buttonConfirm.style.left = '10px';
-          // buttonConfirm.style.top = '10px';
-          // buttonConfirm.style.zIndex = 9999;
-          // buttonConfirm.textContent = 'Confirm';
-          // editor.appendChild(buttonConfirm);
-
-          // Create an image node for Cropper.js
-          let image = new Image();
-          image.src = URL.createObjectURL(file);
-          editor.appendChild(image);
-
-          // Create Cropper.js
-          let cropper = new Cropper(image, {
-            aspectRatio: NaN,
-            viewMode: 3,
-          });
+      //modal-galery slider
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          1260: {
+            slidesPerView: 5,
+          },
+          575: {
+            slidesPerView: 4.85,
+            // freeMode: true,
+          },
+          360: {
+            slidesPerView: 3.85,
+          },
+          250: {
+            slidesPerView: 4,
+            setWrapperSize: false,
+            simulateTouch: false,
+            preventInteractionOnTransition: true,
+            mousewheel: true,
+            // freeMode: true,
+          },
+        },
+        on: {
+          init: function (event) {
+            if(window.innerWidth < 992) {
+              initNumber(event.params.slidesPerView + 1, $(event.el).parent());
+              $('.gallery-thumbnails .swiper-container').append($('.gallery-thumbnails .count-slider'));
+            } else {
+              initNumber(event.params.slidesPerView, $(event.el).parent());
+            }
+            
+          },
         },
       });
-      }
+      var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 5,
+        thumbs: {
+          swiper: galleryThumbs,
+        },
+      });
+
+      $(window).resize( function() {
+        countOverlay();
+      })
+
+      galleryTop.on('slideChange', function () {
+        galleryTop.isBeginning ? $('.gallery-full .swiper-button-prev').addClass('swiper-button-disabled') : $('.gallery-full .swiper-button-prev').removeClass('swiper-button-disabled');
+        galleryTop.isEnd ? $('.gallery-full .swiper-button-next').addClass('swiper-button-disabled') : $('.gallery-full .swiper-button-next').removeClass('swiper-button-disabled');
+      });
+
+      galleryThumbs.on('slideChange', function () {
+        galleryThumbs.isBeginning ? $('.gallery-thumbnails .swiper-button-prev').addClass('swiper-button-disabled') : $('.gallery-thumbnails .swiper-button-prev').removeClass('swiper-button-disabled');
+        galleryThumbs.isEnd ? $('.gallery-thumbnails .swiper-button-next').addClass('swiper-button-disabled') : $('.gallery-thumbnails .swiper-button-next').removeClass('swiper-button-disabled');
+      });
+
+      //static counter thumbs
+      let activeSlide = 0;
+      galleryThumbs.on('slideChange', function(event){
+        if(activeSlide > galleryThumbs.activeIndex) {
+          activeSlide = galleryThumbs.activeIndex;
+          countSlide($(event.el).parent(), 'prev')
+        } else if(activeSlide < galleryThumbs.activeIndex) {
+          countSlide($(event.el).parent(), 'next')
+          activeSlide = galleryThumbs.activeIndex;
+        }
+        
+        // left
+      });
+
+      //navifation slider
+      $('.gallery-full .swiper-button-prev').click( function() {
+        galleryTop.slidePrev()
+      })
+      $('.gallery-full .swiper-button-next').click( function() {
+        galleryTop.slideNext()
+      })
+
+      //open gallery view
+     $('.galery-box .grid-gallery__selector, .galery-box .history__selector-grid').click( function(e) {
+      e.preventDefault();
+     $('#galery-modal').modal();
+     setTimeout( function() {
+      galleryThumbs.update();
+      galleryTop.update();
+     }, 300)
+     setTimeout( function() {
+      countOverlay();
+     }, 650)
+    })
+
+    //navifation slider thumbs
+    $('.gallery-thumbnails .swiper-button-prev').click( function(e) {
+      e.preventDefault();
+      galleryThumbs.slidePrev()
+    })
+    $('.gallery-thumbnails .swiper-button-next').click( function(e) {
+      e.preventDefault();
+      galleryThumbs.slideNext()
+    });
+
+    //gallery close modal
+    $('.gallery-thumbnails .swiper-button-prev').click( function(e) {
+      e.preventDefault();
+      galleryThumbs.slidePrev()
+    })
     }
+  
+
+    // //emotion script
+    // function emotionCalc(item) {
+    //   let atr = Number($(item).attr('data-progress'));
+    //   $(item).children('.line').css('height', atr + 'px')
+    // }
+
+    // if($('.statistic-box__emotion')) {
+    //   let array = $('.progress');
+    //   for(let i = 0; i<= array.length; i++) {
+    //     emotionCalc(array[i]);
+    //   }
+    // }
+
+    // //* Dropzone and Cropper
+    // {
+    //   if($('.profile-face__background').hasClass('profile-face__background')) {
+    //     const btnCrop = document.querySelector('.btn-drop-photo-crop--bg');
+    //   const containerCrop = document.querySelector('.drop-photo__start--bg');
+
+    //   const myDropzone = new Dropzone('.drop-photo--bg', {
+    //     url: '/file/post',
+    //     thumbnailWidth: null,
+    //     thumbnailHeight: null,
+    //     maxFiles: 1,
+
+    //     transformFile: function(file, done) {
+    //       let myDropZone = this;
+
+    //       // Create the image editor overlay
+    //       let editor = document.createElement('div');
+    //       editor.style.backgroundColor = '#e8ebf2';
+    //       editor.style.position = 'absolute';
+    //       editor.style.top = 0;
+    //       editor.style.bottom = 0;
+    //       editor.style.left = 0;
+    //       editor.style.right = 0;
+    //       editor.style.zIndex = 2;
+    //       this.previewsContainer.appendChild(editor)
+    //       // document.body.appendChild(editor);
+
+    //       // Create confirm button at the top left of the viewport
+    //       // let buttonConfirm = document.createElement('button');
+    //       // buttonConfirm.style.position = 'absolute';
+    //       // buttonConfirm.style.left = '10px';
+    //       // buttonConfirm.style.top = '10px';
+    //       // buttonConfirm.style.zIndex = 9999;
+    //       // buttonConfirm.textContent = 'Confirm';
+    //       // editor.appendChild(buttonConfirm);
+
+    //       // Create an image node for Cropper.js
+    //       let image = new Image();
+    //       image.src = URL.createObjectURL(file);
+    //       editor.appendChild(image);
+
+    //       // Create Cropper.js
+    //       let cropper = new Cropper(image, {
+    //         aspectRatio: NaN,
+    //         viewMode: 3,
+    //       });
+    //     },
+    //   });
+    //   }
+    // }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

@@ -30,6 +30,11 @@
   }
 }
 
+.footer-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
 // style form for modal
 .modal {
   // modal REGISTER and LOGIN

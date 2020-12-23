@@ -429,6 +429,9 @@
     background-color: theme-color("white");
     padding: 22px 20px;
     margin-right: 32px;
+    @media (max-width: 575px) {
+      margin: 0 15px !important;
+    }
     @media (max-width: 1260px) {
       max-width: 100%;
       min-height: 378px;
@@ -446,6 +449,7 @@
       opacity: 0;
       pointer-events: none;
       transition: 0.3s;
+      border-radius: 8px;
       &.show {
         opacity: 1;
         pointer-events: auto;
@@ -642,6 +646,10 @@
           display: flex;
           justify-content: center;
         }
+        @media (max-width: 767px) {
+          max-width: 48%;
+          display: inline-block;
+        }
         @media (max-width: 575px) {
           max-width: 49%;
           display: inline-block;
@@ -691,6 +699,10 @@
     background-color: #e8ebf2;
     margin-right: 8px;
     margin-bottom: 8px;
+    @media (max-width: 767px) {
+      max-width: 48%;
+      display: inline-block;
+    }
     @media (max-width: 575px) {
       max-width: 49%;
       display: inline-block;

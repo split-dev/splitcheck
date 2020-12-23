@@ -147,6 +147,7 @@ export default {
           disableMobile: 'true',
           altFormat: 'F j, Y',
           dateFormat: 'm/d/Y',
+          allowInput: true,
         });
       }
 

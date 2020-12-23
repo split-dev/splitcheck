@@ -239,15 +239,20 @@ export default {
       let index = $(this).attr('data-id');
       swiper.slideTo ( index );
     });
+    if ($('.menu-bottom').hasClass('menu-bottom')) {
+      let headroomSecond  = new Headroom(menuBottom);
+      let menuBottom = document.querySelector('.menu-bottom');
+      headroomSecond.init();
+    }
 
     let myElement = document.querySelector('header');
-    let menuBottom = document.querySelector('.menu-bottom');
+    
     // construct an instance of Headroom, passing the element
     let headroom  = new Headroom(myElement);
-    let headroomSecond  = new Headroom(menuBottom);
+    
     // initialise
     headroom.init();
-    headroomSecond.init();
+    
 
     //get
     var params = window

@@ -316,24 +316,30 @@
       right: 25px;
       width: 24px;
       height: 24px;
-      &:after,
-      &:before {
-        content: "";
+      &::before {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 75%;
-        height: 2px;
-        border-radius: 8px;
-        background-color: #335491;
-        overflow: hidden;
+        left: 0;
+        top: 0;
+        content: url("images/icons/close-24px.svg");
       }
-      &:after {
-        transform: translate(-50%, -50%) rotate(-45deg);
-      }
-      &:before {
-        transform: translate(-50%, -50%) rotate(45deg);
-      }
+      // &:after,
+      // &:before {
+      //   content: "";
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   width: 75%;
+      //   height: 2px;
+      //   border-radius: 8px;
+      //   background-color: #335491;
+      //   overflow: hidden;
+      // }
+      // &:after {
+      //   transform: translate(-50%, -50%) rotate(-45deg);
+      // }
+      // &:before {
+      //   transform: translate(-50%, -50%) rotate(45deg);
+      // }
     }
   }
 

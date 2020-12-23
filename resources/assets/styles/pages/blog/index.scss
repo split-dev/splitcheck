@@ -3,15 +3,26 @@
 @import "../../bootstrap-utils";
 
 @import "blog-post";
+@import "blog-main";
 
 .blog {
+  .search {
+    width: 280px;
+    input {
+      opacity: 0.75;
+      color: #0b0212;
+    }
+  }
   .reaction__top {
     border-bottom: none;
   }
   &__mini-post {
     margin-top: 45px;
+    .mini-post__right {
+      margin-right: 15px !important;
+    }
   }
-  .section-blur {
+  &-before {
     position: relative;
     &::before {
       content: "";

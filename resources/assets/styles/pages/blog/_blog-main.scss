@@ -1,0 +1,134 @@
+.blog {
+  &-main {
+    .aside-right {
+      position: relative;
+      top: 0 !important;
+    }
+    .recomend {
+      &::before {
+        content: url("images/blog/dashed.svg");
+      }
+      &::after {
+        content: url("images/blog/dashed.svg");
+      }
+    }
+    &__recomended {
+      box-shadow: none;
+      background: none;
+      width: 100%;
+      max-width: 508px;
+
+      .big-post__img {
+        max-width: 200px;
+        width: 100%;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .big-post__top {
+        max-width: 508px;
+        height: 100%;
+      }
+    }
+    .blog__products {
+      margin-top: 30px !important;
+      .big-post__top {
+        height: 100% !important;
+        position: relative;
+        .profile-list__avatar {
+          position: absolute;
+          left: 5px;
+          top: 5px;
+        }
+      }
+    }
+    &__search {
+      display: flex;
+      width: 100% !important;
+      max-width: 700px;
+      height: 40px;
+      border-radius: 5px;
+      input {
+        opacity: 0.75;
+        color: #0b0212;
+      }
+
+      button {
+        max-width: 160px;
+        border-radius: 5px;
+        svg {
+          margin-right: 15px;
+        }
+      }
+    }
+    &__gifts {
+      padding-top: 55px;
+      padding-bottom: 105px;
+      background-color: #fff9f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: url("images/blog/gifts.png");
+        background-position-y: bottom;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        position: absolute;
+        width: calc(100% - 10px);
+        height: 170px;
+        bottom: 0;
+      }
+    }
+    &__string {
+      border-bottom: 1px solid #d9dfea;
+      padding-bottom: 7px;
+      padding-top: 13px;
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        cursor: pointer;
+        p {
+          font-weight: 500;
+        }
+      }
+      p {
+        transition: 0.4s;
+        color: #0b0212;
+        line-height: 16px;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+    h2 {
+      color: #f97d00;
+      font-weight: 400;
+      font-size: 48px;
+      b {
+        font-weight: 500;
+      }
+    }
+    &__table {
+      max-width: 336px;
+      box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 16px 28px 30px 24px;
+    }
+  }
+  .blog-header {
+    color: #f77d0e;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+}

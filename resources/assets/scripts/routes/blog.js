@@ -5,9 +5,7 @@ import 'bootstrap/js/dist/modal';
 export default {
   init() {
       
-    $('.gift-shopping__header').on('click', function() {
-        $(this).next().slideToggle(400);
-    })
+    
     
 
   },

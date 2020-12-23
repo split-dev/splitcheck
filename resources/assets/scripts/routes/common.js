@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-//import '@babel/polyfill';
+import '@babel/polyfill';
 import 'bootstrap/js/dist/modal';
 import Swiper from 'swiper/swiper-bundle';
 import Headroom from 'headroom.js';

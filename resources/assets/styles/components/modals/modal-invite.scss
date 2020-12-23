@@ -3,6 +3,17 @@
 @import "../../bootstrap-utils";
 
 .modal-invite {
+  .max-text {
+    position: relative;
+    .count {
+      position: absolute;
+      right: 14px;
+      bottom: 15px;
+      color: #0b0212;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
   .members__block {
     margin-top: 40px;
     margin-bottom: 12px;

@@ -495,6 +495,7 @@ export default {
                 mobileLinks.style.top = '';
               } else {
                 mobileLinks.style.top = '0';
+                
               }
             }
           }
@@ -512,7 +513,7 @@ export default {
      
        //mobile tabs
     $('.settings__hide li').click(function() {
-       $(this).parent().slideToggle(400);
+       $(this).parent().slideToggle(200);
        $('.mobile-nav').toggleClass('mobile-before')
        $('.svg-show').toggleClass('svg-top-hide');
        $('.main-content').css('margin-top', '0')
@@ -521,7 +522,7 @@ export default {
      $('.settings__toggle').on('click', function() {
       $('.mobile-nav').toggleClass('mobile-before');
       $('.svg-show').toggleClass('svg-top-hide');
-      $('.settings__hide').slideToggle(400);
+      $('.settings__hide').slideToggle(100);
       
      if ($('.nav').hasClass('mobile-before')) {
        let heightPadding = $('.mobile-nav').height();

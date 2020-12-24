@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="shop home store">
+    {{> ../common/mobile-menu }}
+    {{> ../common/mobile-menu-bottom }}
+    <div class="section-blur theme-background-one" data-class="blue" id="background">
+        {{> ../common/header-next }}
+        <div class="container">
+            <div class="main-content position-relative d-flex align-items-start justify-content-between coupons">
+                <!-- aside-left -->
+                <aside class="aside-left">
+                    <div class="scroll-div">
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">shop
+                                for</span>
+                            <div class="personal-card d-flex align-items-center flex-column overflow-hidden">
+                                <div
+                                    class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                    <img src="" alt="">
+                                    <span class="personal-card__symbol">JS</span>
+                                </div>
+                                <p class="personal-card__name">John Smith</p>
+                                <ul
+                                    class="personal-card__list d-flex align-items-center flex-column list-unstyled mb-0">
+                                    <li class="personal-card__item">
+                                        <a href="#" class="personal-card__link">
+                                            <span>John’s wishlist</span>
+                                            <span class="personal-card__num">12</span>
+                                        </a>
+                                    </li>
+                                    <li class="personal-card__item">
+                                        <a href="#" class="personal-card__link">
+                                            <span>View preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a href="#" data-toggle="modal" data-target="#shop-another"
+                                class="section-content__btn btn-border">Shop
+                                for another</a>
+                        </section>
+
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">Other
+                                links</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-gift active"></i>
+                                            <span>Spoil yourself</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-social-media"></i>
+                                            <span>Open public goss</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-discount"></i>
+                                            <span>Snatch a bargain</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-mail"></i>
+                                            <span>Shared orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-group"></i>
+                                            <span>My groups</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-heart"></i>
+                                            <span>My family</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" data-toggle="modal" data-target="#notification"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-notification"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Alerts</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="/shopping-preferences.html"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-setting"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Shopping preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </aside>
+                <!-- /aside-left -->
+                <!-- main -->
+                <main class="main">
+                    <div class="section-content">
+                        <div class="store-link w-100 d-flex ">
+                            <ul>
+                                <li><a href="#">All goss</a></li>
+                                <li><a href="#">Funny</a></li>
+                                <li class="active"><a href="#">Discounts</a></li>
+                                <li><a href="#">Sales</a></li>
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Other</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="d-flex">
+                            <form action="#" id="search-3" class="search">
+
+                                <input type="search" name="search" class="search__input"
+                                    placeholder="Search for something" id="search-input-3" autocomplete="off">
+                                <button class="search__button" aria-label="search">
+                                    <i class="icon icon-search"></i>
+                                </button>
+
+                                <div class="search__result">
+                                    <ul class="search__result-list">
+                                        <li class="search__result-item d-flex align-items-center">
+                                            <p>
+                                                <b>pa</b>int
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+
+                        <section class="section-content">
+                            <div class="main__card main__card--bias position-relative">
+                                <div class="internal-card internal-card--feed">
+                                    <div class="internal-card__header">
+                                        <a href="#"
+                                            class="internal-card__profile d-flex align-items-center justify-content-between">
+                                            <div class="d-flex w-100">
+                                                <figure class="internal-card__avatar ">
+                                                    <img src="images/orders/sunset.png" alt="avatar">
+                                                    <span class="internal-card__symbol"></span>
+                                                </figure>
+                                                <div class="internal-card__head-info">
+                                                    <h2 class="internal-card__name">Store Name</h2>
+                                                    <p class="internal-card__subname">
+                                                        <span>Discounts</span>
+                                                        <span class="internal-card__date">02.10.2020</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end align-items-center w-100">
+                                                <span class="offers ">more offers <svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="14" height="9"
+                                                        viewBox="0 0 14 9">
+                                                        <g>
+                                                            <g>
+                                                                <path fill="none" stroke="#335491"
+                                                                    stroke-miterlimit="20" stroke-width="2"
+                                                                    d="M1 1v0l5.916 6v0L13 1v0" />
+                                                            </g>
+                                                        </g>
+                                                    </svg></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="internal-card__body">
+                                        <figure style="background-image: url('images/blog/coupon-post.jpg');">
+                                            <span>45%</span>
+                                            <p>everything</p>
+
+                                        </figure>
+                                        <strong>Goss title</strong>
+                                        <p>To help your skin thrive, use Moroccan argan extract which conditions and
+                                            moisturizes while
+                                            chlorella brings a boost of skin-benefiting vitamins and omega 3s for
+                                            extra
+                                            glowing goodness
+                                        </p>
+                                    </div>
+                                    <div class="internal-card__bottom d-flex flex-column">
+                                        <div class="reaction">
+                                            <div class="reaction__top">
+                                                <div class="reaction__quantity">
+                                                    <ul
+                                                        class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-like"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-heart-l"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-happy"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-surprised"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-angry"></i>
+                                                        </li>
+                                                        <span class="reaction__pop">
+                                                            <ul class="smile">
+                                                                <li>
+                                                                    <i class="like"></i>
+                                                                    <span>like</span>
+                                                                    <span>200</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="heart"></i>
+                                                                    <span>love</span>
+                                                                    <span>170</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="happy"></i>
+                                                                    <span>joy</span>
+                                                                    <span>2</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="surprised"></i>
+                                                                    <span>wow</span>
+                                                                    <span>65</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="angry"></i>
+                                                                    <span>angry</span>
+                                                                    <span>0</span>
+                                                                </li>
+                                                            </ul>
+                                                        </span>
+                                                    </ul>
+                                                    <span>56</span>
+                                                </div>
+                                                <span class="reaction__text">0 comments</span>
+                                            </div>
+                                            <div class="reaction__bottom">
+                                                <div class="reaction__wrap-link reaction__wrap-link--reaction">
+                                                    <i class="icon icon-like-blue"></i>
+                                                    <span>like</span>
+
+                                                    <div class="reaction-btn-like reaction-btn-like--feed">
+                                                        <ul class="reaction-btn-like__list list-unstyled mb-0">
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-like"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-heart-l"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-happy"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-surprised"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-angry"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="reaction__wrap-link">
+                                                    <a href="#" class="reaction__link">
+                                                        <i class="icon icon-comment"></i>
+                                                        <span>comment</span>
+                                                    </a>
+                                                </div>
+                                                <div class="reaction__wrap-link">
+                                                    <a href="#" class="reaction__link">
+                                                        <i class="icon icon-plus-blue"></i>
+                                                        <span>add to timeline</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex  justify-content-between">
+                                            <a class="link-gray d-flex align-items-center link-gray" href="#"><img
+                                                    src="images/blog/face.svg" alt="followers">999 followers</a>
+                                            <a class="btn-green" href="#">Get Coupon</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section-content">
+                            <div class="main__card main__card--bias position-relative">
+                                <div class="internal-card internal-card--feed">
+                                    <div class="internal-card__header">
+                                        <a href="#"
+                                            class="internal-card__profile d-flex align-items-center justify-content-between">
+                                            <div class="d-flex w-100">
+                                                <figure class="internal-card__avatar ">
+                                                    <img src="images/blog/user-2.png" alt="avatar">
+                                                    <span class="internal-card__symbol"></span>
+                                                </figure>
+                                                <div class="internal-card__head-info">
+                                                    <h2 class="internal-card__name">Store Name</h2>
+                                                    <p class="internal-card__subname">
+                                                        <span>Discounts</span>
+                                                        <span class="internal-card__date">02.10.2020</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end align-items-center w-100">
+                                                <span class="offers ">more offers <svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="14" height="9"
+                                                        viewBox="0 0 14 9">
+                                                        <g>
+                                                            <g>
+                                                                <path fill="none" stroke="#335491"
+                                                                    stroke-miterlimit="20" stroke-width="2"
+                                                                    d="M1 1v0l5.916 6v0L13 1v0" />
+                                                            </g>
+                                                        </g>
+                                                    </svg></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="internal-card__body">
+                                        <figure style="background-image: url('images/blog/coupon-bg-2.jpg');">
+                                            <span>$999.99</span>
+
+
+                                        </figure>
+                                        <strong>Goss title</strong>
+                                        <p>To help your skin thrive, use Moroccan argan extract which conditions and
+                                            moisturizes while
+                                            chlorella brings a boost of skin-benefiting vitamins and omega 3s for
+                                            extra
+                                            glowing goodness
+                                        </p>
+                                    </div>
+                                    <div class="internal-card__bottom d-flex flex-column">
+                                        <div class="reaction">
+                                            <div class="reaction__top">
+                                                <div class="reaction__quantity">
+                                                    <ul
+                                                        class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-like"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-heart-l"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-happy"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-surprised"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-angry"></i>
+                                                        </li>
+                                                        <span class="reaction__pop">
+                                                            <ul class="smile">
+                                                                <li>
+                                                                    <i class="like"></i>
+                                                                    <span>like</span>
+                                                                    <span>200</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="heart"></i>
+                                                                    <span>love</span>
+                                                                    <span>170</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="happy"></i>
+                                                                    <span>joy</span>
+                                                                    <span>2</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="surprised"></i>
+                                                                    <span>wow</span>
+                                                                    <span>65</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="angry"></i>
+                                                                    <span>angry</span>
+                                                                    <span>0</span>
+                                                                </li>
+                                                            </ul>
+                                                        </span>
+                                                    </ul>
+                                                    <span>56</span>
+                                                </div>
+                                                <span class="reaction__text">0 comments</span>
+                                            </div>
+                                            <div class="reaction__bottom">
+                                                <div class="reaction__wrap-link reaction__wrap-link--reaction">
+                                                    <i class="icon icon-like-blue"></i>
+                                                    <span>like</span>
+
+                                                    <div class="reaction-btn-like reaction-btn-like--feed">
+                                                        <ul class="reaction-btn-like__list list-unstyled mb-0">
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-like"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-heart-l"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-happy"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-surprised"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-angry"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="reaction__wrap-link">
+                                                    <a href="#" class="reaction__link">
+                                                        <i class="icon icon-comment"></i>
+                                                        <span>comment</span>
+                                                    </a>
+                                                </div>
+                                                <div class="reaction__wrap-link">
+                                                    <a href="#" class="reaction__link">
+                                                        <i class="icon icon-plus-blue"></i>
+                                                        <span>add to timeline</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex  justify-content-between">
+                                            <a class="link-gray d-flex align-items-center link-gray" href="#"><img
+                                                    src="images/blog/face.svg" alt="followers">999 followers</a>
+                                            <a class="btn-green" href="#">Get Coupon</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <section class="section-content section-coupon">
+                            <div class="main__card main__card--bias position-relative">
+                                <div class="internal-card internal-card--feed">
+                                    <div class="internal-card__header">
+                                        <a href="#"
+                                            class="internal-card__profile d-flex align-items-center justify-content-between">
+                                            <div class="d-flex w-100">
+                                                <figure class="internal-card__avatar ">
+                                                    <img src="images/blog/user-2.png" alt="avatar">
+                                                    <span class="internal-card__symbol"></span>
+                                                </figure>
+                                                <div class="internal-card__head-info">
+                                                    <h2 class="internal-card__name">Store Name</h2>
+                                                    <p class="internal-card__subname">
+                                                        <span>Discounts</span>
+                                                        <span class="internal-card__date">02.10.2020</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end align-items-center w-100">
+                                                <span class="offers ">more offers <svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="14" height="9"
+                                                        viewBox="0 0 14 9">
+                                                        <g>
+                                                            <g>
+                                                                <path fill="none" stroke="#335491"
+                                                                    stroke-miterlimit="20" stroke-width="2"
+                                                                    d="M1 1v0l5.916 6v0L13 1v0" />
+                                                            </g>
+                                                        </g>
+                                                    </svg></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="internal-card__body">
+                                        <figure style="background-color: #f8f9fb;">
+                                            <span>45%</span>
+                                            <p>everything</p>
+
+                                        </figure>
+                                        <strong>Goss title</strong>
+                                        <p>To help your skin thrive, use Moroccan argan extract which conditions and
+                                            moisturizes while
+                                            chlorella brings a boost of skin-benefiting vitamins and omega 3s for
+                                            extra
+                                            glowing goodness
+                                        </p>
+                                    </div>
+                                    <div class="internal-card__bottom d-flex flex-column">
+                                        <div class="reaction">
+                                            <div class="reaction__top">
+                                                <div class="reaction__quantity">
+                                                    <ul
+                                                        class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-like"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-heart-l"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-happy"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-surprised"></i>
+                                                        </li>
+                                                        <li class="reaction__item-icon">
+                                                            <i class="icon icon-angry"></i>
+                                                        </li>
+                                                        <span class="reaction__pop">
+                                                            <ul class="smile">
+                                                                <li>
+                                                                    <i class="like"></i>
+                                                                    <span>like</span>
+                                                                    <span>200</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="heart"></i>
+                                                                    <span>love</span>
+                                                                    <span>170</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="happy"></i>
+                                                                    <span>joy</span>
+                                                                    <span>2</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="surprised"></i>
+                                                                    <span>wow</span>
+                                                                    <span>65</span>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="angry"></i>
+                                                                    <span>angry</span>
+                                                                    <span>0</span>
+                                                                </li>
+                                                            </ul>
+                                                        </span>
+                                                    </ul>
+                                                    <span>56</span>
+                                                </div>
+                                                <span class="reaction__text">0 comments</span>
+                                            </div>
+                                            <div class="reaction__bottom">
+                                                <div class="reaction__wrap-link reaction__wrap-link--reaction">
+                                                    <i class="icon icon-like-blue"></i>
+                                                    <span>like</span>
+
+                                                    <div class="reaction-btn-like reaction-btn-like--feed">
+                                                        <ul class="reaction-btn-like__list list-unstyled mb-0">
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-like"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-heart-l"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-happy"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-surprised"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="reaction-btn-like__item">
+                                                                <a href="#" class="reaction-btn-like__link">
+                                                                    <i class="icon icon-angry"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="reaction__wrap-link">
+                                                    <a href="#" class="reaction__link">
+                                                        <i class="icon icon-comment"></i>
+                                                        <span>comment</span>
+                                                    </a>
+                                                </div>
+                                                <div class="reaction__wrap-link">
+                                                    <a href="#" class="reaction__link">
+                                                        <i class="icon icon-plus-blue"></i>
+                                                        <span>add to timeline</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex  justify-content-between">
+                                            <a class="link-gray d-flex align-items-center link-gray" href="#"><img
+                                                    src="images/blog/face.svg" alt="followers">999 followers</a>
+                                            <a class="btn-green" href="#">Get Coupon</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <!-- /main -->
+                <!-- aside-right -->
+                <aside class="aside-right d-none d-lg-block">
+                    <div class="scroll-div">
+
+
+                        <section class="section-content">
+                            <span
+                                class="section-content__title position-relative d-flex align-items-center">sponsored</span>
+                            <article class="aside-card position-relative">
+                                <div class="internal-card internal-card--aside">
+                                    <div class="internal-card__header">
+                                        <a href="#" class="internal-card__profile d-flex flex-wrap align-items-start">
+                                            <figure class="internal-card__avatar">
+                                                <img src="images/profiles/img1.png" alt="avatar">
+                                                <span class="internal-card__symbol"></span>
+                                            </figure>
+                                            <div class="internal-card__head-info">
+                                                <h2 class="internal-card__name">SplitChek</h2>
+                                                <p
+                                                    class="internal-card__subname internal-card__subname--light d-flex flex-column">
+                                                    <span>sponsored</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="internal-card__body">
+                                        <div
+                                            class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap">
+                                            <figure class="grid-gallery__width-1-1">
+                                                <a class="grid-gallery__selector position-relative grid-gallery__selector--video"
+                                                    href="images/feed/feed-img1.jpg">
+                                                    <div class="grid-gallery__post-img"
+                                                        style="background-image: url(images/feed/feed-img1.jpg);"
+                                                        data-src="images/feed/feed-img1.jpg">
+                                                    </div>
+                                                </a>
+                                            </figure>
+                                        </div>
+
+                                        <p>
+                                            Grow your business on SplitChek. <br> Sell up to 100 products for free
+                                        </p>
+
+                                    </div>
+                                    <div class="internal-card__bottom">
+                                        <div class="internal-card__other">
+                                            <a href="#" class="btn btn-blue">Get Started</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- option  add class: - options--open -->
+                                    <div class="options">
+                                        <button type="button" class="options__btn" data-type="options">
+                                            <i class="icon icon-more"></i>
+                                        </button>
+
+                                        <div class="options__dropdown">
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a href="#">Share</a></li>
+                                                <li><a href="#">Not gift worthy</a></li>
+                                                <li><a href="#store-info" data-toggle="modal">About the store</a></li>
+                                                <li><a href="#">Report abuse</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </section>
+
+                        <section class="section-content">
+                            <article class="aside-card position-relative">
+                                <div class="internal-card internal-card--aside">
+                                    <div class="internal-card__body">
+                                        <div
+                                            class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap overflow-hidden">
+                                            <figure class="grid-gallery__width-1-1">
+                                                <a class="grid-gallery__selector" href="images/shop/product.jpg">
+                                                    <div class="grid-gallery__post-img"
+                                                        style="background-image: url(images/shop/product.jpg);"
+                                                        data-src="images/feed/feed-img1.jpg">
+                                                    </div>
+                                                </a>
+                                            </figure>
+                                        </div>
+
+                                        <div
+                                            class="internal-card__price d-flex align-items-center justify-content-center flex-wrap">
+                                            <span>$49.99</span>
+                                        </div>
+
+                                        <div class="internal-card__gift">
+                                            <p class="text-center">Perfect gift for:</p>
+
+                                            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                                <div
+                                                    class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                                    <img src="" alt="">
+                                                    <span class="avatar__symbol">JS</span>
+                                                </div>
+                                                <div
+                                                    class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                                    <img src="" alt="">
+                                                    <span class="avatar__symbol">JS</span>
+                                                </div>
+                                                <div
+                                                    class="avatar avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                                    <img src="" alt="">
+                                                    <span class="avatar__symbol">JS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="internal-card__bottom">
+                                        <div class="internal-card__other">
+                                            <a href="#" class="btn btn-border-orange">View
+                                                Product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </section>
+                    </div>
+                </aside>
+                <!-- /aside-right -->
+            </div>
+        </div>
+
+        {{> ../common/footer }}
+    </div>
+
+    <!-- Modals -->
+    {{> ../common/modals/create-goss }}
+    {{> ../common/modals/menu-mobile }}
+    {{> ../common/modals/add-photo }}
+    {{> ../common/modals/user-profile-menu }}
+    {{> ../common/modals/share-product }}
+    {{> ../common/modals/add-timeline-product }}
+    {{> ../common/modals/add-wishlist }}
+    {{> ../common/modals/search-parameters }}
+    {{> ../common/modals/cart }}
+    {{> ../common/modals/add-comment }}
+    {{> ../common/modals/store-info }}
+    {{> ../common/modals/shop-another }}
+    {{> ../common/modals/modals-notifications }}
+    {{> ../common/modals/message-overlay }}
+    {{> ../common/modals/goss-gallery }}
+    {{> ../common/modals/menu-mobile--not-shop }}
+    <!-- /Modals -->
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.blog {
+  &-user {
+    .main-item {
+      width: 100% !important;
+    }
+  }
+  &-user__top {
+    margin-bottom: 45px;
+    padding: 16px;
+    box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    .btn-border {
+      border: 2px solid #35558f !important;
+      img {
+        margin-left: 15px;
+      }
+    }
+    .link-gray {
+      color: #828282;
+      font-size: 16px;
+      font-weight: 400;
+      img {
+        margin-right: 10px;
+      }
+    }
+    .card-timeline__link {
+      margin-right: 32px;
+      width: 120px;
+      height: 120px;
+    }
+    p {
+      max-width: 640px;
+      margin-top: 12px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    strong {
+      font-size: 24px;
+      font-weight: 400;
+    }
+    h5 {
+      color: #0b0212;
+      font-size: 32px;
+      margin-right: 20px;
+    }
+  }
+}

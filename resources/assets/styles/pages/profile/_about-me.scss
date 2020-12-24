@@ -155,6 +155,9 @@
   &__img {
     min-width: 188px;
     margin-right: 40px;
+    @media (max-width: 991px) {
+      margin-right: 0;
+    }
     img {
       width: 100%;
       @media (max-width: 575px) {

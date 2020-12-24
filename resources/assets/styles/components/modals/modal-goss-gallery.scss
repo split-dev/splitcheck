@@ -162,7 +162,7 @@
 
   &__slider {
     @include media-breakpoint-up(md) {
-      padding: 0 54px;
+      padding: 0 51px;
     }
 
     .swiper-button-next {
@@ -247,7 +247,7 @@
       color: theme-color("green");
 
       &:last-of-type {
-        color: theme-color("gray");
+        color: #99a9c9;
 
         &:before {
           content: "";

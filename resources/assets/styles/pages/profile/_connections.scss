@@ -135,6 +135,14 @@
     background-color: #fff;
     width: 100%;
     max-width: 336px;
+    @media (max-width: 575px) {
+      max-width: 100%;
+    }
+    > div {
+      @media (max-width: 575px) {
+        justify-content: space-between;
+      }
+    }
     span {
       color: #0b0212;
       font-size: 14px;

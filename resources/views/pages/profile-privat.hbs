@@ -6,7 +6,152 @@
 </head>
 
 <body class="profile home">
-    {{> ../common/mobile-menu }}
+    <!-- modal-menu-mobile -->
+    <div class="modal left fade modal-menu-mobile" tabindex="-1" id="menu-mobile" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content position-relative">
+                <!-- modal-header -->
+                <div class="modal-header d-flex align-items-center">
+                    <!-- head for side modal -->
+                    <div class="head-modal-info d-flex align-items-center flex-wrap">
+                        <a class="head-modal-info__logo" href="/">
+                            <img src="images/icons/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- /head for side modal -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <!-- /modal-header -->
+                <!-- modal-body -->
+                <div class="modal-body">
+                    <div class="scroll-div">
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">shop
+                                for</span>
+                            <div class="personal-card d-flex align-items-center flex-column overflow-hidden">
+                                <div
+                                    class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
+                                    <img src="" alt="">
+                                    <span class="personal-card__symbol">JS</span>
+                                </div>
+                                <p class="personal-card__name">John Smith</p>
+                                <ul
+                                    class="personal-card__list d-flex align-items-center flex-column list-unstyled mb-0">
+                                    <li class="personal-card__item">
+                                        <a href="#" class="personal-card__link">
+                                            <span>John’s wishlist</span>
+                                            <span class="personal-card__num">12</span>
+                                        </a>
+                                    </li>
+                                    <li class="personal-card__item">
+                                        <a href="#" class="personal-card__link">
+                                            <span>View preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a href="#" data-toggle="modal" data-target="#shop-another"
+                                class="section-content__btn btn-border">Shop for another</a>
+                        </section>
+
+                        <section class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">Other
+                                links</span>
+
+                            <div class="other-links">
+                                <ul class="other-links__list d-flex flex-column list-unstyled mb-0">
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                            <i class="icon icon-gift active"></i>
+                                            <span>Spoil yourself</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#" class="other-links__link position-relative">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-social-media"></i>
+                                            <span>Open public goss</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-discount"></i>
+                                            <span>Snatch a bargain</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-mail"></i>
+                                            <span>Shared orders</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-group"></i>
+                                            <span>My groups</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <!-- add class "active" what would the icon change -->
+                                            <i class="icon icon-heart"></i>
+                                            <span>My family</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-notification"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Alerts</span>
+                                        </a>
+                                    </li>
+                                    <li class="other-links__item">
+                                        <a href="#"
+                                            class="other-links__link position-relative d-flex align-items-center">
+                                            <i class="icon icon-setting"></i>
+                                            <!-- add class "active" what would the icon change -->
+                                            <span>Shopping preferences</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <div class="section-content">
+                            <div class="enable-box">
+                                <div class="enable-box__kids">
+                                    <span>You have Kid’s account disabled</span>
+                                    <a href="#" data-toggle="modal" data-target="#modal-child"
+                                        class="section-content__btn btn-border">Enable Kid’s Account</a>
+                                </div>
+                                <div class="enable-box__pets">
+                                    <span>You have Pet’s account disabled</span>
+                                    <a href="#" data-toggle="modal" data-target="#modal-pets"
+                                        class="section-content__btn btn-border">Enable Pet’s Account</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /modal-body -->
+                <!-- <div class="modal-footer">
+      </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- /modal-menu-mobile -->
+
     {{> ../common/mobile-menu-bottom }}
     <div class="section-blur theme-background-one" data-class="maze">
         <header class="header">
@@ -1417,7 +1562,6 @@
 
     <!-- Modals -->
     {{> ../common/modals/create-goss }}
-    {{> ../common/modals/menu-mobile }}
     {{> ../common/modals/add-photo }}
     {{> ../common/modals/user-profile-menu }}
     {{> ../common/modals/share-product }}
@@ -1431,7 +1575,6 @@
     {{> ../common/modals/modals-notifications }}
     {{> ../common/modals/message-overlay }}
     {{> ../common/modals/goss-gallery }}
-    {{> ../common/modals/menu-mobile--not-shop }}
     {{> ../common/modals/galery-view }}
     {{> ../common/modals/modal-pets }}
     {{> ../common/modals/modal-child }}

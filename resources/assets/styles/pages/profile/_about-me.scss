@@ -525,7 +525,7 @@
       margin-bottom: 16px;
     }
     @media (max-width: 575px) {
-      justify-content: space-between;
+      justify-content: flex-start;
       padding: 0 15px;
     }
   }

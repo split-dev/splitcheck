@@ -476,6 +476,7 @@ export default {
         }
       }
 
+      
       //modal-galery slider
       var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
@@ -520,6 +521,13 @@ export default {
           swiper: galleryThumbs,
         },
       });
+
+      $('#galery-modal').on('show.bs.modal', function (event) {
+        setTimeout( function() {
+          galleryTop.update();
+          galleryThumbs.update();
+        }, 200)
+      })
 
       $(window).resize( function() {
         countOverlay();

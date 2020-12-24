@@ -90,3 +90,10 @@
     color: theme-color("blue4");
   }
 }
+
+.flatpickr-day.selected {
+  color: #fff !important;
+  &:hover {
+    color: #fff !important;
+  }
+}

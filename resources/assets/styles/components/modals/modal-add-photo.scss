@@ -3,9 +3,23 @@
 @import "../../mixins";
 @import "../../bootstrap-utils";
 
-
 .add-photo {
-
+  .modal-header {
+    padding-top: 0;
+    padding-bottom: 40px;
+    a {
+      display: flex;
+      align-items: center;
+      color: #35558f;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 19px;
+      font-weight: 500;
+      img {
+        margin-right: 8px;
+      }
+    }
+  }
   .modal-dialog {
     max-width: 720px;
   }

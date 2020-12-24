@@ -102,6 +102,9 @@
       display: flex;
       align-items: center;
       li {
+        position: relative;
+        overflow: hidden;
+        height: 25px;
         &:first-child {
           margin-right: 30px;
         }

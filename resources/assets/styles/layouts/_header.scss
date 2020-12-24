@@ -272,6 +272,31 @@
 
     background-color: theme-color("light-gray2");
 
+    &::-webkit-input-placeholder {
+      opacity: 0.75;
+      color: #0b0212;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &::-moz-placeholder {
+      opacity: 0.75;
+      color: #0b0212;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &:-ms-input-placeholder {
+      opacity: 0.75;
+      color: #0b0212;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &:-moz-placeholder {
+      opacity: 0.75;
+      color: #0b0212;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
     &:active,
     &:focus {
       border: 1px solid rgba(53, 85, 143, 0.5);

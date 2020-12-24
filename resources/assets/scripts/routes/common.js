@@ -639,10 +639,29 @@ export default {
   $('.form__input[type="email"]').keyup(function() {
     if(validateEmail(this.value)){
       $(this).parent().removeClass('error');
+      if($('.modal-register')) {
+        $('.modal-register button[disabled], .modal-login button.form__button').prop('disabled', false);
+        $('.modal-register .form__errors-text').css('display', 'none');
+      }
     }else{
       $(this).parent().addClass('error');
+      if($('.modal-register')) {
+        $('.modal-register button.form__button, .modal-login button.form__button').prop('disabled', true);
+        $('.modal-register .form__errors-text').css('display', 'block');
+      }
     }
   });
+
+  
+  $('.mobile-menu__info a[data-toggle="modal"]').click( function() {
+    $('body').css({
+      overflow:'visible',
+    })
+    $('.mobile-menu').css({
+      left:'-100%',
+    })
+    $('#myModal').modal('hide')
+  })
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

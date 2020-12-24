@@ -196,7 +196,8 @@
 
 
 //select profile style
-.form__single--select-profile {
+.form__single--select-profile,
+.form__single--select-no-image {
   .select2-selection__choice {
     background-color: transparent !important;
     color: #0b0212 !important;

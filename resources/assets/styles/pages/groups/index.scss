@@ -204,3 +204,23 @@
     width: 100%;
   }
 }
+
+.profile-link {
+  &.send {
+    .btn-blue {
+      &::after {
+        content: url("images/groups/check.svg");
+        background-color: #35558f;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -20,9 +20,8 @@ export default {
       $(this).toggleClass('active-arrow');
     });
 
-    $('.profile-link .btn-blue').on('click', function() {
-      $(this).text('');
-      $(this).html('<img src="images/groups/check.svg" alt="img"/>')
+    $('.profile-link').on('click', function() {
+      $(this).toggleClass('send');
     });
     //* option for swiper
 
@@ -416,6 +415,11 @@ export default {
       $('.about-me__box--tell >div').toggleClass('hide');
       $('.about-me__form').toggleClass('hide');
     })
+    //close edit show
+    $('.about-me__form button[type="submit"]').click( function () {
+      $('.about-me__box--tell >div').toggleClass('hide');
+      $('.about-me__form').toggleClass('hide');
+    })
     //max count strong textarea
     $('.max-text textarea, .form__single--max textarea').keyup(function() {
       var maxCount = 400;
@@ -445,7 +449,7 @@ export default {
 
 
     //mask input
-    $('.phone').mask('+3800000000');
+    $('.phone').mask('+380 000 000 000');
     
 
      //grid post images

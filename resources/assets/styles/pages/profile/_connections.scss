@@ -11,6 +11,7 @@
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 15px;
+    align-self: start;
   }
   &__mob {
     .connections {
@@ -39,6 +40,9 @@
     }
     @media (max-width: 1050px) {
       min-width: 265px;
+    }
+    @media (max-width: 400px) {
+      max-width: 100%;
     }
     > span {
       display: inline-block;

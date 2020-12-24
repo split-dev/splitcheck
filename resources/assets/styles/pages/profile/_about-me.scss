@@ -5,10 +5,16 @@
   min-width: 450px;
   @media (max-width: 1260px) {
     max-width: 530px;
+    min-width: 430px;
+  }
+  @media (max-width: 1199px) {
+    max-width: 430px;
+    min-width: 430px;
   }
   @media (max-width: 991px) {
     max-width: 100%;
     min-width: auto;
+    min-width: 450px;
   }
   .hide {
     display: none !important;
@@ -88,6 +94,7 @@
       text-align: left;
       display: inline-block;
       margin-bottom: 7px;
+      font-weight: 500;
     }
     span {
       color: theme-color("dark-blue");
@@ -189,6 +196,7 @@
       line-height: 16px;
       display: inline-block;
       margin-bottom: 8px;
+      font-weight: 500;
     }
     p {
       font-size: 14px;
@@ -262,6 +270,7 @@
     .about-me__img {
       margin-right: 0;
       min-height: 217px;
+      min-width: auto;
       @media (max-width: 1260px) {
         min-height: 175px;
       }
@@ -346,6 +355,7 @@
       line-height: 12px;
       display: inline-block;
       margin-bottom: 8px;
+      font-weight: 500;
     }
     label {
       color: theme-color("gray");
@@ -357,6 +367,15 @@
       > div {
         width: 100%;
         max-width: 240px;
+        @media (max-width: 1260px) {
+          max-width: 180px;
+        }
+        @media (max-width: 991px) {
+          max-width: 240px;
+        }
+        .form__single {
+          margin-bottom: 0;
+        }
       }
       @media (max-width: 575px) {
         display: flex;

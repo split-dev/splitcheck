@@ -325,6 +325,27 @@ export default {
       });
      }
 
+     // * function for "Select" template select search no image
+     if($('.form__single--select-no-image select[data-toggle="select-no-image"]')) {
+      $('.form__single--select-no-image select[data-toggle="select-no-image"]').select2({
+        minimumResultsForSearch: Infinity,
+        maximumSelectionLength: 1,
+        width: '100%',
+        templateResult: function (state) {
+          if (!state.id) {
+            return state.text;
+          }
+          var $state = $(`
+            <div class="profile-list">
+              <span>${state.text}</span>
+            </div>
+          `);
+
+          return $state;
+        },
+        // dropdownParent: $('.form__single--select-user'),
+      });
+     }
     //  }
 
      //mini aside slider 

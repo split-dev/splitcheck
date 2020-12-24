@@ -28,19 +28,26 @@
                 and also update you about your search and delivery status</p>
             <div class="d-flex two__input">
                 <div class="d-flex flex-column">
-                    <label>Country</label>
-                    <input type="text">
+                    <div class="form__single form__single--select form__single--select-no-image form__single--fluid">
+                        <label class="form__label">Country</label>
+                        <select class="form__input" data-toggle="select-no-image" multiple="multiple">
+                            <option>Kanada</option>
+                            <option>Kenia</option>
+                            <option>South Korea</option>
+                        </select>
+                        <span class="form__symbol-error"></span>
+                    </div>
                 </div>
                 <div class="d-flex flex-column">
                     <label>Cell/number</label>
                     <input class="phone" type="text">
                 </div>
             </div>
-            <button class="btn btn-blue">Save</button>
+            <button class="btn btn-blue" type="submit">Save</button>
         </form>
     </div>
     <span>Shipping & Billing</span>
-    <div class="about-me__box mb-4">
+    <div class="about-me__box">
         <div class="d-flex w-100">
             <div class="about-me__img">
                 <img src="images/profiles/Address-bro.svg" alt="Login-bro">
@@ -52,19 +59,6 @@
             </div>
         </div>
     </div>
-    <div class="about-me__box about-me__box--billing ">
-        <div class="d-flex w-100">
-            <div class="about-me__img">
-                <img src="images/profiles/Wallet-bro.svg" alt="Wallet-bro">
-            </div>
-            <div class="about-me__info">
-                <strong>Your billing details are missing</strong>
-                <p>We use it to reduce fraud</p>
-                <a href="#" class="btn-border btn-border--two">Add addresses</a>
-            </div>
-        </div>
-    </div>
-    <div class="connections__mob"></div>
     <span>Additional Accounts</span>
     <div class="d-flex w-100 about-me__duo">
         <div class="about-me__box w-100">
@@ -84,6 +78,7 @@
             </div>
         </div>
     </div>
+    <div class="connections__mob"></div>
     <span>my goss overview</span>
     <div class="overview d-flex w-100">
         <div class="overview__full">
@@ -204,7 +199,7 @@
         <div class="goos__not-found">
             <img src="images/profiles/Buffer-bro.svg" alt="goos">
             <h3>You yet to create a goss</h3>
-            <a href="#" class="btn-border">Create a goss</a>
+            <a href="#" class="btn-border btn-border--two">Create a goss</a>
         </div>
     </div>
 

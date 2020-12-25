@@ -3,8 +3,21 @@
 @import "../../bootstrap-utils";
 
 .modal-invite {
+  &__title-span {
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.86px;
+    text-transform: uppercase;
+    color: #335491;
+    font-weight: 500;
+  }
   .max-text {
     position: relative;
+    textarea {
+      padding-bottom: 90px !important;
+    }
     .count {
       position: absolute;
       right: 14px;
@@ -18,15 +31,18 @@
     margin-top: 40px;
     margin-bottom: 12px;
   }
-  .ss-content {
-    padding-left: 0;
-    padding-right: 4px;
-  }
+
   .ss-container .ss-scroll {
     margin-left: 16px !important;
   }
-  .scroll-div {
+  .scroll-margin {
     margin-top: 30px;
+    width: calc(100% + 7px) !important;
+    .ss-content {
+      width: calc(100% + 7px) !important;
+    }
+  }
+  .scroll-div {
     margin-right: 0;
     margin-left: 0;
     .btn-blue {
@@ -83,9 +99,7 @@
     @media (max-width: 575px) {
       max-width: 100% !important;
     }
-    textarea {
-      padding-bottom: 90px !important;
-    }
+
     .btn-blue {
       max-width: 288px !important;
       background-color: #234179;

@@ -210,6 +210,21 @@
       "title": "Cart",
       "description": "cart",
       "url": "/cart.html"
+    },
+    {
+      "title": "Blog",
+      "description": "blog",
+      "url": "/blog.html"
+    },
+    {
+      "title": "Blog User",
+      "description": "blog",
+      "url": "/blog-user.html"
+    },
+    {
+      "title": " Blog Coupons",
+      "description": "blog",
+      "url": "/coupons.html"
     }
   ]
 }

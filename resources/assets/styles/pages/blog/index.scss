@@ -15,6 +15,11 @@
   }
 }
 .blog {
+  .mini-post__title {
+    @media (max-width: 991px) {
+      padding-right: 0;
+    }
+  }
   .header__img-desktop {
     @media (max-width: 991px) {
       display: none;
@@ -44,6 +49,16 @@
     @media (max-width: 575px) {
       padding-right: 15px !important;
       padding-left: 15px !important;
+    }
+  }
+  .btn-border {
+    &:hover {
+      .heart-blue {
+        display: none !important;
+      }
+      .heart-white {
+        display: flex !important;
+      }
     }
   }
   .big-post__bottom-links {

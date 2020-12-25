@@ -23,8 +23,9 @@ export default {
                 slidesPerView: 2,
                 spaceBetween: 8,
               },
+             
               320: {
-                slidesPerView: 'auto',
+                slidesPerView: 1,
                 spaceBetween: 8,
               },
             },
@@ -74,6 +75,38 @@ export default {
       couponSlider.slideNext()
     });
 }
+
+if($('.blog-main__mobile-section').hasClass('blog-main__mobile-section')) {
+  let blogMobile = new Swiper('.blog-main__mobile-slider.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      navigation: {
+        nextEl: '.internal-card__slider .swiper-button-next',
+        prevEl: '.internal-card__slider .swiper-button-prev',
+      },
+      breakpoints: {
+        
+          575: {
+            slidesPerView: 2,
+            spaceBetween: 8,
+          },
+          320: {
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+          },
+        },
+  });
+
+  $('.blog-main__mobile-section .swiper-button-prev').click( function(e) {
+    e.preventDefault();
+    blogMobile.slidePrev()
+  });
+  $('.blog-main__mobile-section .swiper-button-next').click( function(e) {
+    e.preventDefault();
+    blogMobile.slideNext()
+  });
+}
+
 
 
 if($('.blog-post__recomended-slider').hasClass('blog-post__recomended-slider')) {

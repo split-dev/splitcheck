@@ -45,7 +45,8 @@
       "./styles/components/modals/modal-unlink.scss",
       "./styles/components/modals/modal-groups.scss",
       "./styles/components/modals/modal-check.scss",
-      "./styles/components/modals/modal-recurrent.scss"
+      "./styles/components/modals/modal-recurrent.scss",
+      "./styles/components/modals/modal-blog.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",

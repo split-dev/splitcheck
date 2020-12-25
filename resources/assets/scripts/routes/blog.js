@@ -1,10 +1,115 @@
+
 /* eslint-disable no-unused-vars */
-/* eslint-disable no-unused-vars */
+import Swiper from 'swiper/swiper-bundle';
 import 'bootstrap/js/dist/modal';
 
 export default {
   init() {
-      
+    if($('.blog-main__slider').hasClass('blog-main__slider')) {
+      let blogSlider = new Swiper('.blog-main__slider.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: '.internal-card__slider .swiper-button-next',
+            prevEl: '.internal-card__slider .swiper-button-prev',
+          },
+          breakpoints: {
+            
+              991: {
+                slidesPerView: 3,
+                spaceBetween: 16,
+              },
+              767: {
+                slidesPerView: 2,
+                spaceBetween: 8,
+              },
+              320: {
+                slidesPerView: 'auto',
+                spaceBetween: 8,
+              },
+            },
+      });
+
+      $('.blog-main__container .swiper-button-prev').click( function(e) {
+        e.preventDefault();
+        blogSlider.slidePrev()
+      })
+      $('.blog-main__container .swiper-button-next').click( function(e) {
+        e.preventDefault();
+        blogSlider.slideNext()
+      });
+  }
+
+  if($('.coupon__slider').hasClass('coupon__slider')) {
+    let couponSlider = new Swiper('.coupon__slider.swiper-container', {
+        slidesPerView: 2,
+        spaceBetween: 12,
+        navigation: {
+          nextEl: '.internal-card__slider .swiper-button-next',
+          prevEl: '.internal-card__slider .swiper-button-prev',
+        },
+        breakpoints: {
+          
+            991: {
+              slidesPerView: 2,
+              spaceBetween: 12,
+            },
+            767: {
+              slidesPerView: 1,
+              spaceBetween: 8,
+            },
+            320: {
+              slidesPerView: 'auto',
+              spaceBetween: 8,
+            },
+          },
+    });
+
+    $('.slider-coupon__container .swiper-button-prev').click( function(e) {
+      e.preventDefault();
+      couponSlider.slidePrev()
+    })
+    $('.slider-coupon__container .swiper-button-next').click( function(e) {
+      e.preventDefault();
+      couponSlider.slideNext()
+    });
+}
+
+
+if($('.blog-post__recomended-slider').hasClass('blog-post__recomended-slider')) {
+  let blogPost = new Swiper('.blog-post__recomended-slider.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      navigation: {
+        nextEl: '.internal-card__slider .swiper-button-next',
+        prevEl: '.internal-card__slider .swiper-button-prev',
+      },
+      breakpoints: {
+        
+          575: {
+            slidesPerView: 2,
+            spaceBetween: 8,
+          },
+          320: {
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+          },
+        },
+  });
+
+  $('.blog-post__recomended-mobile .swiper-button-prev').click( function(e) {
+    e.preventDefault();
+    blogPost.slidePrev()
+  })
+  $('.blog-post__recomended-mobile .swiper-button-next').click( function(e) {
+    e.preventDefault();
+    blogPost.slideNext()
+  });
+}
+
+
+
+
     
     
 

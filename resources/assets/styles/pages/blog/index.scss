@@ -7,7 +7,67 @@
 @import "blog-user";
 @import "blog-coupon";
 
+.coupons {
+  .reaction-top {
+    @media (max-width: 991px) {
+      border-bottom: 1px solid #e8ebf2 !important;
+    }
+  }
+}
 .blog {
+  .header__img-desktop {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .header__img-mobile {
+    @media (max-width: 991px) {
+      display: block;
+    }
+  }
+  .header__search {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .blog-header {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .main-content {
+    @media (max-width: 991px) {
+      padding-top: 15px !important;
+    }
+  }
+  .container {
+    @media (max-width: 575px) {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+  }
+  .big-post__bottom-links {
+    a {
+      &:hover {
+        .heart-blue {
+          display: none !important;
+        }
+        .heart-white {
+          display: flex !important;
+        }
+      }
+    }
+  }
+  .heart-blue {
+    display: flex;
+    transition: 0.4s;
+  }
+  .heart-white {
+    display: none !important;
+    transition: 0.4s;
+    width: 24px;
+    height: 22px;
+  }
   .search {
     width: 280px;
     input {
@@ -44,6 +104,14 @@
     box-shadow: none;
     background: none;
     margin-top: 20px;
+    @media (max-width: 575px) {
+      height: 100%;
+    }
+    .mini-post__right {
+      @media (max-width: 575px) {
+        margin: 0;
+      }
+    }
     &__info {
       width: 100%;
     }

@@ -5,7 +5,7 @@
     {{> ../common/head }}
 </head>
 
-<body class="home product blog ">
+<body class=" product blog ">
     {{> ../common/mobile-menu }}
 
     <div class="section-blur blog-before">
@@ -20,7 +20,8 @@
 
                     <div class="blog-user__top d-flex ">
                         <div class="d-flex">
-                            <a href="#" class="card-timeline__link card-timeline__link--contact">
+                            <a href="#" data-toggle="modal" data-target="#blog-user"
+                                class="card-timeline__link card-timeline__link--contact">
                                 <img src="images/blog/user.png" alt="avatar">
                                 <span>JS</span>
                             </a>
@@ -845,6 +846,7 @@
     {{> ../common/modals/modal-invite }}
     {{> ../common/modals/modal-unlink }}
     {{> ../common/modals/add-photo-background }}
+    {{> ../common/modals/modal-blog-user}}
     <!-- /Modals -->
 </body>
 

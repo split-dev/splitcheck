@@ -1,0 +1,69 @@
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+.modal-blog {
+  .slider-coupon__container {
+    position: relative;
+    .swiper-container {
+      max-width: 486px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 115px;
+      width: 32px;
+      height: 32px;
+      box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+  &__coupon {
+    a {
+      margin-top: 21px;
+      max-width: 248px;
+    }
+    .all-coupon {
+      margin-bottom: 45px;
+      padding: 0;
+    }
+  }
+  .big-post__title {
+    margin-left: 0;
+  }
+  .big-post {
+    box-shadow: none !important;
+    padding: 0;
+  }
+  .big-post__bottom {
+    margin-top: 10px;
+  }
+  .modal-body,
+  .modal-content {
+    padding: 0;
+  }
+  .modal-dialog {
+    max-width: 640px !important;
+    min-height: 350px;
+  }
+  &__user-right {
+    padding: 30px 28px 16px 25px;
+    width: 60%;
+  }
+  &__user-left {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 40%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

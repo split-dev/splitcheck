@@ -5,13 +5,13 @@
     {{> ../common/head }}
 </head>
 
-<body class="shop home store">
+<body class="shop home store ">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
     <div class="section-blur theme-background-one" data-class="blue" id="background">
         {{> ../common/header-next }}
         <div class="container">
-            <div class="main-content position-relative d-flex align-items-start justify-content-between coupons">
+            <div class="main-content position-relative d-flex align-items-start justify-content-between coupons ">
                 <!-- aside-left -->
                 <aside class="aside-left">
                     <div class="scroll-div">
@@ -121,7 +121,7 @@
                 </aside>
                 <!-- /aside-left -->
                 <!-- main -->
-                <main class="main">
+                <main class="main-coupon">
                     <div class="section-content">
                         <div class="store-link w-100 d-flex ">
                             <ul>
@@ -161,7 +161,7 @@
                                     <div class="internal-card__header">
                                         <a href="#"
                                             class="internal-card__profile d-flex align-items-center justify-content-between">
-                                            <div class="d-flex w-100">
+                                            <div class="d-flex ">
                                                 <figure class="internal-card__avatar ">
                                                     <img src="images/orders/sunset.png" alt="avatar">
                                                     <span class="internal-card__symbol"></span>
@@ -175,7 +175,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-end align-items-center w-100">
+                                            <div class="d-flex justify-content-end align-items-center">
                                                 <span class="offers ">more offers <svg
                                                         xmlns="http://www.w3.org/2000/svg" width="14" height="9"
                                                         viewBox="0 0 14 9">
@@ -302,6 +302,12 @@
                                                         <span>comment</span>
                                                     </a>
                                                 </div>
+                                                <div class="reaction__wrap-link link-mob">
+                                                    <a class="link-gray d-flex align-items-center " href="#"><img
+                                                            src="images/blog/face.svg" alt="followers">999
+                                                        followers</a>
+                                                </div>
+
                                                 <div class="reaction__wrap-link">
                                                     <a href="#" class="reaction__link">
                                                         <i class="icon icon-plus-blue"></i>
@@ -312,9 +318,11 @@
                                         </div>
 
                                         <div class="d-flex  justify-content-between">
-                                            <a class="link-gray d-flex align-items-center link-gray" href="#"><img
+                                            <a class="link-gray d-flex align-items-center link-none" href="#"><img
                                                     src="images/blog/face.svg" alt="followers">999 followers</a>
-                                            <a class="btn-green" href="#">Get Coupon</a>
+                                            <a class="btn-green" data-toggle="modal" data-target="#coupon-2"
+                                                href="#">Get
+                                                Coupon</a>
                                         </div>
                                     </div>
 
@@ -329,7 +337,7 @@
                                     <div class="internal-card__header">
                                         <a href="#"
                                             class="internal-card__profile d-flex align-items-center justify-content-between">
-                                            <div class="d-flex w-100">
+                                            <div class="d-flex ">
                                                 <figure class="internal-card__avatar ">
                                                     <img src="images/blog/user-2.png" alt="avatar">
                                                     <span class="internal-card__symbol"></span>
@@ -343,7 +351,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-end align-items-center w-100">
+                                            <div class="d-flex justify-content-end align-items-center">
                                                 <span class="offers ">more offers <svg
                                                         xmlns="http://www.w3.org/2000/svg" width="14" height="9"
                                                         viewBox="0 0 14 9">
@@ -470,6 +478,11 @@
                                                         <span>comment</span>
                                                     </a>
                                                 </div>
+                                                <div class="reaction__wrap-link link-mob">
+                                                    <a class="link-gray d-flex align-items-center " href="#"><img
+                                                            src="images/blog/face.svg" alt="followers">999
+                                                        followers</a>
+                                                </div>
                                                 <div class="reaction__wrap-link">
                                                     <a href="#" class="reaction__link">
                                                         <i class="icon icon-plus-blue"></i>
@@ -480,9 +493,10 @@
                                         </div>
 
                                         <div class="d-flex  justify-content-between">
-                                            <a class="link-gray d-flex align-items-center link-gray" href="#"><img
+                                            <a class="link-gray d-flex align-items-center link-none" href="#"><img
                                                     src="images/blog/face.svg" alt="followers">999 followers</a>
-                                            <a class="btn-green" href="#">Get Coupon</a>
+                                            <a class="btn-green" data-toggle="modal" data-target="#coupon" href="#">Get
+                                                Coupon</a>
                                         </div>
                                     </div>
 
@@ -498,7 +512,7 @@
                                     <div class="internal-card__header">
                                         <a href="#"
                                             class="internal-card__profile d-flex align-items-center justify-content-between">
-                                            <div class="d-flex w-100">
+                                            <div class="d-flex">
                                                 <figure class="internal-card__avatar ">
                                                     <img src="images/blog/user-2.png" alt="avatar">
                                                     <span class="internal-card__symbol"></span>
@@ -512,7 +526,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-end align-items-center w-100">
+                                            <div class="d-flex justify-content-end align-items-center ">
                                                 <span class="offers ">more offers <svg
                                                         xmlns="http://www.w3.org/2000/svg" width="14" height="9"
                                                         viewBox="0 0 14 9">
@@ -639,6 +653,11 @@
                                                         <span>comment</span>
                                                     </a>
                                                 </div>
+                                                <div class="reaction__wrap-link link-mob">
+                                                    <a class="link-gray d-flex align-items-center " href="#"><img
+                                                            src="images/blog/face.svg" alt="followers">999
+                                                        followers</a>
+                                                </div>
                                                 <div class="reaction__wrap-link">
                                                     <a href="#" class="reaction__link">
                                                         <i class="icon icon-plus-blue"></i>
@@ -649,9 +668,10 @@
                                         </div>
 
                                         <div class="d-flex  justify-content-between">
-                                            <a class="link-gray d-flex align-items-center link-gray" href="#"><img
+                                            <a class="link-gray d-flex align-items-center link-none" href="#"><img
                                                     src="images/blog/face.svg" alt="followers">999 followers</a>
-                                            <a class="btn-green" href="#">Get Coupon</a>
+                                            <a class="btn-green" data-toggle="modal" data-target="#coupon" href="#">Get
+                                                Coupon</a>
                                         </div>
                                     </div>
 
@@ -708,7 +728,8 @@
                                     </div>
                                     <div class="internal-card__bottom">
                                         <div class="internal-card__other">
-                                            <a href="#" class="btn btn-blue">Get Started</a>
+                                            <a href="#" data-toggle="modal" data-target="#coupon"
+                                                class="btn btn-blue">Get Started</a>
                                         </div>
                                     </div>
 
@@ -812,6 +833,7 @@
     {{> ../common/modals/message-overlay }}
     {{> ../common/modals/goss-gallery }}
     {{> ../common/modals/menu-mobile--not-shop }}
+    {{> ../common/modals/modal-blog-coupon}}
     <!-- /Modals -->
 </body>
 

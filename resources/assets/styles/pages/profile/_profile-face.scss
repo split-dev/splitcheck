@@ -145,6 +145,11 @@
     color: theme-color("white");
   }
   &__name {
+    &.black {
+      strong {
+        color: #0b0212;
+      }
+    }
     &.dotted {
       position: relative;
       &::after {

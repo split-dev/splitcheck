@@ -84,6 +84,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url("images/profiles/background-tell.svg");
+    @media (max-width: 575px) {
+      height: 140px;
+      background-image: url("images/profiles/banner.svg");
+    }
     strong {
       color: theme-color("blue");
       font-size: 16px;

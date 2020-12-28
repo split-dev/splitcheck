@@ -9,6 +9,9 @@
 @import "store-about";
 
 .store {
+  .profile-face {
+    height: 337px;
+  }
   .section-blur {
     .header {
       .container {
@@ -59,9 +62,6 @@
     }
   }
   .about-me {
-    @media (max-width: 1260px) {
-      max-width: 475px;
-    }
     @media (max-width: 991px) {
       max-width: 100%;
     }
@@ -72,22 +72,57 @@
     }
   }
 
-  .chat-button {
+  .chat-prev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     right: 60px;
     bottom: 30px;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 50;
-    box-shadow: 0 4px 6px 1px rgba(11, 2, 18, 0.15);
     @media (max-width: 991px) {
       bottom: 65px;
     }
     @media (max-width: 575px) {
       right: 15px;
     }
+    &__user {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 8px;
+    }
+    .chat-prev__user[data-message] {
+      &::after {
+        content: attr(data-message);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 50%;
+        background-color: #f7646799;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .chat-button {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 50;
+    box-shadow: 0 4px 6px 1px rgba(11, 2, 18, 0.15);
     &.close {
       &:before {
         top: 0 !important;

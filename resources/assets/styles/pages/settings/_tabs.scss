@@ -18,9 +18,13 @@ strong {
 .svg-revert {
   position: absolute;
   bottom: 10px;
-  transform: rotate(180deg);
-  path {
-    stroke: #99a9c9;
+  right: 0;
+  left: 0;
+  svg {
+    transform: rotate(180deg);
+    path {
+      stroke: #99a9c9;
+    }
   }
 }
 .mobile-nav {
@@ -29,7 +33,7 @@ strong {
   z-index: 99;
   display: none;
   position: fixed;
-  top: 55px;
+  top: 70px;
   &::before {
     transition: 0.3s;
     content: "";
@@ -45,8 +49,11 @@ strong {
     left: 0;
     z-index: -2;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     display: block;
+  }
+  @media (max-width: 767px) {
+    top: 55px;
   }
 }
 .section-settings ul {
@@ -72,7 +79,7 @@ strong {
   }
   .aside-left {
     display: block !important;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       display: none !important;
     }
   }
@@ -97,7 +104,7 @@ strong {
 .mobile-before {
   min-height: 330px;
   &::before {
-    transition: 0.3s;
+    transition: 0.5s;
     content: "";
     background-image: url("images/settings/before-blue.svg");
     background-position: bottom;

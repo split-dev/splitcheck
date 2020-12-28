@@ -7,7 +7,10 @@
 @import "checkout-el";
 
 .checkout {
+  .aside-right {
+    width: 35% !important;
+  }
   .main {
-    width: 80% !important;
+    width: 75% !important;
   }
 }

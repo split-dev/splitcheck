@@ -10,8 +10,16 @@ export default {
        $(element).find($('.count-slider')).attr('data-count', countUser);
        $(element).find($('.count-slider')).text('+'+ countUser);
         
+       //password hide
+      $('.show').click( function () {
+        if ($(this).prev().attr('type') === 'password') {
+          $(this).prev().attr('type', 'text');
+        } else {
+          $(this).prev().attr('type', 'password');
+        }
+      });
       }
-      if (('.checkout__slider').hasClass('checkout__slider')) {
+      if (('.checkout__slider-container').hasClass('checkout__slider-container')) {
         var swiper = new Swiper('.checkout__slider.swiper-container', {
             slidesPerView: 2,
             spaceBetween: 8,

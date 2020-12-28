@@ -1,8 +1,33 @@
 .checkout {
+  &__box-header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .about-me__info--full {
+    @media (max-width: 991px) {
+      text-align: left;
+    }
+  }
+  .members-wrap__select {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
   &__links {
     justify-content: flex-end;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    a {
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
     .btn-border {
       margin-right: 15px;
+      @media (max-width: 991px) {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
     }
   }
   &__pay {
@@ -14,8 +39,9 @@
     .text-blue {
       color: #2f5095;
       margin: 0;
-      font-size: 14px;
+      font-size: 14px !important;
       font-weight: 400;
+      margin-left: 0 !important;
     }
     .last-b {
       width: 70px;
@@ -42,6 +68,9 @@
     }
   }
   &__bottom-link {
+    @media (max-width: 991px) {
+      display: none;
+    }
     a {
       margin-left: 0 !important;
       min-width: 100%;
@@ -60,7 +89,10 @@
   }
   &__price {
     b {
-      margin-right: 0;
+      color: #0b0212;
+      font-size: 14px;
+
+      margin-right: 0 !important;
     }
     small {
       margin-top: 10px;
@@ -157,15 +189,30 @@
   }
   &__members {
     .members-wrap {
+      margin-bottom: 20px;
+      max-width: 344px;
       display: flex;
       flex-direction: column;
       margin-top: 25px;
+      position: relative;
+      .small-input {
+        max-width: 160px;
+        margin-right: 25px;
+      }
+      .btn-orange {
+        max-width: 160px;
+      }
+      .groups__box-small {
+        max-width: 160px;
+        padding-right: 25px;
+      }
       label {
         color: #828282;
         font-size: 14px;
         font-weight: 400;
       }
       input {
+        letter-spacing: normal;
         max-width: 344px;
         height: 40px;
         border-radius: 5px;
@@ -173,6 +220,12 @@
         color: #0b0212;
         font-size: 16px;
         font-weight: 400;
+        position: relative;
+      }
+      .show {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
       }
     }
     .form__checkbox-wrap {
@@ -204,12 +257,38 @@
       margin-left: 15px;
     }
   }
+  &__edit-block {
+    position: relative;
+  }
+  .section-desctop {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .section-mobile {
+    display: none;
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   &__box {
     padding: 24px 24px 10px 24px;
     margin-bottom: 13px;
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     background-color: #fff;
+    .btn-border,
+    .btn-blue,
+    .btn-orange {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    a.edit {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
     .about-me__box {
       position: relative;
       .btn-border {

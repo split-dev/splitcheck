@@ -230,6 +230,16 @@
       "title": "Checkout",
       "description": "Checkout",
       "url": "/checkout.html"
+    },
+    {
+      "title": "Checkout Unfolded",
+      "description": "Checkout",
+      "url": "/checkout-unfolded.html"
+    },
+    {
+      "title": "Checkout Pick-up",
+      "description": "Checkout",
+      "url": "/checkout-pick-up.html"
     }
   ]
 }

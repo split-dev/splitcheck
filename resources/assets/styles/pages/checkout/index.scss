@@ -1,0 +1,13 @@
+//Glob Utils
+@import "../../variables";
+@import "../../bootstrap-utils";
+
+// Page Specific Components
+@import "checkout-main";
+@import "checkout-el";
+
+.checkout {
+  .main {
+    width: 80% !important;
+  }
+}

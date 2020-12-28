@@ -1,0 +1,114 @@
+.checkout {
+  &__links {
+    justify-content: flex-end;
+    .btn-border {
+      margin-right: 15px;
+    }
+  }
+  &__ul {
+    li {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__block {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    textarea {
+      padding-bottom: 70px;
+    }
+    .text-gray {
+      max-width: 312px;
+    }
+    .blue-text {
+      margin-bottom: 15px !important;
+      margin-left: 0;
+    }
+  }
+  .btn-blue {
+    color: #fff;
+  }
+  .store-info__address,
+  .about-me__box {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    margin-bottom: 0 !important;
+  }
+  &__small {
+    color: #0b0212;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .members__radio {
+    margin-top: 22px;
+    label {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+  .orders__box {
+    padding: 0;
+    box-shadow: none;
+  }
+  &__box {
+    padding: 24px 24px 10px 24px;
+    margin-bottom: 13px;
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    .about-me__box {
+      position: relative;
+      .btn-border {
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    h5 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #335491;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 18px;
+    }
+
+    .orders__card {
+      padding: 20px 0 20px 0;
+      margin-left: 0;
+      &:last-child {
+        padding-bottom: 0;
+        .orders__card-price {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .orders__card-top {
+      margin-top: 20px;
+      h5 {
+        margin-bottom: 20px;
+      }
+      &::before {
+        display: none !important;
+      }
+    }
+  }
+  .btn-orange {
+    color: #fff;
+  }
+  a.section-content__title {
+    text-transform: none;
+    color: #35558f;
+    font-size: 16px;
+    span {
+      margin-left: 10px;
+    }
+  }
+}

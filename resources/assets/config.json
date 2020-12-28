@@ -19,6 +19,7 @@
       "./styles/pages/product-page/index.scss",
       "./styles/pages/orders/index.scss",
       "./styles/pages/blog/index.scss",
+      "./styles/pages/checkout/index.scss",
       "./styles/components/modals/modals.scss",
       "./styles/components/modals/modal-side.scss",
       "./styles/components/modals/modal-add-timeline.scss",
@@ -47,6 +48,7 @@
       "./styles/components/modals/modal-check.scss",
       "./styles/components/modals/modal-recurrent.scss",
       "./styles/components/modals/modal-blog.scss"
+      
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",
@@ -54,6 +56,7 @@
     "pages/settings": "./styles/pages/settings/index.scss",
     "pages/shop": "./styles/pages/shop/index.scss",
     "pages/profile": "./styles/pages/profile/index.scss",
+    "pages/checkout": "./styles/pages/checkout/index.scss",
     "pages/individual-page": "./styles/pages/individual-page/index.scss",
     "pages/store": "./styles/pages/store/index.scss",
     "pages/business": "./styles/pages/business/index.scss",

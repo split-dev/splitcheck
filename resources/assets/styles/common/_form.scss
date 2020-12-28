@@ -162,7 +162,9 @@
 
     color: theme-color("gray");
   }
-
+  .max-text {
+    position: relative;
+  }
   .count {
     position: absolute;
     right: 14px;

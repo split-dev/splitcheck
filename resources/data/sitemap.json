@@ -225,6 +225,11 @@
       "title": " Blog Coupons",
       "description": "blog",
       "url": "/coupons.html"
+    },
+    {
+      "title": "Checkout",
+      "description": "Checkout",
+      "url": "/checkout.html"
     }
   ]
 }

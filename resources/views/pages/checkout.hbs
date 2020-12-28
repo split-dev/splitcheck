@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="checkout home  cart orders">
+    {{> ../common/mobile-menu }}
+    {{> ../common/mobile-menu-bottom }}
+    <div class="section-blur theme-background-one" data-class="blue" id="background">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__left">
+                        <!-- <div class="header__burger">
+          <img src="images/icons/burger.svg" alt="">
+        </div> -->
+                        <a class="header__logo" href="/index.html">
+                            <img class="header__img-desktop" src="images/icons/w-logo.png" alt="logo">
+                            <img class="header__img-mobile" src="images/icons/logo-mobile.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <!-- form search -->
+                        <!-- add class: "search--active" -->
+                        <form action="#" id="search" class="search">
+
+                            <input type="search" name="search" class="search__input" placeholder="Search for something"
+                                id="search-input" autocomplete="off" />
+                            <button class="search__button" aria-label="search">
+                                <i class="icon icon-search"></i>
+                            </button>
+
+                            <div class="search__result">
+                                <ul class="search__result-list">
+                                    <li class="search__result-item d-flex align-items-center">
+                                        <p>
+                                            <b>pa</b>int
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header__right">
+                        <div class="head-links">
+                            <!-- head menu -->
+                            <ul class="head-links__list d-flex align-items-center list-unstyled mb-0">
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="index.html" class="head-links__link position-relative">
+                                        <!-- add class "active" <i class="icon icon-home"></i> what would the icon change -->
+                                        <i class="icon icon-home"></i>
+                                    </a>
+                                </li>
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="#" class="head-links__link position-relative">
+                                        <!-- add class "active" what would the icon change -->
+                                        <i class="icon icon-star"></i>
+                                    </a>
+                                </li>
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="shop.html?param=val&data=shop-another"
+                                        class="head-links__link position-relative">
+                                        <!-- add class "active" what would the icon change -->
+                                        <i class="icon icon-offer"></i>
+                                    </a>
+                                </li>
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="#" data-toggle="modal" data-target="#cart"
+                                        class="head-links__link position-relative head-links__link--active">
+                                        <!-- add class "active" what would the icon change -->
+                                        <i class="icon icon-cart"></i>
+                                    </a>
+                                </li>
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="#" data-toggle="modal" data-target="#message-overlay"
+                                        class="head-links__link position-relative">
+                                        <!-- add class "active" what would the icon change -->
+                                        <i class="icon icon-head-mail"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /head menu -->
+                        </div>
+                        <div class="header__user">
+                            <a href="#menu-mobile" data-toggle="modal" data-target="#menu-mobile"
+                                class="personal-avatar personal-avatar--no-img position-relative d-flex d-lg-none align-items-center justify-content-center overflow-hidden">
+                                <img src="" alt="avatar">
+                                <span class="personal-symbol">JS</span>
+                            </a>
+                            <a href="#user-profile-menu" data-toggle="modal" data-target="#user-profile-menu"
+                                class="user-avatar user-avatar--no-img position-relative d-flex align-items-center justify-content-center overflow-hidden">
+                                <img class="user-avatar__img" src="" alt="avatar">
+                                <span class="user-avatar__symbol">AD</span>
+                            </a>
+                            <a href="#" class="mobile-link-arrow">
+                                <i class="icon icon-arrow"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="main-content position-relative d-flex align-items-start justify-content-between">
+                <!-- main -->
+                <main class="main form">
+                    <section class="section-content">
+                        <a href="#"
+                            class="section-content__title position-relative d-flex align-items-center individual__title-hide">
+                            <span><img src="images/icons/back.svg" alt="back">Back to Cart</span>
+                        </a>
+                    </section>
+                    <span class="section-content__title position-relative d-flex align-items-center">Billing and
+                        shipping</span>
+
+                    <div class="section-content">
+                        <div class="orders__box">
+
+                            <div class="checkout__box">
+                                <h5>CheckOut</h5>
+                                <small class="checkout__small">Discounts already applied</small>
+                                <div class="orders__card orders__card-top d-flex flex-column">
+                                    <h5>Items in Cart</h5>
+                                    <div class="d-flex w-100">
+                                        <div class="d-flex w-100">
+                                            <div class="d-flex orders__card-img w-100">
+                                                <img src="images/orders/item.png" alt="item">
+                                            </div>
+                                            <div class="d-flex flex-column orders__card-block-1 w-100">
+                                                <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                                                <div class="d-flex orders__card-price">
+                                                    <span class="text-orange">
+                                                        $49.99
+                                                    </span>
+                                                    <p>1x</p>
+                                                </div>
+                                                <div class="orders__card-description">
+                                                    <div class="d-flex">
+                                                        <small>Volume:</small>
+                                                        <strong>500 ml</strong>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <small>Flavoure:</small>
+                                                        <strong>banana</strong>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <small>Servings:</small>
+                                                        <strong>20</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column   orders__card-block-2 w-100">
+                                            <div class="d-flex">
+                                                <small>Shipped from:</small>
+                                                <strong>Coomera - Queensland</strong>
+                                            </div>
+                                            <div class="d-flex">
+                                                <small>Dispatch date:</small>
+                                                <strong>02.11.2020</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div class="orders__card d-flex ">
+                                    <div class="d-flex w-100">
+                                        <div class="d-flex orders__card-img w-100">
+                                            <img src="images/orders/item.png" alt="item">
+                                        </div>
+                                        <div class="d-flex flex-column orders__card-block-1 w-100">
+                                            <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                                            <div class="d-flex orders__card-price">
+                                                <div
+                                                    class="internal-card__price internal-card__price--discount d-flex align-items-center flex-wrap">
+                                                    <span>$49.99</span>
+                                                    <span>$60.99</span>
+
+
+                                                </div>
+                                                <p>1x</p>
+                                            </div>
+                                            <div class="orders__card-description">
+                                                <div class="d-flex">
+                                                    <small>Volume:</small>
+                                                    <strong>500 ml</strong>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <small>Flavoure:</small>
+                                                    <strong>banana</strong>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <small>Servings:</small>
+                                                    <strong>20</strong>
+                                                </div>
+                                            </div>
+                                            <div class="orders__card-for">
+                                                <div class="profile-list w-100">
+                                                    <figure class="profile-list__avatar">
+                                                        <img src="images/profiles/user-1.png" alt="avatar">
+                                                        <span class="profile-list__symbol"></span>
+                                                    </figure>
+                                                    <div class="d-flex flex-column ">
+                                                        <span>for:</span>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column  orders__card-block-2 w-100">
+                                        <div class="d-flex">
+                                            <small>Shipped from:</small>
+                                            <strong>Coomera - Queensland</strong>
+                                        </div>
+                                        <div class="d-flex">
+                                            <small>Dispatch date:</small>
+                                            <strong>02.11.2020</strong>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+                                <div class="orders__card d-flex ">
+                                    <div class="d-flex w-100">
+                                        <div class="d-flex orders__card-img w-100">
+                                            <img src="images/orders/item.png" alt="item">
+                                        </div>
+                                        <div class="d-flex flex-column orders__card-block-1 w-100">
+                                            <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                                            <div class="d-flex orders__card-price">
+                                                <span class="text-orange">
+                                                    $49.99
+                                                </span>
+                                                <p>bundle</p>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column  orders__card-block-2 w-100">
+                                        <div class="d-flex">
+                                            <small>Shipped from:</small>
+                                            <strong>Coomera - Queensland</strong>
+                                        </div>
+                                        <div class="d-flex">
+                                            <small>Dispatch date:</small>
+                                            <strong>02.11.2020</strong>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="checkout__box">
+                                <div class="store-info__address">
+                                    <h5>Shipping address</h5>
+                                    <a href="#" class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                        <input type="checkbox" id="checkbox-1" class="form__checkbox-orange"
+                                            name="search-parameters">
+                                        <label for="checkbox-1">
+                                            Choose from Addressbook
+                                        </label>
+                                    </a>
+                                    <div class="members__form">
+                                        <label class="form__label">address line 1</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">address line 2</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">City</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">State</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">Postcode</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="members__form">
+                                        <label class="form__label">Country</label>
+                                        <input class="form__input" placeholder="Text here" type="text">
+
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="checkout__block">
+                                        <strong class="blue-text">
+                                            Billing address
+                                        </strong>
+                                        <ul class="checkout__ul">
+                                            <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                                <input type="checkbox" id="checkbox-search-parameters-2"
+                                                    class="form__checkbox-orange" name="search-parameters">
+                                                <label for="checkbox-search-parameters-2">
+                                                    Make this my primary shipping address
+                                                </label>
+                                            </li>
+
+                                            <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                                <input type="checkbox" id="checkbox-search-parameters-3"
+                                                    class="form__checkbox-orange" name="search-parameters">
+                                                <label for="checkbox-search-parameters-3">
+                                                    My billing address is the same
+                                                </label>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="checkout__block">
+                                        <strong class="blue-text">
+                                            Delivery
+                                        </strong>
+                                        <p class="text-gray">
+                                            Set a default delivery instructions if any. This will be passed to shipping
+                                            carriers
+                                        </p>
+                                        <div class="d-flex flex-column members__form">
+                                            <label class="form__label">
+                                                Delivery instructions (optional)</label>
+
+                                            <div class="w-100 max-text">
+                                                <textarea maxlength="400" class="form__textarea"
+                                                    placeholder="Write something"></textarea>
+                                                <div class="count"><span>0</span>/<span>400</span></div>
+                                            </div>
+
+
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="d-flex checkout__links">
+                                    <a href="#" class="btn btn-border">Delete address</a>
+                                    <a href="#" class="btn btn-blue">Save address</a>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="checkout__box">
+                            <div class="about-me__box mb-4">
+                                <div class="d-flex w-100 flex-column align-items-start w-100">
+                                    <div class="about-me__info about-me__info--full">
+                                        <div class="d-flex flex-column">
+                                            <h5>Billing Address</h5>
+                                            <ul>
+
+                                                <li>20 Kohl street</li>
+                                                <li>Upper Coomera</li>
+                                                <li>Queensland</li>
+                                                <li>4209</li>
+                                                <li>Australia</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-border btn-border--two align-self-end" id="editInfo">Save
+                                        address</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout__box">
+                            <h5>Payment options</h5>
+                            <div class="members__radio ">
+                                <div class="form-radio">
+                                    <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked="">
+                                    <label for="radio-1" class="radio-custom-label">Internet banking (Pay with
+                                        Poli)</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+                                    <label for="radio-2" class="radio-custom-label">Split payment (Share the
+                                        bill)</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+                                    <label for="radio-3" class="radio-custom-label">Credit or Debit card</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+                                    <label for="radio-3" class="radio-custom-label">Gift Voucher</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </main>
+                <!-- /main -->
+                <!-- aside-right -->
+                <aside class="aside-right d-none d-lg-block">
+                    <div class="scroll-div">
+                        <div class="section-content">
+                            <span
+                                class="section-content__title position-relative d-flex align-items-center">Total</span>
+                            <div class="total-box">
+                                <ul class="form">
+                                    <li><span>Items (4)</span> <span>$ 300.00</span></li>
+                                    <li><span>Postage</span> <span>Free</span></li>
+                                    <li><b>Total</b> <span><b>AUD</b><b class="ml-2">$300.00</b></span></li>
+                                    <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                        <input type="checkbox" id="checkbox-search-parameters-27"
+                                            class="form__checkbox-orange" name="search-parameters">
+                                        <label for="checkbox-search-parameters-27">
+                                            Ask family and friends to contribute to this order
+                                        </label>
+                                    </li>
+                                </ul>
+                                <span class="earn">Earn 184.00 SplitChek points <i
+                                        class="icon icon-help orange ml-2"></i></span>
+                                <a href="#" data-toggle="modal" data-target="#order-sent" class="btn btn-orange">Confirm
+                                    Order</a>
+                            </div>
+                        </div>
+
+                        <div class="section-content">
+                            <span class="section-content__title position-relative d-flex align-items-center">Split the
+                                bill</span>
+                            <div class="total-box">
+                                <div class="checkout__slider">
+                                    <div class="wishlist-box__left">
+                                        <span>The following have access to this item</span>
+                                        <div
+                                            class="connections__select connections__select--store-slide d-flex flex-column">
+                                            <div class="d-flex">
+                                                <div class="connections__add align-items-center">
+                                                    <a href="#">
+                                                        <img src="images/profiles/add.svg" alt="avatar">
+                                                    </a>
+                                                </div>
+                                                <div class="connections__slider position-relative">
+                                                    <span class="count-slider" data-count="3"></span>
+                                                    <div class="swiper-container">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/wishlist/girl-in-yellow.png"
+                                                                        alt="avatar">
+
+                                                                    <span></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact ">
+                                                                    <img src="images/wishlist/afro-girl.png"
+                                                                        alt="avatar">
+                                                                    <span></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/wishlist/girl.png" alt="avatar">
+                                                                    <span></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <span>Contributed</span>
+                                    <ul class="wishlist-box__contrib">
+                                        <li><a href="#" class="card-timeline__link card-timeline__link--contact ">
+                                                <img src="images/wishlist/girl-in-yellow.png" alt="avatar">
+                                                <span>JS</span>
+                                            </a></li>
+                                        <li><a href="#" class="card-timeline__link card-timeline__link--contact ">
+                                                <img src="images/wishlist/girl.png" alt="avatar">
+                                                <span>JS</span>
+                                            </a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+                <!-- /aside-right -->
+            </div>
+            <div class="cart-fixed">
+                <div class="total-box">
+                    <ul>
+                        <li><span>Items (4)</span> <span>$ 300.00</span></li>
+                        <li><span>Postage</span> <span>Free</span></li>
+                        <li><b>Total</b> <span><b>AUD</b><b class="ml-2">$300.00</b></span></li>
+
+                    </ul>
+                    <span class="earn">Earn 184.00 SplitChek points <i class="icon icon-help orange ml-2"></i></span>
+                    <a href="#" class="btn btn-orange">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        {{> ../common/footer }}
+    </div>
+
+    <!-- Modals -->
+    {{> ../common/modals/create-goss }}
+    {{> ../common/modals/menu-mobile }}
+    {{> ../common/modals/add-photo }}
+    {{> ../common/modals/user-profile-menu }}
+    {{> ../common/modals/share-product }}
+    {{> ../common/modals/add-timeline-product }}
+    {{> ../common/modals/add-wishlist }}
+    {{> ../common/modals/search-parameters }}
+    {{> ../common/modals/cart }}
+    {{> ../common/modals/add-comment }}
+    {{> ../common/modals/store-info }}
+    {{> ../common/modals/shop-another }}
+    {{> ../common/modals/modals-notifications }}
+    {{> ../common/modals/message-overlay }}
+    {{> ../common/modals/goss-gallery }}
+    {{> ../common/modals/menu-mobile--not-shop }}
+    {{> ../common/modals/order-sent }}
+    <!-- /Modals -->
+</body>
+
+</html>

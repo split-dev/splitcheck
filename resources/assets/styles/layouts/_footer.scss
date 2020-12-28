@@ -109,6 +109,8 @@
         left: 0;
         height: 1px;
         bottom: -4px;
+        max-width: 100%;
+        overflow: hidden;
       }
       &:hover {
         &:after {

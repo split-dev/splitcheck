@@ -45,6 +45,7 @@
   // modal REGISTER and LOGIN
   &.modal-register,
   &.modal-login {
+    padding-right: 0 !important;
     .form {
       max-width: 575px;
       padding: 0;
@@ -352,6 +353,8 @@
 
       @media (max-width: 550px) {
         width: 100%;
+        max-width: 100%;
+        overflow: hidden;
       }
 
       &::after,
@@ -364,7 +367,7 @@
         background-color: #99a9c9;
 
         @media (max-width: 550px) {
-          width: calc(50% - 25px);
+          width: 140px;
         }
       }
 

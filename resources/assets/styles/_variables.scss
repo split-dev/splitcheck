@@ -75,3 +75,11 @@ $container-max-widths: (
   lg: 960px,
   xl: 1170px,
 );
+.ss-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none !important;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}

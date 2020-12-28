@@ -78,8 +78,17 @@ $container-max-widths: (
 .ss-wrapper {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow: -moz-scrollbars-none !important;
+  overflow: visible !important;
   &::-webkit-scrollbar {
     width: 0;
+  }
+}
+
+@-moz-document url-prefix() {
+  div.ss-wrapper {
+    overflow: hidden !important;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 }

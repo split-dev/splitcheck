@@ -102,17 +102,17 @@
     .swiper-button-prev {
       display: block !important;
       left: -32px;
-      top: calc(50% - 13px);
+      top: calc(50% - 15px);
     }
     .swiper-button-next {
       display: block !important;
       right: -45px;
-      top: calc(50% - 13px);
+      top: calc(50% - 11px);
     }
     .count-slider {
       position: absolute;
       right: -17px;
-      top: calc(50% - 12px);
+      top: calc(50% - 10px);
       color: theme-color("light-blue");
       font-size: 16px;
       font-weight: 400;

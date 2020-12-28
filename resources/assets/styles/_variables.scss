@@ -81,6 +81,13 @@ $container-max-widths: (
   overflow: visible !important;
   &::-webkit-scrollbar {
     width: 0;
+    background: transparent;
+  }
+}
+.ss-content {
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
   }
 }
 

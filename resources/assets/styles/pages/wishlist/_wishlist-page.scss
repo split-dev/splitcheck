@@ -1,4 +1,18 @@
 .wishlist-page {
+  .wishlist-box {
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  .wishlist-box__item-function {
+    a {
+      &:last-child {
+        &::before {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
   &__block {
     margin-top: 16px;
     max-width: 560px;
@@ -54,6 +68,10 @@
   }
   &__text-block {
     margin-left: 50px;
+    a {
+      margin-top: 20px;
+      border: 2px solid #35558f !important;
+    }
     @media (max-width: 991px) {
       margin-left: 0;
       margin-top: 24px;
@@ -63,7 +81,7 @@
       justify-content: center;
       width: 100%;
       a {
-        max-width: 100%;
+        min-width: 100%;
       }
     }
   }
@@ -76,6 +94,7 @@
     background-color: #fff;
     @media (max-width: 991px) {
       flex-direction: column;
+      max-width: 100%;
     }
     figure {
       margin: 0;

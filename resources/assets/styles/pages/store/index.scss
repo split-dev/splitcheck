@@ -81,6 +81,7 @@
     border-radius: 50%;
     cursor: pointer;
     z-index: 50;
+    box-shadow: 0 4px 6px 1px rgba(11, 2, 18, 0.15);
     @media (max-width: 991px) {
       bottom: 65px;
     }

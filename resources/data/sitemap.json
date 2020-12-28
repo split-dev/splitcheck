@@ -210,6 +210,36 @@
       "title": "Cart",
       "description": "cart",
       "url": "/cart.html"
+    },
+    {
+      "title": "Blog",
+      "description": "blog",
+      "url": "/blog.html"
+    },
+    {
+      "title": "Blog User",
+      "description": "blog",
+      "url": "/blog-user.html"
+    },
+    {
+      "title": " Blog Coupons",
+      "description": "blog",
+      "url": "/coupons.html"
+    },
+    {
+      "title": "Checkout",
+      "description": "Checkout",
+      "url": "/checkout.html"
+    },
+    {
+      "title": "Checkout Unfolded",
+      "description": "Checkout",
+      "url": "/checkout-unfolded.html"
+    },
+    {
+      "title": "Checkout Pick-up",
+      "description": "Checkout",
+      "url": "/checkout-pick-up.html"
     }
   ]
 }

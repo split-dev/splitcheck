@@ -499,6 +499,7 @@ export default {
       //header height
       let mobileLinks = document.querySelector('.mobile-nav');
      
+
       function topMobile() {
         body.addEventListener('wheel', function(e) {
   
@@ -515,13 +516,13 @@ export default {
   
           if (!meNow) {
             if (e.deltaY < 0) {
-              if (window.matchMedia('(min-width: 767px)').matches) {
+              if (window.matchMedia('(min-width: 991px)').matches) {
                 mobileLinks.style.top = '';
               } else {
-                mobileLinks.style.top = '55px';
+                mobileLinks.style.top = '70px';
               }
             } else {
-              if (window.matchMedia('(min-width: 767px)').matches) {
+              if (window.matchMedia('(min-width: 991px)').matches) {
                 mobileLinks.style.top = '';
               } else {
                 mobileLinks.style.top = '0';
@@ -529,11 +530,17 @@ export default {
               }
             }
           }
+         
         })
       }
+      topMobile();
+      
+     
+
+      
 
     if($('.mobile-nav').hasClass('mobile-nav')) {
-      topMobile();
+      
        //background change
       
        $('.account-preferences__card').on('click', function() {
@@ -543,7 +550,7 @@ export default {
      
        //mobile tabs
     $('.settings__hide li').click(function() {
-       $(this).parent().slideToggle(200);
+       $(this).parent().slideToggle(100);
        $('.mobile-nav').toggleClass('mobile-before')
        $('.svg-show').toggleClass('svg-top-hide');
        $('.main-content').css('margin-top', '0')

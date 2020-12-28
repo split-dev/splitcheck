@@ -1,0 +1,341 @@
+.checkout {
+  &__box-header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .about-me__info--full {
+    @media (max-width: 991px) {
+      text-align: left;
+    }
+  }
+  .members-wrap__select {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  &__links {
+    justify-content: flex-end;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    a {
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
+    .btn-border {
+      margin-right: 15px;
+      @media (max-width: 991px) {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__pay {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    b {
+      margin-right: 0;
+    }
+    .text-blue {
+      color: #2f5095;
+      margin: 0;
+      font-size: 14px !important;
+      font-weight: 400;
+      margin-left: 0 !important;
+    }
+    .last-b {
+      width: 70px;
+    }
+    ul {
+      padding-left: 0;
+      li {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-top: 20px;
+        }
+        b {
+          color: #0b0212;
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: none;
+        }
+      }
+    }
+  }
+  .total-box {
+    .form {
+      margin-top: 25px;
+    }
+  }
+  &__bottom-link {
+    @media (max-width: 991px) {
+      display: none;
+    }
+    a {
+      margin-left: 0 !important;
+      min-width: 100%;
+    }
+  }
+  &__right-bottom {
+    p {
+      color: #0b0212;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    a {
+      margin-top: 30px;
+    }
+  }
+  &__price {
+    b {
+      color: #0b0212;
+      font-size: 14px;
+
+      margin-right: 0 !important;
+    }
+    small {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+      color: #0b0212;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .last-b {
+      width: 70px;
+    }
+    b {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+  &__contributed {
+    margin-top: 20px;
+
+    ul {
+      display: flex;
+      padding-left: 0;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      li {
+        position: relative;
+        width: 56px;
+        height: 56px;
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+    span {
+      color: #828282;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.86px;
+      text-transform: uppercase;
+    }
+  }
+  &__ul {
+    li {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__block {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    textarea {
+      padding-bottom: 70px;
+    }
+    .text-gray {
+      max-width: 312px;
+    }
+    .blue-text {
+      margin-bottom: 15px !important;
+      margin-left: 0;
+    }
+  }
+  .btn-blue {
+    color: #fff;
+  }
+  .store-info__address,
+  .about-me__box {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    margin-bottom: 0 !important;
+  }
+  &__small {
+    color: #0b0212;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .members__radio {
+    margin-top: 22px;
+    label {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+  .orders__box {
+    padding: 0;
+    box-shadow: none;
+  }
+  &__members {
+    .members-wrap {
+      margin-bottom: 20px;
+      max-width: 344px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+      position: relative;
+      .small-input {
+        max-width: 160px;
+        margin-right: 25px;
+      }
+      .btn-orange {
+        max-width: 160px;
+      }
+      .groups__box-small {
+        max-width: 160px;
+        padding-right: 25px;
+      }
+      label {
+        color: #828282;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      input {
+        letter-spacing: normal;
+        max-width: 344px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #f8f9fb;
+        color: #0b0212;
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+      }
+      .show {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+    .form__checkbox-wrap {
+      label {
+        font-weight: 400 !important;
+      }
+    }
+    ul {
+      margin-top: 15px;
+      li {
+        color: #0b0212;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    &-link {
+      margin-top: 20px;
+      a {
+        color: #335491;
+        font-size: 14px;
+        font-weight: 400;
+        &:first-child {
+          margin-right: 30px;
+        }
+      }
+    }
+    &-content {
+      margin-bottom: 50px;
+      margin-left: 15px;
+    }
+  }
+  &__edit-block {
+    position: relative;
+  }
+  .section-desctop {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .section-mobile {
+    display: none;
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__box {
+    padding: 24px 24px 10px 24px;
+    margin-bottom: 13px;
+    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    .btn-border,
+    .btn-blue,
+    .btn-orange {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    a.edit {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .about-me__box {
+      position: relative;
+      .btn-border {
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    h5 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #335491;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 18px;
+    }
+
+    .orders__card {
+      padding: 20px 0 20px 0;
+      margin-left: 0;
+      &:last-child {
+        padding-bottom: 0;
+        .orders__card-price {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .orders__card-top {
+      margin-top: 20px;
+      h5 {
+        margin-bottom: 20px;
+      }
+      &::before {
+        display: none !important;
+      }
+    }
+  }
+  .btn-orange {
+    color: #fff;
+  }
+  a.section-content__title {
+    text-transform: none;
+    color: #35558f;
+    font-size: 16px;
+    img {
+      margin-right: 10px;
+    }
+  }
+}

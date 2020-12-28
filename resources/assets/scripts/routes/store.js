@@ -38,17 +38,6 @@ export default {
       window.onresize = resize;
     }
 
-    function setColor() {
-      let color = $('.select-color--store').attr('data-color')
-      $('.profile-face__background').css('background-color', color)
-      $('.profile-face__photo').css('background-color', color)
-      $('.shop-category__single').css('background-color', color)
-      $('.internal-card__name--store').css('color', color)
-    }
-    //color picker
-    if($('.select-color--store')) {
-      setColor();
-    }
 
 
     //max count strong textarea
@@ -64,6 +53,32 @@ export default {
           $(this).parent().find($('.count span:first-of-type')).text(revText)
   
       });
+
+      function updatePosition() {
+        let leftPosition = ($('.chat-button').offset().left);
+        let widthObj = $('.chat-box').width() - 56;
+        $('.chat-box').css('left', (leftPosition - widthObj));
+      }
+
+      if($('.chat-button').hasClass('chat-button')) {
+
+        updatePosition()
+
+        //open modals
+        $('.chat-button').click( function (e) {
+          e.preventDefault()
+          $(this).toggleClass('close');
+          $('.chat-box').toggleClass('show');
+        })
+        $('.chat-box .close').click( function (e) {
+          e.preventDefault()
+          $('.chat-button').toggleClass('close');
+          $('.chat-box').toggleClass('show');
+        })
+        $(window).resize( function() {
+          updatePosition();
+        })
+      }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

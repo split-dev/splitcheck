@@ -364,6 +364,8 @@ export default {
       $('.profile-face__photo').css('background-color', color)
       $('.shop-category__single').css('background-color', color)
       $('.internal-card__name--store').css('color', color)
+      $('.chat-button').css('background-color', color)
+      $('.chat-box__header').css('background-color', color)
     }
     //color picker
     if($('.select-color--store')) {

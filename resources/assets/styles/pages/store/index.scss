@@ -26,15 +26,42 @@
       }
     }
   }
+  .store-link {
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-right: 16px;
+      align-items: baseline;
+      overflow: hidden;
+      > div {
+        margin: auto;
+        padding: 4px 12px 0 12px;
+      }
+    }
+  }
   .profile-face {
     @media (max-width: 991px) {
       height: auto;
+    }
+    &__photo {
+      @media (max-width: 991px) {
+        bottom: 62%;
+        width: 120px;
+        height: 120px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
     }
   }
   .profile-face__info {
     border-radius: 0;
     @media (max-width: 991px) {
       height: 140px;
+      border-radius: 0;
+      padding: 0 0 11px;
+      flex-direction: column;
+      justify-content: flex-end !important;
     }
   }
   .profile-face__background {
@@ -291,7 +318,6 @@
             }
           }
         }
-
 
         //coment-product
         .comment-product {

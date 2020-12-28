@@ -11,6 +11,11 @@
         overflow: hidden;
       }
     }
+    .bargain-gallery {
+      p {
+        max-width: 320px;
+      }
+    }
   }
   .goss-gallery__slider {
     @media (max-width: 575px) {

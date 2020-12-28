@@ -35,6 +35,7 @@
       margin-bottom: 0;
       text-transform: uppercase;
       @media (max-width: 767px) {
+        max-width: 430px;
         line-height: 28px;
       }
       @media (max-width: 575px) {

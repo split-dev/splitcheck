@@ -35,6 +35,9 @@
       position: relative;
       padding: 0 22px;
       height: inherit;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 8px;
       @media (max-width: 575px) {
         padding: 0 15px;
       }

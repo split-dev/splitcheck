@@ -4,6 +4,15 @@
       padding-top: 55px;
     }
   }
+  .blog-post__reaction {
+    position: relative;
+    &:hover {
+      .reaction__pop {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+      }
+    }
+  }
   &__follow {
     padding-top: 270px;
     padding-bottom: 90px;

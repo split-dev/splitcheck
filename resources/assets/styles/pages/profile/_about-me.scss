@@ -931,6 +931,13 @@
   &__reaction {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    &:hover {
+      .reaction__pop {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+      }
+    }
     .smile {
       margin-right: 8px;
     }

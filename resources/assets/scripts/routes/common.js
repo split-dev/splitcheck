@@ -365,6 +365,7 @@ export default {
       $('.shop-category__single').css('background-color', color)
       $('.internal-card__name--store').css('color', color)
       $('.chat-button').css('background-color', color)
+      $('.chat-prev__user').css('background-color', color)
       $('.chat-box__header').css('background-color', color)
     }
     //color picker

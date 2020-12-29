@@ -1,4 +1,7 @@
 .message {
+  .main-content {
+    padding-top: 22px !important;
+  }
   .internal-card {
     &__shop {
       padding: 12px 8px;
@@ -110,6 +113,7 @@
     }
     .internal-card__body {
       > p {
+        max-width: 515px;
         padding: 0;
       }
     }
@@ -122,7 +126,7 @@
       }
     }
     .section-content__title {
-      padding-left: 0;
+      padding-left: 20px;
       @media (max-width: 991px) {
         margin-top: 24px;
         padding-left: 16px;
@@ -150,6 +154,11 @@
     &__list {
       overflow: hidden;
     }
+    &__left {
+      @media (min-width: 992px) and (max-width: 1260px) {
+        width: calc(100% - 40px);
+      }
+    }
     &__single {
       max-width: 372px;
       position: relative;
@@ -162,7 +171,16 @@
           strong,
           span {
             color: #0b0212;
+            white-space: nowrap;
             font-weight: 500;
+          }
+          span {
+            @media (min-width: 992px) and (max-width: 1260px) {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: calc(100% - 40px);
+            }
           }
         }
       }
@@ -194,7 +212,8 @@
     //   max-width: 325px;
     // }
     &__photo {
-      width: 32px;
+      min-width: 32px;
+      max-width: 32px;
       height: 32px;
       border-radius: 50%;
       background-position: center;
@@ -229,6 +248,12 @@
         font-weight: 400;
         line-height: 14px;
         transition: 0.3s;
+        @media (min-width: 992px) and (max-width: 1260px) {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: calc(100% - 40px);
+        }
       }
     }
     &__right {

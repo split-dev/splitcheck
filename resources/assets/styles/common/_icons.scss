@@ -166,6 +166,16 @@
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 20 16'%3E%3Cdefs%3E%3CclipPath id='1qfoa'%3E%3Cpath fill='%23fff' d='M11.5 11.5v-8h8v8zm1.5-4c0 1.383 1.117 2.5 2.5 2.5S18 8.883 18 7.5 16.883 5 15.5 5A2.497 2.497 0 0 0 13 7.5z'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cg/%3E%3Cg%3E%3Cpath fill='%23315293' d='M9.08 13.449l-.083.083-.084-.083C4.947 9.86 2.331 7.488 2.331 5.081c0-1.665 1.25-2.914 2.916-2.914 1.283 0 2.533.824 2.975 1.965H9.78c.433-1.14 1.683-1.965 2.966-1.965 1.667 0 2.916 1.25 2.916 2.914 0 2.407-2.616 4.78-6.582 8.368zM8.997 2.242C7.53.526 4.813-.183 2.613 1.326A4.56 4.56 0 0 0 .663 4.9c-.116 3.233 2.75 5.825 7.125 9.8l.084.075a1.663 1.663 0 0 0 2.241-.009l.092-.083c4.375-3.967 7.233-6.558 7.125-9.792a4.557 4.557 0 0 0-1.95-3.566c-2.2-1.5-4.917-.8-6.383.916z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23f77d0e' d='M13 7.5c0 1.383 1.117 2.5 2.5 2.5S18 8.883 18 7.5 16.883 5 15.5 5A2.497 2.497 0 0 0 13 7.5z'/%3E%3Cpath fill='none' stroke='%23fff' stroke-miterlimit='20' stroke-width='3' d='M13 7.5c0 1.383 1.117 2.5 2.5 2.5S18 8.883 18 7.5 16.883 5 15.5 5A2.497 2.497 0 0 0 13 7.5z' clip-path='url(&quot;%231qfoa&quot;)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
   }
+  &.icon-messages {
+    width: 20px;
+    height: 30px;
+    background-image: url("images/icons/email-24px.svg");
+    background-size: inherit;
+    &.active {
+      width: 20px;
+      background-image: url("images/icons/email-24px_dote.svg");
+    }
+  }
   &.icon-notification {
     width: 14px;
     height: 30px;

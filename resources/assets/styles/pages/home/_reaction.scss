@@ -18,6 +18,13 @@
   &__quantity {
     display: flex;
     align-items: center;
+    position: relative;
+    &:hover {
+      .reaction__pop {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+      }
+    }
     span {
       color: theme-color("gray");
     }
@@ -31,12 +38,6 @@
     align-items: center;
     margin-right: 8px;
     cursor: pointer;
-    li {
-      &:hover ~ .reaction__pop {
-        opacity: 1 !important;
-        pointer-events: auto !important;
-      }
-    }
   }
 
   &__pop {

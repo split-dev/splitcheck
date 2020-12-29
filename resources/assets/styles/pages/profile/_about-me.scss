@@ -673,6 +673,9 @@
           bottom: 0;
           display: flex;
           justify-content: center;
+          @media (max-width: 375px) {
+            right: 2px;
+          }
         }
         @media (max-width: 767px) {
           max-width: 48%;

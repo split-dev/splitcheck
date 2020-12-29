@@ -38,6 +38,11 @@
         padding: 4px 12px 0 12px;
       }
     }
+    > div {
+      @media (max-width: 767px) {
+        padding: 16px 0 24px 16px;
+      }
+    }
   }
   .profile-face {
     @media (max-width: 991px) {

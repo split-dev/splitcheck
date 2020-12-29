@@ -87,7 +87,9 @@
     background-image: url("images/profiles/background-tell.svg");
     @media (max-width: 575px) {
       height: 140px;
-      background-image: url("images/profiles/banner.svg");
+      background-size: 88%;
+      background-color: #f8f9fb;
+      background-image: url("images/profiles/banner_mobile.svg");
     }
     strong {
       color: theme-color("blue");

@@ -16,8 +16,9 @@
         font-size: 16px;
         padding-left: 0;
         display: inline-block;
-        margin-top: 10px;
+        margin-top: 16px;
         margin-bottom: 23px;
+        color: rgba(11, 2, 18, 0.75);
       }
       .form {
         &__single--fluid,
@@ -31,6 +32,12 @@
         }
 
         &__wrap {
+          .form__wrap-title {
+            font-size: 12px;
+            line-height: 12px;
+            margin-bottom: 22px;
+            font-weight: 500;
+          }
           .form__checkbox-wrap {
             &:last-of-type {
               margin-bottom: 32px;

@@ -31,9 +31,6 @@
     display: flex;
     position: relative;
     height: 39px;
-    @media (max-width: 575px) {
-      max-width: 360px;
-    }
     li {
       position: relative;
       padding: 0 22px;

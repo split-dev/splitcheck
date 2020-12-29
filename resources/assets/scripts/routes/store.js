@@ -79,6 +79,14 @@ export default {
           updatePosition();
         })
       }
+
+      //store-link mobile scroll
+      if($('.store-link').hasClass('store-link')) {
+        if(window.innerWidth < 575) {
+          let width = window.innerWidth;
+          $('.store-link ul').css('width', width + 'px')
+        }
+      }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

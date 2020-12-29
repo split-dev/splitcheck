@@ -518,8 +518,10 @@ export default {
             if (e.deltaY < 0) {
               if (window.matchMedia('(min-width: 991px)').matches) {
                 mobileLinks.style.top = '';
-              } else {
+              } else if (window.matchMedia('(min-width: 767px) and (max-width: 991px)').matches) {
                 mobileLinks.style.top = '70px';
+              } else {
+                mobileLinks.style.top = '55px';
               }
             } else {
               if (window.matchMedia('(min-width: 991px)').matches) {

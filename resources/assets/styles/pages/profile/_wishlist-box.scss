@@ -28,7 +28,7 @@
   &__header {
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding: 12px 21px 8px 12px;
     @media (max-width: 575px) {
       flex-direction: column;

@@ -5,6 +5,15 @@
       padding: 24px 24px 80px !important;
     }
   }
+  .select2-selection--single {
+    padding-left: 8px !important;
+    span {
+      opacity: 0.75;
+    }
+  }
+  .ss-scroll {
+    margin-left: 25px;
+  }
   .form__inputs {
     padding-right: 77px;
   }

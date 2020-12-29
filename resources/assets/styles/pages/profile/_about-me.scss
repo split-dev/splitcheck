@@ -819,12 +819,18 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  &__info {
+    @media (min-width: 991px) and (max-width: 1260px) {
+      width: calc(100% - 120px);
+    }
+  }
   &__img {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 72px;
+    min-width: 72px;
+    max-width: 72px;
     height: 72px;
     background-color: #f4f8ff;
     background-position: center;
@@ -881,6 +887,9 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      @media (min-width: 991px) and (max-width: 1260px) {
+        width: calc(100% - 35%);
+      }
       @media (max-width: 575px) {
         width: 220px;
       }

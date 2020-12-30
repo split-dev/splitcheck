@@ -7,6 +7,9 @@
 @import "orders-dispute";
 
 .orders {
+  .section-content__title {
+    padding-left: 20px;
+  }
   .swiper-button-next,
   .swiper-button-prev {
     display: flex !important;
@@ -17,9 +20,11 @@
     }
   }
   main {
+    margin-left: 7px;
     @media (max-width: 991px) {
       padding-top: 25px;
       padding-bottom: 50px;
+      margin-left: 0;
     }
   }
   &__bottom {

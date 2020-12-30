@@ -15,9 +15,7 @@
       text-align: left !important;
     }
   }
-  .blue-span {
-    color: #315293 !important;
-  }
+
   .other-links {
     margin-top: 15px;
   }
@@ -28,6 +26,9 @@
     }
   }
   .account-preferences__block {
+    .form__single {
+      max-width: 328px;
+    }
     b {
       margin-top: 25px;
     }

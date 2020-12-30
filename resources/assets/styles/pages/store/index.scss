@@ -212,6 +212,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      max-width: 24px;
+      margin: auto;
     }
     img {
       width: 100%;
@@ -383,6 +385,7 @@
               line-height: 22px;
               display: inline-block;
               margin-bottom: 8px;
+              width: 100%;
             }
           }
           .comment-product__price {

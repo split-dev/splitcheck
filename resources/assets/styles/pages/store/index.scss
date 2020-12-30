@@ -197,8 +197,13 @@
     &.close {
       &:before {
         top: 0 !important;
-        content: url("images/icons/close-24px-white.svg") !important;
         background-image: none !important;
+        background-image: url("images/icons/close-24px-white.svg") !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 14px;
+        height: 14px;
       }
     }
     &::before {

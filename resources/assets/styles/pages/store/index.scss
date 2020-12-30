@@ -202,18 +202,23 @@
     }
     &::before {
       position: absolute;
-      content: url("images/icons/chat.svg");
+      content: "";
       left: 0;
       right: 0;
-      top: 7px;
+      top: 0;
       bottom: 0;
       z-index: 22;
       pointer-events: none;
       display: flex;
       align-items: center;
       justify-content: center;
-      max-width: 24px;
+      width: 24px;
+      height: 24px;
       margin: auto;
+      background-image: url("images/icons/chat.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
     }
     img {
       width: 100%;

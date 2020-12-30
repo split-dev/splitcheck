@@ -13,6 +13,20 @@
     color: #335491;
     font-weight: 500;
   }
+  .modal-content {
+    > .modal-body {
+      @media (max-width: 575px) {
+        padding: 15px !important;
+        overflow-x: hidden;
+      }
+      .modal-invite__block {
+        @media (max-width: 575px) {
+          max-width: 94%;
+        }
+      }
+    }
+  }
+
   .max-text {
     position: relative;
     textarea {

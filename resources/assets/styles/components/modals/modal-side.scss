@@ -24,7 +24,7 @@
 .modal.left .modal-content,
 .modal.right .modal-content {
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
   border-radius: 0;
   padding: 0;
 

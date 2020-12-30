@@ -87,6 +87,53 @@ export default {
           $('.store-link ul').css('width', width + 'px')
         }
       }
+
+      //* ion-rangeslider
+    {
+      if($('.js-range-slider').hasClass('js-range-slider')) {
+        const $range = $('.js-range-slider.form__range');
+      const min = 0;
+      const max = 2000;
+      const marks = [25, 500, 1000];
+
+      const convertToPercent = (num) => {
+        return (num - min) / (max - min) * 100;
+      }
+
+      const addMarks = ($slider) => {
+        var html = '';
+        var left = 0;
+        var left_p = '';
+        var transformLeft = '';
+        var i;
+
+        for (i = 0; i < marks.length; i++) {
+            left = convertToPercent(marks[i]);
+            left_p = left + '%';
+            transformLeft = '-' + left + '%';
+            html += '<span class="form__range-mark" style="left: ' + left_p + '; transform: translateX(' + transformLeft + ');">';
+            html += '$' + marks[i];
+            html += '</span>';
+        }
+
+        $slider.append(html);
+      }
+
+      $range.ionRangeSlider({
+        type: 'double',
+        grid: false,
+        min: min,
+        max: max,
+        from: 25,
+        to: 500,
+        step: 5,
+        prefix: '$',
+        onStart: function(data) {
+          addMarks(data.slider);
+      },
+      });
+      }
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

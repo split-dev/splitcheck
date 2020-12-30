@@ -198,6 +198,7 @@
       &:before {
         top: 0 !important;
         content: url("images/icons/close-24px-white.svg") !important;
+        background-image: none !important;
       }
     }
     &::before {
@@ -381,6 +382,9 @@
             background-repeat: no-repeat;
             margin-right: 15px;
             margin-bottom: 13px;
+            & ~ div {
+              width: 100%;
+            }
           }
           > div {
             strong {
@@ -390,7 +394,6 @@
               line-height: 22px;
               display: inline-block;
               margin-bottom: 8px;
-              width: 100%;
             }
           }
           .comment-product__price {

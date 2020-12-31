@@ -30,4 +30,12 @@
       }
     }
   }
+  .search-result {
+    @media (max-width: 525px) {
+      flex-direction: column-reverse;
+      .search-result__right {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }

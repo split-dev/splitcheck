@@ -27,6 +27,11 @@
       "url": "/shop.html"
     },
     {
+      "title": "Shop search",
+      "description": "shop search",
+      "url": "/shop-search.html"
+    },
+    {
       "title": "Profile",
       "description": "profile",
       "url": "/profile.html"

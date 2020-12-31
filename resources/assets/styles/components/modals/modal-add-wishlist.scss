@@ -4,6 +4,9 @@
 @import "../../bootstrap-utils";
 
 .modal.right.modal-add-wishlist {
+  .modal-border {
+    max-width: none;
+  }
   .modal-content {
     .modal-body {
       padding: 24px;

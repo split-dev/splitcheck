@@ -4,11 +4,21 @@
 @import "../../bootstrap-utils";
 
 .modal.modal-shop-another {
+  padding-right: 0 !important;
   .modal-dialog {
     @media (min-width: 750px) {
       max-width: 720px;
     }
 
+    .shop-another__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        line-height: 16px;
+        margin-bottom: 2px;
+      }
+    }
     .modal-body {
       padding-top: 0;
       form {

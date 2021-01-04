@@ -680,8 +680,21 @@ export default {
   })
 
   if($('.icon-paperclip').hasClass('icon-paperclip')) {
-    console.log(true);
+    //const containerCrop = document.querySelector('.drop-photo__start--bg');
+    const dropZone = document.querySelectorAll('.add-files .drop-photo');
+
+      const myDropzoneFiles = new Dropzone(dropZone[0], {
+        url: '/file/coments',
+        thumbnailWidth: 120,
+        thumbnailHeight: 120,
+        maxFiles: 5,
+      });
   }
+
+  $('.form-add-comment__user select').on('select2:select', function (e) { 
+    var data = e.params.data;
+    $('.form-add-comment__user figure span').text(data.title)
+});
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

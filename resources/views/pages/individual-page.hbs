@@ -48,8 +48,7 @@
                             <!-- head menu -->
                             <ul class="head-links__list d-flex align-items-center list-unstyled mb-0">
                                 <li class="head-links__item d-flex align-items-center">
-                                    <a href="index.html"
-                                        class="head-links__link position-relative">
+                                    <a href="index.html" class="head-links__link position-relative">
                                         <!-- add class "active" <i class="icon icon-home"></i> what would the icon change -->
                                         <i class="icon icon-home"></i>
                                     </a>
@@ -379,34 +378,34 @@
                                                     </li>
                                                 </ul>
                                                 <div class="reaction__pop">
-                                                        <ul class="smile">
-                                                            <li>
-                                                                <i class="like"></i>
-                                                                <span>like</span>
-                                                                <span>200</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="heart"></i>
-                                                                <span>love</span>
-                                                                <span>170</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="happy"></i>
-                                                                <span>joy</span>
-                                                                <span>2</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="surprised"></i>
-                                                                <span>wow</span>
-                                                                <span>65</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="angry"></i>
-                                                                <span>angry</span>
-                                                                <span>0</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                                 <span>56</span>
                                             </div>
                                             <span class="reaction__text">0 comments</span>
@@ -571,23 +570,48 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <form action="#" class="comments-box__form">
-                                        <div class="comments-box__area">
-                                            <textarea placeholder="Leave your thoughts here"></textarea>
-                                            <div class="comments-box__bottom">
-                                                <div class="comments-box__left">
-                                                    <div class="comments-box__author">
+                                    <form action="#" class="form form-add-comment comments-box__form mw-100 p-0">
+                                        <div class="form-add-comment__wrap">
+                                            <div class="form-add-comment__body">
+                                                <div class="form-add-comment__content"
+                                                    placeholder="Leave your thoughts here" contenteditable="true">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="form-add-comment__footer d-flex align-items-center justify-content-between">
+                                                <div class="form-add-comment__user">
+                                                    <figure
+                                                        class="form-add-comment__img form-add-comment__img--no-img position-relative">
+                                                        <img src="images/profiles/user-1.png" alt="avatar">
                                                         <span>AD</span>
+                                                    </figure>
+                                                    <div
+                                                        class="form__single form__single--select form__single--select-default form__single--fluid">
+                                                        <select class="form__select form__select--default"
+                                                            data-toggle="select">
+                                                            <option value="user-1" title="TS">Terry Smith</option>
+                                                            <option value="user-1" title="TW">Terry Will Green
+                                                            </option>
+                                                        </select>
                                                     </div>
+                                                    <span href="#" class="form-add-comment__btn-arrow">
+                                                        <i class="icon icon-arrow"></i>
+                                                    </span>
                                                 </div>
-                                                <div class="comments-box__right">
-                                                    <a href="#">
-                                                        <img src="images/icons/paperclip-solid.svg" alt="">
-                                                    </a>
-                                                    <a href="#">
-                                                        <img src="images/icons/send.svg" alt="send">
-                                                    </a>
-                                                </div>
+                                                <ul
+                                                    class="form-add-comment__list position-relative d-flex align-items-center list-unstyled mb-0">
+                                                    <li class="form-add-comment__item">
+                                                        <a href="#" class="form-add-comment__btn position-relative">
+                                                            <i class="icon icon-paperclip" data-toggle="modal"
+                                                                data-target="#add-files"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="form-add-comment__item">
+                                                        <button class="form-add-comment__btn position-relative">
+                                                            <i class="icon icon-paperplane"></i>
+                                                        </button>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </form>
@@ -647,34 +671,34 @@
                                                     </li>
                                                 </ul>
                                                 <div class="reaction__pop">
-                                                        <ul class="smile">
-                                                            <li>
-                                                                <i class="like"></i>
-                                                                <span>like</span>
-                                                                <span>200</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="heart"></i>
-                                                                <span>love</span>
-                                                                <span>170</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="happy"></i>
-                                                                <span>joy</span>
-                                                                <span>2</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="surprised"></i>
-                                                                <span>wow</span>
-                                                                <span>65</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="angry"></i>
-                                                                <span>angry</span>
-                                                                <span>0</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                                 <span>56</span>
                                             </div>
                                             <span class="reaction__text">0 comments</span>
@@ -801,34 +825,34 @@
                                                     </li>
                                                 </ul>
                                                 <div class="reaction__pop">
-                                                        <ul class="smile">
-                                                            <li>
-                                                                <i class="like"></i>
-                                                                <span>like</span>
-                                                                <span>200</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="heart"></i>
-                                                                <span>love</span>
-                                                                <span>170</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="happy"></i>
-                                                                <span>joy</span>
-                                                                <span>2</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="surprised"></i>
-                                                                <span>wow</span>
-                                                                <span>65</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="angry"></i>
-                                                                <span>angry</span>
-                                                                <span>0</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                                 <span>56</span>
                                             </div>
                                             <span class="reaction__text">0 comments</span>
@@ -952,34 +976,34 @@
                                                     </li>
                                                 </ul>
                                                 <div class="reaction__pop">
-                                                        <ul class="smile">
-                                                            <li>
-                                                                <i class="like"></i>
-                                                                <span>like</span>
-                                                                <span>200</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="heart"></i>
-                                                                <span>love</span>
-                                                                <span>170</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="happy"></i>
-                                                                <span>joy</span>
-                                                                <span>2</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="surprised"></i>
-                                                                <span>wow</span>
-                                                                <span>65</span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="angry"></i>
-                                                                <span>angry</span>
-                                                                <span>0</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    <ul class="smile">
+                                                        <li>
+                                                            <i class="like"></i>
+                                                            <span>like</span>
+                                                            <span>200</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="heart"></i>
+                                                            <span>love</span>
+                                                            <span>170</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="happy"></i>
+                                                            <span>joy</span>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="surprised"></i>
+                                                            <span>wow</span>
+                                                            <span>65</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="angry"></i>
+                                                            <span>angry</span>
+                                                            <span>0</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                                 <span>56</span>
                                             </div>
                                             <span class="reaction__text">0 comments</span>
@@ -1225,6 +1249,7 @@
     <!-- Modals -->
     {{> ../common/modals/create-goss }}
     {{> ../common/modals/menu-mobile }}
+    {{> ../common/modals/add-files }}
     {{> ../common/modals/add-photo }}
     {{> ../common/modals/user-profile-menu }}
     {{> ../common/modals/share-product }}

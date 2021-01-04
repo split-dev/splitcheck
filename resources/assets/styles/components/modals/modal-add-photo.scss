@@ -3,7 +3,8 @@
 @import "../../mixins";
 @import "../../bootstrap-utils";
 
-.add-photo {
+.add-photo,
+.add-files {
   .modal-header {
     padding-top: 0;
     padding-bottom: 40px;

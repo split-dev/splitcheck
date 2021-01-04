@@ -1,0 +1,21 @@
+div.drop-files {
+  &.dz-started {
+    display: block !important;
+  }
+  .dz-image {
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    width: 120px !important;
+    height: 120px !important;
+    position: relative !important;
+    display: block !important;
+    z-index: 10 !important;
+  }
+  .dz-preview {
+    max-width: 120px;
+  }
+  .dz-details {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}

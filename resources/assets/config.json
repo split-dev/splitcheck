@@ -26,6 +26,7 @@
       "./styles/components/modals/modal-create-goss.scss",
       "./styles/components/modals/modal-menu-mobile.scss",
       "./styles/components/modals/modal-add-photo.scss",
+      "./styles/components/modals/modal-add-files.scss",
       "./styles/components/modals/modal-user-profile-menu.scss",
       "./styles/components/modals/modal-share-product.scss",
       "./styles/components/modals/modal-add-timeline-product.scss",
@@ -48,7 +49,6 @@
       "./styles/components/modals/modal-check.scss",
       "./styles/components/modals/modal-recurrent.scss",
       "./styles/components/modals/modal-blog.scss"
-      
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",
@@ -74,6 +74,7 @@
     "components/modals/modal-create-goss": "./styles/components/modals/modal-create-goss.scss",
     "components/modals/modal-menu-mobile": "./styles/components/modals/modal-menu-mobile.scss",
     "components/modals/modal-add-photo": "./styles/components/modals/modal-add-photo.scss",
+    "components/modals/modal-add-files": "./styles/components/modals/modal-add-files.scss",
     "components/modals/user-profile-menu": "./styles/components/modals/modal-user-profile-menu.scss",
     "components/modals/modal-share-product": "./styles/components/modals/modal-share-product.scss",
     "components/modals/modal-add-timeline-product": "./styles/components/modals/modal-add-timeline-product.scss",

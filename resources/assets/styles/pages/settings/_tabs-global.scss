@@ -97,6 +97,10 @@
       margin-top: 10px;
     }
     .account-preferences__block {
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-bottom: 40px;
+      }
       &:first-child {
         margin-bottom: 60px;
       }
@@ -106,7 +110,7 @@
         }
       }
       &:nth-child(5) {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         .blue-span {
           margin-bottom: 10px;
         }
@@ -141,6 +145,7 @@
       }
     }
   }
+
   .community-spirit {
     .account-preferences__check {
       margin-bottom: 0;
@@ -214,6 +219,11 @@
       }
       &:last-child {
         margin-bottom: 0;
+      }
+      &:nth-child(5) {
+        .account-preferences__check {
+          margin-bottom: 0 !important;
+        }
       }
       .bold-span {
         margin-top: 10px;

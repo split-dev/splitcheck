@@ -7,29 +7,28 @@
 
 .settings {
   .aside-left {
-    margin-top: 50px;
+    margin-top: 20px;
     @media (max-width: 991px) {
       margin-top: 0;
     }
+    .nav-item {
+      text-align: left !important;
+    }
   }
-  .blue-span {
-    color: #315293 !important;
-  }
+
   .other-links {
     margin-top: 15px;
   }
-  .tab-content {
-    margin-left: 30px;
-    @media (max-width: 991px) {
-      margin-left: 0;
-    }
-  }
+
   .select-before {
     label {
       margin-left: 10px;
     }
   }
   .account-preferences__block {
+    .form__single {
+      max-width: 328px;
+    }
     b {
       margin-top: 25px;
     }

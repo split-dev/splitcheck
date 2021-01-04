@@ -47,6 +47,7 @@
           opacity: 0;
           z-index: -1;
           background-color: #f8f9fb;
+          display: none;
         }
         &:hover {
           &::before {

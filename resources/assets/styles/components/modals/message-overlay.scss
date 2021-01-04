@@ -46,13 +46,12 @@
           height: 48px;
           max-height: 48px;
           min-height: 48px;
-          opacity: 0;
           z-index: -1;
-          background-color: #f8f9fb;
+          background-color: #fff;
         }
         &:hover {
           &::before {
-            opacity: 1;
+            background-color: #f8f9fb;
           }
           .message__detail {
             strong,

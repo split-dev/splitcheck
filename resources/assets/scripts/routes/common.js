@@ -7,8 +7,6 @@ import Flatpickr from 'flatpickr';
 import Dropzone from 'dropzone';
 import 'select2/dist/js/select2.full';
 
-// import '@chenfengyuan/datepicker/dist/datepicker.min';
-
 export default {
   init() {
     Dropzone.autoDiscover = false;
@@ -679,11 +677,10 @@ export default {
     $('#menu-mobile--not-shop').modal('hide');
   })
 
-  if($('.icon-paperclip').hasClass('icon-paperclip')) {
-    //const containerCrop = document.querySelector('.drop-photo__start--bg');
-    const dropZone = document.querySelectorAll('.add-files .drop-photo');
+  if($('.form-add-comment .icon-paperclip').hasClass('icon-paperclip')) {
+    const dropZoneEl = document.querySelectorAll('.add-files .drop-files');
 
-      const myDropzoneFiles = new Dropzone(dropZone[0], {
+      const myDropzoneFiles = new Dropzone(dropZoneEl[0], {
         url: '/file/coments',
         thumbnailWidth: 120,
         thumbnailHeight: 120,

@@ -328,11 +328,12 @@ export default {
 
     //* Dropzone and Cropper
     {
-      if($('.drop-photo').hasClass('drop-photo')) {
+      if($('.drop-photo--over').hasClass('drop-photo--over')) {
+        const dropZoneEl = document.querySelectorAll('.add-photo .drop-photo');
         const btnCrop = document.querySelector('.btn-drop-photo-crop');
       const containerCrop = document.querySelector('.drop-photo__start');
 
-      const myDropzone = new Dropzone('.drop-photo', {
+      const myDropzone = new Dropzone(dropZoneEl[0], {
         url: '/file/post',
         thumbnailWidth: null,
         thumbnailHeight: null,

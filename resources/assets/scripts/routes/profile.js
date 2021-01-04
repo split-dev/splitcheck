@@ -615,11 +615,14 @@ export default {
 
     //* Dropzone and Cropper
     {
+      
       if($('.profile-face__background').hasClass('profile-face__background')) {
+        const dropZoneEl = document.querySelectorAll('.add-photo--background .drop-photo--bg');
+        console.log(dropZoneEl)
         const btnCrop = document.querySelector('.btn-drop-photo-crop--bg');
       const containerCrop = document.querySelector('.drop-photo__start--bg');
 
-      const myDropzone = new Dropzone('.drop-photo--bg', {
+      const myDropzone = new Dropzone(dropZoneEl[0], {
         url: '/file/post',
         thumbnailWidth: null,
         thumbnailHeight: null,

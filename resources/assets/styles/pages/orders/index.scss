@@ -7,6 +7,14 @@
 @import "orders-dispute";
 
 .orders {
+  .other-links__link.this {
+    i {
+      background-image: url("images/orders/order-ship.png") !important;
+    }
+    span {
+      color: #f77d0e !important;
+    }
+  }
   .section-content__title {
     padding-left: 20px;
   }

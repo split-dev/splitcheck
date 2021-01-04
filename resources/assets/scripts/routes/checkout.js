@@ -19,6 +19,9 @@ export default {
         }
       });
       }
+      $('.form-radio').click( function() {
+        $(this).next().slideToggle(400);
+      })
       if (('.checkout__slider-container').hasClass('checkout__slider-container')) {
         var swiper = new Swiper('.checkout__slider.swiper-container', {
             slidesPerView: 2,

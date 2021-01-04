@@ -1,4 +1,16 @@
+#status {
+  .modal-content {
+    @media (max-width: 360px) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+}
 .modal-recurrent {
+  .text-blue {
+    color: #315293;
+    font-size: 14px;
+  }
   &__btn {
     display: flex;
     justify-content: center;
@@ -15,6 +27,7 @@
   .modal-status {
     display: flex;
     width: 100%;
+
     ul {
       position: relative;
       li {
@@ -22,19 +35,34 @@
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 15px;
+        @media (max-width: 575px) {
+          font-size: 14px;
+        }
         span {
           margin-right: 10px;
+          @media (max-width: 365px) {
+            margin-right: 3px;
+          }
         }
         span,
         small {
           color: #828282;
           font-size: 16px;
           font-weight: 400;
+          @media (max-width: 575px) {
+            font-size: 14px;
+          }
         }
       }
       &:first-child {
         margin-right: 46px;
         padding-left: 25px;
+        @media (max-width: 575px) {
+          margin-right: 10px;
+        }
+        @media (max-width: 365px) {
+          margin-right: 5px;
+        }
         &::before {
           position: absolute;
           content: url("images/orders/status-line.svg");

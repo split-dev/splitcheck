@@ -43,9 +43,13 @@
     width: 100%;
     a {
       font-weight: $font-weight-medium;
-      color: #335491;
+
+      &:last-child {
+        color: #f77d0e;
+      }
       &:first-child {
         margin-right: 30px;
+        color: #335491;
       }
     }
   }

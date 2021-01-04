@@ -34,6 +34,11 @@ strong {
   display: none;
   position: fixed;
   top: 70px;
+  &.overlay {
+    &::before {
+      background-image: url("images/settings/blue-no-opacity.svg") !important;
+    }
+  }
   &::before {
     transition: 0.3s;
     content: "";

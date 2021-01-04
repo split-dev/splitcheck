@@ -14,6 +14,7 @@
   @media (max-width: 991px) {
     max-width: 100%;
     min-width: auto;
+    overflow: hidden;
   }
   .hide {
     display: none !important;
@@ -580,10 +581,13 @@
       margin-right: 8px !important;
     }
     @media (max-width: 400px) {
-      width: 98px;
+      width: 32%;
       height: 104px;
       margin-right: 6px !important;
       padding: 12px 0 12px 6px;
+      &:nth-child(3n + 3) {
+        margin-right: 0 !important;
+      }
     }
     strong {
       color: theme-color("dark-blue");

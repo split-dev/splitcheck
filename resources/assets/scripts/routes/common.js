@@ -4,12 +4,14 @@ import 'bootstrap/js/dist/modal';
 import Swiper from 'swiper/swiper-bundle';
 import Headroom from 'headroom.js';
 import Flatpickr from 'flatpickr';
+import Dropzone from 'dropzone';
 import 'select2/dist/js/select2.full';
 
 // import '@chenfengyuan/datepicker/dist/datepicker.min';
 
 export default {
   init() {
+    Dropzone.autoDiscover = false;
 
 
     //eslint-disable-next-line no-unused-vars
@@ -670,8 +672,16 @@ export default {
   })
 
   $('.modal-menu-mobile a[data-toggle="modal"]').click( function() {
-    $('#menu-mobile').modal('hide')
+    $('#menu-mobile').modal('hide');
   })
+
+  $('.modal-menu-mobile--not-shop a[data-toggle="modal"]').click( function() {
+    $('#menu-mobile--not-shop').modal('hide');
+  })
+
+  if($('.icon-paperclip').hasClass('icon-paperclip')) {
+    console.log(true);
+  }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

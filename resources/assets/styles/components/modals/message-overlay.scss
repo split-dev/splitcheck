@@ -43,11 +43,12 @@
           left: -30px;
           width: 1000px;
           top: 0;
-          bottom: 0;
+          height: 48px;
+          max-height: 48px;
+          min-height: 48px;
           opacity: 0;
           z-index: -1;
           background-color: #f8f9fb;
-          display: none;
         }
         &:hover {
           &::before {

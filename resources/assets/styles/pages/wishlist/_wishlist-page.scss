@@ -9,6 +9,7 @@
       &:last-child {
         &::before {
           margin-right: 15px;
+          margin-left: 2px;
         }
       }
     }
@@ -20,6 +21,9 @@
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     background-color: #fff;
+    @media (max-width: 991px) {
+      min-width: 100%;
+    }
     &-bottom {
       margin-top: 27px;
     }
@@ -65,9 +69,15 @@
   .recomend {
     margin-bottom: 22px;
     text-align: center;
+    &::after {
+      @media (max-width: 575px) {
+        max-width: 127px !important;
+      }
+    }
   }
   &__text-block {
     margin-left: 50px;
+    margin-top: 10px;
     a {
       margin-top: 20px;
       border: 2px solid #35558f !important;
@@ -111,7 +121,7 @@
     }
   }
   .profile__list {
-    width: 81%;
+    width: 82%;
     @media (max-width: 991px) {
       width: 100%;
     }

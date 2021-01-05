@@ -161,6 +161,13 @@ export default {
       $(this).parent().parent().toggleClass('open');
     })
 
+    //product link mobile scroll
+    if($('.main-item .nav-tabs').hasClass('nav-tabs')) {
+      if(window.innerWidth < 575) {
+        let width = window.innerWidth;
+        $('.nav-tabs').css('width', width + 'px')
+      }
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

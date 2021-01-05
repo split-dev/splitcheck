@@ -88,6 +88,7 @@ export default {
         }
       }
 
+
       //* ion-rangeslider
     {
       if($('.js-range-slider').hasClass('js-range-slider')) {

@@ -692,6 +692,26 @@ export default {
     var data = e.params.data;
     $('.form-add-comment__user figure span').text(data.title)
 });
+
+
+    function calcEl (arrayEl) {
+      for(let i = 0; i < arrayEl.length; i++) {
+        let widthEl = $(arrayEl[i]).text().length;
+        $(arrayEl[i]).css('width', (widthEl * 7.5) + 'px');
+      }
+    }
+    function calcClick() {
+      let checkOn = $('.check-on');
+      let checkOff = $('.check-off');
+      let arrayEl = [];
+      arrayEl.push(...checkOn);
+      arrayEl.push(...checkOff);
+      calcEl(arrayEl)
+    }
+    //calc animate input radio
+    if($('.check-on').hasClass('check-on')) {
+      calcClick();
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

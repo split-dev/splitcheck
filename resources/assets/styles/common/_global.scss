@@ -18,6 +18,11 @@ input[type="checkbox"]:checked ~ .check-on {
 
 .check-on {
   font-weight: $font-weight-normal;
+  white-space: nowrap;
+}
+
+.check-off {
+  white-space: nowrap;
 }
 .section-blur {
   position: relative;

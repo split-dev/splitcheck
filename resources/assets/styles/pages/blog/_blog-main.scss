@@ -18,8 +18,7 @@
     padding-bottom: 90px;
     position: relative;
     display: flex;
-    &::before {
-      content: url("images/blog/follow-left.png");
+    &-before {
       position: absolute;
       left: 20px;
       top: 170px;
@@ -27,8 +26,7 @@
         display: none;
       }
     }
-    &::after {
-      content: url("images/blog/follow-right.png");
+    &-after {
       position: absolute;
       right: -40px;
       bottom: 55px;

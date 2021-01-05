@@ -1,5 +1,13 @@
 .blog {
   &-user {
+    .aside-right {
+      margin-left: 0 !important;
+      .section-content {
+        @media (max-width: 1199px) {
+          min-width: 100% !important;
+        }
+      }
+    }
     .mini-post__right {
       margin-bottom: 0;
       margin-left: 0;
@@ -47,7 +55,10 @@
     }
     .section-mobile {
       display: none;
-      padding: 0 10px 0 10px;
+      padding: 0 !important;
+      @media (max-width: 575px) {
+        padding: 0 10px 0 10px !important;
+      }
 
       .big-post__top {
         max-width: 100% !important;

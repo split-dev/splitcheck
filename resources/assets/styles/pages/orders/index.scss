@@ -21,6 +21,17 @@
   .swiper-button-next,
   .swiper-button-prev {
     display: flex !important;
+    width: 32px;
+    height: 32px;
+    box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .swiper-button-prev {
+    left: 13px;
+  }
+  .swiper-button-next {
+    right: 13px;
   }
   .section-content__title {
     @media (max-width: 575px) {
@@ -47,13 +58,14 @@
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     background-color: #fff;
-  }
-  .internal-card__slider {
-    margin-bottom: 0;
-  }
-  .slider-recomend__container {
-    max-width: 885px;
-    padding: 12px 20px 12px 57px;
+    padding: 12px 57px 12px 57px;
+    max-width: 930px;
+    @media (max-width: 1260px) {
+      max-width: 800px;
+    }
+    @media (max-width: 1199px) {
+      max-width: 720px;
+    }
     @media (max-width: 767px) {
       padding: 12px 24px 30px 24px;
     }

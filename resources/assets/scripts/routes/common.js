@@ -677,7 +677,7 @@ export default {
     $('#menu-mobile--not-shop').modal('hide');
   })
 
-  if($('.form-add-comment .icon-paperclip').hasClass('icon-paperclip')) {
+  if($('.modal.add-files').hasClass('add-files')) {
     const dropZoneEl = document.querySelectorAll('.add-files .drop-files');
 
       const myDropzoneFiles = new Dropzone(dropZoneEl[0], {

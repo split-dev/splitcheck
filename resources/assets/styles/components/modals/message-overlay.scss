@@ -43,14 +43,15 @@
           left: -30px;
           width: 1000px;
           top: 0;
-          bottom: 0;
-          opacity: 0;
+          height: 48px;
+          max-height: 48px;
+          min-height: 48px;
           z-index: -1;
-          background-color: #f8f9fb;
+          background-color: #fff;
         }
         &:hover {
           &::before {
-            opacity: 1;
+            background-color: #f8f9fb;
           }
           .message__detail {
             strong,

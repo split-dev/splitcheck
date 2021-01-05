@@ -5,6 +5,12 @@
 @import "wishlist-page";
 
 .wishlist-page {
+  article {
+    .btn-border-orange {
+      color: #f97d00;
+      border: 2px solid #f97d00 !important;
+    }
+  }
   .wishlist-page__block {
     margin: auto;
   }

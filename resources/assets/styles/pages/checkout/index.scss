@@ -7,6 +7,11 @@
 @import "checkout-el";
 
 .checkout {
+  &__toggle {
+    &:hover {
+      cursor: pointer;
+    }
+  }
   &__slider-container {
     max-width: 255px;
     .swiper-button-next,

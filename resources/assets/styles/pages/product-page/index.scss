@@ -375,6 +375,9 @@
 
 .main-item {
   width: 67.6%;
+  @media (min-width: 992px) and (max-width: 1099px) {
+    width: 65.5%;
+  }
   @media (max-width: 991px) {
     width: 100%;
   }

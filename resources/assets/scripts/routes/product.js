@@ -95,7 +95,6 @@ export default {
       // left
     });
     
-    console.log('true');
     let mySwiper = new Swiper('.gallery-top', {
       slidesPerView: 1,
     thumbs: {

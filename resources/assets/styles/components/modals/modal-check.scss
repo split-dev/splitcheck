@@ -12,6 +12,9 @@
       padding: 25px 15px;
     }
   }
+  a.btn-border.btn-border--two {
+    font-size: 16px !important;
+  }
   .modal-header {
     padding-top: 0;
   }
@@ -152,7 +155,6 @@
       justify-content: center;
       height: 40px;
       border-radius: 5px;
-      border: 2px solid #ebeef4;
       color: #335491;
       font-weight: 500;
       font-size: 16px;

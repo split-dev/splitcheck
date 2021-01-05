@@ -490,8 +490,8 @@ export default {
     })
 
     //open mobile product
-    $('.options-cart:not(.stock)').click( function() {
-      $(this).toggleClass('open');
+    $('.options-cart:not(.stock) .arrow-open').click( function() {
+      $(this).parent().toggleClass('open');
       $(this).parent().find($('.options-cart__body')).slideToggle();
     })
 

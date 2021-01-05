@@ -9,9 +9,46 @@
   &__item {
     width: 100%;
     margin-bottom: 7px;
+    &.visit {
+      span {
+        color: #f97d00;
+      }
+      .icon-shipping {
+        background-image: url("images/icons/shipping-visit.svg");
+      }
+      .icon-book {
+        background-image: url("images/icons/place-visit.svg");
+      }
+      .icon-settings-oval {
+        background-image: url("images/icons/settings-oval-visit.svg");
+      }
+      .icon-social-media {
+        background-image: url("images/icons/social-media-visit.svg");
+      }
+      .icon-discount {
+        background-image: url("images/icons/discount-visit.svg");
+      }
+      .icon-mail {
+        background-image: url("images/icons/icon-mail-visit.svg");
+      }
+      .icon-group {
+        background-image: url("images/icons/icon-group-visit.svg");
+      }
+      .icon-heart {
+        background-image: url("images/icons/icon-heart-visit.svg");
+      }
+      .icon-notification {
+        background-image: url("images/icons/icon-heart-visit.svg");
+      }
+      .icon-setting {
+        background-image: url("images/icons/icon-setting-visit.svg");
+      }
+    }
     a {
       span {
         position: relative;
+        min-height: 29px;
+        display: inline-block;
         &::after {
           position: absolute;
           content: "";
@@ -23,6 +60,7 @@
           overflow: hidden;
           transition: 0.3s;
           left: 0;
+          bottom: 3px;
         }
       }
     }

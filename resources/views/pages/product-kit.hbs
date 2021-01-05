@@ -124,7 +124,100 @@
         </div>
     </div>
     <div class="section-blur theme-background-one" data-class="maze">
-        {{> ../common/header-next }}
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__left">
+                        <!-- <div class="header__burger">
+          <img src="images/icons/burger.svg" alt="">
+        </div> -->
+                        <a class="header__logo" href="/index.html">
+                            <img class="header__img-desktop" src="images/icons/w-logo.png" alt="logo">
+                            <img class="header__img-mobile" src="images/icons/logo-mobile.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <!-- form search -->
+                        <!-- add class: "search--active" -->
+                        <form action="#" id="search" class="search">
+
+                            <input type="search" name="search" class="search__input" placeholder="Search for something"
+                                id="search-input" autocomplete="off" />
+                            <button class="search__button" aria-label="search">
+                                <i class="icon icon-search"></i>
+                            </button>
+
+                            <div class="search__result">
+                                <ul class="search__result-list">
+                                    <li class="search__result-item d-flex align-items-center">
+                                        <p>
+                                            <b>pa</b>int
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header__right">
+                        <div class="head-links">
+                            <!-- head menu -->
+                            <ul class="head-links__list d-flex align-items-center list-unstyled mb-0">
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="index.html" class="head-links__link position-relative">
+                                        <!-- add class "active" <i class="icon icon-home"></i> what would the icon change -->
+                                        <i class="icon icon-home"></i>
+                                    </a>
+                                </li>
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="#" class="head-links__link position-relative">
+                                        <!-- add class "active" what would the icon change -->
+                                        <i class="icon icon-star"></i>
+                                    </a>
+                                </li>
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="shop.html?param=val&data=shop-another"
+                                        class="head-links__link position-relative head-links__link--active">
+                                        <!-- add class "active" what would the icon change -->
+                                        <i class="icon icon-offer"></i>
+                                    </a>
+                                </li>
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="#" data-toggle="modal" data-target="#cart"
+                                        class="head-links__link position-relative">
+                                        <!-- add class "active" what would the icon change -->
+                                        <i class="icon icon-cart"></i>
+                                    </a>
+                                </li>
+                                <li class="head-links__item d-flex align-items-center">
+                                    <a href="#" data-toggle="modal" data-target="#message-overlay"
+                                        class="head-links__link position-relative">
+                                        <!-- add class "active" what would the icon change -->
+                                        <i class="icon icon-head-mail"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /head menu -->
+                        </div>
+                        <div class="header__user">
+                            <a href="#menu-mobile" data-toggle="modal" data-target="#menu-mobile"
+                                class="personal-avatar personal-avatar--no-img position-relative d-flex d-lg-none align-items-center justify-content-center overflow-hidden">
+                                <img src="" alt="avatar">
+                                <span class="personal-symbol">JS</span>
+                            </a>
+                            <a href="#user-profile-menu" data-toggle="modal" data-target="#user-profile-menu"
+                                class="user-avatar user-avatar--no-img position-relative d-flex align-items-center justify-content-center overflow-hidden">
+                                <img class="user-avatar__img" src="" alt="avatar">
+                                <span class="user-avatar__symbol">AD</span>
+                            </a>
+                            <a href="#" class="mobile-link-arrow">
+                                <i class="icon icon-arrow"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="container">
             <div class="main-content position-relative d-flex align-items-start justify-content-between">
                 <div class="main-item">
@@ -987,7 +1080,7 @@
                                         <span>Estimated collection on Friday, December 04, 2020</span>
                                     </div>
                                     <span class="error">Limited stock in store!</span>
-                                    <a href="#" class="link-edit">Check stock in other stores</a>
+                                    <a href="#" data-toggle="modal" data-target="#check-store" class="link-edit">Check stock in other stores</a>
                                 </div>
                                 <div class="form">
                                     <div class="account-preferences__check">
@@ -1289,6 +1382,7 @@
     {{> ../common/modals/modal-invite }}
     {{> ../common/modals/modal-unlink }}
     {{> ../common/modals/add-photo-background }}
+    {{> ../common/modals/check-stores }}
     <!-- /Modals -->
 </body>
 

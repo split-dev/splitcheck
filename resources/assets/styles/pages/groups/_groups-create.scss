@@ -127,6 +127,9 @@
       background-color: #fff;
       padding: 24px;
       margin-bottom: 16px;
+      .btn-blue {
+        font-weight: 400 !important;
+      }
       textarea {
         padding-bottom: 90px !important;
       }
@@ -267,6 +270,15 @@
     margin-top: 50px;
   }
   &__create {
+    h5 {
+      text-transform: uppercase;
+      color: #335491;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 18px;
+      margin-bottom: 0;
+    }
     padding-right: 35px;
     @media (max-width: 991px) {
       padding-right: 0;
@@ -315,7 +327,7 @@
     padding: 24px 30px 30px 24px;
     margin-bottom: 25px;
     @media (max-width: 575px) {
-      margin-bottom: 0;
+      margin-bottom: 15px;
     }
     small {
       padding-left: 16px;

@@ -5,6 +5,18 @@
 @import "wishlist-page";
 
 .wishlist-page {
+  .aside-left {
+    @media (max-width: 1260px) {
+      min-width: 175px;
+      padding-right: 0;
+    }
+  }
+  article {
+    .btn-border-orange {
+      color: #f97d00;
+      border: 2px solid #f97d00 !important;
+    }
+  }
   .wishlist-page__block {
     margin: auto;
   }
@@ -33,7 +45,7 @@
     top: -5px;
     @media (max-width: 991px) {
       top: 0;
-      padding-top: 24px;
+      padding-top: 12px;
     }
   }
 }

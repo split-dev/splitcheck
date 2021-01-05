@@ -5,24 +5,24 @@ import Swiper from 'swiper/swiper-bundle';
 export default {
   init() {
       
-    if($('.orders__slider').hasClass('orders__slider')) {
-        let orderSlider = new Swiper('.internal-card__slider.swiper-container', {
+    if($('.orders__slider-container').hasClass('orders__slider-container')) {
+        let orderSlider = new Swiper('.orders__slider-card.swiper-container', {
             slidesPerView: 3,
             spaceBetween: 16,
             navigation: {
-              nextEl: '.internal-card__slider .swiper-button-next',
-              prevEl: '.internal-card__slider .swiper-button-prev',
+              nextEl: '.orders__slider-card .swiper-button-next',
+              prevEl: '.orders__slider-card .swiper-button-prev',
             },
             breakpoints: {
-              1199: {
+              1300: {
                 slidesPerView: 3,
                 spaceBetween: 16,
               },
-                991: {
+                1199: {
                   slidesPerView: 2,
                   spaceBetween: 16,
                 },
-                767: {
+                768: {
                   slidesPerView: 2,
                   spaceBetween: 8,
                 },
@@ -31,7 +31,15 @@ export default {
                   spaceBetween: 8,
                 },
               },
+        });
+        $('.orders__slider-container .swiper-button-prev').click( function(e) {
+          e.preventDefault();
+          orderSlider.slidePrev()
         })
+        $('.orders__slider-container .swiper-button-next').click( function(e) {
+          e.preventDefault();
+          orderSlider.slideNext()
+        });
     }
 
   },

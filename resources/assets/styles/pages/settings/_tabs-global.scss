@@ -292,9 +292,11 @@
       }
       .check-off {
         order: 1;
+        white-space: nowrap;
       }
       .check-on {
         order: 3;
+        white-space: nowrap;
       }
     }
     &__card {

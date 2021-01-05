@@ -637,15 +637,6 @@
   background-color: #fff;
   padding: 12px 8px;
   overflow: hidden;
-  &__single {
-    > span {
-      color: #f77d0e !important;
-      font-size: 18px !important;
-      font-weight: 500 !important;
-      letter-spacing: 0;
-      line-height: 18px !important;
-    }
-  }
   &__item {
     position: relative;
     display: flex;

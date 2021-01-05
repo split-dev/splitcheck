@@ -165,7 +165,7 @@ export default {
     if($('.main-item .nav-tabs').hasClass('nav-tabs')) {
       if(window.innerWidth < 575) {
         let width = window.innerWidth;
-        $('.nav-tabs').css('width', width + 'px')
+        $('.nav-tabs').css('width', (width - 25) + 'px')
       }
     }
   },

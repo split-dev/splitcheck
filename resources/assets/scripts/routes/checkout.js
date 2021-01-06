@@ -3,12 +3,24 @@ import Swiper from 'swiper/swiper-bundle';
 import 'bootstrap/js/dist/modal';
 export default {
   init() {
-    $('.checkout__box-header').click(function() {
-      $(this).next().slideToggle(400);
-    })
+    // $('.checkout__box-header').click(function() {
+    //   $(this).next().slideToggle(400);
+    // })
+
+    function toogleFunc(el, elArray) {
+      for(let i = 0; i < elArray.length; i++) {
+        $(elArray[i]).slideUp();
+      }
+      $(el).slideDown();
+    }
  
-    $('.checkout__toggle').click(function() {
-      $(this).next().slideToggle(400);
+    $('.checkout__members').click(function() {
+      if(!$(this).find($('.radio-custom')).prop('checked')) {
+        let elemThis = $(this).find($('.checkout__members-content'))
+        let arrayThis = $(this).parent().find($('.checkout__members-content'));
+      
+        toogleFunc(elemThis, arrayThis)
+      }
       
     });
     function initNumber(number, element) {

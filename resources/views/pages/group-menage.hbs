@@ -24,10 +24,10 @@
                     <div class="header__search">
                         <!-- form search -->
                         <!-- add class: "search--active" -->
-                        <form action="#" id="search" class="search">
+                        <form action="#" id="search3" class="search">
 
                             <input type="search" name="search" class="search__input" placeholder="Search for something"
-                                id="search-input" autocomplete="off" />
+                                id="search-input2" autocomplete="off" />
                             <button class="search__button" aria-label="search">
                                 <i class="icon icon-search"></i>
                             </button>
@@ -188,7 +188,7 @@
                         <div class="profile-face__background w-100 d-flex photo "
                             style="background-image: url('images/groups/groups__bg.jpg');">
                             <a href=" #add-photo--background" data-toggle="modal" class=" btn-blue-full"><img
-                                    src="images/icons/camera-24px.svg" alt="">Upload
+                                    src="images/icons/camera-24px.svg" alt="background">Upload
                                 cover photo</a>
                             <a href="#" class="btn-border">Or use colour
                                 <ul class="select-color">
@@ -250,7 +250,7 @@
                                                     class="personal-card d-flex align-items-center flex-column overflow-hidden">
                                                     <div
                                                         class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                                                        <img src="" alt="">
+                                                        <img src="" alt="avatar">
                                                         <span class="personal-card__symbol">JS</span>
                                                     </div>
                                                     <p class="personal-card__name">John Smith</p>
@@ -278,7 +278,7 @@
                                                     class="personal-card d-flex align-items-center flex-column overflow-hidden">
                                                     <div
                                                         class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                                                        <img src="" alt="">
+                                                        <img src="" alt="avatar">
                                                         <span class="personal-card__symbol">JS</span>
                                                     </div>
                                                     <p class="personal-card__name">John Smith</p>
@@ -306,7 +306,7 @@
                                                     class="personal-card d-flex align-items-center flex-column overflow-hidden">
                                                     <div
                                                         class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                                                        <img src="" alt="">
+                                                        <img src="" alt="avatar">
                                                         <span class="personal-card__symbol">JS</span>
                                                     </div>
                                                     <p class="personal-card__name">John Smith</p>
@@ -334,7 +334,7 @@
                                                     class="personal-card d-flex align-items-center flex-column overflow-hidden">
                                                     <div
                                                         class="personal-card__avatar personal-card__avatar--no-img d-flex align-items-center justify-content-center overflow-hidden">
-                                                        <img src="" alt="">
+                                                        <img src="" alt="avatar">
                                                         <span class="personal-card__symbol">JS</span>
                                                     </div>
                                                     <p class="personal-card__name">John Smith</p>
@@ -893,7 +893,8 @@
 
                                                 <div class="members__form form__single error">
                                                     <label class="form__label">Enter their e-mail</label>
-                                                    <input class="form__input" placeholder="e-mail here" type="text">
+                                                    <input class="form__input" id="email" placeholder="e-mail here"
+                                                        type="text">
 
                                                     <span class="form__symbol-error"></span>
                                                 </div>
@@ -914,7 +915,7 @@
                                             </div>
                                             <div class="d-flex justify-content-center members__form">
                                                 <a class="btn-blue w-100" href="#"><img src="images/groups/check.svg"
-                                                        alt="">Invite sent</a>
+                                                        alt="check">Invite sent</a>
                                             </div>
 
                                             <div class="d-flex flex-column members__block">
@@ -977,28 +978,28 @@
                                                 class="d-flex justify-content-between align-items-baseline members__invited">
                                                 <div
                                                     class="d-flex flex-column justify-content-center align-items-center">
-                                                    <img src="" alt="">
+                                                    <img src="" alt="avatar">
                                                     <p>Total</p>
                                                     <b>120</b>
                                                 </div>
 
                                                 <div
                                                     class="d-flex flex-column justify-content-center align-items-center">
-                                                    <img src="images/groups/joined.svg" alt="">
+                                                    <img src="images/groups/joined.svg" alt="joined">
                                                     <p>Joined</p>
                                                     <b>99</b>
                                                 </div>
 
                                                 <div
                                                     class="d-flex flex-column justify-content-center align-items-center">
-                                                    <img src="images/groups/cansel.svg" alt="">
+                                                    <img src="images/groups/cansel.svg" alt="cansel">
                                                     <p>Declined</p>
                                                     <b>1</b>
                                                 </div>
 
                                                 <div
                                                     class="d-flex flex-column justify-content-center align-items-center">
-                                                    <img src="images/groups/pending.svg" alt="">
+                                                    <img src="images/groups/pending.svg" alt="pending">
                                                     <p>Pending</p>
                                                     <b>99</b>
                                                 </div>
@@ -1026,9 +1027,11 @@
                                                                 <div
                                                                     class="groups__pending-icons d-flex justify-content-end align-items-center">
                                                                     <span class="groups__oval arrow"><img
-                                                                            src="images/groups/auto.svg" alt=""></span>
+                                                                            src="images/groups/auto.svg"
+                                                                            alt="arrow"></span>
                                                                     <span class="groups__oval close"><img
-                                                                            src="images/groups/close.svg" alt=""></span>
+                                                                            src="images/groups/close.svg"
+                                                                            alt="close"></span>
 
                                                                 </div>
                                                             </li>
@@ -1049,9 +1052,11 @@
                                                                 <div
                                                                     class="groups__pending-icons d-flex  justify-content-end align-items-center">
                                                                     <span class="groups__oval arrow"><img
-                                                                            src="images/groups/auto.svg" alt=""></span>
+                                                                            src="images/groups/auto.svg"
+                                                                            alt="arrow"></span>
                                                                     <span class="groups__oval close"><img
-                                                                            src="images/groups/close.svg" alt=""></span>
+                                                                            src="images/groups/close.svg"
+                                                                            alt="close"></span>
 
                                                                 </div>
                                                             </li>
@@ -1073,9 +1078,11 @@
                                                                 <div
                                                                     class="groups__pending-icons d-flex  justify-content-end align-items-center">
                                                                     <span class="groups__oval arrow"><img
-                                                                            src="images/groups/auto.svg" alt=""></span>
+                                                                            src="images/groups/auto.svg"
+                                                                            alt="arrow"></span>
                                                                     <span class="groups__oval close"><img
-                                                                            src="images/groups/close.svg" alt=""></span>
+                                                                            src="images/groups/close.svg"
+                                                                            alt="close"></span>
 
                                                                 </div>
 
@@ -1161,11 +1168,12 @@
 
             </div>
         </div>
+        {{> ../common/footer }}
     </div>
 
 
-    {{> ../common/footer }}
-    </div>
+
+
 
     <!-- Modals -->
     {{> ../common/modals/create-goss }}

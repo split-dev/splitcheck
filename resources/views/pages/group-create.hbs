@@ -24,7 +24,7 @@
                     <div class="header__search">
                         <!-- form search -->
                         <!-- add class: "search--active" -->
-                        <form action="#" id="search" class="search">
+                        <form action="#" id="search2" class="search">
 
                             <input type="search" name="search" class="search__input" placeholder="Search for something"
                                 id="search-input" autocomplete="off" />
@@ -215,7 +215,7 @@
                                 {{!-- class dotted adds a line with dots --}}
                                 <strong>Group 1</strong>
                                 <span>|</span>
-                                <a href="#">Edit grop name</a href="#">
+                                <a href="#">Edit grop name</a>
                             </div>
                             <div class="profile-face__name groups__face-name d-flex align-items-end">
                                 {{!-- class dotted adds a line with dots --}}
@@ -608,10 +608,10 @@
                                     </div>
 
                                     <div class="members__search">
-                                        <form action="" id="search" class="search">
+                                        <form action="" id="search3" class="search">
 
                                             <input type="search" name="search" class="search__input"
-                                                placeholder="Search for someone" id="search-input" autocomplete="off">
+                                                placeholder="Search for someone" id="search-input4" autocomplete="off">
                                             <button class="search__button" aria-label="search">
                                                 <i class="icon icon-search"></i>
                                             </button>
@@ -1083,9 +1083,10 @@
                                                     <span class="form__symbol-error"></span>
                                                 </div>
 
-                                                <div class="members__form form__single error">
+                                                <div class="members__form form__single ">
                                                     <label class="form__label">Enter their e-mail</label>
-                                                    <input class="form__input" placeholder="e-mail here" type="text">
+                                                    <input class="form__input" id="email" placeholder="e-mail here"
+                                                        type="email">
 
                                                     <span class="form__symbol-error"></span>
                                                 </div>
@@ -1169,28 +1170,28 @@
                                                 class="d-flex justify-content-between align-items-baseline members__invited">
                                                 <div
                                                     class="d-flex flex-column justify-content-center align-items-center">
-                                                    <img src="" alt="">
+                                                    <img src="" alt="avatar">
                                                     <p>Total</p>
                                                     <b>120</b>
                                                 </div>
 
                                                 <div
                                                     class="d-flex flex-column justify-content-center align-items-center">
-                                                    <img src="images/groups/joined.svg" alt="">
+                                                    <img src="images/groups/joined.svg" alt="avatar">
                                                     <p>Joined</p>
                                                     <b>99</b>
                                                 </div>
 
                                                 <div
                                                     class="d-flex flex-column justify-content-center align-items-center">
-                                                    <img src="images/groups/cansel.svg" alt="">
+                                                    <img src="images/groups/cansel.svg" alt="avatar">
                                                     <p>Declined</p>
                                                     <b>1</b>
                                                 </div>
 
                                                 <div
                                                     class="d-flex flex-column justify-content-center align-items-center">
-                                                    <img src="images/groups/pending.svg" alt="">
+                                                    <img src="images/groups/pending.svg" alt="avatar">
                                                     <p>Pending</p>
                                                     <b>99</b>
                                                 </div>
@@ -1218,9 +1219,11 @@
                                                                 <div
                                                                     class="groups__pending-icons d-flex justify-content-end align-items-center">
                                                                     <span class="groups__oval arrow"><img
-                                                                            src="images/groups/auto.svg" alt=""></span>
+                                                                            src="images/groups/auto.svg"
+                                                                            alt="arrow"></span>
                                                                     <span class="groups__oval close"><img
-                                                                            src="images/groups/close.svg" alt=""></span>
+                                                                            src="images/groups/close.svg"
+                                                                            alt="close"></span>
 
                                                                 </div>
                                                             </li>
@@ -1241,9 +1244,11 @@
                                                                 <div
                                                                     class="groups__pending-icons d-flex  justify-content-end align-items-center">
                                                                     <span class="groups__oval arrow"><img
-                                                                            src="images/groups/auto.svg" alt=""></span>
+                                                                            src="images/groups/auto.svg"
+                                                                            alt="arrow"></span>
                                                                     <span class="groups__oval close"><img
-                                                                            src="images/groups/close.svg" alt=""></span>
+                                                                            src="images/groups/close.svg"
+                                                                            alt="close"></span>
 
                                                                 </div>
                                                             </li>
@@ -1265,9 +1270,11 @@
                                                                 <div
                                                                     class="groups__pending-icons d-flex  justify-content-end align-items-center">
                                                                     <span class="groups__oval arrow"><img
-                                                                            src="images/groups/auto.svg" alt=""></span>
+                                                                            src="images/groups/auto.svg"
+                                                                            alt="arrow"></span>
                                                                     <span class="groups__oval close"><img
-                                                                            src="images/groups/close.svg" alt=""></span>
+                                                                            src="images/groups/close.svg"
+                                                                            alt="close"></span>
 
                                                                 </div>
 
@@ -1353,11 +1360,13 @@
 
             </div>
         </div>
+
+        {{> ../common/footer }}
     </div>
 
 
-    {{> ../common/footer }}
-    </div>
+
+
 
     <!-- Modals -->
     {{> ../common/modals/create-goss }}

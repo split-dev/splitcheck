@@ -7,10 +7,10 @@ export default {
       $(this).next().slideToggle(400);
     })
  
-    $('.form-radio').click(function() {
+    $('.checkout__toggle').click(function() {
       $(this).next().slideToggle(400);
       
-    })
+    });
     function initNumber(number, element) {
         let allSlide = $(element).find($('.swiper-slide')).length;
         let counter = Math.floor(number);

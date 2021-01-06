@@ -230,6 +230,9 @@
   }
 
   .profile-list {
+    .text-orange {
+      font-weight: 500;
+    }
     .text-bold {
       font-weight: 500;
       color: #0b0212;
@@ -277,6 +280,12 @@
     font-weight: 400;
   }
   &__slider {
+    .swiper-button-prev {
+      left: -30px !important;
+    }
+    .swiper-button-next {
+      right: -30px !important;
+    }
     .personal-card__name {
       margin-bottom: 0 !important;
     }

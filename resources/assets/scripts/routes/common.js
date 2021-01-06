@@ -712,6 +712,49 @@ export default {
     if($('.check-on').hasClass('check-on')) {
       calcClick();
     }
+    //max count strong textarea
+    $('.max-text textarea, .form__single--max textarea').keyup(function() {
+      var maxCount = Number($(this).parent().attr('data-maxlength'));
+      var revText = this.value.length;
+  
+          if (this.value.length > maxCount)
+              {
+              this.value = this.value.substr(0, maxCount);
+              }
+          var cnt = (maxCount - revText);
+          $(this).parent().find($('.count span:first-of-type')).text(revText)
+  
+      });
+    //max count strong input
+    $('.form__single--max input').keyup(function() {
+      var maxCount = Number($(this).parent().attr('data-maxlength'));
+      var revText = this.value.length;
+  
+          if (this.value.length > maxCount)
+              {
+              this.value = this.value.substr(0, maxCount);
+              }
+          var cnt = (maxCount - revText);
+          $(this).parent().find($('.count span:first-of-type')).text(revText)
+  
+      });
+
+
+
+
+
+    //dashboard header select
+    $('.user-select select').on('select2:select', function (e) {
+      var data = e.params.data;
+      $('.user-select__name').text(data.text)
+    });
+
+    $('.user-select select').on('select2:open', function (e) {
+      $('.user-select__name').addClass('active')
+    });
+    $('.user-select select').on('select2:close', function (e) {
+      $('.user-select__name').removeClass('active')
+    });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

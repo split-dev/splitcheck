@@ -245,6 +245,16 @@
       "title": "Checkout Pick-up",
       "description": "Checkout",
       "url": "/checkout-pick-up.html"
+    },
+    {
+      "title": "Admin Dasboard Empty",
+      "description": "Empty",
+      "url": "/admin-dashboard-empty.html"
+    },
+    {
+      "title": "Messages dashboard",
+      "description": "Messages dashboard",
+      "url": "/messages-dashboard.html"
     }
   ]
 }

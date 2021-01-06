@@ -552,3 +552,114 @@
     transform: translateX(-50%);
   }
 }
+
+.header--dashboard {
+  padding: 0 30px;
+  .header__logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+      max-width: 34px;
+      margin-right: 16px;
+    }
+    span {
+      color: #315293;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+  .header__content {
+    justify-content: center;
+  }
+  .header__search {
+    max-width: 650px;
+    width: 100%;
+  }
+  .search {
+    max-width: 650px;
+    width: 100%;
+  }
+  .header__left {
+    max-width: 170px;
+    margin-right: 44px;
+  }
+  .header__right {
+    max-width: 450px;
+    margin-left: 24px;
+  }
+  .header__user-select {
+    margin-right: 50px;
+  }
+}
+
+.user-select {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  .form__single {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 222;
+    top: 0;
+    bottom: 0;
+  }
+  &__photo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    > div {
+      width: 40px;
+      height: 40px;
+      background-color: #335491;
+      border-radius: 50%;
+      margin-left: -8px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+      }
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  > span {
+    display: flex;
+    align-items: center;
+    color: #315293;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    &::after {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 7px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("images/icons/arrow__bottom.svg");
+      margin-left: 5px;
+    }
+  }
+}
+
+.user-select__photo > div[style^="background-image:"] {
+  span {
+    display: none;
+  }
+}

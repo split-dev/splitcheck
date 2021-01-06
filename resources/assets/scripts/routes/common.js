@@ -712,6 +712,19 @@ export default {
     if($('.check-on').hasClass('check-on')) {
       calcClick();
     }
+
+    //dashboard header select
+    $('.user-select select').on('select2:select', function (e) {
+      var data = e.params.data;
+      $('.user-select__name').text(data.text)
+    });
+
+    $('.user-select select').on('select2:open', function (e) {
+      $('.user-select__name').addClass('active')
+    });
+    $('.user-select select').on('select2:close', function (e) {
+      $('.user-select__name').removeClass('active')
+    });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

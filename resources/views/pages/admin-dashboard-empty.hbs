@@ -5,7 +5,84 @@
   {{> ../common/head }}
 </head>
 
-<body class="dashboard">
+<body class="profile home dashboard">
+  {{> ../common/mobile-menu }}
+  {{> ../common/mobile-menu-bottom }}
+  <div class="section-blur theme-background-one" data-class="blue" id="background">
+    {{> ../common/header-dashboard }}
+    <div class="container-fluid">
+      <div class="main-content position-relative d-flex align-items-start justify-content-between">
+        <!-- aside-left -->
+        <aside class="aside-left">
+          <div class="scroll-div">
+            <section class="section-content">
+              <div class="card-shadow  position-relative">
+                <div class="admin-menu">
+                  <ul class="admin-menu__list d-flex flex-column list-unstyled mb-0">
+                    <li class="admin-menu__item">
+                      <a href="#" class="admin-menu__link admin-menu__link--active position-relative">
+                        <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                        <i class="icon icon-dashboard active"></i>
+                        <span>Dashboard</span>
+                      </a>
+                    </li>
+                    <li class="admin-menu__item">
+                      <a href="#" class="admin-menu__link position-relative">
+                        <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                        <i class="icon icon-notification"></i>
+                        <span>Alerts</span>
+                      </a>
+                    </li>
+                    <li class="admin-menu__item">
+                      <a href="#" class="admin-menu__link position-relative">
+                        <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                        <i class="icon icon-messages"></i>
+                        <span>Trading room</span>
+                      </a>
+                    </li>
+                    <li class="admin-menu__item admin-menu__item--submenu">
+                      <div class="admin-menu__title position-relative">
+                        <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                        <i class="icon icon-messages"></i>
+                        <span>Trading room</span>
+                        <i class="icon icon-arrow"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
+              <span>All rights reserved SplitchChek 2020</span>
+            </section>
+          </div>
+        </aside>
+        <!-- /aside-left -->
+        <!-- main -->
+        <main class="main">
+          <div class="section-content">
+            <div class="main__card  position-relative">
+
+            </div>
+          </div>
+        </main>
+        <!-- /main -->
+        <!-- aside-right -->
+        <aside class="aside-right d-none d-lg-block">
+          <div class="scroll-div">
+            <section class="section-content">
+              <span class="section-content__title position-relative d-flex align-items-center">Recent earning</span>
+
+            </section>
+
+            <section class="section-content">
+              <div class="card-shadow  position-relative"></div>
+            </section>
+          </div>
+        </aside>
+        <!-- /aside-right -->
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

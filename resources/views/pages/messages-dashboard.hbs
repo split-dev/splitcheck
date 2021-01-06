@@ -5,14 +5,258 @@
     {{> ../common/head }}
 </head>
 
-<body class="profile home message">
+<body class="dashboard">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
     <div class="section-blur theme-background-one" data-class="blue" id="background">
         {{> ../common/header-dashboard }}
-        <div class="container-fluid">
-            <div class="title-back">
-                <span><img src="images/icons/back.svg" alt="back">Back to dashboard</span>
+        <div class="container-fluid p-0">
+            <a href="#" class="title-back">
+                <img src="images/icons/back.svg" alt="back">
+                <span>Back to dashboard</span>
+            </a>
+            <div class="main-dash">
+                <aside class="left-column">
+                    <div class="section-content">
+                        <span class="label-title">Messages</span>
+                        <div class="toogle-box">
+                            <div class="toogle-box__header open">
+                                <div class="toogle-box__header--left">
+                                    <h3>From Shoppers (<span>12</span>)</h3>
+                                </div>
+                                <div class="toogle-box__header--right">
+                                    <button class="reset">
+                                        <img src="images/icons/loop-24px.svg" alt="reset">
+                                    </button>
+                                    <button class="arrow-open">
+                                        <img src="images/icons/arrow__bottom.svg" alt="arrow">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="toogle-box__body shoppers">
+                                <form action="#" class="search">
+                                    <input type="search" name="search" class="search__input"
+                                        placeholder="Search for the product" autocomplete="off">
+                                    <button class="search__button" aria-label="search">
+                                        <i class="icon icon-search"></i>
+                                    </button>
+                                </form>
+                                <div class="toogle-box__scroll pl-24 pr-20">
+                                    <div class="message__single new__message d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message__single d-flex w-100">
+                                        <div class="message__body d-flex w-100 justify-content-between">
+                                            <div class="message__left d-flex align-items-center">
+                                                <div class="message__photo"
+                                                    style="background-image: url(images/message/img-1.png);">
+                                                </div>
+                                                <div class="message__detail d-flex flex-column">
+                                                    <strong>Jane Smith</strong>
+                                                    <span>First words from the message will be here…</span>
+                                                </div>
+                                            </div>
+                                            <div class="message__right d-flex flex-column">
+                                                <span class="message__date">16:40</span>
+                                                <a href="#" class="message__date">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="content-column">
+
+                </main>
+                <aside class="right-column">
+
+                </aside>
             </div>
         </div>
     </div>

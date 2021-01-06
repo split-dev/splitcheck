@@ -6,6 +6,7 @@ import Headroom from 'headroom.js';
 import Flatpickr from 'flatpickr';
 import Dropzone from 'dropzone';
 import 'select2/dist/js/select2.full';
+import PerfectScrollbar from 'perfect-scrollbar';
 
 export default {
   init() {
@@ -755,6 +756,16 @@ export default {
     $('.user-select select').on('select2:close', function (e) {
       $('.user-select__name').removeClass('active')
     });
+
+    //scroll
+    function resize() {
+      ps.update();
+    }
+
+    if($('.toogle-box__scroll').hasClass('toogle-box__scroll')) {
+      var ps = new PerfectScrollbar('.toogle-box__scroll');
+      window.onresize = resize;
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

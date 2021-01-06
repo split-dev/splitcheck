@@ -420,32 +420,6 @@ export default {
       $('.about-me__box--tell >div').toggleClass('hide');
       $('.about-me__form').toggleClass('hide');
     })
-    //max count strong textarea
-    $('.max-text textarea, .form__single--max textarea').keyup(function() {
-      var maxCount = 400;
-      var revText = this.value.length;
-  
-          if (this.value.length > maxCount)
-              {
-              this.value = this.value.substr(0, maxCount);
-              }
-          var cnt = (maxCount - revText);
-          $(this).parent().find($('.count span:first-of-type')).text(revText)
-  
-      });
-    //max count strong input
-    $('.form__single--max input').keyup(function() {
-      var maxCount = 60;
-      var revText = this.value.length;
-  
-          if (this.value.length > maxCount)
-              {
-              this.value = this.value.substr(0, maxCount);
-              }
-          var cnt = (maxCount - revText);
-          $(this).parent().find($('.count span:first-of-type')).text(revText)
-  
-      });
 
 
     //mask input

@@ -38,7 +38,7 @@ export default {
         },
       }
 
-      
+
 
       //* swiper init
       let swiperGoss = new Swiper('.card-goss__slider.swiper-container', optionForSwiperGoss);
@@ -89,7 +89,7 @@ export default {
                 rightAside.classList.remove('js-no-header')
               }
             } else {
-              if (rightAside) {
+              if (leftAside) {
                 checkAside(leftAside, minPadding);
                 leftAside.classList.add('js-no-header') // add class for height calculation
               }
@@ -352,7 +352,7 @@ export default {
           editor.style.right = 0;
           editor.style.zIndex = 2;
           this.previewsContainer.appendChild(editor)
-          
+
 
           btnCrop.addEventListener('click', function() {
             // Get the canvas with image data from Cropper.js

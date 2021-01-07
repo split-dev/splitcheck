@@ -270,6 +270,7 @@
     margin-top: 50px;
   }
   &__create {
+    padding-right: 35px;
     h5 {
       text-transform: uppercase;
       color: #335491;
@@ -279,9 +280,16 @@
       line-height: 18px;
       margin-bottom: 0;
     }
-    padding-right: 35px;
+
+    @media (max-width: 1260px) {
+      padding-right: 15px;
+    }
+    @media (max-width: 1100px) {
+      max-width: 450px;
+    }
     @media (max-width: 991px) {
       padding-right: 0;
+      max-width: 100%;
     }
     .select-before {
       @media (max-width: 575px) {

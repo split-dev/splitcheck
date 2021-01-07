@@ -3,9 +3,9 @@ import Swiper from 'swiper/swiper-bundle';
 import 'bootstrap/js/dist/modal';
 export default {
   init() {
-    // $('.checkout__box-header').click(function() {
-    //   $(this).next().slideToggle(400);
-    // })
+    $('.checkout__box-header').click(function() {
+      $(this).next().slideToggle(400);
+    })
 
     function toogleFunc(el, elArray) {
       for(let i = 0; i < elArray.length; i++) {

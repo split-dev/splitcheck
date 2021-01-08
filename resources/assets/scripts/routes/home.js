@@ -201,51 +201,6 @@ export default {
       }, false);
     }
 
-    //* function button Options(three dots)
-    {
-      const btnOptionsWrap = document.querySelectorAll('.options');
-      const btnOptions = document.querySelectorAll('.options__btn');
-
-      body.addEventListener('click', e => {
-        let activeClass = 'options--open';
-        let activeClassIcon = 'icon-more-active';
-        let classNameBackDrop = 'option-backDrop';
-
-        if (e.target.offsetParent) {
-          const targetoffset = e.target.offsetParent;
-          const {type} = e.target.offsetParent.firstElementChild.dataset;
-
-          if (type === 'options') {
-            if (!targetoffset.classList.contains(activeClass)) {
-                const blockBackDrop = document.createElement('div');
-                blockBackDrop.classList.add(classNameBackDrop);
-                targetoffset.classList.add(activeClass);
-                targetoffset.appendChild(blockBackDrop);
-                targetoffset.children[0].children[0].classList.add(activeClassIcon);
-            } else {
-              targetoffset.classList.remove(activeClass)
-              targetoffset.querySelector('.' + classNameBackDrop).remove();
-              targetoffset.children[0].children[0].classList.remove(activeClassIcon);
-            }
-          }
-        }
-
-        if (e.target.classList.contains(classNameBackDrop)) {
-          btnOptionsWrap.forEach(element => {
-            element.classList.remove(activeClass);
-            const thisBackDrop = element.querySelector('.' + classNameBackDrop);
-            const activeIcon = element.querySelector('.' + activeClassIcon);
-
-            if (thisBackDrop) {
-              element.parentNode.lastElementChild.removeChild(thisBackDrop)
-            }
-            if (activeIcon) {
-              activeIcon.classList.remove(activeClassIcon);
-            }
-          });
-        }
-      });
-    }
 
     // * function for "Select" template in modal
     {

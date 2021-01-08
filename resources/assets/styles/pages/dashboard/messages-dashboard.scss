@@ -1,3 +1,9 @@
+.main-dash {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
 .title-back {
   margin: 15px 0 20px 32px;
   display: flex;
@@ -24,19 +30,26 @@
   }
 }
 
+.right-column {
+  width: 100%;
+  max-width: 360px;
+  margin-left: 32px;
+}
+
 .toogle-box {
   max-width: 360px;
   width: 100%;
   box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
   border-radius: 8px;
   background-color: #fff;
+  margin-bottom: 16px;
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px;
+    padding: 24px 14px 24px 24px;
     &.open {
-      padding: 24px 24px 0 24px;
+      padding: 24px 14px 0 24px;
     }
     .arrow-open {
       img {
@@ -53,6 +66,21 @@
       text-align: left;
       text-transform: uppercase;
       margin: 0;
+    }
+    .reset {
+      animation-duration: 3s;
+      &.anim {
+        animation-name: reset;
+        pointer-events: none;
+      }
+    }
+    @keyframes reset {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(720deg);
+      }
     }
     &.open {
       .arrow-open {
@@ -71,6 +99,14 @@
         max-height: 460px;
       }
     }
+    &.online-shoper {
+      .toogle-box__scroll {
+        max-height: 315px;
+      }
+    }
+    &.online-shoper {
+      margin-top: 0;
+    }
     .search {
       width: 100%;
       padding: 0 8px;
@@ -79,9 +115,19 @@
       }
     }
   }
+  &__desc {
+    color: #828282;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 24px;
+  }
   &__scroll {
     position: relative;
     margin-top: 32px;
+    &.drag-list {
+      max-height: 437px;
+    }
     &.pl-24 {
       padding-left: 24px;
     }
@@ -112,5 +158,237 @@
     .message__body {
       position: relative;
     }
+  }
+}
+
+.select-user-chat {
+  max-width: 305px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  &__photo {
+    > div {
+      width: 40px;
+      height: 40px;
+      background-color: #335491;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    span {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    p {
+      color: #0b0212;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 0;
+      margin-left: 12px;
+    }
+  }
+  .btn-border {
+    max-width: 80px;
+    font-weight: 500;
+  }
+}
+.select-user-chat__photo > div[style^="background-image:"] span {
+  display: none;
+}
+
+.setting-navbar {
+  max-width: 364px;
+  width: 100%;
+  padding-left: 24px;
+  padding-top: 8px;
+  > div {
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  label {
+    padding: 0 !important;
+    max-width: 48px;
+    margin-right: 15px;
+  }
+}
+.reserved {
+  color: #335491;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: left;
+  display: inline-block;
+  margin: 30px 0 30px 24px;
+}
+
+.content-column {
+  margin: 0 28px;
+  max-width: 600px;
+  width: 100%;
+  padding: 0 20px;
+  .section-content__title {
+    &.question {
+      margin-top: -18px;
+      margin-bottom: 4px;
+    }
+  }
+  .section-content__title--post {
+    color: #0b0212;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: -6px;
+    p {
+      margin-bottom: 0;
+    }
+    b {
+      font-weight: 500;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}
+
+.messages--my-post {
+  outline: none;
+  .internal-card__date--offer {
+    margin-left: auto;
+    padding-right: 16px;
+  }
+  .internal-card--message {
+    margin-bottom: 5px;
+  }
+  .internal-card__body {
+    p {
+      margin-bottom: 16px;
+    }
+  }
+  b.shop-add {
+    color: #0b0212;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 8px;
+  }
+  .product-status {
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    &.pen {
+      color: #99a9c9;
+    }
+    &.add {
+      color: #00a141;
+    }
+    &.exp {
+      color: #fa0128;
+    }
+  }
+  .form-add-comment {
+    max-width: 100%;
+    position: sticky;
+    bottom: 0;
+    z-index: 22;
+    box-shadow: 0 0 30px 10px rgba(11, 2, 18, 0.08);
+    border-radius: 12px 12px 0 0;
+    padding: 15px;
+  }
+}
+
+.order-search {
+  padding-top: 6px;
+}
+
+.drag-drop {
+  .search {
+    input {
+      background-color: #e8ebf24d;
+    }
+  }
+  &__desc {
+    margin-top: 13px;
+    margin-bottom: 5px;
+    padding-left: 16px;
+    span {
+      color: #828282;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+  &__list {
+    > li {
+      max-width: 328px;
+      display: flex;
+      box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 5px 8px 10px 5px;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+  }
+  &__info {
+    max-width: 240px;
+    width: 100%;
+    > strong {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.64px;
+      line-height: 18px;
+      text-align: left;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .mini-post__right {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+  &__detail {
+    > span {
+      color: #0b0212;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      text-align: left;
+      display: inline-block;
+      margin-bottom: 8px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__photo {
+    min-width: 61px;
+    max-width: 61px;
+    height: 61px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    margin-right: 14px;
   }
 }

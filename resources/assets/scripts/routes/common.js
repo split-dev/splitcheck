@@ -740,6 +740,52 @@ export default {
   
       });
 
+      //* function button Options(three dots)
+    {
+      const btnOptionsWrap = document.querySelectorAll('.options');
+      const btnOptions = document.querySelectorAll('.options__btn');
+
+      body.addEventListener('click', e => {
+        let activeClass = 'options--open';
+        let activeClassIcon = 'icon-more-active';
+        let classNameBackDrop = 'option-backDrop';
+
+        if (e.target.offsetParent) {
+          const targetoffset = e.target.offsetParent;
+          const {type} = e.target.offsetParent.firstElementChild.dataset;
+
+          if (type === 'options') {
+            if (!targetoffset.classList.contains(activeClass)) {
+                const blockBackDrop = document.createElement('div');
+                blockBackDrop.classList.add(classNameBackDrop);
+                targetoffset.classList.add(activeClass);
+                targetoffset.appendChild(blockBackDrop);
+                targetoffset.children[0].children[0].classList.add(activeClassIcon);
+            } else {
+              targetoffset.classList.remove(activeClass)
+              targetoffset.querySelector('.' + classNameBackDrop).remove();
+              targetoffset.children[0].children[0].classList.remove(activeClassIcon);
+            }
+          }
+        }
+
+        if (e.target.classList.contains(classNameBackDrop)) {
+          btnOptionsWrap.forEach(element => {
+            element.classList.remove(activeClass);
+            const thisBackDrop = element.querySelector('.' + classNameBackDrop);
+            const activeIcon = element.querySelector('.' + activeClassIcon);
+
+            if (thisBackDrop) {
+              element.parentNode.lastElementChild.removeChild(thisBackDrop)
+            }
+            if (activeIcon) {
+              activeIcon.classList.remove(activeClassIcon);
+            }
+          });
+        }
+      });
+    }
+
 
 
 
@@ -763,9 +809,98 @@ export default {
     }
 
     if($('.toogle-box__scroll').hasClass('toogle-box__scroll')) {
+      $('.toogle-box__scroll').each(function(){ 
+        const ps = new PerfectScrollbar($(this)[0]); 
+      });
       var ps = new PerfectScrollbar('.toogle-box__scroll');
       window.onresize = resize;
     }
+
+    $('.toogle-box__header .reset').click( function() {
+      $(this).addClass('anim');
+      setTimeout(function () {
+        $('.toogle-box__header .reset').removeClass('anim');
+      }, 3000)
+    })
+
+    $('.toogle-box__header .arrow-open').click( function() {
+      $(this).parent().parent().toggleClass('open');
+      $(this).parent().parent().next().slideToggle();
+    })
+
+
+    //drag and drop
+    let sourceContainerId = '';
+
+// Allow multiple draggable items
+let dragSources = document.querySelectorAll('[draggable="true"]');
+dragSources.forEach(dragSource => {
+    dragSource.addEventListener('dragstart', dragStart);
+    dragSource.addEventListener('dragend', dragEnd);
+});
+
+function dragStart(e) {
+    this.classList.add('dragging');
+    e.dataTransfer.setData('text/plain', e.target.id);
+    sourceContainerId = this.parentElement.id;
+    console.log(this);
+}
+
+function dragEnd(e) {
+    this.classList.remove('dragging');
+}
+
+// Allow multiple dropped targets
+let dropTargets = document.querySelectorAll(
+    '[data-role="drag-drop-container"]'
+);
+dropTargets.forEach(dropTarget => {
+    dropTarget.addEventListener('drop', dropped);
+    dropTarget.addEventListener('dragenter', cancelDefault);
+    dropTarget.addEventListener('dragover', dragOver);
+    dropTarget.addEventListener('dragleave', dragLeave);
+});
+
+function dropped(e) {
+    // execute function only when target container is different from source container
+    if (this.id !== sourceContainerId) {
+        cancelDefault(e);
+        let id = e.dataTransfer.getData('text/plain');
+        //e.target.appendChild(document.querySelector('#' + id));
+        let element = document.querySelector('#' + id);
+        $(element).css('display', 'none');
+        let textEl = $(element).find('.drag-drop__info >strong').text()
+        console.log($(element).find('.drag-drop__info >strong').text());
+        let stateEl = `
+                <div class="product-tag"><strong>${textEl}</strong><a href="#" data-close="${id}" class="remove"><img src="images/icons/remove-white.svg" alt="remove-white"></a></div>
+        `;
+        document.querySelector('.form-add-comment__content').insertAdjacentHTML('beforeend', stateEl);
+        this.classList.remove('hover');
+    }
+}
+
+function dragOver(e) {
+    cancelDefault(e);
+    this.classList.add('hover');
+}
+
+function dragLeave(e) {
+    this.classList.remove('hover');
+}
+
+function cancelDefault(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+}
+
+//reset product
+$('.form-add-comment__content').on('click', 'a', function(e){
+  let id = $(this).attr('data-close');
+  $(this).parent().remove();
+  $('#' + id).css('display', 'flex');
+});
+
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

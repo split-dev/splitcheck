@@ -1,9 +1,10 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .groups {
     .dotted {
-      &:after {
-        max-width: 350px;
-      }
+      max-width: 350px;
+    }
+    &__face-name {
+      justify-content: center;
     }
   }
   .modal-body {

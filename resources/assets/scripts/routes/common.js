@@ -896,6 +896,7 @@ function cancelDefault(e) {
 
 //reset product
 $('.form-add-comment__content').on('click', 'a', function(e){
+  e.preventDefault();
   let id = $(this).attr('data-close');
   $(this).parent().remove();
   $('#' + id).css('display', 'flex');

@@ -7,6 +7,9 @@
 @import "checkout-el";
 
 .checkout {
+  .individual__title-hide {
+    font-weight: 500 !important;
+  }
   &__box-header {
     &:hover {
       cursor: pointer;
@@ -57,6 +60,9 @@
   .aside-right {
     width: 35% !important;
     display: block !important;
+    .section-content__title {
+      padding-left: 3px !important;
+    }
     @media (max-width: 991px) {
       width: 100% !important;
       top: 0 !important;

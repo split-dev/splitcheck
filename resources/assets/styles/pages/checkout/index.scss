@@ -7,6 +7,37 @@
 @import "checkout-el";
 
 .checkout {
+  .aside-right {
+    top: 137px !important;
+  }
+  main {
+    @media (max-width: 991px) {
+      padding-top: 10px;
+      section {
+        margin-bottom: 16px !important;
+      }
+    }
+  }
+  .section-content__title {
+    @media (max-width: 991px) {
+      margin-left: 0 !important;
+    }
+  }
+  .store-info__address {
+    a {
+      &:first-child {
+        margin-top: 10px;
+      }
+    }
+  }
+  .form__checkbox-wrap {
+    label {
+      font-weight: 400 !important;
+      &::before {
+        border: 2px solid #f97d00 !important;
+      }
+    }
+  }
   .individual__title-hide {
     font-weight: 500 !important;
   }
@@ -57,15 +88,27 @@
       padding-top: 0 !important;
     }
   }
+  .aside-mobile {
+    @media (max-width: 991px) {
+      display: block;
+    }
+  }
   .aside-right {
     width: 35% !important;
-    display: block !important;
+
+    .ml-2 {
+      margin-right: 0 !important;
+    }
     .section-content__title {
       padding-left: 3px !important;
     }
     @media (max-width: 991px) {
       width: 100% !important;
       top: 0 !important;
+      padding-right: 20px;
+    }
+    @media (max-width: 575) {
+      padding-right: 0;
     }
   }
   &-main {

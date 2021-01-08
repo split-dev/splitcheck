@@ -1,4 +1,10 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .orders__card-reaction {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
   .groups {
     .dotted {
       max-width: 350px;
@@ -141,6 +147,18 @@
     }
     .store-link {
       min-height: 55px;
+    }
+  }
+}
+
+//Firefox
+@-moz-document url-prefix() {
+  .orders__card-reaction {
+    .d-flex {
+      &:first-child {
+        width: 100%;
+        justify-content: flex-end;
+      }
     }
   }
 }

@@ -246,13 +246,13 @@ export default {
     }
 
     let myElement = document.querySelector('header');
-    
+
     // construct an instance of Headroom, passing the element
     let headroom  = new Headroom(myElement);
-    
+
     // initialise
     headroom.init();
-    
+
 
     //get
     var params = window
@@ -348,7 +348,7 @@ export default {
      }
     //  }
 
-     //mini aside slider 
+     //mini aside slider
     var swiperAside = new Swiper('.personal-card--slider .swiper-container', {
       spaceBetween: 5,
       slidesPerView: 1,
@@ -418,7 +418,7 @@ export default {
                 <span>${state.text}</span>
               </div>
             `);
-  
+
             return $state;
           },
           // dropdownParent: $('.form__single--select-user'),
@@ -438,13 +438,13 @@ export default {
                 <span>${state.text}</span>
               </div>
             `);
-  
+
             return $state;
           },
           // dropdownParent: $('.form__single--select-user'),
         });
        }
-  
+
 
        // * function for "Select is not avatar" template in modal
        if($('select.form__select--default[data-toggle="select"]')) {
@@ -521,20 +521,20 @@ export default {
           ScrollTopEv = st;
       });
       }
-      
-     
 
-      
+
+
+
 
     if($('.mobile-nav').hasClass('mobile-nav')) {
-      
+
        //background change
-      
+
        $('.account-preferences__card').on('click', function() {
         let bgColor = $(this).attr('data-class');
         $('.section-blur').attr('data-class', bgColor);
        })
-     
+
        //mobile tabs
     $('.settings__hide li').click(function() {
        $(this).parent().slideToggle(100);
@@ -551,7 +551,7 @@ export default {
       if($(window).scrollTop() > 60) {
         $('.tabs-global__nav.mobile-nav').addClass('overlay');
       }
-      
+
      if ($('.nav').hasClass('mobile-before')) {
        let heightPadding = $('.mobile-nav').height();
        $('.main-content').css('margin-top', heightPadding + 'px');
@@ -623,17 +623,19 @@ export default {
    });
 
     //show and sticky aside left
-    if($('.aside-left').hasClass('aside-left')) {
+    if ($('.dashboard .aside-left').hasClass('aside-left')) {
+      console.log()
+    } else if ($('.aside-left').hasClass('aside-left')) {
       var ScrollTop = 0;
-    $(window).scroll(function(event){
-      var st = $(this).scrollTop();
-      if (st > ScrollTop){
-        $('.aside-left').css('top', '30px');
-      } else {
-        $('.aside-left').css('top', '90px');
-      }
-      ScrollTop = st;
-   });
+      $(window).scroll(function(event){
+        var st = $(this).scrollTop();
+        if (st > ScrollTop){
+          $('.aside-left').css('top', '30px');
+        } else {
+          $('.aside-left').css('top', '90px');
+        }
+        ScrollTop = st;
+      });
     }
 
     //validator email
@@ -658,7 +660,7 @@ export default {
     }
   });
 
-  
+
   $('.mobile-menu__info a[data-toggle="modal"]').click( function() {
     $('body').css({
       overflow:'visible',
@@ -688,7 +690,7 @@ export default {
       });
   }
 
-  $('.form-add-comment__user select').on('select2:select', function (e) { 
+  $('.form-add-comment__user select').on('select2:select', function (e) {
     var data = e.params.data;
     $('.form-add-comment__user figure span').text(data.title)
 });
@@ -716,32 +718,28 @@ export default {
     $('.max-text textarea, .form__single--max textarea').keyup(function() {
       var maxCount = Number($(this).parent().attr('data-maxlength'));
       var revText = this.value.length;
-  
+
           if (this.value.length > maxCount)
               {
               this.value = this.value.substr(0, maxCount);
               }
           var cnt = (maxCount - revText);
           $(this).parent().find($('.count span:first-of-type')).text(revText)
-  
+
       });
     //max count strong input
     $('.form__single--max input').keyup(function() {
       var maxCount = Number($(this).parent().attr('data-maxlength'));
       var revText = this.value.length;
-  
+
           if (this.value.length > maxCount)
               {
               this.value = this.value.substr(0, maxCount);
               }
           var cnt = (maxCount - revText);
           $(this).parent().find($('.count span:first-of-type')).text(revText)
-  
+
       });
-
-
-
-
 
     //dashboard header select
     $('.user-select select').on('select2:select', function (e) {
@@ -755,6 +753,118 @@ export default {
     $('.user-select select').on('select2:close', function (e) {
       $('.user-select__name').removeClass('active')
     });
+
+
+    // Accordion Menu
+    let AccordionMenu = function(selector) {
+      this.colMenu = document.querySelectorAll(`${selector} li`);
+      let This = this;
+      this.colMenu.forEach(function(items) {
+          if (items.querySelector('ul')) {
+              // items.firstElementChild.insertAdjacentHTML('beforeend', '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 451.847 451.847" xml:space="preserve"> <g> <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751 c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0 c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/> </g> </svg>');
+
+              items.firstElementChild.onclick = function(e) {
+                  e.preventDefault();
+
+                  let isTrue = this.parentElement.classList.toggle('js-open');
+
+                  if (isTrue) {
+                      This.show(this.nextElementSibling);
+                  } else {
+                      This.hide(this.nextElementSibling);
+                  }
+              }
+          }
+      })
+    }
+
+    // Show an element
+    AccordionMenu.prototype.show = function(elem) {
+      // Get the natural height of the element
+      var getHeight = function() {
+          elem.style.display = 'block'; // Make it visible
+          var height = elem.scrollHeight + 'px'; // Get it's height
+          return height;
+      };
+
+      var height = getHeight(); // Get the natural height
+      elem.style.height = height; // Update the height
+
+      setTimeout(function() {
+          elem.style.height = 'auto';
+      }, 350);
+    };
+
+    // Hide an element
+    AccordionMenu.prototype.hide = function(elem) {
+      // Give the element a height to change from
+      elem.style.height = elem.scrollHeight + 'px';
+
+      // Set the height back to 0
+      setTimeout(function() {
+          elem.style.height = '0';
+      }, 110);
+
+      setTimeout(function() {
+          elem.style.display = '';
+      }, 700);
+    };
+
+    // admin-menu
+    {
+      const adminMenu = document.querySelector('.admin-menu__nav');
+      const btnMinimize = document.querySelector('.admin-menu__btn-minimize');
+      const adminMenuItem = document.querySelectorAll('.admin-menu__item--submenu');
+
+      if (adminMenu) {
+        $('.header__dashboard-burger').click (function () {
+          if (window.matchMedia('(max-width: 991px)').matches) {
+            $('.admin-menu').css('left', '0');
+            $('.section-blur').addClass('filter');
+            $('body').css('overflow', 'hidden');
+          }
+        });
+        $('.admin-menu__close').click (function () {
+          if (window.matchMedia('(max-width: 991px)').matches) {
+            $('.admin-menu').css('left', '-100vw');
+            $('.section-blur').removeClass('filter');
+            $('body').css('overflow', 'visible');
+          }
+        });
+
+        new AccordionMenu('.admin-menu__nav');
+        btnMinimize.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          adminMenu.classList.toggle('admin-menu--minimize');
+
+          if (adminMenu.classList.contains('admin-menu--minimize')) {
+            for (let i = 0; i < adminMenuItem.length; i++) {
+              const element = adminMenuItem[i];
+              element.classList.remove('js-open');
+              element.querySelector('.admin-menu__list').style = '';
+            }
+          }
+        })
+
+        for (let i = 0; i < adminMenuItem.length; i++) {
+          const element = adminMenuItem[i];
+          element.addEventListener('click', () => {
+            if (adminMenu.classList.contains('admin-menu--minimize')) {
+              adminMenu.classList.remove('admin-menu--minimize');
+            }
+          })
+        }
+
+        //* function resize
+        window.addEventListener('resize', function() {
+          if (!window.matchMedia('(max-width: 991px)').matches) {
+            $('.admin-menu').css('left', '');
+          }
+
+        }, false);
+      }
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

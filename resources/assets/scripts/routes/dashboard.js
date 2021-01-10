@@ -22,7 +22,7 @@ export default {
       }
 
       const positionSt = () => {
-        const maxPadding = 90;
+        const maxPadding = 94;
         const minPadding = 10;
 
         body.addEventListener('wheel', function(e) {

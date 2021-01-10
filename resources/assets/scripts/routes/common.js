@@ -861,6 +861,9 @@ export default {
           if (!window.matchMedia('(max-width: 991px)').matches) {
             $('.admin-menu').css('left', '');
           }
+          if (window.matchMedia('(max-width: 991px)').matches) {
+            $('.admin-menu').css('top', '');
+          }
 
         }, false);
       }

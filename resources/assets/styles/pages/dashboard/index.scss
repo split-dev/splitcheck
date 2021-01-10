@@ -5,11 +5,22 @@
 // Page Specific Components
 
 .dashboard {
-
+  .section-blur {
+    @media (max-width: 991px) {
+      padding-top: 92px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 78px;
+    }
+    @media (max-width: 575px) {
+      padding-top: 78px;
+    }
+  }
 
   .main-content {
     padding-top: 20px;
-    // padding-left: 232px;
+    padding-left: 219px;
+
     @include media-breakpoint-down(md) {
       padding-top: 0;
       padding-left: 0;

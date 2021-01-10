@@ -1,4 +1,37 @@
 .coupons {
+  .active-page {
+    i {
+      background-image: url("images/icons/social-media-orange.svg");
+    }
+    span {
+      color: #f77d0e !important;
+    }
+  }
+  .aside-left {
+    top: 110px !important;
+  }
+  .aside-right {
+    .section-content {
+      margin-bottom: 16px !important;
+    }
+    .btn-border-orange {
+      border: 2px solid #f97d00 !important;
+    }
+  }
+  .store-link {
+    ul {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #335491;
+        opacity: 0.1;
+      }
+    }
+  }
   .internal-card__profile {
     @media (max-width: 991px) {
       align-items: flex-start !important;
@@ -11,6 +44,9 @@
   }
   .main-coupon {
     width: 49.124%;
+    .section-content {
+      margin-bottom: 16px;
+    }
     @media (max-width: 991px) {
       width: 100%;
     }

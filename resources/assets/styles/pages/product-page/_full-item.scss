@@ -477,6 +477,7 @@
         padding-bottom: 5px;
         transition: 0.3s;
         transform: rotate(180deg);
+        pointer-events: none;
       }
       button {
         color: #335491;
@@ -487,6 +488,8 @@
         text-decoration: none;
         padding-left: 8px;
         border: none;
+        width: 100%;
+        text-align: left;
         @media (max-width: 575px) {
           padding-left: 16px;
         }

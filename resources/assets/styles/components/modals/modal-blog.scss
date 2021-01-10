@@ -22,12 +22,15 @@
     }
   }
   &__coupon {
+    &-content {
+      padding-bottom: 10px;
+    }
     a {
       margin-top: 21px;
       max-width: 248px;
     }
     .all-coupon {
-      margin-bottom: 45px;
+      margin-bottom: 25px;
       padding: 0;
     }
   }

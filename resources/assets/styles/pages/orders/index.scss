@@ -7,6 +7,7 @@
 @import "orders-dispute";
 
 .orders {
+  overflow-x: hidden;
   .other-links__link.this {
     i {
       background-image: url("images/orders/order-ship.png") !important;
@@ -28,10 +29,10 @@
     border-radius: 50%;
   }
   .swiper-button-prev {
-    left: 13px;
+    left: 13px !important;
   }
   .swiper-button-next {
-    right: 13px;
+    right: 13px !important;
   }
   .section-content__title {
     @media (max-width: 575px) {

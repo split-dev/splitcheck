@@ -158,6 +158,10 @@
       &:first-child {
         width: 100%;
         justify-content: flex-end;
+        @media (max-width: 991px) {
+          justify-content: flex-start;
+          max-width: 95px;
+        }
       }
     }
   }

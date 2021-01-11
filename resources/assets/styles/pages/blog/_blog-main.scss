@@ -14,7 +14,7 @@
     }
   }
   &__follow {
-    padding-top: 270px;
+    padding-top: 260px;
     padding-bottom: 90px;
     position: relative;
     display: flex;
@@ -31,11 +31,12 @@
       right: -40px;
       bottom: 55px;
       @media (max-width: 991px) {
-        top: 60px;
+        top: -200px;
         right: 0;
         left: 0;
         display: flex;
         justify-content: center;
+        align-items: center;
       }
     }
     &-content {
@@ -71,6 +72,34 @@
     }
   }
   &-main {
+    .recomend {
+      &:after {
+        @media (max-width: 1260px) {
+          max-width: 40%;
+        }
+        @media (max-width: 991px) {
+          max-width: 30%;
+        }
+        @media (max-width: 575) {
+          max-width: 25%;
+        }
+        @media (max-width: 360px) {
+          max-width: 20%;
+        }
+      }
+      &:before {
+        @media (max-width: 991px) {
+          max-width: 30%;
+        }
+        @media (max-width: 575) {
+          max-width: 25%;
+        }
+        @media (max-width: 360px) {
+          max-width: 20%;
+        }
+      }
+    }
+
     .section-content {
       @media (max-width: 575px) {
         padding: 0 20px 0 20px;
@@ -149,11 +178,13 @@
       }
     }
     &__position {
+      margin-bottom: 70px;
       @media (max-width: 991px) {
         flex-direction: column;
       }
     }
     &__container {
+      margin-top: 28px;
       position: relative;
       .swiper-button-prev,
       .swiper-button-next {
@@ -208,7 +239,7 @@
       }
     }
     .blog-section {
-      margin-bottom: 105px;
+      margin-bottom: 80px;
       .blog__products {
         margin-top: 0 !important;
       }
@@ -220,6 +251,7 @@
       position: relative;
       top: 0 !important;
       margin-left: 80px;
+      padding-top: 0;
     }
     .recomend {
       &::before {
@@ -285,37 +317,29 @@
         }
       }
     }
-    &__gifts {
+    &__bg {
+      background-position-y: bottom;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      bottom: 0;
       padding-top: 55px;
       padding-bottom: 105px;
-      background-color: #fff9f4;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-
-      &::before {
-        content: "";
-        background-image: url("images/blog/gifts.png");
-        background-position-y: bottom;
-        background-position-x: center;
-        background-repeat: no-repeat;
-        background-size: 80%;
-        position: absolute;
-        width: calc(100% - 10px);
-        height: 170px;
-        bottom: 0;
-        @media (max-width: 991px) {
-          height: 110px;
-          background-size: cover;
-          background-position-x: right;
-        }
+      @media (max-width: 991px) {
+        background-position-x: right;
       }
     }
+    &__gifts {
+      background-color: #fff9f4;
+    }
     &__string {
-      border-bottom: 1px solid #d9dfea;
+      border-bottom: 2px solid #e6eaf1;
       padding-bottom: 7px;
-      padding-top: 13px;
+      padding-top: 10px;
       &:last-child {
         border-bottom: none;
       }
@@ -364,6 +388,5 @@
     font-size: 20px;
     font-weight: 500;
     margin-left: 8px;
-    margin-top: 8px;
   }
 }

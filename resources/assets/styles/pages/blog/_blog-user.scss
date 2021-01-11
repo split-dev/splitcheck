@@ -1,5 +1,16 @@
 .blog {
   &-user {
+    .blog__products-user {
+      margin-top: 12px;
+    }
+    .aside-right {
+      .section-content {
+        margin-bottom: 16px !important;
+      }
+    }
+    .blog-main__search {
+      max-width: 730px !important;
+    }
     .aside-right {
       margin-left: 0 !important;
       .section-content {

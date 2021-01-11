@@ -124,10 +124,10 @@ export default {
           1260: {
             slidesPerView: 4,
           },
-          991: {
+          992: {
             slidesPerView: 3,
           },
-          767: {
+          768: {
             slidesPerView: 2,
             spaceBetween: 8,
           },

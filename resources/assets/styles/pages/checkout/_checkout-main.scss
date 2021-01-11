@@ -186,6 +186,7 @@
   .orders__box {
     padding: 0;
     box-shadow: none;
+    background: none;
   }
   &__members {
     .members-wrap {
@@ -231,6 +232,9 @@
     .form__checkbox-wrap {
       label {
         font-weight: 400 !important;
+        &::before {
+          border: 2px solid #f97d00 !important;
+        }
       }
     }
     ul {
@@ -278,6 +282,9 @@
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     background-color: #fff;
+    h5 {
+      margin-bottom: 0 !important;
+    }
     .btn-border,
     .btn-blue,
     .btn-orange {

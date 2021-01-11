@@ -1,4 +1,18 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .orders__card-reaction {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .groups {
+    .dotted {
+      max-width: 350px;
+    }
+    &__face-name {
+      justify-content: center;
+    }
+  }
   .modal-body {
     flex-direction: column;
     p,
@@ -56,11 +70,29 @@
       top: calc(50% - 9px);
     }
   }
+  .product {
+    .form-add-comment__img {
+      bottom: 0 !important;
+    }
+    .option-price__button {
+      p {
+        max-width: 300px;
+        text-align: center;
+      }
+    }
+  }
+  .select2-selection__arrow {
+    b {
+      margin-left: -20px !important;
+    }
+  }
   .profile-face__name {
     width: 100%;
     white-space: nowrap;
   }
   .profile-face__date {
+    width: 100%;
+    text-align: right;
     span {
       white-space: nowrap;
     }
@@ -133,6 +165,22 @@
     }
     .store-link {
       min-height: 55px;
+    }
+  }
+}
+
+//Firefox
+@-moz-document url-prefix() {
+  .orders__card-reaction {
+    .d-flex {
+      &:first-child {
+        width: 100%;
+        justify-content: flex-end;
+        @media (max-width: 991px) {
+          justify-content: flex-start;
+          max-width: 95px;
+        }
+      }
     }
   }
 }

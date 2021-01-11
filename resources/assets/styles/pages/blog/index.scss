@@ -15,6 +15,11 @@
   }
 }
 .blog {
+  .mini-post__right {
+    @media (max-width: 575px) {
+      margin-left: 0 !important;
+    }
+  }
   .mini-post__title {
     @media (max-width: 991px) {
       padding-right: 0;
@@ -96,7 +101,7 @@
   &__mini-post {
     margin-top: 45px;
     .mini-post__right {
-      margin-right: 15px !important;
+      padding-right: 45px !important;
     }
   }
   &-before {

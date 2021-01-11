@@ -477,6 +477,7 @@
         padding-bottom: 5px;
         transition: 0.3s;
         transform: rotate(180deg);
+        pointer-events: none;
       }
       button {
         color: #335491;
@@ -487,6 +488,8 @@
         text-decoration: none;
         padding-left: 8px;
         border: none;
+        width: 100%;
+        text-align: left;
         @media (max-width: 575px) {
           padding-left: 16px;
         }
@@ -717,6 +720,9 @@
       &__quantity-wrap {
         margin-top: 17px;
         margin-bottom: 0;
+        span {
+          font-size: 14px;
+        }
       }
 
       // .item-cart__quantity
@@ -884,6 +890,9 @@
     align-items: center;
     flex-direction: column;
     margin-top: 24px;
+    p {
+      font-size: 14px !important;
+    }
     a {
       max-width: 304px !important;
       font-size: 16px;

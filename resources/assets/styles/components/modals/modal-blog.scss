@@ -3,6 +3,9 @@
 @import "../../bootstrap-utils";
 
 .modal-blog {
+  .modal-content {
+    overflow-x: hidden;
+  }
   .slider-coupon__container {
     position: relative;
     .swiper-container {
@@ -22,6 +25,17 @@
     }
   }
   &__coupon {
+    .internal-card__price {
+      span {
+        &:last-child {
+          color: #99a9c9;
+          font-weight: 400;
+          &::before {
+            background-color: #99a9c9;
+          }
+        }
+      }
+    }
     &-content {
       padding-bottom: 10px;
     }

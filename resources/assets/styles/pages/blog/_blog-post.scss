@@ -91,7 +91,21 @@
     }
   }
   &-post {
+    .text-orange {
+      color: #f77d0e !important;
+      font-weight: 500;
+    }
     .aside-right {
+      top: 135px !important;
+      width: 31% !important;
+      .big-post {
+        &:first-child {
+          p {
+            color: #0b0212;
+            font-size: 14px;
+          }
+        }
+      }
       @media (max-width: 991px) {
         display: none;
       }
@@ -252,6 +266,7 @@
     box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     background-color: #fff;
+    margin-bottom: 24px;
   }
   .big-post {
     padding: 12px 12px 17px 12px;
@@ -268,6 +283,8 @@
       &-links {
         margin-top: 15px;
         .btn-border {
+          height: 40px !important;
+          border: 2px solid #35558f !important;
           max-width: 160px !important;
           margin-left: 0 !important;
           font-weight: 500 !important;

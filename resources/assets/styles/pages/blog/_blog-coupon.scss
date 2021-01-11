@@ -1,4 +1,21 @@
 .coupons {
+  .search {
+    @media (max-width: 575px) {
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+  }
+  .container {
+    @media (max-width: 575px) {
+      padding: 0 !important;
+    }
+  }
+  .main-content {
+    @media (max-width: 991px) {
+      padding-top: 0 !important;
+    }
+  }
+
   .active-page {
     i {
       background-image: url("images/icons/social-media-orange.svg");

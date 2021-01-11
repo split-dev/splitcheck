@@ -72,6 +72,12 @@
   &__user-right {
     padding: 30px 28px 16px 25px;
     width: 60%;
+    @media (max-width: 575px) {
+      padding: 30px 15px 16px 15px;
+    }
+    .btn-border {
+      font-size: 14px !important;
+    }
     .close {
       width: 32px;
       height: 32px;

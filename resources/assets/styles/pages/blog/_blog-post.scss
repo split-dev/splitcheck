@@ -1,6 +1,15 @@
 .blog {
+  .gift-shopping {
+    @media (max-width: 575px) {
+      overflow-x: hidden;
+    }
+  }
   &__products {
     margin-top: 80px;
+    @media (max-width: 575px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
   }
   .product-post {
     max-width: 620px;
@@ -91,6 +100,18 @@
     }
   }
   &-post {
+    .btn-border {
+      text-align: center;
+      white-space: nowrap;
+    }
+    .section-content__title {
+      @media (max-width: 991px) {
+        padding-left: 16px;
+      }
+    }
+    @media (max-width: 991px) {
+      margin-top: 20px;
+    }
     .text-orange {
       color: #f77d0e !important;
       font-weight: 500;
@@ -98,6 +119,9 @@
     .aside-right {
       top: 135px !important;
       width: 31% !important;
+      .section-content__title {
+        margin-left: 16px;
+      }
       .big-post {
         &:first-child {
           p {
@@ -118,12 +142,25 @@
       }
     }
     .section-content__recomended {
+      .section-content__title {
+        margin-left: 20px;
+      }
       @media (max-width: 991px) {
         display: none;
       }
     }
     &__recomended-mobile {
       position: relative;
+      .swiper-button-prev {
+        @media (max-width: 575px) {
+          left: 5px;
+        }
+      }
+      .swiper-button-next {
+        @media (max-width: 575px) {
+          right: 5px;
+        }
+      }
       .swiper-button-prev,
       .swiper-button-next {
         display: flex !important;
@@ -212,8 +249,28 @@
     &__text {
       margin-top: 30px;
       max-width: 640px;
+      &-box {
+        margin-bottom: 45px;
+        &:first-child {
+          margin-bottom: 56px;
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
       &-reason {
         margin-left: 30px;
+        ul {
+          li {
+            &:first-child {
+              margin-top: 25px !important;
+            }
+          }
+        }
+        b {
+          display: block;
+          margin-bottom: 16px;
+        }
       }
       b {
         color: #0b0212;

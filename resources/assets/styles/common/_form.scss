@@ -495,4 +495,30 @@
 
   // &__button {
   // }
+
+  // .form__single--checkbox-left
+
+  &__single--checkbox-left {
+    input.form__checkbox[type="checkbox"]:checked + label,
+    input.form__checkbox[type="checkbox"]:not(:checked) + label {
+      padding-left: 60px;
+      padding-right: 8px;
+    }
+
+    input.form__checkbox[type="checkbox"]:checked + label:before,
+    input.form__checkbox[type="checkbox"]:not(:checked) + label:before {
+      right: auto;
+      left: 0;
+    }
+
+    input.form__checkbox[type="checkbox"]:checked + label:after,
+    input.form__checkbox[type="checkbox"]:not(:checked) + label:after {
+      right: auto;
+      left: 27px;
+    }
+
+    input.form__checkbox[type="checkbox"]:not(:checked) + label:after {
+      left: 3px;
+    }
+  }
 }

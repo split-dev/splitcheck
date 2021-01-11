@@ -28,6 +28,19 @@ input[type="checkbox"]:checked ~ .check-on {
   position: relative;
 }
 
+.container--admin {
+
+  @include media-breakpoint-up(lg) {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 1433px;
+  }
+}
+
 div[data-class="points"] {
   z-index: 99;
   &::before {

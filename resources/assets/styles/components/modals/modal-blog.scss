@@ -6,6 +6,14 @@
   .modal-content {
     overflow-x: hidden;
   }
+  #blog-user {
+    .big-post {
+      padding: 0 !important;
+    }
+    .modal-body {
+      padding-top: 0 !important;
+    }
+  }
   .slider-coupon__container {
     position: relative;
     .swiper-container {

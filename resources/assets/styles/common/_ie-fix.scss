@@ -75,8 +75,10 @@
       bottom: 0 !important;
     }
     .option-price__button {
-      max-width: 300px;
-      text-align: center;
+      p {
+        max-width: 300px;
+        text-align: center;
+      }
     }
   }
   .select2-selection__arrow {

@@ -3,7 +3,8 @@
 @import "../../bootstrap-utils";
 
 // Page Specific Components
-@import "messages-dashboard.scss";
+@import "messages-dashboard";
+@import "admin-view-products";
 // .dashboard {
 
 .dashboard {
@@ -33,4 +34,7 @@
     width: 100%;
     height: 9000px;
   }
+}
+.not-shadow {
+  box-shadow: none;
 }

@@ -192,6 +192,9 @@
 
     background-color: theme-color("white");
     box-shadow: $shadow-card;
+    &.transparent {
+      background-color: transparent;
+    }
 
     &--you {
       background-color: #f8f9fb !important;

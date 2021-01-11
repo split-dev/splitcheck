@@ -255,6 +255,16 @@
       "title": "Messages dashboard",
       "description": "Messages dashboard",
       "url": "/messages-dashboard.html"
+    },
+    {
+      "title": "Admin-view-products",
+      "description": "Admin-view-products",
+      "url": "/admin-view-products.html"
+    },
+    {
+      "title": "Admin-view-products-empty",
+      "description": "Admin-view-products-empty",
+      "url": "/admin-view-products-empty.hbs"
     }
   ]
 }

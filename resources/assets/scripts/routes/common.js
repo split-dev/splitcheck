@@ -7,6 +7,7 @@ import Flatpickr from 'flatpickr';
 import Dropzone from 'dropzone';
 import 'select2/dist/js/select2.full';
 import PerfectScrollbar from 'perfect-scrollbar';
+import { log } from 'handlebars';
 
 export default {
   init() {
@@ -456,6 +457,16 @@ export default {
         $('select.form__select--default[data-toggle="select"]').select2({
           minimumResultsForSearch: Infinity,
           width: '100%',
+        });
+      }
+
+      let dropdownParent = null;
+       // * function for "Select is dropdown parent" template in modal
+       if($('select.form__select--default[data-toggle="select-parent"]')) {
+        $('select.form__select--default[data-toggle="select-parent"]').select2({
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+          theme: 'abs-box select2-container--default',
         });
       }
       //position select color
@@ -1017,6 +1028,36 @@ $('.form-add-comment__content').on('click', 'a', function(e){
         }, false);
       }
     }
+
+    //select2 new type
+    $('[data-toggle="select-parent"]').on('select2:open', function (e) {
+      let thisElem = $(this).parent().prev();
+      $(thisElem).addClass('open');
+    });
+    $('[data-toggle="select-parent"]').on('select2:opening', function (e) {
+      let thisElemWidth = $(this).parent().prev().width() + 27;
+      let windowWith = window.innerWidth;
+      let posEl = (windowWith - $(this).parent().offset().left) - thisElemWidth;
+      document.documentElement.style.setProperty('--pos', `${posEl}px`);
+    });
+
+    $('[data-toggle="select-parent"]').on('select2:close', function (e) {
+      let thisElem = $(this).parent().prev();
+      $(thisElem).removeClass('open');
+    });
+
+    $('[data-toggle="select-parent"]').on('select2:select', function (e) {
+      let thisElem = $(this).parent().prev();
+      var data = e.params.data;
+      $(thisElem).find('strong').text(data.text);
+    });
+
+    //open and close body product admin
+    $('.open-full').click( function(e) {
+      e.preventDefault();
+      $(this).parent().parent().parent().toggleClass('open');
+      $(this).parent().parent().parent().next().slideToggle();
+    })
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

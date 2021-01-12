@@ -96,6 +96,19 @@
     margin-right: 0;
   }
 
+  //.form-single--attr
+
+  &__single--attr {
+    label {
+      white-space: nowrap;
+      opacity: 0.5;
+      color: #0b0212;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+
   &__single--max {
     position: relative;
     input {

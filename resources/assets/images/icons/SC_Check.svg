@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="edit-seasonal" transform="translate(-752.000000, -1085.000000)" fill="#F77D0E" fill-rule="nonzero">
+            <g id="pricing" transform="translate(248.000000, 747.000000)">
+                <g id="notif" transform="translate(0.000000, 100.000000)">
+                    <g id="Group-8" transform="translate(8.000000, 216.000000)">
+                        <g id="check-square-regular" transform="translate(492.000000, 16.000000)">
+                            <path d="M19.5072857,8.47907143 L10.2614464,17.6507143 C10.0093929,17.9007321 9.60235714,17.899125 9.35233929,17.6470714 L4.48907143,12.7444286 C4.23905357,12.492375 4.24066071,12.0853393 4.49276786,11.8352679 L5.70985714,10.6279821 C5.96191071,10.3779643 6.36894643,10.3795714 6.61896429,10.6316786 L9.82210714,13.8608036 L17.3945357,6.34923214 C17.6465893,6.09921429 18.053625,6.10082143 18.3036429,6.352875 L19.5109286,7.56991071 C19.7609464,7.82201786 19.7593393,8.22905357 19.5072857,8.47907143 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

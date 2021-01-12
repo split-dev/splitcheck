@@ -328,6 +328,58 @@ export default {
      }
 
      // * function for "Select" template user add image
+     let arrayInfo = [
+       {
+         id: 1,
+         sky: '#134567',
+         Qty: 999,
+         price: 49.99,
+         text: 'Title here could be so much longer…',
+         img: 'images/product/7142447382608.png',
+         selected: true,
+       },
+       {
+         id: 2,
+         sky: '#134568',
+         Qty: 999,
+         price: 49.99,
+         text: 'Title here could be so much longer…',
+         img: 'images/product/7142447382608.png',
+       },
+       {
+         id: 3,
+         sky: '#134567',
+         Qty: 999,
+         price: 49.99,
+         text: 'Title here could be so much longer…',
+         img: 'images/product/7142447382608.png',
+       },
+       {
+         id: 4,
+         sky: '#134568',
+         Qty: 999,
+         price: 49.99,
+         text: 'Title here could be so much longer1…',
+         img: 'images/product/7142447382608.png',
+       },
+       {
+         id: 5,
+         sky: '#134567',
+         Qty: 999,
+         price: 49.99,
+         text: 'Title here could be so much longer2…',
+         img: 'images/product/7142447382608.png',
+       },
+       {
+         id: 6,
+         sky: '#134568',
+         Qty: 999,
+         price: 49.99,
+         text: 'Title here could be so much longer3…',
+         img: 'images/product/7142447382608.png',
+       },
+    ]
+
      if($('.form__single--select-product select[data-toggle="select-product"]')) {
       $('.form__single--select-product select[data-toggle="select-product"]').select2({
         minimumResultsForSearch: Infinity,
@@ -335,20 +387,25 @@ export default {
         closeOnSelect: false,
         width: '100%',
         theme: 'select2-container select2-container--default static-select',
+        data: arrayInfo,
         templateResult: function (state) {
-          console.log(state)
           if (!state.id) {
             return state.text;
           }
-          var baseUrl = 'images/profiles';
           var $state = $(`
             <div class="profile-list">
               <figure class="profile-list__avatar">
-                <img src="${baseUrl}/${state.element.value.toLowerCase()}.png" alt="avatar">
-                <div>${state.element}</div>
+                <img src="${state.img}" alt="product">
                 <span class="profile-list__symbol"></span>
               </figure>
-              <span>${state.text}11</span>
+              <div class="select-info">
+                <strong>${state.text}</strong>
+                <ul>
+                <li>Sku: <span>${state.sky}</span></li>
+                <li>Qty: <span>${state.Qty}</span></li>
+                <li>$ <span>${state.price}</span></li>
+                </ul>
+              </div>
             </div>
           `);
 
@@ -357,6 +414,63 @@ export default {
         dropdownParent: $('.associated-box__select'),
       });
      }
+
+     //select2 select
+     $('[data-toggle="select-product"]').on('select2:select', function (e) {
+      var data = e.params.data;
+      let stateEl = `
+            <div class="selected-item">
+            <div class="selected-item__left">
+                <div class="selected-item__photo"
+                    style="background-image: url('${data.img}');">
+                    <span>SM</span>
+                </div>
+                <div class="selected-item__info">
+                    <strong>${data.text}</strong>
+                    <ul>
+                        <li>Sku: <span>${data.sky}</span></li>
+                        <li>Qty: <span>${data.Qty}</span></li>
+                        <li>$ <span>${data.price}</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="selected-item__right">
+                <a href="#" id="${data.id}">Delete</a>
+            </div>
+        </div>
+        `;
+      document.querySelector('.associated-box__result').insertAdjacentHTML('beforeend', stateEl);
+  });
+
+  //select2 custom scroll product
+  //scroll
+  $('[data-toggle="select-product"]').on('select2:open', function (e) {
+    function resizeLine() {
+      psLine.update();
+    }
+    var psLine = new PerfectScrollbar('ul.select2-results__options');
+    window.onresize = resizeLine;
+    setTimeout( function() {
+      resizeLine();
+    }, 1)
+  });
+  //select2 remove checked element
+  $('[data-toggle="select-product"]').on('select2:unselect', function (e) {
+    var id = e.params.data.id;
+    $('#' + id).parent().parent().remove();
+  });
+  //click create object
+  $('.associated-box__result').on('click', 'a', function(e) {
+    e.preventDefault();
+    let id = $(this).attr('id');
+    let selectEl = $(this).parent().parent().parent().parent().find($('select'))
+    let arraySelected = $(selectEl).val();
+    delete arraySelected[arraySelected.indexOf(id)]
+    $(selectEl).val(arraySelected).trigger('change');
+    //remove item
+    $(this).parent().parent().remove();
+   })
+
 
      // * function for "Select" template select search no image
      if($('.form__single--select-no-image select[data-toggle="select-no-image"]')) {

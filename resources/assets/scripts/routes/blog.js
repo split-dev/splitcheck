@@ -5,6 +5,11 @@ import 'bootstrap/js/dist/modal';
 
 export default {
   init() {
+$('.toggle-btn').click(function() {
+  $(this).prev().slideToggle(400);
+  $(this).toggleClass('toggle-btn-reverte');
+})
+
     if($('.blog-main__slider').hasClass('blog-main__slider')) {
       let blogSlider = new Swiper('.blog-main__slider.swiper-container', {
           slidesPerView: 3,
@@ -41,9 +46,9 @@ export default {
       });
   }
 
-  if($('.coupon__slider').hasClass('coupon__slider')) {
-    let couponSlider = new Swiper('.coupon__slider.swiper-container', {
-        slidesPerView: 2,
+  if($('.slider-coupon__container').hasClass('slider-coupon__container')) {
+    let couponSlider = new Swiper('.coupon__slider .swiper-container', {
+        slidesPerView: 'auto',
         spaceBetween: 12,
         navigation: {
           nextEl: '.internal-card__slider .swiper-button-next',
@@ -52,7 +57,7 @@ export default {
         breakpoints: {
           
             991: {
-              slidesPerView: 2,
+              slidesPerView: 'auto',
               spaceBetween: 12,
             },
             767: {

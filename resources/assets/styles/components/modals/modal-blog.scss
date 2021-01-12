@@ -3,8 +3,55 @@
 @import "../../bootstrap-utils";
 
 .modal-blog {
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-right: 18px;
+    font-weight: $font-weight-medium;
+    background-color: theme-color("white");
+
+    img {
+      margin-left: 15px;
+    }
+
+    &:active:focus,
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 !important;
+    }
+    color: #35548f;
+    border: 2px solid theme-color("blue2") !important;
+
+    &:hover {
+      background: theme-color("blue2") !important;
+      color: theme-color("white");
+    }
+    &.active {
+      background: theme-color("blue2") !important;
+      color: theme-color("white");
+    }
+
+    &:focus {
+      background-color: theme-color("blue3");
+      color: theme-color("white");
+    }
+  }
   .modal-content {
     overflow-x: hidden;
+  }
+  .big-post {
+    padding: 0 !important;
+  }
+  .modal-body {
+    padding-top: 0 !important;
   }
   .slider-coupon__container {
     position: relative;
@@ -46,10 +93,15 @@
     .all-coupon {
       margin-bottom: 25px;
       padding: 0;
+      margin-top: 15px;
     }
   }
   .big-post__title {
-    margin-left: 0;
+    margin-left: 0 !important;
+    h5 {
+      color: #0b0212;
+      font-size: 24px;
+    }
   }
   .big-post {
     box-shadow: none !important;
@@ -69,11 +121,17 @@
     max-width: 640px !important;
     min-height: 350px;
   }
+  .btn-blue {
+    font-size: 18px !important;
+  }
   &__user-right {
     padding: 30px 28px 16px 25px;
     width: 60%;
     @media (max-width: 575px) {
       padding: 30px 15px 16px 15px;
+    }
+    p {
+      font-size: 14px !important;
     }
     .btn-border {
       font-size: 14px !important;
@@ -81,9 +139,12 @@
     .close {
       width: 32px;
       height: 32px;
-      box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
-      background-color: #fff;
-      border-radius: 50%;
+
+      @media (max-width: 575px) {
+        box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
+        background-color: #fff;
+        border-radius: 50%;
+      }
     }
     @media (max-width: 575px) {
       width: 100%;

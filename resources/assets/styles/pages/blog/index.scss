@@ -15,6 +15,18 @@
   }
 }
 .blog {
+  .header {
+    &__left {
+      @media (max-width: 767px) {
+        position: absolute;
+      }
+    }
+    &__right {
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
   .mini-post__right {
     @media (max-width: 575px) {
       margin-left: 0 !important;
@@ -50,12 +62,7 @@
       padding-top: 15px !important;
     }
   }
-  .container {
-    @media (max-width: 575px) {
-      padding-right: 15px !important;
-      padding-left: 15px !important;
-    }
-  }
+
   .btn-border {
     &:hover {
       .heart-blue {
@@ -104,8 +111,16 @@
       padding-right: 45px !important;
     }
   }
+  .blog-content {
+    .container {
+      @media (max-width: 575px) {
+        padding: 0;
+      }
+    }
+  }
   &-before {
     position: relative;
+
     &::before {
       content: "";
       position: absolute;

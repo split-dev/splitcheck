@@ -1,4 +1,16 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .product {
+    .features-company__text {
+      width: 100%;
+    }
+  }
+  .stock {
+    form {
+      input {
+        padding: 0 !important;
+      }
+    }
+  }
   .orders__card-reaction {
     img {
       width: 20px;

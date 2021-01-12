@@ -6,6 +6,10 @@
 @import "messages-dashboard";
 @import "edit-seasonal";
 @import "admin-view-products";
+@import "statistic";
+@import "moments";
+@import "earning";
+
 // .dashboard {
 
 .dashboard {
@@ -22,7 +26,6 @@
   }
 
   .main-content {
-    padding-top: 20px;
     padding-left: 219px;
 
     @include media-breakpoint-down(md) {
@@ -31,9 +34,94 @@
       flex-wrap: wrap;
     }
   }
+
   .main {
+    max-width: 684px;
     width: 100%;
-    height: 9000px;
+
+    .toogle-box {
+      max-width: 100%;
+    }
+  }
+
+  .aside-right {
+    padding-left: 24px;
+    max-width: 474px;
+    width: 100%;
+  }
+
+  .section-content {
+    padding-top: 8px;
+
+    &__title {
+      padding-left: 20px;
+    }
+
+    .section-content__title {
+      &:nth-of-type(2) {
+        margin-top: -12px;
+      }
+    }
+
+    &__title--black {
+      max-width: 370px;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  .section-content__tiles {
+    height: 420px;
+    margin-bottom: 28px;
+
+    > div {
+      &:first-of-type {
+        height: 420px;
+      }
+
+      &:nth-of-type(2),
+      &:last-of-type {
+        height: calc((420px / 2) - 8px);
+      }
+    }
+
+    .internal-card--main {
+      background-color: transparent;
+
+      .internal-card__info {
+        width: 57%;
+        padding-right: 0;
+
+        h2 {
+          font-size: 18px;
+          line-height: 18px;
+          margin-bottom: 12px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      .internal-card__img {
+        max-width: 115px;
+        height: calc(100% - 50px);
+        margin-left: auto;
+      }
+    }
+
+    .main__card {
+      padding-top: 19px;
+
+      .btn-border {
+        max-width: 100%;
+      }
+    }
+
+    .statistic-box {
+      margin-bottom: 0;
+    }
   }
 }
 .not-shadow {

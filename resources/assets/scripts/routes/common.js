@@ -666,9 +666,7 @@ export default {
    });
 
     //show and sticky aside left
-    if ($('.dashboard .aside-left').hasClass('aside-left')) {
-      console.log()
-    } else if ($('.aside-left').hasClass('aside-left')) {
+    if ($('.aside-left').hasClass('aside-left')) {
       var ScrollTop = 0;
       $(window).scroll(function(event){
         var st = $(this).scrollTop();
@@ -781,7 +779,7 @@ export default {
               }
           var cnt = (maxCount - revText);
           $(this).parent().find($('.count span:first-of-type')).text(revText)
-  
+
       });
 
       //* function button Options(three dots)
@@ -850,8 +848,8 @@ export default {
     }
 
     if($('.toogle-box__scroll').hasClass('toogle-box__scroll')) {
-      $('.toogle-box__scroll').each(function(){ 
-        const ps = new PerfectScrollbar($(this)[0]); 
+      $('.toogle-box__scroll').each(function(){
+        const ps = new PerfectScrollbar($(this)[0]);
       });
       var ps = new PerfectScrollbar('.toogle-box__scroll');
       window.onresize = resize;

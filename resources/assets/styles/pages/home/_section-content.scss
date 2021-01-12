@@ -1,7 +1,9 @@
 .section-content {
+
   // .section-content__title
 
   &__title {
+    display: inline-block;
     height: 14px;
     font-size: 12px;
     font-weight: 400;
@@ -23,6 +25,13 @@
     .icon {
       position: relative;
     }
+  }
+
+  // .section-content__title--black
+
+  &__title--black {
+    height: auto;
+    text-transform: inherit;
   }
 
   // .section-content__title--center
@@ -73,7 +82,7 @@
       height: auto;
     }
 
-    .main__card {
+    > div {
       &:first-of-type {
         width: calc(50% - 8px);
         height: 340px;
@@ -146,7 +155,9 @@
           margin: 0 auto;
         }
       }
+    }
 
+    .main__card {
       .main__buttons {
         margin-top: 0;
         justify-content: center;

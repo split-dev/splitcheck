@@ -1,0 +1,54 @@
+.moments {
+  width: 100%;
+  margin-bottom: 20px;
+
+  // .moments__list
+
+  &__list {
+    width: 100%;
+  }
+
+  // .moments__item
+
+  &__item {
+    padding: 12px 16px;
+    width: calc(33.33333% - 9px);
+    min-height: 153px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    background-color: theme-color("white");
+    box-shadow: $shadow-theme-card;
+  }
+
+  // .moments__num
+
+  &__num {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+
+    font-weight: $font-weight-medium;
+  }
+
+  // .moments__title
+
+  &__title {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+
+    font-weight: $font-weight-medium;
+  }
+
+  // .moments__text
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+}

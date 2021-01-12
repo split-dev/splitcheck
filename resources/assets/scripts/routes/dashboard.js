@@ -1,4 +1,5 @@
 import SimpleScrollbar from 'simple-scrollbar';
+import PerfectScrollbar from 'perfect-scrollbar';
 
 export default {
   init() {
@@ -145,6 +146,44 @@ export default {
         heightWhat();
         positionSt();
       }, false);
+    }
+
+    //* scroll
+    {
+      if($('[data-scroll="perfect-scrollbar"]').length > 0) {
+        const psItems = document.querySelectorAll('[data-scroll="perfect-scrollbar"]')
+
+        const resize = (elem) => {
+          elem.update();
+        }
+
+        for (let i = 0; i < psItems.length; i++) {
+          const element = psItems[i];
+
+          console.log(element)
+          const ps = new PerfectScrollbar(element);
+
+          window.onresize = resize(ps);
+        }
+      }
+    }
+
+    // mobile append aside right
+    {
+      const tpCollection = () => {
+        if(window.innerWidth < 992) {
+          $('.section-aside-right-mob').append($('.aside-right .section-content'))
+        } else {
+          if($('.section-aside-right-mob .section-content').hasClass('section-content')) {
+            $('.aside-right').append($('.section-aside-right-mob .section-content'))
+          }
+        }
+      }
+
+      tpCollection()
+      $(window).resize( function() {
+        tpCollection();
+      })
     }
   },
 

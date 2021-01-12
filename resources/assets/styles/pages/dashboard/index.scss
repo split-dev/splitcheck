@@ -36,8 +36,11 @@
   }
 
   .main {
-    max-width: 684px;
     width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 684px;
+    }
 
     .toogle-box {
       max-width: 100%;

@@ -265,6 +265,11 @@
       "title": "Admin-view-products-empty",
       "description": "Admin-view-products-empty",
       "url": "/admin-view-products-empty.html"
+    },
+    {
+      "title": "Edit-seasonal",
+      "description": "Edit-seasonal.hbs",
+      "url": "/edit-seasonal.html"
     }
   ]
 }

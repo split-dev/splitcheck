@@ -1215,6 +1215,14 @@ $('.form-add-comment__content').on('click', 'a', function(e){
         emotionCalc(array[i]);
       }
     }
+
+    //focus element .form__single--atr
+    $('.form__single--attr input').focus(function() {
+      $(this).parent().addClass('focus');
+    });
+    $('.form__single--attr input').focusout(function() {
+      $(this).parent().removeClass('focus');
+    });
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

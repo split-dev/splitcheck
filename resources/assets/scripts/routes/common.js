@@ -327,6 +327,37 @@ export default {
       });
      }
 
+     // * function for "Select" template user add image
+     if($('.form__single--select-product select[data-toggle="select-product"]')) {
+      $('.form__single--select-product select[data-toggle="select-product"]').select2({
+        minimumResultsForSearch: Infinity,
+        maximumSelectionLength: 4,
+        closeOnSelect: false,
+        width: '100%',
+        theme: 'select2-container select2-container--default static-select',
+        templateResult: function (state) {
+          console.log(state)
+          if (!state.id) {
+            return state.text;
+          }
+          var baseUrl = 'images/profiles';
+          var $state = $(`
+            <div class="profile-list">
+              <figure class="profile-list__avatar">
+                <img src="${baseUrl}/${state.element.value.toLowerCase()}.png" alt="avatar">
+                <div>${state.element}</div>
+                <span class="profile-list__symbol"></span>
+              </figure>
+              <span>${state.text}11</span>
+            </div>
+          `);
+
+          return $state;
+        },
+        dropdownParent: $('.associated-box__select'),
+      });
+     }
+
      // * function for "Select" template select search no image
      if($('.form__single--select-no-image select[data-toggle="select-no-image"]')) {
       $('.form__single--select-no-image select[data-toggle="select-no-image"]').select2({
@@ -1058,6 +1089,20 @@ $('.form-add-comment__content').on('click', 'a', function(e){
       $(this).parent().parent().parent().toggleClass('open');
       $(this).parent().parent().parent().next().slideToggle();
     })
+
+
+    //emotion script
+    function emotionCalc(item) {
+      let atr = Number($(item).attr('data-progress'));
+      $(item).children('.line').css('height', atr + 'px')
+    }
+
+    if($('.statistic-box__emotion')) {
+      let array = $('.progress');
+      for(let i = 0; i<= array.length; i++) {
+        emotionCalc(array[i]);
+      }
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

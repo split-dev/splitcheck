@@ -574,19 +574,6 @@ export default {
     }
   
 
-    //emotion script
-    function emotionCalc(item) {
-      let atr = Number($(item).attr('data-progress'));
-      $(item).children('.line').css('height', atr + 'px')
-    }
-
-    if($('.statistic-box__emotion')) {
-      let array = $('.progress');
-      for(let i = 0; i<= array.length; i++) {
-        emotionCalc(array[i]);
-      }
-    }
-
     //* Dropzone and Cropper
     {
       

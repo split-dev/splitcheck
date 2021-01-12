@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="dashboard create">
+    {{> ../common/header-dashboard }}
+    <!-- admin-menu -->
+    <div class="admin-menu position-fixed">
+        <div class="admin-menu__header d-flex d-lg-none">
+            <div class="admin-menu__close">
+                <img src="images/icons/close-blue.svg" alt="">
+            </div>
+            <a class="admin-menu__logo" href="/index.html">
+                <img class="admin-menu__img" src="images/icons/splitcheck-w-logo.png" alt="logo">
+                <span>Manage stores</span>
+            </a>
+        </div>
+        <section class="section-content">
+            {{!-- admin menu minimize - add class admin-menu--minimize --}}
+            <div class="admin-menu__nav position-relative">
+                <button class="admin-menu__btn-minimize d-none d-lg-block">
+                    <i class="icon icon-minimize"></i>
+                </button>
+                <div class="scroll-div">
+                    <div class="admin-menu__user-select d-flex d-lg-none">
+                        <div class="user-select">
+                            <div class="user-select__photo">
+                                <div style="background-image: url(images/message/img-1.png);"> <span>WD</span>
+                                </div>
+                            </div>
+                            <span class="user-select__name">Genetix Nutrition</span>
+                            <div
+                                class="form__single form__single--select form__single--select-default form__single--fluid">
+                                <select class="form__select form__select--default" data-toggle="select">
+                                    <option value="user-1" title="TS">Terry Smith</option>
+                                    <option value="user-1" title="TW">Terry Will Green</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="admin-menu__list d-flex flex-column list-unstyled mb-0">
+                        <li class="admin-menu__item">
+                            <a href="#" class="admin-menu__link position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-dashboard"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="admin-menu__item">
+                            <a href="#" class="admin-menu__link position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-notification"></i>
+                                <span>Alerts</span>
+                            </a>
+                        </li>
+                        <li class="admin-menu__item">
+                            <a href="#" class="admin-menu__link position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-messages"></i>
+                                <span>Trading room</span>
+                            </a>
+                        </li>
+                        <li class="admin-menu__item admin-menu__item--submenu">
+                            <div class="admin-menu__title position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-shipping"></i>
+                                <span>Orders</span>
+                                <i class="icon icon-blue-arrow"></i>
+                            </div>
+
+                            <ul class="admin-menu__list">
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>View orders</span>
+                                    </a>
+                                </li>
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>Abandoned cart</span>
+                                    </a>
+                                </li>
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>Items in wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>Shop for your store</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="admin-menu__item admin-menu__item--submenu">
+                            <div class="admin-menu__title position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-networking"></i>
+                                <span>Networking</span>
+                                <i class="icon icon-blue-arrow"></i>
+                            </div>
+
+                            <ul class="admin-menu__list">
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>View orders</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="admin-menu__item admin-menu__item--submenu">
+                            <div class="admin-menu__title position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-social-media"></i>
+                                <span>Posts</span>
+                                <i class="icon icon-blue-arrow"></i>
+                            </div>
+
+                            <ul class="admin-menu__list">
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>View orders</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="admin-menu__item admin-menu__item--submenu">
+                            <div class="admin-menu__title position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-landing-page"></i>
+                                <span>Landing pages</span>
+                                <i class="icon icon-blue-arrow"></i>
+                            </div>
+
+                            <ul class="admin-menu__list">
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>View orders</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="admin-menu__item admin-menu__item--submenu js-open admin-menu__item--visit">
+                            <div class="admin-menu__title position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-gift active"></i>
+                                <span>Products</span>
+                                <i class="icon icon-blue-arrow"></i>
+                            </div>
+
+                            <ul class="admin-menu__list" style="display: block; height: auto;">
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>View orders</span>
+                                    </a>
+                                </li>
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>Inventory</span>
+                                    </a>
+                                </li>
+                                <li class="admin-menu__item admin-menu__item--visit">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>View seasonal</span>
+                                    </a>
+                                </li>
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>Create product</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="admin-menu__item admin-menu__item--submenu">
+                            <div class="admin-menu__title position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-megaphone"></i>
+                                <span>Marketing</span>
+                                <i class="icon icon-blue-arrow"></i>
+                            </div>
+
+                            <ul class="admin-menu__list">
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>View orders</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="admin-menu__item admin-menu__item--submenu">
+                            <div class="admin-menu__title position-relative">
+                                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                                <i class="icon icon-shop"></i>
+                                <span>My stores</span>
+                                <i class="icon icon-blue-arrow"></i>
+                            </div>
+
+                            <ul class="admin-menu__list">
+                                <li class="admin-menu__item">
+                                    <a href="#" class="admin-menu__link position-relative">
+                                        <span>View orders</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="admin-menu__footer d-flex d-lg-none">
+                        <form action="" class="form form-admin-menu">
+                            <div class="form__wrap">
+                                <div
+                                    class="form__single form__single--fluid form__single--checkbox form__single--checkbox-left">
+                                    <input type="checkbox" id="checkbox-alert-admin-menu"
+                                        class="form__checkbox form__checkbox--language" name="checkbox-alert-admin-menu"
+                                        checked="">
+                                    <label for="checkbox-alert-admin-menu">
+                                        <b>Alert me when new messages arrive</b>
+                                    </label>
+                                </div>
+                                <div
+                                    class="form__single form__single--fluid form__single--checkbox form__single--checkbox-left">
+                                    <input type="checkbox" id="checkbox-alert-admin-menu2"
+                                        class="form__checkbox form__checkbox--language"
+                                        name="checkbox-alert-admin-menu2" checked="">
+                                    <label for="checkbox-alert-admin-menu2">
+                                        <b>Alert me when shopper visits my store</b>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <span class="admin-menu__copyright">All rights reserved SplitchChek 2020</span>
+        </section>
+    </div>
+    <!-- /admin-menu -->
+
+    {{> ../common/mobile-menu-bottom }}
+
+    <div class="section-blur theme-background-one" data-class="blue" id="background">
+
+        <div class="container container--admin">
+            <div class="main-content position-relative d-flex align-items-start">
+                <!-- main -->
+                <main class="main">
+                    <div class="section-content">
+                        <a href="#" class="back-title"><img src="images/icons/back.svg" alt="back">Create Product
+                            Season</a>
+                        <div class="main__card position-relative p-0 transparent not-shadow p-0">
+                            <div class="section-content">
+                                <div class="season-title-box">
+                                    <div class="form__single form__single--fluid form__single--max">
+                                        <label class="form__label">Title</label>
+                                        <div class="position-relative w-100" data-maxlength="120">
+                                            <input type="text" class="form__input" required=""
+                                                placeholder="season title">
+                                            <div class="count">
+                                                <span>0</span>/<span>120</span>
+                                            </div>
+                                        </div>
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="w-100 max-text" data-maxlength="225">
+                                        <label class="form__label">Short description</label>
+                                        <textarea class="form__textarea" placeholder="Write something"></textarea>
+                                        <div class="count"><span>0</span>/<span>255</span></div>
+                                    </div>
+                                    <div class="season-title-box__other">
+                                        <p>this is your sales pitch about the products in your current season. e.g. Buy
+                                            this
+                                            products and double your points PLUS earn SplitChek points when you buy
+                                            below
+                                            products</p>
+                                        <strong>Demographics</strong>
+                                        <div class="members__form">
+                                            <div
+                                                class=" form__single--select form__single--select-default form__single--fluid">
+                                                <label class="form__label">Age bracket</label>
+                                                <div class="select-before">
+                                                    <select class="form__select form__select--default"
+                                                        data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                        aria-hidden="true">
+                                                        <option value="#">Over 16</option>
+                                                        <option value="#">Start typing</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="members__form">
+                                            <span class="form__note">
+                                                Marketing tags
+                                            </span>
+                                            <div
+                                                class="form__single form__single--select form__single--select-user form__single--fluid">
+                                                <select class="form__input" data-toggle="select-img"
+                                                    multiple="multiple">
+                                                    <option value="user-1">Organic</option>
+                                                    <option value="user-2">Gluten Free</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <p>These tags are displayed to shoppers and must be relevant to them. e.g. Vegan
+                                            Friendly, Gluten Free, GST Free, Organic</p>
+                                    </div>
+                                </div>
+                                <div class="associated-box">
+                                    <strong>Assocaited products (4 products max)</strong>
+                                    <div class="associated-box__select">
+                                        <div class="form__inputs">
+                                            <div class="form__wrap">
+                                                <div
+                                                    class="form__single form__single--select form__single--select-product form__single--fluid">
+                                                    <select class="form__input" data-toggle="select-product"
+                                                        multiple="multiple">
+                                                        <option value="user-1" data-option="small">Terry Smith</option>
+                                                        <option value="user-2">Terry Will Green</option>
+                                                        <option value="user-3">Terry Brown</option>
+                                                    </select>
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="associated-box__result">
+                                        <span>Seasonal list</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!-- /main -->
+                <!-- aside-right -->
+                <aside class="aside-right d-none d-lg-block">
+                    <div class="scroll-div">
+                        <section class="section-content">
+                            <span
+                                class="section-content__title position-relative d-flex align-items-center">Statistic</span>
+                            <div class="statistic-box">
+                                <div class="statistic-box__head d-flex align-items-center justify-content-between">
+                                    <div class="d-flex flex-column">
+                                        <strong>200k</strong>
+                                        <span>Views</span>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <strong>500k</strong>
+                                        <span>Clicks</span>
+                                    </div>
+                                </div>
+                                <ul class="statistic-box__post w-100">
+                                    <li><span>reactions</span>
+                                        <ul class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                                            <li class="reaction__item-icon">
+                                                <i class="icon icon-like"></i>
+                                            </li>
+                                            <li class="reaction__item-icon">
+                                                <i class="icon icon-heart-l"></i>
+                                            </li>
+                                            <li class="reaction__item-icon">
+                                                <i class="icon icon-happy"></i>
+                                            </li>
+                                            <li class="reaction__item-icon">
+                                                <i class="icon icon-surprised"></i>
+                                            </li>
+                                            <li class="reaction__item-icon">
+                                                <i class="icon icon-angry"></i>
+                                            </li>
+                                        </ul>
+                                        <b>437</b>
+                                    </li>
+                                    <li><span>comments</span> <b>65</b></li>
+                                    <li><span>added to timeline</span> <b>8</b></li>
+                                    <li><span>shared</span> <b>6</b></li>
+                                </ul>
+                                <div class="statistic-box__reaction w-100">
+                                    <h4>Reactions</h4>
+                                    <div class="statistic-box__emotion">
+                                        <ul>
+                                            <li>
+                                                <div class="progress" data-progress="100">
+                                                    <div class="line blue"></div>
+                                                </div>
+                                                <i class="icon icon-like"></i>
+                                                <span>like</span>
+                                                <strong>200</strong>
+                                            </li>
+                                            <li>
+                                                <div class="progress" data-progress="90">
+                                                    <div class="line red"></div>
+                                                </div>
+                                                <i class="icon icon-heart-l"></i>
+                                                <span>love</span>
+                                                <strong>170</strong>
+                                            </li>
+                                            <li>
+                                                <div class="progress" data-progress="3">
+                                                    <div class="line"></div>
+                                                </div>
+                                                <i class="icon icon-happy"></i>
+                                                <span>joy</span>
+                                                <strong>2</strong>
+                                            </li>
+                                            <li>
+                                                <div class="progress" data-progress="35">
+                                                    <div class="line"></div>
+                                                </div>
+                                                <i class="icon icon-surprised"></i>
+                                                <span>wow</span>
+                                                <strong>65</strong>
+                                            </li>
+                                            <li>
+                                                <div class="progress" data-progress="0">
+                                                    <div class="line"></div>
+                                                </div>
+                                                <i class="icon icon-angry"></i>
+                                                <span>angry</span>
+                                                <strong>0</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="reach-and-conversion">
+                                    <ul>
+                                        <strong>Reach</strong>
+                                        <li>fans<b>65</b></li>
+                                        <li>non-fans<b>8</b></li>
+                                        <li>organic<b>20</b></li>
+                                        <li>paid<b>34</b></li>
+                                    </ul>
+                                    <ul>
+                                        <strong>Conversion</strong>
+                                        <li>Ad cost<b>$ 49.90</b></li>
+                                        <li>Ad spent<b>8</b></li>
+                                        <li>CPC<b>20</b></li>
+                                        <li>CPV<b>34</b></li>
+                                        <li>Added to Cart<b>20</b></li>
+                                        <li>Sales<b>34</b></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </aside>
+                <!-- /aside-right -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

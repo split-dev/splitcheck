@@ -264,7 +264,7 @@
     {
       "title": "Admin-view-products-empty",
       "description": "Admin-view-products-empty",
-      "url": "/admin-view-products-empty.hbs"
+      "url": "/admin-view-products-empty.html"
     }
   ]
 }

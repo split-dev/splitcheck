@@ -45,7 +45,14 @@
     }
     .section-toggle {
       margin-bottom: 15px;
+      box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+      border-radius: 8px;
+
+      .toggle-btn-reverte {
+        transform: rotate(180deg);
+      }
       .blog-main__search {
+        padding: 5px;
         max-width: 100%;
         @media (max-width: 575px) {
           .btn-blue {
@@ -58,6 +65,8 @@
       }
       .blog-main__table {
         max-width: 100%;
+        box-shadow: none;
+        padding-bottom: 15px;
         svg {
           margin-top: 20px;
           transform: rotate(180deg);

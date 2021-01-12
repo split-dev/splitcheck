@@ -3,16 +3,55 @@
 @import "../../bootstrap-utils";
 
 .modal-blog {
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-right: 18px;
+    font-weight: $font-weight-medium;
+    background-color: theme-color("white");
+
+    img {
+      margin-left: 15px;
+    }
+
+    &:active:focus,
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 !important;
+    }
+    color: #35548f;
+    border: 2px solid theme-color("blue2") !important;
+
+    &:hover {
+      background: theme-color("blue2") !important;
+      color: theme-color("white");
+    }
+    &.active {
+      background: theme-color("blue2") !important;
+      color: theme-color("white");
+    }
+
+    &:focus {
+      background-color: theme-color("blue3");
+      color: theme-color("white");
+    }
+  }
   .modal-content {
     overflow-x: hidden;
   }
-  #blog-user {
-    .big-post {
-      padding: 0 !important;
-    }
-    .modal-body {
-      padding-top: 0 !important;
-    }
+  .big-post {
+    padding: 0 !important;
+  }
+  .modal-body {
+    padding-top: 0 !important;
   }
   .slider-coupon__container {
     position: relative;

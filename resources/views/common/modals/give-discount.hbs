@@ -1,0 +1,56 @@
+<!-- modal-give-discount -->
+<div class="modal fade modal-give-discount" id="give-discount" role="dialog" data-focus="false"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content position-relative">
+      <!-- modal-header -->
+      <div class="modal-header d-flex align-items-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <!-- /modal-header -->
+      <!-- modal-body -->
+      <div class="modal-body">
+        <h2>Do you want to give a discount?</h2>
+        <!-- form -->
+        <form action="#" id="give-discount-form" class="form">
+          <div class="form__inputs">
+            <!-- for error add class div form__single - *error* -->
+            <div class="form__single form__single--fluid  error">
+              <label class="form__label">Discount amount in %</label>
+              <input type="text" class="form__input" required="" placeholder="10%">
+              <span class="form__symbol-error"></span>
+            </div>
+
+            <div class="form__wrap">
+              <!-- for error add class div form__single - *error* -->
+              <div class="form__single form__single--date form__single--fluid">
+                <label class="form__label">Expiration date</label>
+                <input type="text" class="form__input" data-toggle="datepicker" required="">
+                <span class="form__symbol-error"></span>
+              </div>
+
+              <div class="form__checkbox-wrap form__checkbox-wrap--custom">
+                <input type="checkbox" id="checkbox-remind" class="form__checkbox-orange" name="checkbox-remind">
+                <label for="checkbox-remind">
+                  Remind me a day before
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- modal-footer -->
+          <div class="modal-footer w-100 d-flex align-items-center justify-content-center">
+            <button class="btn-form btn-border">No, thanks</button>
+            <button class="btn-form btn-blue">Offer discount</button>
+          </div>
+          <!-- /modal-footer -->
+        </form>
+        <!-- /form -->
+      </div>
+      <!-- /modal-body -->
+      <!-- <div class="modal-footer">
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- /modal-add-timeline-dashboard -->

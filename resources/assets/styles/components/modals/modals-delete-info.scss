@@ -9,8 +9,16 @@
     line-height: 16px;
     text-align: left;
   }
+  .modal-header {
+    padding-top: 4px;
+  }
+  .modal-content {
+    padding: 15px 20px 9px;
+  }
   .modal-body {
+    padding-top: 16px;
     p {
+      max-width: 228px;
       color: #0b0212;
       font-size: 14px;
       font-weight: 400;
@@ -25,5 +33,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-bottom: 0;
+    a {
+      color: #335491;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: left;
+      margin-right: 30px;
+      &:last-of-type {
+        color: #fa0128;
+        margin-right: 0;
+      }
+    }
   }
 }

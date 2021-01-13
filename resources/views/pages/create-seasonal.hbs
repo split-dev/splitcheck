@@ -437,7 +437,8 @@
                                     </div>
                                 </div>
                                 <div class="section-button">
-                                    <a href="#" class="btn-border-red">Delete all info</a>
+                                    <a href="#" class="btn-border-red" data-toggle="modal"
+                                        data-target="#delete-info">Delete all info</a>
                                     <div class="d-flex">
                                         <a href="#" class="btn-border btn-border--two">Cancel edit</a>
                                         <a href="#" class="btn btn-blue">Save</a>
@@ -451,6 +452,8 @@
             </div>
         </div>
     </div>
+    {{!-- modals --}}
+    {{> ../common/modals/modals-delete-info }}
 </body>
 
 </html>

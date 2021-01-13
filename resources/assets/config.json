@@ -49,7 +49,8 @@
       "./styles/components/modals/modal-groups.scss",
       "./styles/components/modals/modal-check.scss",
       "./styles/components/modals/modal-recurrent.scss",
-      "./styles/components/modals/modal-blog.scss"
+      "./styles/components/modals/modal-blog.scss",
+      "./styles/components/modals/modals-delete-info.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",
@@ -95,7 +96,8 @@
     "components/modals/modal-child": "./styles/components/modals/modal-child.scss",
     "components/modals/modal-invite": "./styles/components/modals/modal-invite.scss",
     "components/modals/modal-unlink": "./styles/components/modals/modal-unlink.scss",
-    "components/modals/modal-check": "./styles/components/modals/modal-check.scss"
+    "components/modals/modal-check": "./styles/components/modals/modal-check.scss",
+    "components/modals/modals-delete-info": "./styles/components/modals/modals-delete-info.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

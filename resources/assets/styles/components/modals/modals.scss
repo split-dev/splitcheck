@@ -47,6 +47,7 @@
 // style form for modal
 .modal {
   // modal REGISTER and LOGIN
+  z-index: 10500;
   &.modal-register,
   &.modal-login {
     padding-right: 0 !important;

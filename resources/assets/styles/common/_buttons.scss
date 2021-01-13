@@ -1,5 +1,6 @@
 .btn-border,
-.btn-border-orange {
+.btn-border-orange,
+.btn-border-red {
   position: relative;
   display: flex;
   align-items: center;
@@ -64,6 +65,22 @@
 
   &:active {
     background-color: theme-color("orange");
+    color: theme-color("white");
+  }
+}
+
+.btn-border-red {
+  color: #fa0128;
+  border: 2px solid #fa0128;
+
+  &:hover,
+  &:focus {
+    background-color: #fa0128;
+    color: theme-color("white");
+  }
+
+  &:active {
+    background-color: #fa0128;
     color: theme-color("white");
   }
 }

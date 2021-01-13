@@ -146,6 +146,18 @@ export default {
         positionSt();
       }, false);
     }
+
+
+    //clone new box .add-field
+    $('.checked-box #useMeta').on('click', function() {
+      $(this).parent().find($('.checked-box__body')).slideToggle();
+    })
+
+    document.querySelector('.add-field').addEventListener('click', function(e) {
+      e.preventDefault();
+      let clone = document.querySelector('.checked-box__item').cloneNode(true);
+      document.querySelector('.checked-box__list').appendChild(clone)
+    })
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

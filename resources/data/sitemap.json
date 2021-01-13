@@ -268,8 +268,13 @@
     },
     {
       "title": "Edit-seasonal",
-      "description": "Edit-seasonal.hbs",
+      "description": "Edit-seasonal",
       "url": "/edit-seasonal.html"
+    },
+    {
+      "title": "Create-seasonal",
+      "description": "Create-seasonal",
+      "url": "/create-seasonal.html"
     }
   ]
 }

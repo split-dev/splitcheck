@@ -238,9 +238,7 @@ export default {
         hoverReaction();
       }
     }
-
-
-
+    
     //scroll nav
     if($('.nav-product').hasClass('nav-product')) {
       var positions = [],
@@ -281,7 +279,26 @@ export default {
     return false;
 });
 
+    //* modal event
+    {
+      $('.modal').on('shown.bs.modal', function () {
+        setTimeout(function() {
+          $('.admin-menu').addClass('filter');
+          $('.header.header--dashboard').addClass('filter');
+        }, 50);
 
+      })
+      $('.modal').on('hidden.bs.modal', function(){
+        if($('.modal:visible').length > 0) {
+          $('body').addClass('modal-open');
+        } else {
+          setTimeout(function() {
+            $('.admin-menu').removeClass('filter');
+            $('.header.header--dashboard').removeClass('filter');
+          }, 50);
+        }
+      });
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

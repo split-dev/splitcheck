@@ -1123,6 +1123,8 @@ $('.form-add-comment__content').on('click', 'a', function(e){
         $('.header__dashboard-burger').click (function () {
           if (window.matchMedia('(max-width: 991px)').matches) {
             $('.admin-menu').css('left', '0');
+            $('.admin-menu').css('z-index', '9991');
+            $('.header.header--dashboard').addClass('filter');
             $('.section-blur').addClass('filter');
             $('body').css('overflow', 'hidden');
           }
@@ -1130,7 +1132,9 @@ $('.form-add-comment__content').on('click', 'a', function(e){
         $('.admin-menu__close').click (function () {
           if (window.matchMedia('(max-width: 991px)').matches) {
             $('.admin-menu').css('left', '-100%');
+            $('.admin-menu').css('z-index', '');
             $('.section-blur').removeClass('filter');
+            $('.header.header--dashboard').removeClass('filter');
             $('body').css('overflow', 'visible');
           }
         });

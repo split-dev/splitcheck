@@ -238,6 +238,46 @@ export default {
         hoverReaction();
       }
     }
+    
+    //scroll nav
+    if($('.nav-product').hasClass('nav-product')) {
+      var positions = [],
+	currentActive = null,
+	links = $('.scroll-to');
+
+  $('.anchor').each(function(){
+    positions.push({
+      top: $(this).position().top - 100,
+      a: links.filter('[href="#'+$(this).attr('id')+'"]'),
+    });
+  });
+
+  positions = positions.reverse();
+
+  $(window).on('scroll',function() {
+    var winTop = $(window).scrollTop();
+    for(var i = 0; i < positions.length; i++){
+      if(positions[i].top < winTop){
+        if(currentActive !== i){
+          currentActive = i;
+          links.removeClass('active');
+          positions[i].a.addClass('active');
+        }
+        break;
+      }
+    }
+  });
+    }
+
+  //click scroll
+  $('.nav-product').on( 'click', 'a', function(){ 
+    var el = $(this);
+    var dest = el.attr('href');
+    if(dest !== undefined && dest !== '') {
+        $('html, body').animate({scrollTop: $(dest).offset().top}, 400);
+    }
+    return false;
+});
 
     //* modal event
     {

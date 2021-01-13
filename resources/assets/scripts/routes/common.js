@@ -1184,7 +1184,7 @@ $('.form-add-comment__content').on('click', 'a', function(e){
     });
     $('[data-toggle="select-parent"]').on('select2:opening', function (e) {
       let thisElemWidth = $(this).parent().prev().width() + 10;
-      let windowWith = window.innerWidth;
+      let windowWith = document.body.clientWidth;
       let posEl = (windowWith - $(this).parent().offset().left) - thisElemWidth;
       document.documentElement.style.setProperty('--pos', `${posEl}px`);
     });

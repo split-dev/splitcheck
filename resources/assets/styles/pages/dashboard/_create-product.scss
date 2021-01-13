@@ -6,6 +6,10 @@
   ul {
     li {
       margin-bottom: 16px;
+      background-image: url("images/icons/add-24px.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       a {
         position: relative;
         color: #315293;
@@ -28,6 +32,32 @@
           }
         }
       }
+    }
+  }
+}
+
+.images-box-loader {
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+  strong {
+    color: #335491;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    line-height: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  ul {
+    li {
+      background-image: url("images/icons/add-24px.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }

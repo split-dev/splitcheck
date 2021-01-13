@@ -285,6 +285,11 @@
       "title": "Store manage",
       "description": "admin-manage-store",
       "url": "/admin-manage-store.html"
+    },
+    {
+      "title": "Create product",
+      "description": "Create product",
+      "url": "/create-product.html"
     }
   ]
 }

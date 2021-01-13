@@ -3,7 +3,7 @@ import Swiper from 'swiper/swiper-bundle';
 import 'bootstrap/js/dist/modal';
 export default {
   init() {
-    $('.checkout__box-header').click(function() {
+    $('.checkout-card-toggle').click(function() {
       $(this).next().slideToggle(400);
     })
 

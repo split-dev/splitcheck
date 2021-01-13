@@ -1129,7 +1129,7 @@ $('.form-add-comment__content').on('click', 'a', function(e){
         });
         $('.admin-menu__close').click (function () {
           if (window.matchMedia('(max-width: 991px)').matches) {
-            $('.admin-menu').css('left', '-100vw');
+            $('.admin-menu').css('left', '-100%');
             $('.section-blur').removeClass('filter');
             $('body').css('overflow', 'visible');
           }
@@ -1196,11 +1196,16 @@ $('.form-add-comment__content').on('click', 'a', function(e){
     });
 
     //open and close body product admin
-    $('.open-full').click( function(e) {
+    // $('.open-full').click( function(e) {
+    //   e.preventDefault();
+    //   $(this).parent().parent().parent().toggleClass('open');
+    //   $(this).parent().parent().parent().next().slideToggle();
+    // });
+    $('.product-items-list__header').click( function(e) {
       e.preventDefault();
-      $(this).parent().parent().parent().toggleClass('open');
-      $(this).parent().parent().parent().next().slideToggle();
-    })
+      $(this).next().slideToggle();
+      $(this).toggleClass('open');
+    });
 
 
     //emotion script

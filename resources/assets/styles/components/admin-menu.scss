@@ -1,8 +1,8 @@
 .admin-menu {
   top: 94px;
   left: 0;
-  transition: top $transition-fast;
-  z-index: 9991;
+  transition: top $transition-fast, z-index 0.3s;
+  z-index: 1;
 
   @media (max-width: 991px) {
     top: 0;

@@ -10,7 +10,7 @@
     <!-- admin-menu -->
     <div class="nav-product">
         <ul>
-            <li><a class="scroll-to" href="#1">Short info</a></li>
+            <li><a class="scroll-to active" href="#1">Short info</a></li>
             <li><a class="scroll-to" href="#2">Images</a></li>
             <li><a class="scroll-to" href="#3">Product type</a></li>
             <li><a class="scroll-to" href="#4">Pricing</a></li>
@@ -94,12 +94,14 @@
                                             Friendly, Gluten Free, GST Free, Organic</p>
                                     </div>
                                 </div>
-                                <div id="2" class="images-box-loader">
+                                <div id="2" class="images-box-loader anchor">
                                     <strong>Images</strong>
                                     <ul>
-                                        <li class="priority"></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li class="priority"
+                                            style="background-image: url('images/product/7142447382608__big.png');">
+                                        </li>
+                                        <li style="background-image: url('images/product/7142447382608.png');"></li>
+                                        <li style="background-image: url('images/product/7142447382608.png');"></li>
                                         <li></li>
                                         <li></li>
                                         <li></li>
@@ -107,6 +109,43 @@
                                         <li></li>
                                         <li></li>
                                     </ul>
+                                </div>
+                                <div id="3" class="product-type-box anchor">
+                                    <strong>Product type</strong>
+                                    <div class="members__form">
+                                        <div
+                                            class=" form__single--select form__single--select-default form__single--fluid">
+                                            <label class="form__label">Type</label>
+                                            <div class="select-before">
+                                                <select class="form__select form__select--default" data-toggle="select"
+                                                    data-select2-id="10" tabindex="-1" aria-hidden="true">
+                                                    <option value="#standart">A standard</option>
+                                                    <option value="#service">A service</option>
+                                                    <option value="#bundle">A bundle</option>
+                                                    <option value="#multiple">Has multiple options</option>
+                                                </select>
+                                            </div>
+                                            <div class="product-type-box__body">
+                                                <div class="product-type-box__single" id="standart">
+                                                    <p>A simple product can be sold individually or as part of a kit, or
+                                                        a
+                                                        bundle product.</p>
+                                                </div>
+                                                <div class="product-type-box__single" id="service"
+                                                    style="display: none;">
+                                                    <p>A simple product can be sold individually or as part of a kit, or
+                                                        a
+                                                        bundle product.</p>
+                                                    <p>A simple product can be sold individually or as part of a kit, or
+                                                        a
+                                                        bundle product.</p>
+                                                    <p>A simple product can be sold individually or as part of a kit, or
+                                                        a
+                                                        bundle product.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="section-button">
                                     <a href="#" class="btn-border-red" data-toggle="modal"
@@ -125,7 +164,7 @@
         </div>
     </div>
     {{!-- modals --}}
-    {{> ../common/modals/modals-delete-info }}
+    {{> ../common/modals/add-files }}
 </body>
 
 </html>

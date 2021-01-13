@@ -28,6 +28,7 @@ import orders from './routes/orders';
 import blog from './routes/blog';
 import checkout from './routes/checkout';
 import dashboard from './routes/dashboard';
+import create from './routes/create';
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -51,6 +52,7 @@ const routes = new Router({
   'blog': blog,
   'checkout': checkout,
   'dashboard': dashboard,
+  'create': create,
 });
 
 // // Load Events

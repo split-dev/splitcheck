@@ -1,0 +1,45 @@
+.store {
+  .sort {
+    margin-left: 25px;
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
+  }
+  &-staff {
+    &__box {
+      display: flex;
+      max-width: 336px;
+      .right {
+        opacity: 0.5;
+        margin-right: 60px;
+        width: 100%;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        span {
+          &:last-child {
+            color: #0b0212;
+            font-size: 16px;
+            font-weight: 400;
+          }
+          &:first-child {
+            color: #0b0212;
+            font-size: 24px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    &__error {
+      img {
+        margin-bottom: 20px;
+      }
+      span {
+        margin: 0 !important;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

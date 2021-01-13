@@ -280,6 +280,11 @@
       "title": "Create-seasonal",
       "description": "Create-seasonal",
       "url": "/create-seasonal.html"
+    },
+    {
+      "title": "Store manage",
+      "description": "admin-manage-store",
+      "url": "/admin-manage-store.html"
     }
   ]
 }

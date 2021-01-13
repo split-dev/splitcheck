@@ -307,6 +307,11 @@
         }
       }
     }
+    .profile-list {
+      @media (max-width: 575px) {
+        flex-wrap: nowrap !important;
+      }
+    }
     .select-info {
       strong {
         color: #0b0212;
@@ -322,6 +327,9 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 276px;
+        @media (max-width: 575px) {
+          max-width: 220px;
+        }
       }
       ul {
         display: flex;
@@ -333,6 +341,9 @@
           line-height: 14px;
           text-align: left;
           margin-right: 18px;
+          @media (max-width: 575px) {
+            margin-right: 3px;
+          }
           span {
             color: #0b0212;
             font-size: 14px;

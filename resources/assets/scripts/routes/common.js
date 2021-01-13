@@ -1167,6 +1167,7 @@ $('.form-add-comment__content').on('click', 'a', function(e){
         window.addEventListener('resize', function() {
           if (!window.matchMedia('(max-width: 991px)').matches) {
             $('.admin-menu').css('left', '');
+            $('.admin-menu').css('z-index', '');
           }
           if (window.matchMedia('(max-width: 991px)').matches) {
             $('.admin-menu').css('top', '');

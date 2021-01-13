@@ -270,6 +270,11 @@
       "title": "Edit-seasonal",
       "description": "Edit-seasonal.hbs",
       "url": "/edit-seasonal.html"
+    },
+    {
+      "title": "Store manage",
+      "description": "admin-manage-store",
+      "url": "/admin-manage-store.html"
     }
   ]
 }

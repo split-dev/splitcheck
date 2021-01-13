@@ -317,11 +317,15 @@
     .orders__card {
       padding: 20px 0 20px 0;
       margin-left: 0;
+      flex-direction: column;
+      &-hide {
+        padding-top: 35px;
+      }
+      .orders__card-price {
+        margin-bottom: 0;
+      }
       &:last-child {
         padding-bottom: 0;
-        .orders__card-price {
-          margin-bottom: 0;
-        }
       }
     }
     .orders__card-top {

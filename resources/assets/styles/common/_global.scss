@@ -28,8 +28,14 @@ input[type="checkbox"]:checked ~ .check-on {
   position: relative;
 }
 
-.container--admin {
+.select2-container--default {
+  z-index: 10500 !important;
+}
+.select2-dropdown {
+  z-index: 10500 !important;
+}
 
+.container--admin {
   @include media-breakpoint-up(sm) {
     max-width: 100%;
     padding-right: 15px;

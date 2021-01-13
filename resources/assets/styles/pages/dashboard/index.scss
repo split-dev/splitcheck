@@ -3,6 +3,7 @@
 @import "../../bootstrap-utils";
 
 // Page Specific Components
+@import "perfect-scrollbar-custom";
 @import "messages-dashboard";
 @import "edit-seasonal";
 @import "admin-view-products";
@@ -27,6 +28,7 @@
 
   .main-content {
     padding-left: 219px;
+    padding-bottom: 40px;
 
     @include media-breakpoint-down(md) {
       padding-top: 0;
@@ -40,6 +42,11 @@
 
     @include media-breakpoint-up(lg) {
       max-width: 684px;
+      width: 58%;
+    }
+
+    @media (min-width: 1440px) {
+      width: 60%;
     }
 
     .toogle-box {
@@ -105,6 +112,51 @@
       }
     }
 
+    .toogle-box--timeline,
+    .toogle-box--messages {
+      .toogle-box__body {
+        margin-top: 0;
+        overflow: hidden;
+
+        .section-content {
+          padding-top: 0;
+        }
+      }
+    }
+
+    .toogle-box--timeline {
+      .toogle-box__body {
+        margin-top: 0;
+        padding: 0 8px;
+        padding-bottom: 14px;
+
+        .section-content {
+          padding-top: 0;
+
+          .btn-border {
+            max-width: calc(100% - 12px);
+            margin: 0 6px;
+          }
+        }
+      }
+    }
+
+    .toogle-box--messages {
+      .toogle-box__body {
+        padding: 0 12px;
+        padding-bottom: 12px;
+
+        .section-content {
+          padding-right: 12px;
+          max-height: 216px;
+        }
+      }
+
+      .message__single {
+        max-width: 100%;
+      }
+    }
+
     .section-aside-right-mob {
       @media (max-width: 991px) {
         margin-bottom: 20px;
@@ -119,6 +171,12 @@
         @media (max-width: 767px) {
           padding-left: 15px;
         }
+      }
+    }
+
+    &__card {
+      @include media-breakpoint-up(lg) {
+        max-width: 560px;
       }
     }
   }
@@ -146,10 +204,10 @@
   .earning {
     // .earning__table
 
-    &__table {
-      &:before {
-        width: 426px;
-      }
+    &__table:before,
+    .table__head,
+    .table__body {
+      min-width: 426px;
     }
 
     // .earning__info-item
@@ -171,9 +229,8 @@
     }
 
     .table {
-      &__head,
-      &__row {
-        width: 426px;
+      &__body {
+        max-height: 144px;
       }
     }
   }
@@ -399,6 +456,63 @@
         width: calc(50% - 2px);
         margin-bottom: 4px;
       }
+    }
+  }
+
+  .timeline-wrap-scrollbar {
+    max-height: 790px;
+    padding-right: 20px;
+    margin-bottom: 12px;
+  }
+
+  .timeline {
+    padding-left: 32px;
+
+    &__line {
+      left: 6px;
+    }
+
+    &__date:before {
+      left: -32px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 25px;
+      height: 25px;
+      margin-top: 0;
+      top: calc(50% - 27px);
+
+      transition: $transition-fast;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+
+      &::after {
+        content: url("images/icons/arrow-slider.svg");
+        font-size: inherit;
+      }
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+    .swiper-button-prev {
+      left: -5px;
+      right: auto;
+      transform: rotate(180deg);
+    }
+
+    .swiper-button-next {
+      right: -5px;
+      left: auto;
+    }
+
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+      opacity: 0;
     }
   }
 }

@@ -168,7 +168,7 @@ export default {
       }
     }
 
-    // mobile append aside right
+    //* mobile append aside right
     {
       const tpCollection = () => {
         if(window.innerWidth < 992) {
@@ -184,6 +184,43 @@ export default {
       $(window).resize( function() {
         tpCollection();
       })
+    }
+
+    //* function hover "reaction-btn-like"
+    {
+      if ($('.reaction__wrap-link').length > 0) {
+        const reaction = {
+          reactionWrap: document.querySelectorAll('.reaction__wrap-link--reaction'),
+          ractionDivVisible: document.querySelector('.reaction-btn-like'),
+        }
+        const hoverReaction = () => {
+          let timer = [];
+          let classShow = 'js-reaction-show';
+          let classHover = 'js-reaction-hover';
+          if (reaction.reactionWrap.length) {
+            reaction.reactionWrap.forEach(element => {
+              element.addEventListener('mouseenter', () => {
+                timer[1] = setTimeout(function() {
+                  element.classList.add(classShow);
+                  element.querySelector('.reaction-btn-like').classList.add(classShow);
+                }, 500);
+                clearInterval(timer[2]);
+                element.classList.add(classHover)
+              })
+              element.addEventListener('mouseleave', () => {
+                clearInterval(timer[1]);
+                timer[2] = setTimeout(function() {
+                  element.classList.remove(classShow);
+                  element.querySelector('.reaction-btn-like').classList.remove(classShow);
+                }, 500);
+                element.classList.remove(classHover)
+              })
+            });
+          }
+        }
+
+        hoverReaction();
+      }
     }
   },
 

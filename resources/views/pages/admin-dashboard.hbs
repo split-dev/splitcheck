@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> ../common/head }}
+</head>
+
+<body class="dashboard">
+  {{> ../common/header-dashboard }}
+  {{> ../common/admin-menu }}
+  {{> ../common/mobile-menu-bottom }}
+
+  <div class="section-blur theme-background-one" data-class="blue" id="background">
+
+    <div class="container container--admin">
+      <div class="main-content position-relative d-flex align-items-start justify-content-between">
+        <!-- main -->
+        <main class="main">
+          <div class="toogle-box toogle-box--timeline">
+            <div class="toogle-box__header open">
+              <div class="toogle-box__header--left">
+                <h3>My timeline</h3>
+              </div>
+              <a href="#add-timeline" data-toggle="modal" data-target="#add-timeline"
+                class="new-item position-relative d-flex align-items-center justify-content-start">
+                <span class="position-relative">
+                  <i class="icon icon-plus-blue"></i>
+                  Add to a timeline
+                </span>
+              </a>
+              <div class="toogle-box__header--right">
+                <button class="arrow-open">
+                  <img src="images/icons/arrow__bottom.svg" alt="arrow">
+                </button>
+              </div>
+            </div>
+            <div class="toogle-box__body shoppers">
+              <section class="section-content">
+                <div class="timeline-wrap-scrollbar position-relative" data-scroll="perfect-scrollbar">
+                  <div class="timeline position-relative">
+                    <div class="timeline__line"></div>
+                    <ul class="timeline__list d-flex flex-column list-unstyled mb-0">
+                      <li class="timeline__item">
+                        <span class="timeline__date timeline__date--active">2:30 pm today</span>
+                        <article
+                          class="timeline__card card-timeline card-timeline--active card-timeline--visible-notification">
+                          <!-- notification -->
+                          <div class="card-timeline__notification">
+                            <i class="icon icon-bell-white"></i>
+                            <span>Today is the big day!</span>
+                          </div>
+                          <!-- card-inner -->
+                          <div class="card-timeline__inner">
+                            <!-- card-header -->
+                            <div class="card-timeline__header">
+                              <div class="card-timeline__info card-timeline__info--main">
+                                <p>Lunch with friends in lorem ipsum dolor sit amet or something</p>
+                                <p>Budget: <span class="bold">$45 per person</span></p>
+                              </div>
+                            </div>
+                            <!-- card-body -->
+                            <div class="card-timeline__body">
+                              <span class="card-timeline__title">Who is coming?</span>
+                              <div class="card-timeline__slider position-relative d-flex align-items-center">
+                                <div class="swiper-container">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                      <a href="#" class="card-timeline__link card-timeline__link--contact">
+                                        <img src="images/slider/men.png" alt="avatar">
+                                        <span>JS</span>
+                                      </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <a href="#" class="card-timeline__link card-timeline__link--contact">
+                                        <img src="images/profiles/img2.png" alt="avatar">
+                                        <span>JS</span>
+                                      </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <a href="#" class="card-timeline__link card-timeline__link--contact">
+                                        <img src="images/profiles/user-1.png" alt="avatar">
+                                        <span>JS</span>
+                                      </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <a href="#"
+                                        class="card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                        <img src="" alt="avatar">
+                                        <span>JS</span>
+                                      </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <a href="#"
+                                        class="card-timeline__link-light card-timeline__link card-timeline__link--contact card-timeline__link--no-img">
+                                        <img src="" alt="avatar">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                              </div>
+                            </div>
+                            <!-- card-bottom -->
+                            <div class="card-timeline__bottom">
+                              <span class="card-timeline__title">Location</span>
+                              <div class="card-timeline__info">
+                                <p>4 Bellbird Cres, Coomera, QLD, 4209</p>
+                              </div>
+                            </div>
+
+                            <!-- option  add class: - options--open -->
+                            <div class="options">
+                              <button type="button" class="options__btn" data-type="options">
+                                <i class="icon icon-more"></i>
+                              </button>
+
+                              <div class="options__dropdown">
+                                <ul class="list-unstyled mb-0">
+                                  <li><a href="#">Share</a></li>
+                                  <li><a href="#">Not gift worthy</a></li>
+                                  <li><a href="#">About the store</a></li>
+                                  <li><a href="#">Report abuse</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="timeline__item">
+                        <span class="timeline__date">10:00 am Friday</span>
+                        <article class="timeline__card card-timeline">
+                          <!-- notification -->
+                          <div class="card-timeline__notification">
+                            <i class="icon icon-bell"></i>
+                            <span></span>
+                          </div>
+                          <!-- card-inner -->
+                          <div class="card-timeline__inner">
+                            <!-- card-header -->
+                            <div class="card-timeline__header">
+                              <div class="card-timeline__info card-timeline__info--main">
+                                <p>Lunch with friends in lorem ipsum dolor sit amet or something</p>
+                                <p>Budget: <span class="bold">$45 per person</span></p>
+                              </div>
+                            </div>
+                            <!-- option  add class: - options--open -->
+                            <div class="options">
+                              <button type="button" class="options__btn" data-type="options">
+                                <i class="icon icon-more"></i>
+                              </button>
+
+                              <div class="options__dropdown">
+                                <ul class="list-unstyled mb-0">
+                                  <li><a href="#">Share</a></li>
+                                  <li><a href="#">Not gift worthy</a></li>
+                                  <li><a href="#">About the store</a></li>
+                                  <li><a href="#">Report abuse</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="timeline__item">
+                        <span class="timeline__date">14:30 pm Friday</span>
+                        <article class="timeline__card card-timeline card-timeline--visible-notification">
+                          <!-- notification -->
+                          <div class="card-timeline__notification">
+                            <i class="icon icon-bell"></i>
+                            <span></span>
+                          </div>
+                          <!-- card-inner -->
+                          <div class="card-timeline__inner">
+                            <!-- card-header -->
+                            <div class="card-timeline__header">
+                              <span class="card-timeline__title">
+                                <span>Added by:</span>
+                                <span class="bold">You</span>
+                              </span>
+                              <div class="card-timeline__info card-timeline__info--main">
+                                <p>Product name lorem ipsum dolor sit amet or something</p>
+                                <p>Budget: <span class="bold">$45 per person</span></p>
+                              </div>
+                            </div>
+                            <!-- card-body -->
+                            <div class="card-timeline__body">
+                              <figure class="card-timeline__img mb-0">
+                                <img src="images/product/1.jpg" alt="product">
+                              </figure>
+                            </div>
+                            <!-- card-bottom -->
+                            <div class="card-timeline__bottom">
+                              <span class="card-timeline__title">Comment</span>
+                              <div class="card-timeline__info">
+                                <p>I plan to buy it for my mum</p>
+                              </div>
+                            </div>
+
+                            <!-- option  add class: - options--open -->
+                            <div class="options">
+                              <button type="button" class="options__btn" data-type="options">
+                                <i class="icon icon-more"></i>
+                              </button>
+
+                              <div class="options__dropdown">
+                                <ul class="list-unstyled mb-0">
+                                  <li><a href="#">Share</a></li>
+                                  <li><a href="#">Not gift worthy</a></li>
+                                  <li><a href="#">About the store</a></li>
+                                  <li><a href="#">Report abuse</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+                <a href="#" class="btn-border">Load more</a>
+              </section>
+            </div>
+          </div>
+          <div class="toogle-box toogle-box--messages">
+            <div class="toogle-box__header">
+              <div class="toogle-box__header--left">
+                <h3>shoppers messages (<span>4</span>)</h3>
+              </div>
+              <div class="toogle-box__header--right">
+                <button class="reset">
+                  <img src="images/icons/loop-24px.svg" alt="reset">
+                </button>
+                <button class="arrow-open">
+                  <img src="images/icons/arrow__bottom.svg" alt="arrow">
+                </button>
+              </div>
+            </div>
+            <div class="toogle-box__body shoppers">
+              <div class="section-content position-relative" data-scroll="perfect-scrollbar">
+                <div class="message__single new__message d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message__single d-flex w-100">
+                  <div class="message__body d-flex w-100 justify-content-between">
+                    <div class="message__left d-flex align-items-center">
+                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                      </div>
+                      <div class="message__detail d-flex flex-column">
+                        <strong>Jane Smith</strong>
+                        <span>First words from the message will be here…</span>
+                      </div>
+                    </div>
+                    <div class="message__right d-flex flex-column">
+                      <span class="message__date">16:40</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="section-aside-right-mob"></section>
+
+          <section class="section-content">
+            <span class="section-content__title position-relative d-flex align-items-center">Store statistic</span>
+
+            <div class="statistic">
+              <ul
+                class="statistic__list d-flex flex-wrap align-items-center justify-content-between list-unstyled mb-0">
+                <li class="statistic__item d-flex flex-column align-items-center justify-content-center">
+                  <span class="statistic-num">5 899</span>
+                  <span class="statistic-text">Views</span>
+                </li>
+                <li class="statistic__item d-flex flex-column align-items-center justify-content-center">
+                  <span class="statistic-num">9 999 999</span>
+                  <span class="statistic-text">Purchases</span>
+                </li>
+                <li class="statistic__item d-flex flex-column align-items-center justify-content-center">
+                  <span class="statistic-num">$300.50</span>
+                  <span class="statistic-text">Av. order value</span>
+                </li>
+                <li class="statistic__item d-flex flex-column align-items-center justify-content-center">
+                  <span class="statistic-num">300 000</span>
+                  <span class="statistic-text">Order quantity</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="section-content__tiles d-flex align-items-center flex-wrap flex-column justify-content-between">
+              <div class="statistic-box position-relative overflow-hidden">
+                <ul class="statistic-box__post w-100">
+                  <li><span>reactions</span>
+                    <ul class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                      <li class="reaction__item-icon">
+                        <i class="icon icon-like"></i>
+                      </li>
+                      <li class="reaction__item-icon">
+                        <i class="icon icon-heart-l"></i>
+                      </li>
+                      <li class="reaction__item-icon">
+                        <i class="icon icon-happy"></i>
+                      </li>
+                      <li class="reaction__item-icon">
+                        <i class="icon icon-surprised"></i>
+                      </li>
+                      <li class="reaction__item-icon">
+                        <i class="icon icon-angry"></i>
+                      </li>
+                    </ul>
+                    <b>437</b>
+                  </li>
+                  <li><span>comments</span> <b>65</b></li>
+                  <li><span>added to timeline</span> <b>8</b></li>
+                  <li><span>shared</span> <b>6</b></li>
+                </ul>
+                <div class="statistic-box__reaction w-100">
+                  <h4>Reactions</h4>
+                  <div class="statistic-box__emotion">
+                    <ul>
+                      <li>
+                        <div class="progress" data-progress="100">
+                          <div class="line blue"></div>
+                        </div>
+                        <i class="icon icon-like"></i>
+                        <span>like</span>
+                        <strong>200</strong>
+                      </li>
+                      <li>
+                        <div class="progress" data-progress="85">
+                          <div class="line red"></div>
+                        </div>
+                        <i class="icon icon-heart-l"></i>
+                        <span>love</span>
+                        <strong>170</strong>
+                      </li>
+                      <li>
+                        <div class="progress" data-progress="2">
+                          <div class="line"></div>
+                        </div>
+                        <i class="icon icon-happy"></i>
+                        <span>joy</span>
+                        <strong>2</strong>
+                      </li>
+                      <li>
+                        <div class="progress" data-progress="32.5">
+                          <div class="line"></div>
+                        </div>
+                        <i class="icon icon-surprised"></i>
+                        <span>wow</span>
+                        <strong>65</strong>
+                      </li>
+                      <li>
+                        <div class="progress" data-progress="0">
+                          <div class="line"></div>
+                        </div>
+                        <i class="icon icon-angry"></i>
+                        <span>angry</span>
+                        <strong>0</strong>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__card main__card--bias position-relative overflow-hidden">
+                <div class="internal-card internal-card--main w-100 d-flex align-items-start">
+                  <div class="internal-card__info">
+                    <h2>Grow your business</h2>
+                    <p>
+                      Shoppers want to get in touch with your business. Expose your business using SplitChek's ads
+                      <a href="#">...Read More</a>
+                    </p>
+                  </div>
+                  <figure class="internal-card__img mb-0">
+                    <img src="images/dashboard/Influencer-bro.svg" alt="card-img">
+                  </figure>
+                </div>
+                <div class="main__buttons">
+                  <a href="#" class="btn-border">Promote store</a>
+                </div>
+              </div>
+
+              <div class="main__card main__card--bias position-relative overflow-hidden">
+                <div class="internal-card internal-card--main w-100 d-flex align-items-start">
+                  <div class="internal-card__info">
+                    <h2>Be open to a people</h2>
+                    <p>
+                      Goss is here to help you with your business. Expose your business using SplitChek's goss.
+                      <a href="#">...Read More</a>
+                    </p>
+                  </div>
+                  <figure class="internal-card__img mb-0">
+                    <img src="images/dashboard/Buffer-bro.svg" alt="card-img">
+                  </figure>
+                </div>
+                <div class="main__buttons">
+                  <a href="#" class="btn-border">Create a goss</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-content">
+            <span class="section-content__title position-relative d-flex align-items-center">Social moments</span>
+            <span class="section-content__title section-content__title--black text-dark-blue">
+              SplitChek rewards you for being social and engaging to shoppers. Below are the results of your work:
+            </span>
+
+            <div class="moments">
+              <ul class="moments__list d-flex flex-wrap align-items-start justify-content-between list-unstyled mb-0">
+                <li class="moments__item d-flex flex-column">
+                  <span class="moments__num">4 580</span>
+                  <h2 class="moments__title text-orange">Followers</h2>
+                  <p class="moments__text text-silver">
+                    You can send emails to your followers for free
+                  </p>
+                </li>
+                <li class="moments__item d-flex flex-column">
+                  <span class="moments__num">78</span>
+                  <h2 class="moments__title text-orange">Following</h2>
+                  <p class="moments__text text-silver">
+                    Improve your social network by following others including your followers
+                  </p>
+                </li>
+                <li class="moments__item d-flex flex-column">
+                  <span class="moments__num">2 570</span>
+                  <h2 class="moments__title text-orange">Business stories and anemeties</h2>
+                  <p class="moments__text text-silver">
+                    Your engagement with shoppers through business stories and social moments
+                  </p>
+                </li>
+                <li class="moments__item d-flex flex-column">
+                  <span class="moments__num">120</span>
+                  <h2 class="moments__title text-orange">Altruistic behaviors</h2>
+                  <p class="moments__text text-silver">
+                    Help SplitChek' shoppers at checkout by contributing towards their bill
+                  </p>
+                </li>
+                <li class="moments__item d-flex flex-column">
+                  <span class="moments__num">53</span>
+                  <h2 class="moments__title text-orange">Items in the bargains</h2>
+                  <p class="moments__text text-silver">
+                    Bargains give you the chance to sell your products at random discount defined by you.
+                  </p>
+                </li>
+                <li class="moments__item d-flex flex-column">
+                  <span class="moments__num">2460</span>
+                  <h2 class="moments__title text-orange">Items in the wishlist</h2>
+                  <p class="moments__text text-silver">
+                    Shoppers use the wishlist to share gifts, split payments and lots more
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section-content">
+            <span class="section-content__title position-relative d-flex align-items-center">
+              <span>what shoppers say about your store</span>
+            </span>
+
+            <div class="main__card main__card--bias position-relative">
+              <div class="internal-card internal-card--feed">
+                <div class="internal-card__header">
+                  <a href="#" class="internal-card__profile d-flex flex-wrap align-items-start">
+                    <figure class="internal-card__avatar internal-card__avatar--no-img">
+                      <img src="images/profiles/img1.png" alt="avatar">
+                      <span class="internal-card__symbol">ad</span>
+                    </figure>
+                    <div class="internal-card__head-info">
+                      <h2 class="internal-card__name">Ann Doe</h2>
+                      <p class="internal-card__subname">
+                        <span>just for laugh goss</span>
+                        <span class="internal-card__date">02.10.2020</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="internal-card__body">
+                  <strong>Goss title</strong>
+                  <p>To help your skin thrive, use Moroccan argan extract which conditions and moisturizes while
+                    chlorella brings a boost of skin-benefiting vitamins and omega 3s for extra glowing goodness
+                  </p>
+                </div>
+                <div class="internal-card__bottom">
+                  <div class="reaction">
+                    <div class="reaction__top">
+                      <div class="reaction__quantity">
+                        <ul class="reaction__list-icon reaction__list-icon--other list-unstyled mb-0">
+                          <li class="reaction__item-icon">
+                            <i class="icon icon-like"></i>
+                          </li>
+                          <li class="reaction__item-icon">
+                            <i class="icon icon-heart-l"></i>
+                          </li>
+                          <li class="reaction__item-icon">
+                            <i class="icon icon-happy"></i>
+                          </li>
+                          <li class="reaction__item-icon">
+                            <i class="icon icon-surprised"></i>
+                          </li>
+                          <li class="reaction__item-icon">
+                            <i class="icon icon-angry"></i>
+                          </li>
+                        </ul>
+                        <div class="reaction__pop">
+                          <ul class="smile">
+                            <li>
+                              <i class="like"></i>
+                              <span>like</span>
+                              <span>200</span>
+                            </li>
+                            <li>
+                              <i class="heart"></i>
+                              <span>love</span>
+                              <span>170</span>
+                            </li>
+                            <li>
+                              <i class="happy"></i>
+                              <span>joy</span>
+                              <span>2</span>
+                            </li>
+                            <li>
+                              <i class="surprised"></i>
+                              <span>wow</span>
+                              <span>65</span>
+                            </li>
+                            <li>
+                              <i class="angry"></i>
+                              <span>angry</span>
+                              <span>0</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <span>56</span>
+                      </div>
+                      <span class="reaction__text">0 comments</span>
+                    </div>
+                    <div class="reaction__bottom">
+                      <div class="reaction__wrap-link reaction__wrap-link--reaction">
+                        <i class="icon icon-like-blue"></i>
+                        <span>like</span>
+
+                        <div class="reaction-btn-like reaction-btn-like--feed">
+                          <ul class="reaction-btn-like__list list-unstyled mb-0">
+                            <li class="reaction-btn-like__item">
+                              <a href="#" class="reaction-btn-like__link">
+                                <i class="icon icon-like"></i>
+                              </a>
+                            </li>
+                            <li class="reaction-btn-like__item">
+                              <a href="#" class="reaction-btn-like__link">
+                                <i class="icon icon-heart-l"></i>
+                              </a>
+                            </li>
+                            <li class="reaction-btn-like__item">
+                              <a href="#" class="reaction-btn-like__link">
+                                <i class="icon icon-happy"></i>
+                              </a>
+                            </li>
+                            <li class="reaction-btn-like__item">
+                              <a href="#" class="reaction-btn-like__link">
+                                <i class="icon icon-surprised"></i>
+                              </a>
+                            </li>
+                            <li class="reaction-btn-like__item">
+                              <a href="#" class="reaction-btn-like__link">
+                                <i class="icon icon-angry"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+                      <div class="reaction__wrap-link">
+                        <a href="#" class="reaction__link">
+                          <i class="icon icon-comment"></i>
+                          <span>comment</span>
+                        </a>
+                      </div>
+                      <div class="reaction__wrap-link">
+                        <a href="#" class="reaction__link">
+                          <i class="icon icon-plus-blue"></i>
+                          <span>add to timeline</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- option  add class: - options--open -->
+                <div class="options">
+                  <button type="button" class="options__btn" data-type="options">
+                    <i class="icon icon-more"></i>
+                  </button>
+
+                  <div class="options__dropdown">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#">Share</a></li>
+                      <li><a href="#">Not gift worthy</a></li>
+                      <li><a href="#">About the store</a></li>
+                      <li><a href="#">Report abuse</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+        </main>
+        <!-- /main -->
+        <!-- aside-right -->
+        <aside class="aside-right d-none d-lg-block">
+          <section class="section-content">
+            <span class="section-content__title position-relative d-flex align-items-center">Recent earning</span>
+
+            <!-- earning -->
+            <div class="earning">
+              <div class="earning__head d-flex flex-wrap align-items-end">
+                <h2 class="earning__title dark-blue">Last 5 days</h2>
+                <a href="#" class="earning__link">change period/range</a>
+              </div>
+
+              <ul
+                class="earning__info-list position-relative d-flex flex-column align-items-start justify-content-center list-unstyled"
+                data-scroll="perfect-scrollbar">
+                <li class="earning__info-item d-flex align-items-center justify-content-between">
+                  <span>Total sales</span>
+                  <span>$ 290 000.00</span>
+                </li>
+                <li
+                  class="earning__info-item earning__info-item--orange d-flex align-items-center justify-content-between">
+                  <span>Paid to SplitChek</span>
+                  <span>$ 2 500.00</span>
+                </li>
+                <li
+                  class="earning__info-item earning__info-item--last d-flex align-items-center justify-content-between">
+                  <span>Total earned</span>
+                  <span>AUD $ 287 500.00</span>
+                </li>
+              </ul>
+
+              <div class="earning__table earning__table--four table position-relative d-flex flex-column"
+                data-scroll="perfect-scrollbar">
+                <div class="sort-box">
+                  <div class="sort-box__line sort">
+                    <span class="sort-box__name">State:</span>
+                    <div class="sort-box__select">
+                      <span class="sort-box__arrow">
+                        <strong>QLD</strong>
+                        <img src="images/icons/navigate_next-24px.svg" alt="arrow">
+                      </span>
+                      <div class="form__single form__single--select form__single--select-default form__single--fluid">
+                        <select class="form__select form__select--default" data-toggle="select-parent">
+                          <option value="qld" title="Store Name Two">QLD</option>
+                          <option value="qld-2" title="Store Name One OneOne">QLD two</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table__head d-flex align-items-center">
+                  <span>Date</span>
+                  <span>Sales</span>
+                  <span>Paid to SC</span>
+                  <span>Total earned</span>
+                </div>
+                <div class="table__body position-relative" data-scroll="perfect-scrollbar">
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>24.12.20</span>
+                    <span>$ 300 030.00</span>
+                    <span class="text-orange">- 30.00</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="earning__table earning__table--three table position-relative d-flex flex-column"
+                data-scroll="perfect-scrollbar">
+                <div class="table__head d-flex align-items-center">
+                  <span>States</span>
+                  <span>Orders</span>
+                  <span>Total earned</span>
+                </div>
+                <div class="table__body position-relative" data-scroll="perfect-scrollbar">
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                  <div class="table__row d-flex align-items-center">
+                    <span>Queensland</span>
+                    <span>436</span>
+                    <span>$ 300 000.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /earning -->
+          </section>
+        </aside>
+        <!-- /aside-right -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

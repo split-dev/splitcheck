@@ -270,6 +270,18 @@ export default {
     }
   });
     }
+
+  //click scroll
+  $('.nav-product').on( 'click', 'a', function(){ 
+    var el = $(this);
+    var dest = el.attr('href');
+    if(dest !== undefined && dest !== '') {
+        $('html, body').animate({scrollTop: $(dest).offset().top}, 400);
+    }
+    return false;
+});
+
+
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

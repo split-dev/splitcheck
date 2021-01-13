@@ -15,12 +15,19 @@
     <div class="container container--admin">
       <div class="main-content position-relative d-flex align-items-start justify-content-between">
         <!-- main -->
-        <main class="main main--fluid">
+        <main class="main">
           <div class="toogle-box">
             <div class="toogle-box__header">
               <div class="toogle-box__header--left">
                 <h3>My timeline</h3>
               </div>
+              <a href="#add-timeline" data-toggle="modal" data-target="#add-timeline"
+                class="new-item position-relative d-flex align-items-center justify-content-start">
+                <span class="position-relative">
+                  <i class="icon icon-plus-blue"></i>
+                  Add to a timeline
+                </span>
+              </a>
               <div class="toogle-box__header--right">
                 <button class="arrow-open">
                   <img src="images/icons/arrow__bottom.svg" alt="arrow">
@@ -52,11 +59,14 @@
             </div>
           </div>
 
+          <section class="section-aside-right-mob"></section>
+
           <section class="section-content">
             <span class="section-content__title position-relative d-flex align-items-center">Store statistic</span>
 
             <div class="statistic">
-              <ul class="statistic__list d-flex align-items-center justify-content-between list-unstyled mb-0">
+              <ul
+                class="statistic__list d-flex flex-wrap align-items-center justify-content-between list-unstyled mb-0">
                 <li class="statistic__item d-flex flex-column align-items-center justify-content-center">
                   <span class="statistic-num">0</span>
                   <span class="statistic-text">Views</span>
@@ -136,8 +146,7 @@
               </div>
 
               <div class="main__card main__card--bias position-relative overflow-hidden">
-                <div
-                  class="internal-card internal-card--main w-100 d-flex flex-column align-items-center align-items-lg-start flex-lg-row">
+                <div class="internal-card internal-card--main w-100 d-flex align-items-start">
                   <div class="internal-card__info">
                     <h2>Grow your business</h2>
                     <p>
@@ -155,8 +164,7 @@
               </div>
 
               <div class="main__card main__card--bias position-relative overflow-hidden">
-                <div
-                  class="internal-card internal-card--main w-100 d-flex flex-column align-items-center align-items-lg-start flex-lg-row">
+                <div class="internal-card internal-card--main w-100 d-flex align-items-start">
                   <div class="internal-card__info">
                     <h2>Be open to a people</h2>
                     <p>
@@ -252,7 +260,93 @@
         </main>
         <!-- /main -->
         <!-- aside-right -->
+        <aside class="aside-right d-none d-lg-block">
+          <section class="section-content">
+            <span class="section-content__title position-relative d-flex align-items-center">Recent earning</span>
 
+            <!-- earning -->
+            <div class="earning">
+              <div class="earning__head d-flex flex-wrap align-items-end">
+                <h2 class="earning__title dark-blue">Last 5 days</h2>
+                <a href="#" class="earning__link">change period/range</a>
+              </div>
+
+              <ul
+                class="earning__info-list position-relative d-flex flex-column align-items-start justify-content-center list-unstyled"
+                data-scroll="perfect-scrollbar">
+                <li class="earning__info-item d-flex align-items-center justify-content-between">
+                  <span>Total sales</span>
+                  <span>$ 0.00</span>
+                </li>
+                <li
+                  class="earning__info-item earning__info-item--orange d-flex align-items-center justify-content-between">
+                  <span>Paid to SplitChek</span>
+                  <span>$ 0.00</span>
+                </li>
+                <li
+                  class="earning__info-item earning__info-item--last d-flex align-items-center justify-content-between">
+                  <span>Total earned</span>
+                  <span>AUD $ 0.00</span>
+                </li>
+              </ul>
+
+              <div
+                class="earning__table earning__table--four earning__table--empty table position-relative d-flex flex-column"
+                data-scroll="perfect-scrollbar">
+                <div class="sort-box">
+                  <div class="sort-box__line sort">
+                    <span class="sort-box__name">State:</span>
+                    <div class="sort-box__select">
+                      <span class="sort-box__arrow">
+                        <strong>QLD</strong>
+                        <img src="images/icons/navigate_next-24px.svg" alt="arrow">
+                      </span>
+                      <div class="form__single form__single--select form__single--select-default form__single--fluid">
+                        <select class="form__select form__select--default" data-toggle="select-parent">
+                          <option value="qld" title="Store Name Two">QLD</option>
+                          <option value="qld-2" title="Store Name One OneOne">QLD two</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table__head d-flex align-items-center">
+                  <span>Date</span>
+                  <span>Sales</span>
+                  <span>Paid to SC</span>
+                  <span>Total earned</span>
+                </div>
+                <div class="table__body position-relative">
+                  <div class="table__row d-flex align-items-center">
+                    <p>No data to display for this period</p>
+                    <figure class="table__img mb-0">
+                      <img src="images/dashboard/Data_report-bro.svg" alt="img-table">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="earning__table earning__table--three earning__table--empty table position-relative d-flex flex-column"
+                data-scroll="perfect-scrollbar">
+                <div class="table__head d-flex align-items-center">
+                  <span>States</span>
+                  <span>Orders</span>
+                  <span>Total earned</span>
+                </div>
+                <div class="table__body position-relative">
+                  <div class="table__row d-flex align-items-center">
+                    <p>No data to display for this period</p>
+                    <figure class="table__img mb-0">
+                      <img src="images/dashboard/Financial_data-bro.svg" alt="img-table">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /earning -->
+          </section>
+        </aside>
         <!-- /aside-right -->
       </div>
     </div>

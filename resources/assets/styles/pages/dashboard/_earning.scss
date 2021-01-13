@@ -1,16 +1,35 @@
 .table {
   width: 100%;
+  margin-bottom: 5px;
+  padding-bottom: 15px;
 
   // .table__head
 
   &__head {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  // .table__body
+
+  &__body {
+    overflow: hidden;
   }
 
   // .table__row
 
-  // &__row {
-  // }
+  &__row {
+    span {
+      font-size: 14px;
+    }
+
+    &:nth-of-type(2n) {
+      background-color: theme-color("light-gray2");
+    }
+  }
 
   // .table__img
 
@@ -26,6 +45,7 @@
 
 .earning {
   padding: 24px 12px;
+  padding-bottom: 5px;
   border-radius: 8px;
   overflow: hidden;
 
@@ -59,7 +79,7 @@
     line-height: 16px;
     text-align: left;
     text-decoration: underline;
-    margin-bottom: 0;
+    margin-bottom: 3px;
 
     color: theme-color("blue2");
   }
@@ -68,7 +88,8 @@
 
   &__info-list {
     width: 100%;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
   }
 
   // .earning__info-item
@@ -130,8 +151,8 @@
   // .earning__table--four
 
   &__table--four {
-
-    .table__head {
+    .table__head,
+    .table__row {
       span {
         &:first-of-type {
           width: 75px;
@@ -152,8 +173,8 @@
   // .earning__table--three
 
   &__table--three {
-
-    .table__head {
+    .table__head,
+    .table__row {
       span {
         &:first-of-type {
           width: 165px;

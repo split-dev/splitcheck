@@ -2,6 +2,11 @@
   width: 100%;
   margin-bottom: 16px;
 
+  @include media-breakpoint-up(md) {
+    margin-bottom: 4px;
+  }
+
+
   // .statistic__list
 
   // &__list {
@@ -15,6 +20,7 @@
     width: calc(25% - 9px);
     min-height: 96px;
     border-radius: 8px;
+    margin-bottom: 12px;
     overflow: hidden;
 
     box-shadow: $shadow-card;

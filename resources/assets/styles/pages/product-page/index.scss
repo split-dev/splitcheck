@@ -8,6 +8,9 @@
 
 .product {
   overflow-x: hidden;
+  .arrow-turn {
+    transform: rotate(180deg);
+  }
   .options-cart-stock {
     .option-price {
       display: flex;

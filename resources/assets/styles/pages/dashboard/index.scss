@@ -12,6 +12,8 @@
 @import "moments";
 @import "earning";
 @import "admin-store";
+@import "alerts";
+@import "card-alerts";
 
 // .dashboard {
 
@@ -149,13 +151,12 @@
 
     .toogle-box--messages {
       .toogle-box__body {
-        padding: 0 12px;
         padding-bottom: 12px;
+      }
 
-        .section-content {
-          padding-right: 12px;
-          max-height: 216px;
-        }
+      .toogle-box__scroll {
+        margin-top: 0;
+        max-height: 216px;
       }
 
       .message__single {

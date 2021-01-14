@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> ../common/head }}
+</head>
+
+<body class="dashboard alerts">
+  {{> ../common/header-dashboard }}
+  {{> ../common/admin-menu }}
+  {{> ../common/mobile-menu-bottom }}
+
+  <div class="section-blur theme-background-one" data-class="blue" id="background">
+    <div class="container container--admin">
+      <div class="main-content position-relative d-flex align-items-start justify-content-between">
+        <!-- main -->
+        <main class="main main--fluid d-flex align-items-start flex-column flex-lg-row">
+
+          <section class="section-content">
+            <span class="section-content__title position-relative d-flex align-items-center">Reminders</span>
+
+            <div class="reminders reminders--empty position-relative">
+              <div class="alerts-empty d-flex flex-column flex-lg-row align-items-center">
+                <figure class="alerts-empty__img">
+                  <img src="./images/alerts/new_message-bro.svg" alt="alerts-empty">
+                </figure>
+                <p class="alerts-empty__text text-blue2">
+                  Nothing important, yet <br>
+                  We will notify you
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-content">
+            <span class="section-content__title position-relative d-flex align-items-center">Requests & News</span>
+            <div class="notification notification--empty">
+              <div class="alerts-empty d-flex flex-column flex-lg-row align-items-center">
+                <figure class="alerts-empty__img">
+                  <img src="./images/alerts/mail_sent-bro.svg" alt="alerts-empty">
+                </figure>
+                <p class="alerts-empty__text text-blue2">
+                  All new info will be visible here. <br>
+                  We don’t let you miss them
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- /main -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <!-- /Modals -->
+</body>
+
+</html>

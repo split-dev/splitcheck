@@ -1,0 +1,98 @@
+.alerts {
+  .main-content {
+    min-height: calc(100vh - 75px);
+
+    .main {
+      .section-content {
+        margin-bottom: 32px;
+
+        &:first-of-type {
+          width: 100%;
+
+          @include media-breakpoint-up(lg) {
+            width: 51%;
+            max-width: 580px;
+          }
+        }
+        &:last-of-type {
+          width: 100%;
+
+          @include media-breakpoint-up(lg) {
+            margin-left: auto;
+            width: 46%;
+            max-width: 528px;
+          }
+        }
+      }
+    }
+  }
+
+  .reminders {
+    width: 100%;
+    padding: 0 25px 30px 5px;
+    max-height: 550px;
+
+    @include media-breakpoint-up(lg) {
+      max-height: calc(100vh - 75px);
+      padding-right: 30px;
+    }
+
+    // .reminders__list
+
+    // &__list {
+
+    // }
+
+    // .reminders__item
+
+    &__item {
+      margin-bottom: 16px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .notification {
+    &__wrap {
+      padding: 0 16px 16px 5px;
+      max-height: 550px;
+      @include media-breakpoint-up(lg) {
+        max-height: calc(100vh - 75px);
+      }
+    }
+  }
+
+  .reminders--empty,
+  .notification--empty {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.alerts-empty {
+  padding: 20px;
+
+  // .alerts-empty__img
+
+  &__img {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  // .alerts-empty__text
+  p,
+  .alerts-empty__text {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+}

@@ -15,12 +15,13 @@
       <div class="main-content position-relative d-flex align-items-start justify-content-between">
         <!-- main -->
         <main class="main">
+
           <div class="toogle-box toogle-box--timeline">
             <div class="toogle-box__header open">
               <div class="toogle-box__header--left">
                 <h3>My timeline</h3>
               </div>
-              <a href="#add-timeline" data-toggle="modal" data-target="#add-timeline"
+              <a href="#add-timeline-dashboard" data-toggle="modal" data-target="#add-timeline-dashboard"
                 class="new-item position-relative d-flex align-items-center justify-content-start">
                 <span class="position-relative">
                   <i class="icon icon-plus-blue"></i>
@@ -237,171 +238,191 @@
               </div>
             </div>
             <div class="toogle-box__body shoppers">
-              <div class="section-content position-relative" data-scroll="perfect-scrollbar">
-                <div class="message__single new__message d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
-                      </div>
-                    </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
+
+              <div class="toogle-box__scroll pl-24 pr-20 position-relative" data-scroll="perfect-scrollbar">
+                <div class="message">
+                  <section class="section-content">
+                    <div class="message__single new__message d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
-                      </div>
-                    </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
-                      </div>
-                    </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
-                      </div>
-                    </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
-                      </div>
-                    </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
-                      </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="message__single d-flex w-100">
-                  <div class="message__body d-flex w-100 justify-content-between">
-                    <div class="message__left d-flex align-items-center">
-                      <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
                       </div>
-                      <div class="message__detail d-flex flex-column">
-                        <strong>Jane Smith</strong>
-                        <span>First words from the message will be here…</span>
+                    </div>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="message__right d-flex flex-column">
-                      <span class="message__date">16:40</span>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="message__single d-flex w-100">
+                      <div class="message__body d-flex w-100 justify-content-between">
+                        <div class="message__left d-flex align-items-center">
+                          <div class="message__photo" style="background-image: url(images/message/img-1.png);">
+                          </div>
+                          <div class="message__detail d-flex flex-column">
+                            <strong>Jane Smith</strong>
+                            <span>First words from the message will be here…</span>
+                          </div>
+                        </div>
+                        <div class="message__right d-flex flex-column">
+                          <span class="message__date">16:40</span>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>
@@ -1053,7 +1074,9 @@
   </div>
 
   <!-- Modals -->
-  {{> ../common/modals/add-timeline }}
+  {{> ../common/modals/add-timeline-dashboard }}
+  {{> ../common/modals/give-discount }}
+  {{> ../common/modals/add-photo }}
   <!-- /Modals -->
 </body>
 

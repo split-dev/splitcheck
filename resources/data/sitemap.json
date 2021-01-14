@@ -257,6 +257,16 @@
       "url": "/admin-dashboard.html"
     },
     {
+      "title": "Admin Alerts",
+      "description": "Admin alerts ",
+      "url": "/admin-alerts.html"
+    },
+    {
+      "title": "Admin no alerts",
+      "description": "Admin no alerts ",
+      "url": "/admin-no-alerts.html"
+    },
+    {
       "title": "Messages dashboard",
       "description": "Messages dashboard",
       "url": "/messages-dashboard.html"

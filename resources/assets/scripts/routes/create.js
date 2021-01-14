@@ -2,7 +2,7 @@ import Sortable from 'sortablejs/modular/sortable.core.esm';
 
 export default {
   init() {
-      $('.images-box-loader ul li').click( function () {
+      $('.images-box-loader ul li:not(.img)').on('click', function () {
         $('#add-files').modal('show')
         $('.nav-product').toggleClass('hide')
       })

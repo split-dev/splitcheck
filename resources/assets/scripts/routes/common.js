@@ -843,6 +843,34 @@ export default {
         thumbnailHeight: 120,
         maxFiles: 5,
       });
+
+
+      if(document.getElementById('columns-sort-drag')) {
+        $('.add-files .btn-blue').click( function() {
+          let arrayImg = [];
+          let file = $('.add-files .drop-photo img');
+          $(file).each( function() {
+            if(!$(this).hasClass('load')) {
+              let imgBase = $(this).attr('src')
+              arrayImg.push(imgBase);
+              $(this).addClass('load')
+            }
+          })
+          let elemUl = $('.images-box-loader ul li:not(.img)')
+          for(let i = 0; i < arrayImg.length; i++) {
+            let image = new Image();
+            image.src = arrayImg[i];
+            if(!$(elemUl[i]).hasClass('ignore-elements')) {
+              document.getElementById('columns-sort-drag').insertAdjacentHTML('beforeend', '<li class="ignore-elements"></li>');
+              $('.images-box-loader ul li:not(.img)').append(image).removeClass('ignore-elements').addClass('sortable-drag img');
+              document.getElementById('columns-sort-drag').insertAdjacentHTML('beforeend', '<li class="ignore-elements"></li>');
+            }
+            $(elemUl[i]).append(image).removeClass('ignore-elements').addClass('sortable-drag img');
+            
+          }
+          
+        })
+      }
   }
 
   $('.form-add-comment__user select').on('select2:select', function (e) {

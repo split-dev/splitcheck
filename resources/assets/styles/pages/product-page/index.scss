@@ -9,6 +9,11 @@
 .product {
   overflow-x: hidden;
   .options-cart-stock {
+    .option-price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     p {
       max-width: 290px;
       width: 100%;

@@ -64,19 +64,22 @@
     &-personal {
       strong {
         margin-right: 15px;
+        font-size: 14px !important;
       }
       p {
         margin-bottom: 0 !important;
+        align-items: baseline !important;
       }
       b {
         margin-left: 4px;
+        font-size: 14px !important;
       }
     }
     strong,
     b {
       color: #0b0212;
       line-height: 16px;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: $font-weight-medium;
     }
     &-right {

@@ -14,7 +14,7 @@
     }
   }
   &__follow {
-    padding-top: 260px;
+    padding-top: 250px;
     padding-bottom: 90px;
     position: relative;
     display: flex;
@@ -88,6 +88,9 @@
         }
       }
       &:before {
+        @media (max-width: 1260px) {
+          max-width: 40%;
+        }
         @media (max-width: 991px) {
           max-width: 30%;
         }
@@ -109,6 +112,9 @@
       @media (max-width: 991px) {
         display: none;
       }
+    }
+    &__right-post {
+      margin-top: 14px;
     }
     &__mobile-section {
       display: none;

@@ -7,6 +7,9 @@
 @import "groups-create";
 
 .groups {
+  .profile-face {
+    max-width: 100%;
+  }
   .js-no-header {
     top: 90px !important;
   }

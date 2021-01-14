@@ -90,7 +90,8 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <p class="form-text">These tags are displayed to shoppers and must be relevant to them. e.g. Vegan
+                                        <p class="form-text">These tags are displayed to shoppers and must be relevant
+                                            to them. e.g. Vegan
                                             Friendly, Gluten Free, GST Free, Organic</p>
                                     </div>
                                 </div>
@@ -125,6 +126,7 @@
                                                     data-select2-id="10" tabindex="-1" aria-hidden="true">
                                                     <option value="#standart">A standard</option>
                                                     <option value="#service">A service</option>
+                                                    <option value="#kit">A A kit</option>
                                                     <option value="#bundle">A bundle</option>
                                                     <option value="#multiple">Has multiple options</option>
                                                 </select>
@@ -135,18 +137,86 @@
                                                         a
                                                         bundle product.</p>
                                                 </div>
-                                                <div class="product-type-box__single" id="service"
-                                                    style="display: none;">
-                                                    <p>A simple product can be sold individually or as part of a kit, or
-                                                        a
-                                                        bundle product.</p>
-                                                    <p>A simple product can be sold individually or as part of a kit, or
-                                                        a
-                                                        bundle product.</p>
-                                                    <p>A simple product can be sold individually or as part of a kit, or
-                                                        a
-                                                        bundle product.</p>
+                                                <div class="product-type-box__service" style="display: none;"
+                                                    id="service">
+                                                    <p>A service is an intangible process. It has no physical dimentions
+                                                        and can’t be measured or weighed. These may include car service,
+                                                        cleaning, digital agencies and more.</p>
+                                                    <strong>Features included in this service (optional)</strong>
+                                                    <div class="list-features">
+                                                        <div class="list-features__body">
+                                                            <div class="list-features__single">
+                                                                <div class="form__single form__single--fluid">
+                                                                    <label class="form__label">Title</label>
+                                                                    <div class="position-relative w-100"
+                                                                        data-maxlength="120">
+                                                                        <input type="text" class="form__input"
+                                                                            required="" placeholder="Title">
+                                                                    </div>
+                                                                    <span class="form__symbol-error"></span>
+                                                                </div>
+                                                                <div class="form__single form__single--fluid">
+                                                                    <label class="form__label">Price (optional)</label>
+                                                                    <div class="position-relative w-100"
+                                                                        data-maxlength="120">
+                                                                        <input type="text" class="form__input"
+                                                                            required="" placeholder="Title">
+                                                                    </div>
+                                                                    <span class="form__symbol-error"></span>
+                                                                </div>
+                                                                <a href="#" class="list-features__remove"><img
+                                                                        src="images/icons/close-24px.svg"
+                                                                        alt="close"></a>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="list-features__add">
+                                                            <span><img src="images/icons/plus-24px.svg" alt="add">Add
+                                                                feature</span>
+                                                        </a>
+                                                    </div>
+                                                    <strong>Link to a landing page (optional)</strong>
+                                                    <div class="page-box not-shadow p-0">
+                                                        <div class="page-box__select">
+                                                            <div class="form__inputs">
+                                                                <div class="form__wrap">
+                                                                    <div
+                                                                        class="form__single form__single--select form__single--select-page form__single--fluid">
+                                                                        <select class="form__input"
+                                                                            data-toggle="select-page"
+                                                                            multiple="multiple">
+                                                                        </select>
+                                                                        <span class="form__symbol-error"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="page-box__result">
+                                                            <span>When shoppers click on a product that is linked to a
+                                                                landing page, they will be taken to that page which
+                                                                details features of your service.You must create the
+                                                                page first.</span>
+                                                            <div class="selected-item">
+                                                                <div class="selected-item__left">
+                                                                    <div class="selected-item__photo"
+                                                                        style="background-image: url('images/product/selet-page.png');">
+                                                                    </div>
+                                                                    <div class="selected-item__info">
+                                                                        <strong>Title here could be so much
+                                                                            longer…</strong>
+                                                                        <ul>
+                                                                            <li>ID: <span>252860580</span></li>
+                                                                            <li><span>02.10.2020</span></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="selected-item__right">
+                                                                    <a href="#" id="1">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                                <div class="kit-box" id="kit"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -169,6 +239,7 @@
     </div>
     {{!-- modals --}}
     {{> ../common/modals/add-files }}
+    {{> ../common/modals/modals-delete-info }}
 </body>
 
 </html>

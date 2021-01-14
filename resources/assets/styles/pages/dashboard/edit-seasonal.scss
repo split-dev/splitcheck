@@ -273,7 +273,23 @@
       }
     }
   }
-
+  .form__single--select {
+    > .select2-container {
+      &::after {
+        position: absolute;
+        right: 35px;
+        top: 0;
+        bottom: 0;
+        content: "";
+        display: block;
+        width: 21px;
+        background-image: url("images/icons/search-24px.svg");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
   //style selct2 static
   ul.select2-selection__rendered {
     li.select2-selection__choice {

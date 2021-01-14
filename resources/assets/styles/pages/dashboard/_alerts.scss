@@ -63,4 +63,36 @@
       }
     }
   }
+
+  .reminders--empty,
+  .notification--empty {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.alerts-empty {
+  padding: 20px;
+
+  // .alerts-empty__img
+
+  &__img {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  // .alerts-empty__text
+  p,
+  .alerts-empty__text {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
 }

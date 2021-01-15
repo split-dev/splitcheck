@@ -7,6 +7,9 @@
 @import "groups-create";
 
 .groups {
+  .swiper-button-disabled {
+    opacity: 0.5 !important;
+  }
   .profile-face {
     max-width: 100%;
   }
@@ -85,6 +88,9 @@
     padding-right: 45px !important;
   }
   .connections__wrapper {
+    @media (max-width: 1000px) {
+      min-width: 290px !important;
+    }
     h5 {
       text-transform: uppercase;
       color: #335491;

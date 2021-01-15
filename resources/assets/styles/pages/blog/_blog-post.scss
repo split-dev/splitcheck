@@ -100,6 +100,12 @@
     }
   }
   &-post {
+    .main-item {
+      width: 100% !important;
+    }
+    .mini-post__detail {
+      max-width: 295px;
+    }
     .btn-border {
       text-align: center;
       white-space: nowrap;

@@ -192,6 +192,7 @@
     &__container {
       margin-top: 28px;
       position: relative;
+
       .swiper-button-prev,
       .swiper-button-next {
         display: flex;
@@ -244,8 +245,19 @@
         margin-right: 0;
       }
     }
+    &__mobile-slider {
+      .blog-post__card,
+      .big-post__top {
+        @media (max-width: 575px) {
+          max-width: 100% !important;
+        }
+      }
+    }
     .blog-section {
       margin-bottom: 80px;
+      .recomend {
+        margin-bottom: 24px;
+      }
       .blog__products {
         margin-top: 0 !important;
       }

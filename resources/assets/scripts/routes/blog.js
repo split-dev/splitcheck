@@ -20,7 +20,7 @@ $('.toggle-btn').click(function() {
           },
           breakpoints: {
             
-              991: {
+              992: {
                 slidesPerView: 3,
                 spaceBetween: 16,
               },

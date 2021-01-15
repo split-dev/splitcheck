@@ -7,6 +7,22 @@
 @import "groups-create";
 
 .groups {
+  .swiper-button-disabled {
+    opacity: 0.5 !important;
+  }
+  .profile-face {
+    max-width: 100%;
+  }
+  .js-no-header {
+    top: 90px !important;
+  }
+
+  .btn-border--two {
+    font-size: 14px !important;
+  }
+  .main-content {
+    padding-top: 15px !important;
+  }
   .aside-left {
     @media (max-width: 1260px) {
       min-width: 180px;
@@ -72,6 +88,9 @@
     padding-right: 45px !important;
   }
   .connections__wrapper {
+    @media (max-width: 1000px) {
+      min-width: 290px !important;
+    }
     h5 {
       text-transform: uppercase;
       color: #335491;

@@ -18,6 +18,9 @@
     }
   }
   .groups {
+    .select2-selection__arrow {
+      right: 15px !important;
+    }
     .dotted {
       max-width: 350px;
     }

@@ -14,7 +14,7 @@
     }
   }
   &__follow {
-    padding-top: 260px;
+    padding-top: 250px;
     padding-bottom: 90px;
     position: relative;
     display: flex;
@@ -80,19 +80,26 @@
         @media (max-width: 991px) {
           max-width: 30%;
         }
-        @media (max-width: 575) {
+        @media (max-width: 575px) {
           max-width: 25%;
+          position: relative;
+          right: -15px;
         }
         @media (max-width: 360px) {
           max-width: 20%;
         }
       }
       &:before {
+        @media (max-width: 1260px) {
+          max-width: 40%;
+        }
         @media (max-width: 991px) {
           max-width: 30%;
         }
-        @media (max-width: 575) {
+        @media (max-width: 575px) {
           max-width: 25%;
+          position: relative;
+          left: -30px;
         }
         @media (max-width: 360px) {
           max-width: 20%;
@@ -109,6 +116,9 @@
       @media (max-width: 991px) {
         display: none;
       }
+    }
+    &__right-post {
+      margin-top: 12px;
     }
     &__mobile-section {
       display: none;
@@ -186,6 +196,7 @@
     &__container {
       margin-top: 28px;
       position: relative;
+
       .swiper-button-prev,
       .swiper-button-next {
         display: flex;
@@ -238,8 +249,19 @@
         margin-right: 0;
       }
     }
+    &__mobile-slider {
+      .blog-post__card,
+      .big-post__top {
+        @media (max-width: 575px) {
+          max-width: 100% !important;
+        }
+      }
+    }
     .blog-section {
       margin-bottom: 80px;
+      .recomend {
+        margin-bottom: 24px;
+      }
       .blog__products {
         margin-top: 0 !important;
       }

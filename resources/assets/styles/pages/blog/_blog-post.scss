@@ -6,6 +6,9 @@
   }
   &__products {
     margin-top: 80px;
+    @media (max-width: 991px) {
+      margin-top: 0;
+    }
     @media (max-width: 575px) {
       padding-right: 15px;
       padding-left: 15px;
@@ -100,6 +103,17 @@
     }
   }
   &-post {
+    &__recomended-slider {
+      @media (max-width: 991px) {
+        padding-bottom: 70px;
+      }
+    }
+    .main-item {
+      width: 100% !important;
+    }
+    .mini-post__detail {
+      max-width: 295px;
+    }
     .btn-border {
       text-align: center;
       white-space: nowrap;
@@ -349,6 +363,9 @@
           margin-right: 18px;
           img {
             margin-left: 15px;
+            @media (max-width: 1259px) and (min-width: 992px) {
+              margin-left: 5px;
+            }
           }
         }
         a {

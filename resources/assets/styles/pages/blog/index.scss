@@ -136,6 +136,21 @@
   }
   &-before {
     position: relative;
+    .header {
+      .btn-border {
+        white-space: no-wrap;
+      }
+      &__left {
+        @media (max-width: 767px) {
+          position: absolute;
+        }
+      }
+      &__right {
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
 
     &::before {
       content: "";

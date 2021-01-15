@@ -8,6 +8,11 @@
 
 .product {
   overflow-x: hidden;
+  .section-overflow {
+    @media (max-width: 575px) {
+      overflow-x: hidden;
+    }
+  }
   .arrow-turn {
     transform: rotate(180deg);
   }

@@ -1,5 +1,8 @@
 import Sortable from 'sortablejs/modular/sortable.core.esm';
 import PerfectScrollbar from 'perfect-scrollbar';
+import 'jquery-mask-plugin';
+import Dropzone from 'dropzone';
+const mime = require('mime');
 
 export default {
   init() {
@@ -12,7 +15,7 @@ export default {
       })
       
       //select type product
-      $('.product-type-box .select-before select').on('select2:select', function (e) {
+      $('select.form__single--type-product').on('select2:select', function (e) {
         var data = e.params.data;
         $('.product-type-box__body >div').hide();
         $(data.id).show();
@@ -58,7 +61,7 @@ export default {
      // * function for "Select" template user add image
      let arrayInfo = [
        {
-         id: 1,
+         id: 10,
          idProduct: 252860580,
          date: '02.10.2020',
          text: 'Title here could be so much longer…',
@@ -66,7 +69,7 @@ export default {
          selected: true,
        },
        {
-         id: 2,
+         id: 11,
          idProduct: 252860580,
          date: '02.10.2020',
          text: 'Title here could be so much longer…',
@@ -74,7 +77,7 @@ export default {
          selected: false,
        },
        {
-         id: 3,
+         id: 12,
          idProduct: 252860580,
          date: '02.10.2020',
          text: 'Title here could be so much longer…',
@@ -82,7 +85,7 @@ export default {
          selected: false,
        },
        {
-         id: 4,
+         id: 13,
          idProduct: 252860580,
          date: '02.10.2020',
          text: 'Title here could be so much longer…',
@@ -90,7 +93,7 @@ export default {
          selected: false,
        },
        {
-         id: 5,
+         id: 14,
          idProduct: 252860580,
          date: '02.10.2020',
          text: 'Title here could be so much longer…',
@@ -98,7 +101,7 @@ export default {
          selected: false,
        },
        {
-         id: 6,
+         id: 15,
          idProduct: 252860580,
          date: '02.10.2020',
          text: 'Title here could be so much longer…',
@@ -180,6 +183,7 @@ export default {
   //select2 remove checked element
   $('[data-toggle="select-page"]').on('select2:unselect', function (e) {
     var id = e.params.data.id;
+    console.log(id);
     $('#' + id).parent().parent().remove();
   });
   //click create object
@@ -194,7 +198,296 @@ export default {
     $(this).parent().parent().remove();
    })
   }
+
+  //mask price
+  $('.usd input').mask('0000000');
+
+  //mask number
+  $('.number input').mask('0000000');
+
+  //clone size select
+  $('.size-select__add').click( function(e) {
+    e.preventDefault();
+    let count = $(this).prev().find($('.size-select__single')).length;
+    let selectEl = `
+    <div class="size-select__single">
+    <div class="members__form">
+        <span class="form__note">
+            Option ${count + 1}
+        </span>
+        <div
+            class="form__single--select form__single--select-default form__single--fluid">
+            <div class="select-before">
+                <select
+                    class="form__select form__select--default"
+                    data-toggle="select"
+                    data-select2-id="10" tabindex="-1"
+                    aria-hidden="true">
+                    <option value="Size">Size</option>
+                    <option value="SizeTwo">SizeTwo
+                    </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="members__form">
+        <span class="form__note">
+            List of options
+        </span>
+        <div
+            class="form__single form__single--select form__single--select-tag form__single--fluid">
+            <select class="form__input"
+                data-toggle="select-tag" multiple="multiple"
+                data-placeholder="Separate options with a coma">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+        </div>
+    </div>
+    <a href="#" class="size-select__remove"><img
+            src="images/icons/close-24px.svg"
+            alt="close"></a>
+</div>
+        `;
+    document.querySelector('.size-select__list').insertAdjacentHTML('beforeend', selectEl);
+    $('.size-select__list select').select2({
+      minimumResultsForSearch: Infinity,
+      width: '100%',
+    });
+  })
+
+  //remove size select
+    $('.size-select__list').on('click', '.size-select__remove', function(e) {
+      e.preventDefault();
+      let arrayEl = $(this).parent().parent().find('.size-select__single');
+      if(arrayEl.length > 1) {
+        $(this).parent().remove();
+      }
+    })
+
+
+    //dropzone type product
+    let file = `<div class="dz-preview dz-file-preview">
+    <div class="dz-thum">
+      <img data-dz-thumbnail />
+    </div>
+    <div class="dz-details">
+      <div class="dz-filename"><span data-dz-name></span></div>
+      <div class="dz-info">
+        <div class="dz-size" data-dz-size></div>
+        <div class="dz-type" data-dz-type><span></span></div>
+      </div>
+    </div>
+    <a href="#" class="data__remove"><img src="images/icons/close-24px.svg" alt="close"></a>
+  </div>`;
+    var myDropzone = new Dropzone('.dropzone-file', { 
+      url: '/file/load',
+      previewsContainer: '.dropzone-file-view',
+      previewTemplate: file,
+    });
+
+    myDropzone.on('addedfile', function(file) {
+      let type = mime.getExtension(file.type);
+      $('.dropzone-file-view >div:not(.load) .dz-type span').text(type);
+      $('.dropzone-file-view >div:not(.load)').addClass(type + ' load');
+    });
+
+
+    //select next input plus and minus
+    {
+      let arrayInfo = [
+        {
+          id: 1,
+          sky: '#134567',
+          Qty: 999,
+          price: 49.99,
+          text: 'Title here could be so much longer…',
+          img: 'images/product/7142447382608.png',
+          selected: true,
+          nameStore: 'Sport',
+          imageStore: 'images/product/category-mini.png',
+        },
+        {
+          id: 2,
+          sky: '#134568',
+          Qty: 999,
+          price: 49.99,
+          text: 'Title here could be so much longer…',
+          img: 'images/product/7142447382608.png',
+          nameStore: 'Sport',
+          imageStore: 'images/product/category-mini.png',
+        },
+        {
+          id: 3,
+          sky: '#134567',
+          Qty: 999,
+          price: 49.99,
+          text: 'Title here could be so much longer…',
+          img: 'images/product/7142447382608.png',
+        },
+        {
+          id: 4,
+          sky: '#134568',
+          Qty: 999,
+          price: 49.99,
+          text: 'Title here could be so much longer1…',
+          img: 'images/product/7142447382608.png',
+          nameStore: 'Sport',
+          imageStore: 'images/product/category-mini.png',
+        },
+        {
+          id: 5,
+          sky: '#134567',
+          Qty: 999,
+          price: 49.99,
+          text: 'Title here could be so much longer2…',
+          img: 'images/product/7142447382608.png',
+          nameStore: 'Sport',
+          imageStore: 'images/product/category-mini.png',
+        },
+        {
+          id: 6,
+          sky: '#134568',
+          Qty: 999,
+          price: 49.99,
+          text: 'Title here could be so much longer3…',
+          img: 'images/product/7142447382608.png',
+        },
+     ]
+      if($('.form__single--select-product select[data-toggle="select-product--input"]')) {
+        let dropParent = null;
+        $('.form__single--select-product select[data-toggle="select-product--input"]').each( function() {
+          dropParent = $(this).parent().parent().parent().parent();
+          $(this).select2({
+            minimumResultsForSearch: Infinity,
+            maximumSelectionLength: 4,
+            closeOnSelect: false,
+            width: '100%',
+            theme: 'select2-container select2-container--default static-select',
+            data: arrayInfo,
+            templateResult: function (state) {
+              if (!state.id) {
+                return state.text;
+              }
+              var $state = $(`
+                <div class="profile-list">
+                  <figure class="profile-list__avatar">
+                    <img src="${state.img}" alt="product">
+                    <span class="store-img" style="${state.imageStore ? 'background-image: url('+ state.imageStore : ''})" title="${state.nameStore}"></span>
+                    <span class="profile-list__symbol"></span>
+                  </figure>
+                  <div class="select-info">
+                    <strong>${state.text}</strong>
+                    <ul>
+                    <li>Sku: <span>${state.sky}</span></li>
+                    <li>Qty: <span>${state.Qty}</span></li>
+                    <li>$ <span>${state.price}</span></li>
+                    </ul>
+                  </div>
+                </div>
+              `);
     
+              return $state;
+            },
+            dropdownParent: $(dropParent),
+          });
+        })
+       }
+  
+       //select2 select
+       $('[data-toggle="select-product--input"]').on('select2:select', function (e) {
+        var data = e.params.data;
+        let stateEl = `
+              <div class="selected-item">
+              <div class="selected-item__left">
+                  <div class="selected-item__photo"
+                      style="background-image: url('${data.img}');">
+                      <span class="store-img" style="${data.imageStore ? 'background-image: url('+ data.imageStore : ''})" title="${data.nameStore}"></span>
+                      <span>SM</span>
+                  </div>
+                  <div class="selected-item__info">
+                      <strong>${data.text}</strong>
+                      <ul>
+                          <li>Sku: <span>${data.sky}</span></li>
+                          <li>$ <span>${data.price}</span></li>
+                      </ul>
+                      <div class="item-cart__quantity-wrap d-flex align-self-center">
+                            <div class="item-cart__quantity position-relative d-flex align-self-center">
+                              <button class="item-cart__minus">
+                                <span class="icon icon-minus"></span>
+                              </button>
+                              <span class="item-cart__int">0</span>
+                              <button class="item-cart__plus">
+                                <span class="icon icon-plus"></span>
+                              </button>
+                            </div>
+                            <span>quantity</span>
+                          </div>
+                  </div>
+              </div>
+              <div class="selected-item__right">
+                  <a href="#" id="${data.id}">Delete</a>
+              </div>
+          </div>
+          `;
+          $(this).parent().parent().parent().parent().next().append(stateEl);
+    });
+  
+    //select2 custom scroll product
+    //scroll
+    $('[data-toggle="select-product--input"]').on('select2:open', function (e) {
+      function resizeLine() {
+        psLine.update();
+      }
+      var psLine = new PerfectScrollbar('ul.select2-results__options');
+      window.onresize = resizeLine;
+      setTimeout( function() {
+        resizeLine();
+      }, 1)
+    });
+    //select2 remove checked element
+    $('[data-toggle="select-product--input"]').on('select2:unselect', function (e) {
+      var id = e.params.data.id;
+      $('#' + id).parent().parent().remove();
+    });
+    //click create object
+    $('.associated-box__result').on('click', 'a', function(e) {
+      e.preventDefault();
+      let id = $(this).attr('id');
+      let selectEl = $(this).parent().parent().parent().parent().find($('select'))
+      let arraySelected = $(selectEl).val();
+      delete arraySelected[arraySelected.indexOf(id)]
+      $(selectEl).val(arraySelected).trigger('change');
+      //remove item
+      $(this).parent().parent().remove();
+     })
+    }
+
+    //plus and minus select
+    function funcPlusMinus(init, par, proces) {
+      if(proces == 'minus') {
+        if(init > 0) {
+          $(par).find($('.item-cart__int')).text(init - 1);
+        }
+      } else {
+        $(par).find($('.item-cart__int')).text(init + 1);
+      }
+    }
+
+    $('.associated-box').on('click', '.item-cart__minus, .item-cart__plus', function() {
+      let par = $(this).parent();
+      let init = Number($(par).find($('.item-cart__int')).text());
+      let proces = undefined;
+      if($(this).hasClass('item-cart__minus')) {
+        proces = 'minus';
+      } else {
+        proces = 'plus';
+      }
+      funcPlusMinus(init, par, proces)
+    })
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

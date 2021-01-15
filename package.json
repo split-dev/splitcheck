@@ -82,6 +82,8 @@
     "jquery-lazy": "^1.7.10",
     "jquery-mask-plugin": "^1.14.16",
     "lightgallery": "^1.9.0",
+    "mime": "^2.4.7",
+    "mime-types": "^2.1.28",
     "perfect-scrollbar": "^1.5.0",
     "popper.js": "^1.16.1",
     "regenerator-runtime": "^0.13.5",

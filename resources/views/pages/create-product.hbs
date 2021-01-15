@@ -122,23 +122,27 @@
                                             class=" form__single--select form__single--select-default form__single--fluid">
                                             <label class="form__label">Type</label>
                                             <div class="select-before">
-                                                <select class="form__select form__select--default" data-toggle="select"
-                                                    data-select2-id="10" tabindex="-1" aria-hidden="true">
+                                                <select
+                                                    class="form__select form__select--default form__single--type-product"
+                                                    data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                    aria-hidden="true">
                                                     <option value="#standart">A standard</option>
                                                     <option value="#service">A service</option>
-                                                    <option value="#kit">A A kit</option>
+                                                    <option value="#kit">A kit</option>
                                                     <option value="#bundle">A bundle</option>
                                                     <option value="#multiple">Has multiple options</option>
+                                                    <option value="#download">downloadable product</option>
                                                 </select>
                                             </div>
                                             <div class="product-type-box__body">
-                                                <div class="product-type-box__single" id="standart">
+                                                <div class="product-type-box__single" id="standart"
+                                                    style="display: block;">
                                                     <p>A simple product can be sold individually or as part of a kit, or
                                                         a
                                                         bundle product.</p>
                                                 </div>
-                                                <div class="product-type-box__service" style="display: none;"
-                                                    id="service">
+                                                <div class="product-type-box__service" id="service"
+                                                    style="display: none;">
                                                     <p>A service is an intangible process. It has no physical dimentions
                                                         and can’t be measured or weighed. These may include car service,
                                                         cleaning, digital agencies and more.</p>
@@ -210,14 +214,528 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="selected-item__right">
+                                                                    <a href="#" id="10">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="payment-freq">
+                                                        <strong>Payment frequency</strong>
+                                                        <div
+                                                            class=" form__single--select form__single--select-default form__single--fluid payment-freq__select">
+                                                            <div class="select-before">
+                                                                <select class="form__select form__select--default"
+                                                                    data-toggle="select" data-select2-id="10"
+                                                                    tabindex="-1" aria-hidden="true">
+                                                                    <option value="Monthly">Monthly</option>
+                                                                    <option value="MonthlyTwo">MonthlyTwo</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <p>Select payment circle for your service. Payment circle starts
+                                                            from the day after order fulfilment</p>
+                                                        <div class="form__single form__single--fluid form__single--max">
+                                                            <label class="form__label">Frequency text (optional)</label>
+                                                            <div class="position-relative w-100" data-maxlength="15">
+                                                                <input type="text" class="form__input" required=""
+                                                                    placeholder="Month/user">
+                                                                <div class="count">
+                                                                    <span>0</span>/<span>15</span>
+                                                                </div>
+                                                            </div>
+                                                            <span class="form__symbol-error"></span>
+                                                        </div>
+                                                        <div class="double-price">
+                                                            <div
+                                                                class="form__single form__single--fluid form__single--usd">
+                                                                <label class="form__label">Price</label>
+                                                                <div class="position-relative w-100 usd">
+                                                                    <input type="text" class="form__input" required="">
+                                                                </div>
+                                                                <span class="form__symbol-error"></span>
+                                                                <span class="desc">
+                                                                    Price for selling your item. If we discount your
+                                                                    item, we will pay you the difference between the
+                                                                    unit price and the list price.
+                                                                </span>
+                                                            </div>
+                                                            <div
+                                                                class="form__single form__single--fluid form__single--usd">
+                                                                <label class="form__label">Compare at</label>
+                                                                <div class="position-relative w-100 usd">
+                                                                    <input type="text" class="form__input" required="">
+                                                                </div>
+                                                                <span class="form__symbol-error"></span>
+                                                                <span class="desc">
+                                                                    Price must be more than the list price. Good for
+                                                                    showing discount difference. If it is less than the
+                                                                    list price, it will be ignored.
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="checked-box">
+                                                            <input type="checkbox" id="useMeta">
+                                                            <label for="useMeta">Charge tax on this product</label>
+                                                            <div class="checked-box__body" style="display: none;">
+                                                                <div
+                                                                    class=" form__single--select form__single--select-default form__single--fluid payment-freq__select">
+                                                                    <div class="select-before">
+                                                                        <select
+                                                                            class="form__select form__select--default"
+                                                                            data-toggle="select" data-select2-id="10"
+                                                                            tabindex="-1" aria-hidden="true">
+                                                                            <option value="No Vat/GST">No Vat/GST
+                                                                            </option>
+                                                                            <option value="No Vat/GST">No Vat/GST
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="checked-box">
+                                                            <input type="checkbox" id="tax">
+                                                            <label for="tax">Tax included in the price</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="kit-box" id="kit" style="display: none;">
+                                                    <p>A Kit is just a list of standard items that can be used to
+                                                        populate shopper's cart. Standard price policy applies to kit's
+                                                        items. When shoppers choose to buy individual items, the item
+                                                        price will be applied.</p>
+                                                    <strong class="question">Kit <i
+                                                            class="icon icon-help ml-1"></i></strong>
+                                                    <div class="checked-box">
+                                                        <input type="checkbox" id="allow2">
+                                                        <label for="allow2">Allow shoppers to edit quantity</label>
+                                                    </div>
+                                                    <div class="associated-box select-store">
+                                                        <div class="associated-box__select" id="select1">
+                                                            <div class="form__inputs">
+                                                                <div class="form__wrap">
+                                                                    <div
+                                                                        class="form__single form__single--select form__single--select-product form__single--fluid">
+                                                                        <select class="form__input"
+                                                                            data-toggle="select-product--input"
+                                                                            multiple="multiple">
+                                                                        </select>
+                                                                        <span class="form__symbol-error"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="associated-box__result">
+                                                            <span>Kit list</span>
+                                                            <div class="selected-item">
+                                                                <div class="selected-item__left">
+                                                                    <div class="selected-item__photo"
+                                                                        style="background-image: url('images/product/7142447382608.png');">
+                                                                        <span class="store-img"
+                                                                            style="background-image: url(images/product/category-mini.png)"
+                                                                            title="Sport"></span>
+                                                                        <span>SM</span>
+                                                                    </div>
+                                                                    <div class="selected-item__info">
+                                                                        <strong>Title here could be so much
+                                                                            longer…</strong>
+                                                                        <ul>
+                                                                            <li>Sku: <span>#134568</span></li>
+                                                                            <li>$ <span>49.99</span></li>
+                                                                        </ul>
+                                                                        <div
+                                                                            class="item-cart__quantity-wrap d-flex align-self-center">
+                                                                            <div
+                                                                                class="item-cart__quantity position-relative d-flex align-self-center">
+                                                                                <button
+                                                                                    class="item-cart__minus product">
+                                                                                    <span
+                                                                                        class="icon icon-minus"></span>
+                                                                                </button>
+                                                                                <span class="item-cart__int">0</span>
+                                                                                <button class="item-cart__plus product">
+                                                                                    <span class="icon icon-plus"></span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <span>quantity</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="selected-item__right">
+                                                                    <a href="#" id="1">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="associated-box select-store">
+                                                        <span>Linked From Collaborators</span>
+                                                        <div class="associated-box__select" id="select2">
+                                                            <div class="form__inputs">
+                                                                <div class="form__wrap">
+                                                                    <div
+                                                                        class="form__single form__single--select form__single--select-product form__single--fluid">
+                                                                        <select class="form__input"
+                                                                            data-toggle="select-product--input"
+                                                                            multiple="multiple">
+                                                                        </select>
+                                                                        <span class="form__symbol-error"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="associated-box__result">
+                                                            <span>Seasonal list</span>
+                                                            <div class="selected-item">
+                                                                <div class="selected-item__left">
+                                                                    <div class="selected-item__photo"
+                                                                        style="background-image: url('images/product/7142447382608.png');">
+                                                                        <span class="store-img"
+                                                                            style="background-image: url(images/product/category-mini.png)"
+                                                                            title="Sport"></span>
+                                                                        <span>SM</span>
+                                                                    </div>
+                                                                    <div class="selected-item__info">
+                                                                        <strong>Title here could be so much
+                                                                            longer…</strong>
+                                                                        <ul>
+                                                                            <li>Sku: <span>#134568</span></li>
+                                                                            <li>$ <span>49.99</span></li>
+                                                                        </ul>
+                                                                        <div
+                                                                            class="item-cart__quantity-wrap d-flex align-self-center">
+                                                                            <div
+                                                                                class="item-cart__quantity position-relative d-flex align-self-center">
+                                                                                <button class="item-cart__minus">
+                                                                                    <span
+                                                                                        class="icon icon-minus"></span>
+                                                                                </button>
+                                                                                <span class="item-cart__int">0</span>
+                                                                                <button class="item-cart__plus">
+                                                                                    <span class="icon icon-plus"></span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <span>quantity</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="selected-item__right">
                                                                     <a href="#" id="1">Delete</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="kit-box" id="kit"></div>
+                                                <div class="bundle-box" id="bundle" style="display: none;">
+                                                    <p>A bundle is a collection of items to be solved as one item.
+                                                        Shoppers cannot edit items and quantities. Bundled items are not
+                                                        affected by the price policy</p>
+                                                    <strong class="question">Bundle <i
+                                                            class="icon icon-help ml-1"></i></strong>
+                                                    <div class="checked-box">
+                                                        <input type="checkbox" id="show1">
+                                                        <label for="show1">Show item price in the order</label>
+                                                    </div>
+                                                    <div class="checked-box">
+                                                        <input type="checkbox" id="show2">
+                                                        <label for="show2">Show items in the order</label>
+                                                    </div>
+                                                    <a href="#" class="list-features__add">
+                                                        <span><img src="images/icons/plus-24px.svg" alt="add">Create new
+                                                            product</span>
+                                                    </a>
+                                                    <div class="associated-box select-store">
+                                                        <div class="associated-box__select" id="select1">
+                                                            <div class="form__inputs">
+                                                                <div class="form__wrap">
+                                                                    <div
+                                                                        class="form__single form__single--select form__single--select-product form__single--fluid">
+                                                                        <select class="form__input"
+                                                                            data-toggle="select-product--input"
+                                                                            multiple="multiple">
+                                                                        </select>
+                                                                        <span class="form__symbol-error"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="associated-box__result">
+                                                            <span>Bundle list</span>
+                                                            <div class="selected-item">
+                                                                <div class="selected-item__left">
+                                                                    <div class="selected-item__photo"
+                                                                        style="background-image: url('images/product/7142447382608.png');">
+                                                                        <span>SM</span>
+                                                                    </div>
+                                                                    <div class="selected-item__info">
+                                                                        <strong>Title here could be so much
+                                                                            longer…</strong>
+                                                                        <ul>
+                                                                            <li>Sku: <span>#134568</span></li>
+                                                                            <li>$ <span>49.99</span></li>
+                                                                        </ul>
+                                                                        <div
+                                                                            class="item-cart__quantity-wrap d-flex align-self-center">
+                                                                            <div
+                                                                                class="item-cart__quantity position-relative d-flex align-self-center">
+                                                                                <button
+                                                                                    class="item-cart__minus product">
+                                                                                    <span
+                                                                                        class="icon icon-minus"></span>
+                                                                                </button>
+                                                                                <span class="item-cart__int">0</span>
+                                                                                <button class="item-cart__plus product">
+                                                                                    <span class="icon icon-plus"></span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <span>quantity</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="selected-item__right">
+                                                                    <a href="#" id="1">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="multiple-box" id="multiple" style="display: none;">
+                                                    <p>
+                                                        This product has multiple options, like different sizes or
+                                                        colours that shoppers can choose from. Prices may differ from
+                                                        each option.
+                                                    </p>
+                                                    <strong>Options</strong>
+                                                    <div class="size-select">
+                                                        <div class="size-select__list">
+                                                            <div class="size-select__single">
+                                                                <div class="members__form">
+                                                                    <span class="form__note">
+                                                                        Option 1
+                                                                    </span>
+                                                                    <div
+                                                                        class="form__single--select form__single--select-default form__single--fluid">
+                                                                        <div class="select-before">
+                                                                            <select
+                                                                                class="form__select form__select--default"
+                                                                                data-toggle="select"
+                                                                                data-select2-id="10" tabindex="-1"
+                                                                                aria-hidden="true">
+                                                                                <option value="Size">Size</option>
+                                                                                <option value="SizeTwo">SizeTwo
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="members__form">
+                                                                    <span class="form__note">
+                                                                        List of options
+                                                                    </span>
+                                                                    <div
+                                                                        class="form__single form__single--select form__single--select-tag form__single--fluid">
+                                                                        <select class="form__input"
+                                                                            data-toggle="select-tag" multiple="multiple"
+                                                                            data-placeholder="Separate options with a coma">
+                                                                            <option value="S">S</option>
+                                                                            <option value="M">M</option>
+                                                                            <option value="L">L</option>
+                                                                            <option value="XL">XL</option>
+                                                                            <option value="XXL">XXL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="#" class="size-select__remove"><img
+                                                                        src="images/icons/close-24px.svg"
+                                                                        alt="close"></a>
+                                                            </div>
+                                                            <div class="size-select__single">
+                                                                <div class="members__form">
+                                                                    <span class="form__note">
+                                                                        Option 2
+                                                                    </span>
+                                                                    <div
+                                                                        class="form__single--select form__single--select-default form__single--fluid">
+                                                                        <div class="select-before">
+                                                                            <select
+                                                                                class="form__select form__select--default"
+                                                                                data-toggle="select"
+                                                                                data-select2-id="10" tabindex="-1"
+                                                                                aria-hidden="true">
+                                                                                <option value="Size">Size</option>
+                                                                                <option value="SizeTwo">SizeTwo
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="members__form">
+                                                                    <span class="form__note">
+                                                                        List of options
+                                                                    </span>
+                                                                    <div
+                                                                        class="form__single form__single--select form__single--select-tag form__single--fluid">
+                                                                        <select class="form__input"
+                                                                            data-toggle="select-tag" multiple="multiple"
+                                                                            data-placeholder="Separate options with a coma">
+                                                                            <option value="S">S</option>
+                                                                            <option value="M">M</option>
+                                                                            <option value="L">L</option>
+                                                                            <option value="XL">XL</option>
+                                                                            <option value="XXL">XXL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="#" class="size-select__remove"><img
+                                                                        src="images/icons/close-24px.svg"
+                                                                        alt="close"></a>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="size-select__add">
+                                                            <span><img src="images/icons/plus-24px.svg" alt="add">Add
+                                                                option</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="download-box" id="download" style="display: none;">
+                                                    <p>A downloadable product is a digital product that shoppers
+                                                        download after purchase. Just like standard products, price
+                                                        policy can be used to control pricing.</p>
+                                                    <form action="/file-upload" class="dropzone-file"
+                                                        id="my-awesome-dropzone">
+                                                        <div class="drop-photo__start dz-message">
+                                                            <figure class="position-relative">
+                                                                <i class="icon icon-cloud"></i>
+                                                            </figure>
+                                                            <h4>Drag and drop your files</h4>
+                                                            <p>Or <span>browse</span> to choose a file</p>
+                                                        </div>
+                                                    </form>
+                                                    <div class="dropzone-file-view">
+
+                                                    </div>
+                                                </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="4" class="pricing-item-box anchor">
+                                    <strong>Pricing</strong>
+                                    <div class="double-price">
+                                        <div class="form__single form__single--fluid form__single--usd">
+                                            <label class="form__label">Price</label>
+                                            <div class="position-relative w-100 usd">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                            <span class="desc">
+                                                Price for selling your item. If we discount your
+                                                item, we will pay you the difference between the
+                                                unit price and the list price.
+                                            </span>
+                                        </div>
+                                        <div class="form__single form__single--fluid form__single--usd">
+                                            <label class="form__label">Compare at</label>
+                                            <div class="position-relative w-100 usd">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                            <span class="desc">
+                                                Price must be more than the list price. Good for
+                                                showing discount difference. If it is less than the
+                                                list price, it will be ignored.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="checked-box">
+                                        <input type="checkbox" id="tax-product">
+                                        <label for="tax-product">Charge tax on this product</label>
+                                        <div class="checked-box__body" style="display: none;">
+                                            <div
+                                                class=" form__single--select form__single--select-default form__single--fluid payment-freq__select">
+                                                <div class="select-before">
+                                                    <select
+                                                        class="form__select form__select--default select2-hidden-accessible"
+                                                        data-toggle="select" tabindex="-1" aria-hidden="true"
+                                                        data-select2-id="62">
+                                                        <option value="10% VAT" data-select2-id="64">10% VAT
+                                                        </option>
+                                                        <option value="No Vat/GST">No Vat/GST
+                                                        </option>
+                                                        <option value="15% VAT">15% VAT
+                                                        </option>
+                                                    </select><span
+                                                        class="select2 select2-container select2-container--default"
+                                                        dir="ltr" data-select2-id="63" style="width: 100%;"><span
+                                                            class="selection"><span
+                                                                class="select2-selection select2-selection--single"
+                                                                role="combobox" aria-haspopup="true"
+                                                                aria-expanded="false" tabindex="-1"
+                                                                aria-disabled="false"
+                                                                aria-labelledby="select2-159f-container"><span
+                                                                    class="select2-selection__rendered"
+                                                                    id="select2-159f-container" role="textbox"
+                                                                    aria-readonly="true" title="No Vat/GST
+                                                                            ">No Vat/GST
+                                                                </span><span class="select2-selection__arrow"
+                                                                    role="presentation"><b
+                                                                        role="presentation"></b></span></span></span><span
+                                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="checked-box">
+                                        <input type="checkbox" id="tax2">
+                                        <label for="tax2">Tax included in the price</label>
+                                    </div>
+                                </div>
+                                <div id="5" class="inventory-item-box anchor">
+                                    <strong>Inventory (all fields are optional)</strong>
+                                    <div class="double-input">
+                                        <div class="form__single form__single--fluid">
+                                            <label class="form__label">SKU (Stock Keeping Unit)</label>
+                                            <div class="position-relative w-100">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                        <div class="form__single form__single--fluid">
+                                            <label class="form__label">Barcode (ISBN, UPC etc.)</label>
+                                            <div class="position-relative w-100">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="checked-box">
+                                        <input type="checkbox" id="track">
+                                        <label for="track">Track quantity</label>
+                                    </div>
+                                    <div class="checked-box">
+                                        <input type="checkbox" id="allow">
+                                        <label for="allow">Allow backorders</label>
+                                    </div>
+                                    <div class="triple-input">
+                                        <div class="form__single form__single--fluid">
+                                            <label class="form__label">Quantity</label>
+                                            <div class="position-relative w-100 number">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                        <div class="form__single form__single--fluid">
+                                            <label class="form__label">Sell in multiples of</label>
+                                            <div class="position-relative w-100 number">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                        <div class="form__single form__single--fluid">
+                                            <label class="form__label">Sell in multiples of</label>
+                                            <div class="position-relative w-100 number">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                            </div>
+                                            <span class="form__symbol-error"></span>
                                         </div>
                                     </div>
                                 </div>

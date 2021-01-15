@@ -729,7 +729,7 @@ export default {
         $(par).find($('.item-cart__int')).text(init + 1);
       }
     }
-    $('.item-cart__minus, .item-cart__plus').click( function() {
+    $('.item-cart__minus:not(.product), .item-cart__plus:not(.product)').click( function() {
       let par = $(this).parent();
       let init = Number($(par).find($('.item-cart__int')).text());
       let proces = undefined;

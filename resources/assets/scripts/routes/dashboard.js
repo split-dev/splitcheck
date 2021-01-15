@@ -151,7 +151,7 @@ export default {
     }
 
     //clone new box .add-field
-    $('.checked-box #useMeta').on('click', function() {
+    $('.checked-box >label').on('click', function() {
       $(this).parent().find($('.checked-box__body')).slideToggle();
     })
 

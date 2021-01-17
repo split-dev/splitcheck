@@ -2,9 +2,21 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper/swiper-bundle';
 import 'bootstrap/js/dist/modal';
+import PerfectScrollbar from 'perfect-scrollbar';
 
 export default {
   init() {
+
+//scroll horizontal
+function resize() {
+  ps.update();
+}
+
+if($('.tabs-blog').hasClass('tabs-blog')) {
+  var ps = new PerfectScrollbar('.tabs-blog');
+  window.onresize = resize;
+}
+
 $('.toggle-btn').click(function() {
   $(this).prev().slideToggle(400);
   $(this).toggleClass('toggle-btn-reverte');

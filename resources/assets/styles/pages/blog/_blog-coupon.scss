@@ -1,4 +1,7 @@
 .coupons {
+  @media (max-width: 575px) {
+    padding-top: 20px;
+  }
   .search {
     @media (max-width: 575px) {
       margin-right: 16px;
@@ -28,6 +31,7 @@
     top: 110px !important;
   }
   .aside-right {
+    top: 107px !important;
     .section-content {
       margin-bottom: 16px !important;
     }
@@ -54,11 +58,7 @@
       align-items: flex-start !important;
     }
   }
-  .ps {
-    @media (max-width: 991px) {
-      max-width: 100%;
-    }
-  }
+
   .main-coupon {
     width: 49.124%;
     .section-content {

@@ -2,17 +2,22 @@ import Sortable from 'sortablejs/modular/sortable.core.esm';
 import PerfectScrollbar from 'perfect-scrollbar';
 import 'jquery-mask-plugin';
 import Dropzone from 'dropzone';
+import FroalaEditor from 'froala-editor';
 const mime = require('mime');
 
 export default {
   init() {
       $('.images-box-loader ul li:not(.img)').on('click', function () {
         $('#add-files').modal('show')
-        $('.nav-product').toggleClass('hide')
       })
-      $('#add-files').on('hidden.bs.modal', function () {
-        $('.nav-product').toggleClass('hide')
+      $('.modal').on('shown.bs.modal', function () {
+        $('.nav-product').addClass('hide')
       })
+      $('.modal').on('hidden.bs.modal', function(){
+        if(!$('.modal.show').hasClass('show')) {
+          $('.nav-product').removeClass('hide')
+        }
+      });
       
       //select type product
       $('select.form__single--type-product').on('select2:select', function (e) {
@@ -488,6 +493,72 @@ export default {
       }
       funcPlusMinus(init, par, proces)
     })
+
+    //button strore submit
+    $('.set-submit').click( function(e) {
+      e.preventDefault();
+      if($(this).hasClass('submit')) {
+        $(this).find('span').remove();
+        $(this).removeClass('submit').text('Set as available');
+      } else {
+        let submitBtn = '<span><img src="images/icons/check_circle-24px-blue.svg" alt="submit"/>Available</span>'
+        $(this).text('').append(submitBtn).addClass('submit');
+      }
+    });
+
+    //create store button
+    $('.create-store').click( function() {
+      if($(this).attr('data-create') == 'false') {
+        $('.store-create').slideToggle();
+        $(this).text('Save new store');
+        $(this).attr('data-create', 'true');
+      } else {
+        $('.store-create').slideToggle();
+        $(this).text('Add new store');
+        $(this).attr('data-create', 'false');
+      }
+    })
+
+    //check status additional
+    $('.single-check .groups__check').click(function() {
+      if ($(this).find('input').prop('checked')) {
+        $(this).prev().find($('b')).text('enabled');
+        $(this).parent().addClass('enabled');
+      } else {
+        $(this).prev().find($('b')).text('disabled');
+        $(this).parent().removeClass('enabled');
+      }
+    })
+
+    //check status additional body element
+    $('.single-check__body .checked-box').click(function() {
+      if ($(this).find('input').prop('checked')) {
+        if($(this).next().hasClass('checked-children-body')) {
+          $(this).next().slideDown();
+        }
+      } else {
+        if($(this).next().hasClass('checked-children-body')) {
+          $(this).next().slideUp();
+        }
+      }
+    })
+
+    //check status additional body element
+    $('.addition-box .single-check').click(function() {
+      console.log($(this).find('input'));
+      if ($(this).find('input').prop('checked')) {
+        if($(this).next().hasClass('single-check__body')) {
+          $(this).next().slideDown();
+        }
+      } else {
+        if($(this).next().hasClass('single-check__body')) {
+          $(this).next().slideUp();
+        }
+      }
+    })
+
+    //froala
+    var editor = new FroalaEditor('#example')
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

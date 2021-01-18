@@ -835,6 +835,18 @@ export default {
     $('#menu-mobile--not-shop').modal('hide');
   })
 
+  //add default file
+  if($('.modal.add-files-default').hasClass('add-files-default')) {
+    const dropZoneDef = document.querySelectorAll('.add-files-default .drop-files');
+
+    const dropZoneDefFiles = new Dropzone(dropZoneDef[0], {
+      url: '/file/download',
+      thumbnailWidth: 120,
+      thumbnailHeight: 120,
+      maxFiles: 5,
+    });
+  }
+
   if($('.modal.add-files').hasClass('add-files')) {
     const dropZoneEl = document.querySelectorAll('.add-files .drop-files');
 
@@ -1256,10 +1268,10 @@ $('.form-add-comment__content').on('click', 'a', function(e){
     }
 
     //focus element .form__single--atr
-    $('.form__single--attr input').focus(function() {
+    $('.form__single--select input, .form__single--attr input').focus(function() {
       $(this).parent().addClass('focus');
     });
-    $('.form__single--attr input').focusout(function() {
+    $('.form__single--select input, .form__single--attr input').focusout(function() {
       $(this).parent().removeClass('focus');
     });
   },

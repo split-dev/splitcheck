@@ -1,0 +1,78 @@
+<!-- modal-add-photo -->
+<div class="modal fade modal-availability" tabindex="1" id="modal-availability">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content position-relative">
+            <!-- modal-header -->
+            <div class="modal-header d-flex align-items-center">
+                <h3>Availability</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <!-- /modal-header -->
+            <!-- modal-body -->
+            <div class="modal-body">
+                <div class="store-list">
+                    <div class="store-single">
+                        <div class="store-single__info">
+                            <a href="#">Store Name</a>
+                            <p>59 Nerand Street, Southport, QLD 4215</p>
+                            <div class="checked-box">
+                                <input type="checkbox" id="allow7">
+                                <label for="allow7">Allow Click&amp;Collect for this store</label>
+                            </div>
+                        </div>
+                        <div class="store-single__options">
+                            <a href="#" class="btn-border btn-border--two set-submit submit"><span><img
+                                        src="images/icons/check_circle-24px-blue.svg" alt="submit">Available</span></a>
+                        </div>
+                    </div>
+                    <div class="store-single">
+                        <div class="store-single__info">
+                            <a href="#">Store Name</a>
+                            <p>59 Nerand Street, Southport, QLD 4215</p>
+                            <div class="checked-box">
+                                <input type="checkbox" id="allow8">
+                                <label for="allow8">Allow Click&Collect for this store</label>
+                            </div>
+                        </div>
+                        <div class="store-single__options">
+                            <a href="#" class="btn-border btn-border--two set-submit">Set as available</a>
+                        </div>
+                    </div>
+                    <div class="store-create" style="display: none;">
+                        <div class="form__single form__single--fluid form__single--max">
+                            <label class="form__label">Store Name</label>
+                            <div class="position-relative w-100" data-maxlength="120">
+                                <input type="text" class="form__input" required="" placeholder="Store Name">
+                                <div class="count">
+                                    <span>0</span>/<span>120</span>
+                                </div>
+                            </div>
+                            <span class="form__symbol-error"></span>
+                        </div>
+                        <div class="members__form">
+                            <div class=" form__single--select form__single--select-default form__single--fluid">
+                                <label class="form__label">Store Type</label>
+                                <div class="select-before">
+                                    <select class="form__select form__select--default" data-toggle="select"
+                                        data-select2-id="10" tabindex="-1" aria-hidden="true">
+                                        <option value="#">A virtual store</option>
+                                        <option value="#">A physical store</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <p>A virtual store inherits all settings from its parent store. It does not manage its
+                            inventory. A Virtual store costs $15 per month</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /modal-body -->
+            <div class="modal-footer d-flex flex-sm-row align-items-center justify-content-end">
+                <a href="#" class="btn-blue create-store" data-create="false">Add new store</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /modal-add-photo -->

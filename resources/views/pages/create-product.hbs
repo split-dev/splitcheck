@@ -439,7 +439,8 @@
                                                         <input type="checkbox" id="show2">
                                                         <label for="show2">Show items in the order</label>
                                                     </div>
-                                                    <a href="#" class="list-features__add">
+                                                    <a href="#" class="list-features__add" data-toggle="modal"
+                                                        data-target="#create-product">
                                                         <span><img src="images/icons/plus-24px.svg" alt="add">Create new
                                                             product</span>
                                                     </a>
@@ -739,6 +740,341 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div id="6" class="availability anchor">
+                                    <strong>Availability</strong>
+                                    <span>Product available in the following stores:</span>
+                                    <div class="availability__box">
+                                        <a href="#">Store Name</a>
+                                        <p>59 Nerand Street, Southport, QLD 4215</p>
+                                        <div class="checked-box">
+                                            <input type="checkbox" id="alow4">
+                                            <label for="alow4">Allow Click&Collect for this store</label>
+                                            <a href="#" class="btn btn-blue" data-toggle="modal"
+                                                data-target="#modal-availability">Manage Availability</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="7" class="organization anchor">
+                                    <strong>Organization</strong>
+                                    <div class="organization__single">
+                                        <div class="members__form">
+                                            <div
+                                                class=" form__single--select form__single--select-default form__single--fluid">
+                                                <label class="form__label">Categories</label>
+                                                <div class="select-before">
+                                                    <select class="form__select form__select--default"
+                                                        data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                        aria-hidden="true">
+                                                        <option value="#">Category</option>
+                                                        <option value="#">CategoryTwo</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn-border btn-border--two">Create category</a>
+                                    </div>
+                                    <div class="organization__single">
+                                        <div class="members__form">
+                                            <div
+                                                class=" form__single--select form__single--select-default form__single--fluid">
+                                                <label class="form__label">Brands</label>
+                                                <div class="select-before">
+                                                    <select class="form__select form__select--default"
+                                                        data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                        aria-hidden="true">
+                                                        <option value="#">Brand</option>
+                                                        <option value="#">BrandTwo</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn-border btn-border--two">Create brand</a>
+                                    </div>
+                                </div>
+                                <div id="7" class="organization anchor">
+                                    <strong>Organization</strong>
+                                    <div class="organization__single">
+                                        <div class="members__form">
+                                            <div
+                                                class=" form__single--select form__single--select-default form__single--fluid">
+                                                <label class="form__label">Categories</label>
+                                                <div class="select-before">
+                                                    <select class="form__select form__select--default"
+                                                        data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                        aria-hidden="true">
+                                                        <option value="#">Category</option>
+                                                        <option value="#">CategoryTwo</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn-border btn-border--two">Create category</a>
+                                    </div>
+                                    <div class="organization__upgrade">
+                                        <p>Custom brands are not supported on a free account</p>
+                                        <a href="#" class="btn-border btn-border--two">Upgrade accaunt</a>
+                                    </div>
+                                </div>
+                                <div id="8" class="terms-box anchor">
+                                    <strong>Terms and conditions (optional)</strong>
+                                    <div class="w-100 max-text" data-maxlength="225">
+                                        <label class="form__label">Short description</label>
+                                        <textarea class="form__textarea" placeholder="Write something"></textarea>
+                                        <div class="count"><span>0</span>/<span>255</span></div>
+                                    </div>
+                                </div>
+                                <div id="9" class="addition-box anchor">
+                                    <strong>Additional permissions</strong>
+                                    <div class="single-check">
+                                        <div class="single-check__text">
+                                            <span>Pre-orders<b>enabled</b></span>
+                                        </div>
+                                        <div class="groups__check form d-flex">
+                                            <input type="checkbox" id="checkbox-1"
+                                                class="form__checkbox form__single settings__check form__single--fluid form__single--checkbox form__checkbox--language"
+                                                name="checkbox-language" checked="">
+                                            <label for="checkbox-1">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="single-check">
+                                        <div class="single-check__text">
+                                            <span>Shipping<b>disabled</b></span>
+                                        </div>
+                                        <div class="groups__check form d-flex">
+                                            <input type="checkbox" id="checkbox-5"
+                                                class="form__checkbox form__single settings__check form__single--fluid form__single--checkbox form__checkbox--language"
+                                                name="checkbox-language">
+                                            <label for="checkbox-5">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="single-check__body" style="display: none;">
+                                        <div class="double-input">
+                                            <div class="form__single form__single--fluid">
+                                                <label class="form__label">Ships from</label>
+                                                <div class="position-relative w-100">
+                                                    <input type="text" class="form__input" required="" maxlength="7">
+                                                </div>
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                            <div class="form__single form__single--fluid">
+                                                <label class="form__label">Estimated delivery</label>
+                                                <div class="position-relative w-100">
+                                                    <input type="text" class="form__input" required="" maxlength="7">
+                                                </div>
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="checked-box">
+                                            <input type="checkbox" id="alow8">
+                                            <label for="alow8">This is heavy item</label>
+                                        </div>
+                                        <div class="checked-box mb-4">
+                                            <input type="checkbox" id="alow9">
+                                            <label for="alow9" class="mb-0">This item is classified as a dangerous
+                                                goods</label>
+                                        </div>
+                                        <div class="checked-children-body" style="display: none;">
+                                            <p class="check">
+                                                Dangerouse goods are goods that are danderous, flammable, explosive,
+                                                volatile, offensive or are of a damaging nature
+                                            </p>
+                                            <div class="double-input select">
+                                                <div class="form__single form__single--fluid form__single--select">
+                                                    <label class="form__label">Weight</label>
+                                                    <div class="position-relative w-100 d-flex number">
+                                                        <input type="text" class="form__input" required=""
+                                                            maxlength="7">
+                                                        <div
+                                                            class=" form__single--select form__single--select-default form__single--fluid">
+                                                            <div class="select-before">
+                                                                <select class="form__select form__select--default"
+                                                                    data-toggle="select" data-select2-id="10"
+                                                                    tabindex="-1" aria-hidden="true">
+                                                                    <option value="#">kg</option>
+                                                                    <option value="#">kg</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+                                                <span class="or">or</span>
+                                                <div class="form__single form__single--fluid form__single--select">
+                                                    <label class="form__label">Cubic</label>
+                                                    <div class="position-relative w-100 d-flex number">
+                                                        <input type="text" class="form__input" required=""
+                                                            maxlength="7">
+                                                        <div
+                                                            class=" form__single--select form__single--select-default form__single--fluid">
+                                                            <div class="select-before">
+                                                                <select class="form__select form__select--default"
+                                                                    data-toggle="select" data-select2-id="10"
+                                                                    tabindex="-1" aria-hidden="true">
+                                                                    <option value="#">kg</option>
+                                                                    <option value="#">kg</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+                                            </div>
+                                            <p>Either Weight or Cubic is required not both. If you use
+                                                weight, Cubic is
+                                                not required or vice verca</p>
+                                        </div>
+                                        <div class="checked-box mb-4">
+                                            <input type="checkbox" id="alow10">
+                                            <label for="alow10" class="mb-0">I want to add width, lenght and height
+                                                manually</label>
+                                        </div>
+                                        <div class="checked-children-body" style="display: none;">
+                                            <div class="triple-input select">
+                                                <div class="form__single form__single--fluid form__single--select">
+                                                    <label class="form__label">Weight</label>
+                                                    <div class="position-relative w-100 d-flex number">
+                                                        <input type="text" class="form__input" required=""
+                                                            maxlength="7">
+                                                        <div
+                                                            class=" form__single--select form__single--select-default form__single--fluid">
+                                                            <div class="select-before">
+                                                                <select class="form__select form__select--default"
+                                                                    data-toggle="select" data-select2-id="10"
+                                                                    tabindex="-1" aria-hidden="true">
+                                                                    <option value="#">cm</option>
+                                                                    <option value="#">cm</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+                                                <div class="form__single form__single--fluid form__single--select">
+                                                    <label class="form__label">Length</label>
+                                                    <div class="position-relative w-100 d-flex number">
+                                                        <input type="text" class="form__input" required=""
+                                                            maxlength="7">
+                                                        <div
+                                                            class=" form__single--select form__single--select-default form__single--fluid">
+                                                            <div class="select-before">
+                                                                <select class="form__select form__select--default"
+                                                                    data-toggle="select" data-select2-id="10"
+                                                                    tabindex="-1" aria-hidden="true">
+                                                                    <option value="#">cm</option>
+                                                                    <option value="#">cm</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+                                                <div class="form__single form__single--fluid form__single--select">
+                                                    <label class="form__label">Height</label>
+                                                    <div class="position-relative w-100 d-flex number">
+                                                        <input type="text" class="form__input" required=""
+                                                            maxlength="7">
+                                                        <div
+                                                            class=" form__single--select form__single--select-default form__single--fluid">
+                                                            <div class="select-before">
+                                                                <select class="form__select form__select--default"
+                                                                    data-toggle="select" data-select2-id="10"
+                                                                    tabindex="-1" aria-hidden="true">
+                                                                    <option value="#">cm</option>
+                                                                    <option value="#">cm</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <span class="form__symbol-error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-check mb-0">
+                                        <div class="single-check__text">
+                                            <span>Enable to be in the bargain page<b>disabled</b></span>
+                                        </div>
+                                        <div class="groups__check form d-flex">
+                                            <input type="checkbox" id="checkbox-6"
+                                                class="form__checkbox form__single settings__check form__single--fluid form__single--checkbox form__checkbox--language"
+                                                name="checkbox-language">
+                                            <label for="checkbox-6">
+                                            </label>
+                                        </div>
+                                        <span class="warn-more mb-5">More about SplitChek bargains <i
+                                                class="icon icon-help ml-1 orange"></i></span>
+                                    </div>
+                                    <div class="single-check__body mb-4" style="display: none;">
+                                        <div class="double-price">
+                                            <div class="form__single form__single--fluid form__single--percent">
+                                                <label class="form__label">max % bargain discount</label>
+                                                <div class="position-relative w-100 usd">
+                                                    <input type="text" class="form__input" required="" maxlength="7">
+                                                </div>
+                                                <span class="form__symbol-error"></span>
+                                                <span class="desc">
+                                                    Max discount that should be applied to your item on the bargain
+                                                    page. Min 15%
+                                                </span>
+                                            </div>
+                                            <div class="form__single form__single--fluid form__single--percent">
+                                                <label class="form__label">Max bargain order</label>
+                                                <div class="position-relative w-100 usd">
+                                                    <input type="text" class="form__input" required="" maxlength="7">
+                                                </div>
+                                                <span class="form__symbol-error"></span>
+                                                <span class="desc">
+                                                    Item will be disabled from the bargain when max orders has been
+                                                    reached
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form__single form__single--fluid form__single--max">
+                                            <label class="form__label">Notes to shoppers</label>
+                                            <div class="position-relative w-100" data-maxlength="180">
+                                                <input type="text" class="form__input" required=""
+                                                    placeholder="season title">
+                                                <div class="count">
+                                                    <span>0</span>/<span>180</span>
+                                                </div>
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                        <p>Notes to display to shoppers on the bargain page. For example, notify them if
+                                            this is weekly, monthly, yearly subscriptions on base pricing model or if
+                                            they can pickup from your store</p>
+                                    </div>
+                                    <div class="checked-box">
+                                        <input type="checkbox" id="alow12">
+                                        <label for="alow12" class="mb-3">Disable price rules for this product when
+                                            bargain is used</label>
+                                    </div>
+                                    <div class="checked-box">
+                                        <input type="checkbox" id="alow13">
+                                        <label for="alow13" class="mb-0">Enable free shipping on this item when bargain
+                                            is active</label>
+                                    </div>
+                                </div>
+                                <div id="10" class="long-box">
+                                    <strong>Long Description</strong>
+                                    <div class="checked-box mb-3">
+                                        <input type="checkbox" id="alow14">
+                                        <label for="alow14" class="mb-0">Use tabs to separate content</label>
+                                    </div>
+                                    <p>Educate shoppers about this product. Explain how it can help them and why it
+                                        is a better choice compared to other products.</p>
+                                        <div id="example"></div>
+                                </div>
                                 <div class="section-button">
                                     <a href="#" class="btn-border-red" data-toggle="modal"
                                         data-target="#delete-info">Delete all info</a>
@@ -757,6 +1093,9 @@
     </div>
     {{!-- modals --}}
     {{> ../common/modals/add-files }}
+    {{> ../common/modals/modal-availability }}
+    {{> ../common/modals/add-file-default }}
+    {{> ../common/modals/create-product }}
     {{> ../common/modals/modals-delete-info }}
 </body>
 

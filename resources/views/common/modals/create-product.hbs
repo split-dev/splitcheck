@@ -1,0 +1,46 @@
+<!-- modal-add-photo -->
+<div class="modal fade create-product" tabindex="1" id="create-product">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content position-relative">
+      <!-- modal-header -->
+      <div class="modal-header d-flex align-items-center">
+        <h3>Create product</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <!-- /modal-header -->
+      <!-- modal-body -->
+      <div class="modal-body">
+        <div class="members__form">
+          <label class="form__label">Title</label>
+          <input class="form__input" type="text">
+
+          <span class="form__symbol-error"></span>
+        </div>
+        <div class="members__form number">
+        <label class="form__label">SKU</label>
+        <input class="form__input" type="text">
+
+        <span class="form__symbol-error"></span>
+      </div>
+      <div class="members__form number">
+        <label class="form__label">QTY</label>
+        <input class="form__input" type="text">
+
+        <span class="form__symbol-error"></span>
+      </div>
+      <div class="members__form load-img">
+        <label class="form__label">Image</label>
+        <div class="load-img__box" data-toggle="modal" data-target="#add-files-default"></div>
+
+        <span class="form__symbol-error"></span>
+      </div>
+      </div>
+      <!-- /modal-body -->
+      <div class="modal-footer d-flex flex-sm-row align-items-center">
+        <a href="#" class="btn-blue" data-dismiss="modal">Save product</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /modal-add-photo -->

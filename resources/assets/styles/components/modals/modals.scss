@@ -31,8 +31,9 @@
   }
 }
 
-#add-files {
-  z-index: 1080;
+#add-files,
+#add-files-default {
+  z-index: 99999;
 }
 .footer-center {
   position: absolute;

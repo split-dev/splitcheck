@@ -1,4 +1,28 @@
 .blog {
+  .section-toggle {
+    margin-bottom: 15px;
+    .blog-main__search {
+      max-width: 100%;
+      @media (max-width: 575px) {
+        .btn-blue {
+          max-width: 80px;
+        }
+      }
+      svg {
+        margin-right: 0;
+      }
+    }
+    .blog-main__table {
+      max-width: 100%;
+      svg {
+        margin-top: 20px;
+        transform: rotate(180deg);
+        @media (max-width: 991px) {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
   .section-blur {
     @media (max-width: 991px) {
       padding-top: 55px;
@@ -37,6 +61,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      @media (max-width: 430px) {
+        max-width: 250px;
+        margin: auto;
+      }
+      img {
+        @media (max-width: 430px) {
+          width: 100%;
+        }
       }
     }
     &-content {
@@ -83,7 +116,7 @@
         @media (max-width: 575px) {
           max-width: 25%;
           position: relative;
-          right: -15px;
+          right: 0;
         }
         @media (max-width: 360px) {
           max-width: 20%;
@@ -99,7 +132,7 @@
         @media (max-width: 575px) {
           max-width: 25%;
           position: relative;
-          left: -30px;
+          left: 0;
         }
         @media (max-width: 360px) {
           max-width: 20%;
@@ -107,11 +140,6 @@
       }
     }
 
-    .section-content {
-      @media (max-width: 575px) {
-        padding: 0 20px 0 20px;
-      }
-    }
     &__none {
       @media (max-width: 991px) {
         display: none;
@@ -145,27 +173,7 @@
         display: block;
       }
     }
-    .section-toggle {
-      margin-bottom: 15px;
-      .blog-main__search {
-        max-width: 100%;
-        @media (max-width: 575px) {
-          .btn-blue {
-            max-width: 80px;
-          }
-        }
-        svg {
-          margin-right: 0;
-        }
-      }
-      .blog-main__table {
-        max-width: 100%;
-        svg {
-          margin-top: 20px;
-          transform: rotate(180deg);
-        }
-      }
-    }
+
     .search-mob-none {
       @media (max-width: 991px) {
         display: none !important;
@@ -196,6 +204,9 @@
     &__container {
       margin-top: 28px;
       position: relative;
+      @media (max-width: 575px) {
+        padding: 0 15px;
+      }
 
       .swiper-button-prev,
       .swiper-button-next {
@@ -218,7 +229,7 @@
     }
     &__slide {
       max-width: 360px;
-      @media (max-width: 575px) {
+      @media (max-width: 767px) {
         max-width: 100%;
       }
       p {

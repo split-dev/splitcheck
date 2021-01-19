@@ -30,6 +30,56 @@
 
     <div class="section-blur theme-background-one" data-class="blue" id="background">
 
+        <ul class="nav tabs-global__nav mobile-nav nav-pills nav-fill" id="pills-tab" role="tablist">
+            <div>
+                <section class="section-settings">
+                    <ul>
+                        <li class="nav-item settings__toggle active" role="presentation"><a class="nav-link text-nowrap"
+                                data-toggle="pill" href="#account-preferences" role="tab" aria-controls="pills-about"
+                                aria-selected="true">Account
+                                Preferences</a>
+                            <svg class="svg-show" xmlns="http://www.w3.org/2000/svg" width="13" height="8"
+                                viewBox="0 0 13 8">
+                                <g>
+                                    <g>
+                                        <path fill="none" stroke="#f77d0e" stroke-miterlimit="20"
+                                            d="M1 1v0l5.916 6v0L13 1v0"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </li>
+                        <div class="settings__hide" style="display: none;">
+                            <li class="nav-item" role="presentation"><a href="#1">Short info</a></li>
+                            <li class="nav-item" role="presentation"><a href="#2">Images</a></li>
+                            <li class="nav-item" role="presentation"><a href="#3">Product type</a></li>
+                            <li class="nav-item" role="presentation"><a href="#4">Pricing</a></li>
+                            <li class="nav-item" role="presentation"><a href="#5">Inventory</a></li>
+                            <li class="nav-item" role="presentation"><a href="#6">Availability</a></li>
+                            <li class="nav-item" role="presentation"><a href="#7">Organization</a></li>
+                            <li class="nav-item" role="presentation"><a href="#8">Terms and conditions</a></li>
+                            <li class="nav-item" role="presentation"><a href="#9">Additional permissions</a></li>
+                            <li class="nav-item" role="presentation"><a href="#10">Long description</a></li>
+                            <li class="nav-item" role="presentation"><a href="#11">Customization</a></li>
+                            <li class="nav-item" role="presentation"><a href="#12">SC search engine preview</a></li>
+                            <li class="nav-item active active-item" role="presentation"><a class="nav-link text-nowrap"
+                                    data-toggle="pill" href="#push" role="tab" aria-selected="true">Push
+                                    Notifications</a>
+                                <a class="svg-revert" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13"
+                                        height="8" viewBox="0 0 13 8">
+                                        <g>
+                                            <g>
+                                                <path fill="none" stroke="#f77d0e" stroke-miterlimit="20"
+                                                    d="M1 1v0l5.916 6v0L13 1v0"></path>
+                                            </g>
+                                        </g>
+                                    </svg></a>
+                            </li>
+                        </div>
+                    </ul>
+                </section>
+
+            </div>
+        </ul>
         <div class="container container--admin">
             <div class="main-content position-relative d-flex align-items-start">
                 <!-- main -->
@@ -772,7 +822,8 @@
 
                                             </div>
                                         </div>
-                                        <a href="#" class="btn-border btn-border--two">Create category</a>
+                                        <a href="#" class="btn-border btn-border--two" data-toggle="modal"
+                                            data-target="#create-category">Create category</a>
                                     </div>
                                     <div class="organization__single">
                                         <div class="members__form">
@@ -790,7 +841,8 @@
 
                                             </div>
                                         </div>
-                                        <a href="#" class="btn-border btn-border--two">Create brand</a>
+                                        <a href="#" class="btn-border btn-border--two" data-toggle="modal"
+                                            data-target="#create-brand">Create brand</a>
                                     </div>
                                 </div>
                                 <div id="7" class="organization anchor">
@@ -811,7 +863,8 @@
 
                                             </div>
                                         </div>
-                                        <a href="#" class="btn-border btn-border--two">Create category</a>
+                                        <a href="#" class="btn-border btn-border--two" data-toggle="modal"
+                                            data-target="#create-category">Create category</a>
                                     </div>
                                     <div class="organization__upgrade">
                                         <p>Custom brands are not supported on a free account</p>
@@ -1067,13 +1120,189 @@
                                 </div>
                                 <div id="10" class="long-box">
                                     <strong>Long Description</strong>
-                                    <div class="checked-box mb-3">
+                                    <div class="checked-box mb-3 tabs-status">
                                         <input type="checkbox" id="alow14">
                                         <label for="alow14" class="mb-0">Use tabs to separate content</label>
                                     </div>
                                     <p>Educate shoppers about this product. Explain how it can help them and why it
                                         is a better choice compared to other products.</p>
-                                        <div id="example"></div>
+                                    <div class="tabs-nav" style="display: none;">
+                                        <div class="scroll">
+                                            <div class="nav-link active">
+                                                <a href="#tab-1">TAB 1</a> <span class="remove"></span>
+                                            </div>
+                                            <div class="nav-link">
+                                                <a href="#tab-2">TAB 2</a> <span class="remove"></span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="new">new <img src="images/icons/12px-plus.svg"
+                                                alt="add24px"></a>
+                                    </div>
+                                    <div class="tabs-body">
+                                        <div class="tabs-card active" id="tab-1" style="display: block;">
+                                            <div class="froala-edit"></div>
+                                        </div>
+                                        <div class="tabs-card" id="tab-2" style="display: none;">
+                                            <div class="froala-edit"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="11" class="customization anchor">
+                                    <div class="gift-shopping gift-shopping-store">
+                                        <div class="gift-shopping__header">
+                                            <h3>Customization</h3>
+                                        </div>
+                                        <div class="gift-shopping__body" style="display: none;">
+                                            <strong>Custom Checkout links</strong>
+                                            <div class="double-box">
+                                                <div class="form__single form__single--fluid form__single--max">
+                                                    <label class="form__label">Checkout button text</label>
+                                                    <div class="position-relative w-100" data-maxlength="10">
+                                                        <input type="text" class="form__input" required=""
+                                                            maxlength="7">
+                                                        <div class="count">
+                                                            <span>0</span>/<span>10</span>
+                                                        </div>
+                                                    </div>
+                                                    <span class="form__symbol-error"></span>
+                                                    <span class="desc">
+                                                        By default, SplitChek use <b>Add to Cart</b> text, you can use
+                                                        this to
+                                                        change this text
+                                                    </span>
+                                                </div>
+                                                <div class="form__single form__single--fluid">
+                                                    <label class="form__label">Checkout URL</label>
+                                                    <div class="position-relative w-100">
+                                                        <input type="text" class="form__input" required=""
+                                                            maxlength="7">
+                                                    </div>
+                                                    <span class="form__symbol-error"></span>
+                                                    <span class="desc">
+                                                        When shoppers click on Add to Cart they will be taken to this
+                                                        link yo proceed with their order. NB Sending shoppers to
+                                                        external site incurs a pay per click charge based on your
+                                                        category
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <strong>Custom price text</strong>
+                                            <div class="double-box">
+                                                <div class="form__single form__single--fluid">
+                                                    <div class="position-relative w-100">
+                                                        <input type="text" class="form__input" required=""
+                                                            maxlength="7">
+                                                    </div>
+                                                    <span class="form__symbol-error"></span>
+                                                    <span class="desc">
+                                                        Instead of using $0 or the actual price, use this to display
+                                                        custom prices e.g. From $5.90
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <strong>Custom product links</strong>
+                                            <div class="form__single form__single--fluid form__single--attr">
+                                                <label class="form__label">Internal link</label>
+                                                <div class="position-relative w-100 d-flex align-items-center">
+                                                    <label>/splitchek</label>
+                                                    <input type="text" class="form__input" required=""
+                                                        placeholder="custom link">
+                                                </div>
+                                                <span class="form__symbol-error"></span>
+                                                <p class="form-text">Internal links are not charged by SplitChek. When
+                                                    shoppers click on your product, they will be redirected to this link
+                                                    instead of our platform product view</p>
+                                            </div>
+                                            <div class="form__single form__single--fluid form__single--attr">
+                                                <label class="form__label">Canonocal link</label>
+                                                <div class="position-relative w-100 d-flex align-items-center">
+                                                    <label>https://</label>
+                                                    <input type="text" class="form__input" required=""
+                                                        placeholder="custom link">
+                                                </div>
+                                                <span class="form__symbol-error"></span>
+                                                <p class="form-text">Internal links are not charged by SplitChek. When
+                                                    shoppers click on your product, they will be redirected to this link
+                                                    instead of our platform product view</p>
+                                            </div>
+                                            <div
+                                                class="form__single form__single--fluid form__single--max form__single--attr">
+                                                <label class="form__label">SEO title</label>
+                                                <div class="position-relative w-100 d-flex align-items-center"
+                                                    data-maxlength="220">
+                                                    <input type="text" class="form__input" required=""
+                                                        placeholder="product title">
+                                                    <div class="count">
+                                                        <span>0</span>/<span>220</span>
+                                                    </div>
+                                                </div>
+                                                <span class="form__symbol-error"></span>
+                                                <p class="form-text">SEO title will be exposed to search engines
+                                                    including SplitChek’s search engine</p>
+                                            </div>
+                                            <div class="members__form">
+                                                <span class="form__note">
+                                                    SEO tags
+                                                </span>
+                                                <div
+                                                    class="form__single form__single--select form__single--select-tag form__single--fluid">
+                                                    <select class="form__input" data-toggle="select-tag"
+                                                        multiple="multiple">
+                                                        <option value="user-1">Organic</option>
+                                                        <option value="user-2">Gluten Free</option>
+                                                    </select>
+                                                </div>
+                                                <p class="form-text">SEO tags will be exposed to search engines
+                                                    including SplitChek’s search
+                                                    engine</p>
+                                            </div>
+                                            <div class="checked-box">
+                                                <input type="checkbox" id="useMeta3">
+                                                <label for="useMeta3">Use meta fields</label>
+                                                <div class="checked-box__body" style="display: none;">
+                                                    <div class="checked-box__list">
+                                                        <div class="checked-box__item">
+                                                            <div class="form__single form__single--fluid">
+                                                                <label class="form__label">Key</label>
+                                                                <div class="position-relative w-100">
+                                                                    <input type="text" class="form__input" required=""
+                                                                        placeholder="Enter key">
+                                                                </div>
+                                                                <span class="form__symbol-error"></span>
+                                                            </div>
+                                                            <div class="form__single form__single--fluid">
+                                                                <label class="form__label">Value</label>
+                                                                <div class="position-relative w-100">
+                                                                    <input type="text" class="form__input" required=""
+                                                                        placeholder="Enter value">
+                                                                </div>
+                                                                <span class="form__symbol-error"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="add-field">Add field</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="12" class="search-engine anchor">
+                                    <strong>Splitchek search engine preview</strong>
+                                    <p>Some longer SEO title would be here</p>
+                                    <b>AUD <span>$30.00</span></b>
+                                    <span>/stores//page/undefined/some text here/some text here/longer
+                                        text/something</span>
+                                    <div class="search-engine__item">
+                                        <div class="search-engine__photo"
+                                            style="background-image: url('images/product/7142447382608x16.png');">
+                                            <span>SW</span>
+                                        </div>
+                                        <div class="search-engine__info">
+                                            <p>Genetix Nutrition - Queensland - Upper Coomera - Available</p>
+                                            <p>Online &amp; Instore - currently <b>Open</b></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="section-button">
                                     <a href="#" class="btn-border-red" data-toggle="modal"
@@ -1096,6 +1325,8 @@
     {{> ../common/modals/modal-availability }}
     {{> ../common/modals/add-file-default }}
     {{> ../common/modals/create-product }}
+    {{> ../common/modals/create-category }}
+    {{> ../common/modals/create-brand }}
     {{> ../common/modals/modals-delete-info }}
 </body>
 

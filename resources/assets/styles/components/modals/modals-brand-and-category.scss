@@ -1,0 +1,49 @@
+.create-category,
+.create-brand {
+  .modal-dialog {
+    max-width: 640px;
+    width: 100%;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: center;
+    h3 {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+    > div {
+      max-width: 305px;
+    }
+    .members__form {
+      margin-bottom: 16px;
+      &.load-img {
+        margin-bottom: 30px;
+        .load-img__box {
+          width: 174px;
+          height: 156px;
+          background-image: url("images/icons/24px-load.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    justify-content: center;
+    a {
+      max-width: 240px;
+      height: 48px;
+    }
+  }
+}

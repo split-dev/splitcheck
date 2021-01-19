@@ -3,6 +3,11 @@ import PerfectScrollbar from 'perfect-scrollbar';
 import 'jquery-mask-plugin';
 import Dropzone from 'dropzone';
 import FroalaEditor from 'froala-editor';
+import ConfirmModal from 'confirmmodal.js/lib/ConfirmModal';
+import 'froala-editor/js/plugins/image.min.js';
+import 'froala-editor/js/plugins/lists.min.js';
+import 'froala-editor/js/plugins/link.min.js';
+import 'froala-editor/js/plugins/code_view.min.js';
 const mime = require('mime');
 
 export default {
@@ -545,7 +550,6 @@ export default {
 
     //check status additional body element
     $('.addition-box .single-check').click(function() {
-      console.log($(this).find('input'));
       if ($(this).find('input').prop('checked')) {
         if($(this).next().hasClass('single-check__body')) {
           $(this).next().slideDown();
@@ -558,7 +562,131 @@ export default {
     })
 
     //froala
-    var editor = new FroalaEditor('#example')
+    var editor = new FroalaEditor('.froala-edit', {
+      listAdvancedTypes: true,
+      placeholderText: 'Add your page content here',
+      pluginsEnabled: ['image', 'link', 'lists', 'codeView'],
+      toolbarButtons: ['fontFamily', 'underline', 'formatOL', 'formatUL', 'outdent', 'indent', 'insertLink', 'insertImage', 'html'],
+      linkStyles: {
+        class1: 'Class 1',
+        class2: 'Class 2',
+      },
+    })
+
+    //froala tabs nav
+    $('.tabs-nav').on('click', 'a:not(.new)', function(e) {
+      e.preventDefault();
+      let tab = $(this).attr('href').slice(1);
+      //change style tab
+      if(!$(this).hasClass('new')) {
+        $('.tabs-nav .nav-link').removeClass('active');
+        $(this).parent().addClass('active')
+      }
+      //change tab froala edit
+      $('.tabs-body .tabs-card').each( function() {
+        if($(this).attr('id') == tab) {
+          $(this).show().addClass('active');
+        } else {
+          $(this).hide().removeClass('active');
+        }
+      })
+    });
+
+    //froala tabs remove
+    var options = { messages: {
+      title: 'All tab content will be deleted',
+      desc: 'Are you sure you want to delete <b>Tabs</b>? This can’t be undone',
+      proceed: 'Delete',
+      cancel: 'Cancel',
+  },
+  onProceed: function() {
+    removBlur();
+  },
+  onCancel: function() {
+    $('.section-blur').removeClass('filter');
+    $('.nav-product').removeClass('hide');
+},
+  buttons: {
+      cancel: true, //default is true
+      proceed: true, //default is true
+  },
+}
+    let modal = new ConfirmModal(options)
+
+
+    let idTab = null;
+    let currentEl = null;
+    function removBlur() {
+      //change style tab
+      $(currentEl).prev().addClass('active');
+      $(currentEl).remove();
+      //change tab froala edit
+      $('.tabs-body .tabs-card').each( function() {
+        if($(this).attr('id') == idTab) {
+          $(this).prev().show().addClass('active');
+          $(this).remove();
+        }
+      })
+      $('.section-blur').removeClass('filter');
+      $('.nav-product').removeClass('hide');
+    }
+    $('.tabs-nav').on('click', '.remove', function(e) {
+      $('.section-blur').addClass('filter');
+      $('.nav-product').addClass('hide');
+      idTab = $(this).prev().attr('href').slice(1);
+      currentEl = $(this).parent();
+      modal.open();
+      e.preventDefault();
+    });
+
+    //froala new tabs
+    $('.tabs-nav .new').click( function(e) {
+      e.preventDefault();
+      let arrayNav = $(this).prev().find($('div')).length;
+      let navCut = `<div class="nav-link">
+      <a href="#tab-${arrayNav + 1}">TAB ${arrayNav + 1}</a> <span class="remove"></span>
+  </div>`
+      let cardCut = `<div class="tabs-card" id="tab-${arrayNav + 1}" style="display: none;">
+      <div class="froala-edit"></div>
+  </div>`
+      $(this).prev().append(navCut);
+      $(this).parent().next().append(cardCut);
+      var editor = new FroalaEditor('.froala-edit', {
+        listAdvancedTypes: true,
+        placeholderText: 'Add your page content here',
+        pluginsEnabled: ['image', 'link', 'lists', 'codeView'],
+        toolbarButtons: ['fontFamily', 'underline', 'formatOL', 'formatUL', 'outdent', 'indent', 'insertLink', 'insertImage', 'html'],
+        linkStyles: {
+          class1: 'Class 1',
+          class2: 'Class 2',
+        },
+      })
+      //change style tab
+      $(this).prev().find($('a')).each( function() {
+        $('.tabs-nav .nav-link').removeClass('active');
+        if($(this).attr('href').slice(1) == ('tab-' + (arrayNav + 1))) {
+          $(this).parent().addClass('active')
+        }
+      })
+      
+      //change tab froala edit
+      $('.tabs-body .tabs-card').each( function() {
+        if($(this).attr('id') == ('tab-' + (arrayNav + 1))) {
+          $(this).show().addClass('active');
+        } else {
+          $(this).hide().removeClass('active');
+        }
+      })
+    });
+
+    //check status additional body element
+    $('.tabs-status').click(function() {
+      if ($(this).find('input').prop('checked')) {
+        $(this).parent().find($('.tabs-nav')).show();
+      } else {
+        $(this).parent().find($('.tabs-nav')).hide();
+      }
+    })
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

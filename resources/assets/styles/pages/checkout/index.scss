@@ -7,6 +7,27 @@
 @import "checkout-el";
 
 .checkout {
+  .internal-card__price {
+    padding-left: 0 !important;
+  }
+  .orders__card-block-2 {
+    @media (max-width: 991px) {
+      display: none !important;
+    }
+  }
+  .orders__card-block-hide {
+    display: none;
+    margin-top: 30px;
+    .orders__card-block-2 {
+      @media (max-width: 991px) {
+        display: flex !important;
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 991px) {
+      display: block;
+    }
+  }
   .orders__card-description {
     display: block !important;
   }

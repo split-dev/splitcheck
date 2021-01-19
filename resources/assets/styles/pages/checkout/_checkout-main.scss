@@ -240,6 +240,10 @@
       .groups__box-small {
         max-width: 160px;
         padding-right: 25px;
+        input {
+          padding-right: 0;
+          padding-left: 16px;
+        }
       }
       label {
         color: #828282;
@@ -354,6 +358,10 @@
       flex-direction: column;
       &-hide {
         padding-top: 35px;
+        @media (max-width: 991px) {
+          margin-left: 106px;
+          padding-top: 0;
+        }
       }
       .orders__card-price {
         margin-bottom: 0;

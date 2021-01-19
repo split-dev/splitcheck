@@ -1,4 +1,31 @@
 .checkout {
+  .form-radio__active {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+  &__members {
+    position: relative;
+    &::after {
+      content: url("images/icons/arrow.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  &-card-toggle {
+    &::after {
+      content: url("images/icons/arrow.svg");
+      display: flex;
+      align-items: center;
+      transform: rotate(180deg);
+    }
+  }
+  &-card-toggle__active {
+    &::after {
+      transform: rotate(0);
+    }
+  }
   &__box-header {
     margin-top: 50px;
     margin-bottom: 20px;

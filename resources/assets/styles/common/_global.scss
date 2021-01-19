@@ -15,6 +15,9 @@ input[type="checkbox"]:checked ~ .check-off {
 input[type="checkbox"]:checked ~ .check-on {
   font-weight: $font-weight-medium !important;
 }
+.internal-card__avatar {
+  background-color: #f8f9fb;
+}
 
 .check-on {
   font-weight: $font-weight-normal;

@@ -55,6 +55,7 @@
   }
 
   .notification {
+    padding: 0;
     &__wrap {
       padding: 0 16px 16px 5px;
       max-height: 550px;
@@ -67,7 +68,7 @@
   .reminders--empty,
   .notification--empty {
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 

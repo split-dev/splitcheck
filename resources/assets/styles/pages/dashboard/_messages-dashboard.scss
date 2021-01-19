@@ -619,6 +619,7 @@
     margin-bottom: 8px;
   }
 }
+
 .recomended-card {
   min-height: 72px;
   border-radius: 8px;
@@ -689,5 +690,26 @@
     i {
       font-style: inherit;
     }
+  }
+}
+
+.messages-empty {
+  width: 100%;
+  padding-top: 60px;
+
+  // .messages-empty__img
+
+  &__img {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  // .messages-empty__text
+
+  &__text {
+    max-width: 340px;
+    text-align: center;
+    margin: 0 auto;
   }
 }

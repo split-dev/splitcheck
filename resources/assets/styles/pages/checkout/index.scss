@@ -7,8 +7,14 @@
 @import "checkout-el";
 
 .checkout {
+  .orders__card-description {
+    display: block !important;
+  }
   .aside-right {
-    top: 137px !important;
+    top: 139px !important;
+    .total-box__form {
+      margin-top: 0 !important;
+    }
   }
   main {
     @media (max-width: 991px) {
@@ -41,11 +47,7 @@
   .individual__title-hide {
     font-weight: 500 !important;
   }
-  &__box-header {
-    &:hover {
-      cursor: pointer;
-    }
-  }
+
   &__toggle {
     &:hover {
       cursor: pointer;
@@ -91,6 +93,7 @@
   .aside-mobile {
     @media (max-width: 991px) {
       display: block;
+      width: 100%;
     }
   }
   .aside-right {

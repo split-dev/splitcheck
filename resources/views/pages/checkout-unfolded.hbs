@@ -150,7 +150,8 @@
 
                                                 <div class="d-flex flex-column  orders__card-block-2 w-100">
                                                     <div class="d-flex">
-                                                        <a href="#" class="text-blue">Pick-up from store</a>
+                                                        <small>Shipped from:</small>
+                                                        <strong>Coomera - Queensland</strong>
                                                     </div>
                                                     <div class="d-flex">
                                                         <small>Dispatch date:</small>
@@ -204,7 +205,8 @@
                                                 </div>
                                                 <div class="d-flex flex-column  orders__card-block-2 w-100">
                                                     <div class="d-flex">
-                                                        <a href="#" class="text-blue">Pick-up from store</a>
+                                                        <small>Shipped from:</small>
+                                                        <strong>Coomera - Queensland</strong>
                                                     </div>
                                                     <div class="d-flex">
                                                         <small>Dispatch date:</small>
@@ -242,6 +244,19 @@
                                                 </div>
                                             </div>
 
+                                            <div class="d-md-block d-none">
+                                                <div class="d-flex flex-column  orders__card-block-2 w-100">
+                                                    <div class="d-flex">
+                                                        <small>Shipped from:</small>
+                                                        <strong>Coomera - Queensland</strong>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <small>Dispatch date:</small>
+                                                        <strong>02.11.2020</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+
 
 
 
@@ -268,7 +283,8 @@
                                                 </div>
                                                 <div class="d-flex flex-column  orders__card-block-2 w-100">
                                                     <div class="d-flex">
-                                                        <a href="#" class="text-blue">Pick-up from store</a>
+                                                        <small>Shipped from:</small>
+                                                        <strong>Coomera - Queensland</strong>
                                                     </div>
                                                     <div class="d-flex">
                                                         <small>Dispatch date:</small>
@@ -277,7 +293,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="orders__card-hide" style="display: none;">
+                                            <div class="orders__card-hide">
                                                 <div class="orders__card-description">
                                                     <div class="d-flex">
                                                         <small>Volume:</small>
@@ -353,7 +369,7 @@
                                                 <li>Australia</li>
                                             </ul>
                                             <a href="#" class="btn-border btn-border--two align-self-end edit"
-                                                id="editInfo">Save
+                                                id="editInfo">Edit
                                                 address</a>
                                         </div>
 
@@ -438,7 +454,7 @@
 
                                             </div>
                                         </div>
-                                        <a href="#" class="btn-border btn-border--two align-self-end" id="editInfo">Save
+                                        <a href="#" class="btn-border btn-border--two align-self-end" id="editInfo">Edit
                                             address</a>
                                     </div>
                                 </div>
@@ -598,17 +614,31 @@
 
                     </main>
                     <!-- /main -->
-                    <!-- aside-right -->
+
                     <aside class="aside-right d-none d-lg-block">
                         <div class="scroll-div">
                             <div class="section-content section-desctop">
                                 <span
                                     class="section-content__title position-relative d-flex align-items-center">Total</span>
                                 <div class="total-box">
-                                    <ul class="form">
-                                        <li><span>Items (4)</span> <span>$ 300.00</span></li>
+                                    <ul class="form total-box__form">
+                                        <li><span class="d-flex">
+                                                <span>Items (4)</span> <span>$ 300.00</span>
+                                            </span>
+
+
+                                        </li>
                                         <li><span>Postage</span> <span>Free</span></li>
-                                        <li><b>Total</b> <span><b>AUD</b><b class="ml-2">$300.00</b></span></li>
+                                        <li class="flex-column">
+                                            <div class="d-flex w-100 justify-content-between"><b>Total</b>
+                                                <span><b>AUD</b><b class="ml-2">$300.00</b></span>
+                                            </div>
+                                            <small class="w-100 d-flex justify-content-end small-include">GST
+                                                included</small>
+                                        </li>
+                                        <li>
+
+                                        </li>
                                         <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
                                             <input type="checkbox" id="checkbox-search-parameters-27"
                                                 class="form__checkbox-orange" name="search-parameters">
@@ -620,8 +650,8 @@
                                     <span class="earn">Earn 184.00 SplitChek points <i
                                             class="icon icon-help orange ml-2"></i></span>
                                     <a href="#" data-toggle="modal" data-target="#order-sent"
-                                        class="btn btn-orange">Confirm
-                                        Order</a>
+                                        class="btn btn-orange">CheckOut
+                                    </a>
                                 </div>
                             </div>
 
@@ -643,7 +673,7 @@
                                                             <img src="images/profiles/add.svg" alt="avatar">
                                                         </a>
                                                     </div>
-                                                    <div class="checkout__slider-container position-relative">
+                                                    <div class="connections__slider position-relative">
                                                         <span class="count-slider" data-count="3"></span>
                                                         <div class="swiper-container checkout__slider">
                                                             <div class="swiper-wrapper">
@@ -765,7 +795,7 @@
                                             afterb
                                             <b> 5 days,</b>it will be reversed.
                                         </p>
-                                        <a href="#" class="btn-orange">Pay the rest & Confirm Order</a>
+                                        <a href="#" class="btn-orange">Continue shopping</a>
                                     </div>
                                 </div>
                             </div>
@@ -778,9 +808,9 @@
                                         <li><span>Postage</span> <span>Free</span></li>
                                         <li><b>Total</b> <span><b>AUD</b><b class="ml-2">$300.00</b></span></li>
                                         <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
-                                            <input type="checkbox" id="checkbox-search-parameters-27"
+                                            <input type="checkbox" id="checkbox-search-parameters-37"
                                                 class="form__checkbox-orange" name="search-parameters">
-                                            <label for="checkbox-search-parameters-27">
+                                            <label for="checkbox-search-parameters-37">
                                                 Ask family and friends to contribute to this order
                                             </label>
                                         </li>
@@ -788,8 +818,8 @@
                                     <span class="earn">Earn 184.00 SplitChek points <i
                                             class="icon icon-help orange ml-2"></i></span>
                                     <a href="#" data-toggle="modal" data-target="#order-sent"
-                                        class="btn btn-orange">Confirm
-                                        Order</a>
+                                        class="btn btn-orange">CheckOut
+                                    </a>
                                 </div>
                             </div>
 
@@ -799,7 +829,179 @@
 
                         </div>
                     </aside>
-                    <!-- /aside-right -->
+
+
+                    <aside class="aside-mobile  d-lg-none">
+                        <div class="section-content  ">
+                            <span class="section-content__title position-relative d-flex align-items-center">Split
+                                the
+                                bill</span>
+                            <div class="total-box">
+                                <span class="d-flex justify-content-center">The following have access to this
+                                    item</span>
+                                <div class="checkout__container">
+                                    <div class="wishlist-box__left">
+
+                                        <div
+                                            class="connections__select connections__select--store-slide d-flex flex-column">
+                                            <div class="d-flex">
+                                                <div class="connections__add align-items-center">
+                                                    <a href="#">
+                                                        <img src="images/profiles/add.svg" alt="avatar">
+                                                    </a>
+                                                </div>
+                                                <div class="connections__slider position-relative">
+                                                    <span class="count-slider" data-count="3"></span>
+                                                    <div class="swiper-container checkout__slider">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/wishlist/girl-in-yellow.png"
+                                                                        alt="avatar">
+
+                                                                    <span></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact ">
+                                                                    <img src="images/wishlist/afro-girl.png"
+                                                                        alt="avatar">
+                                                                    <span></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/wishlist/girl.png" alt="avatar">
+                                                                    <span></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="#"
+                                                                    class="card-timeline__link card-timeline__link--contact">
+                                                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                                                    <span>JS</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                                <ul class="form">
+                                    <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                        <input type="checkbox" id="checkbox-search-parameters-30"
+                                            class="form__checkbox-orange" name="search-parameters">
+                                        <label for="checkbox-search-parameters-30">
+                                            Include SplitChek's Community
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="checkout__contributed">
+                                    <span>Contributed</span>
+                                    <ul>
+                                        <li><a href="#" class="card-timeline__link card-timeline__link--contact ">
+                                                <img src="images/wishlist/girl-in-yellow.png" alt="avatar">
+                                                <span>JS</span>
+                                            </a></li>
+                                        <li><a href="#" class="card-timeline__link card-timeline__link--contact ">
+                                                <img src="images/wishlist/girl.png" alt="avatar">
+                                                <span>JS</span>
+                                            </a></li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="checkkout__price">
+                                    <div class="d-flex justify-content-between">
+                                        <span><b>Total:</b></span>
+                                        <span class=" w-100 d-flex justify-content-end"><b>AUD</b><b
+                                                class="last-b">$300.00</b></span>
+                                    </div>
+                                    <small class="d-flex justify-content-end">GST included</small>
+                                </div>
+                                <div class="checkout__pay">
+                                    <ul>
+                                        <li class="d-flex justify-content-between">
+                                            <span><b>Pledged:</b></span>
+                                            <span class=" w-100 d-flex justify-content-end"><b>AUD</b><b
+                                                    class="last-b">$20.00</b></span>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <span><b>Paid::</b></span>
+                                            <span class=" w-100 d-flex justify-content-end"><b>AUD</b><b
+                                                    class="last-b">$0.00</b></span>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <span><b class="text-blue">Balance::</b></span>
+                                            <span class=" w-100 d-flex justify-content-end"><b
+                                                    class="text-blue">AUD</b><b
+                                                    class="last-b text-blue">$100.00</b></span>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <span><b class="text-orange">Remaining::</b></span>
+                                            <span class=" w-100 d-flex justify-content-end"><b
+                                                    class="text-orange">AUD</b><b
+                                                    class="text-orange last-b">$29.99</b></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="checkout__right-bottom">
+                                    <p>You have up to 5 days to pay any remaining balances. If order is not paid
+                                        afterb
+                                        <b> 5 days,</b>it will be reversed.
+                                    </p>
+                                    <a href="#" class="btn-orange">Pay the rest & Confirm Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-content section-mobile">
+                            <span
+                                class="section-content__title position-relative d-flex align-items-center">Total</span>
+                            <div class="total-box">
+                                <ul class="form">
+                                    <li><span>Items (4)</span> <span>$ 300.00</span></li>
+                                    <li><span>Postage</span> <span>Free</span></li>
+                                    <li><b>Total</b> <span><b>AUD</b><b class="ml-2">$300.00</b></span></li>
+                                    <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                        <input type="checkbox" id="checkbox-search-parameters-37"
+                                            class="form__checkbox-orange" name="search-parameters">
+                                        <label for="checkbox-search-parameters-37">
+                                            Ask family and friends to contribute to this order
+                                        </label>
+                                    </li>
+                                </ul>
+                                <span class="earn">Earn 184.00 SplitChek points <i
+                                        class="icon icon-help orange ml-2"></i></span>
+                                <a href="#" data-toggle="modal" data-target="#order-sent"
+                                    class="btn btn-orange">CheckOut
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="section-content checkout__bottom-link">
+                            <a href="#" class="btn-border">Continue shopping</a>
+                        </div>
+                    </aside>
+
                 </div>
 
             </div>

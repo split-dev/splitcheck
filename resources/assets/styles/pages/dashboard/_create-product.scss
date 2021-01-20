@@ -71,6 +71,7 @@
   &.mobile {
     opacity: 1;
     pointer-events: auto;
+    top: 0 !important;
   }
   ul {
     li {

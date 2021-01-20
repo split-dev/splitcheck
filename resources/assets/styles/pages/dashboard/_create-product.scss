@@ -1716,6 +1716,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 19px;
+    @media (max-width: 575px) {
+      padding: 0 15px;
+      align-items: flex-start;
+    }
     span {
       opacity: 0.75;
       color: #0b0212;
@@ -1727,6 +1731,7 @@
     a {
       color: #35558f;
       font-size: 16px;
+      line-height: 16px;
       font-weight: 400;
       text-align: left;
       text-decoration: underline;
@@ -1750,6 +1755,9 @@
     align-items: center;
     justify-content: space-between;
     transition: 0.3s;
+    @media (max-width: 575px) {
+      padding: 8px 15px;
+    }
     &:hover {
       background-color: #f8f9fb;
     }

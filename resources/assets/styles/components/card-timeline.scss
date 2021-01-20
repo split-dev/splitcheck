@@ -139,12 +139,22 @@
     .swiper-button-prev {
       top: calc(50% - 13px);
     }
+
+    .swiper-container {
+      margin-left: 0;
+    }
+
+    .swiper-slide {
+      width: 56px;
+    }
   }
 
   &__slider {
     margin-bottom: 16px;
     padding: 0 16px;
   }
+
+
 
   // .card-timeline__item
 

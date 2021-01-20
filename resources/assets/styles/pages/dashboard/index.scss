@@ -193,6 +193,11 @@
         max-width: 560px;
       }
     }
+
+    .timeline .swiper-button-next,
+    .timeline .swiper-button-prev {
+      top: calc(50% - 14px);
+    }
   }
 
   .main--fluid {

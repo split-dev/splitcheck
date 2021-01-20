@@ -55,7 +55,8 @@
       "./styles/components/modals/modal-give-discount.scss",
       "./styles/components/modals/modal-create-product.scss",
       "./styles/components/modals/modal-availability.scss",
-      "./styles/components/modals/modals-brand-and-category.scss"
+      "./styles/components/modals/modals-brand-and-category.scss",
+      "./styles/components/modals/modal-order-status.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",
@@ -106,7 +107,9 @@
     "components/modals/modal-give-discount": "./styles/components/modals/modal-give-discount.scss",
     "components/modals/modal-create-product": "./styles/components/modals/modal-create-product.scss",
     "components/modals/modal-availability": "./styles/components/modals/modal-availability.scss",
-    "components/modals/modals-brand-and-category": "./styles/components/modals/modals-brand-and-category.scss"
+    "components/modals/modals-brand-and-category": "./styles/components/modals/modals-brand-and-category.scss",
+    "components/modals/modal-give-discount.scss": "./styles/components/modals/modal-give-discount.scss",
+    "components/modals/modal-order-status.scss": "./styles/components/modals/modal-order-status.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

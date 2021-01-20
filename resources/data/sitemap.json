@@ -272,6 +272,11 @@
       "url": "/messages-dashboard.html"
     },
     {
+      "title": "Admin messages dashboard empty",
+      "description": "Admin-messages-dashboard-empty",
+      "url": "/admin-messages-dashboard-empty.html"
+    },
+    {
       "title": "Admin-view-products",
       "description": "Admin-view-products",
       "url": "/admin-view-products.html"

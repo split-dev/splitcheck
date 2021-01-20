@@ -1,0 +1,271 @@
+<!-- modal-order-status -->
+<div class="modal fade modal-order-status" id="order-status-modal" role="dialog" data-focus="false" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content orders position-relative">
+      <!-- modal-header -->
+      <div class="modal-header d-flex align-items-center">
+        <!-- status order: add class - .orders__box--orange, .orders__box--green, .orders__box--gray, .orders__box--blue,  .orders__box--red-->
+        <div class="orders__box orders__box--green position-relative d-flex align-items-center">
+          <div class="orders__toggle-block d-flex w-100  align-items-start justify-content-between flex-column">
+            <div class="orders__toggle-left d-flex w-100">
+              <div class="orders__line"></div>
+              <div class="d-flex flex-column w-100 justify-content-center">
+                <div class="d-flex">
+                  <a href="#" class="text-dark-blue">
+                    # 431 245 987
+                  </a>
+                  <span class="text-silver">
+                    02.10.2020
+                  </span>
+                </div>
+                <div class="d-flex">
+                  <p class="mb-0">Delivered</p>
+                  <span class="text-silver">tracking:</span>
+                  <span class="text-blue"># 431 245 987</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <!-- /modal-header -->
+      <!-- modal-body -->
+      <div class="modal-body">
+        <div class="orders__content">
+          <div class="orders__card d-flex ">
+            <div class="d-flex flex-wrap mr-lg-4">
+              <div class="d-flex orders__card-img">
+                <img src="images/orders/item.png" alt="item">
+              </div>
+              <div class="d-flex flex-column orders__card-block-1">
+                <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                <div class="d-flex orders__card-price">
+                  <span class="text-orange">
+                    $49.99
+                  </span>
+                  <p>1x</p>
+                </div>
+                <div class="orders__card-description">
+                  <div class="d-flex">
+                    <small>Volume:</small>
+                    <strong>500 ml</strong>
+                  </div>
+                  <div class="d-flex">
+                    <small>Flavoure:</small>
+                    <strong>banana</strong>
+                  </div>
+                  <div class="d-flex">
+                    <small>Servings:</small>
+                    <strong>20</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column orders__card-block-2">
+              <div class="d-flex">
+                <small>Shipped from:</small>
+                <strong>Coomera - Queensland</strong>
+              </div>
+              <div class="d-flex">
+                <small>Dispatch date:</small>
+                <strong>02.11.2020</strong>
+              </div>
+            </div>
+
+            <div class="options">
+              <button type="button" class="options__btn" data-type="options">
+                <i class="icon icon-more"></i>
+              </button>
+
+              <div class="options__dropdown">
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#">Refund</a></li>
+                  <li><a data-toggle="modal" data-target="#recurrent" href="#">Discount</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="orders__card d-flex ">
+            <div class="d-flex flex-wrap mr-lg-4">
+              <div class="d-flex orders__card-img w-100">
+                <img src="images/orders/item.png" alt="item">
+              </div>
+              <div class="d-flex flex-column orders__card-block-1">
+                <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                <div class="d-flex orders__card-price">
+                  <div class="internal-card__price internal-card__price--discount d-flex align-items-center flex-wrap">
+                    <span>$49.99</span>
+                    <span>$60.99</span>
+                  </div>
+                  <p>1x</p>
+                </div>
+                <div class="orders__card-description">
+                  <div class="d-flex">
+                    <small>Volume:</small>
+                    <strong>500 ml</strong>
+                  </div>
+                  <div class="d-flex">
+                    <small>Flavoure:</small>
+                    <strong>banana</strong>
+                  </div>
+                  <div class="d-flex">
+                    <small>Servings:</small>
+                    <strong>20</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column  orders__card-block-2">
+              <div class="d-flex">
+                <small>Shipped from:</small>
+                <strong>Coomera - Queensland</strong>
+              </div>
+              <div class="d-flex">
+                <small>Dispatch date:</small>
+                <strong>02.11.2020</strong>
+              </div>
+            </div>
+            <div class="options">
+              <button type="button" class="options__btn" data-type="options">
+                <i class="icon icon-more"></i>
+              </button>
+
+              <div class="options__dropdown">
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#">Refund</a></li>
+                  <li><a data-toggle="modal" data-target="#recurrent" href="#">Discount</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="orders__card d-flex ">
+            <div class="d-flex flex-wrap mr-lg-4">
+              <div class="d-flex orders__card-img">
+                <img src="images/orders/item.png" alt="item">
+              </div>
+              <div class="d-flex flex-column orders__card-block-1">
+                <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                <div class="d-flex orders__card-price">
+                  <span class="text-orange">
+                    $49.99
+                  </span>
+                  <p>bundle</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column  orders__card-block-2">
+              <div class="d-flex">
+                <small>Shipped from:</small>
+                <strong>Coomera - Queensland</strong>
+              </div>
+              <div class="d-flex">
+                <small>Dispatch date:</small>
+                <strong>02.11.2020</strong>
+              </div>
+            </div>
+
+            <div class="options">
+              <button type="button" class="options__btn" data-type="options">
+                <i class="icon icon-more"></i>
+              </button>
+
+              <div class="options__dropdown">
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#">Refund</a></li>
+                  <li><a data-toggle="modal" data-target="#recurrent" href="#">Discount</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="orders__card d-flex ">
+            <div class="d-flex flex-wrap mr-lg-4">
+              <div class="d-flex orders__card-img">
+                <img src="images/orders/item.png" alt="item">
+              </div>
+              <div class="d-flex flex-column orders__card-block-1">
+                <b>Lorem ipsum dolor sit amet lorem ipsum dolor</b>
+                <div class="d-flex orders__card-price">
+                  <span class="text-orange">
+                    $49.99
+                  </span>
+                  <p>bundle</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column  orders__card-block-2">
+              <div class="d-flex">
+                <small>Shipped from:</small>
+                <strong>Coomera - Queensland</strong>
+              </div>
+              <div class="d-flex">
+                <small>Dispatch date:</small>
+                <strong>02.11.2020</strong>
+              </div>
+            </div>
+
+            <div class="options">
+              <a class="text-green" href="#">Recurrent</a>
+              <button type="button" class="options__btn" data-type="options">
+                <i class="icon icon-more"></i>
+              </button>
+
+              <div class="options__dropdown">
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#">Refund</a></li>
+                  <li><a data-toggle="modal" data-target="#recurrent" href="#">Discount</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="orders__card d-flex justify-content-between">
+            <div class="d-flex flex-column w-100 orders__card-mobile">
+              <div class="profile-list w-100 orders__card-list">
+                <figure class="profile-list__avatar">
+                  <img src="images/orders/sunset.png" alt="avatar">
+                  <span class="profile-list__symbol"></span>
+                </figure>
+                <div class="d-flex flex-column ">
+                  <span>Sold by:</span>
+                  <b>Genetix Nutrition</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column orders__card-result w-100">
+              <div class="d-flex justify-content-between orders__text">
+                <span>Items (4)</span>
+                <span>$ 300.00</span>
+              </div>
+
+              <div class="d-flex justify-content-between  orders__text">
+                <span>Postage</span>
+                <span>Free</span>
+              </div>
+
+              <div class="d-flex justify-content-between orders__text">
+                <strong>Total</strong>
+                <div class="d-flex flex-column">
+                  <div class="d-flex  orders__text-price">
+                    <strong>AUD</strong>
+                    <strong>$300.00</strong>
+                  </div>
+                  <small>GST included</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /modal-body -->
+      <!-- <div class="modal-footer">
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- /modal-order-status -->

@@ -1,0 +1,142 @@
+.toogle-box {
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 16px;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% + 30px);
+    max-width: calc(100% + 30px);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 14px 24px 24px;
+    &.open {
+      padding: 24px 14px 0 24px;
+    }
+    .arrow-open {
+      img {
+        transition: 0.3s;
+      }
+    }
+    h3 {
+      color: #335491;
+      font-weight: 500;
+      font-size: 18px;
+      font-style: normal;
+      letter-spacing: 0.8px;
+      line-height: 18px;
+      text-align: left;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .reset {
+      animation-duration: 3s;
+      &.anim {
+        animation-name: reset;
+        pointer-events: none;
+      }
+    }
+    @keyframes reset {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(720deg);
+      }
+    }
+    &.open {
+      .arrow-open {
+        img {
+          display: block;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &__body {
+    margin-top: 10px;
+    padding-bottom: 24px;
+    &.shoppers {
+      .toogle-box__scroll {
+        max-height: 460px;
+      }
+    }
+    &.online-shoper {
+      .toogle-box__scroll {
+        max-height: 315px;
+      }
+    }
+    &.online-shoper {
+      margin-top: 0;
+    }
+    .search {
+      width: 100%;
+      padding: 0 8px;
+      i {
+        margin-left: -7px;
+      }
+    }
+  }
+  &__desc {
+    color: #828282;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 24px;
+  }
+  &__scroll {
+    position: relative;
+    margin-top: 32px;
+    &.drag-list {
+      max-height: 437px;
+    }
+    &.pl-24 {
+      padding-left: 24px;
+    }
+    &.pr-20 {
+      padding-right: 24px;
+    }
+    .ps__rail-y {
+      width: 4px !important;
+      background-color: #e8ebf2;
+      opacity: 1 !important;
+      right: 8px !important;
+      .ps__thumb-y {
+        right: 0 !important;
+        width: 4px !important;
+        background-color: #afbbd4 !important;
+      }
+    }
+  }
+  .message__single {
+    margin-bottom: 3px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &::before {
+      width: calc(100% + 53px);
+      z-index: 0;
+    }
+    .message__body {
+      position: relative;
+    }
+  }
+}
+
+.toogle-box--search {
+  .toogle-box__body {
+    padding-bottom: 0;
+  }
+}

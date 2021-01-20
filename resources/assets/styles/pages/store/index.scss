@@ -244,6 +244,9 @@
     opacity: 0;
     pointer-events: none;
     transition: 0.2s;
+    .form-add-comment {
+      max-width: 100%;
+    }
     @media (max-width: 991px) {
       bottom: 130px;
     }
@@ -517,7 +520,7 @@
             left: -5px;
             box-sizing: border-box;
             border: 7px solid;
-            border-color: transparent transparent theme-color("white") theme-color("white");
+            border-color: transparent transparent theme-color("white");
             transform-origin: 0;
             transform: rotate(-45deg);
             box-shadow: -4px 0 4px -3px rgba(11, 2, 18, 0.08);

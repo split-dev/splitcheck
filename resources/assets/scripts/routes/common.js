@@ -1280,6 +1280,10 @@ $('.form-add-comment__content').on('click', 'a', function(e){
     $('.form__single--select input, .form__single--attr input').focusout(function() {
       $(this).parent().removeClass('focus');
     });
+
+    //height descktop 
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

@@ -30,6 +30,10 @@
   left: 5.5%;
   z-index: 55;
   top: 136px;
+  transition: 0.3s;
+  &.top {
+    top: 45px;
+  }
   .menu-remove {
     display: none;
     position: absolute;
@@ -180,6 +184,9 @@
   box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
   border-radius: 8px;
   background-color: #fff;
+  @media (max-width: 575px) {
+    padding: 24px 15px;
+  }
   .static-select {
     padding: 0 !important;
   }
@@ -238,22 +245,41 @@
     flex-direction: column;
   }
   &__single {
+    position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 24px;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .form__single {
       margin-bottom: 0;
       margin-right: 30px;
+      @media (max-width: 575px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
       &:first-of-type {
         max-width: 280px;
       }
       &:last-of-type {
         max-width: 160px;
+        @media (max-width: 575px) {
+          max-width: 280px;
+        }
       }
     }
     > a {
       padding-bottom: 10px;
+    }
+  }
+  &__remove {
+    @media (max-width: 575px) {
+      position: absolute;
+      right: 5px;
+      top: 31px;
     }
   }
   &__add {
@@ -313,12 +339,19 @@
       border-radius: 8px;
       background-color: #fff;
       margin-bottom: 8px;
+      @media (max-width: 575px) {
+        flex-direction: column;
+        height: 97px;
+      }
       &:last-of-type {
         margin-bottom: 0;
       }
       &__left {
         display: flex;
         align-items: center;
+        @media (max-width: 575px) {
+          margin-right: auto;
+        }
       }
       &__photo {
         min-width: 72px;
@@ -655,9 +688,13 @@
       align-items: flex-start;
       width: 100%;
       margin-bottom: 7px;
+      @media (max-width: 575px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
       .members__form {
         .form__note {
-          display: inline-block;
+          display: block;
           margin-bottom: 10px;
         }
         .form__single {
@@ -667,10 +704,17 @@
           width: 100%;
           max-width: 160px;
           margin-right: 16px;
+          @media (max-width: 575px) {
+            max-width: 90%;
+          }
         }
         &:last-of-type {
           width: 100%;
           max-width: 288px;
+          @media (max-width: 575px) {
+            max-width: 100%;
+            order: 5;
+          }
         }
       }
       .size-select__remove {
@@ -679,6 +723,10 @@
         align-items: center;
         margin-left: 29px;
         margin-top: auto;
+        @media (max-width: 575px) {
+          margin-left: 0;
+          display: inline-flex;
+        }
       }
     }
     &__add {

@@ -724,14 +724,17 @@ export default {
     $('.mobile-menu-create').click( function(e) {
       e.preventDefault();
       $('.nav-product').addClass('mobile');
+      $('body').addClass('modal-open');
     })
     $('.nav-product .menu-remove').click( function(e) {
       e.preventDefault();
       $('.nav-product').removeClass('mobile');
+      $('body').removeClass('modal-open');
     })
     $('.nav-product ul a').click( function(e) {
       e.preventDefault();
       $('.nav-product').removeClass('mobile');
+      $('body').removeClass('modal-open');
     })
 
     //scroll tabs froala

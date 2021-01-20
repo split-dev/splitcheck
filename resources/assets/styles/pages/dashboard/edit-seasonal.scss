@@ -211,6 +211,9 @@
         background-repeat: no-repeat;
         background-size: auto;
         margin-right: 12px;
+        @media (max-width: 575px) {
+          margin-bottom: auto;
+        }
         span {
           color: #fff;
           font-size: 18px;
@@ -484,6 +487,9 @@
       }
       .item-cart__quantity-wrap {
         display: inline-flex !important;
+        @media (max-width: 575px) {
+          margin: 19px 0 4px;
+        }
         span {
           color: #0b0212;
           font-size: 14px;

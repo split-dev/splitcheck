@@ -766,6 +766,9 @@ export default {
         if($('.cart .aside-right').hasClass('aside-right')) {
           $('.aside-right').addClass('bottom');
         }
+        if($('.nav-product').hasClass('nav-product')) {
+          $('.nav-product').addClass('top');
+        }
       } else {
         if($('.bottom-slider__info').hasClass('bottom-slider__info')) {
           $('.bottom-slider__info').removeClass('bottom');
@@ -775,6 +778,9 @@ export default {
         }
         if($('.cart .aside-right').hasClass('aside-right')) {
           $('.aside-right').removeClass('bottom');
+        }
+        if($('.nav-product').hasClass('nav-product')) {
+          $('.nav-product').removeClass('top');
         }
       }
       lastScrollTop = st;

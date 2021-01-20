@@ -310,6 +310,11 @@
       "title": "Add variant",
       "description": "product-add-variant",
       "url": "/product-add-variant.html"
+    },
+    {
+      "title": "View seasonal",
+      "description": "view-seasonal",
+      "url": "/view-seasonal.html"
     }
   ]
 }

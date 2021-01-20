@@ -118,6 +118,11 @@
     }
     .members__form {
       margin-bottom: 24px;
+      .select-before {
+        @media (max-width: 575px) {
+          max-width: 100%;
+        }
+      }
       &:last-of-type {
         margin-bottom: 8px;
       }
@@ -870,6 +875,9 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
   a {
     max-width: 148px;
     min-width: 148px;

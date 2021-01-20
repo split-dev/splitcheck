@@ -305,6 +305,11 @@
       "title": "Create product",
       "description": "Create product",
       "url": "/create-product.html"
+    },
+    {
+      "title": "Add variant",
+      "description": "product-add-variant",
+      "url": "/product-add-variant.html"
     }
   ]
 }

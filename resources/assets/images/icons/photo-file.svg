@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>insert_photo-24px</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="product-types" transform="translate(-901.000000, -2279.000000)">
+            <g id="insert_photo-24px" transform="translate(901.000000, 2279.000000)">
+                <polygon id="Path" points="0 0 40 0 40 40 0 40"></polygon>
+                <path d="M35,31.6666667 L35,8.33333333 C35,6.5 33.5,5 31.6666667,5 L8.33333333,5 C6.5,5 5,6.5 5,8.33333333 L5,31.6666667 C5,33.5 6.5,35 8.33333333,35 L31.6666667,35 C33.5,35 35,33.5 35,31.6666667 Z M14.8333333,23.3 L18.3333333,27.5166667 L23.5,20.8666667 C23.8333333,20.4333333 24.5,20.4333333 24.8333333,20.8833333 L30.6833333,28.6833333 C31.1,29.2333333 30.7,30.0166667 30.0166667,30.0166667 L10.0333333,30.0166667 C9.33333333,30.0166667 8.95,29.2166667 9.38333333,28.6666667 L13.5333333,23.3333333 C13.85,22.9 14.4833333,22.8833333 14.8333333,23.3 Z" id="Shape" fill="#D8E1F2" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

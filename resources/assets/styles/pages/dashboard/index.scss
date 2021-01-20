@@ -12,6 +12,7 @@
 @import "edit-seasonal";
 @import "admin-view-products";
 @import "create-product";
+@import "add-variant";
 @import "statistic";
 @import "moments";
 @import "earning";
@@ -532,4 +533,8 @@
 }
 .not-shadow {
   box-shadow: none;
+}
+
+.admin-fixed {
+  position: fixed;
 }

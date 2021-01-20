@@ -9,6 +9,7 @@
     {{> ../common/header-dashboard }}
     <!-- admin-menu -->
     <div class="nav-product">
+        <a href="#" class="menu-remove"><img src="images/icons/close-24px.svg" alt="close"></a>
         <ul>
             <li><a class="scroll-to active" href="#1">Short info</a></li>
             <li><a class="scroll-to" href="#2">Images</a></li>
@@ -32,58 +33,27 @@
 
         <ul class="nav tabs-global__nav mobile-nav nav-pills nav-fill" id="pills-tab" role="tablist">
             <div>
-                <section class="section-settings">
-                    <ul>
-                        <li class="nav-item settings__toggle active" role="presentation"><a class="nav-link text-nowrap"
-                                data-toggle="pill" href="#account-preferences" role="tab" aria-controls="pills-about"
-                                aria-selected="true">Account
-                                Preferences</a>
-                            <svg class="svg-show" xmlns="http://www.w3.org/2000/svg" width="13" height="8"
-                                viewBox="0 0 13 8">
+                <section class="section-mobile-create">
+                    <a href="#" class="mobile-menu-create">Short info
+                        <svg class="svg-show" xmlns="http://www.w3.org/2000/svg" width="13" height="8"
+                            viewBox="0 0 13 8">
+                            <g>
                                 <g>
-                                    <g>
-                                        <path fill="none" stroke="#f77d0e" stroke-miterlimit="20"
-                                            d="M1 1v0l5.916 6v0L13 1v0"></path>
-                                    </g>
+                                    <path fill="none" stroke="#f77d0e" stroke-miterlimit="20"
+                                        d="M1 1v0l5.916 6v0L13 1v0"></path>
                                 </g>
-                            </svg>
-                        </li>
-                        <div class="settings__hide" style="display: none;">
-                            <li class="nav-item" role="presentation"><a href="#1">Short info</a></li>
-                            <li class="nav-item" role="presentation"><a href="#2">Images</a></li>
-                            <li class="nav-item" role="presentation"><a href="#3">Product type</a></li>
-                            <li class="nav-item" role="presentation"><a href="#4">Pricing</a></li>
-                            <li class="nav-item" role="presentation"><a href="#5">Inventory</a></li>
-                            <li class="nav-item" role="presentation"><a href="#6">Availability</a></li>
-                            <li class="nav-item" role="presentation"><a href="#7">Organization</a></li>
-                            <li class="nav-item" role="presentation"><a href="#8">Terms and conditions</a></li>
-                            <li class="nav-item" role="presentation"><a href="#9">Additional permissions</a></li>
-                            <li class="nav-item" role="presentation"><a href="#10">Long description</a></li>
-                            <li class="nav-item" role="presentation"><a href="#11">Customization</a></li>
-                            <li class="nav-item" role="presentation"><a href="#12">SC search engine preview</a></li>
-                            <li class="nav-item active active-item" role="presentation"><a class="nav-link text-nowrap"
-                                    data-toggle="pill" href="#push" role="tab" aria-selected="true">Push
-                                    Notifications</a>
-                                <a class="svg-revert" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13"
-                                        height="8" viewBox="0 0 13 8">
-                                        <g>
-                                            <g>
-                                                <path fill="none" stroke="#f77d0e" stroke-miterlimit="20"
-                                                    d="M1 1v0l5.916 6v0L13 1v0"></path>
-                                            </g>
-                                        </g>
-                                    </svg></a>
-                            </li>
-                        </div>
-                    </ul>
+                            </g>
+                        </svg>
+                    </a>
                 </section>
 
             </div>
         </ul>
         <div class="container container--admin">
-            <div class="main-content position-relative d-flex align-items-start">
+            <div
+                class="main-content position-relative d-flex align-items-start justify-content-sm-center justify-content-lg-start">
                 <!-- main -->
-                <main class="main">
+                <main class="main mt-5 mt-lg-0">
                     <div class="section-content">
                         <a href="#" class="back-title"><img src="images/icons/back.svg" alt="back">Create Product</a>
                         <div class="main__card position-relative p-0 pb-5 transparent not-shadow p-0">
@@ -782,7 +752,7 @@
                                             <span class="form__symbol-error"></span>
                                         </div>
                                         <div class="form__single form__single--fluid">
-                                            <label class="form__label">Sell in multiples of</label>
+                                            <label class="form__label">Max backorders</label>
                                             <div class="position-relative w-100 number">
                                                 <input type="text" class="form__input" required="" maxlength="7">
                                             </div>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> ../common/head }}
+</head>
+
+<body class="dashboard create variant">
+    {{> ../common/header-dashboard }}
+    {{> ../common/mobile-menu-bottom }}
+
+    <div class="section-blur theme-background-one" data-class="blue" id="background">
+        <div class="variant-select admin-fixed">
+            <div class="variant-select__info">
+                <div class="variant-select__photo" style="background-image: url(images/product/7142447382608.png);">
+                </div>
+                <div class="variant-select__desc">
+                    <p>Some much longer title could be here if …</p>
+                    <span>2 variants</span>
+                </div>
+            </div>
+            <div class="variant-select__list">
+                <strong>Variants</strong>
+                <ul>
+                    <li>
+                        <span class="variant-select__mini"
+                            style="background-image: url(images/product/7142447382608.png);">
+                        </span>1.3L
+                    </li>
+                    <li><span class="variant-select__mini"
+                            style="background-image: url(images/product/7142447382608.png);">
+                        </span>1.5L</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container container--admin">
+            <div class="main-content position-relative d-flex align-items-start">
+                <!-- main -->
+                <main class="main">
+                    <div class="section-content">
+                        <a href="#" class="back-title"><img src="images/icons/back.svg" alt="back">Add variant</a>
+                    </div>
+                    <div class="section-content">
+                        <div class="options-variant">
+                            <div class="options-variant__left">
+                                <strong>Options</strong>
+                                <div class="members__form">
+                                    <div class=" form__single--select form__single--select-default form__single--fluid">
+                                        <label class="form__label">Size</label>
+                                        <div class="select-before">
+                                            <select class="form__select form__select--default" data-toggle="select"
+                                                data-select2-id="10" tabindex="-1" aria-hidden="true">
+                                                <option value="#">1.3 L</option>
+                                                <option value="#">1.5 L</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="members__form">
+                                    <div class=" form__single--select form__single--select-default form__single--fluid">
+                                        <label class="form__label">Flavour</label>
+                                        <div class="select-before">
+                                            <select class="form__select form__select--default" data-toggle="select"
+                                                data-select2-id="10" tabindex="-1" aria-hidden="true">
+                                                <option value="#">Banana</option>
+                                                <option value="#">BananaTwo</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="members__form">
+                                    <div class=" form__single--select form__single--select-default form__single--fluid">
+                                        <label class="form__label">Serving</label>
+                                        <div class="select-before">
+                                            <select class="form__select form__select--default" data-toggle="select"
+                                                data-select2-id="10" tabindex="-1" aria-hidden="true">
+                                                <option value="#">6 bottles</option>
+                                                <option value="#">9 bottles</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="options-variant__right">
+                                <strong>Image</strong>
+                                <div class="options-variant__img">
+                                    <img src="images/product/68x109px.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <div class="pricing-item-box">
+                            <strong>Pricing</strong>
+                            <div class="double-price">
+                                <div class="form__single form__single--fluid form__single--usd">
+                                    <label class="form__label">Price</label>
+                                    <div class="position-relative w-100 usd">
+                                        <input type="text" class="form__input" required="" maxlength="7">
+                                    </div>
+                                    <span class="form__symbol-error"></span>
+                                    <span class="desc">
+                                        Price for selling your item. If we discount your
+                                        item, we will pay you the difference between the
+                                        unit price and the list price.
+                                    </span>
+                                </div>
+                                <div class="form__single form__single--fluid form__single--usd">
+                                    <label class="form__label">Compare at</label>
+                                    <div class="position-relative w-100 usd">
+                                        <input type="text" class="form__input" required="" maxlength="7">
+                                    </div>
+                                    <span class="form__symbol-error"></span>
+                                    <span class="desc">
+                                        Price must be more than the list price. Good for
+                                        showing discount difference. If it is less than the
+                                        list price, it will be ignored.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="checked-box">
+                                <input type="checkbox" id="tax-product" checked="">
+                                <label for="tax-product">Charge tax on this product</label>
+                                <div class="checked-box__body" style="display: block;">
+                                    <div
+                                        class=" form__single--select form__single--select-default form__single--fluid payment-freq__select">
+                                        <div class="select-before">
+                                            <select class="form__select form__select--default select2-hidden-accessible"
+                                                data-toggle="select" tabindex="-1" aria-hidden="true"
+                                                data-select2-id="62">
+                                                <option value="10% VAT" data-select2-id="64">10% VAT
+                                                </option>
+                                                <option value="No Vat/GST">No Vat/GST
+                                                </option>
+                                                <option value="15% VAT">15% VAT
+                                                </option>
+                                            </select><span class="select2 select2-container select2-container--default"
+                                                dir="ltr" data-select2-id="63" style="width: 100%;"><span
+                                                    class="selection"><span
+                                                        class="select2-selection select2-selection--single"
+                                                        role="combobox" aria-haspopup="true" aria-expanded="false"
+                                                        tabindex="-1" aria-disabled="false"
+                                                        aria-labelledby="select2-159f-container"><span
+                                                            class="select2-selection__rendered"
+                                                            id="select2-159f-container" role="textbox"
+                                                            aria-readonly="true" title="No Vat/GST
+                                                                            ">No Vat/GST
+                                                        </span><span class="select2-selection__arrow"
+                                                            role="presentation"><b
+                                                                role="presentation"></b></span></span></span><span
+                                                    class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checked-box">
+                                <input type="checkbox" id="tax2">
+                                <label for="tax2">Tax included in the price</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <div class="inventory-item-box">
+                            <strong>Inventory (all fields are optional)</strong>
+                            <div class="double-input">
+                                <div class="form__single form__single--fluid">
+                                    <label class="form__label">SKU (Stock Keeping Unit)</label>
+                                    <div class="position-relative w-100">
+                                        <input type="text" class="form__input" required="" maxlength="7">
+                                    </div>
+                                    <span class="form__symbol-error"></span>
+                                </div>
+                                <div class="form__single form__single--fluid">
+                                    <label class="form__label">Barcode (ISBN, UPC etc.)</label>
+                                    <div class="position-relative w-100">
+                                        <input type="text" class="form__input" required="" maxlength="7">
+                                    </div>
+                                    <span class="form__symbol-error"></span>
+                                </div>
+                            </div>
+                            <div class="checked-box">
+                                <input type="checkbox" id="track">
+                                <label for="track">Track quantity</label>
+                            </div>
+                            <div class="checked-box">
+                                <input type="checkbox" id="allow">
+                                <label for="allow">Allow backorders</label>
+                            </div>
+                            <div class="triple-input">
+                                <div class="form__single form__single--fluid">
+                                    <label class="form__label">Quantity</label>
+                                    <div class="position-relative w-100 number">
+                                        <input type="text" class="form__input" required="" maxlength="7">
+                                    </div>
+                                    <span class="form__symbol-error"></span>
+                                </div>
+                                <div class="form__single form__single--fluid">
+                                    <label class="form__label">Sell in multiples of</label>
+                                    <div class="position-relative w-100 number">
+                                        <input type="text" class="form__input" required="" maxlength="7">
+                                    </div>
+                                    <span class="form__symbol-error"></span>
+                                </div>
+                                <div class="form__single form__single--fluid">
+                                    <label class="form__label">Sell in multiples of</label>
+                                    <div class="position-relative w-100 number">
+                                        <input type="text" class="form__input" required="" maxlength="7">
+                                    </div>
+                                    <span class="form__symbol-error"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <div class="quantlity">
+                            <div class="quantlity__info">
+                                <div class="d-flex flex-column">
+                                    <strong>Quantity</strong>
+                                    <span>Product quantity in the following stores:</span>
+                                </div>
+                                <a href="#" data-toggle="modal" data-target="#edit-location">Edit locations</a>
+                            </div>
+                            <div class="quantlity__list">
+                                <div class="quantlity__single">
+                                    <b>Location Name</b>
+                                    <div class="item-cart__quantity-wrap d-flex align-self-center">
+                                        <div class="item-cart__quantity position-relative d-flex align-self-center">
+                                            <button class="item-cart__minus">
+                                                <span class="icon icon-minus"></span>
+                                            </button>
+                                            <span class="item-cart__int">0</span>
+                                            <button class="item-cart__plus">
+                                                <span class="icon icon-plus"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quantlity__single">
+                                    <b>Location Name</b>
+                                    <div class="item-cart__quantity-wrap d-flex align-self-center">
+                                        <div class="item-cart__quantity position-relative d-flex align-self-center">
+                                            <button class="item-cart__minus">
+                                                <span class="icon icon-minus"></span>
+                                            </button>
+                                            <span class="item-cart__int">0</span>
+                                            <button class="item-cart__plus">
+                                                <span class="icon icon-plus"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quantlity__single">
+                                    <b>Location Name</b>
+                                    <div class="item-cart__quantity-wrap d-flex align-self-center">
+                                        <div class="item-cart__quantity position-relative d-flex align-self-center">
+                                            <button class="item-cart__minus">
+                                                <span class="icon icon-minus"></span>
+                                            </button>
+                                            <span class="item-cart__int">0</span>
+                                            <button class="item-cart__plus">
+                                                <span class="icon icon-plus"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <div class="addition-box">
+                            <div class="single-check">
+                                <div class="single-check__text">
+                                    <span>Shipping<b>disabled</b></span>
+                                </div>
+                                <div class="groups__check form d-flex">
+                                    <input type="checkbox" id="checkbox-5"
+                                        class="form__checkbox form__single settings__check form__single--fluid form__single--checkbox form__checkbox--language"
+                                        name="checkbox-language" checked="">
+                                    <label for="checkbox-5">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="single-check__body" style="display: block;">
+                                <div class="double-input">
+                                    <div class="form__single form__single--fluid">
+                                        <label class="form__label">Ships from</label>
+                                        <div class="position-relative w-100">
+                                            <input type="text" class="form__input" required="" maxlength="7">
+                                        </div>
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                    <div class="form__single form__single--fluid">
+                                        <label class="form__label">Estimated delivery</label>
+                                        <div class="position-relative w-100">
+                                            <input type="text" class="form__input" required="" maxlength="7">
+                                        </div>
+                                        <span class="form__symbol-error"></span>
+                                    </div>
+                                </div>
+                                <div class="checked-box">
+                                    <input type="checkbox" id="alow8">
+                                    <label for="alow8">This is heavy item</label>
+                                </div>
+                                <div class="checked-box mb-4">
+                                    <input type="checkbox" id="alow9" checked="">
+                                    <label for="alow9" class="mb-0">This item is classified as a dangerous
+                                        goods</label>
+                                </div>
+                                <div class="checked-children-body" style="display: block;">
+                                    <p class="check">
+                                        Dangerouse goods are goods that are danderous, flammable, explosive,
+                                        volatile, offensive or are of a damaging nature
+                                    </p>
+                                    <div class="double-input select">
+                                        <div class="form__single form__single--fluid form__single--select">
+                                            <label class="form__label">Weight</label>
+                                            <div class="position-relative w-100 d-flex number">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                                <div
+                                                    class=" form__single--select form__single--select-default form__single--fluid">
+                                                    <div class="select-before">
+                                                        <select class="form__select form__select--default"
+                                                            data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="#">kg</option>
+                                                            <option value="#">kg</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                        <span class="or">or</span>
+                                        <div class="form__single form__single--fluid form__single--select">
+                                            <label class="form__label">Cubic</label>
+                                            <div class="position-relative w-100 d-flex number">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                                <div
+                                                    class=" form__single--select form__single--select-default form__single--fluid">
+                                                    <div class="select-before">
+                                                        <select class="form__select form__select--default"
+                                                            data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="#">kg</option>
+                                                            <option value="#">kg</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                    </div>
+                                    <p>Either Weight or Cubic is required not both. If you use
+                                        weight, Cubic is
+                                        not required or vice verca</p>
+                                </div>
+                                <div class="checked-box mb-4">
+                                    <input type="checkbox" id="alow10" checked="">
+                                    <label for="alow10" class="mb-0">I want to add width, lenght and height
+                                        manually</label>
+                                </div>
+                                <div class="checked-children-body" style="display: block;">
+                                    <div class="triple-input select">
+                                        <div class="form__single form__single--fluid form__single--select">
+                                            <label class="form__label">Weight</label>
+                                            <div class="position-relative w-100 d-flex number">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                                <div
+                                                    class=" form__single--select form__single--select-default form__single--fluid">
+                                                    <div class="select-before">
+                                                        <select class="form__select form__select--default"
+                                                            data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="#">cm</option>
+                                                            <option value="#">cm</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                        <div class="form__single form__single--fluid form__single--select">
+                                            <label class="form__label">Length</label>
+                                            <div class="position-relative w-100 d-flex number">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                                <div
+                                                    class=" form__single--select form__single--select-default form__single--fluid">
+                                                    <div class="select-before">
+                                                        <select class="form__select form__select--default"
+                                                            data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="#">cm</option>
+                                                            <option value="#">cm</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                        <div class="form__single form__single--fluid form__single--select">
+                                            <label class="form__label">Height</label>
+                                            <div class="position-relative w-100 d-flex number">
+                                                <input type="text" class="form__input" required="" maxlength="7">
+                                                <div
+                                                    class=" form__single--select form__single--select-default form__single--fluid">
+                                                    <div class="select-before">
+                                                        <select class="form__select form__select--default"
+                                                            data-toggle="select" data-select2-id="10" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option value="#">cm</option>
+                                                            <option value="#">cm</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-button">
+                        <a href="#" class="btn-border-red" data-toggle="modal" data-target="#delete-info">Delete all
+                            info</a>
+                        <div class="d-flex">
+                            <a href="#" class="btn-border btn-border--two">Cancel edit</a>
+                            <a href="#" class="btn btn-blue">Save</a>
+                        </div>
+                    </div>
+                </main>
+                <!-- /main -->
+            </div>
+        </div>
+    </div>
+    {{!-- modals --}}
+    {{> ../common/modals/modal-availability }}
+    {{> ../common/modals/modal-edit-location }}
+    {{> ../common/modals/modals-delete-info }}
+</body>
+
+</html>

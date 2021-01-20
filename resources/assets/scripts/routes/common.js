@@ -657,7 +657,7 @@ export default {
     const body = document.querySelector('body');
       //header height
 
-      if($('.settings__toggle').hasClass('settings__toggle')) {
+      if($('.tabs-global__nav').hasClass('tabs-global__nav')) {
         var ScrollTopEv = 0;
         $(window).scroll(function(event){
           var st = $(this).scrollTop();

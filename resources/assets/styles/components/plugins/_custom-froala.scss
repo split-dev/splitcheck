@@ -13,9 +13,22 @@
   opacity: 0.5 !important;
 }
 
+.fr-toolbar {
+  .fr-btn-grp {
+    @media (max-width: 575px) {
+      margin: 0 !important;
+      .fr-command {
+        margin: 4px 0 !important;
+      }
+    }
+  }
+}
+
 .tabs-nav {
   display: flex;
   border-bottom: 4px solid #ebeef4;
+  height: 40px;
+  overflow: hidden;
   .scroll {
     display: flex;
     align-items: center;

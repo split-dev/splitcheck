@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="34px" viewBox="0 0 28 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="product-types" transform="translate(-817.000000, -2279.000000)" fill="#D8E1F2" fill-rule="nonzero">
+            <g id="title" transform="translate(763.000000, 1606.000000)">
+                <g id="Group" transform="translate(24.000000, 534.000000)">
+                    <g id="insert_drive_file-24px" transform="translate(24.000000, 136.000000)">
+                        <path d="M10,3.33333333 C8.16666667,3.33333333 6.68333333,4.83333333 6.68333333,6.66666667 L6.66666667,33.3333333 C6.66666667,35.1666667 8.15,36.6666667 9.98333333,36.6666667 L30,36.6666667 C31.8333333,36.6666667 33.3333333,35.1666667 33.3333333,33.3333333 L33.3333333,14.7166667 C33.3333333,13.8333333 32.9833333,12.9833333 32.35,12.3666667 L24.3,4.31666667 C23.6833333,3.68333333 22.8333333,3.33333333 21.95,3.33333333 L10,3.33333333 Z M21.6666667,13.3333333 L21.6666667,5.83333333 L30.8333333,15 L23.3333333,15 C22.4166667,15 21.6666667,14.25 21.6666667,13.3333333 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

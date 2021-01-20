@@ -33,6 +33,28 @@ export default {
 
     //drag and drop image
 
+    let countArray = 0;
+    function removeImgBox() {
+      if(window.innerWidth < 607 && window.innerWidth >= 521) {
+        countArray = 7;
+        let arrayEl = $('#columns-sort-drag li');
+        for(let i = 0; i<arrayEl.length; i++) {
+          if(i >= countArray) {
+            $(arrayEl[i]).remove();
+          }
+        }
+      } else if(window.innerWidth < 520) {
+        countArray = 5;
+        let arrayEl = $('#columns-sort-drag li');
+        for(let i = 0; i<arrayEl.length; i++) {
+          if(i >= countArray) {
+            $(arrayEl[i]).remove();
+          }
+        }
+      }
+    }
+    removeImgBox()
+
     if(document.getElementById('columns-sort-drag')) {
       var elTwo = document.getElementById('columns-sort-drag');
       /*eslint-disable no-unused-vars*/
@@ -48,7 +70,15 @@ export default {
         }
       },
       });
+
+      //remove size
+      $(window).resize( function() {
+        removeImgBox()
+      });
     }
+  
+
+  
 
     //add features
     $('.list-features__add').on('click', function (e) {
@@ -282,7 +312,6 @@ export default {
     //dropzone type product
     let file = `<div class="dz-preview dz-file-preview">
     <div class="dz-thum">
-      <img data-dz-thumbnail />
     </div>
     <div class="dz-details">
       <div class="dz-filename"><span data-dz-name></span></div>
@@ -293,6 +322,7 @@ export default {
     </div>
     <a href="#" class="data__remove"><img src="images/icons/close-24px.svg" alt="close"></a>
   </div>`;
+  if(document.querySelector('.download-box')) {
     var myDropzone = new Dropzone('.dropzone-file', { 
       url: '/file/load',
       previewsContainer: '.dropzone-file-view',
@@ -304,6 +334,7 @@ export default {
       $('.dropzone-file-view >div:not(.load) .dz-type span').text(type);
       $('.dropzone-file-view >div:not(.load)').addClass(type + ' load');
     });
+  }
 
 
     //select next input plus and minus
@@ -642,7 +673,7 @@ export default {
     //froala new tabs
     $('.tabs-nav .new').click( function(e) {
       e.preventDefault();
-      let arrayNav = $(this).prev().find($('div')).length;
+      let arrayNav = $(this).prev().find($('div.nav-link')).length;
       let navCut = `<div class="nav-link">
       <a href="#tab-${arrayNav + 1}">TAB ${arrayNav + 1}</a> <span class="remove"></span>
   </div>`
@@ -677,6 +708,7 @@ export default {
           $(this).hide().removeClass('active');
         }
       })
+      resizeLine();
     });
 
     //check status additional body element
@@ -687,6 +719,26 @@ export default {
         $(this).parent().find($('.tabs-nav')).hide();
       }
     })
+
+    //mobile menu option
+    $('.mobile-menu-create').click( function(e) {
+      e.preventDefault();
+      $('.nav-product').addClass('mobile');
+    })
+    $('.nav-product .menu-remove').click( function(e) {
+      e.preventDefault();
+      $('.nav-product').removeClass('mobile');
+    })
+    $('.nav-product ul a').click( function(e) {
+      e.preventDefault();
+      $('.nav-product').removeClass('mobile');
+    })
+
+    //scroll tabs froala
+    function resizeLine() {
+      psLine.update();
+    }
+    var psLine = new PerfectScrollbar('.tabs-nav .scroll');
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

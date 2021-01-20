@@ -1,6 +1,9 @@
 .checkout {
+  &__hide-mobile {
+    margin-left: 106px;
+  }
   &__title {
-    margin-bottom: 25px !important;
+    margin-bottom: 16px !important;
   }
   .order-sent {
     h4 {

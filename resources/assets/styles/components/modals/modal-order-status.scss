@@ -1,0 +1,87 @@
+//Glob Utils
+@import "../../variables";
+@import "../../mixins";
+@import "../../bootstrap-utils";
+
+.modal-order-status {
+  .modal-dialog {
+    max-width: 930px;
+  }
+
+  .modal-content {
+    padding: 0;
+
+    .modal-header {
+      padding-top: 0;
+    }
+
+    .modal-body {
+      padding: 0 20px;
+
+      @media (max-width: 991px) {
+        padding: 0;
+      }
+    }
+  }
+
+  .orders {
+    // .orders__box
+
+    &__box {
+      max-width: 100%;
+      width: 100%;
+      box-shadow: 0 0 0;
+    }
+
+    // .orders__toggle-left
+
+    &__toggle-left {
+      a {
+        font-weight: $font-weight-medium;
+      }
+      a,
+      span {
+        margin-right: 9px;
+        font-size: 14px;
+      }
+
+      p {
+        margin-right: 10px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .orders__card-mobile {
+        margin-top: 24px;
+      }
+    }
+
+    .orders__card-price {
+      margin-bottom: 0;
+    }
+
+    .orders__card-description {
+      padding-top: 8px;
+    }
+
+    .text-orange {
+      font-size: 18px;
+      font-weight: $font-weight-medium;
+    }
+
+    .orders__card:last-child {
+      margin-right: 15px;
+    }
+
+    .internal-card__price--discount > span {
+      font-size: 18px;
+      font-weight: $font-weight-medium;
+
+      &:first-of-type {
+        color: #4fcec4;
+        text-decoration: none;
+      }
+    }
+  }
+}

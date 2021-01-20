@@ -1,4 +1,31 @@
 .checkout {
+  .form-radio__active {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+  &__members {
+    position: relative;
+    &::after {
+      content: url("images/icons/arrow.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  &-card-toggle {
+    &::after {
+      content: url("images/icons/arrow.svg");
+      display: flex;
+      align-items: center;
+      transform: rotate(180deg);
+    }
+  }
+  &-card-toggle__active {
+    &::after {
+      transform: rotate(0);
+    }
+  }
   &__box-header {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -63,6 +90,13 @@
     }
   }
   .total-box {
+    .small-include {
+      color: #0b0212;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: 6px;
+    }
     .form {
       margin-top: 25px;
     }
@@ -206,6 +240,10 @@
       .groups__box-small {
         max-width: 160px;
         padding-right: 25px;
+        input {
+          padding-right: 0;
+          padding-left: 16px;
+        }
       }
       label {
         color: #828282;
@@ -320,6 +358,10 @@
       flex-direction: column;
       &-hide {
         padding-top: 35px;
+        @media (max-width: 991px) {
+          margin-left: 106px;
+          padding-top: 0;
+        }
       }
       .orders__card-price {
         margin-bottom: 0;

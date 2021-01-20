@@ -5,6 +5,7 @@ export default {
   init() {
     $('.checkout-card-toggle').click(function() {
       $(this).next().slideToggle(400);
+      $(this).toggleClass('checkout-card-toggle__active');
     })
 
     function toogleFunc(el, elArray) {
@@ -15,6 +16,7 @@ export default {
     }
  
     $('.checkout__members').click(function() {
+      $(this).toggleClass('form-radio__active')
       if(!$(this).find($('.radio-custom')).prop('checked')) {
         let elemThis = $(this).find($('.checkout__members-content'))
         let arrayThis = $(this).parent().find($('.checkout__members-content'));

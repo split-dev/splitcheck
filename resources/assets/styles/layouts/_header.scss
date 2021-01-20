@@ -412,7 +412,7 @@
   // .head-links__item
 
   &__item {
-    margin-right: 21px;
+    margin-right: 10px;
     height: 100%;
     @include media-breakpoint-down(lg) {
       margin-right: 15px;
@@ -435,7 +435,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
+    width: 40px;
     height: 100%;
     overflow: hidden;
 

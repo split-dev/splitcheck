@@ -104,7 +104,7 @@
     "components/modals/modal-check": "./styles/components/modals/modal-check.scss",
     "components/modals/modals-delete-info": "./styles/components/modals/modals-delete-info.scss",
     "components/modals/modal-give-discount": "./styles/components/modals/modal-give-discount.scss",
-    "components/modals/modal-create-product": "./styles/components/modals/create-product.scss",
+    "components/modals/modal-create-product": "./styles/components/modals/modal-create-product.scss",
     "components/modals/modal-availability": "./styles/components/modals/modal-availability.scss",
     "components/modals/modals-brand-and-category": "./styles/components/modals/modals-brand-and-category.scss"
   },

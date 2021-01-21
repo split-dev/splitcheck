@@ -315,6 +315,16 @@
       "title": "View seasonal",
       "description": "view-seasonal",
       "url": "/view-seasonal.html"
+    },
+    {
+      "title": "Admin-edit-product",
+      "description": "admin-edit-product",
+      "url": "/admin-edit-product.html"
+    },
+    {
+      "title": "Inventory-menu",
+      "description": "inventory-menu",
+      "url": "/inventory-menu.html"
     }
   ]
 }

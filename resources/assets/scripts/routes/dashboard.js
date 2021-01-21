@@ -302,6 +302,12 @@ export default {
       $('.sort-box li').removeClass('active');
       $(this).parent().addClass('active');
     })
+
+    //scroll select 
+    if($('ul.select-list').hasClass('select-list')) {
+      var psLine = new PerfectScrollbar('ul.select-list');
+      psLine.update();
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

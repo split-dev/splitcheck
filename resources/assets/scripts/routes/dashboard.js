@@ -39,7 +39,7 @@ export default {
 
           if (!window.matchMedia('(max-width: 991px)').matches) {
             // console.dir(e)
-            if (e.target) {
+            if (e.path) {
               // console.log(e.target)
               for (let i = 0; i < e.path.length - 3; i++) {
                 const element = e.path[i];

@@ -299,7 +299,9 @@
     }
     &.error {
       span {
-        color: #fa0128 !important;
+        span {
+          color: #fa0128 !important;
+        }
       }
     }
     span {

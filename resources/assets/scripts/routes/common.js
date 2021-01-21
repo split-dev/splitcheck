@@ -44,37 +44,39 @@ export default {
 
     //timeline-global
     const optionForTimeline = {
-      slidesPerView: 4,
-      setWrapperSize: false,
-      simulateTouch: false,
-      preventInteractionOnTransition: true,
-      mousewheel: true,
+      slidesPerView: 'auto',
+      spaceBetween: 8,
+      setWrapperSize: true,
+      // simulateTouch: false,
+      // preventInteractionOnTransition: true,
+      // mousewheel: true,
       navigation: {
         nextEl: '.card-timeline__slider .swiper-button-next',
         prevEl: '.card-timeline__slider .swiper-button-prev',
       },
-      breakpoints: {
-        1260: {
-          slidesPerView: 4,
-        },
-        992: {
-          slidesPerView: 3,
-          // freeMode: true,
-        },
-        360: {
-          slidesPerView: 4,
-        },
-        250: {
-          slidesPerView: 3,
-          setWrapperSize: false,
-          simulateTouch: false,
-          preventInteractionOnTransition: true,
-          mousewheel: true,
-          // freeMode: true,
-        },
-      },
+      // breakpoints: {
+      //   1260: {
+      //     slidesPerView: 'auto',
+      //   },
+      //   992: {
+      //     slidesPerView: 'auto',
+      //     // freeMode: true,
+      //   },
+      //   360: {
+      //     slidesPerView: 4,
+      //   },
+      //   250: {
+      //     slidesPerView: 3,
+      //     setWrapperSize: false,
+      //     simulateTouch: false,
+      //     preventInteractionOnTransition: true,
+      //     mousewheel: true,
+      //     // freeMode: true,
+      //   },
+      // },
     }
-    let swiperTimeline = new Swiper('.card-timeline__slider .swiper-container', optionForTimeline);
+
+    const swiperTimeline = new Swiper('.card-timeline__slider .swiper-container', optionForTimeline);
 
 
 
@@ -885,9 +887,9 @@ export default {
               document.getElementById('columns-sort-drag').insertAdjacentHTML('beforeend', '<li class="ignore-elements"></li>');
             }
             $(elemUl[i]).append(image).removeClass('ignore-elements').addClass('sortable-drag img');
-            
+
           }
-          
+
         })
       }
   }
@@ -1162,7 +1164,7 @@ $('.form-add-comment__content').on('click', 'a', function(e){
 
     // admin-menu
     {
-      const adminMenu = document.querySelector('.admin-menu__nav');
+      const adminMenu = document.querySelector('.admin-menu');
       const btnMinimize = document.querySelector('.admin-menu__btn-minimize');
       const adminMenuItem = document.querySelectorAll('.admin-menu__item--submenu');
 

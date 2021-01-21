@@ -37,8 +37,7 @@
   }
 
   .main-content {
-    padding-left: 219px;
-    padding-bottom: 40px;
+    padding: 20px 0 40px 219px;
 
     @include media-breakpoint-down(md) {
       padding-top: 0;
@@ -194,6 +193,11 @@
       @include media-breakpoint-up(lg) {
         max-width: 560px;
       }
+    }
+
+    .timeline .swiper-button-next,
+    .timeline .swiper-button-prev {
+      top: calc(50% - 14px);
     }
   }
 

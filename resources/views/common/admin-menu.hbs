@@ -1,4 +1,5 @@
 <!-- admin-menu -->
+{{!-- admin menu minimize - add class admin-menu--minimize --}}
 <div class="admin-menu position-fixed">
   <div class="admin-menu__header d-flex d-lg-none">
     <div class="admin-menu__close">
@@ -10,12 +11,11 @@
     </a>
   </div>
   <section class="section-content">
-    {{!-- admin menu minimize - add class admin-menu--minimize --}}
     <div class="admin-menu__nav position-relative">
       <button class="admin-menu__btn-minimize d-none d-lg-block">
         <i class="icon icon-minimize"></i>
       </button>
-      <div class="scroll-div">
+      <div class="admin-menu__wrap position-relative">
         <div class="admin-menu__user-select d-flex d-lg-none">
           <div class="user-select">
             <div class="user-select__photo">

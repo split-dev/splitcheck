@@ -34,5 +34,24 @@
     &__single {
       margin-bottom: 12px;
     }
+
+    &__inputs {
+      padding-bottom: 25px;
+    }
+
+    &__wrap--location {
+      margin-bottom: 30px;
+    }
+  }
+
+  .sort-box {
+    &__arrow {
+      text-transform: uppercase;
+
+      strong {
+        font-size: 12px;
+        letter-spacing: 0.86px;
+      }
+    }
   }
 }

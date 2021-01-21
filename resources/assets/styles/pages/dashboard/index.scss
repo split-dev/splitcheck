@@ -255,9 +255,11 @@
     }
   }
 
-  .section-content {
+  .section-content--dashboard {
     padding-top: 8px;
+  }
 
+  .section-content {
     &__title {
       padding-left: 20px;
 
@@ -536,6 +538,7 @@
     }
   }
 }
+
 .not-shadow {
   box-shadow: none;
 }

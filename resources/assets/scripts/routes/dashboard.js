@@ -6,12 +6,13 @@ export default {
     const body = document.querySelector('body');
     const header = document.querySelector('.header');
     const adminMenu = document.querySelector('.admin-menu');
-    const adminMenuNav = adminMenu.querySelector('.admin-menu__nav');
-    const adminMenuList = adminMenu.querySelector('.admin-menu__list');
-    const scrollDiv = adminMenu.querySelector('.admin-menu__wrap');
 
     //* function for "adminMenu" position when scrolling, and calculate height
     if (adminMenu) {
+      const adminMenuNav = adminMenu.querySelector('.admin-menu__nav');
+      const adminMenuList = adminMenu.querySelector('.admin-menu__list');
+      const scrollDiv = adminMenu.querySelector('.admin-menu__wrap');
+
       const checkAside = (param, any) => {
         if (param) {
           if (window.matchMedia('(max-width: 991px)').matches) {

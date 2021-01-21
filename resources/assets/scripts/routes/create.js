@@ -543,17 +543,28 @@ export default {
     });
 
     //create store button
+    let count = 0;
+    $('.modal-availability').on('click', '[data-create="true"]', function(e) {
+      count = count + 1;
+      e.preventDefault();
+      console.log(count);
+      if(count == 2) {
+        console.log('go');
+        count = 0;
+        $('#modal-availability').modal('hide');
+        $('.modal-save-store').modal('show')
+      }
+    })
+
     $('.create-store').click( function() {
       if($(this).attr('data-create') == 'false') {
         $('.store-create').slideToggle();
         $(this).text('Save new store');
         $(this).attr('data-create', 'true');
-      } else {
-        $('.store-create').slideToggle();
-        $(this).text('Add new store');
-        $(this).attr('data-create', 'false');
+        $(this).addClass('save');
       }
     })
+
 
     //check status additional
     $('.single-check .groups__check').click(function() {

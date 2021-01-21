@@ -1,0 +1,102 @@
+.modal-save-store {
+  .modal-dialog {
+    max-width: 720px;
+    width: 100%;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: center;
+    h3 {
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  .modal-body {
+    max-width: 540px;
+    width: 100%;
+    margin: auto;
+    > strong {
+      color: #335491;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.86px;
+      text-align: left;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 22px;
+    }
+    .price {
+      margin-bottom: 40px;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        color: #0b0212;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        span {
+          &:first-of-type {
+            min-width: 70px;
+            display: inline-block;
+            margin-right: 18px;
+          }
+          &:nth-child(2) {
+            margin-right: 8px;
+          }
+        }
+        b {
+          font-weight: 500;
+        }
+      }
+    }
+    .payment-method {
+      margin-bottom: 40px;
+      .radio {
+        input {
+          display: none;
+          &:checked ~ label {
+            &::before {
+              background-image: url("images/icons/SC_Check.svg");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 95%;
+              border: 3px solid #f77d0e;
+            }
+          }
+        }
+        label {
+          display: flex;
+          align-items: center;
+          color: #0b0212;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 16px;
+          text-align: left;
+          margin-bottom: 15px;
+          cursor: pointer;
+          &::before {
+            content: "";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border: 3px solid #f77d0e;
+            border-radius: 3px;
+            margin-right: 8px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .modal-footer {
+    a {
+      max-width: 240px;
+      height: 48px;
+    }
+  }
+}

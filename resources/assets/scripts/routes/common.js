@@ -420,6 +420,7 @@ export default {
      //select2 select
      $('[data-toggle="select-product"]').on('select2:select', function (e) {
       var data = e.params.data;
+      let resultBox = $(this).parent().parent().parent().parent().next();
       let stateEl = `
             <div class="selected-item">
             <div class="selected-item__left">
@@ -441,7 +442,7 @@ export default {
             </div>
         </div>
         `;
-      document.querySelector('.associated-box__result').insertAdjacentHTML('beforeend', stateEl);
+        $(resultBox).append(stateEl)
   });
 
   //select2 custom scroll product
@@ -458,8 +459,15 @@ export default {
   });
   //select2 remove checked element
   $('[data-toggle="select-product"]').on('select2:unselect', function (e) {
+    let resultBox = $(this).parent().parent().parent().parent().next().find($('.selected-item'));
     var id = e.params.data.id;
-    $('#' + id).parent().parent().remove();
+    console.log(id);
+    $(resultBox).each( function() {
+      if($(this).find($('a')).attr('id') == id) {
+        $(this).remove();
+      }
+    })
+    //$('#' + id).parent().parent().remove();
   });
   //click create object
   $('.associated-box__result').on('click', 'a', function(e) {
@@ -1286,6 +1294,12 @@ $('.form-add-comment__content').on('click', 'a', function(e){
     //height descktop 
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    //toogle next option
+    $('.toogle-next').click( function() {
+      $(this).toggleClass('active');
+      $(this).next().slideToggle();
+    })
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

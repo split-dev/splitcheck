@@ -5,7 +5,7 @@
     {{> ../common/head }}
 </head>
 
-<body class="dashboard create">
+<body class="dashboard create edit">
     {{> ../common/header-dashboard }}
     <!-- admin-menu -->
     <div class="nav-product">
@@ -55,7 +55,7 @@
                 <!-- main -->
                 <main class="main mt-5 mt-lg-0">
                     <div class="section-content">
-                        <a href="#" class="back-title"><img src="images/icons/back.svg" alt="back">Create Product</a>
+                        <a href="#" class="back-title"><img src="images/icons/back.svg" alt="back">Edite Product</a>
                         <div class="main__card position-relative p-0 pb-5 transparent not-shadow p-0">
                             <div class="section-content">
                                 <div id="1" class="season-title-box anchor">
@@ -519,14 +519,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="multiple-box" id="multiple" style="display: none;">
+                                                <div class="multiple-box" id="multiple" style="display: block;">
                                                     <p>
                                                         This product has multiple options, like different sizes or
                                                         colours that shoppers can choose from. Prices may differ from
                                                         each option.
                                                     </p>
-                                                    <strong>Options</strong>
-                                                    <div class="size-select">
+                                                    <strong class="toogle-next">Options</strong>
+                                                    <div class="size-select" style="display: none;">
                                                         <div class="size-select__list">
                                                             <div class="size-select__single">
                                                                 <div class="members__form">
@@ -1396,6 +1396,82 @@
                                 </div>
                             </div>
                         </section>
+                        <div class="section-content">
+                            <div class="associated-box">
+                                <strong>Assocaited products</strong>
+                                <div class="associated-box__select">
+                                    <div class="form__inputs">
+                                        <div class="form__wrap">
+                                            <div
+                                                class="form__single form__single--select form__single--select-product form__single--fluid">
+                                                <select class="form__input select2-hidden-accessible"
+                                                    data-toggle="select-product" multiple="" data-select2-id="1"
+                                                    tabindex="-1" aria-hidden="true">
+                                                    <option value="1" data-select2-id="3">Title here could be so much
+                                                        longer…</option>
+                                                    <option value="2" data-select2-id="4">Title here could be so much
+                                                        longer…</option>
+                                                    <option value="3" data-select2-id="5">Title here could be so much
+                                                        longer…</option>
+                                                    <option value="4" data-select2-id="6">Title here could be so much
+                                                        longer1…</option>
+                                                    <option value="5" data-select2-id="7">Title here could be so much
+                                                        longer2…</option>
+                                                    <option value="6" data-select2-id="8">Title here could be so much
+                                                        longer3…</option>
+                                                </select><span
+                                                    class="select2 select2-container select2-container--select2-container select2-container--default static-select"
+                                                    dir="ltr" data-select2-id="2" style="width: 100%;"><span
+                                                        class="selection"><span
+                                                            class="select2-selection select2-selection--multiple"
+                                                            role="combobox" aria-haspopup="true" aria-expanded="false"
+                                                            tabindex="-1" aria-disabled="false">
+                                                            <ul class="select2-selection__rendered">
+                                                                <li class="select2-selection__choice"
+                                                                    title="Title here could be so much longer…"
+                                                                    data-select2-id="9"><span
+                                                                        class="select2-selection__choice__remove"
+                                                                        role="presentation">×</span>Title here could be
+                                                                    so much longer…</li>
+                                                                <li class="select2-search select2-search--inline"><input
+                                                                        class="select2-search__field" type="search"
+                                                                        tabindex="0" autocomplete="off"
+                                                                        autocorrect="off" autocapitalize="none"
+                                                                        spellcheck="false" role="searchbox"
+                                                                        aria-autocomplete="list" placeholder=""
+                                                                        style="width: 0.75em;"></li>
+                                                            </ul>
+                                                        </span></span><span class="dropdown-wrapper"
+                                                        aria-hidden="true"></span></span>
+                                                <span class="form__symbol-error"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="associated-box__result">
+                                    <span>Seasonal list</span>
+                                    <div class="selected-item">
+                                        <div class="selected-item__left">
+                                            <div class="selected-item__photo"
+                                                style="background-image: url('images/product/7142447382608.png');">
+                                                <span>SM</span>
+                                            </div>
+                                            <div class="selected-item__info">
+                                                <strong>Some much longer title could be here…</strong>
+                                                <ul>
+                                                    <li>Sku: <span>#134567</span></li>
+                                                    <li>Qty: <span>999</span></li>
+                                                    <li>$<span>49.99</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="selected-item__right">
+                                            <a href="#" id="1">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </aside>
                 <!-- /aside-right -->
@@ -1410,6 +1486,7 @@
     {{> ../common/modals/create-category }}
     {{> ../common/modals/create-brand }}
     {{> ../common/modals/modals-delete-info }}
+    {{> ../common/modals/modal-save-new-store }}
 </body>
 
 </html>

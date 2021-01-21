@@ -42,45 +42,45 @@ export default {
       });
       }
      
-      // if (('.checkout__slider-container').hasClass('checkout__slider-container')) {
-      //   var swiper = new Swiper('.checkout__slider.swiper-container', {
-      //       slidesPerView: 2,
-      //       spaceBetween: 8,
-      //       setWrapperSize: false,
-      //       simulateTouch: false,
-      //       preventInteractionOnTransition: true,
-      //       mousewheel: true,
-      //       navigation: {
-      //         nextEl: '.connections__select--family .swiper-button-next',
-      //         prevEl: '.connections__select--family .swiper-button-prev',
-      //       },
-      //       breakpoints: {
-      //           1260: {
-      //             slidesPerView: 2,
-      //           },
-      //           992: {
-      //             slidesPerView: 2,
-      //             // freeMode: true,
-      //           },
-      //           360: {
-      //             slidesPerView: 3,
-      //           },
-      //           250: {
-      //             slidesPerView: 3,
-      //             setWrapperSize: false,
-      //             simulateTouch: false,
-      //             preventInteractionOnTransition: true,
-      //             mousewheel: true,
-      //             // freeMode: true,
-      //           },
-      //         },
-      //         on: {
-      //           init: function (event) {
-      //             initNumber(event.params.slidesPerView, $(event.el).parent());
-      //           },
-      //         },
-      //     });
-      // }
+      if (('.checkout__slider-container').hasClass('checkout__slider-container')) {
+        var swiper = new Swiper('.checkout__slider.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 8,
+            setWrapperSize: false,
+            simulateTouch: false,
+            preventInteractionOnTransition: true,
+            mousewheel: true,
+            navigation: {
+              nextEl: '.checkout__slider-container .swiper-button-next',
+              prevEl: '.checkout__slider-container .swiper-button-prev',
+            },
+            breakpoints: {
+                1260: {
+                  slidesPerView: 2,
+                },
+                992: {
+                  slidesPerView: 2,
+                  // freeMode: true,
+                },
+                360: {
+                  slidesPerView: 3,
+                },
+                250: {
+                  slidesPerView: 3,
+                  setWrapperSize: false,
+                  simulateTouch: false,
+                  preventInteractionOnTransition: true,
+                  mousewheel: true,
+                  // freeMode: true,
+                },
+              },
+              on: {
+                init: function (event) {
+                  initNumber(event.params.slidesPerView, $(event.el).parent());
+                },
+              },
+          });
+      }
       
       
   },

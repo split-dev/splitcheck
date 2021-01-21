@@ -9,6 +9,10 @@
 .checkout {
   .internal-card__price {
     padding-left: 0 !important;
+    span {
+      font-size: 18px !important;
+      font-weight: 500 !important;
+    }
   }
   .orders__card-block-2 {
     @media (max-width: 991px) {
@@ -75,7 +79,12 @@
     }
   }
   &__slider-container {
-    max-width: 255px;
+    .swiper-container {
+      max-width: 210px;
+    }
+    .swiper-button-prev {
+      left: -24px;
+    }
     .swiper-button-next,
     .swiper-button-prev {
       top: 15px;

@@ -1,4 +1,9 @@
 .blog {
+  .header__left {
+    @media (max-width: 1199px) {
+      max-width: 175px;
+    }
+  }
   .section-toggle {
     margin-bottom: 15px;
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);

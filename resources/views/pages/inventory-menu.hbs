@@ -8,6 +8,7 @@
 <body class="dashboard">
     {{> ../common/header-dashboard }}
     <!-- admin-menu -->
+    {{!-- admin menu minimize - add class admin-menu--minimize --}}
     <div class="admin-menu position-fixed">
         <div class="admin-menu__header d-flex d-lg-none">
             <div class="admin-menu__close">
@@ -19,12 +20,11 @@
             </a>
         </div>
         <section class="section-content">
-            {{!-- admin menu minimize - add class admin-menu--minimize --}}
             <div class="admin-menu__nav position-relative">
                 <button class="admin-menu__btn-minimize d-none d-lg-block">
                     <i class="icon icon-minimize"></i>
                 </button>
-                <div class="scroll-div">
+                <div class="admin-menu__wrap position-relative">
                     <div class="admin-menu__user-select d-flex d-lg-none">
                         <div class="user-select">
                             <div class="user-select__photo">
@@ -44,7 +44,7 @@
 
                     <ul class="admin-menu__list d-flex flex-column list-unstyled mb-0">
                         <li class="admin-menu__item">
-                            <a href="#" class="admin-menu__link position-relative">
+                            <a href="#" class="admin-menu__link admin-menu__link--active position-relative">
                                 <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
                                 <i class="icon icon-dashboard"></i>
                                 <span>Dashboard</span>
@@ -54,7 +54,7 @@
                             <a href="#" class="admin-menu__link position-relative">
                                 <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
                                 <i class="icon icon-notification"></i>
-                                <span>Alerts</span>
+                                <span>Alerts <b>(2)</b></span>
                             </a>
                         </li>
                         <li class="admin-menu__item">
@@ -143,21 +143,21 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="admin-menu__item admin-menu__item--submenu js-open admin-menu__item--visit">
+                        <li class="admin-menu__item admin-menu__item--submenu admin-menu__item--visit">
                             <div class="admin-menu__title position-relative">
                                 <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
-                                <i class="icon icon-gift active"></i>
+                                <i class="icon icon-gift"></i>
                                 <span>Products</span>
                                 <i class="icon icon-blue-arrow"></i>
                             </div>
 
                             <ul class="admin-menu__list" style="display: block; height: auto;">
-                                <li class="admin-menu__item admin-menu__item--visit">
+                                <li class="admin-menu__item">
                                     <a href="#" class="admin-menu__link position-relative">
-                                        <span>View orders</span>
+                                        <span>View products</span>
                                     </a>
                                 </li>
-                                <li class="admin-menu__item">
+                                <li class="admin-menu__item admin-menu__item--visit">
                                     <a href="#" class="admin-menu__link position-relative">
                                         <span>Inventory</span>
                                     </a>
@@ -239,6 +239,7 @@
     </div>
     <!-- /admin-menu -->
 
+
     {{> ../common/mobile-menu-bottom }}
 
     <div class="section-blur theme-background-one" data-class="blue" id="background">
@@ -249,7 +250,7 @@
                 <main class="main main--fluid">
                     <div class="section-content">
                         <div class="main__card main__card--fluid position-relative transparent not-shadow p-0">
-                            <h1 class="title-page--admin">View seasonal products <i class="icon icon-help ml-2"></i>
+                            <h1 class="title-page--admin">Inventory</i>
                             </h1>
                             <div class="sort-box inventory">
                                 <form action="#" class="search">
@@ -270,7 +271,7 @@
                                         </ul>
                                     </div>
                                 </form>
-                                
+
                                 <div class="sort-box__line ml-4">
                                     <span class="sort-box__name">Store:</span>
                                     <div class="sort-box__select store">
@@ -318,14 +319,15 @@
                                             <select class="form__select form__select--default"
                                                 data-toggle="select-parent">
                                                 <option value="user-1" title="Store Name Two">Filter by smt</option>
-                                                <option value="user-1" title="Store Name One OneOne">Filter by smtTwo</option>
+                                                <option value="user-1" title="Store Name One OneOne">Filter by smtTwo
+                                                </option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="product-items-list">
-                                
+
                             </div>
                         </div>
                     </div>

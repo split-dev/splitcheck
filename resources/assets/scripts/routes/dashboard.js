@@ -294,6 +294,13 @@ export default {
         }
       });
     }
+
+    //sort-box selected element
+    $('.sort-box').on('click', 'a', function(e) {
+      e.preventDefault();
+      $('.sort-box li').removeClass('active');
+      $(this).parent().addClass('active');
+    })
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

@@ -4,4 +4,130 @@
       display: none;
     }
   }
+  .select-list {
+    display: flex;
+    align-items: center;
+    li {
+      width: 140px;
+      height: 30px;
+      border-bottom: 4px solid#e8ebf2;
+      padding-bottom: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      &.active {
+        border-bottom: 4px solid#335491;
+      }
+      a {
+        color: #335491;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.sort-box__full-search {
+  width: 100%;
+  margin-top: 12px;
+  .search {
+    max-width: 100%;
+    width: 100%;
+    input {
+      border-radius: 5px;
+      background-color: #e8ebf266;
+    }
+  }
+}
+
+.inventory {
+  &__list {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-top: 30px;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        color: #828282;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+        &:nth-child(1) {
+          padding-left: 84px;
+        }
+        &:nth-child(2) {
+          padding-left: calc(30% + 84px);
+        }
+      }
+    }
+  }
+  &__single {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 72px;
+    box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 8px;
+  }
+  &__photo {
+    min-width: 72px;
+    max-width: 72px;
+    height: 72px;
+    background-color: #f4f8ff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-right: 12px;
+  }
+  &__product-info {
+    width: 30%;
+    margin-right: 35px;
+    strong {
+      opacity: 0.75;
+      color: #0b0212;
+      font-weight: 500;
+      font-size: 18px;
+      font-style: normal;
+      letter-spacing: 0.64px;
+      line-height: 18px;
+      text-align: left;
+      display: block;
+      margin-bottom: 10px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        color: #0b0212;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+        margin-right: 18px;
+      }
+    }
+  }
+  &__product-outgoing {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    max-width: 89px;
+    width: 100%;
+    span {
+      color: #0b0212;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+    }
+  }
 }

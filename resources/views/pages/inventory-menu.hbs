@@ -271,6 +271,12 @@
                                         </ul>
                                     </div>
                                 </form>
+                                <ul class="select-list">
+                                    <li class="active"><a href="#">All</a></li>
+                                    <li><a href="#">Returned</a></li>
+                                    <li><a href="#">Damaged</a></li>
+                                    <li><a href="#">Lost</a></li>
+                                </ul>
 
                                 <div class="sort-box__line ml-4">
                                     <span class="sort-box__name">Store:</span>
@@ -326,8 +332,41 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-items-list">
+                            <div class="sort-box__full-search">
+                                <form action="#" class="search">
 
+                                    <input type="search" name="search" class="search__input"
+                                        placeholder="Search for product" autocomplete="off">
+                                    <button class="search__button" aria-label="search">
+                                        <i class="icon icon-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="inventory">
+                                <div class="inventory__title">
+                                    <ul>
+                                        <li>Product</li>
+                                        <li>When sold out</li>
+                                    </ul>
+                                </div>
+                                <div class="inventory__list">
+                                    <div class="inventory__single">
+                                        <div class="inventory__photo" style="background-image: url('images/product/variant_42242.png');"></div>
+                                        <div class="inventory__product-info">
+                                            <strong>Some much longer title could be here…</strong>
+                                            <ul>
+                                                <li>Sku: <span>#134567</span></li>
+                                                <li>$<span>49.99</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="inventory__product-outgoing">
+                                            <span>Stop selling</span>
+                                        </div>
+                                    </div>
+                                    <div class="inventory__single">
+                                        <div class="inventory__photo" style="background-image: url('images/product/7142447382608.png');"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

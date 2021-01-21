@@ -1,4 +1,4 @@
-import SimpleScrollbar from 'simple-scrollbar';
+// import SimpleScrollbar from 'simple-scrollbar';
 import PerfectScrollbar from 'perfect-scrollbar';
 
 export default {
@@ -6,129 +6,81 @@ export default {
     const body = document.querySelector('body');
     const header = document.querySelector('.header');
     const adminMenu = document.querySelector('.admin-menu');
-    const adminMenuNav = document.querySelector('.admin-menu__nav');
-    const adminMenuList = document.querySelector('.admin-menu__list');
-    const scrollDiv = document.querySelectorAll('.scroll-div');
+    const adminMenuNav = adminMenu.querySelector('.admin-menu__nav');
+    const adminMenuList = adminMenu.querySelector('.admin-menu__list');
+    const scrollDiv = adminMenu.querySelector('.admin-menu__wrap');
 
     //* function for "adminMenu" position when scrolling, and calculate height
     if (adminMenu) {
-      {
-        const checkAside = (param, any) => {
-          if (param) {
-            if (window.matchMedia('(max-width: 991px)').matches) {
-              param.style.top = '';
-            } else {
-              param.style.top = any + 'px';
-            }
+      const checkAside = (param, any) => {
+        if (param) {
+          if (window.matchMedia('(max-width: 991px)').matches) {
+            param.style.top = '';
+          } else {
+            param.style.top = any + 'px';
           }
         }
+      }
 
-        const positionSt = () => {
-          const maxPadding = 94;
-          const minPadding = 10;
+      const resize = (elem) => {
+        elem.update();
+      }
 
-          body.addEventListener('wheel', function(e) {
-            let meNow = false;
+      const elScroll = new PerfectScrollbar(scrollDiv);
 
-            if (!window.matchMedia('(max-width: 991px)').matches) {
-              if (e.path) {
-                for (let i = 0; i < e.path.length - 3; i++) {
-                  const element = e.path[i];
-                  if (element) {
-                    if (element.classList.contains('scroll-div')) {
-                      meNow = true
-                    }
-                  }
-                }
-              }
+      window.onresize = resize(elScroll);
 
-              if (!meNow) {
-                let newHeightDiv = 0;
-                let newHeightadminMenuList = adminMenuList.offsetHeight;
+      const positionSt = () => {
+        const maxPadding = 94;
+        const minPadding = 10;
 
-                if (e.deltaY < 0) {
-                  if (adminMenuNav) {
-                    checkAside(adminMenu, maxPadding);
-                    adminMenuNav.classList.remove('js-no-header')
-                  }
-                } else {
-                  if (adminMenuNav) {
-                    checkAside(adminMenu, minPadding);
-                    adminMenuNav.classList.add('js-no-header') // add class for height calculation
-                  }
-                }
+        body.addEventListener('wheel', function(e) {
+          let meNow = false;
 
-                //* height calculation due to header being hidden
-                if (scrollDiv.length) {
-                  for (let i = 0; i < scrollDiv.length; i++) {
-                    const el = scrollDiv[i];
-                    if (el.offsetParent) { //* height calculation
-                      newHeightDiv = (window.innerHeight - header.clientHeight - 20); // 20 - correction because of the shadows
-                      newHeightadminMenuList = adminMenuList.offsetHeight;
-                      if (el.offsetParent.classList.contains('admin-menu__nav')) {
-                        if ( (newHeightDiv - 80) > newHeightadminMenuList) {
-                          el.style.height = '';
-                        } else {
-                        if (el.offsetParent.classList.contains('js-no-header')) {
-                            el.style.height = (newHeightDiv - 15 ) + 'px'; // writing the height
-                          } else {
-                            el.style.height = (newHeightDiv - 100) + 'px'; // writing the height // 120 - correction
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          })
-
-          body.addEventListener('mousemove', function(e) {
-            let meNow = false;
-            if (e.path) {
-
+          if (!window.matchMedia('(max-width: 991px)').matches) {
+            // console.dir(e)
+            if (e.target) {
+              // console.log(e.target)
               for (let i = 0; i < e.path.length - 3; i++) {
                 const element = e.path[i];
                 if (element) {
                   if (element.classList.contains('admin-menu')) {
+                    // console.log(this)
                     meNow = true
-
-                    heightWhat();
                   }
                 }
               }
             }
-            if (!meNow) return false
-          })
-        }
 
-        const heightWhat = () => {
-          // const modalHeaderHeight = 110; // default height Header in modal
-          let newHeightDiv = 0;
-          let newHeightadminMenuList = adminMenuList.offsetHeight;
+            if (!meNow) {
+              let newHeightDiv = 0;
+              let newHeightadminMenuList = adminMenuList.offsetHeight;
 
-          if (scrollDiv.length) {
-            for (let i = 0; i < scrollDiv.length; i++) {
-              const el = scrollDiv[i];
-              SimpleScrollbar.initEl(el);
-              if (el.offsetParent) { //* height calculation "aside-right" and "aside-left"
-                newHeightDiv = (window.innerHeight - header.clientHeight - 20); // 20 - correction because of the shadows
-                newHeightadminMenuList = adminMenuList.offsetHeight;
+              if (e.deltaY < 0) {
+                if (adminMenuNav) {
+                  checkAside(adminMenu, maxPadding);
+                  adminMenuNav.classList.remove('js-no-header')
+                }
+              } else {
+                if (adminMenuNav) {
+                  checkAside(adminMenu, minPadding);
+                  adminMenuNav.classList.add('js-no-header') // add class for height calculation
+                }
+              }
 
-                if (el.offsetParent.classList.contains('admin-menu__nav')) {
-                  if (window.matchMedia('(max-width: 991px)').matches) {
-                    el.style.height = (newHeightDiv) + 'px'; // writing the height // 120 - correction
-                    // if (window.matchMedia('(max-width: 767px)').matches) {
-                    //   el.style.height = (newHeightDiv - 30) + 'px'; // writing the height // 120 - correction
-                    // }
-                  } else {
+              //* height calculation due to header being hidden
+              if (scrollDiv.length) {
+                if (scrollDiv.offsetParent) { //* height calculation
+                  newHeightDiv = (window.innerHeight - header.clientHeight - 20); // 20 - correction because of the shadows
+                  newHeightadminMenuList = adminMenuList.offsetHeight;
+                  if (scrollDiv.offsetParent.classList.contains('admin-menu__nav')) {
                     if ( (newHeightDiv - 80) > newHeightadminMenuList) {
-                      el.style.height = '';
+                      scrollDiv.style.height = '';
                     } else {
-                      if (el.offsetParent.classList.contains('js-no-header')) {
-                        el.style.height = (newHeightDiv - 15 ) + 'px'; // writing the height
+                    if (scrollDiv.offsetParent.classList.contains('js-no-header')) {
+                        scrollDiv.style.height = (newHeightDiv - 15 ) + 'px'; // writing the height
                       } else {
-                        el.style.height = (newHeightDiv - 100) + 'px'; // writing the height // 120 - correction
+                        scrollDiv.style.height = (newHeightDiv - 100) + 'px'; // writing the height // 120 - correction
                       }
                     }
                   }
@@ -136,18 +88,61 @@ export default {
               }
             }
           }
-        }
+        })
 
-        //* function init
+        adminMenu.addEventListener('mouseenter', function() {
+          let meNow = false;
+
+          if (adminMenu.offsetHeight > (window.innerHeight - header.clientHeight - 30)) {
+            setTimeout(() => {
+              heightWhat();
+            }, 100);
+          }
+          if (!meNow) return false
+        })
+      }
+
+      const heightWhat = () => {
+        // const modalHeaderHeight = 110; // default height Header in modal
+        let newHeightDiv = 0;
+        let newHeightadminMenuList = adminMenuList.offsetHeight;
+
+        resize(elScroll);
+        // SimpleScrollbar.initEl(scrollDiv);
+        if (scrollDiv.offsetParent) { //* height calculation "aside-right" and "aside-left"
+          newHeightDiv = (window.innerHeight - header.clientHeight - 20); // 20 - correction because of the shadows
+          newHeightadminMenuList = adminMenuList.offsetHeight;
+
+          if (scrollDiv.offsetParent.classList.contains('admin-menu__nav')) {
+            if (window.matchMedia('(max-width: 991px)').matches) {
+              scrollDiv.style.height = (newHeightDiv) + 'px'; // writing the height // 120 - correction
+              // if (window.matchMedia('(max-width: 767px)').matches) {
+              //   scrollDiv.style.height = (newHeightDiv - 30) + 'px'; // writing the height // 120 - correction
+              // }
+            } else {
+              if ( (newHeightDiv - 80) > newHeightadminMenuList) {
+                scrollDiv.style.height = '';
+              } else {
+                if (scrollDiv.offsetParent.classList.contains('js-no-header')) {
+                  scrollDiv.style.height = (newHeightDiv - 15 ) + 'px'; // writing the height
+                } else {
+                  scrollDiv.style.height = (newHeightDiv - 100) + 'px'; // writing the height // 120 - correction
+                }
+              }
+            }
+          }
+        }
+      }
+
+      //* function init
+      heightWhat();
+      positionSt();
+
+      //* function resize
+      window.addEventListener('resize', function() {
         heightWhat();
         positionSt();
-
-        //* function resize
-        window.addEventListener('resize', function() {
-          heightWhat();
-          positionSt();
-        }, false);
-      }
+      }, false);
     }
 
     //clone new box .add-field
@@ -238,7 +233,7 @@ export default {
         hoverReaction();
       }
     }
-    
+
     //scroll nav
     if($('.nav-product').hasClass('nav-product')) {
       var positions = [],
@@ -270,7 +265,7 @@ export default {
     }
 
   //click scroll
-  $('.nav-product').on( 'click', 'a', function(){ 
+  $('.nav-product').on( 'click', 'a', function(){
     var el = $(this);
     var dest = el.attr('href');
     if(dest !== undefined && dest !== '') {

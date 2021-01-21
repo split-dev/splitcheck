@@ -626,6 +626,7 @@
   .header__right {
     width: auto;
     margin-left: auto;
+    justify-content: flex-start;
 
     @include media-breakpoint-up(lg) {
       width: 450px;

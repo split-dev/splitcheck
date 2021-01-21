@@ -1158,7 +1158,7 @@ $('.form-add-comment__content').on('click', 'a', function(e){
 
     // admin-menu
     {
-      const adminMenu = document.querySelector('.admin-menu__nav');
+      const adminMenu = document.querySelector('.admin-menu');
       const btnMinimize = document.querySelector('.admin-menu__btn-minimize');
       const adminMenuItem = document.querySelectorAll('.admin-menu__item--submenu');
 

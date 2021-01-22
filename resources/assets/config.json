@@ -58,7 +58,8 @@
       "./styles/components/modals/modals-brand-and-category.scss",
       "./styles/components/modals/modal-order-status.scss",
       "./styles/components/modals/modal-edit-location.scss",
-      "./styles/components/modals/modal-save-store.scss"
+      "./styles/components/modals/modal-save-store.scss",
+      "./styles/components/modals/modal-edit-option.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",
@@ -113,7 +114,8 @@
     "components/modals/modal-give-discount.scss": "./styles/components/modals/modal-give-discount.scss",
     "components/modals/modal-order-status.scss": "./styles/components/modals/modal-order-status.scss",
     "components/modals/modal-edit-location.scss": "./styles/components/modals/modal-edit-location.scss",
-    "components/modals/modal-save-store.scss": "./styles/components/modals/modal-save-store.scss"
+    "components/modals/modal-save-store.scss": "./styles/components/modals/modal-save-store.scss",
+    "components/modals/modal-edit-option": "./styles/components/modals/modal-edit-option.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

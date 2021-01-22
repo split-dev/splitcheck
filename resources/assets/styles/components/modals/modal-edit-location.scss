@@ -3,6 +3,11 @@
   .modal-dialog {
     max-width: 640px !important;
   }
+  .modal-content {
+    @media (max-width: 575px) {
+      padding: 25px 15px;
+    }
+  }
   .modal-body {
     max-width: 315px;
     margin: auto;
@@ -33,6 +38,7 @@
     padding-bottom: 0;
     margin-top: 25px;
     flex-direction: row !important;
+    flex-wrap: nowrap !important;
     a {
       max-width: 160px !important;
       height: 48px;

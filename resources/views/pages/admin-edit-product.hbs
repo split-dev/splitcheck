@@ -519,7 +519,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="multiple-box" id="multiple" style="display: block;">
+                                                <div class="multiple-box" id="multiple" style="display: none;">
                                                     <p>
                                                         This product has multiple options, like different sizes or
                                                         colours that shoppers can choose from. Prices may differ from
@@ -615,6 +615,123 @@
                                                             <span><img src="images/icons/plus-24px.svg" alt="add">Add
                                                                 option</span>
                                                         </a>
+                                                    </div>
+                                                    <div class="variants-mini-box">
+                                                        <div class="variants-mini-box__head">
+                                                            <strong>Variants</strong>
+                                                            <a href="#" class="add-option"><img
+                                                                    src="images/icons/plus-24px.svg" alt="add-24px">Add
+                                                                option</a>
+                                                            <div class="options">
+                                                                <button type="button" class="options__btn"
+                                                                    data-type="options">
+                                                                    <i class="icon icon-more"></i>
+                                                                </button>
+
+                                                                <div class="options__dropdown">
+                                                                    <ul class="list-unstyled mb-0">
+                                                                        <li><a href="#" data-toggle="modal"
+                                                                                data-target="#modal-edit-option">Edit
+                                                                                options</a>
+                                                                        </li>
+                                                                        <li><a href="#">Reorder variants</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul>
+                                                            <span>Select:</span>
+                                                            <li><a href="#">All</a></li>
+                                                            <li><a href="#">None</a></li>
+                                                            <li><a href="#">1.5L</a></li>
+                                                        </ul>
+                                                        <div class="sort-box__line">
+                                                            <span class="sort-box__name">Store:</span>
+                                                            <div class="sort-box__select store">
+                                                                <span class="sort-box__arrow">
+                                                                    <strong>Store Name Two</strong>
+                                                                    <img src="images/icons/navigate_next-24px.svg"
+                                                                        alt="arrow">
+                                                                </span>
+                                                                <div
+                                                                    class="form__single form__single--select form__single--select-default form__single--fluid">
+                                                                    <select class="form__select form__select--default"
+                                                                        data-toggle="select-parent">
+                                                                        <option value="user-1" title="Store Name Two">
+                                                                            Store Name Two</option>
+                                                                        <option value="user-1"
+                                                                            title="Store Name One OneOne">Store Name One
+                                                                            OneOne</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="selected-item">
+                                                            <div class="selected-item__left">
+                                                                <div class="selected-item__photo"
+                                                                    style="background-image: url('images/product/7142447382608.png');">
+                                                                    <span>SM</span>
+                                                                </div>
+                                                                <div class="selected-item__info">
+                                                                    <strong>Milk shake 1.3L</strong>
+                                                                    <ul>
+                                                                        <li><span>136630</span></li>
+                                                                        <li><span>$49.99</span></li>
+                                                                    </ul>
+                                                                    <span><b>458</b> available at <b>8</b>
+                                                                        locations</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="selected-item__right">
+                                                                <a href="#">Edite</a>
+                                                                <a href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="selected-item">
+                                                            <div class="selected-item__left">
+                                                                <div class="selected-item__photo"
+                                                                    style="background-image: url('images/product/7142447382608.png');">
+                                                                    <span>SM</span>
+                                                                </div>
+                                                                <div class="selected-item__info">
+                                                                    <strong>Milk shake 1.3L</strong>
+                                                                    <ul>
+                                                                        <li><span>136630</span></li>
+                                                                        <li><span>$49.99</span></li>
+                                                                    </ul>
+                                                                    <span><b>458</b> available at <b>8</b>
+                                                                        locations</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="selected-item__right">
+                                                                <a href="#">Edite</a>
+                                                                <a href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="selected-item">
+                                                            <div class="selected-item__left">
+                                                                <div class="selected-item__photo"
+                                                                    style="background-image: url('images/product/7142447382608.png');">
+                                                                    <span>SM</span>
+                                                                </div>
+                                                                <div class="selected-item__info">
+                                                                    <strong>Milk shake 1.3L</strong>
+                                                                    <ul>
+                                                                        <li><span>136630</span></li>
+                                                                        <li><span>$49.99</span></li>
+                                                                    </ul>
+                                                                    <span><b>458</b> available at <b>8</b>
+                                                                        locations</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="selected-item__right">
+                                                                <a href="#">Edite</a>
+                                                                <a href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="total-box--var">
+                                                            <span>Total available: <b>458</b></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="download-box" id="download" style="display: none;">
@@ -1487,6 +1604,7 @@
     {{> ../common/modals/create-brand }}
     {{> ../common/modals/modals-delete-info }}
     {{> ../common/modals/modal-save-new-store }}
+    {{> ../common/modals/modal-edit-option }}
 </body>
 
 </html>

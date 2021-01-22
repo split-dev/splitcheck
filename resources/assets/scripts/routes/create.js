@@ -292,7 +292,7 @@ export default {
             alt="close"></a>
 </div>
         `;
-    document.querySelector('.size-select__list').insertAdjacentHTML('beforeend', selectEl);
+    $(this).prev().append(selectEl);
     $('.size-select__list select').select2({
       minimumResultsForSearch: Infinity,
       width: '100%',

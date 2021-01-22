@@ -24,6 +24,18 @@
     }
   }
   &-staff {
+    .toogle-box__scroll {
+      li {
+        margin-bottom: 16px;
+      }
+    }
+    .profile-list {
+      flex-wrap: nowrap !important;
+
+      span {
+        white-space: nowrap;
+      }
+    }
     &__invite {
       display: flex;
       align-items: center;

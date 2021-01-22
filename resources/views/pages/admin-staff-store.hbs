@@ -5,7 +5,7 @@
     {{> ../common/head }}
 </head>
 
-<body class="dashboard store">
+<body class="dashboard store orders">
     {{> ../common/header-dashboard }}
     <!-- admin-menu -->
     <div class="admin-menu position-fixed">
@@ -247,10 +247,31 @@
             <div class="main-content position-relative d-flex align-items-start justify-content-between store-staff">
                 <!-- main -->
                 <main class="main main--fluid ">
+
                     <div class="section-content">
                         <div class="main__card position-relative transparent not-shadow p-0">
                             <h1 class="title-page--admin">Manage staff <i class="icon icon-help ml-2"></i></h1>
+                            <section class="section-content section-mobile">
 
+                                <div class="section-mobile__content">
+                                    <div class="statistic-box store-staff__box w-100">
+                                        <div class="left">
+                                            <span>0</span>
+                                            <span>Members</span>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="btn-blue">Message All</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="store-staff__invite w-100">
+                                        <i class=" icon-plus-blue"></i>
+                                        <span>Invite</span>
+                                    </div>
+                                </div>
+
+                            </section>
                             <div class="product-items-list ">
                                 <div class="product-items-error store-staff__error">
                                     <img src="images/icons/400_Error_Bad_Request-bro.svg" alt="error">
@@ -273,15 +294,306 @@
                         <section class="section-content">
                             <span
                                 class="section-content__title position-relative d-flex align-items-center">Staff</span>
-                            <div class="statistic-box store-staff__box">
-                                <div class="left">
-                                    <span>0</span>
-                                    <span>Members</span>
-                                </div>
-                                <div class="right">
-                                    <a href="#" class="btn-blue">Message All</a>
+                            <div class="members__box">
+                                <div class="d-flex flex-column">
+                                    <span class="text-number">99</span>
+                                    <p>Members</p>
                                 </div>
 
+                                <div class="members__search">
+                                    <form action="" id="search" class="search">
+
+                                        <input type="search" name="search" class="search__input"
+                                            placeholder="Search for someone" id="search-input" autocomplete="off">
+                                        <button class="search__button" aria-label="search">
+                                            <i class="icon icon-search"></i>
+                                        </button>
+
+                                        <div class="search__result">
+                                            <ul class="search__result-list">
+                                                <li class="search__result-item d-flex align-items-center">
+                                                    <p>
+                                                        <b>pa</b>int
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="position-relative d-flex" style="height: 360px;">
+                                    <div class="scroll-div w-100">
+                                        <section class="section-content">
+                                            <ul>
+                                                <li class="d-flex align-items-center justify-content-between">
+                                                    <div class="profile-list w-100">
+                                                        <figure class="profile-list__avatar">
+                                                            <img src="images/groups/user-girl.png" alt="avatar">
+                                                            <span class="profile-list__symbol"></span>
+                                                        </figure>
+                                                        <span class="text-bold">Your nameh</span>
+                                                    </div>
+                                                    <div
+                                                        class="profile-link d-flex w-100 justify-content-end align-items-center">
+                                                        <a class="btn-orange-small" href="#">Leader</a>
+                                                        <div class="options">
+                                                            <button type="button" class="options__btn"
+                                                                data-type="options">
+                                                                <i class="icon icon-more"></i>
+                                                            </button>
+
+                                                            <div class="options__dropdown">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li><a href="#">Disable Admin</a></li>
+                                                                    <li><a href="#">Make Leader</a></li>
+                                                                    <li><a href="#">Kick out</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="d-flex align-items-center justify-content-between">
+                                                    <div class="profile-list w-100">
+                                                        <figure class="profile-list__avatar">
+                                                            <img src="images/profiles/user-1.png" alt="avatar">
+                                                            <span class="profile-list__symbol"></span>
+                                                        </figure>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <div
+                                                        class="profile-link d-flex w-100 justify-content-end align-items-center">
+                                                        <a class="btn-blue-small" href="#">Admin</a>
+                                                        <div class="options">
+                                                            <button type="button" class="options__btn"
+                                                                data-type="options">
+                                                                <i class="icon icon-more"></i>
+                                                            </button>
+
+                                                            <div class="options__dropdown">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li><a href="#">Disable Admin</a></li>
+                                                                    <li><a href="#">Make Leader</a></li>
+                                                                    <li><a href="#">Kick out</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="d-flex align-items-center justify-content-between">
+                                                    <div class="profile-list w-100">
+                                                        <figure class="profile-list__avatar">
+                                                            <img src="images/groups/user-boy.png" alt="avatar">
+                                                            <span class="profile-list__symbol"></span>
+                                                        </figure>
+                                                        <span>Terry Will Green</span>
+                                                    </div>
+                                                    <div
+                                                        class="profile-link d-flex  justify-content-end align-items-center">
+
+                                                        <div class="options">
+                                                            <button type="button" class="options__btn"
+                                                                data-type="options">
+                                                                <i class="icon icon-more"></i>
+                                                            </button>
+
+                                                            <div class="options__dropdown">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li><a href="#">Disable Admin</a></li>
+                                                                    <li><a href="#">Make Leader</a></li>
+                                                                    <li><a href="#">Kick out</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="d-flex align-items-center justify-content-between">
+                                                    <div class="profile-list w-100">
+                                                        <figure class="profile-list__avatar">
+                                                            <img src="images/groups/user-boy-2.png" alt="avatar">
+                                                            <span class="profile-list__symbol"></span>
+                                                        </figure>
+                                                        <span>Terry Brown</span>
+                                                    </div>
+                                                    <div
+                                                        class="profile-link d-flex justify-content-end align-items-center">
+
+                                                        <div class="options">
+                                                            <button type="button" class="options__btn"
+                                                                data-type="options">
+                                                                <i class="icon icon-more"></i>
+                                                            </button>
+
+                                                            <div class="options__dropdown">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li><a href="#">Disable Admin</a></li>
+                                                                    <li><a href="#">Make Leader</a></li>
+                                                                    <li><a href="#">Kick out</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="d-flex align-items-center justify-content-between">
+                                                    <div class="profile-list w-100">
+                                                        <figure class="profile-list__avatar">
+                                                            <img src="images/profiles/user-1.png" alt="avatar">
+                                                            <span class="profile-list__symbol"></span>
+                                                        </figure>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <div
+                                                        class="profile-link d-flex justify-content-end align-items-center">
+
+                                                        <div class="options">
+                                                            <button type="button" class="options__btn"
+                                                                data-type="options">
+                                                                <i class="icon icon-more"></i>
+                                                            </button>
+
+                                                            <div class="options__dropdown">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li><a href="#">Disable Admin</a></li>
+                                                                    <li><a href="#">Make Leader</a></li>
+                                                                    <li><a href="#">Kick out</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="d-flex align-items-center justify-content-between">
+                                                    <div class="profile-list w-100">
+                                                        <figure class="profile-list__avatar">
+                                                            <img src="images/profiles/user-1.png" alt="avatar">
+                                                            <span class="profile-list__symbol"></span>
+                                                        </figure>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <div
+                                                        class="profile-link d-flex  justify-content-end align-items-center">
+
+                                                        <div class="options">
+                                                            <button type="button" class="options__btn"
+                                                                data-type="options">
+                                                                <i class="icon icon-more"></i>
+                                                            </button>
+
+                                                            <div class="options__dropdown">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li><a href="#">Disable Admin</a></li>
+                                                                    <li><a href="#">Make Leader</a></li>
+                                                                    <li><a href="#">Kick out</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="d-flex align-items-center justify-content-between">
+                                                    <div class="profile-list w-100">
+                                                        <figure class="profile-list__avatar">
+                                                            <img src="images/profiles/user-1.png" alt="avatar">
+                                                            <span class="profile-list__symbol"></span>
+                                                        </figure>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <div
+                                                        class="profile-link d-flex  justify-content-end align-items-center">
+
+                                                        <div class="options">
+                                                            <button type="button" class="options__btn"
+                                                                data-type="options">
+                                                                <i class="icon icon-more"></i>
+                                                            </button>
+
+                                                            <div class="options__dropdown">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li><a href="#">Disable Admin</a></li>
+                                                                    <li><a href="#">Make Leader</a></li>
+                                                                    <li><a href="#">Kick out</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="d-flex align-items-center">
+                                                    <div class="profile-list w-100">
+                                                        <figure class="profile-list__avatar">
+                                                            <img src="images/profiles/user-1.png" alt="avatar">
+                                                            <span class="profile-list__symbol"></span>
+                                                        </figure>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <div
+                                                        class="profile-link d-flex justify-content-end align-items-center">
+
+                                                        <div class="options">
+                                                            <button type="button" class="options__btn"
+                                                                data-type="options">
+                                                                <i class="icon icon-more"></i>
+                                                            </button>
+
+                                                            <div class="options__dropdown">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li><a href="#">Disable Admin</a></li>
+                                                                    <li><a href="#">Make Leader</a></li>
+                                                                    <li><a href="#">Kick out</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="d-flex align-items-center">
+                                                    <div class="profile-list w-100">
+                                                        <figure class="profile-list__avatar">
+                                                            <img src="images/profiles/user-1.png" alt="avatar">
+                                                            <span class="profile-list__symbol"></span>
+                                                        </figure>
+                                                        <span>Terry Smith</span>
+                                                    </div>
+                                                    <div
+                                                        class="profile-link d-flex  justify-content-end align-items-center">
+
+                                                        <div class="options">
+                                                            <button type="button" class="options__btn"
+                                                                data-type="options">
+                                                                <i class="icon icon-more"></i>
+                                                            </button>
+
+                                                            <div class="options__dropdown">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li><a href="#">Disable Admin</a></li>
+                                                                    <li><a href="#">Make Leader</a></li>
+                                                                    <li><a href="#">Kick out</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="store-staff__invite">
+                                <i class=" icon-plus-blue"></i>
+                                <span>Invite</span>
                             </div>
                         </section>
                     </div>

@@ -1,5 +1,15 @@
 .modal-save-store {
   .modal-dialog {
+    @media (max-width: 575px) {
+      margin-left: 0;
+    }
+  }
+  .modal-content {
+    @media (max-width: 575px) {
+      padding: 25px 15px;
+    }
+  }
+  .modal-dialog {
     max-width: 720px;
     width: 100%;
   }
@@ -188,6 +198,7 @@
     }
     .members-wrap {
       max-width: 344px;
+      overflow: hidden;
       > div {
         margin-right: 24px;
       }

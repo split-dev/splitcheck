@@ -29,6 +29,48 @@
                     </div>
                 </div>
                 <strong>Card Details</strong>
+                <div class="checked-box card-check">
+                    <input type="checkbox" id="pay-1">
+                    <label for="pay-1">Pay from my existing card</label>
+                </div>
+                <form action="#" class="mb-5 card-form">
+                    <div class="form__single form__single--card">
+                        <label class="form__label">card number</label>
+                        <input type="text" class="form__input" required="">
+                        <div class="visible"></div>
+                        <span class="form__symbol-pass"></span>
+                    </div>
+                    <div class="form__single form__single--select form__single--select-no-image form__single--fluid" style="display: none;">
+                        <label class="form__label">card number</label>
+                        <select class="form__input" data-toggle="select-no-image" multiple="multiple">
+                            <option>1234 5678 1234 5678</option>
+                            <option>5678 1234 1234 5678</option>
+                            <option>4178 1234 1234 4141</option>
+                        </select>
+                        <span class="form__symbol-error"></span>
+                        <div class="visible"></div>
+                    </div>
+                    <div class="d-flex members-wrap flex-row">
+                        <div class="d-flex flex-column">
+
+                            <!-- for error add class div form__single - *error* -->
+                            <div class="groups__box-small form__single form__single--date form__single--fluid">
+                                <label class="form__label">expire date</label>
+                                <input type="text" class="form__input flatpickr-input" data-toggle="datepicker"
+                                    required="" readonly="readonly">
+                                <span class="form__symbol-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column groups__box-small card-cvv">
+                            <label class="form__label">CCN</label>
+                            <input class="form__input " placeholder="911" type="text">
+
+                            <span class="form__symbol-error"></span>
+                        </div>
+                    </div>
+                </form>
+
             </div>
             <!-- /modal-body -->
             <div class="modal-footer d-flex flex-sm-row align-items-center justify-content-center">

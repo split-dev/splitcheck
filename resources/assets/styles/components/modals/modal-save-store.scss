@@ -92,6 +92,113 @@
         }
       }
     }
+    .form__single--card {
+      &::after {
+        content: attr(data-card);
+      }
+      input {
+        &.hide {
+          font-family: "circle-font";
+          font-style: normal;
+          font-weight: 400;
+          font-variant: normal;
+          text-transform: none;
+          font-size: 36px;
+          caret-color: transparent;
+          color: #99a9c9;
+        }
+      }
+      .visible {
+        position: absolute;
+        right: 13px !important;
+        bottom: 9px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url("images/icons/visible.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 99999;
+        cursor: pointer;
+        &.hide {
+          background-image: url("images/icons/visible-hide.svg");
+        }
+      }
+    }
+    .form__single {
+      max-width: 344px;
+      position: relative;
+      margin-bottom: 18px;
+      .select2-selection__choice {
+        &.hide {
+          color: transparent !important;
+          &::after {
+            content: "···· ···· ···· ····";
+            position: absolute;
+            z-index: 55;
+            font-family: "circle-font";
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            font-size: 36px;
+            letter-spacing: -4px;
+            caret-color: transparent;
+            color: #99a9c9;
+          }
+        }
+      }
+      .select2-container--default {
+        &::after {
+          position: absolute;
+          right: 12px;
+          top: 0;
+          bottom: 0;
+          content: "";
+          display: block;
+          width: 21px;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMTMgOCI+PGc+PGc+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTlhOWM5IiBzdHJva2UtbWl0ZXJsaW1pdD0iMjAiIHN0cm9rZS13aWR0aD0iLjgiIGQ9Ik0xIDF2MGw1LjkxNiA2djBMMTMgMXYwIi8+PC9nPjwvZz48L3N2Zz4=);
+          background-position: center;
+          background-size: 55%;
+          background-repeat: no-repeat;
+          pointer-events: none;
+        }
+        &.select2-container--open {
+          &::after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .visible {
+        position: absolute;
+        right: 37px;
+        bottom: 9px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url("images/icons/visible.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 99999;
+        cursor: pointer;
+        &.hide {
+          background-image: url("images/icons/visible-hide.svg");
+        }
+      }
+    }
+    .members-wrap {
+      max-width: 344px;
+      > div {
+        margin-right: 24px;
+      }
+      .groups__box-small {
+        max-width: 160px;
+        min-width: 160px;
+        .flatpickr-input {
+          padding: 9px 25px 9px 45px;
+        }
+      }
+    }
   }
   .modal-footer {
     a {

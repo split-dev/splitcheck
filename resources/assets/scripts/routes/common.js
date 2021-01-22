@@ -2,6 +2,7 @@
 import '@babel/polyfill';
 import 'bootstrap/js/dist/modal';
 import Swiper from 'swiper/swiper-bundle';
+import 'jquery-mask-plugin';
 import Headroom from 'headroom.js';
 import Flatpickr from 'flatpickr';
 import Dropzone from 'dropzone';
@@ -1300,6 +1301,43 @@ $('.form-add-comment__content').on('click', 'a', function(e){
       $(this).toggleClass('active');
       $(this).next().slideToggle();
     })
+
+    //visible and hide number card
+    $('.form__single .visible').click( function() {
+      if(!$(this).hasClass('hide')) {
+        $(this).parent().find($('.select2-selection__choice')).addClass('hide');
+        $(this).addClass('hide');
+      } else {
+        $(this).removeClass('hide');
+        $(this).parent().find($('.select2-selection__choice')).removeClass('hide');
+      }
+    });
+    $('.form__single--card .visible ').click( function() {
+      if($(this).prev().attr('type') == 'text') {
+        $(this).prev().attr('type', 'password');
+        $(this).prev().addClass('hide');
+      } else {
+        $(this).prev().attr('type', 'text');
+        $(this).prev().removeClass('hide');
+      }
+    })
+
+    //check card
+    //check status additional
+    $('.card-check input').click(function() {
+      if ($(this).prop('checked')) {
+        $('.card-form').find($('.form__single--card')).hide();
+        $('.card-form').find($('.form__single--select')).show();
+      } else {
+        $('.card-form').find($('.form__single--card')).show();
+        $('.card-form').find($('.form__single--select')).hide();
+      }
+    })
+
+    //mask cvv card
+    $('.card-cvv input').mask('000');
+    $('.form__single--card input').mask('0000 0000 0000 0000');
+
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

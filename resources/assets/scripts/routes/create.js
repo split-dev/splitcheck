@@ -547,9 +547,7 @@ export default {
     $('.modal-availability').on('click', '[data-create="true"]', function(e) {
       count = count + 1;
       e.preventDefault();
-      console.log(count);
       if(count == 2) {
-        console.log('go');
         count = 0;
         $('#modal-availability').modal('hide');
         $('.modal-save-store').modal('show')

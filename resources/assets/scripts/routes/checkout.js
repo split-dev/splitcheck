@@ -15,7 +15,7 @@ export default {
       $(el).slideDown();
     }
  
-    $('.checkout__members').click(function() {
+    $('.form-radio').click(function() {
       $(this).toggleClass('form-radio__active')
       if(!$(this).find($('.radio-custom')).prop('checked')) {
         let elemThis = $(this).find($('.checkout__members-content'))

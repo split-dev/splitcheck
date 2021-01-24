@@ -63,6 +63,9 @@
         color: #828282;
         font-size: 14px;
         font-weight: 400;
+        &:first-child {
+          width: 70px;
+        }
       }
     }
     .shipping-section {
@@ -72,10 +75,26 @@
       padding: 13px 0 13px 15px;
       justify-content: space-between;
       margin-bottom: 10px;
+      &__links {
+        display: flex;
+        p {
+          &:first-child {
+            width: 45px !important;
+          }
+        }
+      }
       &__left {
         justify-content: space-between;
         width: 100%;
         max-width: 215px;
+      }
+      span {
+        width: 50px;
+      }
+      p {
+        &:first-child {
+          width: 70px;
+        }
       }
       p,
       span {

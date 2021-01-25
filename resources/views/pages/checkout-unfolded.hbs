@@ -5,7 +5,7 @@
     {{> ../common/head }}
 </head>
 
-<body class="checkout home  cart ">
+<body class="checkout home cart ">
     {{> ../common/mobile-menu }}
     {{> ../common/mobile-menu-bottom }}
     <div class="section-blur theme-background-one" data-class="blue" id="background">
@@ -570,36 +570,38 @@
                                             <label for="radio-3" class="radio-custom-label">Credit or Debit card</label>
                                         </div>
                                         <div class="checkout__members-content" style="display: none;">
-                                            <a href="#" class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                            {{!-- <a href="#" class="form__checkbox-wrap form__checkbox-wrap--custom ">
                                                 <input type="checkbox" id="checkbox-search-parameters-33"
                                                     class="form__checkbox-orange" name="search-parameters">
                                                 <label for="checkbox-search-parameters-33">
                                                     Pay from my existing card
                                                 </label>
-                                            </a>
+                                            </a> --}}
 
-                                            <form class="members-form" action="#">
-                                                <div class="members-wrap">
-                                                    <label class="form__label" for="#">card number</label>
-                                                    <input class="form__input" placeholder="1234 5678 1234 5678"
-                                                        type="password">
-                                                    <span class="show">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15"
-                                                            viewBox="0 0 22 15">
-                                                            <g>
-                                                                <g>
-                                                                    <g></g>
-                                                                    <g>
-                                                                        <path fill="#99a9c9"
-                                                                            d="M15.5 7.5c0 2.48-2.02 4.5-4.5 4.5S6.5 9.98 6.5 7.5 8.52 3 11 3s4.5 2.02 4.5 4.5zm-7 0a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 11 5zm13.5 0c-1.73 4.39-6 7.5-11 7.5S1.73 11.89 0 7.5C1.73 3.11 6 0 11 0s9.27 3.11 11 7.5zm-19.82 0A9.77 9.77 0 0 0 11 13a9.77 9.77 0 0 0 8.82-5.5A9.77 9.77 0 0 0 11 2z">
-                                                                        </path>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>
+                                            <div
+                                                class="checked-box card-check form__checkbox-wrap form__checkbox-wrap--custom">
+                                                <input type="checkbox" id="pay-1">
+                                                <label for="pay-1">Pay from my existing card</label>
+                                            </div>
+                                            <form action="#" class="mb-5 card-form">
+                                                <div class="form__single form__single--card">
+                                                    <label class="form__label">card number</label>
+                                                    <input type="text" class="form__input" required="">
+                                                    <div class="visible"></div>
+                                                    <span class="form__symbol-pass"></span>
                                                 </div>
-
+                                                <div class="form__single form__single--select form__single--select-no-image form__single--fluid"
+                                                    style="display: none;">
+                                                    <label class="form__label">card number</label>
+                                                    <select class="form__input" data-toggle="select-no-image"
+                                                        multiple="multiple">
+                                                        <option>1234 5678 1234 5678</option>
+                                                        <option>5678 1234 1234 5678</option>
+                                                        <option>4178 1234 1234 4141</option>
+                                                    </select>
+                                                    <span class="form__symbol-error"></span>
+                                                    <div class="visible"></div>
+                                                </div>
                                                 <div class="d-flex members-wrap flex-row">
                                                     <div class="d-flex flex-column">
 
@@ -607,13 +609,14 @@
                                                         <div
                                                             class="groups__box-small form__single form__single--date form__single--fluid">
                                                             <label class="form__label">expire date</label>
-                                                            <input type="text" class="form__input"
-                                                                data-toggle="datepicker" required="">
+                                                            <input type="text" class="form__input flatpickr-input"
+                                                                data-toggle="datepicker" required=""
+                                                                readonly="readonly">
                                                             <span class="form__symbol-error"></span>
                                                         </div>
                                                     </div>
 
-                                                    <div class="d-flex flex-column groups__box-small">
+                                                    <div class="d-flex flex-column groups__box-small card-cvv">
                                                         <label class="form__label">CCN</label>
                                                         <input class="form__input " placeholder="911" type="text">
 
@@ -621,6 +624,8 @@
                                                     </div>
                                                 </div>
                                             </form>
+
+
 
                                             <a href="#" class="form__checkbox-wrap form__checkbox-wrap--custom ">
                                                 <input type="checkbox" id="checkbox-search-parameters-36"

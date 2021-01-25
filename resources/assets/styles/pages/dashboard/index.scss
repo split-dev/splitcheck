@@ -20,6 +20,7 @@
 @import "admin-store";
 @import "alerts";
 @import "card-alerts";
+@import "admin-orders";
 
 // .dashboard {
 
@@ -227,7 +228,13 @@
     &__table:before,
     .table__head,
     .table__body {
-      min-width: 426px;
+      min-width: 416px;
+    }
+
+    .table__head {
+      span {
+        color: theme-color("dark-blue");
+      }
     }
 
     // .earning__info-item
@@ -245,6 +252,13 @@
         margin-right: 8px;
 
         color: theme-color("dark-blue");
+      }
+
+      &__arrow {
+        strong {
+          font-size: 16px;
+          color: theme-color("blue4");
+        }
       }
     }
 
@@ -387,11 +401,15 @@
           font-size: 18px;
           line-height: 18px;
           margin-bottom: 12px;
+
+          color: theme-color("blue4");
         }
 
         p {
           font-size: 14px;
           line-height: 18px;
+
+          color: theme-color("dark-blue");
         }
       }
 
@@ -535,6 +553,54 @@
     .swiper-button-next.swiper-button-disabled,
     .swiper-button-prev.swiper-button-disabled {
       opacity: 0;
+    }
+  }
+
+  // table-default style
+  .table {
+    width: 100%;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+
+    // .table__head
+
+    &__head {
+      margin-bottom: 16px;
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    // .table__body
+
+    &__body {
+      overflow: hidden;
+    }
+
+    // .table__row
+
+    &__row {
+      background-color: theme-color("white");
+
+      span {
+        font-size: 14px;
+      }
+
+      &:nth-of-type(2n) {
+        background-color: theme-color("light-gray2");
+      }
+    }
+
+    // .table__img
+
+    &__img {
+      width: 100%;
+      max-width: 140px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

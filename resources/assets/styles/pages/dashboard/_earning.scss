@@ -1,50 +1,5 @@
-.table {
-  width: 100%;
-  margin-bottom: 5px;
-  padding-bottom: 15px;
-
-  // .table__head
-
-  &__head {
-    margin-bottom: 16px;
-
-    span {
-      font-size: 14px;
-    }
-  }
-
-  // .table__body
-
-  &__body {
-    overflow: hidden;
-  }
-
-  // .table__row
-
-  &__row {
-    span {
-      font-size: 14px;
-    }
-
-    &:nth-of-type(2n) {
-      background-color: theme-color("light-gray2");
-    }
-  }
-
-  // .table__img
-
-  &__img {
-    width: 100%;
-    max-width: 140px;
-
-    img {
-      width: 100%;
-    }
-  }
-}
-
 .earning {
-  padding: 24px 12px;
+  padding: 24px 16px;
   padding-bottom: 5px;
   border-radius: 8px;
   overflow: hidden;
@@ -125,14 +80,14 @@
       line-height: 18px;
       text-transform: uppercase;
 
-      font-weight: $font-weight-bold;
+      font-weight: $font-weight-medium;
     }
   }
 
   // .earning__table
 
   &__table {
-    padding-top: 20px;
+    padding-top: 12px;
     width: 100%;
 
     &:before {

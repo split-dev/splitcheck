@@ -192,6 +192,11 @@
   color: theme-color("blue2");
   font-size: 16px;
   text-decoration: underline;
+
+  &--medium {
+    font-weight: $font-weight-medium;
+  }
+
   &:hover {
     color: theme-color("blue2");
     text-decoration: none;
@@ -237,5 +242,15 @@
       transform: scaleX(1);
       transition: transform 0.3s;
     }
+  }
+}
+
+.btn--no-active {
+  pointer-events: none;
+  opacity: 0.2;
+  user-select: none;
+
+  &:hover {
+    text-decoration: none;
   }
 }

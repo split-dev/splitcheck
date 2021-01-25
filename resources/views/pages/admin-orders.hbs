@@ -5,17 +5,403 @@
   {{> ../common/head }}
 </head>
 
-<body class="dashboard">
+<body class="dashboard admin-orders">
   {{> ../common/header-dashboard }}
-  {{> ../common/admin-menu }}
-  {{> ../common/mobile-menu-bottom }}
+  <!-- admin-menu -->
+  <!-- admin menu minimize - add class "admin-menu--minimize" -->
+  <div class="admin-menu position-fixed">
+    <div class="admin-menu__header d-flex d-lg-none">
+      <div class="admin-menu__close">
+        <img src="images/icons/close-blue.svg" alt="">
+      </div>
+      <a class="admin-menu__logo" href="/index.html">
+        <img class="admin-menu__img" src="images/icons/splitcheck-w-logo.png" alt="logo">
+        <span>Manage stores</span>
+      </a>
+    </div>
+    <section class="section-content">
+      <div class="admin-menu__nav position-relative">
+        <button class="admin-menu__btn-minimize d-none d-lg-block">
+          <i class="icon icon-minimize"></i>
+        </button>
+        <div class="admin-menu__wrap position-relative">
+          <div class="admin-menu__user-select d-flex d-lg-none">
+            <div class="user-select">
+              <div class="user-select__photo">
+                <div style="background-image: url(images/message/img-1.png);"> <span>WD</span>
+                </div>
+              </div>
+              <span class="user-select__name">Genetix Nutrition</span>
+              <div class="form__single form__single--select form__single--select-default form__single--fluid">
+                <select class="form__select form__select--default" data-toggle="select">
+                  <option value="user-1" title="TS">Terry Smith</option>
+                  <option value="user-1" title="TW">Terry Will Green</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <ul class="admin-menu__list d-flex flex-column list-unstyled mb-0">
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon icon-dashboard"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon active icon-notification"></i>
+                <span>Alerts <b>(2)</b></span>
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon icon-messages"></i>
+                <span>Trading room</span>
+              </a>
+            </li>
+            <li class="admin-menu__item admin-menu__item--submenu admin-menu__item--visit js-open">
+              <div class="admin-menu__title position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon icon-shipping"></i>
+                <span>Orders</span>
+                <i class="icon icon-blue-arrow"></i>
+              </div>
+
+              <ul class="admin-menu__list" style="height: auto; display: block;">
+                <li class="admin-menu__item admin-menu__item--visit">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>View orders</span>
+                  </a>
+                </li>
+                <li class="admin-menu__item">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>Abandoned cart</span>
+                  </a>
+                </li>
+                <li class="admin-menu__item">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>Items in wishlist</span>
+                  </a>
+                </li>
+                <li class="admin-menu__item">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>Shop for your store</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="admin-menu__item admin-menu__item--submenu">
+              <div class="admin-menu__title position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon icon-networking"></i>
+                <span>Networking</span>
+                <i class="icon icon-blue-arrow"></i>
+              </div>
+
+              <ul class="admin-menu__list">
+                <li class="admin-menu__item">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>View orders</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="admin-menu__item admin-menu__item--submenu">
+              <div class="admin-menu__title position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon icon-social-media"></i>
+                <span>Posts</span>
+                <i class="icon icon-blue-arrow"></i>
+              </div>
+
+              <ul class="admin-menu__list">
+                <li class="admin-menu__item">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>View orders</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="admin-menu__item admin-menu__item--submenu">
+              <div class="admin-menu__title position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon icon-landing-page"></i>
+                <span>Landing pages</span>
+                <i class="icon icon-blue-arrow"></i>
+              </div>
+
+              <ul class="admin-menu__list">
+                <li class="admin-menu__item">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>View orders</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="admin-menu__item admin-menu__item--submenu">
+              <div class="admin-menu__title position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon icon-gift"></i>
+                <span>Products</span>
+                <i class="icon icon-blue-arrow"></i>
+              </div>
+
+              <ul class="admin-menu__list">
+                <li class="admin-menu__item">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>View orders</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="admin-menu__item admin-menu__item--submenu">
+              <div class="admin-menu__title position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon icon-megaphone"></i>
+                <span>Marketing</span>
+                <i class="icon icon-blue-arrow"></i>
+              </div>
+
+              <ul class="admin-menu__list">
+                <li class="admin-menu__item">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>View orders</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="admin-menu__item admin-menu__item--submenu">
+              <div class="admin-menu__title position-relative">
+                <!-- add class "active" <i class="icon icon-gift"></i> what would the icon change -->
+                <i class="icon icon-shop"></i>
+                <span>My stores</span>
+                <i class="icon icon-blue-arrow"></i>
+              </div>
+
+              <ul class="admin-menu__list">
+                <li class="admin-menu__item">
+                  <a href="#" class="admin-menu__link position-relative">
+                    <span>View orders</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="admin-menu__footer d-flex d-lg-none">
+            <form action="" class="form form-admin-menu">
+              <div class="form__wrap">
+                <div class="form__single form__single--fluid form__single--checkbox form__single--checkbox-left">
+                  <input type="checkbox" id="checkbox-alert-admin-menu" class="form__checkbox form__checkbox--language"
+                    name="checkbox-alert-admin-menu" checked="">
+                  <label for="checkbox-alert-admin-menu">
+                    <b>Alert me when new messages arrive</b>
+                  </label>
+                </div>
+                <div class="form__single form__single--fluid form__single--checkbox form__single--checkbox-left">
+                  <input type="checkbox" id="checkbox-alert-admin-menu2" class="form__checkbox form__checkbox--language"
+                    name="checkbox-alert-admin-menu2" checked="">
+                  <label for="checkbox-alert-admin-menu2">
+                    <b>Alert me when shopper visits my store</b>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <span class="admin-menu__copyright">All rights reserved SplitchChek 2020</span>
+    </section>
+  </div>
+  <!-- /admin-menu -->
 
   <div class="section-blur theme-background-one" data-class="blue" id="background">
     <div class="container container--admin">
       <div class="main-content position-relative d-flex align-items-start justify-content-between">
         <!-- main -->
-        <main class="main">
+        <main class="main main--fluid">
+          <div class="section-content">
+            <span class="section-content__title position-relative d-flex align-items-center">
+              <span class="text-blue">View orders</span>
+              <i class="icon icon-help"></i>
+            </span>
 
+            <div class="view-orders position-relative w-100">
+              <div class="view-orders__header position-relative d-flex flex-wrap align-items-center w-100">
+                <div class="view-orders__nav position-relative overflow-hidden" data-scroll="perfect-scrollbar">
+                  <ul class="view-orders__list d-flex align-items-center w-100">
+                    <li class="view-orders__item">
+                      <a href="#" class="view-orders__switch-filter">All</a>
+                    </li>
+                    <li class="view-orders__item">
+                      <a href="#" class="view-orders__switch-filter">Unfulfilled</a>
+                    </li>
+                    <li class="view-orders__item">
+                      <a href="#" class="view-orders__switch-filter">Unpaid</a>
+                    </li>
+                    <li class="view-orders__item">
+                      <a href="#" class="view-orders__switch-filter">Open</a>
+                    </li>
+                    <li class="view-orders__item">
+                      <a href="#" class="view-orders__switch-filter">Closed</a>
+                    </li>
+                    <li class="view-orders__item">
+                      <a href="#" class="view-orders__switch-filter">Payment Received NOT SENT</a>
+                    </li>
+                    <li class="view-orders__item">
+                      <a href="#" class="view-orders__switch-filter">Back Ordered</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="view-orders__sort">
+                  <div class="sort-box">
+                    <div class="sort-box__line sort">
+                      <span class="sort-box__name">Store:</span>
+                      <div class="sort-box__select">
+                        <span class="sort-box__arrow">
+                          <strong>Store Name One</strong>
+                          <img src="images/icons/navigate_next-24px.svg" alt="arrow">
+                        </span>
+                        <div class="form__single form__single--select form__single--select-default form__single--fluid">
+                          <select class="form__select form__select--default" data-toggle="select-parent">
+                            <option value="store-name-one" title="Store Name Two">Store Name One</option>
+                            <option value="store-name-one-2" title="Store Name One OneOne">Store Name One --</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-orders__search w-100">
+                  <!-- form search -->
+                  <!-- add class: "search--active" -->
+                  <form action="#" id="search-view-orders" class="search w-100">
+
+                    <input type="search" name="search" class="search__input" placeholder="Search for something"
+                      id="search-input" autocomplete="off" />
+                    <button class="search__button" aria-label="search">
+                      <i class="icon icon-search"></i>
+                    </button>
+
+                    <div class="search__result">
+                      <ul class="search__result-list">
+                        <li class="search__result-item d-flex align-items-center">
+                          <p>
+                            <b>pa</b>int
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="view-orders__body w-100">
+                <div class="view-orders__table table position-relative" data-scroll="perfect-scrollbar">
+                  <div class="table__head d-flex align-items-center">
+                    <span>Order</span>
+                    <span>Date</span>
+                    <span>Customer</span>
+                    <span>Items</span>
+                    <span>Total</span>
+                    <span>Payment</span>
+                    <span>Unfulfilled</span>
+                    <span>Delivery</span>
+                    <span>Actions</span>
+                  </div>
+                  <div class="table__body position-relative" data-scroll="perfect-scrollbar">
+                    <div class="table__row position-relative">
+                      <div class="table__row-content d-flex align-items-center">
+                        <div>
+                          <span># 431 245 987</span>
+                        </div>
+                        <div>
+                          <span>02.10.2020 at 10:50 pm</span>
+                        </div>
+                        <div>
+                          <span>John Archer</span>
+                        </div>
+                        <div>
+                          <span>2 items</span>
+                        </div>
+                        <div>
+                          <span>$104.50</span>
+                        </div>
+                        <div class="table__check-cell table__check-cell--green">
+                          <span>Unpaid</span>
+                        </div>
+                        <div class="table__check-cell table__check-cell--yellow">
+                          <span>Unfulfilled</span>
+                        </div>
+                        <div>
+                          <span>Free Shipping</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a href="#" class="btn-blue-link btn-blue-link--medium">Fulfill</a>
+                          <a href="#" class="btn-blue-link">Edit</a>
+                          <a href="#" class="btn-blue-link btn--no-active">Refund</a>
+                        </div>
+                      </div>
+                      <!-- option  add class: - options--open -->
+                      <div class="options d-block d-lg-none">
+                        <button type="button" class="options__btn" data-type="options">
+                          <i class="icon icon-more"></i>
+                        </button>
+
+                        <div class="options__dropdown">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table__row position-relative">
+                      <div class="table__row-content d-flex align-items-center">
+                        <div>
+                          <span># 431 245 987</span>
+                        </div>
+                        <div>
+                          <span>02.10.2020 at 10:50 pm</span>
+                        </div>
+                        <div>
+                          <span>John Archer</span>
+                        </div>
+                        <div>
+                          <span>2 items</span>
+                        </div>
+                        <div>
+                          <span>$104.50</span>
+                        </div>
+                        <div class="table__check-cell table__check-cell--green table__check-cell--active">
+                          <span>Paid</span>
+                        </div>
+                        <div class="table__check-cell table__check-cell--yellow table__check-cell--active">
+                          <span>Fulfilled</span>
+                        </div>
+                        <div>
+                          <span>Shipping</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a href="#" class="btn-blue-link btn-blue-link--medium">Fulfill</a>
+                          <a href="#" class="btn-blue-link">Edit</a>
+                          <a href="#" class="btn-blue-link btn--no-active">Refund</a>
+                        </div>
+                      </div>
+                      <!-- option  add class: - options--open -->
+                      <div class="options d-block d-lg-none">
+                        <button type="button" class="options__btn" data-type="options">
+                          <i class="icon icon-more"></i>
+                        </button>
+
+                        <div class="options__dropdown">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
         <!-- /main -->
       </div>

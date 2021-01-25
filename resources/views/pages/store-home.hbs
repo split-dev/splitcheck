@@ -288,8 +288,9 @@
                             <a href="#" class="btn-border button-color">Or use colour</a>
                         </div>
                         <div class="profile-face__info d-flex align-items-center justify-content-between">
-                            <div class="profile-face__photo d-flex justify-content-center align-items-center">
-                                <span class="profile-face__initial">SN</span>
+                            <div class="profile-face__photo d-flex justify-content-center align-items-center"
+                                style="background-image: url('images/store/store-bg.jpg');">
+                                <span class="profile-face__initial"></span>
                                 <a href="#add-photo" data-toggle="modal" class="profile-face__hover d-flex flex-column">
                                     <img src="images/icons/photo.svg" alt="photo">
                                     <span>Upload photo</span>
@@ -367,8 +368,9 @@
                                         <div class="internal-card__header">
                                             <a href="#"
                                                 class="internal-card__profile d-flex flex-wrap align-items-start">
-                                                <figure class="internal-card__avatar">
-                                                    <img src="images/profiles/img1.png" alt="avatar">
+                                                <figure class="internal-card__avatar internal-card__no-img"
+                                                    style="background-image: url('images/product/solid-1.png');">
+
                                                     <span class="internal-card__symbol"></span>
                                                 </figure>
                                                 <div class="internal-card__head-info">
@@ -403,7 +405,7 @@
                                                                 </p>
                                                             </div>
                                                             <div class="product-card__footer">
-                                                                <div class="btn btn-orange">Add to Cart</div>
+                                                                <div class="btn btn-orange">View product</div>
                                                             </div>
                                                         </a>
                                                     </div>
@@ -421,7 +423,7 @@
                                                                 </p>
                                                             </div>
                                                             <div class="product-card__footer">
-                                                                <div class="btn btn-orange">Add to Cart</div>
+                                                                <div class="btn btn-orange">View product</div>
                                                             </div>
                                                         </a>
                                                     </div>
@@ -439,7 +441,7 @@
                                                                 </p>
                                                             </div>
                                                             <div class="product-card__footer">
-                                                                <div class="btn btn-orange">Add to Cart</div>
+                                                                <div class="btn btn-orange">View product</div>
                                                             </div>
                                                         </a>
                                                     </div>
@@ -474,15 +476,16 @@
                                         <div class="internal-card__header">
                                             <a href="#"
                                                 class="internal-card__profile d-flex flex-wrap align-items-start">
-                                                <figure class="internal-card__avatar internal-card__avatar--no-img">
-                                                    <img src="images/profiles/img1.png" alt="avatar">
-                                                    <span class="internal-card__symbol">ad</span>
+                                                <figure class="internal-card__avatar internal-card__no-img"
+                                                    style="background-image: url('images/product/solid-1.png');">
+
+                                                    <span class="internal-card__symbol"></span>
                                                 </figure>
                                                 <div class="internal-card__head-info">
-                                                    <h2 class="internal-card__name">Ann Doe</h2>
+                                                    <h2 class="internal-card__name">Store Name</h2>
                                                     <p class="internal-card__subname">
-                                                        <span>just for laugh goss</span>
-                                                        <span class="internal-card__date">02.10.2020</span>
+                                                        <span>Discount</span>
+                                                        {{!-- <span class="internal-card__date">02.10.2020</span> --}}
                                                     </p>
                                                 </div>
                                             </a>
@@ -490,8 +493,7 @@
                                         <div class="internal-card__body">
                                             <div class="video-box--single">
                                                 <button class="video-play"></button>
-                                                <video id="videoBox" src="images/video.mp4"
-                                                    ></video>
+                                                <video id="videoBox" src="images/video.mp4"></video>
                                             </div>
                                             <p>To help your skin thrive, use Moroccan argan extract which conditions and
                                                 moisturizes while
@@ -606,6 +608,18 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="internal-card__bottom-links d-flex justify-content-between">
+
+                                                <a href="#" data-toggle="modal" data-target="#add-wishlist"
+                                                    class="reaction__link reaction__link-wishlist">
+                                                    <i class="icon icon-star"></i>
+                                                    <span>wishlist</span>
+                                                </a>
+                                                <a href="#" class="btn-blue">Get Started</a>
+
+
+                                            </div>
                                         </div>
 
                                         <!-- option  add class: - options--open -->
@@ -632,15 +646,16 @@
                                         <div class="internal-card__header">
                                             <a href="#"
                                                 class="internal-card__profile d-flex flex-wrap align-items-start">
-                                                <figure class="internal-card__avatar internal-card__avatar--no-img">
-                                                    <img src="images/profiles/img1.png" alt="avatar">
-                                                    <span class="internal-card__symbol">ad</span>
+                                                <figure class="internal-card__avatar internal-card__no-img"
+                                                    style="background-image: url('images/product/solid-1.png');">
+
+                                                    <span class="internal-card__symbol"></span>
                                                 </figure>
                                                 <div class="internal-card__head-info">
-                                                    <h2 class="internal-card__name">Ann Doe</h2>
+                                                    <h2 class="internal-card__name">Store Name</h2>
                                                     <p class="internal-card__subname">
-                                                        <span>just for laugh goss</span>
-                                                        <span class="internal-card__date">02.10.2020</span>
+                                                        <span>Discount</span>
+                                                        {{!-- <span class="internal-card__date">02.10.2020</span> --}}
                                                     </p>
                                                 </div>
                                             </a>
@@ -790,8 +805,9 @@
                                         <div class="internal-card__header">
                                             <a href="#"
                                                 class="internal-card__profile d-flex flex-wrap align-items-start">
-                                                <figure class="internal-card__avatar">
-                                                    <img src="images/profiles/img1.png" alt="avatar">
+                                                <figure class="internal-card__avatar internal-card__no-img"
+                                                    style="background-image: url('images/product/solid-1.png');">
+
                                                     <span class="internal-card__symbol"></span>
                                                 </figure>
                                                 <div class="internal-card__head-info">

@@ -569,7 +569,7 @@
                                             <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
                                             <label for="radio-3" class="radio-custom-label">Credit or Debit card</label>
                                         </div>
-                                        <div class="checkout__members-content" style="display: none;">
+                                        <div class="checkout__members-content " style="display: none;">
                                             {{!-- <a href="#" class="form__checkbox-wrap form__checkbox-wrap--custom ">
                                                 <input type="checkbox" id="checkbox-search-parameters-33"
                                                     class="form__checkbox-orange" name="search-parameters">
@@ -583,7 +583,7 @@
                                                 <input type="checkbox" id="pay-1">
                                                 <label for="pay-1">Pay from my existing card</label>
                                             </div>
-                                            <form action="#" class="mb-5 card-form">
+                                            <form action="#" class="mb-5 form card-form ">
                                                 <div class="form__single form__single--card">
                                                     <label class="form__label">card number</label>
                                                     <input type="text" class="form__input" required="">
@@ -601,13 +601,14 @@
                                                     </select>
                                                     <span class="form__symbol-error"></span>
                                                     <div class="visible"></div>
+                                                    <span class="form__symbol-pass"></span>
                                                 </div>
                                                 <div class="d-flex members-wrap flex-row">
                                                     <div class="d-flex flex-column">
 
                                                         <!-- for error add class div form__single - *error* -->
                                                         <div
-                                                            class="groups__box-small form__single form__single--date form__single--fluid">
+                                                            class="form__single form__single--date form__single--fluid">
                                                             <label class="form__label">expire date</label>
                                                             <input type="text" class="form__input flatpickr-input"
                                                                 data-toggle="datepicker" required=""
@@ -616,7 +617,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="d-flex flex-column groups__box-small card-cvv">
+                                                    <div class="d-flex flex-column  card-cvv">
                                                         <label class="form__label">CCN</label>
                                                         <input class="form__input " placeholder="911" type="text">
 

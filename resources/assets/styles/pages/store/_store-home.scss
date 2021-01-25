@@ -140,6 +140,21 @@
     }
   }
 }
+.internal-card__bottom-links {
+  align-items: center;
+  .reaction__link-wishlist {
+    span {
+      padding-left: 9px;
+      font-size: 16px;
+      color: #335491;
+    }
+  }
+}
+.internal-card__no-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .video-box--single {
   width: 100%;

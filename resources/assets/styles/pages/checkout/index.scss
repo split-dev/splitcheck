@@ -7,6 +7,59 @@
 @import "checkout-el";
 
 .checkout {
+  .card-cvv {
+    margin-left: 24px;
+  }
+  .form__single {
+    max-width: 344px;
+    label {
+      color: #828282;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    &--select {
+      position: relative;
+      .visible {
+        right: 40px !important;
+      }
+      &::after {
+        position: absolute;
+        right: 13px;
+        top: 44px;
+        z-index: 99999;
+        content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMTMgOCI+PGc+PGc+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTlhOWM5IiBzdHJva2UtbWl0ZXJsaW1pdD0iMjAiIGQ9Ik0xIDF2MGw1LjkxNiA2djBMMTMgMXYwIi8+PC9nPjwvZz48L3N2Zz4=");
+      }
+    }
+
+    input {
+      &.hide {
+        font-family: "circle-font";
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        font-size: 36px;
+        caret-color: transparent;
+        color: #99a9c9;
+      }
+    }
+    .visible {
+      position: absolute;
+      right: 13px;
+      bottom: 9px;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url("images/icons/visible.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 99999;
+      cursor: pointer;
+      &.hide {
+        background-image: url("images/icons/visible-hide.svg");
+      }
+    }
+  }
   .internal-card__price {
     padding-left: 0 !important;
     span {

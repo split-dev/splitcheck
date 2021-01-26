@@ -8,6 +8,11 @@ export default {
       $(this).toggleClass('checkout-card-toggle__active');
     })
 
+    $('.checkout__box-header').click(function() {
+      $(this).next().slideToggle(400);
+      $(this).toggleClass('checkout__box-header--active');
+    })
+
     function toogleFunc(el, elArray) {
       for(let i = 0; i < elArray.length; i++) {
         $(elArray[i]).slideUp();

@@ -35,6 +35,28 @@
   &__box-header {
     margin-top: 40px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+    h5 {
+      margin-bottom: 0 !important;
+    }
+    &--active {
+      svg {
+        transform: rotate(90deg) !important;
+      }
+    }
+
+    svg {
+      transition: 0.4s;
+      margin-left: 20px;
+      transform: rotate(-90deg);
+      path {
+        fill: #335491;
+      }
+    }
   }
   .about-me__info--full {
     @media (max-width: 991px) {
@@ -403,7 +425,6 @@
       }
     }
     .orders__card-top {
-      margin-top: 20px;
       h5 {
         margin-bottom: 20px;
       }

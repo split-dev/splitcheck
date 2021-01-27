@@ -1,4 +1,17 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .blog {
+    .mini-post__title {
+      max-width: 360px;
+    }
+    &-post {
+      .aside-right {
+        width: 43% !important;
+      }
+    }
+    .form-add-comment__img--no-img {
+      top: 0 !important;
+    }
+  }
   .product {
     .features-company__text {
       width: 100%;

@@ -7,6 +7,14 @@
 @import "checkout-el";
 
 .checkout {
+  .mt-25 {
+    margin-top: 25px;
+  }
+  main {
+    .section-content__title {
+      padding-left: 16px;
+    }
+  }
   .card-cvv {
     margin-left: 24px;
   }

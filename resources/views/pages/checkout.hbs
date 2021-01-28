@@ -515,27 +515,149 @@
                                 </div>
                             </div>
 
-                            <div class="checkout__box">
+                            <div class="checkout__box form">
                                 <h5 class="checkout__title">Payment options</h5>
                                 <div class="members__radio ">
-                                    <div class="form-radio">
-                                        <input id="radio-1" class="radio-custom" name="radio-group" type="radio"
-                                            checked="">
-                                        <label for="radio-1" class="radio-custom-label">Internet banking (Pay with
-                                            Poli)</label>
+
+                                    <div class="checkout__members">
+                                        <div class="form-radio">
+                                            <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
+                                            <label for="radio-1" class="radio-custom-label">Internet banking (Pay with
+                                                Poli)</label>
+
+                                        </div>
+                                        <div class="checkout__members-content" style="display: none;">
+                                            <p class="text-gray">Pay with your bank account using Internet Banking. You
+                                                will
+                                                need an Australian bank account to make payment using POLi. Clicking <b
+                                                    class="gray-bold">Pay
+                                                    with POLi</b> will take you to the page where you can complete your
+                                                payment.
+                                            </p>
+                                            <p>How do i pay with POLi?</p>
+
+                                            <ul>
+                                                <li>1. Click on <b>Pay with POLi,</b> you will be redirected to POLi
+                                                    webpage
+                                                </li>
+                                                <li>2. Select your Internet Banking provider and login</li>
+                                                <li>3. Select your preffered account and confirm payment details</li>
+                                                <li>4. Once payment is complete, you will be returned to SplitChek to
+                                                    finalize your order</li>
+                                            </ul>
+                                            <div class="d-flex checkout__members-link">
+                                                <a href="#">Learn more about POLi</a>
+                                                <a href="#">Available banks</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-radio">
-                                        <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
-                                        <label for="radio-2" class="radio-custom-label">Split payment (Share the
-                                            bill)</label>
+                                    <div class="checkout__members">
+                                        <div class="form-radio">
+                                            <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+                                            <label for="radio-2" class="radio-custom-label">Split payment (Share the
+                                                bill)</label>
+                                        </div>
+                                        <div class="checkout__members-content" style="display: none;">
+                                            <p class="text-gray">When you pay via split payment, your order will be on
+                                                pending status for
+                                                72
+                                                hours. If contributions from your connections fail to meet the grand
+                                                total,
+                                                your order will be reversed and money refunded back to the contributors
+                                            </p>
+                                            <a href="#" class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                                <input type="checkbox" id="checkbox-search-parameters-32"
+                                                    class="form__checkbox-orange" name="search-parameters">
+                                                <label for="checkbox-search-parameters-32">
+                                                    Allow the community to contribute to my order
+                                                </label>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="form-radio">
-                                        <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
-                                        <label for="radio-3" class="radio-custom-label">Credit or Debit card</label>
+                                    <div class="checkout__members">
+                                        <div class="form-radio">
+                                            <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+                                            <label for="radio-3" class="radio-custom-label">Credit or Debit card</label>
+                                        </div>
+                                        <div class="checkout__members-content" style="display: none;">
+                                            <div
+                                                class="checked-box card-check form__checkbox-wrap form__checkbox-wrap--custom">
+                                                <input type="checkbox" id="pay-1">
+                                                <label for="pay-1">Pay from my existing card</label>
+                                            </div>
+                                            <form action="#" class="mb-5 form card-form ">
+                                                <div class="form__single form__single--card">
+                                                    <label class="form__label">card number</label>
+                                                    <input type="text" class="form__input" required="">
+                                                    <div class="visible"></div>
+                                                    <span class="form__symbol-pass"></span>
+                                                </div>
+                                                <div class="form__single form__single--select form__single--select-no-image form__single--fluid"
+                                                    style="display: none;">
+                                                    <label class="form__label">card number</label>
+                                                    <select class="form__input" data-toggle="select-no-image"
+                                                        multiple="multiple">
+                                                        <option>1234 5678 1234 5678</option>
+                                                        <option>5678 1234 1234 5678</option>
+                                                        <option>4178 1234 1234 4141</option>
+                                                    </select>
+                                                    <span class="form__symbol-error"></span>
+                                                    <div class="visible"></div>
+                                                    <span class="form__symbol-pass"></span>
+                                                </div>
+                                                <div class="d-flex members-wrap flex-row">
+                                                    <div class="d-flex flex-column">
+
+                                                        <!-- for error add class div form__single - *error* -->
+                                                        <div
+                                                            class="form__single form__single--date form__single--fluid">
+                                                            <label class="form__label">expire date</label>
+                                                            <input type="text" class="form__input flatpickr-input"
+                                                                data-toggle="datepicker" required=""
+                                                                readonly="readonly">
+                                                            <span class="form__symbol-error"></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex flex-column  card-cvv">
+                                                        <label class="form__label">CCN</label>
+                                                        <input class="form__input " placeholder="911" type="text">
+
+                                                        <span class="form__symbol-error"></span>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                            <a href="#" class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                                <input type="checkbox" id="checkbox-search-parameters-36"
+                                                    class="form__checkbox-orange" name="search-parameters">
+                                                <label for="checkbox-search-parameters-36">
+                                                    Save card for later use
+                                                </label>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="form-radio">
-                                        <input id="radio-4" class="radio-custom" name="radio-group" type="radio">
-                                        <label for="radio-4" class="radio-custom-label">Gift Voucher</label>
+
+
+
+                                    <div class="checkout__members">
+                                        <div class="form-radio">
+                                            <input id="radio-4" class="radio-custom" name="radio-group" type="radio">
+                                            <label for="radio-4" class="radio-custom-label">Gift Voucher</label>
+                                        </div>
+                                        <div class="checkout__members-content" style="display: none;">
+                                            <div class="d-flex members-wrap flex-row align-items-end">
+                                                <div class=" d-flex flex-column">
+                                                    <label class="form__label" for="#">Voucher code</label>
+                                                    <input class="form__input small-input" placeholder="23XT456"
+                                                        type="text">
+                                                </div>
+                                                <a href="#" class="btn-orange">Use voucher</a>
+                                            </div>
+                                            <p class="text-gray">
+                                                Only gift vouchers issued by SplitChek can be used
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -551,10 +673,8 @@
                                     class="section-content__title position-relative d-flex align-items-center">Total</span>
                                 <div class="total-box">
                                     <ul class="form total-box__form">
-                                        <li><span class="d-flex">
-                                                <span>Items (4)</span> <span>$ 300.00</span>
-                                            </span>
-
+                                        <li>
+                                            <span>Items (4)</span> <span>$ 300.00</span>
 
                                         </li>
                                         <li><span>Postage</span> <span>Free</span></li>
@@ -725,7 +845,7 @@
                                             afterb
                                             <b> 5 days,</b>it will be reversed.
                                         </p>
-                                        <a href="#" class="btn-orange">Continue shopping</a>
+                                        <a href="#" class="btn-orange">Pay the rest & Confirm Order</a>
                                     </div>
                                 </div>
                             </div>
@@ -754,7 +874,7 @@
                             </div>
 
                             <div class="section-content checkout__bottom-link">
-                                <a href="#" class="btn-border">Pay the rest & Confirm Order</a>
+                                <a href="#" class="btn-border">Continue shopping </a>
                             </div>
 
                         </div>
@@ -838,9 +958,9 @@
                                 </div>
                                 <ul class="form">
                                     <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
-                                        <input type="checkbox" id="checkbox-search-parameters-30"
+                                        <input type="checkbox" id="checkbox-search-parameters-40"
                                             class="form__checkbox-orange" name="search-parameters">
-                                        <label for="checkbox-search-parameters-30">
+                                        <label for="checkbox-search-parameters-40">
                                             Include SplitChek's Community
                                         </label>
                                     </li>
@@ -913,9 +1033,9 @@
                                     <li><span>Postage</span> <span>Free</span></li>
                                     <li><b>Total</b> <span><b>AUD</b><b class="ml-2">$300.00</b></span></li>
                                     <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
-                                        <input type="checkbox" id="checkbox-search-parameters-37"
+                                        <input type="checkbox" id="checkbox-search-parameters-41"
                                             class="form__checkbox-orange" name="search-parameters">
-                                        <label for="checkbox-search-parameters-37">
+                                        <label for="checkbox-search-parameters-41">
                                             Ask family and friends to contribute to this order
                                         </label>
                                     </li>

@@ -7,6 +7,22 @@
 @import "checkout-el";
 
 .checkout {
+  .mb-5 {
+    margin-bottom: 5px !important;
+  }
+  .form__single--select {
+    &::after {
+      content: none !important;
+    }
+  }
+  .aside-right {
+    .scroll-div {
+      margin: 0 !important;
+    }
+    .ss-content {
+      padding-right: 20px !important;
+    }
+  }
   .mt-25 {
     margin-top: 25px;
   }

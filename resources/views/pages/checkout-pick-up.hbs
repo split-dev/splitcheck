@@ -159,7 +159,8 @@
 
                                                 <div class="d-flex flex-column  orders__card-block-2 w-100">
                                                     <div class="d-flex">
-                                                        <a href="#" class="text-blue">Pick-up from store</a>
+                                                        <small>Shipped from:</small>
+                                                        <strong>Coomera - Queensland</strong>
                                                     </div>
                                                     <div class="d-flex">
                                                         <small>Dispatch date:</small>
@@ -243,7 +244,8 @@
                                                 </div>
                                                 <div class="d-flex flex-column  orders__card-block-2 w-100">
                                                     <div class="d-flex">
-                                                        <a href="#" class="text-blue">Pick-up from store</a>
+                                                        <small>Shipped from:</small>
+                                                        <strong>Coomera - Queensland</strong>
                                                     </div>
                                                     <div class="d-flex">
                                                         <small>Dispatch date:</small>
@@ -323,7 +325,8 @@
                                                 </div>
                                                 <div class="d-flex flex-column  orders__card-block-2 w-100">
                                                     <div class="d-flex">
-                                                        <a href="#" class="text-blue">Pick-up from store</a>
+                                                        <small>Shipped from:</small>
+                                                        <strong>Coomera - Queensland</strong>
                                                     </div>
                                                     <div class="d-flex">
                                                         <small>Dispatch date:</small>
@@ -388,25 +391,106 @@
                             </div>
 
                             <div class="checkout__box">
-                                <div class="about-me__box mb-4">
-                                    <div class="d-flex w-100 flex-column align-items-start w-100">
-                                        <div class="about-me__info about-me__info--full">
-                                            <div class="d-flex flex-column">
-                                                <h5 class="checkout__title">Shipping Address</h5>
-                                                <ul>
+                                <div class="store-info__address">
+                                    <h5 class="checkout__title">Shipping address</h5>
+                                    <a href="#" class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                        <input type="checkbox" id="checkbox-1" class="form__checkbox-orange"
+                                            name="search-parameters">
+                                        <label for="checkbox-1">
+                                            Choose from Addressbook
+                                        </label>
+                                    </a>
+                                    <div class="d-flex flex-column checkout__edit-block">
 
-                                                    <li>20 Kohl street</li>
-                                                    <li>Upper Coomera</li>
-                                                    <li>Queensland</li>
-                                                    <li>4209</li>
-                                                    <li>Australia</li>
-                                                </ul>
 
+                                        <div
+                                            class="members-wrap__select  form__single--select form__single--select-default form__single--fluid">
+
+                                            <div class="select-before">
+                                                <select
+                                                    class="form__select form__select--default select2-hidden-accessible"
+                                                    data-toggle="select" data-select2-id="12" tabindex="-1"
+                                                    aria-hidden="true">
+                                                    <option value="#">Main address</option>
+                                                    <option value="#">Main address</option>
+
+
+                                                </select>
                                             </div>
                                         </div>
+                                        <ul>
 
+                                            <li>20 Kohl street</li>
+                                            <li>Upper Coomera</li>
+                                            <li>Queensland</li>
+                                            <li>4209</li>
+                                            <li>Australia</li>
+                                        </ul>
+                                        <a href="#" class="btn-border btn-border--two align-self-end edit"
+                                            id="editInfo">Edit
+                                            address</a>
                                     </div>
+
+                                    <div class="checkout__block">
+                                        <strong class="blue-text">
+                                            Billing address
+                                        </strong>
+                                        <ul class="checkout__ul">
+                                            <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                                <input type="checkbox" id="checkbox-search-parameters-2"
+                                                    class="form__checkbox-orange" name="search-parameters">
+                                                <label for="checkbox-search-parameters-2">
+                                                    Make this my primary shipping address
+                                                </label>
+                                            </li>
+
+                                            <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                                                <input type="checkbox" id="checkbox-search-parameters-3"
+                                                    class="form__checkbox-orange" name="search-parameters">
+                                                <label for="checkbox-search-parameters-3">
+                                                    My billing address is the same
+                                                </label>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="checkout__block">
+                                        <strong class="blue-text">
+                                            Delivery
+                                        </strong>
+                                        <p class="text-gray">
+                                            Set a default delivery instructions if any. This will be passed to
+                                            shipping
+                                            carriers
+                                        </p>
+                                        <div class="d-flex flex-column members__form">
+                                            <label class="form__label">
+                                                Delivery instructions (optional)</label>
+
+                                            <div class="w-100 max-text" data-maxlength="400">
+                                                <textarea maxlength="400" class="form__textarea"
+                                                    placeholder="Write something"></textarea>
+                                                <div class="count"><span>0</span>/<span>400</span></div>
+                                            </div>
+
+
+                                            <span class="form__symbol-error"></span>
+                                        </div>
+                                    </div>
+
+
                                 </div>
+                                <div class="d-flex checkout__links">
+                                    <a href="#" class="btn btn-border">Delete address</a>
+                                    <a href="#" class="btn btn-blue">Save address</a>
+                                </div>
+
+
+
                             </div>
                             <div class="checkout__box">
                                 <div class="about-me__box mb-4">
@@ -461,16 +545,19 @@
 
                                     <div class="checkout__members">
                                         <div class="form-radio">
-                                            <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
+                                            <input id="radio-1" checked class="radio-custom" name="radio-group"
+                                                type="radio">
                                             <label for="radio-1" class="radio-custom-label">Internet banking (Pay with
                                                 Poli)</label>
 
                                         </div>
-                                        <div class="checkout__members-content" style="display: none;">
+                                        <div class="checkout__members-content">
                                             <p class="text-gray">Pay with your bank account using Internet Banking. You
                                                 will
-                                                need an Australian bank account to make payment using POLi. Clicking Pay
-                                                with POLi will take you to the page where you can complete your payment.
+                                                need an Australian bank account to make payment using POLi. Clicking <b
+                                                    class="gray-bold">Pay
+                                                    with POLi</b> will take you to the page where you can complete your
+                                                payment.
                                             </p>
                                             <p>How do i pay with POLi?</p>
 
@@ -496,7 +583,8 @@
                                                 bill)</label>
                                         </div>
                                         <div class="checkout__members-content" style="display: none;">
-                                            <p>When you pay via split payment, your order will be on pending status for
+                                            <p class="text-gray">When you pay via split payment, your order will be on
+                                                pending status for
                                                 72
                                                 hours. If contributions from your connections fail to meet the grand
                                                 total,
@@ -610,11 +698,7 @@
                                     class="section-content__title position-relative d-flex align-items-center">Total</span>
                                 <div class="total-box">
                                     <ul class="form total-box__form">
-                                        <li><span class="d-flex">
-                                                <span>Items (4)</span> <span>$ 300.00</span>
-                                            </span>
-
-
+                                        <li> <span>Items (4)</span> <span>$ 300.00</span>
                                         </li>
                                         <li><span>Postage</span> <span>Free</span></li>
                                         <li class="flex-column">
@@ -786,7 +870,7 @@
                                             afterb
                                             <b> 5 days,</b>it will be reversed.
                                         </p>
-                                        <a href="#" class="btn-orange">Continue shopping</a>
+                                        <a href="#" class="btn-orange">Pay the rest & Confirm Order</a>
                                     </div>
                                 </div>
                             </div>
@@ -815,7 +899,7 @@
                             </div>
 
                             <div class="section-content checkout__bottom-link">
-                                <a href="#" class="btn-border">Pay the rest & Confirm Order</a>
+                                <a href="#" class="btn-border">Continue shopping</a>
                             </div>
 
                         </div>
@@ -899,9 +983,9 @@
                                 </div>
                                 <ul class="form">
                                     <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
-                                        <input type="checkbox" id="checkbox-search-parameters-30"
+                                        <input type="checkbox" id="checkbox-search-parameters-40"
                                             class="form__checkbox-orange" name="search-parameters">
-                                        <label for="checkbox-search-parameters-30">
+                                        <label for="checkbox-search-parameters-40">
                                             Include SplitChek's Community
                                         </label>
                                     </li>
@@ -974,9 +1058,9 @@
                                     <li><span>Postage</span> <span>Free</span></li>
                                     <li><b>Total</b> <span><b>AUD</b><b class="ml-2">$300.00</b></span></li>
                                     <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
-                                        <input type="checkbox" id="checkbox-search-parameters-37"
+                                        <input type="checkbox" id="checkbox-search-parameters-41"
                                             class="form__checkbox-orange" name="search-parameters">
-                                        <label for="checkbox-search-parameters-37">
+                                        <label for="checkbox-search-parameters-41">
                                             Ask family and friends to contribute to this order
                                         </label>
                                     </li>

@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper/swiper-bundle';
 import 'bootstrap/js/dist/modal';
+
+
 export default {
   init() {
     $('.checkout-card-toggle').click(function() {
@@ -45,6 +47,7 @@ export default {
     }
   }
   function initNumber(number, element) {
+    console.log(number, element);
     let allSlide = $(element).find($('.swiper-slide')).length;
     let counter = Math.floor(number);
     let countUser = allSlide - counter;
@@ -54,7 +57,7 @@ export default {
   
   }
   
-  if($('.checkout-connections__slider').hasClass('checkout-connections__slider')) {
+  if(document.querySelector('.checkout-connections__slider')) {
  
     const optionForTimelineFamily = {
       slidesPerView: 2,
@@ -93,7 +96,7 @@ export default {
         },
       },
     }
-    let swiperTimelineFamily = new Swiper('.checkout__slider.swiper-container', optionForTimelineFamily);
+    let swiperTimelineFamily = new Swiper('.checkout__slider', optionForTimelineFamily);
     let activeSlide = 0;
     swiperTimelineFamily.on('slideChange', function(event){
       if(activeSlide > swiperTimelineFamily.activeIndex) {
@@ -107,61 +110,14 @@ export default {
   }
 
 
-
-
-
-
-    
-
-       //password hide
-       $('.visible').click( function () {
-        if ($(this).prev().attr('type') === 'password') {
-          $(this).prev().attr('type', 'text');
-        } else {
-          $(this).prev().attr('type', 'password');
-        }
-      });
-     
-      // if (('.checkout__slider-container').hasClass('checkout__slider-container')) {
-      //   var swiper = new Swiper('.checkout__slider .swiper-container', {
-      //       slidesPerView: 2,
-      //       spaceBetween: 8,
-      //       setWrapperSize: false,
-      //       simulateTouch: false,
-      //       preventInteractionOnTransition: true,
-      //       mousewheel: true,
-      //       navigation: {
-      //         nextEl: '.checkout__slider-container .swiper-button-next',
-      //         prevEl: '.checkout__slider-container .swiper-button-prev',
-      //       },
-      //       breakpoints: {
-      //           1260: {
-      //             slidesPerView: 2,
-      //           },
-      //           992: {
-      //             slidesPerView: 2,
-      //             // freeMode: true,
-      //           },
-      //           360: {
-      //             slidesPerView: 3,
-      //           },
-      //           250: {
-      //             slidesPerView: 3,
-      //             setWrapperSize: false,
-      //             simulateTouch: false,
-      //             preventInteractionOnTransition: true,
-      //             mousewheel: true,
-      //             // freeMode: true,
-      //           },
-      //         },
-      //         on: {
-      //           init: function (event) {
-      //             initNumber(event.params.slidesPerView, $(event.el).parent());
-      //           },
-      //         },
-      //     });
-      // }
-      
+  //password hide
+  $('.visible').click( function () {
+  if ($(this).prev().attr('type') === 'password') {
+    $(this).prev().attr('type', 'text');
+  } else {
+    $(this).prev().attr('type', 'password');
+  }
+});
       
   },
 

@@ -49,16 +49,13 @@
       "./styles/components/modals/modal-check.scss",
       "./styles/components/modals/modal-recurrent.scss",
       "./styles/components/modals/modal-blog.scss",
-      "./styles/components/modals/modals-delete-info.scss",
       "./styles/components/modals/modal-add-timeline-dashboard.scss",
       "./styles/components/modals/modal-give-discount.scss",
       "./styles/components/modals/modal-create-product.scss",
       "./styles/components/modals/modal-availability.scss",
       "./styles/components/modals/modals-brand-and-category.scss",
       "./styles/components/modals/modal-order-status.scss",
-      "./styles/components/modals/modal-edit-location.scss",
-      "./styles/components/modals/modal-save-store.scss",
-      "./styles/components/modals/modal-edit-option.scss"
+      "./styles/components/modals/modal-save-store.scss"
     ],
 
     "pages/landing": "./styles/pages/landing/index.scss",
@@ -104,16 +101,13 @@
     "components/modals/modal-invite": "./styles/components/modals/modal-invite.scss",
     "components/modals/modal-unlink": "./styles/components/modals/modal-unlink.scss",
     "components/modals/modal-check": "./styles/components/modals/modal-check.scss",
-    "components/modals/modals-delete-info": "./styles/components/modals/modals-delete-info.scss",
     "components/modals/modal-give-discount": "./styles/components/modals/modal-give-discount.scss",
     "components/modals/modal-create-product": "./styles/components/modals/modal-create-product.scss",
     "components/modals/modal-availability": "./styles/components/modals/modal-availability.scss",
     "components/modals/modals-brand-and-category": "./styles/components/modals/modals-brand-and-category.scss",
     "components/modals/modal-give-discount.scss": "./styles/components/modals/modal-give-discount.scss",
     "components/modals/modal-order-status.scss": "./styles/components/modals/modal-order-status.scss",
-    "components/modals/modal-edit-location.scss": "./styles/components/modals/modal-edit-location.scss",
-    "components/modals/modal-save-store.scss": "./styles/components/modals/modal-save-store.scss",
-    "components/modals/modal-edit-option": "./styles/components/modals/modal-edit-option.scss"
+    "components/modals/modal-save-store.scss": "./styles/components/modals/modal-save-store.scss"
   },
   "publicPath": "/",
   "proxyUrl": "http://localhost:3000",

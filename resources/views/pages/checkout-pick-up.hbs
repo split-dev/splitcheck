@@ -7,7 +7,102 @@
 
 <body class="checkout home  cart ">
     {{> ../common/mobile-menu }}
-    {{> ../common/mobile-menu-bottom }}
+    <div class="menu-bottom">
+        <div class="options-cart">
+            <div class="options-cart__head">
+                <div class="total-box">
+                    <ul class="form total-box__form">
+                        <li> <span>Items (4)</span> <span>$ 300.00</span>
+                        </li>
+                        <li><span>Postage</span> <span>Free</span></li>
+                        <li class="flex-column">
+                            <div class="d-flex w-100 justify-content-between"><b>Total</b>
+                                <span><b>AUD</b><b class="ml-2">$300.00</b></span>
+                            </div>
+                            <small class="w-100 d-flex justify-content-end small-include">GST
+                                included</small>
+                        </li>
+                        <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
+                            <input type="checkbox" id="checkbox-search-parameters-27" class="form__checkbox-orange"
+                                name="search-parameters">
+                            <label for="checkbox-search-parameters-27">
+                                Ask family and friends to contribute to this order
+                            </label>
+                        </li>
+                    </ul>
+                    <span class="earn">Earn 184.00 SplitChek points <i class="icon icon-help orange ml-2"></i></span>
+                    <a href="#" data-toggle="modal" data-target="#order-sent" class="btn btn-orange">CheckOut
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="menu-bottom__list list-unstyled mb-0">
+                <li class="menu-bottom__item">
+                    <a href="index.html" class="menu-bottom__link">
+                        <img src="images/icons/home-y.svg" alt="home">
+                        <span>home</span>
+                    </a>
+                </li>
+                <li class="menu-bottom__item">
+                    <a href="#" class="menu-bottom__link">
+                        <img src="images/icons/star-y.svg" alt="home">
+                        <span>wishlist</span>
+                    </a>
+                </li>
+                <li class="menu-bottom__item active">
+                    <a href="#" data-toggle="modal" data-target="#cart" class="menu-bottom__link">
+                        <img src="images/icons/cart-y.svg" alt="home">
+                        <span>cart</span>
+                    </a>
+                </li>
+                <li class="menu-bottom__item">
+                    <a href="shop.html?param=val&data=shop-another" class="menu-bottom__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g>
+                                <g>
+                                    <g />
+                                    <g>
+                                        <path fill="#315293"
+                                            d="M2 9V2h7v-.01l9 9-7 7.02zm17.41.58l-9-9C10.05.22 9.55 0 9 0H2C.9 0 0 .9 0 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#315293" d="M4.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>shop for</span>
+                    </a>
+                </li>
+
+                <li class="menu-bottom__item">
+                    <a href="#menu-mobile--not-shop" data-toggle="modal" data-target="#menu-mobile--not-shop"
+                        class="menu-bottom__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="4" viewBox="0 0 16 4">
+                            <g>
+                                <g transform="rotate(90 8 2)">
+                                    <g />
+                                    <g>
+                                        <path fill="#335491"
+                                            d="M10 8c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm0-6c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zM6-4c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>other</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
     <div class="section-blur theme-background-one" data-class="blue" id="background">
         <header class="header">
             <div class="container">
@@ -691,7 +786,7 @@
 
                     </main>
                     <!-- /main -->
-                    <aside class="aside-right d-none d-lg-block">
+                    <aside class="aside-right d-lg-block">
                         <div class="scroll-div">
                             <div class="section-content section-desctop">
                                 <span
@@ -732,7 +827,7 @@
                                     the
                                     bill</span>
                                 <div class="total-box total-box__last">
-                                    <span class="d-flex justify-content-center section-content__title">The following
+                                    <span class="d-flex justify-content-start section-content__title">The following
                                         have access to this
                                         item</span>
                                     <div class="checkout__container">
@@ -906,179 +1001,6 @@
                         </div>
                     </aside>
 
-
-                    <aside class="aside-mobile  d-lg-none">
-                        <div class="section-content  ">
-                            <span class="section-content__title position-relative d-flex align-items-center">Split
-                                the
-                                bill</span>
-                            <div class="total-box total-box__last">
-                                <span class="d-flex justify-content-center section-content__title">The following have
-                                    access to this
-                                    item</span>
-                                <div class="checkout__container">
-                                    <div class="wishlist-box__left">
-
-                                        <div
-                                            class="connections__select connections__select--store-slide d-flex flex-column">
-                                            <div class="d-flex">
-                                                <div class="connections__add align-items-center">
-                                                    <a href="#">
-                                                        <img src="images/profiles/add.svg" alt="avatar">
-                                                    </a>
-                                                </div>
-                                                <div
-                                                    class="checkout-connections__slider connections__slider position-relative">
-                                                    <span class="count-slider" data-count="3"></span>
-                                                    <div class="swiper-container checkout__slider">
-                                                        <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                                <a href="#"
-                                                                    class="card-timeline__link card-timeline__link--contact">
-                                                                    <img src="images/wishlist/girl-in-yellow.png"
-                                                                        alt="avatar">
-
-                                                                    <span></span>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <a href="#"
-                                                                    class="card-timeline__link card-timeline__link--contact ">
-                                                                    <img src="images/wishlist/afro-girl.png"
-                                                                        alt="avatar">
-                                                                    <span></span>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <a href="#"
-                                                                    class="card-timeline__link card-timeline__link--contact">
-                                                                    <img src="images/wishlist/girl.png" alt="avatar">
-                                                                    <span></span>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <a href="#"
-                                                                    class="card-timeline__link card-timeline__link--contact">
-                                                                    <img src="images/profiles/user-1.png" alt="avatar">
-                                                                    <span>JS</span>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <a href="#"
-                                                                    class="card-timeline__link card-timeline__link--contact">
-                                                                    <img src="images/profiles/user-1.png" alt="avatar">
-                                                                    <span>JS</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-button-prev"></div>
-                                                    <div class="swiper-button-next"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                    </div>
-
-                                </div>
-                                <ul class="form">
-                                    <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
-                                        <input type="checkbox" id="checkbox-search-parameters-40"
-                                            class="form__checkbox-orange" name="search-parameters">
-                                        <label for="checkbox-search-parameters-40">
-                                            Include SplitChek's Community
-                                        </label>
-                                    </li>
-                                </ul>
-                                <div class="checkout__contributed">
-                                    <span>Contributed</span>
-                                    <ul>
-                                        <li><a href="#" class="card-timeline__link card-timeline__link--contact ">
-                                                <img src="images/wishlist/girl-in-yellow.png" alt="avatar">
-                                                <span>JS</span>
-                                            </a></li>
-                                        <li><a href="#" class="card-timeline__link card-timeline__link--contact ">
-                                                <img src="images/wishlist/girl.png" alt="avatar">
-                                                <span>JS</span>
-                                            </a></li>
-
-                                    </ul>
-
-                                </div>
-
-                                <div class="checkkout__price">
-                                    <div class="d-flex justify-content-between">
-                                        <span><b>Total:</b></span>
-                                        <span class=" w-100 d-flex justify-content-end"><b>AUD</b><b
-                                                class="last-b">$300.00</b></span>
-                                    </div>
-                                    <small class="d-flex justify-content-end">GST included</small>
-                                </div>
-                                <div class="checkout__pay">
-                                    <ul>
-                                        <li class="d-flex justify-content-between">
-                                            <span><b>Pledged:</b></span>
-                                            <span class=" w-100 d-flex justify-content-end"><b>AUD</b><b
-                                                    class="last-b">$20.00</b></span>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <span><b>Paid::</b></span>
-                                            <span class=" w-100 d-flex justify-content-end"><b>AUD</b><b
-                                                    class="last-b">$0.00</b></span>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <span><b class="text-blue">Balance::</b></span>
-                                            <span class=" w-100 d-flex justify-content-end"><b
-                                                    class="text-blue">AUD</b><b
-                                                    class="last-b text-blue">$100.00</b></span>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <span><b class="text-orange">Remaining::</b></span>
-                                            <span class=" w-100 d-flex justify-content-end"><b
-                                                    class="text-orange">AUD</b><b
-                                                    class="text-orange last-b">$29.99</b></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="checkout__right-bottom">
-                                    <p>You have up to 5 days to pay any remaining balances. If order is not paid
-                                        afterb
-                                        <b> 5 days,</b>it will be reversed.
-                                    </p>
-                                    <a href="#" class="btn-orange">Pay the rest & Confirm Order</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-content section-mobile">
-                            <span
-                                class="section-content__title position-relative d-flex align-items-center">Total</span>
-                            <div class="total-box">
-                                <ul class="form">
-                                    <li><span>Items (4)</span> <span>$ 300.00</span></li>
-                                    <li><span>Postage</span> <span>Free</span></li>
-                                    <li><b>Total</b> <span><b>AUD</b><b class="ml-2">$300.00</b></span></li>
-                                    <li class="form__checkbox-wrap form__checkbox-wrap--custom ">
-                                        <input type="checkbox" id="checkbox-search-parameters-41"
-                                            class="form__checkbox-orange" name="search-parameters">
-                                        <label for="checkbox-search-parameters-41">
-                                            Ask family and friends to contribute to this order
-                                        </label>
-                                    </li>
-                                </ul>
-                                <span class="earn">Earn 184.00 SplitChek points <i
-                                        class="icon icon-help orange ml-2"></i></span>
-                                <a href="#" data-toggle="modal" data-target="#order-sent"
-                                    class="btn btn-orange">CheckOut
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="section-content checkout__bottom-link">
-                            <a href="#" class="btn-border">Continue shopping</a>
-                        </div>
-                    </aside>
                 </div>
 
             </div>

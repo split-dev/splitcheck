@@ -7,6 +7,11 @@
 @import "checkout-el";
 
 .checkout {
+  .about-me__info-ul {
+    ul {
+      margin-left: 16px;
+    }
+  }
   .mb-5 {
     margin-bottom: 5px !important;
   }
@@ -15,7 +20,11 @@
       content: none !important;
     }
   }
-  .aside-right {
+  .aside-right,
+  .aside-mobile {
+    .connections__slider {
+      max-width: 130px !important;
+    }
     .scroll-div {
       margin: 0 !important;
     }

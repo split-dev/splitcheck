@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="328px" height="72px" viewBox="0 0 328 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <defs>
+        <path d="M328,0 L328.000686,18.0004278 C327.958928,18.0001428 327.917137,18 327.875312,18 C317.937718,18 309.881706,26.0588745 309.881706,36 C309.881706,45.9411255 317.937718,54 327.875312,54 L328,53.999 L328,72 L-5.96855898e-13,72 L-7.35411732e-13,54 L-7.35411732e-13,54 C9.93759405,54 17.9936057,45.9411255 17.9936057,36 C17.9936057,26.0588745 9.93759405,18 -7.35411732e-13,18 L-5.96855898e-13,0 L328,0 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="328.000686" height="72" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.05" stroke-dasharray="6">
+        <g id="product" transform="translate(-16.000000, -2378.000000)" fill="#4FCEC4" stroke="#4FCEC5" stroke-width="2">
+            <g id="1-item-+-variants" transform="translate(0.000000, 2356.000000)">
+                <g id="Group-21" transform="translate(16.000000, 22.000000)">
+                    <use id="Combined-Shape" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

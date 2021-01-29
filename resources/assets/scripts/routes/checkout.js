@@ -30,9 +30,8 @@ export default {
       }
       
     });
-
-  //timeline-global
-  function countSlide(el, direction) {
+   //timeline-global
+   function countSlide(el, direction) {
     let element = $(el).find($('.count-slider'));
     let countElement = Number($(element).attr('data-count'))
     if(direction == 'next') {
@@ -45,7 +44,18 @@ export default {
       $(element).text('+' + countElement)
     }
   }
-  if($('.checkout__slider')) {
+  function initNumber(number, element) {
+    let allSlide = $(element).find($('.swiper-slide')).length;
+    let counter = Math.floor(number);
+    let countUser = allSlide - counter;
+   $(element).find($('.count-slider')).attr('data-count', countUser);
+   $(element).find($('.count-slider')).text('+'+ countUser);
+    
+  
+  }
+  
+  if($('.checkout-connections__slider').hasClass('checkout-connections__slider')) {
+ 
     const optionForTimelineFamily = {
       slidesPerView: 2,
       spaceBetween: 8,
@@ -54,22 +64,22 @@ export default {
       preventInteractionOnTransition: true,
       mousewheel: true,
       navigation: {
-        nextEl: '.checkout__slider-container .swiper-button-next',
-        prevEl: '.checkout__slider-container .swiper-button-prev',
+        nextEl: '.checkout-connections__slider .swiper-button-next',
+        prevEl: '.checkout-connections__slider .swiper-button-prev',
       },
       breakpoints: {
         1260: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
         992: {
           slidesPerView: 2,
           // freeMode: true,
         },
         360: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
         250: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           setWrapperSize: false,
           simulateTouch: false,
           preventInteractionOnTransition: true,
@@ -83,7 +93,7 @@ export default {
         },
       },
     }
-    let swiperTimelineFamily = new Swiper('.checkout__slider .swiper-container', optionForTimelineFamily);
+    let swiperTimelineFamily = new Swiper('.checkout__slider.swiper-container', optionForTimelineFamily);
     let activeSlide = 0;
     swiperTimelineFamily.on('slideChange', function(event){
       if(activeSlide > swiperTimelineFamily.activeIndex) {
@@ -101,22 +111,16 @@ export default {
 
 
 
-    function initNumber(number, element) {
-        let allSlide = $(element).find($('.swiper-slide')).length;
-        let counter = Math.floor(number);
-        let countUser = allSlide - counter;
-       $(element).find($('.count-slider')).attr('data-count', countUser);
-       $(element).find($('.count-slider')).text('+'+ countUser);
-        
+    
+
        //password hide
-      $('.show').click( function () {
+       $('.visible').click( function () {
         if ($(this).prev().attr('type') === 'password') {
           $(this).prev().attr('type', 'text');
         } else {
           $(this).prev().attr('type', 'password');
         }
       });
-      }
      
       // if (('.checkout__slider-container').hasClass('checkout__slider-container')) {
       //   var swiper = new Swiper('.checkout__slider .swiper-container', {

@@ -3,6 +3,35 @@
 @import "../../bootstrap-utils";
 
 .modal-blog {
+  .ss-content {
+    @media (max-width: 420px) {
+      padding-left: 0;
+    }
+  }
+  .sckroll-div {
+    @media (max-width: 575px) {
+      margin-right: 0;
+      margin-left: -15px;
+    }
+  }
+  .all-coupon {
+    .coupon {
+      .btn-copy {
+        margin-top: 0;
+        @media (max-width: 420px) {
+          margin-right: 20px;
+        }
+        @media (max-width: 360px) {
+          margin-right: 8px;
+        }
+      }
+      &:before {
+        @media (max-width: 420px) {
+          content: url("images/blog/dashed-small.svg") !important;
+        }
+      }
+    }
+  }
   &__btn {
     position: relative;
     display: flex;
@@ -55,7 +84,8 @@
   }
   .slider-coupon__container {
     position: relative;
-    .swiper-container {
+    margin-right: 24px;
+    .swiper-slide {
       max-width: 486px;
     }
     .swiper-button-prev,

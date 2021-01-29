@@ -130,9 +130,22 @@
       color: #f77d0e !important;
       font-weight: 500;
     }
+    .main-item {
+      margin-right: 35px;
+      @media (max-width: 991px) {
+        margin-right: 0;
+      }
+    }
     .aside-right {
       top: 135px !important;
-      width: 31% !important;
+      width: 29% !important;
+      margin: 0 !important;
+      .ss-content {
+        overflow-x: hidden;
+      }
+      .section-content {
+        padding-left: 0 !important;
+      }
       .section-content__title {
         margin-left: 16px;
       }

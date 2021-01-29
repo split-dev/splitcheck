@@ -57,15 +57,13 @@ $('.toggle-btn').click(function() {
         blogSlider.slideNext()
       });
   }
+  
 
   if($('.slider-coupon__container').hasClass('slider-coupon__container')) {
-    let couponSlider = new Swiper('.coupon__slider .swiper-container', {
-        slidesPerView: 'auto',
+    let couponSlider = new Swiper('.coupon__slider.swiper-container', {
+        slidesPerView: '1',
         spaceBetween: 12,
-        navigation: {
-          nextEl: '.internal-card__slider .swiper-button-next',
-          prevEl: '.internal-card__slider .swiper-button-prev',
-        },
+       
         breakpoints: {
           
             991: {
@@ -91,7 +89,10 @@ $('.toggle-btn').click(function() {
       e.preventDefault();
       couponSlider.slideNext()
     });
+    
 }
+
+
 
 if($('.blog-main__mobile-section').hasClass('blog-main__mobile-section')) {
   let blogMobile = new Swiper('.blog-main__mobile-slider.swiper-container', {

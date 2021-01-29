@@ -145,7 +145,7 @@
       border-radius: 8px;
     }
     .connections__select {
-      margin-top: 35px;
+      margin-top: 15px;
     }
     &__last {
       .section-content__title {
@@ -292,6 +292,16 @@
     background: none;
   }
   &__members {
+    .card-form {
+      .select2-container--default {
+        &::after {
+          position: absolute;
+          right: 15px;
+          top: 8px;
+          content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMTMgOCI+PGc+PGc+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTlhOWM5IiBzdHJva2UtbWl0ZXJsaW1pdD0iMjAiIGQ9Ik0xIDF2MGw1LjkxNiA2djBMMTMgMXYwIi8+PC9nPjwvZz48L3N2Zz4=");
+        }
+      }
+    }
     .members-wrap {
       margin-bottom: 20px;
       max-width: 344px;

@@ -1,4 +1,11 @@
 .checkout {
+  .checkout__block {
+    textarea {
+      @media (max-width: 575px) {
+        padding-left: 8px;
+      }
+    }
+  }
   .form-radio__active {
     &::after {
       transform: rotate(180deg);
@@ -410,6 +417,9 @@
     box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
     border-radius: 8px;
     background-color: #fff;
+    @media (max-width: 575px) {
+      padding: 24px 15px 10px 15px;
+    }
 
     .btn-border,
     .btn-blue,

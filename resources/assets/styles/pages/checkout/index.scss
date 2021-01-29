@@ -333,6 +333,9 @@
       @media (max-width: 575px) {
         padding: 24px 16px !important;
       }
+      > .section-content__title {
+        white-space: nowrap;
+      }
     }
     .section-content:not(.section-desctop) {
       @media (max-width: 575px) {

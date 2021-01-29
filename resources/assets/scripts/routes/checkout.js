@@ -47,7 +47,6 @@ export default {
     }
   }
   function initNumber(number, element) {
-    console.log(number, element);
     let allSlide = $(element).find($('.swiper-slide')).length;
     let counter = Math.floor(number);
     let countUser = allSlide - counter;

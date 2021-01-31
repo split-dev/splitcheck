@@ -1,6 +1,13 @@
 .blog {
+  #blog-user {
+    .modal-dialog {
+      @media (max-width: 575px) {
+        margin: 0 !important;
+      }
+    }
+  }
   .header__left {
-    @media (max-width: 1199px) {
+    @media (max-width: 1260px) {
       max-width: 175px;
     }
   }

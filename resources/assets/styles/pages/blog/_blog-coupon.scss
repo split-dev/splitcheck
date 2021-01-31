@@ -1,4 +1,21 @@
 .coupons {
+  .header__search {
+    width: 100%;
+  }
+  .modal-menu-mobile {
+    .other-links__list {
+      li {
+        &:nth-child(2) {
+          i {
+            background-image: url("images/icons/social-media-orange.svg");
+          }
+          span {
+            color: #f77d0e !important;
+          }
+        }
+      }
+    }
+  }
   @media (max-width: 575px) {
     padding-top: 20px;
   }
@@ -8,11 +25,14 @@
       margin-left: 16px;
     }
   }
-  .container {
-    @media (max-width: 575px) {
-      padding: 0 !important;
+  &-content {
+    .container {
+      @media (max-width: 575px) {
+        padding: 0 !important;
+      }
     }
   }
+
   .main-content {
     @media (max-width: 991px) {
       padding-top: 0 !important;
@@ -139,6 +159,7 @@
         height: 80px;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
 
         p {
           color: #fff;

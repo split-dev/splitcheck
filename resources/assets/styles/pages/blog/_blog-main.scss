@@ -1,4 +1,11 @@
 .blog {
+  .footer {
+    .container {
+      @media (max-width: 575px) {
+        padding: 0 15px !important;
+      }
+    }
+  }
   .section-toggle {
     margin-bottom: 15px;
     .blog-main__search {
@@ -364,6 +371,12 @@
       position: relative;
       @media (max-width: 991px) {
         background-position-x: right;
+      }
+      @media (max-width: 576px) {
+        background-size: 218%;
+      }
+      @media (max-width: 400px) {
+        background-size: 250%;
       }
     }
     &__gifts {

@@ -126,6 +126,17 @@
     .total-box__form {
       margin-top: 0 !important;
     }
+    .total-box__last {
+      .section-content__title {
+        @media (max-width: 1200px) {
+          white-space: normal !important;
+          padding-bottom: 30px;
+        }
+        @media (max-width: 991px) {
+          padding-bottom: 0;
+        }
+      }
+    }
   }
   main {
     @media (max-width: 991px) {

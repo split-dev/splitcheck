@@ -398,6 +398,9 @@
   }
   &__edit-block {
     position: relative;
+    ul {
+      margin-left: 16px;
+    }
   }
   .section-desctop {
     @media (max-width: 991px) {

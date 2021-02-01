@@ -1,4 +1,11 @@
 .checkout {
+  .total-box {
+    .earn {
+      @media (max-width: 383px) {
+        margin-top: 20px;
+      }
+    }
+  }
   &__hide-mobile {
     margin-left: 106px;
   }

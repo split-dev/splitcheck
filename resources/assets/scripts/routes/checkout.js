@@ -20,16 +20,19 @@ export default {
         $(elArray[i]).slideUp();
       }
       $(el).slideDown();
+     
     }
  
     $('.checkout__members').click(function() {
-      $(this).toggleClass('form-radio__active')
+      $('.checkout__members').removeClass('form-radio__active');
+      $(this).toggleClass('form-radio__active');
       if(!$(this).find($('.radio-custom')).prop('checked')) {
+       
         let elemThis = $(this).find($('.checkout__members-content'))
         let arrayThis = $(this).parent().find($('.checkout__members-content'));
       
         toogleFunc(elemThis, arrayThis)
-      }
+      } 
       
     });
    //timeline-global

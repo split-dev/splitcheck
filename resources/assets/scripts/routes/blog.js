@@ -17,6 +17,14 @@ if($('.tabs-blog').hasClass('tabs-blog')) {
   window.onresize = resize;
 }
 
+  //store-link mobile scroll
+  if($('.store-link').hasClass('store-link')) {
+    if(window.innerWidth < 575) {
+      let width = window.innerWidth;
+      $('.store-link ul').css('width', width + 'px')
+    }
+  }
+
 $('.toggle-btn').click(function() {
   $(this).prev().slideToggle(400);
   $(this).toggleClass('toggle-btn-reverte');

@@ -49,6 +49,9 @@
     padding-bottom: 90px;
     position: relative;
     display: flex;
+    @media (max-width: 991px) {
+      padding-top: 0;
+    }
     &-before {
       position: absolute;
       left: 20px;
@@ -121,6 +124,11 @@
     }
   }
   &-main {
+    .aside-right {
+      .sction-content {
+        margin-bottom: 16px;
+      }
+    }
     .recomend {
       &:after {
         @media (max-width: 1260px) {
@@ -178,7 +186,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        top: 45%;
+        top: 160px;
         width: 32px;
         height: 32px;
         box-shadow: 2px 2px 4px 1px rgba(11, 2, 18, 0.08);
@@ -189,7 +197,9 @@
         display: block;
       }
     }
-
+    .big-post__top {
+      max-width: 100% !important;
+    }
     .search-mob-none {
       @media (max-width: 991px) {
         display: none !important;
@@ -277,6 +287,8 @@
       }
     }
     &__mobile-slider {
+      padding-bottom: 250px;
+
       .blog-post__card,
       .big-post__top {
         @media (max-width: 575px) {

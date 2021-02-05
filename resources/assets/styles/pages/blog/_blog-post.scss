@@ -76,6 +76,10 @@
     }
   }
   &-post {
+    small.text-gray {
+      display: flex;
+      align-items: center;
+    }
     .big-post__top {
       margin-right: 15px;
       height: 200px !important;
@@ -154,7 +158,7 @@
       width: 29% !important;
       margin: 0 !important;
       @media (max-width: 1200px) {
-        width: 33.5% !important;
+        width: 29.5% !important;
       }
       .ss-content {
         overflow-x: hidden;

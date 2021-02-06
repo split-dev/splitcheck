@@ -1,11 +1,4 @@
 .blog {
-  .footer {
-    .container {
-      @media (max-width: 575px) {
-        padding: 0 15px !important;
-      }
-    }
-  }
   .section-toggle {
     margin-bottom: 15px;
     .blog-main__search {
@@ -125,6 +118,9 @@
   }
   &-main {
     .aside-right {
+      .blog-main__table {
+        margin-bottom: 16px;
+      }
       .sction-content {
         margin-bottom: 16px;
       }
@@ -335,7 +331,8 @@
         margin-bottom: 40px;
         margin-top: 40px;
         @media (max-width: 991px) {
-          max-width: 140px !important;
+          max-width: 160px !important;
+          max-height: 254px !important;
         }
         img {
           width: 100%;
@@ -347,18 +344,42 @@
         height: 100%;
       }
     }
+
     .blog__products {
       margin-top: 30px !important;
       .big-post__top {
         height: 100% !important;
         position: relative;
+        margin-right: 16px;
+        @media (max-width: 991px) {
+          height: 296px !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         .profile-list__avatar {
           position: absolute;
           left: 5px;
           top: 5px;
         }
+        .big-post__img {
+          max-width: 100px !important;
+          max-height: 170px !important;
+          width: 100%;
+
+          @media (max-width: 991px) {
+            max-width: 120px !important;
+            max-height: 210px !important;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
     }
+
     &__search {
       display: flex;
       width: 100% !important;

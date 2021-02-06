@@ -160,6 +160,14 @@
       @media (max-width: 1200px) {
         width: 29.5% !important;
       }
+      .big-post__top {
+        height: 100% !important;
+      }
+      .big-post__img {
+        max-width: 125px;
+        height: 230px;
+        margin-bottom: 15px;
+      }
       .ss-content {
         overflow-x: hidden;
       }

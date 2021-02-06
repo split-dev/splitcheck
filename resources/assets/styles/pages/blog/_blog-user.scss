@@ -41,6 +41,38 @@
   &-user {
     .blog__products-user {
       margin-top: 12px;
+      .big-post__top {
+        height: 100% !important;
+        position: relative;
+        margin-right: 16px;
+        @media (max-width: 991px) {
+          margin-right: 0;
+          height: 296px !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .profile-list__avatar {
+          position: absolute;
+          left: 5px;
+          top: 5px;
+        }
+        .big-post__img {
+          max-width: 100px !important;
+          max-height: 170px !important;
+          width: 100%;
+          margin-bottom: 16px;
+          @media (max-width: 991px) {
+            max-width: 120px !important;
+            max-height: 210px !important;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
     }
     .aside-right {
       padding-left: 30px;
@@ -113,6 +145,24 @@
       }
       .blog-main__recomended {
         max-width: 100%;
+        .big-post__img {
+          max-width: 200px;
+          width: 100%;
+          margin-bottom: 40px;
+          margin-top: 40px;
+          @media (max-width: 991px) {
+            max-width: 160px !important;
+            max-height: 254px !important;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .big-post__top {
+          max-width: 508px;
+          height: 100%;
+        }
       }
       .big-post {
         margin-bottom: 30px;

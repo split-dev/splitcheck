@@ -41,6 +41,12 @@
   &-user {
     .blog__products-user {
       margin-top: 12px;
+      .product-post {
+        @media (max-width: 575px) {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
       .big-post__top {
         height: 100% !important;
         position: relative;

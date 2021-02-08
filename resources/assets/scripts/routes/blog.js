@@ -7,6 +7,17 @@ import PerfectScrollbar from 'perfect-scrollbar';
 export default {
   init() {
 
+
+ //* sort-box selected element
+ {
+  $('.sort-box').on('click', 'a', function(e) {
+    e.preventDefault();
+    $('.sort-box li').removeClass('active');
+    $(this).parent().addClass('active');
+  })
+}
+
+
 //scroll horizontal
 function resize() {
   ps.update();

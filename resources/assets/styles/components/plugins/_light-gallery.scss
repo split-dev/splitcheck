@@ -18,6 +18,9 @@
   .lg-thumb-outer,
   .lg-img-wrap {
     padding: 0 45px;
+    .lg-image {
+      transform: none !important;
+    }
   }
 
   &.lg-has-thumb {

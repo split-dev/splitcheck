@@ -122,7 +122,10 @@ if($('.blog-main__mobile-section').hasClass('blog-main__mobile-section')) {
         prevEl: '.internal-card__slider .swiper-button-prev',
       },
       breakpoints: {
-        
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 8,
+        },
           575: {
             slidesPerView: 2,
             spaceBetween: 8,

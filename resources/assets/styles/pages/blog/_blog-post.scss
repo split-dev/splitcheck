@@ -121,6 +121,7 @@
       }
     }
     &__recomended-slider {
+      max-width: 600px;
       @media (max-width: 991px) {
         padding-bottom: 70px;
       }
@@ -200,12 +201,16 @@
       .section-content__title {
         margin-left: 20px;
       }
-      @media (max-width: 991px) {
+      @media (max-width: 1260px) {
         display: none;
       }
     }
     &__recomended-mobile {
+      display: none;
       position: relative;
+      @media (max-width: 1260px) {
+        display: block;
+      }
       .swiper-button-prev {
         @media (max-width: 575px) {
           left: 5px;

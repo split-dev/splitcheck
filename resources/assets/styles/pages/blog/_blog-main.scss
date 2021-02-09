@@ -58,7 +58,7 @@
       right: -40px;
       bottom: 55px;
       @media (max-width: 991px) {
-        top: -200px;
+        top: -500px;
         right: 0;
         left: 0;
         display: flex;
@@ -161,7 +161,7 @@
     }
 
     &__none {
-      @media (max-width: 991px) {
+      @media (max-width: 1200px) {
         display: none;
       }
     }
@@ -173,6 +173,12 @@
       position: relative;
       .blog-post__card {
         max-width: 264px !important;
+        small {
+          font-size: 14px;
+        }
+        @media (max-width: 1200px) {
+          max-width: 100% !important;
+        }
       }
       .swiper-slide {
         padding-bottom: 10px;
@@ -189,7 +195,7 @@
         background-color: #fff;
         border-radius: 50%;
       }
-      @media (max-width: 991px) {
+      @media (max-width: 1200px) {
         display: block;
       }
     }

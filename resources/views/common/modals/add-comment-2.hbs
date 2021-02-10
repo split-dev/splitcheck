@@ -1,0 +1,150 @@
+<!-- modal-add-comment -->
+<div class="modal right fade modal-add-comment" id="add-comment-2" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content position-relative">
+            <!-- modal-header -->
+            <div class="modal-header d-flex align-items-center">
+                <!-- head for side modal -->
+                <div class="head-modal-info d-flex align-items-center flex-wrap">
+                    <figure
+                        class="head-modal-info__avatar position-relative d-flex align-items-center justify-content-center overflow-hidden">
+                        <img src="images/shop/product.jpg" alt="avatar">
+                        <span class="head-modal-info__symbol">AD</span>
+                    </figure>
+                    <div class="head-modal-info__description">
+                        <h2 class="head-modal-info__name">Comments (<span>2</span>)</h2>
+                        <p class="head-modal-info__subname">
+                            <span>Name of the product</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- /head for side modal -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <!-- /modal-header -->
+            <!-- modal-body -->
+            <div class="modal-body">
+                <div class="scroll-div">
+                    <div class="comments">
+                        <div class="comments__wrap">
+                            <div class="comments__item comment d-flex align-items-start">
+                                <figure class="comment__img comment__img--no-img position-relative">
+                                    <img src="" alt="avatar">
+                                    <span>JS</span>
+                                </figure>
+
+                                <div class="comment__content">
+                                    <div class="comment__box">
+                                        <h2>Jane Doe</h2>
+                                        <div class="comment__inner">
+                                            <p>Cool!</p>
+                                        </div>
+                                        <span>Today at 21:00</span>
+                                    </div>
+                                    <div class="comment__footer d-flex align-items-end">
+                                        <span><i>1</i> like</span>
+
+                                        <a href="#" class="comment__btn position-relative">
+                                            <span class="icon icon-like-blue"></span>
+                                        </a>
+                                        <a href="#" class="comment__btn position-relative">
+                                            <span class="icon icon-share"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments__item comment d-flex align-items-start">
+                                <figure class="comment__img comment__img--no-img position-relative">
+                                    <img src="" alt="avatar">
+                                    <span>JS</span>
+                                </figure>
+
+                                <div class="comment__content">
+                                    <div class="comment__box">
+                                        <h2>Jane Doe</h2>
+                                        <div class="comment__inner">
+                                            <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <span>Today at 22:00</span>
+                                    </div>
+                                    <div class="comment__footer d-flex align-items-end">
+                                        <span><i>1</i> like</span>
+
+                                        <a href="#" class="comment__btn position-relative">
+                                            <span class="icon icon-like-blue"></span>
+                                        </a>
+                                        <a href="#" class="comment__btn position-relative">
+                                            <span class="icon icon-share"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /modal-body -->
+            <!-- modal-footer -->
+            <div class="modal-footer ">
+                <form action="#" class="form form-add-comment">
+                    <div class="form-add-comment__wrap">
+                        <div class="form-add-comment__body">
+                            <div class="form-add-comment__content" id="target-container"
+                                placeholder="Leave your thoughts here" contenteditable="true"
+                                data-role="drag-drop-container">
+
+                                <div class="form-add-comment__file">
+                                    <a href="#" class="file-delit">
+                                        <img src="images/icons/close-blue.svg" data-target="close" alt="">
+                                    </a>
+                                    <figure>
+
+                                        <img src="images/shop/comment-img.jpg" alt="img">
+                                    </figure>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="form-add-comment__footer d-flex align-items-center justify-content-between">
+                            <div class="form-add-comment__user">
+                                <figure class="form-add-comment__img form-add-comment__img--no-img position-relative">
+                                    <img src="images/profiles/user-1.png" alt="avatar">
+                                    <span>AD</span>
+                                </figure>
+                                <div
+                                    class="form__single form__single--select form__single--select-default form__single--fluid">
+                                    <select class="form__select form__select--default" data-toggle="select">
+                                        <option value="user-1" title="TS">Terry Smith</option>
+                                        <option value="user-1" title="TW">Terry Will Green
+                                        </option>
+                                    </select>
+                                </div>
+                                <span href="#" class="form-add-comment__btn-arrow">
+                                    <i class="icon icon-arrow"></i>
+                                </span>
+                            </div>
+                            <ul
+                                class="form-add-comment__list position-relative d-flex align-items-center list-unstyled mb-0">
+                                <li class="form-add-comment__item">
+                                    <a href="#" class="form-add-comment__btn position-relative">
+                                        <i class="icon icon-paperclip" data-toggle="modal" data-target="#add-files"></i>
+                                    </a>
+                                </li>
+                                <li class="form-add-comment__item">
+                                    <button class="form-add-comment__btn position-relative">
+                                        <i class="icon icon-paperplane icon-paperplane-active"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /modal-footer -->
+        </div>
+    </div>
+</div>
+<!-- /modal-add-comment -->

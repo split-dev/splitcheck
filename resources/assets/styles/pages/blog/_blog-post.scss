@@ -6,7 +6,7 @@
   }
   &__products {
     margin-top: 80px;
-    @media (max-width: 991px) {
+    @media (max-width: 1200px) {
       margin-top: 0;
     }
     @media (max-width: 575px) {
@@ -122,7 +122,7 @@
     }
     &__recomended-slider {
       max-width: 600px;
-      @media (max-width: 991px) {
+      @media (max-width: 1200px) {
         padding-bottom: 70px;
       }
     }

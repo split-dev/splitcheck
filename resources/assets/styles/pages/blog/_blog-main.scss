@@ -1,4 +1,10 @@
 .blog {
+  .blog-post__reaction {
+    span {
+      color: #828282;
+      font-size: 14px;
+    }
+  }
   .section-toggle {
     margin-bottom: 15px;
     .blog-main__search {
@@ -47,8 +53,8 @@
     }
     &-before {
       position: absolute;
-      left: 20px;
-      top: 170px;
+      left: 0;
+      top: 145px;
       @media (max-width: 991px) {
         display: none;
       }
@@ -289,7 +295,9 @@
       }
     }
     &__mobile-slider {
-      padding-bottom: 250px;
+      @media (max-width: 991px) {
+        padding-bottom: 250px;
+      }
 
       .blog-post__card,
       .big-post__top {

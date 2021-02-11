@@ -63,14 +63,16 @@
     }
   }
   .aside-right {
-    .reaction__pop {
-      &:before {
-        @media (max-width: 1200px) {
-          left: 50px !important;
+    .mini-post__info {
+      .reaction__pop {
+        &:before {
+          @media (max-width: 1260px) {
+            left: 50px !important;
+          }
         }
-      }
-      @media (max-width: 1200px) {
-        left: -50px !important;
+        @media (max-width: 1260px) {
+          left: -50px !important;
+        }
       }
     }
   }

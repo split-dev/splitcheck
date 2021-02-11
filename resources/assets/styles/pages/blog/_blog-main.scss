@@ -48,7 +48,7 @@
     padding-bottom: 90px;
     position: relative;
     display: flex;
-    @media (max-width: 991px) {
+    @media (max-width: 1200px) {
       padding-top: 0;
     }
     &-before {
@@ -295,7 +295,7 @@
       }
     }
     &__mobile-slider {
-      @media (max-width: 991px) {
+      @media (max-width: 1200px) {
         padding-bottom: 250px;
       }
 

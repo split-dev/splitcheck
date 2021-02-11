@@ -7,6 +7,17 @@ import PerfectScrollbar from 'perfect-scrollbar';
 export default {
   init() {
 
+
+ //* sort-box selected element
+ {
+  $('.sort-box').on('click', 'a', function(e) {
+    e.preventDefault();
+    $('.sort-box li').removeClass('active');
+    $(this).parent().addClass('active');
+  })
+}
+
+
 //scroll horizontal
 function resize() {
   ps.update();
@@ -111,7 +122,10 @@ if($('.blog-main__mobile-section').hasClass('blog-main__mobile-section')) {
         prevEl: '.internal-card__slider .swiper-button-prev',
       },
       breakpoints: {
-        
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 8,
+        },
           575: {
             slidesPerView: 2,
             spaceBetween: 8,

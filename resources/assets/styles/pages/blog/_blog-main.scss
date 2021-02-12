@@ -55,6 +55,9 @@
       position: absolute;
       left: 0;
       top: 145px;
+      @media (max-width: 1200px) {
+        top: -100px;
+      }
       @media (max-width: 991px) {
         display: none;
       }

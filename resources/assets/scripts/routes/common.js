@@ -14,6 +14,28 @@ export default {
   init() {
     Dropzone.autoDiscover = false;
 
+   
+
+    
+//header search dropdown
+    $('.link-more').click(function() {
+      $('.text-more').addClass('open');
+      $(this).hide();
+    });
+
+    $('.header .search__input').keyup(function() {
+      $('.search-dropdown').addClass('open');
+    
+    });
+
+    $(document).mouseup(function(e) {
+      if (!$('.search-dropdown').is(e.target) && $('.search-dropdown').has(e.target).length === 0) { 
+       $('.search-dropdown').removeClass('open') 
+      }
+      if (!$('.modal-invite .form__single').is(e.target) && $('.modal-invite .form__single').has(e.target).length === 0) { 
+        $('.modal-invite .form__single').removeClass('before-none');
+       }
+     });
 
     //eslint-disable-next-line no-unused-vars
     let mySwiper = new Swiper('.page-hero__bg .swiper-container', {

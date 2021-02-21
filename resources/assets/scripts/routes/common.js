@@ -14,6 +14,24 @@ export default {
   init() {
     Dropzone.autoDiscover = false;
 
+
+
+    //snackbar
+$('.snackbar-close').click(function() {
+  $('.modal-snackbar').removeClass('show');
+  $('.section-blur').removeClass('filter');
+});
+
+function snackbarShow(){
+  $('.modal-snackbar--dark').addClass('show');
+}
+setTimeout(snackbarShow, 6000);
+
+    function notificationShow(){
+      $('.modal-notification-small').addClass('show');
+      $('.section-blur').addClass('filter');
+    }
+    setTimeout(notificationShow, 2000);
    
 //* scroll - perfect-scrollbar
 {

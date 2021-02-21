@@ -7,66 +7,46 @@
 @import "modal-components/avatar";
 @import "modal-components/profile-list";
 
-.notification {
-  padding-top: 50px;
-  padding-bottom: 100px;
-  .section-blur {
-    background-color: rgba(51, 84, 145, 0.15);
+.modal-snackbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9999;
+  @keyframes fade-snackbar {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 40%;
+    }
   }
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    @media (max-width: 991px) {
-      flex-direction: column;
-    }
-    .left {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      @media (max-width: 991px) {
-        margin-bottom: 50px;
-        align-items: center;
-        justify-content: center;
-      }
-      .modal {
-        @media (max-width: 991px) {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 30px;
-        }
-      }
-    }
-    .right {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-end;
-      .modal {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin-bottom: 30px;
-        overflow: visible;
-        @media (max-width: 991px) {
-          align-items: center;
-          justify-content: center;
-        }
-      }
-    }
-    .modal {
+  &.modal-snackbar--dark {
+    display: none;
+    bottom: 10px;
+    top: auto !important;
+
+    &.show {
       display: block;
-      position: relative;
+      animation: fade-snackbar 1s ease;
+      left: 40%;
     }
   }
 }
+.modal-notification-small {
+  left: 40%;
+  top: 39%;
+  transition: 0.4s;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 
-.modal-notification {
-  @import "modal-components/custom-form-for-modal-side";
-  @import "modal-components/create-banner";
-
+  &.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: visible;
+  }
   .head-modal-info__description {
     width: 100%;
   }
@@ -156,6 +136,7 @@
     }
   }
 }
+
 .modal-dark {
   display: flex;
   justify-content: space-between;

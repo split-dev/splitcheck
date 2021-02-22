@@ -22,16 +22,19 @@ $('.snackbar-close').click(function() {
   $('.section-blur').removeClass('filter');
 });
 
-// function snackbarShow(){
-//   $('.modal-snackbar--dark').addClass('show');
-// }
-// setTimeout(snackbarShow, 6000);
+function snackbarShow(){
+  $('.modal-snackbar--dark').addClass('show');
+}
+setTimeout(snackbarShow, 6000);
 
-//     function notificationShow(){
-//       $('.modal-notification-small').addClass('show');
-//       $('.section-blur').addClass('filter');
-//     }
-//     setTimeout(notificationShow, 2000);
+    function notificationShow(){
+      if ($('.modal-snackbar').hasClass('modal-snackbar')) {
+        $('.modal-notification-small').addClass('show');
+        $('.section-blur').addClass('filter');
+      }
+     
+    }
+    setTimeout(notificationShow, 2000);
    
 //* scroll - perfect-scrollbar
 {
@@ -350,6 +353,7 @@ $('.header .search__input').keyup(function() {
         templateResult: function (state) {
           if (!state.id) {
             return state.text;
+            
           }
           var baseUrl = 'images/profiles';
           var $state = $(`
@@ -368,6 +372,8 @@ $('.header .search__input').keyup(function() {
       });
      }
 
+     
+
      // * function for "Select" template user add image
      if($('.form__single--select-profile select[data-toggle="select-profile"]')) {
       $('.form__single--select-profile select[data-toggle="select-profile"]').select2({
@@ -377,6 +383,7 @@ $('.header .search__input').keyup(function() {
         templateResult: function (state) {
           if (!state.id) {
             return state.text;
+           
           }
           var baseUrl = 'images/profiles';
           var $state = $(`
@@ -386,6 +393,7 @@ $('.header .search__input').keyup(function() {
                 <span class="profile-list__symbol"></span>
               </figure>
               <span>${state.text}</span>
+           
             </div>
           `);
 
@@ -405,6 +413,7 @@ $('.header .search__input').keyup(function() {
          text: 'Title here could be so much longer…',
          img: 'images/product/7142447382608.png',
          selected: true,
+         disable: '',
        },
        {
          id: 2,
@@ -413,6 +422,7 @@ $('.header .search__input').keyup(function() {
          price: 49.99,
          text: 'Title here could be so much longer…',
          img: 'images/product/7142447382608.png',
+         disable: '',
        },
        {
          id: 3,
@@ -421,6 +431,7 @@ $('.header .search__input').keyup(function() {
          price: 49.99,
          text: 'Title here could be so much longer…',
          img: 'images/product/7142447382608.png',
+         disable: '',
        },
        {
          id: 4,
@@ -429,6 +440,7 @@ $('.header .search__input').keyup(function() {
          price: 49.99,
          text: 'Title here could be so much longer1…',
          img: 'images/product/7142447382608.png',
+         disable: '',
        },
        {
          id: 5,
@@ -437,6 +449,7 @@ $('.header .search__input').keyup(function() {
          price: 49.99,
          text: 'Title here could be so much longer2…',
          img: 'images/product/7142447382608.png',
+         disable: '',
        },
        {
          id: 6,
@@ -445,7 +458,17 @@ $('.header .search__input').keyup(function() {
          price: 49.99,
          text: 'Title here could be so much longer3…',
          img: 'images/product/7142447382608.png',
+         disable: '',
        },
+       {
+        id: 7,
+        sky: '#134567',
+        Qty: 999,
+        price: 49.99,
+        text: 'Title here could be so much longer…',
+        img: 'images/groups/user-boy.png',
+        disable: 'no-permision',
+      },
     ]
 
      if($('.form__single--select-product select[data-toggle="select-product"]')) {

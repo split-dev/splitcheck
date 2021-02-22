@@ -15,8 +15,10 @@
   border-top-right-radius: 5px;
 }
 
-.select2-results__option [aria-disabled="true"] {
+li[aria-disabled="true"] {
+  opacity: 0.5;
   span.disable-error {
+    margin-left: 10px;
     color: #ff613b;
   }
 }

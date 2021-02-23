@@ -393,7 +393,7 @@ $('.header .search__input').keyup(function() {
                 <span class="profile-list__symbol"></span>
               </figure>
               <span>${state.text}</span>
-           
+              <span class="disable-error">(no-permission)</span>
             </div>
           `);
 
@@ -467,7 +467,7 @@ $('.header .search__input').keyup(function() {
         price: 49.99,
         text: 'Title here could be so much longer…',
         img: 'images/groups/user-boy.png',
-        disable: 'no-permision',
+       
       },
     ]
 

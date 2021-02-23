@@ -14,10 +14,18 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+span.disable-error {
+  display: none;
+}
 
 li[aria-disabled="true"] {
-  opacity: 0.5;
+  figure,
+  span:not(.disable-error) {
+    opacity: 0.5;
+  }
+
   span.disable-error {
+    display: block;
     margin-left: 10px;
     color: #ff613b;
   }

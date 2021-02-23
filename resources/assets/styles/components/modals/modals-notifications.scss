@@ -8,45 +8,32 @@
 @import "modal-components/profile-list";
 
 .modal-snackbar {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  right: 0;
   display: none;
   z-index: 9999;
+  bottom: 10px;
+  top: auto !important;
+  @media (max-width: 991px) {
+    bottom: 60px;
+  }
+  &.show {
+    display: block;
+    animation: fade-snackbar 1s ease;
+    right: 30px;
+  }
   @keyframes fade-snackbar {
     0% {
-      left: 0;
+      right: 0;
     }
     100% {
-      left: 40%;
-    }
-  }
-  &.modal-snackbar--dark {
-    display: none;
-    bottom: 10px;
-    top: auto !important;
-
-    &.show {
-      display: block;
-      animation: fade-snackbar 1s ease;
-      left: 40%;
+      right: 30px;
     }
   }
 }
 .modal-notification-small {
-  left: 40%;
-  top: 39%;
-  transition: 0.4s;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  display: none;
 
-  &.show {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    pointer-events: visible;
-  }
   .head-modal-info__description {
     width: 100%;
   }

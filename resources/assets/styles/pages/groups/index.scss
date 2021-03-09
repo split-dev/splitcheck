@@ -205,6 +205,26 @@
     }
   }
   &__menage {
+    .profile-list__avatar {
+      z-index: 5;
+      background-color: #e8ebf2;
+      position: relative;
+      img {
+        z-index: 99;
+        position: absolute;
+        margin: auto;
+        width: auto;
+        height: 100%;
+      }
+      span {
+        font-size: 18px;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #99a9c9;
+        display: block !important;
+      }
+    }
+
     .profile-face__photo {
       @media (max-width: 767px) {
         margin-bottom: 10px;

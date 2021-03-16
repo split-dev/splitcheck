@@ -288,6 +288,7 @@ export default {
       if($('.drop-photo--over').hasClass('drop-photo--over')) {
         const dropZoneEl = document.querySelectorAll('.add-photo .drop-photo');
         const btnCrop = document.querySelector('.btn-drop-photo-crop');
+        const btnSave = document.querySelector('.drop-photo--over .btn-blue');
       const containerCrop = document.querySelector('.drop-photo__start');
 
       const myDropzone = new Dropzone(dropZoneEl[0], {
@@ -308,7 +309,7 @@ export default {
           editor.style.left = 0;
           editor.style.right = 0;
           editor.style.zIndex = 2;
-          this.previewsContainer.appendChild(editor)
+          myDropZone.previewsContainer.appendChild(editor)
 
 
           btnCrop.addEventListener('click', function() {
@@ -340,9 +341,39 @@ export default {
             editor.parentNode.removeChild(editor);
           });
 
+          btnSave.addEventListener('click', function() {
+            // Get the canvas with image data from Cropper.js
+            let canvas = cropper.getCroppedCanvas({
+              width: 256,
+              height: 256,
+            });
+
+            // Turn the canvas into a Blob (file object without a name)
+            canvas.toBlob(function(blob) {
+              // Create a new Dropzone file thumbnail
+              myDropZone.createThumbnail(
+                blob,
+                myDropZone.options.thumbnailWidth,
+                myDropZone.options.thumbnailHeight,
+                myDropZone.options.thumbnailMethod,
+                false,
+                function(dataURL) {
+
+                  // Update the Dropzone file thumbnail
+                  myDropZone.emit('thumbnail', file, dataURL);
+                  // Return the file to Dropzone
+                  done(blob);
+              });
+            });
+
+            // Remove the editor from the view
+            // editor.parentNode.removeChild(editor);
+          });
+
           // Create an image node for Cropper.js
           let image = new Image();
           image.src = URL.createObjectURL(file);
+          console.log(image);
           editor.appendChild(image);
 
           // Create Cropper.js
@@ -350,11 +381,47 @@ export default {
             aspectRatio: 1,
             viewMode: 1,
           });
+
+          console.log(cropper);
         },
       });
 
+      
+      // $('.drop-user .btn-blue').click( function() {
+      //   // var allFiles =  myDropzone.getAcceptedFiles();
+      //   // // console.log(allFiles[0].dataURL);
+      //  let srcImg = $('.dz-image img').attr('src');
+      //  $('.profile-face__photo').css('background-image', 'url(' + srcImg + ')');
+      //  myDropzone.removeAllFiles();
+
+
+      // });
+
+      $('.drop-photo--over .btn-blue').click( function() {
+        // var allFiles =  myDropzone.getAcceptedFiles();
+        // // console.log(allFiles[0].dataURL);
+       let srcImg = $('.dz-image img').attr('src');
+       $('.profile-img a').css('background-image', 'url(' + srcImg + ')');
+       $('.profile-img a').addClass('new-banner__img');
+       myDropzone.removeAllFiles();
+      });
+
+      $('.drop-pet .btn-blue').click( function() {
+        // var allFiles =  myDropzone.getAcceptedFiles();
+        // // console.log(allFiles[0].dataURL);
+       let srcImg = $('.dz-image img').attr('src');
+       $('.profile-img img').attr('src', srcImg);
+       $('.profile-img img').addClass('new-banner__img');
+       myDropzone.removeAllFiles();
+
+
+      });
+
+      
       }
     }
+
+   
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

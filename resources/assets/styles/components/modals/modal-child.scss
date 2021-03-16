@@ -1,4 +1,23 @@
 .modal-child {
+  .new-banner__img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+    i {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+  }
   .modal-body {
     padding: 24px 34px 80px 24px !important;
     @media (max-width: 991.98px) {

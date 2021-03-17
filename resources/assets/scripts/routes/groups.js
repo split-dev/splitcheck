@@ -7,10 +7,6 @@ export default {
       $(this).toggleClass('active-oval-btn');
     });
     $('#phone').mask('+38 00 0000 000');
-    
-
-      
-
 
       
      

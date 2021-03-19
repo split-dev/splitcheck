@@ -1,4 +1,10 @@
 .modal-child {
+  .new-banner {
+    img {
+      width: inherit;
+      height: inherit;
+    }
+  }
   .new-banner__img {
     background-position: center;
     background-size: cover;

@@ -8,6 +8,22 @@ import 'jquery-mask-plugin';
 export default {
   init() {
 
+    if ($('.new-banner').hasClass('new-banner')) {
+     let imgProfile = $('new-banner img');
+     
+     for(let i = 0; i<imgProfile.length; i++) {
+      imgProfile.this.parent().addClass('new-banner__img');
+    }
+    
+    //   if (imgProfile.length > 0) {
+    //     $(this).parent().addClass('new-banner__img');
+    // } else {
+    //   $(this).parent().removeClass('new-banner__img');
+    //  }
+      
+     }
+     
+
     Dropzone.autoDiscover = false;
 
     $('.orders__toggle').on('click', function() {

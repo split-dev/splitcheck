@@ -386,25 +386,8 @@ export default {
         },
       });
 
-      
-      // $('.drop-user .btn-blue').click( function() {
-      //   // var allFiles =  myDropzone.getAcceptedFiles();
-      //   // // console.log(allFiles[0].dataURL);
-      //  let srcImg = $('.dz-image img').attr('src');
-      //  $('.profile-face__photo').css('background-image', 'url(' + srcImg + ')');
-      //  myDropzone.removeAllFiles();
 
-
-      // });
-
-      $('.drop-photo--over .btn-blue').click( function() {
-        // var allFiles =  myDropzone.getAcceptedFiles();
-        // // console.log(allFiles[0].dataURL);
-       let srcImg = $('.dz-image img').attr('src');
-       $('.profile-img a').css('background-image', 'url(' + srcImg + ')');
-       $('.profile-img a').addClass('new-banner__img');
-       myDropzone.removeAllFiles();
-      });
+     
 
       $('.drop-pet .btn-blue').click( function() {
         // var allFiles =  myDropzone.getAcceptedFiles();

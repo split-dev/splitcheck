@@ -5,7 +5,7 @@
   box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
   max-width: 930px;
   @media (max-width: 767px) {
-    height: 100%;
+    height: 100% !important;
   }
   &__background {
     padding: 17px 25px;
@@ -42,7 +42,7 @@
     }
     @media (max-width: 767px) {
       justify-content: center;
-      height: 190px;
+      height: 190px !important;
     }
     @media (max-width: 575px) {
       padding: 15px;
@@ -79,7 +79,7 @@
     @media (max-width: 767px) {
       border-radius: 0;
       padding: 0 0 11px;
-      height: 122px;
+      height: 122px !important;
       flex-direction: column;
       justify-content: flex-end !important;
     }

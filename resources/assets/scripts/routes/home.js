@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper/swiper-bundle';
 import SimpleScrollbar from 'simple-scrollbar';
-import Dropzone from 'dropzone';
+import Dropzone, { getElement } from 'dropzone';
 import Cropper from 'cropperjs';
 import 'lightgallery/dist/js/lightgallery-all.min'
 
@@ -14,6 +14,8 @@ export default {
     const leftAside = document.querySelector('.aside-left');
     const rightAside = document.querySelector('.aside-right');
     const scrollDiv = document.querySelectorAll('.scroll-div');
+
+
 
     //* Swiper
     {

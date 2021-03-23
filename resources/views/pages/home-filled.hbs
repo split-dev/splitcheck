@@ -7,7 +7,23 @@
 
 <body class="home">
   {{> ../common/mobile-menu }}
-  {{> ../common/mobile-menu-bottom }}
+  <div class="home-filled--banner">
+    {{> ../common/mobile-menu-bottom }}
+    <div class="bottom-banner">
+      <div class="container">
+        <div class="d-flex bottom-banner__info">
+          <div class="bottom-banner--text">
+            <p>To fully acess all SplitCheck’s features and content</p>
+          </div>
+          <div class="bottom-banner--links">
+            <a href="#" class="btn-border">Create new free account</a>
+            <span class="text-blue">OR</span>
+            <a href="#" class="btn-blue">Log In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="section-blur " data-class="warm">
     {{> ../common/header-next }}
     <div class="container">
@@ -1278,6 +1294,8 @@
         <!-- /aside-right -->
       </div>
     </div>
+
+
 
     {{> ../common/footer }}
   </div>

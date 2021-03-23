@@ -313,6 +313,15 @@ $(document).mouseup(function(e) {
       headroomSecond.init();
     }
 
+    if ($('.bottom-banner').hasClass('bottom-banner')) {
+      if (window.innerWidth > 991) {
+        let bottomBanner = document.querySelector('.bottom-banner');
+        let headroomBottom  = new Headroom(bottomBanner);
+        headroomBottom.init();
+      }
+      
+    }
+
     let myElement = document.querySelector('header');
 
     // construct an instance of Headroom, passing the element
@@ -863,6 +872,9 @@ $(document).mouseup(function(e) {
         if($('.nav-product').hasClass('nav-product')) {
           $('.nav-product').addClass('top');
         }
+        if($('.bottom-banner').hasClass('bottom-banner')) {
+          $('.bottom-banner').addClass('bottom');
+        }
       } else {
         if($('.bottom-slider__info').hasClass('bottom-slider__info')) {
           $('.bottom-slider__info').removeClass('bottom');
@@ -875,6 +887,9 @@ $(document).mouseup(function(e) {
         }
         if($('.nav-product').hasClass('nav-product')) {
           $('.nav-product').removeClass('top');
+        }
+        if($('.bottom-banner').hasClass('bottom-banner')) {
+          $('.bottom-banner').removeClass('bottom');
         }
       }
       lastScrollTop = st;

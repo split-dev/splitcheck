@@ -99,6 +99,13 @@
       align-items: flex-end;
       justify-content: flex-end;
       max-width: 80px;
+      a {
+        max-width: 80px;
+        height: 40px;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
       @media (max-width: 575px) {
         justify-content: center;
         margin-top: 24px;

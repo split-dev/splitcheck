@@ -123,9 +123,8 @@
   .aside-left {
     width: 18.619%;
     position: sticky;
-    padding-right: 27px;
     top: 90px;
-    min-width: 206px;
+    min-width: 250px;
 
     @include media-breakpoint-down(md) {
       display: none;
@@ -195,6 +194,7 @@
     position: -webkit-sticky;
     top: 90px;
     margin-bottom: 48px;
+    margin-left: 45px;
     .section-content {
       padding-left: 34px;
 

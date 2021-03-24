@@ -150,6 +150,8 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 1px solid #f8f9fb;
+    box-shadow: 0 0 4px rgb(11 2 18 / 8%);
     @media (max-width: 767px) {
       background-size: 105%;
     }

@@ -668,7 +668,8 @@
 
   &__figure {
     position: relative;
-
+    border: 1px solid #f8f9fb;
+    box-shadow: 0 0 4px rgb(11 2 18 / 8%);
     img {
       width: 100%;
     }

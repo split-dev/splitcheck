@@ -653,10 +653,10 @@
 
 .history {
   &__grid {
-    box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
-    border-radius: 8px;
-    padding: 12px 4px 4px 10px;
-    background-color: #fff;
+    // box-shadow: 0 2px 4px 1px rgba(11, 2, 18, 0.08);
+    // border-radius: 8px;
+    // padding: 12px 4px 4px 10px;
+    // background-color: #fff;
     @media (max-width: 575px) {
       padding: 12px 10px;
       justify-content: space-between;
@@ -674,11 +674,12 @@
         background-size: 100%;
         background-repeat: no-repeat;
         width: 100%;
-        max-width: 174px;
-        height: 156px;
+        max-width: 120px;
+        height: 120px;
+        margin-bottom: 8px;
         &:after {
           position: absolute;
-          content: url("images/icons/form-galery.svg");
+          content: url("images/add-photo.svg");
           top: 0;
           left: 0;
           right: 0;
@@ -737,11 +738,13 @@
   &__selector-grid {
     position: relative;
     width: 100%;
-    max-width: 174px;
-    height: 156px;
+    max-width: 120px;
+    height: 120px;
     background-color: #e8ebf2;
     margin-right: 8px;
     margin-bottom: 8px;
+    border-radius: 8px;
+
     @media (max-width: 767px) {
       max-width: 48%;
       display: inline-block;
@@ -797,6 +800,8 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0 2px 4px 1px rgb(11 2 18 / 8%);
+    border-radius: 8px;
     &:hover {
       &:after {
         opacity: 0.3 !important;

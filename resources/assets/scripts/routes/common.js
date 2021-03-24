@@ -15,6 +15,75 @@ export default {
     Dropzone.autoDiscover = false;
 
 
+// if ($('body').width() > 991) {
+//   let sum = 0
+//   let content = $('.main-content').children();
+//    $(content).each(function() {
+//   let sumContent = sum + $(this).outerWidth(true);
+//   console.log(sumContent);
+// });
+// if (sumContent > $('.main-content').width()) {
+//   // $('.aside-right').css('display','none');
+//   // $('.main-content .justify-content-between').css('justify-content', 'flex-start');
+//   console.log(true);
+// } else {
+//   console.log(false);
+//   // $('.aside-right').css('display','block');
+//   // $('.main-content .justify-content-between').css('justify-content', 'space-between');
+// }
+// }
+
+
+function sizeAside() {
+  if (window.matchMedia('(max-width: 1050px) and (min-width: 992px)').matches) {
+    let asideLeftWidth = $('.aside-left').outerWidth(true);
+  let asideRightWidth = $('.aside-right').outerWidth(true);
+  let mainWidth = $('main').outerWidth(true);
+  let summ = asideLeftWidth + asideRightWidth + mainWidth;
+  console.log(summ);
+  if (summ > $('.main-content').width()) {
+      $('.aside-right').css('display','none');
+      $('.main-content.justify-content-between').removeClass('justify-content-between');
+      console.log(true);
+    } else {
+      console.log(false);
+      $('.aside-right').css('display','block');
+      $('.main-content.justify-content-between').addClass('justify-content-between');
+    }
+  }
+}
+sizeAside();
+
+function sizeSearch() {
+  if($('body').width() > 991) {
+    if(!$('.size-container').hasClass('main--fluid')) {
+      let left = document.querySelector('.size-container').getBoundingClientRect().left;
+      $('.header__search').css({
+        position: 'absolute',
+        top: '50%',
+        transform: 'translate(0, -50%)',
+        left: left,
+      })
+    }
+  } else {
+    $('.header__search').css({
+      position: 'static',
+      top: 'auto',
+      transform: 'none',
+    })
+  }
+  if($('body').width() > 991) {
+    if($('.size-container').hasClass('main--fluid')) {
+      let left = document.querySelector('.main--fluid').getBoundingClientRect().left;
+      $('.header__search').css({
+        position: 'absolute',
+        left: left,
+      })
+    }
+  }
+}
+sizeSearch();
+window.addEventListener('resize', sizeSearch, sizeAside)
 
     //snackbar
 $('.snackbar-close').click(function() {

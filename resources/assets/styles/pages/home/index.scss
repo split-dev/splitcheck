@@ -160,7 +160,7 @@
   }
 
   .main {
-    width: 49.124%;
+    width: 48.124%;
 
     @include media-breakpoint-down(md) {
       width: 100%;
@@ -189,15 +189,16 @@
   }
 
   .aside-right {
-    width: 32.257%;
+    width: 30.257%;
     position: sticky;
     position: -webkit-sticky;
     top: 90px;
     margin-bottom: 48px;
-    margin-left: 45px;
+    margin-left: 60px;
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
     .section-content {
-      padding-left: 34px;
-
       .btn-border {
         max-width: calc(100% - 10px);
         height: 32px;

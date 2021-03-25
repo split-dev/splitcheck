@@ -32,6 +32,7 @@
 }
 .profile__bottom {
   margin-top: 17px;
+  justify-content: space-between;
   @media (max-width: 991px) {
     flex-direction: column;
   }

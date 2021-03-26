@@ -8,13 +8,19 @@
     width: 100%;
     height: 264px;
     margin-bottom: 12px;
-
     background-color: theme-color("light-gray2");
     border: 1px solid #f8f9fb;
     box-shadow: 0 0 4px rgb(11 2 18 / 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.bg-figure__light {
+      background: #fff;
+    }
+
     &.figure-bg__pink {
-      background-color: #dcbfc5 !important;
-      border: 1px solid #f8f9fb;
+      background-color: #dcbfc5;
     }
   }
 
@@ -44,7 +50,8 @@
     left: 0;
     right: 0;
     margin: auto;
-    height: 100%;
+    width: 100%;
+    max-width: 115px;
   }
 
   // .product-card__header

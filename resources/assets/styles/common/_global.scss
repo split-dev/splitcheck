@@ -193,3 +193,8 @@ button {
 .bg-size {
   background-size: contain !important;
 }
+.size-container {
+  @media (max-width: 1250px) {
+    width: 42% !important;
+  }
+}

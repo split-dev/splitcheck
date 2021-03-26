@@ -190,11 +190,23 @@ button {
   z-index: 9;
   cursor: pointer;
 }
+// .internal-card__grid {
+//   figure {
+//     height: 100%;
+//     width: 100%;
+//     max-width: calc(16 / 9 * 100%);
+//     a {
+//       height: 100% !important;
+//       padding-bottom: 65.25%;
+//       position: relative;
+//     }
+//   }
+// }
 .bg-size {
   background-size: contain !important;
 }
 .size-container {
-  @media (max-width: 1250px) {
+  @media (max-width: 1250px) and (min-width: 992px) {
     width: 42% !important;
   }
 }

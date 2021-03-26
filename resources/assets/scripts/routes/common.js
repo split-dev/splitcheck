@@ -34,6 +34,13 @@ export default {
 // }
 
 
+if ($('.size-container').hasClass('size-container')) {
+  if($('body').width() > 991) {
+    let widthMain = $('.size-container').width();
+    $('.header__search').css('width', widthMain);
+  }
+}
+
 function sizeAside() {
   if (window.matchMedia('(max-width: 1050px) and (min-width: 992px)').matches) {
     let asideLeftWidth = $('.aside-left').outerWidth(true);

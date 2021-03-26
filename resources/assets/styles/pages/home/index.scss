@@ -124,8 +124,8 @@
     width: 18.619%;
     position: sticky;
     top: 90px;
-    min-width: 200px;
-    margin-right: 40px;
+    min-width: 190px;
+    margin-right: 80px;
 
     @include media-breakpoint-down(md) {
       display: none;
@@ -195,7 +195,7 @@
     position: -webkit-sticky;
     top: 90px;
     margin-bottom: 48px;
-    margin-left: 60px;
+    margin-left: 80px;
     @media (max-width: 991px) {
       margin-left: 0;
     }

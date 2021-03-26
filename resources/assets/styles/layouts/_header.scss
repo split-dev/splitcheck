@@ -325,8 +325,11 @@
 
   &__search {
     margin-left: 5px;
-    @include media-breakpoint-down(sm) {
-      margin-left: 12px;
+    @media (max-width: 1259px) and (min-width: 1120px) {
+      max-width: 485px;
+    }
+    @media (max-width: 1030px) {
+      max-width: 390px;
     }
   }
 
@@ -510,7 +513,7 @@
 
 .search {
   position: relative;
-  width: 360px;
+  width: 100%;
   transition: 0.3s ease;
 
   @include media-breakpoint-down(md) {

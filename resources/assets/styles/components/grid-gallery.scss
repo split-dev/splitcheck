@@ -152,6 +152,14 @@
     background-repeat: no-repeat;
     border: 1px solid #f8f9fb;
     box-shadow: 0 0 4px rgb(11 2 18 / 8%);
+    img {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
     @media (max-width: 767px) {
       background-size: 105%;
     }
@@ -169,10 +177,6 @@
 
       transition: opacity $transition-fast;
       background-color: theme-color("blue5");
-    }
-
-    img {
-      display: none;
     }
   }
 

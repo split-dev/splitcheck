@@ -428,7 +428,7 @@
 
           <section class="section-content">
             <div class="main__card main__card--bias position-relative">
-              <div class="internal-card internal-card--shop internal-card--shop--triple">
+              <div class="internal-card  ">
                 <div class="internal-card__header">
                   <a href="#" class="internal-card__profile d-flex flex-wrap align-items-start">
                     <figure class="internal-card__avatar">
@@ -444,7 +444,94 @@
                     </div>
                   </a>
                 </div>
-                <div class="internal-card__body">
+
+                <div class=" internal-card__body internal-card__grid  internal-card__grid--margin-bt grid-gallery">
+                  <div class="internal-card__slider grid-gallery__slider swiper-container ">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <figure class="grid-gallery__width-1-2 grid-gallery__main-img">
+                          <a class="grid-gallery__selector position-relative" href="images/test-img/test-product-1.jpg"
+                            data-src="images/shop/cart-img-1.png">
+                            <div class="grid-gallery__post-img bg-size"
+                              style="background-image: url(images/test-img/test-product-1.jpg);">
+                            </div>
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="swiper-slide">
+                        <figure class="grid-gallery__width-1-2 grid-gallery__main-img position-relative">
+                          <a class="grid-gallery__selector" href="images/test-img/test-product-2.jpg"
+                            data-src="images/shop/cart-img-2.png">
+                            <div class="grid-gallery__post-img bg-size"
+                              style="background-image: url(images/test-img/test-product-2.jpg);">
+                            </div>
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="swiper-slide">
+                        <figure
+                          class="grid-gallery__width-1-2 grid-gallery__main-img position-relative grid-gallery__grid-margin-top grid-gallery__more"
+                          data-numbers="3">
+                          <a class="grid-gallery__selector" href="images/shop/cart-img-2.png"
+                            data-src="images/shop/cart-img-2.png">
+                            <div class="grid-gallery__post-img bg-size"
+                              style="background-image: url(images/shop/cart-img-2.png);">
+                            </div>
+                          </a>
+                        </figure>
+                      </div>
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+
+                  <div class="grid-gallery__hidden">
+                    <figure class="grid-gallery__main-img position-relative">
+                      <a class="grid-gallery__selector" href="images/shop/cart-img-2.png"
+                        data-src="images/shop/cart-img-2.png">
+                        <div class="grid-gallery__post-img" style="background-image: url(images/shop/cart-img-2.png);">
+                        </div>
+                      </a>
+                    </figure>
+                    <figure class="grid-gallery__main-img position-relative">
+                      <a class="grid-gallery__selector" href="images/shop/cart-img-2.png"
+                        data-src="images/shop/cart-img-2.png">
+                        <div class="grid-gallery__post-img" style="background-image: url(images/shop/cart-img-2.png);">
+                        </div>
+                      </a>
+                    </figure>
+                    <figure class="grid-gallery__main-img position-relative">
+                      <a class="grid-gallery__selector" href="images/shop/cart-img-2.png"
+                        data-src="images/shop/cart-img-2.png">
+                        <div class="grid-gallery__post-img" style="background-image: url(images/shop/cart-img-2.png);">
+                        </div>
+                      </a>
+                    </figure>
+                  </div>
+
+                  <div class="internal-card__price internal-card__price--discount d-flex align-items-center flex-wrap">
+                    <span>$49.99</span>
+                    <span>$49.99</span>
+
+                    <div class="internal-card__promo">
+                      <span>Available in Bargains</span>
+                    </div>
+                  </div>
+
+                  <p>
+                    To help your skin thrive, use Moroccan argan extract which conditions and moisturizes while
+                    chlorella brings a boost of skin-benefiting vitamins and omega 3s for extra glowing goodness
+                    <a href="#">...Read More</a>
+                  </p>
+                </div>
+
+
+
+
+
+
+                {{!-- <div class="internal-card__body">
                   <div
                     class="internal-card__grid internal-card__grid--triple internal-card__grid--margin-bt grid-gallery d-flex flex-wrap">
                     <figure class="grid-gallery__width-1-1">
@@ -516,7 +603,11 @@
                     chlorella brings a boost of skin-benefiting vitamins and omega 3s for extra glowing goodness
                     <a href="#">...Read More</a>
                   </p>
-                </div>
+                </div> --}}
+
+
+
+
                 <div class="internal-card__bottom">
                   <div class="reaction">
                     <div class="reaction__top">
@@ -649,12 +740,12 @@
                     <figure class="grid-gallery__width-1-1">
                       <a class="grid-gallery__selector position-relative" href="images/shop/product.jpg"
                         data-src="images/shop/product.jpg">
-                        {{!-- <div class="grid-gallery__post-img bg-size"
+                        <div class="grid-gallery__post-img bg-size"
                           style="background-image: url(images/shop/product.jpg);">
-                        </div> --}}
-                        <div class="grid-gallery__post-img">
-                          <img src="images/shop/product.png" alt="">
                         </div>
+                        {{!-- <div class="grid-gallery__post-img">
+                          <img src="images/shop/product.png" alt="">
+                        </div> --}}
 
                       </a>
                     </figure>
@@ -1571,8 +1662,7 @@
                       class="internal-card__grid internal-card__grid--single internal-card__grid--margin-bt grid-gallery d-flex flex-wrap overflow-hidden">
                       <figure class="grid-gallery__width-1-1">
                         <a class="grid-gallery__selector" href="images/shop/product.jpg">
-                          <div class="grid-gallery__post-img" data-src="images/feed/feed-img1.jpg">
-                            <img src="images/shop/product.png" alt="">
+                          <div class="grid-gallery__post-img " style="background-image: url(images/shop/product.jpg);">
                           </div>
                         </a>
                       </figure>

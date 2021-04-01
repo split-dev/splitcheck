@@ -7,6 +7,31 @@
   list-style: none;
   position: unset;
 
+  &__slider {
+    .grid-gallery__post-img {
+      background-size: contain !important;
+    }
+    .grid-gallery__width-1-1 {
+      display: block !important;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: flex !important;
+      top: 40% !important;
+    }
+    .swiper-slide {
+      width: 250px;
+      height: 320px;
+      figure {
+        height: 100% !important;
+        width: 100% !important;
+        a {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
   figure {
     margin-bottom: 0;
   }

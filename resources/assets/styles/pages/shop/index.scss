@@ -12,6 +12,10 @@
 @import "cart";
 
 .shop {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex !important;
+  }
   .section__margin-small {
     margin-bottom: 20px !important;
   }

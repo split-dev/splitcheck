@@ -1,3 +1,30 @@
+.footer-help {
+  background-color: #f9fbff !important;
+  li {
+    a {
+      &::after {
+        background-color: #35558f !important;
+      }
+      &:hover {
+        color: #35558f !important;
+      }
+    }
+  }
+  &__logo {
+    display: flex;
+    span {
+      font-weight: 500;
+      color: #315293;
+      font-size: 18px;
+    }
+    img {
+      width: 100%;
+      max-width: 35px !important;
+      margin-right: 15px;
+    }
+  }
+}
+
 .footer {
   position: relative;
   padding-top: 50px;

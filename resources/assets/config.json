@@ -5,6 +5,7 @@
       "./styles/main.scss",
       "./styles/pages/landing/index.scss",
       "./styles/pages/home/index.scss",
+      "./styles/pages/help/index.scss",
       "./styles/pages/settings/index.scss",
       "./styles/pages/shop/index.scss",
       "./styles/pages/profile/index.scss",
@@ -60,6 +61,7 @@
 
     "pages/landing": "./styles/pages/landing/index.scss",
     "pages/home": "./styles/pages/home/index.scss",
+    "pages/help": "./styles/pages/help/index.scss",
     "pages/settings": "./styles/pages/settings/index.scss",
     "pages/shop": "./styles/pages/shop/index.scss",
     "pages/profile": "./styles/pages/profile/index.scss",

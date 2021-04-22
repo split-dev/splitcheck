@@ -245,6 +245,26 @@
       "title": "Checkout Pick-up",
       "description": "Checkout",
       "url": "/checkout-pick-up.html"
+    },
+    {
+      "title": "Help Center",
+      "description": "help",
+      "url": "/help-center.html"
+    },
+    {
+      "title": "Help Cookies",
+      "description": "help",
+      "url": "/help-cookies.html"
+    },
+    {
+      "title": "Help Started",
+      "description": "help",
+      "url": "/help-started.html"
+    },
+    {
+      "title": "Help How it works",
+      "description": "help",
+      "url": "/how-it-works.html"
     }
   ]
 }

@@ -2,6 +2,23 @@
   filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='15'%20/></filter></svg>#blur");
   filter: blur(15px);
 }
+.mobile-menu__help {
+  .mobile-menu__logo {
+    max-width: 200px;
+  }
+
+  .mobile-menu__top {
+    @media (min-width: 991px) {
+      height: 80px;
+    }
+  }
+  li {
+    margin-bottom: 0 !important;
+  }
+  a {
+    font-size: 18px;
+  }
+}
 .section-blur {
   padding-top: 75px;
   transition: 0.3s;

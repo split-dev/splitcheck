@@ -1,4 +1,8 @@
 .how-it-works {
+  b {
+    font-weight: 500;
+    font-size: inherit !important;
+  }
   .section-blur {
     @media (max-width: 991px) {
       padding-top: 0 !important;
@@ -48,6 +52,13 @@
       }
       p {
         font-size: 22px;
+        @media (max-width: 575px) {
+          font-size: 18px;
+        }
+        b {
+          font-size: 22px;
+          font-weight: 500;
+        }
       }
       h2 {
         color: #35558f;
@@ -62,6 +73,7 @@
         }
         @media (max-width: 575px) {
           font-size: 32px;
+          line-height: normal;
         }
       }
     }
@@ -222,6 +234,7 @@
         padding-left: 15px;
         margin-bottom: 15px;
         &.list-unstyled {
+          margin-top: 20px;
           list-style: none;
         }
       }
@@ -259,7 +272,7 @@
     }
     &__box {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       margin-bottom: 40px;
       width: 100%;
       @media (max-width: 991px) {
@@ -284,7 +297,9 @@
     }
     &__info {
       margin-left: 50px;
+      max-width: 624px;
       @media (max-width: 991px) {
+        max-width: 100%;
         margin-left: 0;
         margin-top: 25px;
         display: flex;
@@ -324,7 +339,7 @@
       }
       span {
         font-size: 24px;
-
+        font-weight: 500;
         @media (max-width: 767px) {
           font-size: 22px;
         }
@@ -332,16 +347,39 @@
           font-size: 18px;
         }
       }
+      li {
+        font-size: 24px;
+        b {
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
       p {
         font-size: 24px;
         margin-top: 15px;
-        @media (max-width: 991px) {
+        b {
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+      @media (max-width: 991px) {
+        p,
+        li,
+        b {
           font-size: 22px;
         }
-        @media (max-width: 767px) {
+      }
+      @media (max-width: 767px) {
+        p,
+        li,
+        b {
           font-size: 20px;
         }
-        @media (max-width: 575px) {
+      }
+      @media (max-width: 575px) {
+        p,
+        li,
+        b {
           font-size: 16px;
         }
       }

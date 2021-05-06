@@ -13,7 +13,7 @@
     }
   }
   li {
-    margin-bottom: 0 !important;
+    margin-bottom: 20px !important;
   }
   a {
     font-size: 18px;
@@ -108,7 +108,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 56px;
+    height: 71px;
     background-color: #fff9f4;
+    @media (max-width: 767px) {
+      height: 56px;
+    }
   }
 }

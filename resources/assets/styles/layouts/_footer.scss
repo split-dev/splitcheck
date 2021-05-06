@@ -89,8 +89,7 @@
     flex-direction: column;
     width: 100%;
     @media (max-width: 480px) {
-      max-width: 185px;
-      margin: auto;
+      padding-left: 25px;
     }
     &:nth-child(2) {
       @media (max-width: 991px) {

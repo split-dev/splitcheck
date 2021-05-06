@@ -92,6 +92,11 @@
       max-width: 185px;
       margin: auto;
     }
+    &:nth-child(2) {
+      @media (max-width: 991px) {
+        order: 7;
+      }
+    }
     &:nth-child(4) {
       margin-right: 20px;
       @media (max-width: 991px) {
@@ -110,7 +115,7 @@
   }
   &__block:first-child {
     @media (max-width: 991px) {
-      order: 7;
+      order: 6;
     }
     p {
       margin-top: 20px;
